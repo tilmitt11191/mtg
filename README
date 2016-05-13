@@ -1,0 +1,7 @@
+My private mtg tools are here.
+
+command:
+
+*execut after editting [deckname] and [path] at get_deck_prices.rb
+
+ruby lib/decklists/get_deck_prices.rb
