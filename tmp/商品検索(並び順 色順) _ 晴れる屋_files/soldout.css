@@ -1,0 +1,60 @@
+﻿@charset "UTF-8";
+@font-family: 'Fira Sans', sans-serif;
+/*-----------------------------------------------
+SOLD OUT用のデザインCSS(1126吉村
+-----------------------------------------------*/
+.card_data_img{
+	position:relative;
+}
+.soldout{
+	position:absolute;
+	background-color:#fff;
+	opacity:0.6;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	z-index:1;
+}
+.soldout_letter{
+	font-size:2.0em;
+	color:rgb(115,115,115);
+	font-family: 'Fira Sans', sans-serif;
+	white-space: nowrap;
+	position:absolute;
+	margin:auto;
+	top:0px;
+	right:0px;
+	height:2.2em;
+	left:0px;
+	bottom:0px;
+	line-height:2.2em;
+	z-index:3;
+	text-align:center;
+}
+.soldout p:link {/*未訪問のリンク*/
+    color:#FF0000;
+}
+.soldout p:visited {/*訪問後のリンク*/
+    color:#FF0000;
+}
+.soldout p:hover {/*マウスをのせたとき*/
+    color:#ff0000;
+}
+.soldout p:active {/*クリック中*/
+    color:#ff0000;
+}
+.soldout_icon {
+	margin-top: 5px;
+	height: 23px;
+	width: 78px;
+	background-color: white;
+	opacity: 0.6;
+}
+.item_info_img .soldout_letter{
+	font-size:50px;
+	width:224px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
