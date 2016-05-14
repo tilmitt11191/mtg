@@ -1,0 +1,3 @@
+<root><name>Caves of Koilos</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{T}: Add {W} or {B} to your mana pool. Caves of Koilos deals 1 damage to you.</oracle><powertoughness></powertoughness><illustrator>Jim Nelson</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (245/272) </cardset><generating_mana_type>manually</generating_mana_type></root>

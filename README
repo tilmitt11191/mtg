@@ -5,3 +5,9 @@ command:
 *execut after editting [deckname] and [path] at get_deck_prices.rb
 
 ruby lib/decklists/get_deck_prices.rb
+
+ruby lib/card_operation/get_contents_of_card.rb
+ruby lib/card_operation/get_contents_of_unsearchable_cards.rb
+
+ find ./ -name "*.rb"  | xargs grep "TODO"
+

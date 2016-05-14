@@ -7,14 +7,14 @@ require "../../lib/util/price.rb"
 
 class Card
 	@log
-	@card_type #land,creature,spell,sidboardCard
+	@card_type #land,creature,spell,sidboardCard ##TODO: rename to type
 	@name
 	@quantity
 	@price
 	@value
 	@store_url
 	@generating_mana_type #if name is mountain, set "R"
-	attr_accessor :name, :card_type, :quantity, :price, :value, :store_url
+	attr_accessor :name, :card_type, :quantity, :price, :value, :store_url, :generating_mana_type
 	
 	@manacost #string
 	@manacost_array #array[string]
@@ -103,7 +103,7 @@ class Card
 			@log.error "ERROR at card.read_from_web()"
 			@log.error "get contents of card from http://whisper.wisdom-guild.net/"
 			@log.error "cardname(" + @name.to_s + ") not hit or cannot narrow the target to one."
-			File.open("../../cards/errorlist.txt", "w") do |file|
+			File.open("../../cards/errorlist.txt", "a") do |file|
 				file.puts(@name)
 			end
 			return 1
@@ -281,25 +281,42 @@ class Card
 	end
 
 	def set_generating_mana_type()
-		#Westvale Abbey
-		#{T}: Add {C} to your mana pool.
-		
-		#Mountain
-		#R
+		@log.info "card[" + @name.to_s + "].set_generating_mana_type start."
+		#Mountain =>R
+		#Caves of Koilos =>C|W|B
+		#Westvale Abbey =>C
 		
 		@log.info "set_generating_mana_type(" + @name.to_s + ") start."
 		if @oracle==nil then 
 			@log.info "set_generating_mana_type(" + @name.to_s + ") finished."
 			@log.info "set_generating_mana_type(" + @name.to_s + ") finished.return nil."
-		elsif @oracle =~ /[A-Z]/ then
+
+		elsif @oracle == "W" || @oracle == "U" || @oracle == "B" || @oracle == "R" || @oracle == "G" then #basic land
+			@log.debug "basic land"
 			@generating_mana_type = @oracle
 			@log.info "set_generating_mana_type(" + @name.to_s + ") finished. return +" + @generating_mana_type.to_s + "."
 			return @generating_mana_type
+		
+		#Caves of Koilos
+		#{T}: Add {C} to your mana pool.{T}: Add {W} or {B} to your mana pool. Caves of Koilos deals 1 damage to you.
+		#Westvale Abbey
+		#{T}: Add {C} to your mana pool.{5}, {T}, Pay 1 life: Put a 1/1 white and black Human Cleric creature token onto the battlefield.{5}, {T}, Sacrifice five creatures: Transform Westvale Abbey, then untap it.
+
+		elsif @oracle =~ "Add" then #westvale
+			@log.debug "damage land"
+
+			puts "aaa"
+		
+			@generating_mana_type = "manually"
+			return @generating_mana_type
+		
 		else
+			@log.debug "else"
 			@log.info "Please set manually. set_generating_mana_type(" + @name.to_s + ") finished."
+			@generating_mana_type = "manually"
 			return @generating_mana_type
 		end
-	
+		@log.error "must return before"
 	end
 
 

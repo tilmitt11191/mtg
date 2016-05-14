@@ -1,0 +1,4 @@
+<root><name>Shambling Vent</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>Shambling Vent enters the battlefield tapped.
+{T}: Add {W} or {B} to your mana pool.
+{1}{W}{B}: Shambling Vent becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It&apos;s still a land.</oracle><powertoughness></powertoughness><illustrator>Jung Park</illustrator><rarity>レア</rarity><cardset> 戦乱のゼンディカー (244/274) </cardset><generating_mana_type>manually</generating_mana_type></root>

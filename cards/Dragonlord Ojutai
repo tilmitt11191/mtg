@@ -1,0 +1,4 @@
+<root><name>Dragonlord Ojutai</name><manacost>3WU</manacost><manacost_point>5</manacost_point><type>
+			伝説のクリーチャー — エルダー(Elder)・ドラゴン(Dragon)		</type><oracle>Flying
+Dragonlord Ojutai has hexproof as long as it&apos;s untapped.
+Whenever Dragonlord Ojutai deals combat damage to a player, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.</oracle><powertoughness>5/4</powertoughness><illustrator>Chase Stone</illustrator><rarity>神話レア</rarity><cardset> タルキール龍紀伝 (219/264) </cardset><generating_mana_type>manually</generating_mana_type></root>

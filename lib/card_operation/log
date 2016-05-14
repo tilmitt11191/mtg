@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/base.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/sprite.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/main.css?20141214a" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/jquery.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/jqplot/jqplot.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/ui/theme/jquery-ui.custom.css?20130708" type="text/css">
+<title>ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet：カードデータ - Wisdom Guild</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<META NAME="keywords" CONTENT="Magic,Gathering,MTG,M:TG,card,games,マジック,ギャザリング,カード,ゲーム">
+<META NAME="description" CONTENT="Magic: The Gathering/マジック・ザ・ギャザリング(MTG)の総合情報サイト。カード・データベース（カードリスト、シングルカード価格・値段、新着情報等）を主に提供。">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26053346-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	var DOMAIN = "http://whisper.wisdom-guild.net/";
+	var whisper_autocomplete_url = DOMAIN + "ajax/whisper_autocomplete.php";
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/lib.js"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/utility.js?20140309"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/owl.js?20141212"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/wisdom.js?20140120a"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/whisper.js?20130716c"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/effect.js"></script>
+</head>
+<body>
+<div id="root">
+	<div id="top">
+		<div id="top_background"></div>
+		<div id="top_title"><a href="http://www.wisdom-guild.net/"><img src="http://www.wisdom-guild.net/image/title.png" border="0" alt="Wisdom Guild ホーム"></a></div>
+			<form id="search" action="http://whisper.wisdom-guild.net/search.php" method="GET">
+				<ul id="search-tab">
+					<li target="whisper" class="active"><a href="#">カード</a></li>
+					<li target="mtgwiki"><a href="#">Wiki</a></li>
+					<li target="cr"><a href="#">ルール</a></li>
+					<li target="mfactory"><a href="#">デッキ</a></li>
+				</ul>
+				<input type="text" id="search-box" class="whisper-card-suggest" name="q" value="" nouse="0" selectAfter="redirect" />
+				<input type="submit" value="" id="search-button" />
+			</form>
+
+			<div id="top_link_left">
+				<a href="http://www.wisdom-guild.net">トップページ</a> - 
+				<a href="http://whisper.wisdom-guild.net/">カードデータ</a> | 
+				<a href="http://wonder.wisdom-guild.net/">シングル価格</a> | 
+				<a href="http://whisper.wisdom-guild.net/cr/">総合ルール</a> | 
+			</div>
+			<div id="top_link_right">
+				▼ リンク - 
+				<a href="http://www.astral-guild.net/">Astral Guild</a> | 
+				<a href="http://mtgwiki.com/">MTG Wiki</a> | 
+				<a href="http://www.magic-factory.net/">Magic Factory</a> | 　
+				▼ <small><a href="http://www.wisdom-guild.net/ad/">広告掲載に関するお問い合わせ</a></small>
+			</div>
+		<div id="top_ad"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8099641157632200";
+google_ad_slot = "4855298497";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		<div id="top_msg"></div>
+	</div>
+<div class="wg-whisper-card-title">
+	<h1 class="wg-title bg-blue">ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet</h1>
+	<span class="right">
+					<a href="http://whisper.wisdom-guild.net/search.php?q=Kalitas%2C+Traitor+of+Ghet&redirect=off"><img src="http://www.wisdom-guild.net/image/btn_corejanaiyo.png" border="0"></a>
+		
+			<a href="http://whisper.wisdom-guild.net/random.php"><img src="http://www.wisdom-guild.net/image/btn_randomcard.png" border="0"></a>
+			<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?printed=true&multiverseid=407596" target="_GATHERER"><img src="http://www.wisdom-guild.net/image/btn_gatherer.png" border="0"></a>
+			<a href="http://mtg-jp.com/js/findcard.cgi?name=Kalitas%2C+Traitor+of+Ghet" target="_MTGJP"><img src="http://www.wisdom-guild.net/image/btn_mtgjp.png" border="0"></a>
+	</span>
+</div>
+<div id="main">
+
+	<div id="rightmenu">
+
+		<div class="padding-bottom">
+			<a href="http://ad.owlair.net/click.php?aid=445408296" target="_blank"><img src="http://ad.owlair.net/cache/729056405.gif" border="0" alt=""></a>		</div>
+
+		<div class="padding-bottom">
+			<div class="owl-tip-mtgwiki" q="%E3%82%B2%E3%83%88%E3%81%AE%E8%A3%8F%E5%88%87%E3%82%8A%E8%80%85%E3%80%81%E3%82%AB%E3%83%AA%E3%82%BF%E3%82%B9%2FKalitas%2C+Traitor+of+Ghet"></div>
+		</div>
+
+		<div class="padding-bottom">
+			<a href="http://ad.owlair.net/click.php?aid=1556042322" target="_blank"><img src="http://ad.owlair.net/cache/1526495044.gif" border="0" alt=""></a>		</div>
+
+		<div class="padding-bottom">
+			<a href="http://ad.owlair.net/click.php?aid=1331460295" target="_blank"><img src="http://ad.owlair.net/cache/1956995529.gif" border="0" alt=""></a>		</div>
+
+		<div class="padding-bottom">
+			<a href="http://ad.owlair.net/click.php?aid=1263831479" target="_blank"><img src="http://ad.owlair.net/cache/665042271.gif" border="0" alt=""></a>		</div>
+
+		<div class="padding-bottom">
+			<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8099641157632200";
+google_ad_slot = "4197463380";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>		</div>
+
+		<div class="wg-casing padding-bottom">
+			<h3 class="wg-ac bg-blue"><span>他言語データ</span><span class="right">other language</span></h3>
+<p>データがありません</p>		</div>
+
+
+	</div>
+
+	<div id="contents_noleft">
+		<div class="margin-right">
+
+<div class="wg-menu-bar bg-blue"><ul><li class="cc-card active"><a href="http://whisper.wisdom-guild.net/card/Kalitas%2C+Traitor+of+Ghet/">カードデータ</a></li><li class="cc-oracle"><a href="http://whisper.wisdom-guild.net/oracle/Kalitas%2C+Traitor+of+Ghet/">過去オラクル</a></li><li class="cc-price"><a href="http://wonder.wisdom-guild.net/price/Kalitas%2C+Traitor+of+Ghet/">シングル価格</a></li><li class="cc-graph"><a href="http://wonder.wisdom-guild.net/graph/Kalitas%2C+Traitor+of+Ghet/">価格グラフ</a></li><li class="cc-deck"><a href="http://whisper.wisdom-guild.net/deck/Kalitas%2C+Traitor+of+Ghet/">デッキ</a></li><li class="cc-other"><a href="http://whisper.wisdom-guild.net/link/Kalitas%2C+Traitor+of+Ghet/">その他</a></li></ul></div>
+
+<div class="wg-whisper-card-detail">
+<table>
+	<tr>
+		<th class="dc" style="width:80px;">カード名</th>
+					<td style="width:580px;" class="mc">
+				<b>ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet</b>
+				（げとのうらぎりものかりたす）			</td>
+			</tr>
+
+	
+	<tr>
+		<th class="dc">マナコスト</th>
+					<td class="lc">(２)(黒)(黒)</td>
+			</tr>
+
+	<tr>
+		<th class="dc">タイプ</th>
+				<td class="mc">
+			<a href="http://whisper.wisdom-guild.net/search.php?supertype[]=Legendary">伝説の</a><a href="http://whisper.wisdom-guild.net/search.php?cardtype[]=Creature">クリーチャー</a> &#8212; <a href="http://whisper.wisdom-guild.net/search.php?subtype[]=Vampire">吸血鬼(Vampire)</a>・<a href="http://whisper.wisdom-guild.net/search.php?subtype[]=Warrior">戦士(Warrior)</a>		</td>
+			</tr>
+	<tr>
+
+			<th class="dc">テキスト</th>
+					<td class="lc"><p><a href="http://whisper.wisdom-guild.net/cr/glossary/g_lifelink/">絆魂</a></p>
+<p><a href="http://whisper.wisdom-guild.net/cr/glossary/g_opponent/">対戦相手</a>が<a href="http://whisper.wisdom-guild.net/cr/glossary/g_control/">コントロール</a>する<a href="http://whisper.wisdom-guild.net/cr/glossary/g_token/">トークン</a>でない<a href="http://whisper.wisdom-guild.net/cr/glossary/g_creature/">クリーチャー</a>が１体<a href="http://whisper.wisdom-guild.net/cr/glossary/g_die/">死亡</a>するなら、<a href="http://whisper.wisdom-guild.net/cr/glossary/g_instead/">代わりに</a>その<a href="http://whisper.wisdom-guild.net/cr/glossary/g_card/">カード</a>を<a href="http://whisper.wisdom-guild.net/cr/glossary/g_exile/">追放</a>し、黒の2/2の<a href="http://whisper.wisdom-guild.net/search.php?subtype[]=Zombie">ゾンビ(Zombie)</a>・<a href="http://whisper.wisdom-guild.net/cr/glossary/g_creature/">クリーチャー</a>・<a href="http://whisper.wisdom-guild.net/cr/glossary/g_token/">トークン</a>を１体<a href="http://whisper.wisdom-guild.net/cr/glossary/g_battlefield/">戦場</a>に出す。</p>
+<p>(２)(黒),他の<a href="http://whisper.wisdom-guild.net/search.php?subtype[]=Vampire">吸血鬼(Vampire)</a>か<a href="http://whisper.wisdom-guild.net/search.php?subtype[]=Zombie">ゾンビ</a>を１体生け贄に捧げる：ゲトの裏切り者、カリタスの上に+1/+1<a href="http://whisper.wisdom-guild.net/cr/glossary/g_counter_n/">カウンター</a>を２個置く。</p></td>
+			</tr>
+	<tr>
+		<th class="dc">オラクル</th>
+					<td class="lc"><p>Lifelink</p>
+<p>If a nontoken creature an opponent controls would die, instead exile that card and put a 2/2 black Zombie creature token onto the battlefield.</p>
+<p>{2}{B}, Sacrifice another Vampire or Zombie: Put two +1/+1 counters on Kalitas, Traitor of Ghet.</p></td>
+			</tr>
+
+		<tr>
+		<th class="dc">Ｐ／Ｔ</th>
+					<td class="lc">3/4</td>
+			</tr>
+	
+	
+	<tr>
+		<th class="dc">フレーバ</th>
+					<td class="lc"><i></i></td>
+			</tr>
+
+	
+
+
+	<tr>
+		<th class="dc">イラスト</th>
+					<td class="lc"><a href="/search.php?illus[]=Todd+Lockwood">Todd Lockwood</a></td>
+			</tr>
+		<tr>
+		<th class="dc">セット等</th>
+		<td colspan="1" class="mc">神話レア, ゲートウォッチの誓い (86/184) </td>
+	</tr>
+		</table>
+</div>
+
+
+
+	<div class="padding-vertical">
+
+
+<table width="100%">
+<tr><td id="card_menu">
+	<div class="margin-right">
+
+
+		<div class="wg-leftmenu2 active">
+			<div class="contents">
+				<div class="wg-leftmenu-title"><span>MENU</span></div>
+				<ul>
+					<li><a href="http://whisper.wisdom-guild.net/"><span>トップページ</span></a></li>
+					<li><a href="http://whisper.wisdom-guild.net/cardlist/OathoftheGatewatch/"><span>カードリスト</span></a></li>
+					<li><a href="http://whisper.wisdom-guild.net/cardset/OathoftheGatewatch/"><span>セット情報</span></a></li>
+					<li><a href="http://whisper.wisdom-guild.net/contact/?cname=Kalitas%2C+Traitor+of+Ghet" class="buttonlike"><span>管理者へ連絡</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+<div class="wg-market"><h3>マーケットプレイス</h3><div class="contents"><div class="item"><span class="shop"><a href="http://wonder.wisdom-guild.net/shop.php?id=24001">Amazon.co.jp</a></span> <span class="price">1,980 円</span><div class="statistics">（最安<span class="red">-1610</span>/トリム平均<span class="red">-1880</span>）</div><span class="link"><a href="http://wonder.wisdom-guild.net/link.php?s=24001&t=B01AXE71R2" class="wg-button bg-gray" target="_shop">売り場</a></span></div></div><div class="footer">※送料他が別途かかる場合がありますのでご注意ください。</div></div>	<!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+	<a href="http://developer.yahoo.co.jp/about">
+	<img src="http://i.yimg.jp/images/yjdn/yjdn_attbtn1_125_17.gif" title="Webサービス by Yahoo! JAPAN" alt="Web Services by Yahoo! JAPAN" width="125" height="17" border="0" style="margin:35px 15px 15px 15px"></a>
+	<!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+
+</div>
+</td>
+<td valign="top">
+
+<h2 class="wg-cc bg-yellow"><span class="title">ショップ価格</span><span class="caption">shop price</span><span class="right"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://whisper.wisdom-guild.net/card/Kalitas%2C+Traitor+of+Ghet/" data-text="ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet：カードデータ" data-related="WisdomGuild,leon_wg" data-lang="ja">Tweet</a></span>
+</h2><table width="100%"><tr><td>	<div class="wg-wonder-price-summary margin-right">
+		<div class="contents">
+			<big>最安：<b>3,590</b> 円</big>／トリム平均：<b>3,860</b> 円<div class="right">（参考：<b>570</b>～<b>4,500</b> 円）有効データ数：21 件</div>		</div>
+	</div>
+</td><td width="125px"><a href="http://wonder.wisdom-guild.net/price/Kalitas%2C+Traitor+of+Ghet/" class="wg-button bg-blue-lc">もっと見る</a></tr></table><div class="wg-wonder-price-table wg-whisper-price-table margin-vertical"><div class="contents"><table class="table-main"><thead><tr><th width="186">ショップ</th><th width="68">値段</th><th width="50">セット</th><th width="42">言語</th><th width="36">在庫</th><th width="54" colspan="2">状態</th><th width="48">リンク</th></tr></thead><tbody><tr class="col2"><td class="center"><a href="http://wonder.wisdom-guild.net/shop/110928321/">MTG販売処 庵</a></td><td class="right"><strong>3,590</strong> 円</td><td class="center">OGW</td><td class="center">JPN</td><td class="right">1 枚</td><td class="center"></td><td class="center"></td><td class="center"><a href="http://wonder.wisdom-guild.net/link.php?s=110928321&t=198845641" class="wg-button" target="_shop">売り場</a></td></tr><tr class="col2"><td class="center"><a href="http://wonder.wisdom-guild.net/shop/95012314/">トレトク</a></td><td class="right"><strong>3,600</strong> 円</td><td class="center">OGW</td><td class="center">JPN</td><td class="right">1 枚</td><td class="center"></td><td class="center">NM</td><td class="center"><a href="http://wonder.wisdom-guild.net/link.php?s=95012314&t=1026971628" class="wg-button" target="_shop">売り場</a></td></tr><tr class="col2"><td class="center"><a href="http://wonder.wisdom-guild.net/shop/12093201/">カードショップあなーば</a></td><td class="right"><strong>3,630</strong> 円</td><td class="center">OGW</td><td class="center">JPN</td><td class="right">1 枚</td><td class="center"></td><td class="center"></td><td class="center"><a href="http://wonder.wisdom-guild.net/link.php?s=12093201&t=1422189009" class="wg-button" target="_shop">売り場</a></td></tr></tbody></table></div></div><div class="right margin-vertical"><a href="http://wonder.wisdom-guild.net/contact/">掲載を希望されるショップ様への御案内</a> / <a href="http://wonder.wisdom-guild.net/price/Kalitas%2C+Traitor+of+Ghet/#disclaimer">免責事項</a></div>			<h2 class="wg-cc bg-orange"><span class="title">オークション価格</span><span class="caption">auction price</span></h2>
+<table width="100%"><tr><td>								<table class="wg-statistics wg-wonder-price-statistics">
+									<thead>
+									<tr>
+										<th width="44">-</th>
+										<th width="62">最小</th>
+										<th width="62">ピーク</th>
+										<th width="62">平均</th>
+										<th width="62">最大</th>
+										<th width="40">落札</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr><th><span class="line">１週間</span></th><td class="right"><span class="line">2,800 円</span></td><td class="right"><span class="line">3,183 円</span></td><td class="right"><span class="line">4,564 円</span></td><td class="right"><span class="line">8,850 円</span></td><td class="center"><span class="line">19</span></td></tr><tr><th><span class="line">１ヶ月</span></th><td class="right"><span class="line">1,950 円</span></td><td class="right"><span class="line">2,940 円</span></td><td class="right"><span class="line">3,999 円</span></td><td class="right"><span class="line">13,000 円</span></td><td class="center"><span class="line">62</span></td></tr><tr><th><span class="line">３ヶ月</span></th><td class="right"><span class="line">1,000 円</span></td><td class="right"><span class="line">1,877 円</span></td><td class="right"><span class="line">3,039 円</span></td><td class="right"><span class="line">13,000 円</span></td><td class="center"><span class="line">209</span></td></tr>									</tbody>
+								</table>
+</td><td width="125px"><a href="http://wonder.wisdom-guild.net/price/Kalitas%2C+Traitor+of+Ghet/?view=auction_close" class="wg-button bg-blue-lc">もっと見る</a></td></tr></table><div class="wg-wonder-price-table wg-whisper-price-table margin-vertical"><div class="contents"><table class="table-main"><thead><tr><th width="100">現在価格</th><th width="100">即決</th><th width="100">入札</th><th width="168" colspan="2">終了</th></tr></thead><tbody><tr class="col2"><td class="center">ヤフオク!</td><td colspan="4"><a href="http://wonder.wisdom-guild.net/link.php?s=1001&t=e186534038" target="_blank">MTG OGW ゲトの裏切り者、カリタス その2</a></td></tr><tr class="col1"><td class="right"><strong>110</strong> 円</td><td class="right"></td><td class="center"><strong>2</strong></td><td class="center small">16/05/18 09:52</td><td class="center small"><span class="until">(残り3日15時間)</span></td></tr><tr class="col2"><td class="center">ヤフオク!</td><td colspan="4"><a href="http://wonder.wisdom-guild.net/link.php?s=1001&t=m163242619" target="_blank">MTG OGW ゲトの裏切り者、カリタス</a></td></tr><tr class="col1"><td class="right"><strong>160</strong> 円</td><td class="right"></td><td class="center"><strong>2</strong></td><td class="center small">16/05/18 09:50</td><td class="center small"><span class="until">(残り3日14時間)</span></td></tr><tr class="col2"><td class="center">ヤフオク!</td><td colspan="4"><a href="http://wonder.wisdom-guild.net/link.php?s=1001&t=f178249623" target="_blank">ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet 日版6枚迄</a></td></tr><tr class="col1"><td class="right"><strong>2,000</strong> 円</td><td class="right"></td><td class="center"><strong>21</strong></td><td class="center small">16/05/15 23:22</td><td class="center small"><span class="until">(残り1日4時間)</span></td></tr></tbody></table></div></div><div class="right margin-vertical"><a href="http://wonder.wisdom-guild.net/search.php?mode=auction&title=%22Kalitas%2C+Traitor+of+Ghet%22+%7C%7C+%22%E3%82%B2%E3%83%88%E3%81%AE%E8%A3%8F%E5%88%87%E3%82%8A%E8%80%85%E3%80%81%E3%82%AB%E3%83%AA%E3%82%BF%E3%82%B9%22">オークションから全文検索</a> / <a href="http://wonder.wisdom-guild.net/price/Kalitas%2C+Traitor+of+Ghet/#disclaimer">免責事項</a></div><h2 class="wg-lc bg-purple">統計情報</h2><table width="100%"><tr><th>カード検索ランキング</th><td>45位</td><td>（前週：29位）</td><td>過去１年の最高：4位</td></tr><tr><th>価格注目ランキング</th><td>2位</td><td>（前週：2位）</td><td>過去１年の最高：1位</td></tr></table><h2 class="wg-lc bg-red">禁止・制限情報</h2><ul class="small"><li>このカードは<span class="blue"><b>スタンダードで使用可能</b></span>です。</li><li>このカードは<span class="blue"><b>モダンで使用可能</b></span>です。</li><li>このカードは<span class="blue"><b>レガシーで使用可能</b></span>です。</li><li>このカードは<span class="blue"><b>ヴィンテージで使用可能</b></span>です。</li></ul><p style="font-size:0.8em;line-height:1.2em;"><small>　この禁止・制限情報は、Wizards of the Coast社のウェブサイト（<a href="http://www.wizards.com/default.asp?x=judge/resources/sfrstandard">スタンダード</a>, <a href="http://www.wizards.com/default.asp?x=judge/resources/sfrextended">エクステンデッド</a>, <a href="http://www.wizards.com/default.asp?x=judge/resources/sfrlegacy">レガシー</a>, <a href="http://www.wizards.com/default.asp?x=judge/resources/sfrvintage">ヴィンテージ</a>, <a href="http://www.wizards.com/default.asp?x=judge/resources/sfrblock">ブロック構築</a>）の情報を元に自動生成されたものです。Wizards of the Coast社のウェブサイトの仕様が変わった場合、正常に取得できていない可能性があります。トーナメント参加の際は、Wizards of the Coast社のウェブサイトで直接確認されることをお勧めいたします。</small></p>		<ul class="small">
+			<li>
+				カードタイトル・テキスト
+				<a href="http://www.wizards.com/">Wizards of the Coast</a>
+			</li>
+			<li>
+				未訳カードタイトルおよびテキストの日本語訳
+				<a href="http://www.wisdom-guild.net/">Wisdom Guild</a>
+			</li>
+			<li>
+				IA,FE,DKのフレーバー・テキストの日本語訳
+				<a href="http://www11.ocn.ne.jp/~uncov/">あんかば</a>
+			</li>
+			<li>
+				協力
+				<a href="http://www11.ocn.ne.jp/~uncov/">あんかば</a>,
+				他多数の方々
+			</li>
+		</ul>
+<div class="right">データ最終更新：2016/01/13(水) 15:27:12</div></td></tr>
+</table>
+</div>
+		</div>
+	</div>
+</div>
+	<div id="bottom">
+		<div id="copyrights">
+				&copy; 1999-2016 <a href="http://www.wisdom-guild.net">Wisdom Guild</a>, OWLAIR networks, All rights reserved.
+		</div>
+		<a href="http://www.wisdom-guild.net/contact/">管理者連絡先</a> | <a href="http://www.wisdom-guild.net/welcome/rights.php">権利表記</a>
+		（実行時間：86.538 ミリ秒）	</div>
+</div>
+</body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/base.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/sprite.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/css/main.css?20141214a" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/jquery.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/jqplot/jqplot.css" type="text/css">
+<link rel="Stylesheet" href="http://www.wisdom-guild.net/lib/jquery/ui/theme/jquery-ui.custom.css?20130708" type="text/css">
+<link rel="Stylesheet" href="/extend.css" type="text/css">
+<title>Wisdom Guild</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<META NAME="keywords" CONTENT="Magic,Gathering,MTG,M:TG,card,games,マジック,ギャザリング,カード,ゲーム">
+<META NAME="description" CONTENT="Magic: The Gathering/マジック・ザ・ギャザリング(MTG)の総合情報サイト。カード・データベース（カードリスト、シングルカード価格・値段、新着情報等）を主に提供。">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26053346-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	var DOMAIN = "http://whisper.wisdom-guild.net/";
+	var whisper_autocomplete_url = DOMAIN + "ajax/whisper_autocomplete.php";
+</script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/lib.js"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/utility.js?20140309"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/owl.js?20141212"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/wisdom.js?20140120a"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/whisper.js?20130716c"></script>
+<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/effect.js"></script>
+</head>
+<body>
+<div id="root">
+	<div id="top">
+		<div id="top_background"></div>
+		<div id="top_title"><a href="http://www.wisdom-guild.net/"><img src="http://www.wisdom-guild.net/image/title.png" border="0" alt="Wisdom Guild ホーム"></a></div>
+			<form id="search" action="http://whisper.wisdom-guild.net/search.php" method="GET">
+				<ul id="search-tab">
+					<li target="whisper" class="active"><a href="#">カード</a></li>
+					<li target="mtgwiki"><a href="#">Wiki</a></li>
+					<li target="cr"><a href="#">ルール</a></li>
+					<li target="mfactory"><a href="#">デッキ</a></li>
+				</ul>
+				<input type="text" id="search-box" class="whisper-card-suggest" name="q" value="plains" nouse="0" selectAfter="redirect" />
+				<input type="submit" value="" id="search-button" />
+			</form>
+
+			<div id="top_link_left">
+				<a href="http://www.wisdom-guild.net">トップページ</a> - 
+				<a href="http://whisper.wisdom-guild.net/">カードデータ</a> | 
+				<a href="http://wonder.wisdom-guild.net/">シングル価格</a> | 
+				<a href="http://whisper.wisdom-guild.net/cr/">総合ルール</a> | 
+			</div>
+			<div id="top_link_right">
+				▼ リンク - 
+				<a href="http://www.astral-guild.net/">Astral Guild</a> | 
+				<a href="http://mtgwiki.com/">MTG Wiki</a> | 
+				<a href="http://www.magic-factory.net/">Magic Factory</a> | 　
+				▼ <small><a href="http://www.wisdom-guild.net/ad/">広告掲載に関するお問い合わせ</a></small>
+			</div>
+		<div id="top_ad"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8099641157632200";
+google_ad_slot = "4855298497";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		<div id="top_msg"></div>
+	</div>
+<div class="message"><big><b>検索式：</b></big> カード名に<b>plains</b>を含む</div><h1> 3 件のカードがヒットしました.</h1><div id="whisper-search-result-exectime"><b>3</b> 件中、<b>1</b> - <b>3</b> 件目を表示（検索時間：<b>3.524 ミリ秒</b>）</div><div id="whisper-search-result-doyoumean" ref="q=plains"></div>	<script type="text/javascript" src="http://www.wisdom-guild.net/lib/jquery/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/main.js?20140309"></script>
+	<div id="main">
+		<div id="leftmenu">
+			<a href="/?q=plains" class="whisper-link-url">戻る</a><a href="/search.php?q=plains" class="whisper-link-url">リンク用ＵＲＬ</a><div class="owl-html-selecter wg-left-selecter bg-blue muses-result-left"><h4><span class="wg-iconed-circle">フィルター</span></h4><ul><li><b>すべてのカードを表示</b></li><li><a href="/search.php?format=vintage&q=plains">ヴィンテージ</a></li><li><a href="/search.php?format=legacy&q=plains">レガシー</a></li><li><a href="/search.php?format=modern&q=plains">モダン</a></li><li><a href="/search.php?format=extended&q=plains">エクステンデッド</a></li><li><a href="/search.php?format=standard&q=plains">スタンダード</a></li></ul><ul><li><b>すべてのカードを表示</b></li><li><a href="/search.php?exclude=banned&q=plains">禁止カードを除く</a></li><li><a href="/search.php?exclude=restricted&q=plains">制限カードを除く</a></li></ul><ul><li><b>同カード名はまとめる</b></li><li><a href="/search.php?display=reprint&q=plains">収録セット違いも表示</a></li><li><a href="/search.php?display=version&q=plains">バージョン違いも表示</a></li></ul><h4><span class="wg-iconed-circle">ソート</span></h4><ul>
+<li><a href="/search.php?sort=frequency&q=plains">よく検索されている順番</a></li>
+<li><a href="/search.php?sort=frequency&sort_op=desc&q=plains">あまり検索されていない順番</a></li>
+</ul>
+<ul>
+<li><b>アルファベット順</b></li>
+<li><a href="/search.php?sort_op=desc&q=plains">アルファベット逆順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=ja_yomi&q=plains">日本語読み順</a></li>
+<li><a href="/search.php?sort=ja_yomi&sort_op=desc&q=plains">日本語読み逆順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=ja_jis&q=plains">ＪＩＳ順</a></li>
+<li><a href="/search.php?sort=ja_jis&sort_op=desc&q=plains">ＪＩＳ逆順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=assort&q=plains">カードリスト風</a></li>
+<li><a href="/search.php?sort=assort&sort_op=desc&q=plains">カードリスト風（逆）</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=set&q=plains">カードセットが新しい順</a></li>
+<li><a href="/search.php?sort=set&sort_op=desc&q=plains">カードセットが古い順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=eidcid&q=plains">コレクター番号順</a></li>
+<li><a href="/search.php?sort=eidcid&sort_op=desc&q=plains">コレクター番号逆順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=manacost&q=plains">点数で見たマナ・コストが小</a></li>
+<li><a href="/search.php?sort=manacost&sort_op=desc&q=plains">点数で見たマナ・コストが大</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=power&q=plains">パワーが小さい順</a></li>
+<li><a href="/search.php?sort=power&sort_op=desc&q=plains">パワーが大きい順</a></li>
+</ul>
+<ul>
+<li><a href="/search.php?sort=toughness&q=plains">タフネスが小さい順</a></li>
+<li><a href="/search.php?sort=toughness&sort_op=desc&q=plains">タフネスが大きい順</a></li>
+</ul>
+</div>		</div>
+
+
+		<div id="rightmenu">
+			<a href="http://ad.owlair.net/click.php?aid=1903132425" target="_blank"><img src="http://ad.owlair.net/cache/729056405.gif" border="0" alt=""></a>			<div class="padding-vertical">
+				<div class="owl-tip-mtgwiki" q="plains"></div>
+			</div>
+			<div class="padding-vertical">
+				<a href="http://ad.owlair.net/click.php?aid=187729846" target="_blank"><img src="http://ad.owlair.net/cache/1526495044.gif" border="0" alt=""></a>			</div>
+			<div class="padding-vertical">
+				<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8099641157632200";
+google_ad_slot = "4197463380";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>			</div>
+		</div>
+
+		<div id="contents">
+<div class="owl_pager"><ul class="owl_pager" style="float:right"><li class="now"><a href="search.php?q=plains&page=1">1</a></li></ul></div><div class="card">
+   	<b><a href="http://whisper.wisdom-guild.net/card/Mistveil+Plains/">霧覆いの平地/Mistveil Plains</a></b>
+			　	<div>土地 ― 平地(Plains)　SHM, アンコモン</div>
+		<p><small>（(Ｔ)：あなたのマナ・プールに(白)を加える。）</small></p>
+<p>霧覆いの平地はタップ状態で戦場に出る。</p>
+<p>(白),(Ｔ)：あなたの墓地にあるカード１枚を対象とし、それをあなたのライブラリーの一番下に置く。この能力は、あなたが白のパーマネントを２つ以上コントロールしている場合にのみ起動できる。</p>				<div>Illus.Rob Alexander (275/301)</div>
+   </div>
+<div class="card">
+   	<b><a href="http://whisper.wisdom-guild.net/card/Plains/">平地/Plains</a></b>
+			　	<div>基本土地 ― 平地(Plains)　SOI, 基本土地</div>
+		<p>(白)</p>				<div>Illus.Jonas De Ro (283/297)</div>
+   </div>
+<div class="card">
+   	<b><a href="http://whisper.wisdom-guild.net/card/Snow-Covered+Plains/">冠雪の平地/Snow-Covered Plains</a></b>
+			　	<div>基本氷雪土地 ― 平地(Plains)　CSP, コモン</div>
+		<p>(白)</p>				<div>Illus.Mark Romanoski (151/155)</div>
+   </div>
+<div class="owl_pager"><ul class="owl_pager" style="float:right"><li class="now"><a href="search.php?q=plains&page=1">1</a></li></ul></div>		</div>
+	</div>
+	<div id="bottom">
+		<div id="copyrights">
+				&copy; 1999-2016 <a href="http://www.wisdom-guild.net">Wisdom Guild</a>, OWLAIR networks, All rights reserved.
+		</div>
+		<a href="http://www.wisdom-guild.net/contact/">管理者連絡先</a> | <a href="http://www.wisdom-guild.net/welcome/rights.php">権利表記</a>
+		（実行時間：48.161 ミリ秒）	</div>
+</div>
+</body>
+</html>

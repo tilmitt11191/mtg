@@ -90,7 +90,7 @@ class Hareruya < Store
 	end
 	
 	
-	def create_card_list(deck)
+	def create_card_list(deck) #TODO: rename to create_cardlist_with_price
 		@log.debug "Hareruya.create_card_list start"
 		deck.cards = []
 		@log.debug "open[" + deck.path + "]"
@@ -194,7 +194,78 @@ class Hareruya < Store
 		#deck.cards.push("Kalitas, Traitor of Ghet")
 		#deck.cards.push("Ob Nixilis Reignited")
 	end
+	
+	def create_card_list_simple(deck)
+		#english name,num
+		@log.debug "Hareruya.create_card_list_simple start."
+		deck.cards = []
+		@log.debug "open[" + deck.path + "]"
+		@deck_row_data = open(deck.path)
+		
+		quantity_list=[] #Array of card quantity
+		card_type="land"
+		deck.quantity_of_mainboard_cards = 0
+		deck.quantity_of_lands = 0
+		@deck_row_data.each_line do |line|
+			if line.include?('Lands</h3>') then
+				card_type = "creature"
+				deck.quantity_of_creatures = 0
+			end
+			if line.include?('Creatures</h3>') then
+				card_type = "spell"
+				deck.quantity_of_spells = 0
+			end
+			if line.include?('Spells</h3>') then
+				card_type = "sideboardCards"
+				deck.quantity_of_sideboard_cards = 0
+			end
+			
+			#extract quantity
+			if line.include?('decksNumber') then
+				quantity = Nokogiri::HTML.parse(line, nil, @charset).text
+				quantity.chomp!
+				quantity_list.push quantity
+				
+				case card_type
+				when "land"
+					deck.quantity_of_mainboard_cards += quantity.to_i
+					deck.quantity_of_lands += quantity.to_i
+					#puts "quantity_of_lands " + deck.quantity_of_lands.to_s
+				when "creature"
+					deck.quantity_of_mainboard_cards += quantity.to_i
+					deck.quantity_of_creatures +=quantity.to_i
+					#puts "quantity_of_creatures " + deck.quantity_of_creatures.to_s
+				when "spell"
+					deck.quantity_of_mainboard_cards += quantity.to_i
+					deck.quantity_of_spells +=quantity.to_i
+					#puts "quantity_of_spells " + deck.quantity_of_spells.to_s
+				when "sideboardCards"
+					deck.quantity_of_sideboard_cards += quantity.to_i
+					#puts "quantity_of_sideboard_cards " + deck.quantity_of_sideboard_cards.to_s
+				else
+					@log.error "invalid card_type at extract quantity"
+				end
+			end
 
+			#extract card_name and url
+			if line.include?('data-goods') then
+				card_name = Nokogiri::HTML.parse(line, nil, @charset).text
+				card_name.chomp!
+				card_name=extract_english_card_name(card_name)
+				card = Card.new(card_name)
+				#card.store_url = url
+				card.card_type = card_type
+				deck.cards.push(card)
+			end
+		end
+		
+		for i in 0..deck.cards.size-1
+			deck.cards[i].quantity = quantity_list[i]
+		end
+
+
+		@log.debug "Hareruya.create_card_list_simple finished."
+	end
 end
 
 class MagicOnline < Store
