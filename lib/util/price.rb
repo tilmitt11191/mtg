@@ -40,12 +40,22 @@ class Price
 	
 	def to_s
 		@log.debug "price.to_s"
-		@value.to_s
+		if @value.nil? then
+			@log.error "price.to_i = nil. return nil."
+			"nil"
+		else
+			@value.to_s
+		end
 	end
 
 	def to_i
 		@log.debug "price.to_i"
-		@value.to_i
+		if @value.nil? then
+			@log.error "price.to_i = nil. return 0."
+			0
+		else
+			@value.to_i
+		end
 	end
 
 end

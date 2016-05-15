@@ -302,13 +302,13 @@ class Card
 		#Westvale Abbey
 		#{T}: Add {C} to your mana pool.{5}, {T}, Pay 1 life: Put a 1/1 white and black Human Cleric creature token onto the battlefield.{5}, {T}, Sacrifice five creatures: Transform Westvale Abbey, then untap it.
 
-		elsif @oracle =~ "Add" then #westvale
-			@log.debug "damage land"
+		#elsif @oracle =~ "Add" then #westvale
+		#	@log.debug "damage land"
 
-			puts "aaa"
+		#	puts "aaa"
 		
-			@generating_mana_type = "manually"
-			return @generating_mana_type
+		#	@generating_mana_type = "manually"
+		#	return @generating_mana_type
 		
 		else
 			@log.debug "else"
