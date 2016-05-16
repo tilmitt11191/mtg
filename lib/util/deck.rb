@@ -21,6 +21,7 @@ class Deck
 	attr_accessor :date, :path, :date, :store
 
 	#quantity of each card type.
+	@quantity_of_all
 	@quantity_of_lands
 	@quantity_of_creatures
 	@quantity_of_spells
@@ -43,7 +44,7 @@ class Deck
 		list_type, \
 		path)
 		## list_type is storename or file etc...
-		@log = Logger.new("../log")
+		@log = Logger.new("../../log")
 		@log.info "Deck initialize"
 		@log.debug "set deck name[" + deckname + "]"
 		@deckname = deckname
@@ -117,8 +118,8 @@ class Deck
 		#puts cards[0].name
 		#form = "name"
 		#puts cards[0].instance_eval "print #{form}" # == puts cards[0].name
-
-		if mode == "card_only" then
+		case mode
+		when "card_only" then
 			@log.debug "start writing. mode is card_only."
 			File.open(filename, "w:sjis") do |file|
 				@cards.each do |card|
@@ -133,7 +134,7 @@ class Deck
 					file.print "\n"
 				end	
 			end
-		elsif mode == "with_info" then
+		when "with_info" then
 			@log.debug "start writing. mode is with_info."
 			File.open(filename, "w:sjis") do |file|
 				set_information
@@ -171,8 +172,10 @@ class Deck
 				file.puts "info," + @quantity_of_sideboard_cards.to_s + " SideboardCards " + @price_of_sideboard_cards.to_s
 				file.puts "info," + @path
 			end
+		else
+			@log.error "mode error"
+			puts "mode error"
 		end
-
 	end
 
 	def create_deckfile_full(filename)
@@ -246,7 +249,7 @@ class Deck
 			end
 			
 			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
-				card_name=reconvert_period(cardname)
+				cardname=reconvert_period(cardname)
 				card = Card.new(cardname.to_s)
 				card.quantity = quantity
 				card.store_url = store_url
@@ -298,7 +301,21 @@ class Deck
 	
 	def set_information #from this.cards
 		#set quantity_of_*** and price_of_***
-		@log.info "get_information start."
+		@log.info "set_information start."
+
+		#initialize
+		@quantity_of_lands = 0
+		@quantity_of_creatures = 0
+		@quantity_of_spells = 0
+		@quantity_of_mainboard_cards = 0
+		@quantity_of_sideboard_cards = 0
+		@quantity_of_all = 0
+		@price_of_lands = 0
+		@price_of_creatures = 0
+		@price_of_spells = 0
+		@price_of_mainboard_cards = 0
+		@price_of_sideboard_cards = 0
+		@price_of_all = 0
 
 		@cards.each do |card|
 			@log.debug "card.card_type = " + card.card_type.to_s
@@ -306,6 +323,7 @@ class Deck
 			if card.card_type.to_s == "land"
 			@quantity_of_lands += card.quantity.to_i
 			@quantity_of_mainboard_cards += card.quantity.to_i
+			@quantity_of_all += card.quantity.to_i
 			@price_of_lands += card.price.to_i * card.quantity.to_i
 			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
 			@price_of_all += card.price.to_i * card.quantity.to_i
@@ -313,6 +331,7 @@ class Deck
 			elsif card.card_type.to_s == "creature"
 			@quantity_of_creatures += card.quantity.to_i
 			@quantity_of_mainboard_cards += card.quantity.to_i
+			@quantity_of_all += card.quantity.to_i
 			@price_of_creatures += card.price.to_i * card.quantity.to_i
 			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
 			@price_of_all += card.price.to_i * card.quantity.to_i
@@ -320,12 +339,14 @@ class Deck
 			elsif card.card_type.to_s == "spell"
 			@quantity_of_spells += card.quantity.to_i
 			@quantity_of_mainboard_cards += card.quantity.to_i
+			@quantity_of_all += card.quantity.to_i
 			@price_of_spells += card.price.to_i * card.quantity.to_i			
 			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
 			@price_of_all += card.price.to_i * card.quantity.to_i
 
 			elsif card.card_type.to_s == "sideboardCards"
 			@quantity_of_sideboard_cards += card.quantity.to_i
+			@quantity_of_all += card.quantity.to_i
 			@price_of_sideboard_cards += card.price.to_i * card.quantity.to_i			
 			@price_of_all += card.price.to_i * card.quantity.to_i
 			end

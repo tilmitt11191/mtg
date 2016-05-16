@@ -11,3 +11,4 @@ ruby lib/card_operation/get_contents_of_unsearchable_cards.rb
 
  find ./ -name "*.rb"  | xargs grep "TODO"
 
+execute at mtg/***/***/

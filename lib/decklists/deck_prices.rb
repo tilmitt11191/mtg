@@ -12,7 +12,7 @@ class Deck_prices
 	@paths #array of str
 	
 	def initialize()
-		@log = Logger.new("../log")
+		@log = Logger.new("../../log")
 		@log.info "Deck_prices initialize"
 		
 		@decknames = []
@@ -46,7 +46,7 @@ class Deck_prices
 		@log.debug "Deck_prices write(" + filename.to_s + ")"
 		File.open(filename, "w:sjis") do |file|
 			for i in 0..@decknames.size-1 do
-				file.print @decknames[i].to_s + "," + @prices[i].to_s + "," + @dates[i].to_s + "," + @paths[i].to_s + "\n"
+				file.puts @decknames[i].to_s + "," + @prices[i].to_s + "," + @dates[i].to_s + "," + @paths[i].to_s
 			end
 		end
 	end

@@ -4,7 +4,7 @@
 require "logger"
 require '../util/card.rb'
 
-log = Logger.new("../log", 5, 10 * 1024 * 1024)
+log = Logger.new("../../log", 5, 10 * 1024 * 1024)
 log.info "get_contents_of_card.rb start"
 
 #kalitas = Card.new("Kalitas, Traitor of Ghet")

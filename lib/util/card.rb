@@ -7,7 +7,7 @@ require "../../lib/util/price.rb"
 
 class Card
 	@log
-	@card_type #land,creature,spell,sidboardCard ##TODO: rename to type
+	@card_type #land,creature,spell,sideboardCards ##TODO: rename to type
 	@name
 	@quantity
 	@price
@@ -19,7 +19,7 @@ class Card
 	@manacost #string
 	@manacost_array #array[string]
 	@manacost_point #点数で見たマナコスト
-	@type
+	@type ##TODO: rename to ...
 	@oracle
 	@powertoughness
 	@illustrator
@@ -28,7 +28,7 @@ class Card
 	attr_accessor :manacost, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
 	
 	def initialize(name)
-		@log = Logger.new("../log")
+		@log = Logger.new("../../log")
 		@log.info "Card.initialize"
 		@name = name
 		@price = Price.new(self)

@@ -4,6 +4,7 @@ require	"logger"
 require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/card.rb'
+require '../../lib/util/util.rb'
 
 class Store
 	@log
@@ -20,7 +21,7 @@ class Store
 	attr_accessor :store_name
 	
 	def initialize(store_name)
-		@log = Logger.new("../log")
+		@log = Logger.new("../../log")
 		@log.info "Store.initialize(" + store_name + ")"
 		@store_name = store_name
 	end
@@ -89,8 +90,14 @@ class Hareruya < Store
 		##to Caves of Koilos
 	end
 	
+	def convert_all_cardname_from_jp_to_eng(deck)
+		@log.info "hareruya.convert_all_cardname_from_jp_to_eng(" + deck.deckname.to_s + ") start."
+		deck.cards.each do |card|
+			card.name = extract_english_card_name(card.name)
+		end
+	end
 	
-	def create_card_list(deck) #TODO: rename to create_cardlist_with_price
+	def create_card_list(deck) #TODO: rename to create_cardlist_with_price_from_web
 		@log.debug "Hareruya.create_card_list start"
 		deck.cards = []
 		@log.debug "open[" + deck.path + "]"
@@ -149,7 +156,6 @@ class Hareruya < Store
 			if line.include?('data-goods') then
 				card_name = Nokogiri::HTML.parse(line, nil, @charset).text
 				card_name.chomp!
-				card_name.gsub!(",","")
 				url = "http://www.hareruyamtg.com" + line.split("\"")[1]
 				card = Card.new(card_name)
 				card.store_url = url
@@ -274,7 +280,20 @@ class MagicOnline < Store
 		@url = ""
 	end
 	
-	def create_card_list(deck)
+	def create_card_list(deck, filename)
+		@log.info "MagicOnline.create_card_list start."
+		@log.debug "convert " + deck.deckname.to_s + " and save to " + filename.to_s
+		 File.open(filename, "w:sjis") do |file|
+		 	previous_card_type = "nil"
+			deck.cards.each do |card|
+				if previous_card_type == "nil" and card.card_type == "sideboardCards" then
+					file.print "\n\n"
+					previous_card_type = "sideboardCards"
+				end
+				file.puts card.quantity.to_s + " " + card.name.to_s
+			end
+		end
 	end
+	
 
 end

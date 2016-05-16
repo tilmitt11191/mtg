@@ -14,7 +14,7 @@ class Price
 	attr_accessor :value, :date
 
 	def initialize(card)
-		@log = Logger.new("../log")
+		@log = Logger.new("../../log")
 		@log.info "price of " + card.name + " initialize"
 		@card = card
 		@value = nil
@@ -39,7 +39,7 @@ class Price
 	end
 	
 	def to_s
-		@log.debug "price.to_s"
+		#@log.debug "price.to_s"
 		if @value.nil? then
 			@log.error "price.to_i = nil. return nil."
 			"nil"
@@ -49,7 +49,7 @@ class Price
 	end
 
 	def to_i
-		@log.debug "price.to_i"
+		#@log.debug "price.to_i"
 		if @value.nil? then
 			@log.error "price.to_i = nil. return 0."
 			0

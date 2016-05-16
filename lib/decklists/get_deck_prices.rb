@@ -7,7 +7,7 @@ deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD09283S/
 deck.create_cardlist
 deck.calc_price_of_each_card_type
 deck.calculate_price
-deck.create_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,price,store_url,price.date,generating_mana_type", "full")
+deck.create_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,price,store_url,price.date,generating_mana_type", "with_info")
 
 
 deck_prices = Deck_prices.new()
