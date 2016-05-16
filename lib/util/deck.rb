@@ -14,8 +14,8 @@ class Deck
 	@price #Class Price. deck_price. deck_list[:cardname]*cards.price
 	attr_accessor :deckname, :cards, :deck_list, :price
 
-	@list_type
-	@path #url+name or dir+name
+	@list_type #file or hareruya or...
+	@path #dir+name or url+name or...
 	@date
 	@store
 	attr_accessor :date, :path, :date, :store
@@ -68,41 +68,66 @@ class Deck
 		@price_of_sideboard_cards = 0
 	end
 	
-	def create_cardlist #TODO: rename to create_cardlist_with_price
-		@log.debug "Deck[" + @deckname + "] create_cardlist() start"
-		case @list_type
-		when "hareruya" then
-			@log.debug "create from hareruya webpage[" + @path + "]"
-			@store = Hareruya.new()
-			@store.create_card_list(self)
-		else
-			@log.error "Deck.create_cardlist(invalid list_type)"
-			@log.error "list_type is " + @list_type
+	
+	
+	def view_deck_list #TODO: view_deck_list(format)
+		#card_type,card_name,quantity,price
+		@log.debug "Deck[" + @deckname + "] view_deck_list start"
+		@cards.each do |card|
+			print card.card_type.to_s + "," + card.name.to_s + "," + card.quantity.to_s + "," + card.price.to_s + "," + card.store_url.to_s + "," + card.price.date.to_s + "\n"
 		end
+		@log.debug "Deck[" + @deckname + "] view_deck_list finished"
 	end
 	
-	def create_cardlist_simple
-		#english name,num
-		@log.debug "Deck[" + @deckname + "] create_cardlist_simple() start"
+	
+	
+	def create_cardlist(create_mode)
+	#create @cards
+	#the options of "create_mode" are depend on the creator.
+	#For example, when deck.list_type is "hareruya" and created by hareruya,
+	#if create_mode is "full", the contents of each card are
+	#card_type,name,quantity,price,store_url,price.date,
+	#and if create_mode is "except_price", the contents of each card are
+	#card_type,name,quantity,store_url,
+	#and if create_mode is "from_file", the contents are depend on the file(deck.path).
+	#Please read the creator's comments.
+		@log.debug "Deck[" + @deckname + "] create_cardlist() start."
 		case @list_type
 		when "hareruya" then
-			@log.debug "create from hareruya webpage[" + @path + "]"
+			@log.debug "create cardlist by hareruya."
+			@log.debug "create_mode[" + create_mode.to_s + "], path[" + @path.to_s + "]"
 			@store = Hareruya.new()
-			@store.create_card_list_simple(self)
+			@store.create_card_list(self, create_mode)
 		else
 			@log.error "Deck.create_cardlist(invalid list_type)"
 			@log.error "list_type is " + @list_type
 		end
+		@log.debug "Deck[" + @deckname + "] create_cardlist() finished."
 	end
+	
+
 	
 	def create_deckfile(filename, format, mode)
+	#create filename.csv.
+	#info	BG_ControlkD08241S 36850					
+	#land	Evolving Wilds	3	20	http://www.hareruyamtg.com/jp/g/gBFZ000236JN/	2016-05-16T19:46:02+09:00	nil
+	#land	Forest	5	20	http://www.hareruyamtg.com/jp/g/gSOI000297JN/	2016-05-16T19:46:03+09:00	nil
+	#land	Hissing Quagmire	4	750	http://www.hareruyamtg.com/jp/g/gOGW000171JN/	2016-05-16T19:46:04+09:00	B-G
+	#:
+	#:
+	#sideboardCards	Orbs of Warding	1	60	http://www.hareruyamtg.com/jp/g/gORI000234JN/	2016-05-16T19:47:08+09:00	nil
+	#info	15 SideboardCards 5530					
+	#info	http://www.hareruyamtg.com/jp/k/kD08241S/					
+	
 		#format:
 		#card_type,name,quantity,price,store_url,price.date,generating_mana_type
+		#
 		#for get_generating_mana_of_decks.rb
 		#"card_type,name,quantity,generating_mana_type"
+		#
 		#for get_deck_prices.rb
 		#"card_type,name,quantity,price,store_url,price.date,generating_mana_type"
-		
+		#
 		#mode:
 		#with_info or card_only
 		
@@ -177,6 +202,7 @@ class Deck
 			puts "mode error"
 		end
 	end
+
 
 	def create_deckfile_full(filename)
 		#card_type,card_name,quantity,price
@@ -289,15 +315,18 @@ class Deck
 		end
 	end
 	
+
 	def get_contents
+	#get contents of all cards. such as manacost, oracle,...
 		@log.info "deck.get_contents start"
 		@cards.each do |card|
-			card.read_contents
+			card.read_contents()
 			if !File.exist?("../../cards/" + card.name.to_s) then
 				card.write_contents()
 			end
 		end
 	end
+	
 	
 	def set_information #from this.cards
 		#set quantity_of_*** and price_of_***
@@ -354,29 +383,25 @@ class Deck
 		
 	end
 	
+	
+	
+	
 	def calculate_price
+	#calculate total price of this deck.
 		@log.info "calculate_price start"
-		@price = 0
+		price = 0
 		@cards.each do |card|
 			@log.debug card.name + ", " + card.quantity + ", " + card.price.to_s
-			@price += card.quantity.to_i * card.price.to_i
+			price += card.quantity.to_i * card.price.to_i
 			@log.debug "price="+price.to_s
 		end
-		return @price
-	end
-	
-	
-	def view_deck_list
-		#card_type,card_name,quantity,price
-		@log.debug "Deck[" + @deckname + "] view_deck_list start"
-		@cards.each do |card|
-			print card.card_type.to_s + "," + card.name.to_s + "," + card.quantity.to_s + "," + card.price.to_s + "," + card.store_url.to_s + "," + card.price.date.to_s + "\n"
-		end
-		@log.debug "Deck[" + @deckname + "] view_deck_list finished"
+		return price
 	end
 	
 	
 	def calc_price_of_each_card_type
+	#calculate price of each_card_type,
+	#such as land,creatures,spells,MainboardCards,sideboardCards
 		if @cards.nil? then @log.error "@cards is nil at calc_price_of_each_card_type." end
 		@log.debug "calc_price_of_each_card_type(deck) start"
 		@price_of_all = 0		

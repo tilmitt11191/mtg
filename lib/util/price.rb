@@ -39,9 +39,8 @@ class Price
 	end
 	
 	def to_s
-		#@log.debug "price.to_s"
 		if @value.nil? then
-			@log.error "price.to_i = nil. return nil."
+			@log.error @card.name.to_s + ".price.to_i = nil. return nil."
 			"nil"
 		else
 			@value.to_s
@@ -49,9 +48,8 @@ class Price
 	end
 
 	def to_i
-		#@log.debug "price.to_i"
 		if @value.nil? then
-			@log.error "price.to_i = nil. return 0."
+			@log.error @card.name.to_s + "price.to_i = nil. return 0."
 			0
 		else
 			@value.to_i

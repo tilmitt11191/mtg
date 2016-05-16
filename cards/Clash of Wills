@@ -1,2 +1,2 @@
 <root><name>Clash of Wills</name><manacost>ＸU</manacost><manacost_point>2</manacost_point><type>
-			インスタント		</type><oracle>Counter target spell unless its controller pays {X}.</oracle><powertoughness></powertoughness><illustrator>Yan Li</illustrator><rarity>アンコモン</rarity><cardset> マジック・オリジン (49/272) </cardset><generating_mana_type>manually</generating_mana_type></root>
+			インスタント		</type><oracle>Counter target spell unless its controller pays {X}.</oracle><powertoughness></powertoughness><illustrator>Yan Li</illustrator><rarity>アンコモン</rarity><cardset> マジック・オリジン (49/272) </cardset><generating_mana_type>nil</generating_mana_type></root>

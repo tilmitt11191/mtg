@@ -1,0 +1,4 @@
+<root><name>Nahiri, the Harbinger</name><manacost>2RW</manacost><manacost_point>4</manacost_point><type>
+			プレインズウォーカー — ナヒリ(Nahiri)		</type><oracle>+2: You may discard a card. If you do, draw a card.
+-2: Exile target enchantment, tapped artifact, or tapped creature.
+-8: Search your library for an artifact or creature card, put it onto the battlefield, then shuffle your library. It gains haste. Return it to your hand at the beginning of the next end step.</oracle><powertoughness></powertoughness><illustrator>Aleksi Briclot</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (247/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

@@ -1,4 +1,5 @@
-land,Caves of Koilos,2,manually,
+info,WUB Con 0
+land,Caves of Koilos,2,C-W-B,
 land,Choked Estuary,3,manually,
 land,Island,5,U,
 land,Port Town,2,manually,
@@ -6,10 +7,12 @@ land,Prairie Stream,3,manually,
 land,Shambling Vent,3,manually,
 land,Sunken Hollow,4,manually,
 land,Swamp,5,B,
+info,27 Lands 0
 creature,Dragonlord Ojutai,4,manually,
 creature,Dragonlord Silumgar,2,manually,
 creature,JacePERIOD Vryn's Prodigy,2,manually,
 creature,KalitasPERIOD Traitor of Ghet,1,manually,
+info,9 Creatures 0
 spell,Clash of Wills,2,manually,
 spell,Foul-Tongue Invocation,2,manually,
 spell,Grasp of Darkness,3,manually,
@@ -21,6 +24,8 @@ spell,Languish,3,manually,
 spell,Painful Truths,2,manually,
 spell,Read the Bones,1,manually,
 spell,Transgress the Mind,2,manually,
+info,24 Spells 0
+info,60 MainboardCards 0
 sideboardCards,Sphinx of the Final Word,1,manually,
 sideboardCards,Dragonlord's Prerogative,1,manually,
 sideboardCards,Foul-Tongue Invocation,1,manually,
@@ -33,3 +38,5 @@ sideboardCards,Languish,1,manually,
 sideboardCards,Pick the Brain,1,manually,
 sideboardCards,Virulent Plague,2,manually,
 sideboardCards,SorinPERIOD Grim Nemesis,1,manually,
+info,15 SideboardCards 0
+info,http://www.hareruyamtg.com/jp/k/kD09252S/

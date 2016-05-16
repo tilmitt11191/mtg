@@ -1,0 +1,3 @@
+<root><name>Battlefield Forge</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{T}: Add {R} or {W} to your mana pool. Battlefield Forge deals 1 damage to you.</oracle><powertoughness></powertoughness><illustrator>Darrell Riche</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (244/272) </cardset><generating_mana_type>C-R-W</generating_mana_type></root>

@@ -45,6 +45,8 @@ class Card
 	
 	
 	def read_contents()
+		#get contents of card. such as manacost, oracle,...
+		@log.info @name.to_s + ".read_contents() start"
 		if File.exist?("../../cards/" + @name.to_s) then
 			#read local file
 			read_from_dom()
@@ -54,29 +56,15 @@ class Card
 		end
 	end
 	
-	def print_contents()
-		@log.info ""
-		@log.info "Card().print_contents"
-		@log.info "name:"; @log.info @name
-		@log.info ""
-		@log.info "manacost:"; @log.info @manacost
-		@log.info "manacost_point:"; @log.info @manacost_point
-		@log.info "type:"; @log.info @type
-		@log.info "oracle:"; @log.info @oracle
-		@log.info "powertoughness:"; @log.info @powertoughness
-		@log.info "illustrator:"; @log.info @illustrator
-		@log.info "rarity:"; @log.info @rarity
-		@log.info "cardset:"; @log.info @cardset
-		@log.info "generating_mana_type:"; @log.info @generating_mana_type
-		@log.info "\n"
-	
-	end
 	
 	def read_from_dom()
-		@log.info "read_from_dom() start"
+		@log.info @name.to_s + ".read_from_dom() start"
 		doc = REXML::Document.new(File.open("../../cards/" + @name.to_s))
-		#root = doc.elements["root"].elements["name"].text
 		root = doc.elements["root"]
+		if root.nil? then
+			@log.error @name.to_s + ".read_from_dom"
+			@log.error "the root of dom is nil."
+		end
 		@name= root.elements["name"].text
 		@manacost= root.elements["manacost"].text
 		@manacost_point= root.elements["manacost_point"].text
@@ -88,11 +76,11 @@ class Card
 		@cardset= root.elements["cardset"].text
 		@generating_mana_type= root.elements["generating_mana_type"].text
 		
-		@log.info "read_from_dom() finished"
+		@log.info @name.to_s + ".read_from_dom() finished"
 	end
 	
 	def read_from_web()
-		@log.info "read_from_web() start"
+		@log.info "@name.to_s + read_from_web() start"
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
 		agent = Mechanize.new
 		page = agent.get('http://www.wisdom-guild.net/')
@@ -105,7 +93,7 @@ class Card
 			@log.error "ERROR at card.read_from_web()"
 			@log.error "get contents of card from http://whisper.wisdom-guild.net/"
 			@log.error "cardname(" + @name.to_s + ") not hit or cannot narrow the target to one."
-			File.open("../../cards/errorlist.txt", "a") do |file|
+			File.open("../../lib/card_operation/errorlist.txt", "a") do |file|
 				file.puts(@name)
 			end
 			return 1
@@ -155,8 +143,10 @@ class Card
 		end
 		
 		set_generating_mana_type()
+		@log.info "@name.to_s + read_from_web() finished"
 	end
-	
+
+
 	def read_from_url(url)
 		@log.info "read_from_url(" + url + ") start"
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
@@ -208,6 +198,25 @@ class Card
 		
 		set_generating_mana_type()
 		@log.info "read_from_url(" + url + ") finished."
+	end
+
+
+	def print_contents()
+		@log.info ""
+		@log.info "Card().print_contents"
+		@log.info "name:"; @log.info @name
+		@log.info ""
+		@log.info "manacost:"; @log.info @manacost
+		@log.info "manacost_point:"; @log.info @manacost_point
+		@log.info "type:"; @log.info @type
+		@log.info "oracle:"; @log.info @oracle
+		@log.info "powertoughness:"; @log.info @powertoughness
+		@log.info "illustrator:"; @log.info @illustrator
+		@log.info "rarity:"; @log.info @rarity
+		@log.info "cardset:"; @log.info @cardset
+		@log.info "generating_mana_type:"; @log.info @generating_mana_type
+		@log.info "\n"
+	
 	end
 
 	
@@ -283,6 +292,7 @@ class Card
 	end
 
 	def set_generating_mana_type
+	#set_generating_mana_type
 		@log.info "card(" + name.to_s + ").set_generating_mana_type start."
 		mana_analyzer = Mana_analyzer.new()
 		@generating_mana_type = mana_analyzer.get_generating_mana_type(self)

@@ -1,0 +1,3 @@
+<root><name>Game Trail</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>As Game Trail enters the battlefield, you may reveal a Mountain or Forest card from your hand. If you don&apos;t, Game Trail enters the battlefield tapped.
+{T}: Add {R} or {G} to your mana pool.</oracle><powertoughness></powertoughness><illustrator>Adam Paquette</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (276/297) </cardset><generating_mana_type>R-G</generating_mana_type></root>

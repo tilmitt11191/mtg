@@ -1,0 +1,3 @@
+<root><name>Drownyard Temple</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{3}: Return Drownyard Temple from your graveyard to the battlefield tapped.</oracle><powertoughness></powertoughness><illustrator>John Avon</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (271/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

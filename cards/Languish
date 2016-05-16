@@ -1,2 +1,2 @@
 <root><name>Languish</name><manacost>2BB</manacost><manacost_point>4</manacost_point><type>
-			ソーサリー		</type><oracle>All creatures get -4/-4 until end of turn.</oracle><powertoughness></powertoughness><illustrator>Jeff Simpson</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (105/272) </cardset><generating_mana_type>manually</generating_mana_type></root>
+			ソーサリー		</type><oracle>All creatures get -4/-4 until end of turn.</oracle><powertoughness></powertoughness><illustrator>Jeff Simpson</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (105/272) </cardset><generating_mana_type>nil</generating_mana_type></root>

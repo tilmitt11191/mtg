@@ -1,2 +1,2 @@
 <root><name>Grasp of Darkness</name><manacost>BB</manacost><manacost_point>2</manacost_point><type>
-			インスタント		</type><oracle>Target creature gets -4/-4 until end of turn.</oracle><powertoughness></powertoughness><illustrator>Daarken</illustrator><rarity>アンコモン</rarity><cardset> ゲートウォッチの誓い (85/184) </cardset><generating_mana_type>manually</generating_mana_type></root>
+			インスタント		</type><oracle>Target creature gets -4/-4 until end of turn.</oracle><powertoughness></powertoughness><illustrator>Daarken</illustrator><rarity>アンコモン</rarity><cardset> ゲートウォッチの誓い (85/184) </cardset><generating_mana_type>nil</generating_mana_type></root>

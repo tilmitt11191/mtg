@@ -1,0 +1,4 @@
+<root><name>Catacomb Sifter</name><manacost>1BW</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)・ドローン(Drone)		</type><oracle>Devoid （This card has no color.）
+When Catacomb Sifter enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;
+Whenever another creature you control dies, scry 1. （Look at the top card of your library. You may put that card on the bottom of your library.）</oracle><powertoughness>2/3</powertoughness><illustrator>Craig J Spearing</illustrator><rarity>アンコモン</rarity><cardset> 戦乱のゼンディカー (201/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

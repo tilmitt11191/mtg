@@ -1,2 +1,2 @@
 <root><name>Duress</name><manacost>B</manacost><manacost_point>1</manacost_point><type>
-			ソーサリー		</type><oracle>Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.</oracle><powertoughness></powertoughness><illustrator>Jason Rainville</illustrator><rarity>コモン</rarity><cardset> タルキール龍紀伝 (98/264) </cardset><generating_mana_type>manually</generating_mana_type></root>
+			ソーサリー		</type><oracle>Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.</oracle><powertoughness></powertoughness><illustrator>Jason Rainville</illustrator><rarity>コモン</rarity><cardset> タルキール龍紀伝 (98/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

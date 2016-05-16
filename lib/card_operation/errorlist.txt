@@ -1,0 +1,6 @@
+cd mtg/lib/card_operation/
+ruby get_contents_of_card.rb "name"
+or
+ruby ../../test_cases/card_operation/card.read_from_url.rb
+
+Game Trail

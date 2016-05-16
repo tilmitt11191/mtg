@@ -1,0 +1,2 @@
+<root><name>Pyromancer&apos;s Goggles</name><manacost>5</manacost><manacost_point>5</manacost_point><type>
+			伝説のアーティファクト		</type><oracle>{T}: Add {R} to your mana pool. When that mana is spent to cast a red instant or sorcery spell, copy that spell and you may choose new targets for the copy.</oracle><powertoughness></powertoughness><illustrator>James Paick</illustrator><rarity>神話レア</rarity><cardset> マジック・オリジン (236/272) </cardset><generating_mana_type>nil</generating_mana_type></root>

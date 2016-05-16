@@ -15,4 +15,7 @@ deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD09252S/
 deck.read_deckfile_simple("../../decks/" + deckname.to_s + ".csv")
 deck.get_contents
 #deck.view_deck_list
-deck.create_deckfile("../../decks/" + deckname.to_s + "_mana.csv", "card_type,name,quantity,generating_mana_type")
+deck.create_deckfile("../../decks/" + deckname.to_s + "_mana.csv", "card_type,name,quantity,generating_mana_type", "with_info")
+
+#export to mtg/decks/***_mana.csv
+#right end column means mana type

@@ -1,4 +1,4 @@
 <root><name>Sorin, Grim Nemesis</name><manacost>4WB</manacost><manacost_point>6</manacost_point><type>
 			プレインズウォーカー — ソリン(Sorin)		</type><oracle>+1: Reveal the top card of your library and put that card into your hand. Each opponent loses life equal to its converted mana cost.
 -X: Sorin, Grim Nemesis deals X damage to target creature or planeswalker and you gain X life.
--9: Put a number of 1/1 black Vampire Knight creature tokens with lifelink onto the battlefield equal to the highest life total among all players.</oracle><powertoughness></powertoughness><illustrator>Eric Deschamps</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (251/297) </cardset><generating_mana_type>manually</generating_mana_type></root>
+-9: Put a number of 1/1 black Vampire Knight creature tokens with lifelink onto the battlefield equal to the highest life total among all players.</oracle><powertoughness></powertoughness><illustrator>Eric Deschamps</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (251/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

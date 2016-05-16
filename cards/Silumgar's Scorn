@@ -1,3 +1,3 @@
 <root><name>Silumgar&apos;s Scorn</name><manacost>UU</manacost><manacost_point>2</manacost_point><type>
 			インスタント		</type><oracle>As an additional cost to cast Silumgar&apos;s Scorn, you may reveal a Dragon card from your hand.
-Counter target spell unless its controller pays {1}. If you revealed a Dragon card or controlled a Dragon as you cast Silumgar&apos;s Scorn, counter that spell instead.</oracle><powertoughness></powertoughness><illustrator>Ryan Yee</illustrator><rarity>アンコモン</rarity><cardset> タルキール龍紀伝 (78/264) </cardset><generating_mana_type>manually</generating_mana_type></root>
+Counter target spell unless its controller pays {1}. If you revealed a Dragon card or controlled a Dragon as you cast Silumgar&apos;s Scorn, counter that spell instead.</oracle><powertoughness></powertoughness><illustrator>Ryan Yee</illustrator><rarity>アンコモン</rarity><cardset> タルキール龍紀伝 (78/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

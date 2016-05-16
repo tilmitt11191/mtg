@@ -1,0 +1,3 @@
+<root><name>Eldrazi Displacer</name><manacost>2W</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)		</type><oracle>Devoid （This card has no color.）
+{2}{C}: Exile another target creature, then return it to the battlefield tapped under its owner&apos;s control. （{C} represents colorless mana.）</oracle><powertoughness>3/3</powertoughness><illustrator>Daarken</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (13/184) </cardset><generating_mana_type>nil</generating_mana_type></root>

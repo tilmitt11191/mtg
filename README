@@ -9,6 +9,10 @@ ruby lib/decklists/get_deck_prices.rb
 ruby lib/card_operation/get_contents_of_card.rb
 ruby lib/card_operation/get_contents_of_unsearchable_cards.rb
 
+cd mtg/lib/card_operation/
+ruby get_contents_of_card.rb "name"
+
+
  find ./ -name "*.rb"  | xargs grep "TODO"
 
 execute at mtg/***/***/

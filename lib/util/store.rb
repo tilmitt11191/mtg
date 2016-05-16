@@ -97,8 +97,30 @@ class Hareruya < Store
 		end
 	end
 	
-	def create_card_list(deck) #TODO: rename to create_cardlist_with_price_from_web
-		@log.debug "Hareruya.create_card_list start"
+	
+	
+	#fill deck.cards.
+	def create_card_list(deck, create_mode)
+	#create_mode:[full, except_price, from_file]
+	#if create_mode is "full", the contents of each card are
+		#card_type,
+		#name,
+		#quantity,
+		#price, <-very slow!
+		#store_url,
+		#price.date,
+	#if create_mode is "except_price", the contents of each card are
+		#card_type,
+		#name,
+		#quantity,
+		#store_url,
+	#if create_mode is "from_file", the contents are depend on the file(deck.path)
+		@log.debug "Hareruya.create_card_list(" + deck.deckname.to_s + ", " + create_mode.to_s + ") start"
+		
+		if create_mode != "full" && create_mode != "except_price" && create_mode != "from_file" then
+			@log.error "create_mode ERROR. create_mode is [" + create_mode.to_s + "]"
+		end
+		
 		deck.cards = []
 		@log.debug "open[" + deck.path + "]"
 		@deck_row_data = open(deck.path)
@@ -160,7 +182,7 @@ class Hareruya < Store
 				card = Card.new(card_name)
 				card.store_url = url
 				card.card_type = card_type
-				card.price.renew_at("hareruya")
+				if create_mode == "full" then card.price.renew_at("hareruya") end
 				deck.cards.push(card)
 			end
 		end
@@ -201,6 +223,7 @@ class Hareruya < Store
 		#deck.cards.push("Ob Nixilis Reignited")
 	end
 	
+=begin	
 	def create_card_list_simple(deck)
 		#english name,num
 		@log.debug "Hareruya.create_card_list_simple start."
@@ -272,6 +295,7 @@ class Hareruya < Store
 
 		@log.debug "Hareruya.create_card_list_simple finished."
 	end
+=end
 end
 
 class MagicOnline < Store

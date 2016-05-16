@@ -1,0 +1,3 @@
+<root><name>Tireless Tracker</name><manacost>2W</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — 人間(Human)・スカウト(Scout)		</type><oracle>Whenever a land enters the battlefield under your control, investigate. （Put a colorless Clue artifact token onto the battlefield with &quot;{2}, Sacrifice this artifact: Draw a card.&quot;）
+Whenever you sacrifice a Clue, put a +1/+1 counter on Tireless Tracker.</oracle><powertoughness>3/2</powertoughness><illustrator>Eric Deschamps</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (233/297) </cardset><generating_mana_type>nil</generating_mana_type></root>
