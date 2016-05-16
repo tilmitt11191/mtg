@@ -4,8 +4,6 @@ require	"logger"
 require "mechanize"
 require 'rexml/document'
 require "../../lib/util/price.rb"
-require '../../lib/card_operation/mana_analyzer.rb'
-
 
 class Card
 	@log
@@ -282,11 +280,118 @@ class Card
 		@log.info "cardset: " + @cardset.to_s
 	end
 
-	def set_generating_mana_type
-		@log.info "card(" + name.to_s + ").set_generating_mana_type start."
-		mana_analyzer = Mana_analyzer.new()
-		@generating_mana_type = mana_analyzer.get_generating_mana_type(self)
+	def set_generating_mana_type()
+		@log.info "card[" + @name.to_s + "].set_generating_mana_type start."
+		#Mountain =>R
+		#Caves of Koilos => C-W-B
+		#Westvale Abbey => C
+		#Shambling Vent => W-B
+		#Highland Lake => U-R
+		#Corrupted Crossroads => C-A
+			#A = any color
+
+		#analyze_cardtype
+		cardtype = analyze_cardtype()
+		
+		@log.info "set_generating_mana_type(" + @name.to_s + ") start."
+		case cardtype
+		when nil then 
+			@log.info "set_generating_mana_type(" + @name.to_s + ") finished.return nil."
+			@log.info "Please set manually. set_generating_mana_type(" + @name.to_s + ") finished."
+			@generating_mana_type = "manually"
+			return @generating_mana_type
+
+		when "basicLand" #basic land
+			@log.debug "basic land"
+			@generating_mana_type = @oracle
+			@log.info "set_generating_mana_type(" + @name.to_s + ") finished. return " + @generating_mana_type.to_s + "."
+			return @generating_mana_type
+
+		when "damageLand" #damage land
+			@log.debug "basic land"
+			@generating_mana_type = extract_mana_from_major_land()
+			return @generating_mana_type
+
+		when "SOItapinLand" #SOI tapin land
+			@log.debug "SOI tapin land"
+			@generating_mana_type = extract_mana_from_major_land()
+			return @generating_mana_type
+		else
+			@log.debug "else"
+			@log.info "Please set manually. set_generating_mana_type(" + @name.to_s + ") finished."
+			@generating_mana_type = "manually"
+			return @generating_mana_type
+		end
+		@log.error "must return before"
 	end
+
+	def analyze_cardtype
+		#return land type, such as "basicLand" "damageLand" ...
+		@log.info "analyze_cardtype(" + @name.to_s + ") start."
+		@log.debug "@oracle="
+		@log.debug @oracle
+
+		# basic land
+		if @oracle == "W" || @oracle == "U" || @oracle == "B" || @oracle == "R" || @oracle == "G" then #basic land
+			@log.debug "cardtype is basicLand. analyze_cardtype finished."
+			return "basicLand"
+		end
+
+		# damage land
+		#Caves of Koilos
+			#{T}: Add {C} to your mana pool.{T}: Add {W} or {B} to your mana pool. Caves of Koilos deals 1 damage to you.
+		if @oracle.lines.size == 2 &&
+			@oracle.lines[1].match("Add {.+} to your mana pool.+deals 1 damage to you") then
+				@log.debug "cardtype is damageLand. analyze_cardtype finished."
+				return "damageLand"
+		end
+		
+		# SOI tapin land
+		#Highland Lake
+			#Highland Lake enters the battlefield tapped.
+			#{T}: Add {U} or {R} to your mana pool.
+		if @oracle.lines.size == 2 &&
+			@oracle.lines[0].match(".+enters the battlefield tapped")	&& 
+				@oracle.lines[1].match(".+Add {.+or.+} to your mana pool") then
+				return "SOItapinLand"
+		end
+
+		# BFZ Mishra Land
+			#Shambling Vent enters the battlefield tapped.
+			#{T}: Add {W} or {B} to your mana pool.
+			#{1}{W}{B}: Shambling Vent becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.
+		if false then
+			return "BFZMishraLand"
+		end
+
+		@log.debug "cardtype is nil.return."
+		return "nil"
+	end
+
+	def extract_mana_from_major_land
+		@log.info "extract_mana_from_major_land(" + name.to_s + ") start"
+		#Westvale Abbey
+		#{T}: Add {C} to your mana pool.{5}, {T}, Pay 1 life: Put a 1/1 white and black Human Cleric creature token onto the battlefield.{5}, {T}, Sacrifice five creatures: Transform Westvale Abbey, then untap it.
+
+		@generating_mana_type = ""
+		@oracle.lines do |line|
+			if line.match("Add {.+} to your mana pool") then
+				#remove meta strings.
+				@log.debug line.gsub!(/¥|/,"")
+				#remove irrelevant strings.
+				@log.debug line.gsub!(/Add {/, "").gsub!(/} to your mana pool.+/, "")
+				#convert "or" to meta string.
+				@log.debug line.gsub!(/or/, "|")
+				#remove all irrelevant strings.
+				line.scan(/C|W|U|B|R|G/).each do |mana|
+					@log.debug @generating_mana_type += "-" + mana.to_s
+				end
+			end
+		end
+		@log.debug @generating_mana_type.gsub!(/^-/,"")
+		return @generating_mana_type
+	end
+
 
 end
 
