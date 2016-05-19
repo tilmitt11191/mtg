@@ -1,0 +1,5 @@
+<root><name>Mirrorpool</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>Mirrorpool enters the battlefield tapped.
+{T}: Add {C} to your mana pool.
+{2}{C}, {T}, Sacrifice Mirrorpool: Copy target instant or sorcery spell you control. You may choose new targets for the copy.
+{4}{C}, {T}, Sacrifice Mirrorpool: Put a token onto the battlefield that&apos;s a copy of target creature you control.</oracle><powertoughness></powertoughness><illustrator>Cliff Childs</illustrator><rarity>神話レア</rarity><cardset> ゲートウォッチの誓い (174/184) </cardset><generating_mana_type>C</generating_mana_type></root>

@@ -1,2 +1,2 @@
-<root><name>Cryptolith Rite</name><manacost>1W</manacost><manacost_point>2</manacost_point><type>
+<root><name>Cryptolith Rite</name><manacost>1G</manacost><manacost_point>2</manacost_point><type>
 			エンチャント		</type><oracle>Creatures you control have &quot;{T}: Add one mana of any color to your mana pool.&quot;</oracle><powertoughness></powertoughness><illustrator>Zack Stella</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (200/297) </cardset><generating_mana_type>C-A</generating_mana_type></root>

@@ -1,0 +1,5 @@
+<root><name>The Gitrog Monster</name><manacost>3BG</manacost><manacost_point>5</manacost_point><type>
+			伝説のクリーチャー — カエル(Frog)・ホラー(Horror)		</type><oracle>Deathtouch
+At the beginning of your upkeep, sacrifice The Gitrog Monster unless you sacrifice a land.
+You may play an additional land on each of your turns.
+Whenever one or more land cards are put into your graveyard from anywhere, draw a card.</oracle><powertoughness>6/6</powertoughness><illustrator>Jason Kang</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (245/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

@@ -1,4 +1,4 @@
 <root><name>Westvale Abbey</name><manacost></manacost><manacost_point>0</manacost_point><type>
 			土地		</type><oracle>{T}: Add {C} to your mana pool.
 {5}, {T}, Pay 1 life: Put a 1/1 white and black Human Cleric creature token onto the battlefield.
-{5}, {T}, Sacrifice five creatures: Transform Westvale Abbey, then untap it.</oracle><powertoughness></powertoughness><illustrator>Min Yum</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (281/297) </cardset><generating_mana_type>nil</generating_mana_type></root>
+{5}, {T}, Sacrifice five creatures: Transform Westvale Abbey, then untap it.</oracle><powertoughness></powertoughness><illustrator>Min Yum</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (281/297) </cardset><generating_mana_type>C</generating_mana_type></root>

@@ -1,0 +1,1439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>デッキ検索 | 晴れる屋</title>
+
+
+
+<meta name="description" content="日本最大級のMTG専門店晴れる屋 | ">
+<meta name="keywords" content=",通販,通信販売,オンラインショップ,買い物,ネットショップ,ショッピングカート,MTG,マジック,マジックザギャザリング,Magic the Gathering,晴れる屋,シングルカード">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<link href='http://fonts.googleapis.com/css?family=Fira+Sans:700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="http://img.hareruyamtg.com/img/usr/icon/favicon.ico"> 
+<link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="/css/overwrite_common.css">
+<link rel="stylesheet" type="text/css" href="/css/display_switch.css" />
+<link rel="stylesheet" type="text/css" href="/css/decksearch.css" media="all">
+<link rel="stylesheet" type="text/css" href="/css/gg_style.css" />
+<link rel="stylesheet" type="text/css" href="/css/top_ex.css" />
+<link rel="stylesheet" type="text/css" href="/css/search_online.css" />
+<link rel="stylesheet" type="text/css" href="/css/soldout.css" />
+<link rel="stylesheet" type="text/css" href="/css/to_top_button.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/tournament.css" />
+<link rel="stylesheet" type="text/css" href="/css/store_info.css" />
+<link rel="stylesheet" type="text/css" href="/css/flexslider.css">
+
+<link rel="stylesheet" type="text/css" href="/css/common_renew.css" />
+<link rel="stylesheet" type="text/css" href="/css/common_extra.css" />
+
+
+
+<meta http-equiv="content-script-type" content="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/jquery.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/jquery-ui.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/common.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/hitchart.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/jquery.easing.1.3.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/moment.min.js" ></script>
+<script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/js/ChangeImage.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/ColorSelect.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/itemSlider.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/expandImage.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/MenuSelect.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/topmenu.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/decktitle.js" async></script>
+<script language="JavaScript" type="text/javascript" src="/js/to_top_button.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/cart_over.js" ></script>
+<script type="text/javascript" src="/js/jquery.flexslider.js" ></script>
+<!--[if IE 8]>
+<script language="JavaScript" type="text/javascript" src="/lib/efo/pie_ie678.js" ></script>
+<script language="JavaScript" type="text/javascript" src="/js/init_ie8.js" ></script>
+<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17822469-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="/js/jquery.lazyload.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	jQuery('img.lazy').lazyload();
+});
+</script>
+<script type="text/javascript" src="/js/goods_ajax_cart.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/core.css">
+<link rel="stylesheet" type="text/css" href="/css/skin.css">
+
+
+<script type="text/javascript" src="//r2.snva.jp/javascripts/reco/2/sna.js?k=wRkYEG8Q1FaR1"></script>
+</head>
+<body >
+
+
+<div class="wrapper_">
+<header id="topHeader">
+	<div class="topHeaderLeft">
+		<h1 class="headerLogo"><a href="/jp/"><img src="/img/top/hareruya_logo.png" alt="晴れる屋"></a></h1>
+	</div>
+	<div class="topHeaderRight">
+		<section class="topHeaderUser">
+			<div class="userName">
+				こんにちは！ゲスト 様
+			</div>
+			<div class="systemLink">
+				<ul>
+					<li id="headerLogin"><a href="/jp/customer/menu.aspx">ログイン</a></li>
+					<li id="headerRegist"><a href="/jp/customer/agree.aspx">会員登録</a></li>
+<!-- 03/21　変える前。詳細は楠澤まで
+					<li id="topCart"><a href="">購入カート
+						<span class="cartNum">1</span></a>
+
+						<!cart mouseover>
+						<section class="cartOver">
+							<div class="cart_on_box_">
+								<div id="cart_frame_">
+									<div class="cart_goods_box">
+										<dl class="cart_goods_">
+											<dt class="name_">
+												<div class="name1_"><a href="http://www.hareruyamtg.com/jp/g/gPACK000070/">【ENG】(1パック)リバイズドブースターパック</a></div>
+											</dt>
+											<dd> ￥10,000 × 1 </dd>
+										</dl>
+										<dl class="cart_total_">
+											<dt>小計</dt>
+											<dd class="price_">￥10,000</dd>
+										</dl>
+										<div id="postage_comment" class="cart_postage_">あと ￥40,000 で送料無料となります。</div>
+									</div>
+									<div class="cart_to_order_"><a href="http://www.hareruyamtg.com/jp/cart/cart.aspx"><span>購入カートを見る</span></a></div>
+								</div>
+							</div>
+						</section>
+					</li>
+-->
+					<li id="topCart">
+						<script type="text/javascript">
+						var crsirefo_jscart = "";
+						</script>
+						<div id="jscart_replace_"></div>
+						<script type="text/javascript" src="/js/goods_cartlist.js"></script>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+		<section class="topHeaderHelp">
+			<div class="snsLink">
+				<ul>
+					<li><a href="https://twitter.com/hareruya_mtg" target="_blank"><img src="http://img.hareruyamtg.com/img/usr/header/twitter.png"></a></li>
+					<li><a href="http://hareruyamtg.diarynote.jp/" target="_blank"><img src="http://img.hareruyamtg.com/img/usr/header/dn.png"></a></li>
+					<li><a href="https://instagram.com/hareruya_mtg/" target="_blank"><img src="http://img.hareruyamtg.com/img/usr/header/instagram.png"></a></li>
+					<a href="/jp/pages/mail_magazine.aspx"><li class="headerMailMagazine">メルマガ登録で最新情報をGET!</li></a>
+				</ul>
+			</div>
+			<div class="helpLink">
+				<ul>
+					<li><a href="/jp/pages/help.aspx">ヘルプ</a></li>
+					<li><a href="/jp/contact/contact.aspx">お問い合わせ</a></li>
+					<li class="engLink"><a href="/en/">Customers Abroad</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<nav id="contentLink">
+		<ul>
+			<li class="linkOnlineShop"><a href="/jp/">オンラインショップ</a></li>
+			<li class="linkPurchase"><a href="/purchase/">買取</a></li>
+			<li class="linkArticle"><a href="/article">記事</a></li>
+			<li class="linkHareruyaPros"><a href="/article/hareruya_pros/">Hareruya Pros</a></li>
+			<li class="linkDeck"><a href="/jp/deck/search.aspx">デッキ検索</a></li>
+			<li class="linkTournament"><a href="/jp/pages/tournament_tc.aspx">大会</a></li>
+			<li class="linkInfo"><a href="/jp/store/tc_top.aspx">店舗のご案内</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<div class="container">
+<style><!--
+.formatSearch, .toSearchDetail {
+    display: inline-block;
+	margin-bottom:15px;
+}
+
+.formatSearch p {
+	display: inline-block;
+	padding: 8px 0;
+	color: white;
+	font-size:14px;
+	font-weight: bold;
+	width: 160px;
+	text-align: center;
+}
+
+.formatSearch div {
+	display: inline-block;
+	position: relative;
+}
+
+.formatSearch div:after {
+	content: "";
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	border: 7px solid transparent;
+	border-bottom: 7px solid white;
+	border-right: 7px solid white;
+}
+
+.formatSearch .standardDeck{background-color:red;}
+.formatSearch .modernDeck{background-color:green;}
+.formatSearch .legacyDeck{background-color:purple;}
+.formatSearch .vintageDeck{background-color:navy;}
+
+
+.toSearchDetail {
+    color: white;
+    background: #E95409;
+    padding: 8px;
+    width: 200px;
+    margin: 0 40px;
+    position: relative;
+    text-align: center;
+}
+
+.toSearchDetail:before,
+.toSearchDetail:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 16px transparent solid;
+}
+
+.toSearchDetail:before {
+    left: -42px;
+    border-right: 26px #E95409 solid;
+}
+
+.toSearchDetail:after {
+    right: -42px;
+    border-left: 26px #E95409 solid;
+}
+
+--></style>
+
+<div class="formatSearch">
+	<a href="search.aspx?format=Standard&date_format=Standard+-+DTK_SOI&archetype=&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit">
+		<div>
+			<p class="standardDeck">スタンダード</p>
+		</div>
+	</a>
+	<a href="search.aspx?format=Modern&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit">
+		<div>
+			<p class="modernDeck">モダン</p>
+		</div>
+	</a>
+	<a href="search.aspx?format=Legacy&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit">
+		<div>
+			<p class="legacyDeck">レガシー</p>
+		</div>
+	</a>
+	<a href="search.aspx?format=Vintage&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit">
+		<div>
+			<p class="vintageDeck">ヴィンテージ</p>
+		</div>
+	</a>
+</div>
+<div class="toSearchDetail">
+	<a href="#searchDetailLink">
+		<p>▼デッキ詳細検索▼</p>
+	</a>
+</div>
+
+<!--
+<div class="to_top_button">
+<p></p>
+</div>
+<div class="searchTop">
+  <h2>デッキを検索する</h2>
+  <a href="search.aspx?format=Standard&date_format=Standard+-+DTK_SOI&archetype=&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit"><p class="buttonStandard">スタンダード</p></a>
+  <a href="search.aspx?format=Modern&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit"><p class="buttonModern">モダン</p></a>
+  <a href="search.aspx?format=Legacy&releasedt_type=1&min_releasedt=&max_releasedt=&player=&name_je=&name_je_type=1&search.x=submit"><p class="buttonLegacy">レガシー</p></a>
+  <a href="#searchDetail"><p class="buttonSearchDeck">デッキ詳細検索</p></a>
+</div>
+
+-->
+<style>
+body{
+	background-image:url("/img/usr/base_deck_top.png")
+}
+#topHeader .helpLink li{
+	color: #404040;
+}
+#topHeader .helpLink li:before{
+	background:#404040;
+}
+#topHeader #contentLink ul{
+	border-color:#404040;
+}
+#topHeader #contentLink .linkOnlineShop{
+	color: #404040;
+	background-color: #F5F5F5;
+	font-weight: normal;
+}
+#topHeader #contentLink .linkDeck{
+	background-color:#404040;
+	color: white;
+	font-weight: bold;
+}
+#topHeader #contentLink li{
+	background-color:#F5F5F5;
+	color: #404040;
+}
+#topHeader .headerMailMagazine{
+	background-color: #404040;
+}
+#searchForm #leftmenu_search_goods_name{
+	border-color: #404040;
+}
+#searchForm #leftmenu_search_goods_submit{
+	background-color: #404040;
+	color:#F5F5F5;
+}
+#searchForm p{
+	color: #404040;
+}
+#block_of_categorytree h2{
+	color:  #404040;
+}
+#block_of_categorytree .category_button p{
+	border-color:#404040;
+}
+#block_of_categorytree .category_button p.selected{
+	background-color: #404040;
+}
+#topHeader #contentLink li:hover{
+background:#6D6D6D;
+}
+</style>
+
+<div class="clearfix" id="deckSearchList">
+<div class="left" id="archetypeList">
+<h2>■アーキタイプ一覧</h2>
+
+<table class="archetypetable">
+<tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000864" class="Archetype">白青緑ビートダウン/WUG Aggro(246)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000869" class="Archetype">白緑ビートダウン/GW Aggro(160)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000867" class="Archetype">白単ビートダウン/Mono White Aggro(102)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000866" class="Archetype">黒緑ハスク/BG Husk(94)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000863" class="Archetype">赤緑マナランプ/RG Ramp(91)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000874" class="Archetype">白黒コントロール/WB Control(88)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000910" class="Archetype">血統の観察者コンボ/Monitor Combo(60)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000876" class="Archetype">白青黒コントロール/WUB Control(53)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000872" class="Archetype">エルドラージストンピィ/Eldrazi Stompy(49)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000870" class="Archetype">白青人間/WU Human(49)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000891" class="Archetype">青黒緑コントロール/UBG Control(47)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000909" class="Archetype">赤緑ゴーグル/RG Goggles(34)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000905" class="Archetype">青黒赤コントロール/UBR Control(33)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000893" class="Archetype">エルドラージランプ/Eldrazi Ramp(28)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000888" class="Archetype">白黒赤コントロール/WBR Control(27)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000885" class="Archetype">白青ビートダウン/WU Aggro(24)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000902" class="Archetype">黒緑コントロール/BG Control(22)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000868" class="Archetype">黒赤緑ビートダウン/BRG Aggro(22)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000873" class="Archetype">白黒ビートダウン/WB Aggro(21)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000881" class="Archetype">ローグ/Rogue(20)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000871" class="Archetype">白緑人間/WG Human(20)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000890" class="Archetype">白赤緑ビートダウン/WRG Aggro(18)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000875" class="Archetype">青赤コントロール/UR Control(16)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000894" class="Archetype">白赤緑プレインズウォーカー/WRG Planeswalker(15)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000865" class="Archetype">赤単エルドラージ/Mono R Eldrazi(14)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000903" class="Archetype">白赤コントロール/WR Control(12)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000915" class="Archetype">青赤ビートダウン/UR Aggro(11)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000897" class="Archetype">黒赤緑コントロール/BRG Control(11)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000907" class="Archetype">黒赤コントロール/BR Control(10)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000892" class="Archetype">白黒緑ビートダウン/WBG Aggro(10)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000886" class="Archetype">白青赤ビートダウン/WUR Aggro(10)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000906" class="Archetype">白赤ビートダウン/WR Aggro(9)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000884" class="Archetype">黒緑ビートダウン/BG Aggro(9)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000879" class="Archetype">赤単/Mono Red(8)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000878" class="Archetype">黒赤ビートダウン/BR Aggro(8)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000904" class="Archetype">白青赤コントロール/WUR Control(7)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000917" class="Archetype">白黒緑コントロール/WBG Control(6)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000877" class="Archetype">黒赤吸血鬼/BR Vampire(6)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000916" class="Archetype">赤緑ビートダウン/RG Aggro(5)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000880" class="Archetype">白青黒ビートダウン/WUB Aggro(5)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000861" class="Archetype">エルフ/Elves(5)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000908" class="Archetype">エンチャントレス/Enchantress(3)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000889" class="Archetype">青黒コントロール/UB Control(3)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000862" class="Archetype">多色コントロール/Multi Color Control(3)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000887" class="Archetype">多色ビートダウン/Multi Color Aggro(2)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000883" class="Archetype">白青コントロール/WU Control(1)</a></td>
+</tr><tr>
+<td><a href="/jp/deck/search.aspx?search.x=true&amp;format=Standard&amp;date_format=Standard - DTK_SOI&amp;releasedt_type=1&amp;name_je_type=1&amp;archetype=A000882" class="Archetype">赤緑狼男/RG Werewolf(1)</a></td>
+</tr>
+</table>
+
+</div>
+<div class="main" id="deckSearchResult">
+<span class="kuzu"><a href="/jp/deck/search.aspx">デッキ検索トップ</a> &gt; 検索結果</span>
+<h2>■検索結果</h2>
+
+<div class="navipage_ top_">
+  
+	<div>
+		<p>デッキ数：</p>
+		
+<p class="count_number">1498</p> <p>点</p>
+
+	</div>
+  
+</div>
+
+<a href="/jp/k/kD02487W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000863.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤緑マナランプ/RG Ramp</span></li>
+    <li>プレイヤー：<span class="player">Nagai Takayuki</span></li>
+    <li>大会名：<span class="tournament">休日スタンダード20時の部 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">25</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02486W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000872.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">エルドラージストンピィ/Eldrazi Stompy</span></li>
+    <li>プレイヤー：<span class="player">Sakou Yuuta</span></li>
+    <li>大会名：<span class="tournament">休日スタンダード17時の部 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">32</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02485W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000885.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青ビートダウン/WU Aggro</span></li>
+    <li>プレイヤー：<span class="player">Morishita Mizuki</span></li>
+    <li>大会名：<span class="tournament">休日スタンダード17時の部 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">32</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02484W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000869.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白緑ビートダウン/GW Aggro</span></li>
+    <li>プレイヤー：<span class="player">Furusato Hiroshi</span></li>
+    <li>大会名：<span class="tournament">休日スタンダード17時の部 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">32</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02483W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000882.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤緑狼男/RG Werewolf</span></li>
+    <li>プレイヤー：<span class="player">Tateno Souhei</span></li>
+    <li>大会名：<span class="tournament">休日スタンダード17時の部 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">32</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07785S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000864.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青緑ビートダウン/WUG Aggro</span></li>
+    <li>プレイヤー：<span class="player">Koide Masahiro</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Champion</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07777S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000886.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青赤ビートダウン/WUR Aggro</span></li>
+    <li>プレイヤー：<span class="player">Iwazaki Yuuta</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Champion</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02459W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000864.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青緑ビートダウン/WUG Aggro</span></li>
+    <li>プレイヤー：<span class="player">Usukura Takumi</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">1位(6-0-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07786S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000885.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青ビートダウン/WU Aggro</span></li>
+    <li>プレイヤー：<span class="player">Nagao Yasutaka</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Finalist</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07778S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000885.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青ビートダウン/WU Aggro</span></li>
+    <li>プレイヤー：<span class="player">Ikebata Ryou</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Finalist</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02460W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000893.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">エルドラージランプ/Eldrazi Ramp</span></li>
+    <li>プレイヤー：<span class="player">Mishina Ryouta</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">2位(6-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07787S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000910.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">血統の観察者コンボ/Monitor Combo</span></li>
+    <li>プレイヤー：<span class="player">Mishiro Norihito</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top4</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07779S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000869.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白緑ビートダウン/GW Aggro</span></li>
+    <li>プレイヤー：<span class="player">Sasao Yuusuke</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top4</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02461W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000885.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青ビートダウン/WU Aggro</span></li>
+    <li>プレイヤー：<span class="player">Oodachi Takuhei</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">3位(5-1-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07788S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000870.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青人間/WU Human</span></li>
+    <li>プレイヤー：<span class="player">Kotabe Hayato</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top4</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07780S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000870.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青人間/WU Human</span></li>
+    <li>プレイヤー：<span class="player">Ooshima Shinpei</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top4</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02462W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000874.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒コントロール/WB Control</span></li>
+    <li>プレイヤー：<span class="player">Egawa Yoshitada</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">4位(5-1-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07789S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000876.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青黒コントロール/WUB Control</span></li>
+    <li>プレイヤー：<span class="player">Hiraoka Taku</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07781S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000877.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">黒赤吸血鬼/BR Vampire</span></li>
+    <li>プレイヤー：<span class="player">Iijima Shin</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02463W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Yoshida Kei</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">5位(5-1-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07790S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000876.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青黒コントロール/WUB Control</span></li>
+    <li>プレイヤー：<span class="player">Nakano Atsushi</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07782S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Tada Mitsuhiro</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02464W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000874.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒コントロール/WB Control</span></li>
+    <li>プレイヤー：<span class="player">Ookawa Yuusuke</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">6位(5-1-1)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07791S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000894.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白赤緑プレインズウォーカー/WRG Planeswalker</span></li>
+    <li>プレイヤー：<span class="player">Oikawa Tetsurou</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07783S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000870.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青人間/WU Human</span></li>
+    <li>プレイヤー：<span class="player">Hirata Minoru</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02465W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000885.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青ビートダウン/WU Aggro</span></li>
+    <li>プレイヤー：<span class="player">Ishiwata Kouichi</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">7位(5-2)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07792S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Kobayashi Kazutaka</span></li>
+    <li>大会名：<span class="tournament">GPT東京 - PPTQ併設昼からGPT東京in横浜</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">38</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07784S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000871.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白緑人間/WG Human</span></li>
+    <li>プレイヤー：<span class="player">Kumagai Satoshi</span></li>
+    <li>大会名：<span class="tournament">PPTQ2016#3 - 横浜西公会堂</span></li>
+    <li>成績：<span class="grade">Top8</span></li>
+    <li>参加人数：<span class="participans">72</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02466W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000872.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">エルドラージストンピィ/Eldrazi Stompy</span></li>
+    <li>プレイヤー：<span class="player">Kogure Takamasa</span></li>
+    <li>大会名：<span class="tournament">晴れる屋スタンダード杯 - 2016/04/09</span></li>
+    <li>成績：<span class="grade">8位(5-2)</span></li>
+    <li>参加人数：<span class="participans">70</span></li>
+    <li>開催日：<span class="date">2016/04/09</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07727S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000869.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白緑ビートダウン/GW Aggro</span></li>
+    <li>プレイヤー：<span class="player">Muroya Issei</span></li>
+    <li>大会名：<span class="tournament">FNM17時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">40</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07726S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Isaac Brazil</span></li>
+    <li>大会名：<span class="tournament">FNM17時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">40</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07725S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000867.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白単ビートダウン/Mono White Aggro</span></li>
+    <li>プレイヤー：<span class="player">Murakami Toki</span></li>
+    <li>大会名：<span class="tournament">FNM17時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">40</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07724S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000864.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青緑ビートダウン/WUG Aggro</span></li>
+    <li>プレイヤー：<span class="player">Matsuo Shuuto</span></li>
+    <li>大会名：<span class="tournament">FNM17時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">40</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07723S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000868.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">黒赤緑ビートダウン/BRG Aggro</span></li>
+    <li>プレイヤー：<span class="player">Hikokubo Shouta</span></li>
+    <li>大会名：<span class="tournament">FNM17時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">40</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07649S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000867.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白単ビートダウン/Mono White Aggro</span></li>
+    <li>プレイヤー：<span class="player">Nemoto Yasuhiro</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード14時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">39</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07648S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000866.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">黒緑ハスク/BG Husk</span></li>
+    <li>プレイヤー：<span class="player">Takita Masayoshi</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード14時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">39</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07647S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Yoshida Kei</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード14時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">39</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"><img src="/img/usr/search_closed.png" alt="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07646S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000864.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白青緑ビートダウン/WUG Aggro</span></li>
+    <li>プレイヤー：<span class="player">Nakamura Kouki</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード14時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">39</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07645S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000863.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤緑マナランプ/RG Ramp</span></li>
+    <li>プレイヤー：<span class="player">Sugiyama Takanori</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード11時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">23</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07644S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000862.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">多色コントロール/Multi Color Control</span></li>
+    <li>プレイヤー：<span class="player">Fukuji Yuuta</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード11時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">23</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD07643S/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000861.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">エルフ/Elves</span></li>
+    <li>プレイヤー：<span class="player">Takahashi Takumi</span></li>
+    <li>大会名：<span class="tournament">平日スタンダード11時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">23</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02454W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000865.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">赤単エルドラージ/Mono R Eldrazi</span></li>
+    <li>プレイヤー：<span class="player">Miura Takashi</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02453W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000878.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">黒赤ビートダウン/BR Aggro</span></li>
+    <li>プレイヤー：<span class="player">Shibata Satoru</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02452W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000874.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒コントロール/WB Control</span></li>
+    <li>プレイヤー：<span class="player">Mori Satoshi</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02451W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000874.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒コントロール/WB Control</span></li>
+    <li>プレイヤー：<span class="player">Orihara Naoya</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02450W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000873.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒ビートダウン/WB Aggro</span></li>
+    <li>プレイヤー：<span class="player">Ushida Chihiro</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02449W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000861.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">エルフ/Elves</span></li>
+    <li>プレイヤー：<span class="player">Matsuda Yuuichirou</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a><a href="/jp/k/kD02448W/">
+  <div class="deckBox clearfix">
+    <div class="deckImg" style="background-image:url('http://img.hareruyamtg.com/img/archetype/A000873.jpg');"></div>
+    <ul class="deckInfo">
+    <li><span class="deckTitle">白黒ビートダウン/WB Aggro</span></li>
+    <li>プレイヤー：<span class="player">Miyashita Shouta</span></li>
+    <li>大会名：<span class="tournament">FNM20時の部 - 2016/04/08</span></li>
+    <li>成績：<span class="grade">3-0</span></li>
+    <li>参加人数：<span class="participans">53</span></li>
+    <li>開催日：<span class="date">2016/04/08</span></li>
+    <li><div class="private"></div></li>
+    </ul>
+  </div>
+</a>
+<div class="autopagerize_insert_before"></div>
+<div class="navipage_ bottom_">
+  
+	<div>
+		<p>デッキ数：</p>
+		
+<p class="count_number">1498</p> <p>点</p>
+
+	
+	<ul>
+	
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=1&amp;releasedt_type=1">最初</a></li>
+
+
+
+
+	
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=22&amp;releasedt_type=1">22</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=23&amp;releasedt_type=1">23</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=24&amp;releasedt_type=1">24</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=25&amp;releasedt_type=1">25</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=26&amp;releasedt_type=1">26</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=27&amp;releasedt_type=1">27</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=28&amp;releasedt_type=1">28</a></li>&nbsp;
+
+
+<li><a href="/jp/deck/search.aspx?name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=29&amp;releasedt_type=1">29</a></li>&nbsp;
+
+
+<li><span>30</span></li>&nbsp;
+
+
+	
+	</ul>
+	
+
+	</div>
+  
+</div>
+
+
+</div>
+
+</div>
+		<script type="text/javascript" charset="UTF-8" src="js/ChangeDetail.js"></script>
+		<script type="text/javascript">
+		jQuery(function() {
+		  jQuery('#DeckStart').datepicker({ dateFormat: 'yy/mm/dd' });
+		  jQuery('#DeckEnd').datepicker({ dateFormat: 'yy/mm/dd' });
+		});
+		</script>
+<div class="deckSearchForm" id="searchDetailLink">
+	<h2 class="title">デッキ検索</h2>
+	<div class="inner">
+	
+	<form method="get" action="/jp/deck/search.aspx?search=x" name="frm" onsubmit="return ReplaceChar('CardName')&&ReplaceChar_QuotDelete('PlayerName');">
+		<input type="button" value="Reset" id="btn_Reset" onclick="resetDetail();">
+		
+		<div class="chooseFormat clearfix">
+<div class="inner-left">
+<img src="/img/usr/format_choice.png" alt="フォーマットを選んでください">
+<img src="/img/usr/yazirusi.png" alt="" class="yazirusi">
+</div>
+<div class="formatBtn inner-right">
+<input type="radio" name="format" id="FormatName_Standard" value="Standard" class="format_form" checked="checked">
+<label for="FormatName_Standard">Standard</label><input type="radio" name="format" id="FormatName_Modern" value="Modern" class="format_form">
+<label for="FormatName_Modern">Modern</label><input type="radio" name="format" id="FormatName_Legacy" value="Legacy" class="format_form">
+<label for="FormatName_Legacy">Legacy</label><input type="radio" name="format" id="FormatName_Vintage" value="Vintage" class="format_form">
+<label for="FormatName_Vintage">Vintage</label><input type="radio" name="format" id="FormatName_EDH" value="EDH" class="format_form">
+<label for="FormatName_EDH">EDH</label><input type="radio" name="format" id="FormatName_Pauper" value="Pauper" class="format_form">
+<label for="FormatName_Pauper">Pauper</label><input type="radio" name="format" id="FormatName_Block" value="Block" class="format_form">
+<label for="FormatName_Block">Block</label><input type="radio" name="format" id="FormatName_Extended" value="Extended" class="format_form">
+<label for="FormatName_Extended">Extended</label>
+</div>
+</div>
+		<table id="searchDetail" style="display: none;">
+			<tbody>
+				<tr>
+					<th scope="row">年代別フォーマット</th>
+					<td>
+						<span id="date_format_area"><select name="date_format" id="decksearch_dateformat"><option value="Standard - DTK_SOI" selected>Standard - DTK_SOI</option><option value="Standard - KTK_BFZ">Standard - KTK_BFZ</option><option value="Standard - THS_KTK">Standard - THS_KTK</option><option value="Standard - RTR_THS">Standard - RTR_THS</option><option value="Standard - ISD_RTR">Standard - ISD_RTR</option><option value="Standard - SOM_ISD">Standard - SOM_ISD</option><option value="Standard - ZEN_SOM">Standard - ZEN_SOM</option></select></span>
+						</td>
+				</tr>
+				<tr>
+					<th scope="row">アーキタイプ</th>
+					<td>
+						<span id="archetype_area"><select name="archetype" id="decksearch_archetype"><option value="" selected>選択しない</option><option value="A000917">白黒緑コントロール/WBG Control</option><option value="A000916">赤緑ビートダウン/RG Aggro</option><option value="A000915">青赤ビートダウン/UR Aggro</option><option value="A000910">血統の観察者コンボ/Monitor Combo</option><option value="A000909">赤緑ゴーグル/RG Goggles</option><option value="A000908">エンチャントレス/Enchantress</option><option value="A000907">黒赤コントロール/BR Control</option><option value="A000906">白赤ビートダウン/WR Aggro</option><option value="A000905">青黒赤コントロール/UBR Control</option><option value="A000904">白青赤コントロール/WUR Control</option><option value="A000903">白赤コントロール/WR Control</option><option value="A000902">黒緑コントロール/BG Control</option><option value="A000897">黒赤緑コントロール/BRG Control</option><option value="A000894">白赤緑プレインズウォーカー/WRG Planeswalker</option><option value="A000893">エルドラージランプ/Eldrazi Ramp</option><option value="A000892">白黒緑ビートダウン/WBG Aggro</option><option value="A000891">青黒緑コントロール/UBG Control</option><option value="A000890">白赤緑ビートダウン/WRG Aggro</option><option value="A000889">青黒コントロール/UB Control</option><option value="A000888">白黒赤コントロール/WBR Control</option><option value="A000887">多色ビートダウン/Multi Color Aggro</option><option value="A000886">白青赤ビートダウン/WUR Aggro</option><option value="A000885">白青ビートダウン/WU Aggro</option><option value="A000884">黒緑ビートダウン/BG Aggro</option><option value="A000883">白青コントロール/WU Control</option><option value="A000882">赤緑狼男/RG Werewolf</option><option value="A000881">ローグ/Rogue</option><option value="A000880">白青黒ビートダウン/WUB Aggro</option><option value="A000879">赤単/Mono Red</option><option value="A000878">黒赤ビートダウン/BR Aggro</option><option value="A000877">黒赤吸血鬼/BR Vampire</option><option value="A000876">白青黒コントロール/WUB Control</option><option value="A000875">青赤コントロール/UR Control</option><option value="A000874">白黒コントロール/WB Control</option><option value="A000873">白黒ビートダウン/WB Aggro</option><option value="A000872">エルドラージストンピィ/Eldrazi Stompy</option><option value="A000871">白緑人間/WG Human</option><option value="A000870">白青人間/WU Human</option><option value="A000869">白緑ビートダウン/GW Aggro</option><option value="A000868">黒赤緑ビートダウン/BRG Aggro</option><option value="A000867">白単ビートダウン/Mono White Aggro</option><option value="A000866">黒緑ハスク/BG Husk</option><option value="A000865">赤単エルドラージ/Mono R Eldrazi</option><option value="A000864">白青緑ビートダウン/WUG Aggro</option><option value="A000863">赤緑マナランプ/RG Ramp</option><option value="A000862">多色コントロール/Multi Color Control</option><option value="A000861">エルフ/Elves</option></select></span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">アーキタイプの色絞り込み</th>
+					<td>
+						<div class="arch_color">
+							<span class="right_margin">アーキタイプを色で絞り込む</span>
+							<input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_1" value="1" /><label for="archetype_color_1">白</label><input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_2" value="2" /><label for="archetype_color_2">青</label><input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_3" value="3" /><label for="archetype_color_3">黒</label><input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_4" value="4" /><label for="archetype_color_4">赤</label><input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_5" value="5" /><label for="archetype_color_5">緑</label><input class="decksearch_color" name="archetype_color" type="checkbox" id="archetype_color_6" value="6" /><label for="archetype_color_6">無色</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">期間</th>
+					<td>
+						<input class="decksearch_termtype" name="releasedt_type" id="releasedt_type_1" value="1" type="hidden">
+						<input name="min_releasedt" value="" type="text" id="DeckStart" maxlength="10">
+						<span>～</span>
+						<input name="max_releasedt" value="" type="text" id="DeckEnd" maxlength="10">
+						<button class="latest_7" onclick="latest_7(); return false;"><p>直近7日間</p></button>
+						<button class="latest_14" onclick="latest_14(); return false;"><p>直近14日間</p></button>
+						<button class="latest_30" onclick="latest_30(); return false;"><p>直近1か月間</p></button>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">プレイヤー</th>
+					<td>
+						<input type="text" name="player" value="" id="PlayerName" maxlength="256" placeholder="半角英字で入力してください">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">カード名</th>
+					<td>
+						<input type="text" name="name_je" value="" id="CardName" maxlength="256" placeholder="カード名を入力してください">
+						<input name="name_je_type" type="radio" id="name_je_type_1" value="1" checked /><label for="name_je_type_1">or</label><input name="name_je_type" type="radio" id="name_je_type_2" value="2" /><label for="name_je_type_2">and</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" id="btn_Submit" name="search.x" value="submit">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	</div>
+</div>
+<script type="text/javascript" src="/js/Deck_Search.js"></script>
+<style>
+body{
+	background-image:url("/img/usr/base_deck_top.png")
+}
+#topHeader .helpLink li{
+	color: #404040;
+}
+#topHeader .helpLink li:before{
+	background:#404040;
+}
+#topHeader #contentLink ul{
+	border-color:#404040;
+}
+#topHeader #contentLink .linkOnlineShop{
+	color: #404040;
+	background-color: #F5F5F5;
+	font-weight: normal;
+}
+#topHeader #contentLink .linkDeck{
+	background-color:#404040;
+	color: white;
+	font-weight: bold;
+}
+#topHeader #contentLink li{
+	background-color:#F5F5F5;
+	color: #404040;
+}
+#topHeader .headerMailMagazine{
+	background-color: #404040;
+}
+#searchForm #leftmenu_search_goods_name{
+	border-color: #404040;
+}
+#searchForm #leftmenu_search_goods_submit{
+	background-color: #404040;
+	color:#F5F5F5;
+}
+#searchForm p{
+	color: #404040;
+}
+#block_of_categorytree h2{
+	color:  #404040;
+}
+#block_of_categorytree .category_button p{
+	border-color:#404040;
+}
+#block_of_categorytree .category_button p.selected{
+	background-color: #404040;
+}
+#topHeader #contentLink li:hover{
+background:#6D6D6D;
+}
+</style>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+</div>
+<div id="footer_wrap">
+<div id="view">
+	<div class="change_mode_">
+	表示モード: <a href="?ismodesmartphone=on&amp;name_je_type=1&amp;search.x=submit&amp;date_format=Standard+-+DTK_SOI&amp;ps=50&amp;format=Standard&amp;p=31&amp;releasedt_type=1">スマートフォンに切り替える</a> | PC
+	</div>
+</div>
+<div id="footer">
+<footer id="topFooter">
+	<div class="footerNav">
+		<h3>サイトマップ</h3>
+		<ul>
+			<li><a href="/jp/">オンラインショップ</a></li>
+			<li><a href="/purchase/">買取</a></li>
+			<li><a href="/article">記事</a></li>
+			<li><a href="/article/hareruya_pros/">Hareruya Pros</a></li>
+			<li><a href="/jp/deck/search.aspx">デッキ検索</a></li>
+			<li><a href="/jp/pages/tournament_tc.aspx">大会</a></li>
+			<li><a href="/jp/store/tc_top.aspx">店舗のご案内</a></li>
+			<li><a href="/jp/contact/contact.aspx">お問い合わせ</a></li>
+			<li><a href="/jp/pages/help.aspx">ヘルプ</a></li>
+		</ul>
+	</div>
+	<div class="footerNav">
+		<h3>会社情報</h3>
+		<ul>
+			<li><a href="/jp/pages/company_overview.aspx">会社概要</a></li>
+			<li><a href="/jp/pages/rules.aspx">利用規約</a></li>
+			<li><a href="/jp/pages/recruit_staff.aspx">スタッフ募集</a></li>
+			<li><a href="/jp/pages/staff_introduction.aspx">スタッフ紹介</a></li>
+			<li><a href="/jp/pages/transaction_notation.aspx ">特定商取引法表示</a></li>
+			<li><a href="/jp/pages/user_policy.aspx">個人情報保護方針</a></li>
+		</ul>
+	</div>
+	<section id="mailMagazine">
+		<a href="/jp/pages/mail_magazine.aspx">
+			<div class="mailTop">
+				<img src="/img/top_sp/icon_mail.png">
+				<h2>メルマガ会員募集中！</h2>
+				<p>新商品や最新記事など<br>
+				たくさんの情報をお届けします！</p>
+			</div>
+			<div class="mailBottom">
+				<p>登録はこちら</p>
+			</div>
+		</a>
+	</section>
+<p class="footerCopy">Copyright&copy;Hareruya Inc. All Rights Reserved.</p>
+</footer>
+<div class="to_top_button">
+<p></p>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="//std2f-s.snva.jp/js/naviplus_suggestitem_view.js" charset='UTF-8' ></script>
+<script type="text/javascript" src="//std2f-s.snva.jp/js/naviplus_suggest.js" charset='UTF-8' ></script>
+<link href="//std2f-s.snva.jp/css/naviplus_suggest.css" rel="stylesheet" crossorigin type="text/css" />
+<style type="text/css">
+.np-keyword-suggest {
+	width: 400px;
+}
+.np-keyword-suggest div {
+	width: 398px;
+}
+/* 商品詳細外枠 */
+.np-item-suggest {
+	width: 450px;
+}
+
+/* 商品詳細内枠 */
+.np-item-suggest div {
+	width:448px;
+}
+
+/* 商品詳細タイトル */
+.np-item-suggest .title {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 商品画像 */
+.np-item-suggest .image {
+	width: 60px;
+}
+.np-item-suggest .image img {
+	width: 60px;
+}
+
+/* 商品名・説明 */
+.np-item-suggest .item {
+	text-align: left;
+	width: 300px;
+}
+.np-item-suggest .item a {
+	width: 300px;
+	display: block;
+	text-decoration: none;
+}
+.np-item-suggest .item .item_title {
+	font-size: small;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+.np-item-suggest .item .item_desc {
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+if (jQuery("#leftmenu_search_goods_name").size() > 0){
+NPSuggest.bind({
+//-- Setting ---//
+server: "std2f-s.snva.jp",                // サジェストのホスト(HTML連携の場合は不要)
+accountID: "hareruyamtg",
+inputAreaID: "leftmenu_search_goods_name", // キーワード入力テキストボックス(input type="text")のidを指定
+submitBtnID: "leftmenu_search_goods_submit", // 検索フォーム送信ボタン(input type="button|image")のidを指定
+maxSuggest: 7, // サジェストの最大キーワード数
+matchMode: "partial", // 前方一致("prefix") / 部分一致("partial")
+groupByCategory: false, // サジェスト結果をカテゴリごとに分類するかどうか
+sortType: 1, // サジェスト結果の並び順タイプ ※詳細はマニュアルを参照
+recommendItemUrlPrefix: "/jp",  // 日本語用URL
+recommendItemEnabled: "on", // キーワード関連商品を表示するかどうか(画像表示) "on" / "off" 
+recommendItemAreaTitle: "Recommended Items", // キーワード関連商品を表示の際のタイトル
+recommendItemAreaPosition: "right", // キーワード関連商品の表示位置 "right" / "left" / "bottom" 
+field: "title",
+});
+}
+</script>
+
+<script type="text/javascript">
+if (jQuery("#search_goods_name").size() > 0){
+NPSuggest.bind({
+//-- Setting ---//
+server: "std2f-s.snva.jp",                // サジェストのホスト(HTML連携の場合は不要)
+accountID: "hareruyamtg",
+inputAreaID: "search_goods_name", // キーワード入力テキストボックス(input type="text")のidを指定
+submitBtnID: "search_goods_submit", // 検索フォーム送信ボタン(input type="button|image")のidを指定
+maxSuggest: 7, // サジェストの最大キーワード数
+matchMode: "partial", // 前方一致("prefix") / 部分一致("partial")
+groupByCategory: false, // サジェスト結果をカテゴリごとに分類するかどうか
+sortType: 1, // サジェスト結果の並び順タイプ ※詳細はマニュアルを参照
+recommendItemUrlPrefix: "/jp",  // 日本語用URL
+recommendItemEnabled: "on", // キーワード関連商品を表示するかどうか(画像表示) "on" / "off" 
+recommendItemAreaTitle: "Recommended Items", // キーワード関連商品を表示の際のタイトル
+recommendItemAreaPosition: "right", // キーワード関連商品の表示位置 "right" / "left" / "bottom" 
+field: "title",
+});
+}
+</script>
+<section id="popupProduct">
+	<div class="popupWindow">
+		<div class="cartSuccess"><p>商品をカートに入れました</p></div>
+	</div>
+	<div class="popupArrow upArrow"></div>
+	<div class="popupArrow downArrow"></div>
+</section>
+<script type="text/javascript" src="/js/top_renew.js"></script>
+</body>
+</html>
+

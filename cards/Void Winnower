@@ -1,0 +1,3 @@
+<root><name>Void Winnower</name><manacost>9</manacost><manacost_point>9</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)		</type><oracle>Your opponents can&apos;t cast spells with even converted mana costs. （Zero is even.）
+Your opponents can&apos;t block with creatures with even converted mana costs.</oracle><powertoughness>11/9</powertoughness><illustrator>Chase Stone</illustrator><rarity>神話レア</rarity><cardset> 戦乱のゼンディカー (17/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

@@ -1,0 +1,28 @@
+@relation mana_analysis
+
+@attribute sum_of_manacost_point_at_mainboard numeric %111
+@attribute needed_white_mana_at_mainboard numeric %0
+@attribute needed_blue_mana_at_mainboard numeric %0
+@attribute needed_black_mana_at_mainboard numeric %47
+@attribute needed_red_mana_at_mainboard numeric %0
+@attribute needed_green_mana_at_mainboard numeric% 7
+@attribute needed_colorless_mana_at_mainboard numeric% 0
+
+@attribute generating_white_mana_at_mainboard numeric %3
+@attribute generating_blue_mana_at_mainboard numeric %3
+@attribute generating_black_mana_at_mainboard numeric %21
+@attribute generating_red_mana_at_mainboard numeric %3
+@attribute generating_green_mana_at_mainboard numeric %14
+@attribute generating_colorless_mana_at_mainboard numeric %2
+
+@data
+111,0,0,47,0,7,0,3,3,21,3,14,2 %BG_Con_JF
+66,51,0,0,0,0,0,18,0,0,0,0,1 %Mono_White_Aggro_kD03070W
+95,10,13,0,0,24,0,12,14,4,4,18,5 %WUG_Aggro_kD03069W
+94,4,0,0,16,22,0,9,3,3,17,17,3 %WRG_Aggro_kD03068W
+102,47,13,0,0,0,0,22,11,0,0,0,0 %WU_Aggro_kD03067W
+107,19,0,0,9,22,0,17,4,4,14,15,4 %WRG_Aggro_kD03066W
+107,20,0,36,0,0,0,15,0,18,1,0,9 %WB_Control_kD03042W
+108,4,0,10,0,26,4,13,8,17,8,18,15 %Monitor_Combo_kD03043W
+101,4,0,11,0,29,0,16,12,20,11,21,19 %Monitor_Combo_kD03044W
+94,0,2,14,0,27,0,7,11,19,7,23,18 %BG_Husk_kD03045W

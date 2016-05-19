@@ -1,3 +1,3 @@
-<root><name>Blisterpod</name><manacost>W</manacost><manacost_point>1</manacost_point><type>
+<root><name>Blisterpod</name><manacost>G</manacost><manacost_point>1</manacost_point><type>
 			クリーチャー — エルドラージ(Eldrazi)・ドローン(Drone)		</type><oracle>Devoid （This card has no color.）
 When Blisterpod dies, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;</oracle><powertoughness>1/1</powertoughness><illustrator>Ryan Barger</illustrator><rarity>コモン</rarity><cardset> 戦乱のゼンディカー (163/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

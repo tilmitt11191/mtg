@@ -16,3 +16,6 @@ ruby get_contents_of_card.rb "name"
  find ./ -name "*.rb"  | xargs grep "TODO"
 
 execute at mtg/***/***/
+../../lib/decklists/convert_from_mo_to_full.rb
+ruby ../../lib/decklists/get_hareruya_decks_with_price.rb
+ruby ../../test_cases/card_operation/card.read_from_url.rb

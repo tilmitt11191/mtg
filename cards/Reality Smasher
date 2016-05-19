@@ -1,0 +1,4 @@
+<root><name>Reality Smasher</name><manacost>4C</manacost><manacost_point>5</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)		</type><oracle>（{C} represents colorless mana.）
+Trample, haste
+Whenever Reality Smasher becomes the target of a spell an opponent controls, counter that spell unless its controller discards a card.</oracle><powertoughness>5/5</powertoughness><illustrator>Jason Rainville</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (7/184) </cardset><generating_mana_type>nil</generating_mana_type></root>

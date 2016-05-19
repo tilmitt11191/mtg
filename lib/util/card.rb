@@ -9,10 +9,10 @@ require '../../lib/card_operation/mana_analyzer.rb'
 
 class Card
 	@log
-	@card_type #land,creature,spell,sideboardCards ##TODO: rename to type
+	@card_type #land,creature,spell,mainboardCards,sideboardCards ##TODO: rename to type
 	@name
-	@quantity
-	@price
+	@quantity #int
+	@price #Price::price
 	@value
 	@store_url
 	@generating_mana_type #if name is mountain, set "R"
@@ -253,7 +253,7 @@ class Card
 			symbol.tr!("青", "U")
 			symbol.tr!("黒", "B")
 			symbol.tr!("赤", "R")
-			symbol.tr!("緑", "W")
+			symbol.tr!("緑", "G")
 			symbol.tr!("◇", "C")
 			@manacost = @manacost.to_s + symbol.to_s
 			@manacost_array.push(symbol)
@@ -294,8 +294,9 @@ class Card
 	def set_generating_mana_type
 	#set_generating_mana_type
 		@log.info "card(" + name.to_s + ").set_generating_mana_type start."
-		mana_analyzer = Mana_analyzer.new()
+		mana_analyzer = Mana_analyzer.new(nil)
 		@generating_mana_type = mana_analyzer.get_generating_mana_type(self)
+		write_contents()
 	end
 
 end

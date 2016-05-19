@@ -1,0 +1,4 @@
+<root><name>Eldrazi Skyspawner</name><manacost>2U</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)・ドローン(Drone)		</type><oracle>Devoid （This card has no color.）
+Flying
+When Eldrazi Skyspawner enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;</oracle><powertoughness>2/1</powertoughness><illustrator>Chase Stone</illustrator><rarity>コモン</rarity><cardset> 戦乱のゼンディカー (58/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

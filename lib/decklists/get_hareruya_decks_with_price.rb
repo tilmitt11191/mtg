@@ -66,15 +66,16 @@ class DeckID
 	
 	def create_deckfile()
 		deck = Deck.new(@name, "hareruya", "http://www.hareruyamtg.com/jp/k/" + @id + "/")
-		deck.create_cardlist
+		deck.create_cardlist("full")
 		@hareruya.convert_all_cardname_from_jp_to_eng(deck)
 
-		deck.get_contents
-		
+		deck.get_contents_of_all_cards
+		deck.get_sum_of_generating_manas
+
 		#deck.calc_price_of_each_card_type
 		#deck.calculate_price	
 
-		deck.create_deckfile("../../decks/" + @name.to_s + ".csv", "card_type,name,quantity,price,store_url,price.date,generating_mana_type", "with_info")
+		deck.create_deckfile("../../decks/hareruya/" + @name.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
 		
 		deck_prices = Deck_prices.new()
 		deck_prices.read("../../decks/decklist.csv")
@@ -87,15 +88,41 @@ decks = []
 
 ##############################################
 
-id = "kD08241S"
-name = "BG_Control"+id.to_s
+id = "kD03070W"
+name = "Mono_White_Aggro_"+id.to_s
 decks.push DeckID.new(id,name)
 
-#id = "kD09259S"
-#name = "Eldrazi_Stompy"+id.to_s
-#decks.push DeckID.new(id,name)
+id = "kD03069W"
+name = "WUG_Aggro_"+id.to_s
+decks.push DeckID.new(id,name)
 
+id = "kD03068W"
+name = "WRG_Aggro_"+id.to_s
+decks.push DeckID.new(id,name)
 
+id = "kD03067W"
+name = "WU_Aggro_"+id.to_s
+decks.push DeckID.new(id,name)
+
+id = "kD03066W"
+name = "WRG_Aggro_"+id.to_s
+decks.push DeckID.new(id,name)
+
+id = "kD03042W"
+name = "WB_Control_"+id.to_s
+decks.push DeckID.new(id,name)
+
+id = "kD03043W"
+name = "Monitor_Combo_"+id.to_s
+decks.push DeckID.new(id,name)
+
+id = "kD03044W"
+name = "Monitor_Combo_"+id.to_s
+decks.push DeckID.new(id,name)
+
+id = "kD03045W"
+name = "BG_Husk_"+id.to_s
+decks.push DeckID.new(id,name)
 
 
 

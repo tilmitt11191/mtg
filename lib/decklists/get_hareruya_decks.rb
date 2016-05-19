@@ -73,11 +73,11 @@ class DeckID
 		hareruya.convert_all_cardname_from_jp_to_eng(deck)
 
 		#get contents of all cards. such as manacost, oracle,...
-		deck.get_contents
+		deck.get_contents_of_all_cards
 		
 		case create_mode
 		when "except_price" then
-			deck.create_deckfile("../../decks/" + @name.to_s + ".csv", "card_type,name,quantity,store_url,generating_mana_type", "with_info")		
+			deck.create_deckfile("../../decks/" + @name.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,store_url", "with_info")		
 		when "full" then
 			#calculate price of each_card_type,
 			#such as land,creatures,spells,MainboardCards,sideboardCards
@@ -90,7 +90,7 @@ class DeckID
 			deck_prices.add(deck)
 			deck_prices.write("../../decks/decklist.csv")
 
-			deck.create_deckfile("../../decks/" + @name.to_s + ".csv", "card_type,name,quantity,price,store_url,price.date,generating_mana_type", "with_info")
+			deck.create_deckfile("../../decks/" + @name.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,store_url", "with_info")
 		end
 	end
 end

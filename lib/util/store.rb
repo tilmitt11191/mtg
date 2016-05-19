@@ -4,7 +4,9 @@ require	"logger"
 require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/card.rb'
+require '../../lib/util/deck.rb'
 require '../../lib/util/util.rb'
+require '../../lib/decklists/deck_prices.rb'
 
 class Store
 	@log
@@ -32,7 +34,7 @@ class Store
 	def extract_english_card_name(cardname)
 	end
 	
-	def create_card_list(path)
+	def create_card_list(deck, create_mode)
 		#return cards
 	end
 	
@@ -63,7 +65,7 @@ class Store
 end
 
 
-class Hareruya < Store	
+class Hareruya < Store
 	def initialize()
 		super("Hareruya")
 		@url = "http://www.hareruyamtg.com/jp/"
@@ -73,6 +75,7 @@ class Hareruya < Store
 		@log.debug "how match ["+card.name+"]@hareruya"
 		@card_name = card.name
 		@log.debug "url is [" + card.store_url + "]"
+		#TODO if card.store_url not include "hareruya"
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
 		#price = "100"
@@ -83,11 +86,21 @@ class Hareruya < Store
 	end
 	
 	def extract_english_card_name(cardname)
-		english_card_name = cardname.split('/')[1]
-		english_card_name.delete!("》")
-		return english_card_name
-		##from 《コイロスの洞窟/Caves of Koilos》
-		##to Caves of Koilos
+		if cardname.nil? then
+			return nil
+		elsif cardname.match('/') && cardname.match("》")
+			##from 《コイロスの洞窟/Caves of Koilos》
+			##to Caves of Koilos
+			english_card_name = cardname.split('/')[1]
+			english_card_name.delete!("》")
+			return english_card_name
+		else
+			cardname.gsub!(/[^ -~｡-ﾟ]/,"")
+			#cardname.gsub!(/[ぁ-ん]/u,"")
+			#cardname.gsub!(/[ァ-ヴ]/u,"")
+			#cardname.gsub!(/[一-龠]/u,"")
+			return cardname
+		end
 	end
 	
 	def convert_all_cardname_from_jp_to_eng(deck)
@@ -97,7 +110,79 @@ class Hareruya < Store
 		end
 	end
 	
-	
+	def read_deckfile(filename, format, mode)
+		#format:
+		#card_type,name,quantity,price,store_url,price.date,generating_mana_type
+		#for get_generating_mana_of_decks.rb
+		#"card_type,name,quantity,generating_mana_type"
+		#for get_deck_prices.rb
+		#"card_type,name,quantity,price,store_url,price.date,generating_mana_type"
+		
+		#mode:
+		#with_info or card_only
+
+		@log.info "hareruya.read_deckfile[" + filename.to_s + "] start"
+		@log.debug "target contents are"
+		forms = format.split(',')
+		forms.each do |form|
+			@log.debug "\t" + form.to_s
+		end
+		@log.debug "mode: " + mode.to_s
+
+		if !File.exist?(filename) then
+			@log.error "file[" + filename.to_s + "] not exist."
+			return nil
+		end
+
+		#extract deckname from the first line.
+		#info,BG_Con_JF 36850
+		deckname = File.open(filename, "r:sjis").readlines[0].split(',')[1].split(' ')[0]
+		deck = Deck.new(deckname,"hareruya",filename.to_s)
+
+		File.open(filename, "r:sjis").each do |line|
+			line.chomp!
+			@log.debug "line.chomp!"
+			@log.debug "line[" + line.to_s + "]"
+			line.encode!('utf-8')
+
+
+			if line.empty? then
+				@log.warn "at hareruya.read_deckfile"
+				@log.warn "deckfile[" + filename.to_s + "] has empty line."
+			elsif line.include?("info,") then
+				card_type = "info"
+			else
+				#split each line according to the format
+				(card_type,cardname,quantity,manacost,generating_mana_type,price,store_url,date) = line.split(',')
+				#(card_type,cardname,quantity,price,store_url,date) = line.split(",")
+				#contents = line.split(",")
+				#for i in 0..forms.size-1
+					#puts forms[i].to_s + " =  " + contents[i].to_s
+					#instance_eval("#{forms[i]}") = contents[i]
+				#end
+			end
+			
+			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
+				cardname=reconvert_period(cardname)
+				card = Card.new(cardname.to_s)
+				card.quantity = quantity
+				card.manacost = manacost
+				card.generating_mana_type = generating_mana_type
+				card.store_url = store_url
+				card.card_type = card_type
+				card.price.value = price
+				card.price.date = date
+				deck.cards.push(card)
+			end
+			
+		end
+		
+		if mode == "with_info" then deck.set_information() end
+
+		@log.debug "hareruya.read_deckfile(" + filename.to_s + ") finished. return deck."
+
+		return deck
+	end
 	
 	#fill deck.cards.
 	def create_card_list(deck, create_mode)
@@ -182,7 +267,10 @@ class Hareruya < Store
 				card = Card.new(card_name)
 				card.store_url = url
 				card.card_type = card_type
-				if create_mode == "full" then card.price.renew_at("hareruya") end
+				if create_mode == "full" then
+					card.price.renew_at("hareruya")
+				end
+				@log.debug "name[" + card_name.to_s + "], card_type[" + card.card_type.to_s + "], card.price[" + card.price.to_s + "]"
 				deck.cards.push(card)
 			end
 		end
@@ -296,6 +384,89 @@ class Hareruya < Store
 		@log.debug "Hareruya.create_card_list_simple finished."
 	end
 =end
+
+	def create_deck_from_url(url,priceflag:"off",fileflag:"off")
+	#input:url #http://www.hareruyamtg.com/jp/k/kD08241S/
+	#output:deck
+		if url.split('/').size < 6 then
+			@log.error "[error] at hareruya.create_deck_from_url_execpt_price(url)"
+			@log.error "url not invalid. cannot get deckname."
+			@log.error "url = " + url
+			return nil
+		end
+
+		deckname = url.split('/')[5]
+		deck = Deck.new(deckname, "hareruya", url)
+		if priceflag == true || priceflag == "on" then
+			create_card_list(deck, "full")
+		else
+			create_card_list(deck, "except_price")
+		end
+		convert_all_cardname_from_jp_to_eng(deck)
+		deck.get_contents_of_all_cards
+
+		if priceflag == true || priceflag == "on" then
+			#calculate price of each_card_type and deck.
+			#such as deck.price, land, creatures, spells, MainboardCards, sideboardCards
+			#using card.price, which had been set at create_card_list(deck, "full").
+			deck.calc_price_of_whole_deck
+
+			deck_prices = Deck_prices.new()
+			deck_prices.read("../../decks/decklist.csv")
+			deck_prices.add(deck)
+			deck_prices.write("../../decks/decklist.csv")
+		end
+
+		if fileflag == true || fileflag == "on" then
+			if priceflag == true || priceflag == "on" then
+				deck.create_deckfile("../../decks/hareruya/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,price.date,store_url", "with_info")
+			else
+				deck.create_deckfile("../../decks/hareruya/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,store_url", "with_info")
+			end
+		end
+		return deck
+	end
+
+
+	def search_deckurls_from_webpage(deck_num)
+		@log.info "search_deckurls_from_webpage(" + deck_num.to_s + ") start" 
+		#http://www.hareruyamtg.com/jp/deck/search.aspx?name_je_type=1&search.x=submit&date_format=Standard+-+DTK_SOI&format=Standard&ps=50&p=2&releasedt_type=1
+		#http://www.hareruyamtg.com/jp/deck/search.aspx?name_je_type=1&search.x=submit&date_format=Standard+-+DTK_SOI&format=Standard&ps=50&p=1&releasedt_type=1
+		deck_urls = [] #array of url
+		index_size = 50 #num of decks in one index page.
+		index_page = 1 #
+		while 1 do
+			@log.debug "index_page[" + index_page.to_s + "], deck_urls.size[" + deck_urls.size.to_s + "]"
+			#### get url start
+			index_url = "http://www.hareruyamtg.com/jp/deck/search.aspx?name_je_type=1&search.x=submit&date_format=Standard+-+DTK_SOI&format=Standard&ps=" + index_size.to_s + "&p=" + index_page.to_s + "&releasedt_type=1"
+			index_row_data = open(index_url)
+			#File.open("index_page[" + index_page.to_s + "].txt", "w") do |file|
+			#	file.write index_row_data.read
+			#end
+			index_nokogiri = Nokogiri::HTML.parse(index_row_data, nil, @charset)
+			index_nokogiri.css('a').each do |a|
+				if a.attribute('href').value.match('/jp/k/') then # =>/jp/k/kD01419K/
+					url = "http://www.hareruyamtg.com/" + a.attribute('href').value
+						# => http://www.hareruyamtg.com//jp/k/kD01418K/
+					@log.debug "url[" + url.to_s + "]"
+					deck_name = a.css('div/ul/li/span.deckTitle').inner_text
+					@log.debug "deck_name[" + deck_name.to_s + "]"
+					private_flag = a.css('div/ul/li/div.private').inner_html
+					# if open deck list => ""
+					# if closed deck list => <img src="/img/usr/search_closed.png" alt="private">
+					@log.debug "private_flag[" + private_flag.to_s + "]"
+					if private_flag.size == 0 then
+						deck_urls.push(url)
+					end
+					if(deck_urls.size >= deck_num) then
+						return deck_urls
+					end
+
+				end
+			end
+			index_page += 1
+		end
+	end
 end
 
 class MagicOnline < Store
@@ -304,7 +475,39 @@ class MagicOnline < Store
 		@url = ""
 	end
 	
+
+	def read_deckfile(deckname, filename)
+	#create deck class from text file exported by magic online application.
+		@log.info "MagicOnline.read_deckfile start."
+		@log.debug "deckname[" + deckname.to_s + "], filename[" + filename.to_s + "]"
+
+		deck = Deck.new(deckname, "mo", filename)
+		card_type = "mainboardCards"
+
+		File.open(filename, 'r').each do |line|
+			if line =~ /^\s*$/ then
+				card_type = "sideboardCards"
+			else
+				line.chomp!
+				cardname = line.split(' ',2)[1]
+				quantity = line.split(' ',2)[0]
+				@log.debug "deck.cards.push[cardname(" + cardname.to_s + "), quantity(" + quantity.to_s + "), card_type(" + card_type.to_s + ")]"
+
+				card = Card.new(cardname)
+				card.quantity = quantity.to_i
+				card.card_type = card_type
+
+				deck.cards.push(card)
+			end
+		end
+
+		return deck
+	end
+
+
+
 	def create_card_list(deck, filename)
+	#create filename.csv.
 		@log.info "MagicOnline.create_card_list start."
 		@log.debug "convert " + deck.deckname.to_s + " and save to " + filename.to_s
 		 File.open(filename, "w:sjis") do |file|
@@ -319,5 +522,4 @@ class MagicOnline < Store
 		end
 	end
 	
-
 end

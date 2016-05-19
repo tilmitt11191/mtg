@@ -1,4 +1,4 @@
-<root><name>Den Protector</name><manacost>1W</manacost><manacost_point>2</manacost_point><type>
+<root><name>Den Protector</name><manacost>1G</manacost><manacost_point>2</manacost_point><type>
 			クリーチャー — 人間(Human)・戦士(Warrior)		</type><oracle>Creatures with power less than Den Protector&apos;s power can&apos;t block it.
 Megamorph {1}{G} （You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its megamorph cost and put a +1/+1 counter on it.）
 When Den Protector is turned face up, return target card from your graveyard to your hand.</oracle><powertoughness>2/1</powertoughness><illustrator>Viktor Titov</illustrator><rarity>レア</rarity><cardset> タルキール龍紀伝 (181/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

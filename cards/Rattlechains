@@ -1,0 +1,5 @@
+<root><name>Rattlechains</name><manacost>1U</manacost><manacost_point>2</manacost_point><type>
+			クリーチャー — スピリット(Spirit)		</type><oracle>Flash
+Flying
+When Rattlechains enters the battlefield, target Spirit gains hexproof until end of turn.
+You may cast Spirit spells as though they had flash.</oracle><powertoughness>2/1</powertoughness><illustrator>Lius Lasahido</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (81/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

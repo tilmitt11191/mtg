@@ -1,0 +1,3 @@
+<root><name>Yavimaya Coast</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{T}: Add {G} or {U} to your mana pool. Yavimaya Coast deals 1 damage to you.</oracle><powertoughness></powertoughness><illustrator>Anthony S. Waters</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (252/272) </cardset><generating_mana_type>C-G-U</generating_mana_type></root>

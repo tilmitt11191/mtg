@@ -1,0 +1,25 @@
+@relation mana_analysis
+
+@attribute sum_of_manacost_point_at_mainboard numeric
+@attribute needed_white_mana_at_mainboard numeric
+@attribute needed_blue_mana_at_mainboard numeric
+@attribute needed_black_mana_at_mainboard numeric
+@attribute needed_red_mana_at_mainboard numeric
+@attribute needed_green_mana_at_mainboard numeric
+
+@attribute generating_white_mana_at_mainboard numeric
+@attribute generating_blue_mana_at_mainboard numeric
+@attribute generating_black_mana_at_mainboard numeric
+@attribute generating_red_mana_at_mainboard numeric
+@attribute generating_green_mana_at_mainboard numeric
+@attribute generating_colorless_mana_at_mainboard numeric
+
+@data
+111,0,0,47,0,7,3,3,21,3,14,2 %BG_Con_JF
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2
+111,0,0,47,0,7,3,3,21,3,14,2

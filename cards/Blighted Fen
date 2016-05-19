@@ -1,0 +1,3 @@
+<root><name>Blighted Fen</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{4}{B}, {T}, Sacrifice Blighted Fen: Target opponent sacrifices a creature.</oracle><powertoughness></powertoughness><illustrator>Jonas De Ro</illustrator><rarity>アンコモン</rarity><cardset> 戦乱のゼンディカー (230/274) </cardset><generating_mana_type>C</generating_mana_type></root>

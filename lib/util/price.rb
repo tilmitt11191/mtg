@@ -15,15 +15,21 @@ class Price
 
 	def initialize(card)
 		@log = Logger.new("../../log")
-		@log.info "price of " + card.name + " initialize"
-		@card = card
-		@value = nil
-		@date = nil
+		if card.nil? then
+			@log.warn "price.initialize(nil)"
+			@value = 0
+			@date = nil
+		else
+			@log = Logger.new("../../log")
+			@log.info "price of " + card.name + " initialize"
+			@card = card
+			@value = 0
+			@date = nil
+		end
 	end
 	
 	def renew_at(storename)
 		@log.debug "card.price.renew_at("+storename+")"
-		@log.debug "date is " + @date.to_s
 		case storename
 		when "hareruya" then
 			@log.debug "renew at hareruya start"
@@ -31,6 +37,7 @@ class Price
 			@value = @store.how_match?(@card)
 			@log.debug "[" + @card.name.to_s + "] is [" + @value.to_s + "]"
 			@date = DateTime.now
+			@log.debug "date is " + @date.to_s
 		else
 			@log.error "Price.renew_at(invalid store)"
 			@log.error "store name is " + storename
@@ -40,7 +47,7 @@ class Price
 	
 	def to_s
 		if @value.nil? then
-			@log.error @card.name.to_s + ".price.to_i = nil. return nil."
+			@log.warn @card.name.to_s + ".price.to_i = nil. return nil."
 			"nil"
 		else
 			@value.to_s
@@ -49,11 +56,15 @@ class Price
 
 	def to_i
 		if @value.nil? then
-			@log.error @card.name.to_s + "price.to_i = nil. return 0."
+			@log.error @card.name.to_s + ".price.to_i = nil. return 0."
 			0
 		else
 			@value.to_i
 		end
+	end
+
+	def +(price)
+		@value += price.to_i
 	end
 
 end

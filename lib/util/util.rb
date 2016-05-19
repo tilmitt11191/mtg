@@ -3,10 +3,12 @@
 require 'diff/lcs'
 
 def convert_period(str)
+	if str.nil? then return nil end
 	return str.gsub(",", "PERIOD")
 end
 
 def reconvert_period(str)
+	if str.nil? then return nil end
 	return str.gsub("PERIOD",",").to_s
 end
 

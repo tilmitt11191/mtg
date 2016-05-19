@@ -10,14 +10,17 @@ class Deck
 		
 	@deckname
 	@cards #Array of Card
-	#@deck_list #hash. deck_list[:cardname]=num
-	@price #Class Price. deck_price. deck_list[:cardname]*cards.price
-	attr_accessor :deckname, :cards, :deck_list, :price
+	@price #Class Price. deck_price.
+	@sum_of_mainboard_generating_manas #str
+	@sum_of_sideboard_generating_manas #str
+
+	attr_accessor :deckname, :cards, :price, :sum_of_mainboard_generating_manas, :sum_of_sideboard_generating_manas
 
 	@list_type #file or hareruya or...
 	@path #dir+name or url+name or...
 	@date
 	@store
+	@mana_analyzer
 	attr_accessor :date, :path, :date, :store
 
 	#quantity of each card type.
@@ -48,13 +51,17 @@ class Deck
 		@log.info "Deck initialize"
 		@log.debug "set deck name[" + deckname + "]"
 		@deckname = deckname
+		@cards = []
+		@price = Price.new(nil)
+		@sum_of_mainboard_generating_manas = "" #str
+		@sum_of_sideboard_generating_manas = "" #str
 		@log.debug "set list type[" + list_type + "]"
 		@list_type = list_type
 		@log.debug "set path[" + path + "]"
 		@path = path
 		@date = DateTime.now
-		@deck_list = {}
-		
+		@mana_analyzer = Mana_analyzer.new(self)
+
 		@quantity_of_lands = 0
 		@quantity_of_creatures = 0
 		@quantity_of_spells = 0
@@ -74,7 +81,7 @@ class Deck
 		#card_type,card_name,quantity,price
 		@log.debug "Deck[" + @deckname + "] view_deck_list start"
 		@cards.each do |card|
-			print card.card_type.to_s + "," + card.name.to_s + "," + card.quantity.to_s + "," + card.price.to_s + "," + card.store_url.to_s + "," + card.price.date.to_s + "\n"
+			print card.card_type.to_s + "," + card.name.to_s + "," + card.quantity.to_s + "," + card.price.to_s + "," + card.store_url.to_s + "," + card.price.date.to_s + "," + card.generating_mana_type.to_s + "\n"
 		end
 		@log.debug "Deck[" + @deckname + "] view_deck_list finished"
 	end
@@ -119,17 +126,17 @@ class Deck
 	#info	15 SideboardCards 5530					
 	#info	http://www.hareruyamtg.com/jp/k/kD08241S/					
 	
-		#format:
-		#card_type,name,quantity,price,store_url,price.date,generating_mana_type
-		#
-		#for get_generating_mana_of_decks.rb
-		#"card_type,name,quantity,generating_mana_type"
-		#
-		#for get_deck_prices.rb
-		#"card_type,name,quantity,price,store_url,price.date,generating_mana_type"
-		#
-		#mode:
-		#with_info or card_only
+	#format:
+	#card_type,name,quantity,price,store_url,price.date,generating_mana_type
+	#
+	#for get_generating_mana_of_decks.rb
+	#"card_type,name,quantity,generating_mana_type"
+	#
+	#for get_deck_prices.rb
+	#"card_type,name,quantity,price,store_url,price.date,generating_mana_type"
+	#
+	#mode:
+	#with_info or card_only
 		
 		@log.info "create_deckfile(" + filename + ") start."
 		@log.debug "filename: " + filename.to_s
@@ -174,10 +181,10 @@ class Deck
 					elsif(previous_type == "creature" && card.card_type == "spell") then
 						@log.debug "write creature information"
 						file.puts "info," + @quantity_of_creatures.to_s + " Creatures " + @price_of_creatures.to_s
-					elsif(previous_type == "spell" && card.card_type == "sideboardCards") then
+					elsif((previous_type == "spell" || previous_type == "mainboardCards") && card.card_type == "sideboardCards") then
 						@log.debug "write spell and main_board information"
 						file.puts "info," + @quantity_of_spells.to_s + " Spells " + @price_of_spells.to_s					
-						file.puts "info," + @quantity_of_mainboard_cards.to_s + " MainboardCards " + @price_of_mainboard_cards.to_s
+						file.puts "info," + @quantity_of_mainboard_cards.to_s + " MainboardCards " + @price_of_mainboard_cards.to_s + " " + @sum_of_mainboard_generating_manas.to_s
 					end
 					#write cards
 					forms.each do |form|
@@ -194,7 +201,7 @@ class Deck
 				end
 				#write informations
 				@log.debug "write sideboardCards information"
-				file.puts "info," + @quantity_of_sideboard_cards.to_s + " SideboardCards " + @price_of_sideboard_cards.to_s
+				file.puts "info," + @quantity_of_sideboard_cards.to_s + " SideboardCards " + @price_of_sideboard_cards.to_s + " " + @sum_of_sideboard_generating_manas.to_s
 				file.puts "info," + @path
 			end
 		else
@@ -284,40 +291,16 @@ class Deck
 				card.price.date = date
 				@cards.push(card)
 			end
-			
 		end
 		
 		if mode == "with_info" then set_information() end
 	end
 
 
-	def read_deckfile_(filename) #TODO: move to hareruya
-		#card_type,cardname,quantity,price,store_url,date
-		@log.info "read_deckfile[" + filename.to_s + "] start"
-		@cards = []
-		File.open(filename, "r:sjis").each do |line|
-			line.chomp!
-			@log.debug "line.chomp!"
-			@log.debug "line[" + line.to_s + "]"
-			line.encode!('utf-8')
-			(card_type,cardname,quantity,price,store_url,date) = line.split(",")
-			
-			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
-				card_name=reconvert_period(card_name)
-				card = Card.new(cardname.to_s)
-				card.quantity = quantity
-				card.store_url = store_url
-				card.card_type = card_type
-				card.price.value = price
-				@cards.push(card)
-			end
-			
-		end
-	end
-	
 
-	def get_contents
+	def get_contents_of_all_cards
 	#get contents of all cards. such as manacost, oracle,...
+	#from dom file at ../../cards/ or http://whisper.wisdom-guild.net/
 		@log.info "deck.get_contents start"
 		@cards.each do |card|
 			card.read_contents()
@@ -326,10 +309,22 @@ class Deck
 			end
 		end
 	end
+
+
+	def get_sum_of_generating_manas
+	#get sum of all card's generating manas. 
+	#Please execute this method after get_contents()
+		@log.info @deckname.to_s + ".get_sum_of_generationg_manas() start."
+		sum_of_generationg_manas = @mana_analyzer.calc_sum_of_generating_mana()
+		if sum_of_generationg_manas.size == 2 then
+			@sum_of_mainboard_generating_manas = sum_of_generationg_manas[0]
+			@sum_of_sideboard_generating_manas = sum_of_generationg_manas[1]
+		end
+	end
 	
 	
-	def set_information #from this.cards
-		#set quantity_of_*** and price_of_***
+	def set_information
+	#set quantity_of_*** and price_of_*** from this.cards
 		@log.info "set_information start."
 
 		#initialize
@@ -373,6 +368,12 @@ class Deck
 			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
 			@price_of_all += card.price.to_i * card.quantity.to_i
 
+			elsif card.card_type.to_s == "mainboardCards"
+			@quantity_of_mainboard_cards += card.quantity.to_i
+			@quantity_of_all += card.quantity.to_i
+			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
+			@price_of_all += card.price.to_i * card.quantity.to_i
+
 			elsif card.card_type.to_s == "sideboardCards"
 			@quantity_of_sideboard_cards += card.quantity.to_i
 			@quantity_of_all += card.quantity.to_i
@@ -385,8 +386,8 @@ class Deck
 	
 	
 	
-	
-	def calculate_price
+=begin	
+	def calc_price_of_all_deck
 	#calculate total price of this deck.
 		@log.info "calculate_price start"
 		price = 0
@@ -397,14 +398,14 @@ class Deck
 		end
 		return price
 	end
+=end
 	
-	
-	def calc_price_of_each_card_type
-	#calculate price of each_card_type,
-	#such as land,creatures,spells,MainboardCards,sideboardCards
+	def calc_price_of_whole_deck
+	#calculate price of each_card_type and deck.
+	#such as deck.price, land, creatures, spells, MainboardCards, sideboardCards
+	#using card.price, which have to be already set.
+		@log.info deckname.to_s + ".calc_price_of_whole_deck start"
 		if @cards.nil? then @log.error "@cards is nil at calc_price_of_each_card_type." end
-		@log.debug "calc_price_of_each_card_type(deck) start"
-		@price_of_all = 0		
 		@price_of_lands = 0
 		@price_of_creatures = 0
 		@price_of_spells = 0
@@ -412,7 +413,8 @@ class Deck
 		@price_of_sideboard_cards = 0
 
 		@cards.each do |card|
-			@price_of_all += card.price.to_i * card.quantity.to_i
+			@price += card.price.to_i * card.quantity.to_i
+			@log.debug "@price_of_all = " + @price.to_s
 			case card.card_type
 			when "land"
 				@price_of_lands +=card.price.to_i * card.quantity.to_i
@@ -427,6 +429,7 @@ class Deck
 				@price_of_sideboard_cards +=card.price.to_i * card.quantity.to_i
 			else
 				@log.error "invalid card_type at calc_price_of_each_card_type"
+				@log.error "card_type = " + card.card_type
 			end
 		end
 	end
