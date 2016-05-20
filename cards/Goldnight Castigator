@@ -1,0 +1,4 @@
+<root><name>Goldnight Castigator</name><manacost>2RR</manacost><manacost_point>4</manacost_point><type>
+			クリーチャー — 天使(Angel)		</type><oracle>Flying, haste
+If a source would deal damage to you, it deals double that damage to you instead.
+If a source would deal damage to Goldnight Castigator, it deals double that damage to Goldnight Castigator instead.</oracle><powertoughness>4/9</powertoughness><illustrator>Zack Stella</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (162/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

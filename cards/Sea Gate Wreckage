@@ -1,0 +1,3 @@
+<root><name>Sea Gate Wreckage</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool. （{C} represents colorless mana.）
+{2}{C}, {T}: Draw a card. Activate this ability only if you have no cards in hand.</oracle><powertoughness></powertoughness><illustrator>Zack Stella</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (177/184) </cardset><generating_mana_type>C</generating_mana_type></root>

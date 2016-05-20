@@ -1,0 +1,37 @@
+info,WRG_PlaneswalkerkD09513S 86820 W16U3B3R10G16C0A3
+land,Canopy Vista,2,,G-W,500,2016-05-20T13:42:22+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000234JN/,
+land,Cinder Glade,3,,R-G,500,2016-05-20T13:42:24+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000235JN/,
+land,Evolving Wilds,3,,A,20,2016-05-20T13:42:26+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,
+land,Forest,4,,G,20,2016-05-20T13:42:27+09:00,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,
+land,Fortified Village,4,,G-W,450,2016-05-20T13:42:29+09:00,http://www.hareruyamtg.com/jp/g/gSOI000274JN/,
+land,Mountain,1,,R,20,2016-05-20T13:42:30+09:00,http://www.hareruyamtg.com/jp/g/gSOI000294JN/,
+land,Needle Spires,3,,R-W,180,2016-05-20T13:42:32+09:00,http://www.hareruyamtg.com/jp/g/gOGW000175JN/,
+land,Plains,4,,W,20,2016-05-20T13:42:33+09:00,http://www.hareruyamtg.com/jp/g/gSOI000285JN/,
+info,24 Lands 5080
+creature,Archangel Avacyn,2,3WW,nil,5500,2016-05-20T13:42:35+09:00,http://www.hareruyamtg.com/jp/g/gSOI000005JN/,
+creature,Dragonlord Atarka,1,5RG,nil,1800,2016-05-20T13:42:37+09:00,http://www.hareruyamtg.com/jp/g/gDTK000005JN/,
+creature,NissaPERIOD Vastwood Seer,2,2G,nil,2100,2016-05-20T13:42:39+09:00,http://www.hareruyamtg.com/jp/g/gORI000189JN/,
+creature,Sylvan Advocate,4,1G,nil,1300,2016-05-20T13:43:05+09:00,http://www.hareruyamtg.com/jp/g/gOGW000144JN/,
+creature,Tireless Tracker,3,2G,nil,1400,2016-05-20T13:43:07+09:00,http://www.hareruyamtg.com/jp/g/gSOI000233JN/,
+info,12 Creatures 26400
+spell,Declaration in Stone,4,1W,nil,1600,2016-05-20T13:43:09+09:00,http://www.hareruyamtg.com/jp/g/gSOI000012JN/,
+spell,Oath of Chandra,4,1R1R,nil,60,2016-05-20T13:43:34+09:00,http://www.hareruyamtg.com/jp/g/gOGW000113JN/,
+spell,Oath of Nissa,4,G,nil,600,2016-05-20T13:43:36+09:00,http://www.hareruyamtg.com/jp/g/gOGW000140JN/,
+spell,Arlinn Kord,2,2RG,nil,1600,2016-05-20T13:43:37+09:00,http://www.hareruyamtg.com/jp/g/gSOI000243JN/,
+spell,ChandraPERIOD Flamecaller,2,4RR,nil,3600,2016-05-20T13:43:38+09:00,http://www.hareruyamtg.com/jp/g/gOGW000104JN/,
+spell,GideonPERIOD Ally of Zendikar,3,2WW,nil,3400,2016-05-20T13:43:40+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000029JN/,
+spell,NahiriPERIOD the Harbinger,2,2RW,nil,4700,2016-05-20T13:43:41+09:00,http://www.hareruyamtg.com/jp/g/gSOI000246JN/,
+spell,NissaPERIOD Voice of Zendikar,3,1GG,nil,2000,2016-05-20T13:43:44+09:00,http://www.hareruyamtg.com/jp/g/gOGW000138JN/,
+info,24 Spells 45040
+info,60 MainboardCards 76520 153 W16U0B0R17G22C0
+sideboardCards,Dragonlord Atarka,1,5RG,nil,1800,2016-05-20T13:43:45+09:00,http://www.hareruyamtg.com/jp/g/gDTK000005JN/,
+sideboardCards,Dragonlord Dromoka,1,4GW,nil,650,2016-05-20T13:43:47+09:00,http://www.hareruyamtg.com/jp/g/gDTK000006JN/,
+sideboardCards,LinvalaPERIOD the Preserver,1,4WW,nil,500,2016-05-20T13:43:48+09:00,http://www.hareruyamtg.com/jp/g/gOGW000025JN/,
+sideboardCards,Clip Wings,1,1G,nil,50,2016-05-20T13:43:51+09:00,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,
+sideboardCards,Hallowed Moonlight,3,1W,nil,400,2016-05-20T13:43:52+09:00,http://www.hareruyamtg.com/jp/g/gORI000017JN/,
+sideboardCards,Rending Volley,2,R,nil,100,2016-05-20T13:43:54+09:00,http://www.hareruyamtg.com/jp/g/gDTK000115JN/,
+sideboardCards,Descend upon the Sinful,1,4WW,nil,400,2016-05-20T13:43:56+09:00,http://www.hareruyamtg.com/jp/g/gSOI000013JN/,
+sideboardCards,Radiant Flames,4,2R,nil,200,2016-05-20T13:43:58+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000151JN/,
+sideboardCards,NahiriPERIOD the Harbinger,1,2RW,nil,4700,2016-05-20T13:44:00+09:00,http://www.hareruyamtg.com/jp/g/gSOI000246JN/,
+info,15 SideboardCards 10300 51 W9U0B0R8G3C0
+info,http://www.hareruyamtg.com//jp/k/kD09513S/

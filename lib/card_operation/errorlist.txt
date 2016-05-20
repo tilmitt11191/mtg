@@ -14,3 +14,4 @@ Wastes
 Dispel
 Wastes
 Spawning Bed
+Twin Bolt

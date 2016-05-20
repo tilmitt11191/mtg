@@ -1,0 +1,4 @@
+<root><name>Ulvenwald Hydra</name><manacost>4GG4GG</manacost><manacost_point>6</manacost_point><type>
+			クリーチャー — ハイドラ(Hydra)		</type><oracle>Reach
+Ulvenwald Hydra&apos;s power and toughness are each equal to the number of lands you control.
+When Ulvenwald Hydra enters the battlefield, you may search your library for a land card, put it onto the battlefield tapped, then shuffle your library.</oracle><powertoughness>*/*</powertoughness><illustrator>Raymond Swanland</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (235/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

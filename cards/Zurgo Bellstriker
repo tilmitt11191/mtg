@@ -1,0 +1,3 @@
+<root><name>Zurgo Bellstriker</name><manacost>R</manacost><manacost_point>1</manacost_point><type>
+			伝説のクリーチャー — オーク(Orc)・戦士(Warrior)		</type><oracle>Zurgo Bellstriker can&apos;t block creatures with power 2 or greater.
+Dash {1}{R} （You may cast this spell for its dash cost. If you do, it gains haste, and it&apos;s returned from the battlefield to its owner&apos;s hand at the beginning of the next end step.）</oracle><powertoughness>2/2</powertoughness><illustrator>Jason Rainville</illustrator><rarity>レア</rarity><cardset> タルキール龍紀伝 (169/264) </cardset><generating_mana_type>nil</generating_mana_type></root>
