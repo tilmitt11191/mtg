@@ -1,0 +1,4 @@
+<root><name>Mage-Ring Network</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{1}, {T}: Put a storage counter on Mage-Ring Network.
+{T}, Remove any number of storage counters from Mage-Ring Network: Add {C} to your mana pool for each storage counter removed this way.</oracle><powertoughness></powertoughness><illustrator>Jung Park</illustrator><rarity>アンコモン</rarity><cardset> マジック・オリジン (249/272) </cardset><generating_mana_type>C-R-R-C</generating_mana_type></root>

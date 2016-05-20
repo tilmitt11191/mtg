@@ -1,0 +1,5 @@
+<root><name>Vile Aggregate</name><manacost>2R</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)・ドローン(Drone)		</type><oracle>Devoid （This card has no color.）
+Vile Aggregate&apos;s power is equal to the number of colorless creatures you control.
+Trample
+Ingest （Whenever this creature deals combat damage to a player, that player exiles the top card of his or her library.）</oracle><powertoughness>*/5</powertoughness><illustrator>Chris Rallis</illustrator><rarity>アンコモン</rarity><cardset> 戦乱のゼンディカー (137/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

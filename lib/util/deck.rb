@@ -168,9 +168,12 @@ class Deck
 			end
 		when "with_info" then
 			@log.debug "start writing. mode is with_info."
+			get_contents_of_all_cards
+			get_sum_of_generating_manas
+			@mana_analyzer.calc_sum_of_needed_mana
 			File.open(filename, "w:sjis") do |file|
 				set_information
-				file.puts "info," + @deckname.to_s + " " + @price_of_all.to_s
+				file.puts "info," + @deckname.to_s + " " + @price_of_all.to_s + " " + @sum_of_mainboard_generating_manas.to_s
 				previous_type = "info"
 				@cards.each do |card|
 					#write informations
@@ -184,7 +187,7 @@ class Deck
 					elsif((previous_type == "spell" || previous_type == "mainboardCards") && card.card_type == "sideboardCards") then
 						@log.debug "write spell and main_board information"
 						file.puts "info," + @quantity_of_spells.to_s + " Spells " + @price_of_spells.to_s					
-						file.puts "info," + @quantity_of_mainboard_cards.to_s + " MainboardCards " + @price_of_mainboard_cards.to_s + " " + @sum_of_mainboard_generating_manas.to_s
+						file.puts "info," + @quantity_of_mainboard_cards.to_s + " MainboardCards " + @price_of_mainboard_cards.to_s + " " + @mana_analyzer.sum_of_manacost_point_at_mainboard.to_s + " " + @mana_analyzer.sum_of_needed_mana_at_mainboard.to_s
 					end
 					#write cards
 					forms.each do |form|
@@ -201,7 +204,7 @@ class Deck
 				end
 				#write informations
 				@log.debug "write sideboardCards information"
-				file.puts "info," + @quantity_of_sideboard_cards.to_s + " SideboardCards " + @price_of_sideboard_cards.to_s + " " + @sum_of_sideboard_generating_manas.to_s
+				file.puts "info," + @quantity_of_sideboard_cards.to_s + " SideboardCards " + @price_of_sideboard_cards.to_s + " " + @mana_analyzer.sum_of_manacost_point_at_sideboard.to_s  + " " + @mana_analyzer.sum_of_needed_mana_at_sideboard.to_s
 				file.puts "info," + @path
 			end
 		else

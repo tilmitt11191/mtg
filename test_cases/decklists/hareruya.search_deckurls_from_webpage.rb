@@ -22,9 +22,9 @@ deck_urls.each do |url|
 end
 
 if deck_urls.size() == num then
-	puts "[ok]hareruya.search_deckurls_from_webpage.size()"
+	puts "[ok]hareruya.search_deckurls_from_webpage.size() = " + num.size.to_s
 else
 	puts "[ng]"
-
+end
 
 log.info File.basename(__FILE__).to_s + " finished."

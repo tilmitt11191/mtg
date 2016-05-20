@@ -1,0 +1,4 @@
+<root><name>Haven of the Spirit Dragon</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Dragon creature spell.
+{2}, {T}, Sacrifice Haven of the Spirit Dragon: Return target Dragon creature card or Ugin planeswalker card from your graveyard to your hand.</oracle><powertoughness></powertoughness><illustrator>Raymond Swanland</illustrator><rarity>レア</rarity><cardset> タルキール龍紀伝 (249/264) </cardset><generating_mana_type>C</generating_mana_type></root>

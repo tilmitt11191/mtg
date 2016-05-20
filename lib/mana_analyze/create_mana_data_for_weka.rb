@@ -47,7 +47,7 @@ end
 
 #### read deck files and write weka data.
 File.open(filename, "a:sjis") do |file|
-	Dir::glob("../../decks/hareruya/*.csv").each do |filename|
+	Dir::glob("../../decks/hareruya_auto/*.csv").each do |filename|
 		log.debug "filename[" + filename.to_s + "]"
 		deck = hareruya.read_deckfile(filename, "card_type,cardname,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
 		mana_analyzer = Mana_analyzer.new(deck)

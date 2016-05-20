@@ -1,0 +1,4 @@
+<root><name>Ruins of Oran-Rief</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>Ruins of Oran-Rief enters the battlefield tapped.
+{T}: Add {C} to your mana pool. （{C} represents colorless mana.）
+{T}: Put a +1/+1 counter on target colorless creature that entered the battlefield this turn.</oracle><powertoughness></powertoughness><illustrator>Jason Felix</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (176/184) </cardset><generating_mana_type>C</generating_mana_type></root>

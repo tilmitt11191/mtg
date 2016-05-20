@@ -13,3 +13,4 @@ Game Trail
 Wastes
 Dispel
 Wastes
+Spawning Bed

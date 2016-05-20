@@ -1,0 +1,4 @@
+<root><name>Stratus Dancer</name><manacost>1U</manacost><manacost_point>2</manacost_point><type>
+			クリーチャー — ジン(Djinn)・モンク(Monk)		</type><oracle>Flying
+Megamorph {1}{U} （You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its megamorph cost and put a +1/+1 counter on it.）
+When Stratus Dancer is turned face up, counter target instant or sorcery spell.</oracle><powertoughness>2/1</powertoughness><illustrator>Anastasia Ovchinnikova</illustrator><rarity>レア</rarity><cardset> タルキール龍紀伝 (80/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

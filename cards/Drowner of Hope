@@ -1,0 +1,4 @@
+<root><name>Drowner of Hope</name><manacost>5U</manacost><manacost_point>6</manacost_point><type>
+			クリーチャー — エルドラージ(Eldrazi)		</type><oracle>Devoid （This card has no color.）
+When Drowner of Hope enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;
+Sacrifice an Eldrazi Scion: Tap target creature.</oracle><powertoughness>5/5</powertoughness><illustrator>Tomasz Jedruszek</illustrator><rarity>レア</rarity><cardset> 戦乱のゼンディカー (57/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

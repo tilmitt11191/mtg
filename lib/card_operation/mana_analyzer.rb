@@ -79,6 +79,7 @@ class Mana_analyzer
 		@log.info "decompose_needed_mana_symbol(" + str.to_s + ") start."
 		if str.nil?
 			@log.error "str is nil at Mana_analyzer.decompose_needed_mana_symbol(str)."
+			return nil
 		elsif str.match("[0-9]|W|U|B|R|G|C|A") then
 			manas = []
 			if str.match(/[0-9]/) then #extract number

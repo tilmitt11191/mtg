@@ -1,0 +1,3 @@
+<root><name>Shivan Reef</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{T}: Add {U} or {R} to your mana pool. Shivan Reef deals 1 damage to you.</oracle><powertoughness></powertoughness><illustrator>Rob Alexander</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (251/272) </cardset><generating_mana_type>C-U-R</generating_mana_type></root>

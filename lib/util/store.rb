@@ -395,7 +395,8 @@ class Hareruya < Store
 			return nil
 		end
 
-		deckname = url.split('/')[5]
+		#deckname = url.split('/')[6]
+		deckname = get_archetype_from_url(url).to_s + url.split('/')[6].to_s
 		deck = Deck.new(deckname, "hareruya", url)
 		if priceflag == true || priceflag == "on" then
 			create_card_list(deck, "full")
@@ -404,7 +405,8 @@ class Hareruya < Store
 		end
 		convert_all_cardname_from_jp_to_eng(deck)
 		deck.get_contents_of_all_cards
-
+		deck.get_sum_of_generating_manas
+		
 		if priceflag == true || priceflag == "on" then
 			#calculate price of each_card_type and deck.
 			#such as deck.price, land, creatures, spells, MainboardCards, sideboardCards
@@ -412,21 +414,47 @@ class Hareruya < Store
 			deck.calc_price_of_whole_deck
 
 			deck_prices = Deck_prices.new()
-			deck_prices.read("../../decks/decklist.csv")
+			deck_prices.read("../../decks/hareruya_auto/decklist.csv")
 			deck_prices.add(deck)
-			deck_prices.write("../../decks/decklist.csv")
+			deck_prices.write("../../decks/hareruya_auto/decklist.csv")
 		end
 
 		if fileflag == true || fileflag == "on" then
 			if priceflag == true || priceflag == "on" then
-				deck.create_deckfile("../../decks/hareruya/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,price.date,store_url", "with_info")
+				deck.create_deckfile("../../decks/hareruya_auto/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,price.date,store_url", "with_info")
 			else
-				deck.create_deckfile("../../decks/hareruya/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,store_url", "with_info")
+				deck.create_deckfile("../../decks/hareruya_auto/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,store_url", "with_info")
 			end
 		end
 		return deck
 	end
+	
+	def get_archetype_from_url(url)
+		@log.info "get_archetype_from_url(" + url.to_s + ") start"
+		
+		#### get url start
+		html_row_data = open(url)
+		#File.open("deckpage.html", "w") do |file|
+		#	file.write index_row_data.read
+		#end
+		html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
+		str = html_nokogiri.css("div.container/div/span.kuzu").inner_text
+		@log.debug "extract[" + str.to_s + "]"
 
+		deckname = format_deckname(str)
+
+		@log.debug "get_archetype_from_url(" + url.to_s + ") finished."
+		@log.debug "return " + deckname.to_s
+		return deckname
+	end
+	
+	def format_deckname(str)
+		@log.info "format_deckname from[" + str.to_s + "]"
+		deckname = str.split('/')[1].gsub(' ','_')
+		if deckname.nil? then deckname = "nil" end
+		@log.info "to[" + deckname.to_s + "]"
+		return deckname
+	end
 
 	def search_deckurls_from_webpage(deck_num)
 		@log.info "search_deckurls_from_webpage(" + deck_num.to_s + ") start" 
@@ -449,7 +477,8 @@ class Hareruya < Store
 					url = "http://www.hareruyamtg.com/" + a.attribute('href').value
 						# => http://www.hareruyamtg.com//jp/k/kD01418K/
 					@log.debug "url[" + url.to_s + "]"
-					deck_name = a.css('div/ul/li/span.deckTitle').inner_text
+					#deck_name = a.css('div/ul/li/span.deckTitle').inner_text
+					deck_name = url.split('/')[6] #kD01419K
 					@log.debug "deck_name[" + deck_name.to_s + "]"
 					private_flag = a.css('div/ul/li/div.private').inner_html
 					# if open deck list => ""

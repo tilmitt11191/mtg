@@ -62,9 +62,20 @@ class Card
 		doc = REXML::Document.new(File.open("../../cards/" + @name.to_s))
 		root = doc.elements["root"]
 		if root.nil? then
-			@log.error @name.to_s + ".read_from_dom"
-			@log.error "the root of dom is nil."
+			@log.warn @name.to_s + ".read_from_dom"
+			@log.warn "the root of dom is nil."
+			@log.warn "try read from web."
+			read_from_web()
 		end
+		
+		if root.nil? then
+			@log.error @name.to_s + ".read_from_dom"
+			@log.error "the root of dom is stil nil."
+			@log.error "read a nil card."
+			doc = REXML::Document.new(File.open("../../cards/nil"))
+			root = doc.elements["root"]
+		end
+		
 		@name= root.elements["name"].text
 		@manacost= root.elements["manacost"].text
 		@manacost_point= root.elements["manacost_point"].text

@@ -1,0 +1,3 @@
+<root><name>Sin Prodder</name><manacost>2R</manacost><manacost_point>3</manacost_point><type>
+			クリーチャー — デビル(Devil)		</type><oracle>Menace
+At the beginning of your upkeep, reveal the top card of your library. Any opponent may have you put that card into your graveyard. If a player does, Sin Prodder deals damage to that player equal to that card&apos;s converted mana cost. Otherwise, put that card into your hand.</oracle><powertoughness>3/2</powertoughness><illustrator>Jack Wang</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (181/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

@@ -1,0 +1,4 @@
+<root><name>Wandering Fumarole</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>Wandering Fumarole enters the battlefield tapped.
+{T}: Add {U} or {R} to your mana pool.
+{2}{U}{R}: Until end of turn, Wandering Fumarole becomes a 1/4 blue and red Elemental creature with &quot;{0}: Switch this creature&apos;s power and toughness until end of turn.&quot; It&apos;s still a land.</oracle><powertoughness></powertoughness><illustrator>Florian de Gesincourt</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (182/184) </cardset><generating_mana_type>U-R</generating_mana_type></root>

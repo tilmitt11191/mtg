@@ -4,11 +4,19 @@
 require "logger"
 require '../../lib/util/card.rb'
 
-@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
-@log.info "card.read_from_url.rb start"
+puts File.basename(__FILE__).to_s + " start."
+log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+log.info ""
+log.info File.basename(__FILE__).to_s + " start."
+log.info ""
 
 #execptions
-cardnames = ["Wastes"]
+#Wastes
+#cardnames = ["Exquisite Firecraft"]
+#cardnames = ["Hedron Crawler"]
+#cardnames = ["Make a Stand"]
+cardnames = ["Void Shatter"]
+
 
 cardnames.each do |cardname|
 	card = Card.new(cardname)
@@ -46,3 +54,5 @@ cardnames.each do |cardname|
 @log.info "read_from_url basic lands finished."
 end
 =end
+
+log.info File.basename(__FILE__).to_s + " finished."
