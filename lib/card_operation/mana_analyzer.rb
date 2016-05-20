@@ -300,6 +300,11 @@ class Mana_analyzer
 		@deck.cards.each do |card|
 			@log.debug "card_type[" + card.card_type.to_s + "], card.name[" + card.name.to_s + "], card.quantity[" + card.quantity.to_s + "], manacost[" + card.manacost.to_s + "]"
 			manas = decompose_needed_mana_symbol(card.manacost.to_s)
+			if manas.nil? then
+				@log.debug "manas[nil]"
+			else
+				@log.debug "manas[" + manas.to_s + "]"
+			end
 			case card.card_type
 			when "land", "creature", "spell", "mainboardCards" then
 				if !manas.nil? then manas.each do |mana|
@@ -371,7 +376,14 @@ class Mana_analyzer
 
 		@deck.cards.each do |card|
 			@log.debug "card.name[" + card.name.to_s + "]"
+			@log.debug "card_type[" + card.card_type.to_s + "], card.name[" + card.name.to_s + "], card.quantity[" + card.quantity.to_s + "], manacost[" + card.manacost.to_s + "]"
 			manas = decompose_generationg_mana_symbol(card.generating_mana_type)
+			if manas.nil? then
+				@log.debug "manas[nil]"
+			else
+				@log.debug "manas[" + manas.to_s + "]"
+			end
+
 			case card.card_type
 			when "land", "creature", "spell", "mainboardCards" then
 				if !manas.nil? then manas.each do|mana|

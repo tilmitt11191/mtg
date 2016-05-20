@@ -15,24 +15,24 @@ log.info ""
 #cardnames = ["Exquisite Firecraft"]
 #cardnames = ["Hedron Crawler"]
 #cardnames = ["Make a Stand"]
-cardnames = ["Void Shatter"]
-
+#cardnames = ["Void Shatter"]
+cardnames = ["Spawning Bed"]
 
 cardnames.each do |cardname|
 	card = Card.new(cardname)
 	if File.exist?("../../cards/" + cardname.to_s) then
 		#read local file
-		@log.debug cardname.to_s + ".read_from_dom()"
+		log.debug cardname.to_s + ".read_from_dom()"
 		card.read_from_dom()
 	else
 		#get contents of card from "http://whisper.wisdom-guild.net/"
-		@log.debug cardname.to_s + ".read_from_url"
+		log.debug cardname.to_s + ".read_from_url"
 		card.read_from_url("http://whisper.wisdom-guild.net/card/" + cardname.to_s + "/")
 	end
 	card.print_contents()
 	card.write_contents()
 end
-@log.info "read_from_url exceptions finished."
+log.info "read_from_url exceptions finished."
 
 #basic lands
 =begin

@@ -13,7 +13,7 @@ log.info ""
 
 
 hareruya = Hareruya.new()
-from = 11
+from = 16
 to = 1000
 deck_urls = hareruya.search_deckurls_from_webpage(to)
 i = 1

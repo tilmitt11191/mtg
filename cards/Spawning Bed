@@ -1,1 +1,3 @@
-<root><name>Spawning Bed</name><manacost></manacost><manacost_point></manacost_point><type></type><oracle></oracle><powertoughness></powertoughness><illustrator></illustrator><rarity></rarity><cardset></cardset><generating_mana_type></generating_mana_type></root>
+<root><name>Spawning Bed</name><manacost></manacost><manacost_point>0</manacost_point><type>
+			土地		</type><oracle>{T}: Add {C} to your mana pool.
+{6}, {T}, Sacrifice Spawning Bed: Put three 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;</oracle><powertoughness></powertoughness><illustrator>Jason Felix</illustrator><rarity>アンコモン</rarity><cardset> 戦乱のゼンディカー (248/274) </cardset><generating_mana_type>C-B-C</generating_mana_type></root>
