@@ -16,7 +16,8 @@ log.info ""
 #cardnames = ["Hedron Crawler"]
 #cardnames = ["Make a Stand"]
 #cardnames = ["Void Shatter"]
-cardnames = ["Spawning Bed"]
+#cardnames = ["Spawning Bed"]
+cardnames = ["Insolent Neonate"]
 
 cardnames.each do |cardname|
 	card = Card.new(cardname)

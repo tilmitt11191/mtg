@@ -44,16 +44,10 @@ class Store
 		#	file.write @card_row_data.read
 		#end
 		@card_nokogiri = Nokogiri::HTML.parse(@card_row_data, nil, @charset)
-		#puts @card_nokogiri.css('span').attribute('class="sell_price"').text
-		#puts @card_nokogiri.css('span.sell_price').text
-		#@card_nokogiri.xpath('//li[@class="item_info_top"]').each do |line|
-		#	puts line
-		#end
 	end
 	
 	def write_html_to_file(filename)
 		@log.debug "write_html_to_file to " + filename
-		
 		#File.open(filename, "w") do |file|
 		#	file.write @card_row_data.read
 		#end
@@ -78,7 +72,6 @@ class Hareruya < Store
 		#TODO if card.store_url not include "hareruya"
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
-		#price = "100"
 		price.gsub!(/\s|\n|￥|,/,"")
 		card.price.value = price
 		@log.debug "price is " + price
@@ -276,114 +269,12 @@ class Hareruya < Store
 		end
 
 		for i in 0..deck.cards.size-1
-			#deck.deck_list["#{deck.cards[i].name}"] = quantity_list[i].to_s
 			deck.cards[i].quantity = quantity_list[i]
 		end
-		
-		#@deck_nokogiri = Nokogiri::HTML.parse(@deck_row_data, nil, @charset)
-		#quantity_list=[] #Array of card quantity
-		#@deck_nokogiri.xpath('/').each do |line|
-		#	quantity_list.push(line.css('td.decksNumber').inner_text)
-		#	deck.cards.push(line.css('a.popup_product').inner_text)
-		#end
-		
-		#if @deck_nokogiri.css('td.decksNumber').size != @deck_nokogiri.css('a.popup_product').size then
-		#	@log.error "Hareruya.create_card_list"
-		#	@log.error "quantitylist.size not equal popup_product.size"
-		#end
-		
-		#for i in 0..@deck_nokogiri.css('td.decksNumber').size-1
-		#	puts i
-		#	puts @deck_nokogiri.css('td.decksNumber')[i].inner_text
-		#	puts @deck_nokogiri.css('a.popup_product')[i].inner_text
-		#end
-		#puts @deck_nokogiri.css('td.decksNumber').size
-		#puts @deck_nokogiri.css('a.popup_product').size
-		#puts deck.cards.size
-		#puts quantity_list.size
-		
-		
-		#@deck_nokogiri.css('a.popup_product').each do |card|
-		#	puts card.text
-		#end
-		
-		#deck.cards.push("Kalitas, Traitor of Ghet")
-		#deck.cards.push("Ob Nixilis Reignited")
-	end
+end
 	
-=begin	
-	def create_card_list_simple(deck)
-		#english name,num
-		@log.debug "Hareruya.create_card_list_simple start."
-		deck.cards = []
-		@log.debug "open[" + deck.path + "]"
-		@deck_row_data = open(deck.path)
-		
-		quantity_list=[] #Array of card quantity
-		card_type="land"
-		deck.quantity_of_mainboard_cards = 0
-		deck.quantity_of_lands = 0
-		@deck_row_data.each_line do |line|
-			if line.include?('Lands</h3>') then
-				card_type = "creature"
-				deck.quantity_of_creatures = 0
-			end
-			if line.include?('Creatures</h3>') then
-				card_type = "spell"
-				deck.quantity_of_spells = 0
-			end
-			if line.include?('Spells</h3>') then
-				card_type = "sideboardCards"
-				deck.quantity_of_sideboard_cards = 0
-			end
-			
-			#extract quantity
-			if line.include?('decksNumber') then
-				quantity = Nokogiri::HTML.parse(line, nil, @charset).text
-				quantity.chomp!
-				quantity_list.push quantity
-				
-				case card_type
-				when "land"
-					deck.quantity_of_mainboard_cards += quantity.to_i
-					deck.quantity_of_lands += quantity.to_i
-					#puts "quantity_of_lands " + deck.quantity_of_lands.to_s
-				when "creature"
-					deck.quantity_of_mainboard_cards += quantity.to_i
-					deck.quantity_of_creatures +=quantity.to_i
-					#puts "quantity_of_creatures " + deck.quantity_of_creatures.to_s
-				when "spell"
-					deck.quantity_of_mainboard_cards += quantity.to_i
-					deck.quantity_of_spells +=quantity.to_i
-					#puts "quantity_of_spells " + deck.quantity_of_spells.to_s
-				when "sideboardCards"
-					deck.quantity_of_sideboard_cards += quantity.to_i
-					#puts "quantity_of_sideboard_cards " + deck.quantity_of_sideboard_cards.to_s
-				else
-					@log.error "invalid card_type at extract quantity"
-				end
-			end
-
-			#extract card_name and url
-			if line.include?('data-goods') then
-				card_name = Nokogiri::HTML.parse(line, nil, @charset).text
-				card_name.chomp!
-				card_name=extract_english_card_name(card_name)
-				card = Card.new(card_name)
-				#card.store_url = url
-				card.card_type = card_type
-				deck.cards.push(card)
-			end
-		end
-		
-		for i in 0..deck.cards.size-1
-			deck.cards[i].quantity = quantity_list[i]
-		end
 
 
-		@log.debug "Hareruya.create_card_list_simple finished."
-	end
-=end
 
 	def create_deck_from_url(url,priceflag:"off",fileflag:"off")
 	#input:url #http://www.hareruyamtg.com/jp/k/kD08241S/
@@ -428,6 +319,8 @@ class Hareruya < Store
 		end
 		return deck
 	end
+
+
 	
 	def get_archetype_from_url(url)
 		@log.info "get_archetype_from_url(" + url.to_s + ") start"
@@ -447,14 +340,19 @@ class Hareruya < Store
 		@log.debug "return " + deckname.to_s
 		return deckname
 	end
+
 	
 	def format_deckname(str)
+		#from "デッキ検索トップ > 赤単/Mono Red"
+		#to "Mono Red"
 		@log.info "format_deckname from[" + str.to_s + "]"
 		deckname = str.split('/')[1].gsub(' ','_')
 		if deckname.nil? then deckname = "nil" end
 		@log.info "to[" + deckname.to_s + "]"
 		return deckname
 	end
+
+
 
 	def search_deckurls_from_webpage(deck_num)
 		@log.info "search_deckurls_from_webpage(" + deck_num.to_s + ") start" 
@@ -497,6 +395,8 @@ class Hareruya < Store
 		end
 	end
 end
+
+
 
 class MagicOnline < Store
 	def initialize()
