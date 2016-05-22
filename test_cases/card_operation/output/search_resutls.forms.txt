@@ -1,0 +1,170 @@
+wisdomGuild.get_prices.rb start.
+[#<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "http://www.mtgotraders.com/cgi-bin/shop-bin/sc/order.cgi"}
+ {fields
+  [hidden:0x8f2b7c type: hidden name: storeid value: *1a4c945171a04aae08de729fc95b2a]
+  [hidden:0x8f2924 type: hidden name: dbname value: products]
+  [hidden:0x8f2668 type: hidden name: function value: add]
+  [text:0x8f244c type: text name: 49093:qnty value: 0]
+  [hidden:0x8f20f0 type: hidden name: itemnum value: 49093]
+  [text:0x8f1ed4 type: text name: 59058:qnty value: 0]
+  [hidden:0x8f1a88 type: hidden name: itemnum value: 59058]
+  [text:0x8f1790 type: text name: 59059:qnty value: 0]
+  [hidden:0x8f1218 type: hidden name: itemnum value: 59059]
+  [text:0x8f0e94 type: text name: 74370:qnty value: 0]
+  [hidden:0x8f0afc type: hidden name: itemnum value: 74370]
+  [text:0x8f0660 type: text name: 74371:qnty value: 0]
+  [hidden:0x8f03a4 type: hidden name: itemnum value: 74371]
+  [text:0x8edec4 type: text name: 80833:qnty value: 0]
+  [hidden:0x8edc30 type: hidden name: itemnum value: 80833]
+  [text:0x8ed960 type: text name: 802:qnty value: 0]
+  [hidden:0x8ed708 type: hidden name: itemnum value: 802]
+  [text:0x8ed460 type: text name: 68588:qnty value: 0]
+  [hidden:0x8ed244 type: hidden name: itemnum value: 68588]
+  [text:0x8ecfb0 type: text name: 68587:qnty value: 0]
+  [hidden:0x8ecd58 type: hidden name: itemnum value: 68587]
+  [text:0x8eca74 type: text name: 68589:qnty value: 0]
+  [hidden:0x8ec858 type: hidden name: itemnum value: 68589]
+  [text:0x8ec59c type: text name: 80832:qnty value: 0]
+  [hidden:0x8ec308 type: hidden name: itemnum value: 80832]
+  [text:0x73a794 type: text name: 80834:qnty value: 0]
+  [hidden:0x72784c type: hidden name: itemnum value: 80834]
+  [text:0x726de8 type: text name: 65036:qnty value: 0]
+  [hidden:0x7265f0 type: hidden name: itemnum value: 65036]
+  [text:0x721744 type: text name: 65035:qnty value: 0]
+  [hidden:0x71bbb4 type: hidden name: itemnum value: 65035]
+  [text:0x71b574 type: text name: 82339:qnty value: 0]
+  [hidden:0x71b1dc type: hidden name: itemnum value: 82339]
+  [text:0x71adb8 type: text name: 82340:qnty value: 0]
+  [hidden:0x71a9e4 type: hidden name: itemnum value: 82340]
+  [text:0x71a3cc type: text name: 65033:qnty value: 0]
+  [hidden:0x71a00c type: hidden name: itemnum value: 65033]
+  [text:0x719d3c type: text name: 49092:qnty value: 0]
+  [hidden:0x7198a0 type: hidden name: itemnum value: 49092]
+  [text:0x719300 type: text name: 65034:qnty value: 0]
+  [hidden:0x718ef0 type: hidden name: itemnum value: 65034]
+  [text:0x7189c8 type: text name: 71333:qnty value: 0]
+  [hidden:0x7157dc type: hidden name: itemnum value: 71333]
+  [text:0x711f60 type: text name: 71334:qnty value: 0]
+  [hidden:0x70029c type: hidden name: itemnum value: 71334]
+  [text:0x700044 type: text name: 48853:qnty value: 0]
+  [hidden:0x6ff2d4 type: hidden name: itemnum value: 48853]
+  [text:0x6fef28 type: text name: 65059:qnty value: 0]
+  [hidden:0x6fe960 type: hidden name: itemnum value: 65059]
+  [text:0x6fe3ac type: text name: 65010:qnty value: 0]
+  [hidden:0x6f5e8c type: hidden name: itemnum value: 65010]
+  [text:0x6f59c8 type: text name: 65012:qnty value: 0]
+  [hidden:0x6f51bc type: hidden name: itemnum value: 65012]
+  [text:0x6f4aa0 type: text name: 65011:qnty value: 0]
+  [hidden:0x6f4140 type: hidden name: itemnum value: 65011]
+  [text:0x6efa8c type: text name: 65016:qnty value: 0]
+  [hidden:0x6ef398 type: hidden name: itemnum value: 65016]
+  [text:0x6ee7a4 type: text name: 65013:qnty value: 0]
+  [hidden:0x6e9d30 type: hidden name: itemnum value: 65013]
+  [text:0x6e96c8 type: text name: 65053:qnty value: 0]
+  [hidden:0x6e88e0 type: hidden name: itemnum value: 65053]
+  [text:0x6e80ac type: text name: 65042:qnty value: 0]
+  [hidden:0x6e6c20 type: hidden name: itemnum value: 65042]
+  [text:0x6e66d0 type: text name: 65043:qnty value: 0]
+  [hidden:0x6e0ac8 type: hidden name: itemnum value: 65043]
+  [text:0x6e0244 type: text name: 65045:qnty value: 0]
+  [hidden:0x6ddbfc type: hidden name: itemnum value: 65045]
+  [text:0x6dd328 type: text name: 65049:qnty value: 0]
+  [hidden:0x6dcb94 type: hidden name: itemnum value: 65049]
+  [text:0x6d7f54 type: text name: 65046:qnty value: 0]
+  [hidden:0x6d6b04 type: hidden name: itemnum value: 65046]
+  [text:0x6d1f50 type: text name: 65048:qnty value: 0]
+  [hidden:0x6d0fec type: hidden name: itemnum value: 65048]
+  [text:0x6d06a0 type: text name: 65047:qnty value: 0]
+  [hidden:0x6cde64 type: hidden name: itemnum value: 65047]
+  [text:0x6cd66c type: text name: 65050:qnty value: 0]
+  [hidden:0x6ccc1c type: hidden name: itemnum value: 65050]
+  [text:0x6c7a28 type: text name: 65051:qnty value: 0]
+  [hidden:0x6c6ccc type: hidden name: itemnum value: 65051]
+  [text:0x6c6218 type: text name: 65052:qnty value: 0]
+  [hidden:0x6c0fac type: hidden name: itemnum value: 65052]
+  [text:0x6c0548 type: text name: 65054:qnty value: 0]
+  [hidden:0x6bb520 type: hidden name: itemnum value: 65054]
+  [text:0x6babe8 type: text name: 65057:qnty value: 0]
+  [hidden:0x6b5440 type: hidden name: itemnum value: 65057]
+  [text:0x6b4ba8 type: text name: 71510:qnty value: 0]
+  [hidden:0x6a9a64 type: hidden name: itemnum value: 71510]
+  [text:0x6a8894 type: text name: 56276:qnty value: 0]
+  [hidden:0x6a5e3c type: hidden name: itemnum value: 56276]
+  [text:0x6a5310 type: text name: 56277:qnty value: 0]
+  [hidden:0x6a4898 type: hidden name: itemnum value: 56277]
+  [text:0x691338 type: text name: 57450:qnty value: 0]
+  [hidden:0x6905b4 type: hidden name: itemnum value: 57450]
+  [text:0x68d5d0 type: text name: 57451:qnty value: 0]
+  [hidden:0x68ce8c type: hidden name: itemnum value: 57451]
+  [text:0x68c5cc type: text name: 77579:qnty value: 0]
+  [hidden:0x63bb7c type: hidden name: itemnum value: 77579]
+  [text:0x63af24 type: text name: 77580:qnty value: 0]
+  [hidden:0x637ef0 type: hidden name: itemnum value: 77580]
+  [text:0x6372d4 type: text name: 83921:qnty value: 0]
+  [hidden:0x636244 type: hidden name: itemnum value: 83921]
+  [text:0x63590c type: text name: 83923:qnty value: 0]
+  [hidden:0x6349a8 type: hidden name: itemnum value: 83923]
+  [text:0x631c58 type: text name: 83922:qnty value: 0]
+  [hidden:0x628a2c type: hidden name: itemnum value: 83922]
+  [text:0x628374 type: text name: 65028:qnty value: 0]
+  [hidden:0x624a08 type: hidden name: itemnum value: 65028]
+  [text:0x624490 type: text name: 65019:qnty value: 0]
+  [hidden:0x623db0 type: hidden name: itemnum value: 65019]
+  [text:0x623a2c type: text name: 65021:qnty value: 0]
+  [hidden:0x623464 type: hidden name: itemnum value: 65021]
+  [text:0x622cf8 type: text name: 65020:qnty value: 0]
+  [hidden:0x6223fc type: hidden name: itemnum value: 65020]
+  [text:0x61faa8 type: text name: 65022:qnty value: 0]
+  [hidden:0x61f350 type: hidden name: itemnum value: 65022]
+  [text:0x61ecd4 type: text name: 65024:qnty value: 0]
+  [hidden:0x61e84c type: hidden name: itemnum value: 65024]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons
+  [imagebutton:0x61e2e8 type: image name:  value: Add to Cart]
+  [button:0x60cae8 type:  name:  value: ]}>
+, #<Mechanize::Form
+ {name nil}
+ {method "GET"}
+ {action "http://www.mtgotraders.com/store/search.php"}
+ {fields [multiselectlist:0x5df598 type:  name: set[] value: []]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons [submit:0x5faa64 type: submit name:  value: Filter Sets]}>
+, #<Mechanize::Form
+ {name nil}
+ {method "GET"}
+ {action "http://www.mtgotraders.com/store/search.php"}
+ {fields [text:0x107b1dc type: text name: q value: ]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons [imagebutton:0x107ae58 type: image name:  value: Go]}>
+, #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "http://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi"}
+ {fields
+  [hidden:0x10745bc type: hidden name: storeid value: *1a4c945171a04aae08de729fc95b2a]
+  [hidden:0x10742b0 type: hidden name: func value: create_wl]
+  [text:0x1074058 type: text name: name value: ]
+  [hidden:0x1073d4c type: hidden name: itemnum value: ]
+  [hidden:0x1073aa4 type: hidden name: addedfrom value: ]
+  [hidden:0x1073824 type: hidden name: qnty value: ]
+  [textarea:0x10728d4 type:  name: comments value: ]
+  [selectlist:0x1072064 type:  name: priv value: pub]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons
+  [submit:0x10734dc type: submit name: Save value: Apply Changes]
+  [button:0x1073248 type: button name:  value: Continue Shopping]}>
+]
+/media/sf_f/program/mtg/lib/util/store.rb:576:in `get_prices'
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:22:in `<main>'
+undefined method `field_with' for #<Mechanize::Page:0x00000001257b90>

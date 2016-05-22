@@ -5,8 +5,8 @@ require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/card.rb'
 require '../../lib/util/deck.rb'
-require '../../lib/util/util.rb'
-require '../../lib/decklists/deck_prices.rb'
+require '../../lib/util/utils.rb'
+require '../../lib/util/deck_prices.rb'
 
 class Store
 	@log
@@ -22,13 +22,13 @@ class Store
 
 	attr_accessor :store_name
 	
-	def initialize(store_name)
-		@log = Logger.new("../../log")
+	def initialize(store_name, logger)
+		@log = logger
 		@log.info "Store.initialize(" + store_name + ")"
 		@store_name = store_name
 	end
 	
-	def how_match?(cardname)
+	def how_match?(card)
 	end
 	
 	def extract_english_card_name(cardname)
@@ -60,22 +60,30 @@ end
 
 
 class Hareruya < Store
-	def initialize()
-		super("Hareruya")
+	def initialize(logger)
+		super("Hareruya", logger)
 		@url = "http://www.hareruyamtg.com/jp/"
 	end
 	
 	def how_match?(card)
-		@log.debug "how match ["+card.name+"]@hareruya"
+		@log.debug "how match ["+card.name+"] at hareruya"
 		@card_name = card.name
-		@log.debug "url is [" + card.store_url + "]"
-		#TODO if card.store_url not include "hareruya"
+		@log.debug "url is [" + card.store_url.to_s + "]"
+		if card.store_url.nil? then
+			@log.error "card.store_url is nil at hareruya.how_match?"
+			@log.error "return nil"
+			return nil		
+		elsif !card.store_url.include?("http://www.hareruyamtg.com/") then
+			@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
+			@log.error "return nil"
+			return nil
+		end
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
 		price.gsub!(/\s|\n|￥|,/,"")
 		card.price.value = price
 		@log.debug "price is " + price
-		return price
+		return card.price
 	end
 	
 	def extract_english_card_name(cardname)
@@ -356,8 +364,12 @@ end
 
 	def search_deckurls_from_webpage(deck_num)
 		@log.info "search_deckurls_from_webpage(" + deck_num.to_s + ") start" 
+		#get url of each deck at
 		#http://www.hareruyamtg.com/jp/deck/search.aspx?name_je_type=1&search.x=submit&date_format=Standard+-+DTK_SOI&format=Standard&ps=50&p=2&releasedt_type=1
+		# and
 		#http://www.hareruyamtg.com/jp/deck/search.aspx?name_je_type=1&search.x=submit&date_format=Standard+-+DTK_SOI&format=Standard&ps=50&p=1&releasedt_type=1
+		# and so on.
+		
 		deck_urls = [] #array of url
 		index_size = 50 #num of decks in one index page.
 		index_page = 1 #
@@ -398,48 +410,81 @@ end
 
 
 
+
+
+
 class MagicOnline < Store
-	def initialize()
-		super("MagicOnline")
+	def initialize(logger)
+		super("MagicOnline", logger)
 		@url = ""
 	end
 	
-
-	def read_deckfile(deckname, filename)
-	#create deck class from text file exported by magic online application.
+	
+	def read_deckfile(deckname, filename,filetype:"text")
+	#create deck class from text or csv file exported by magic online application.
 		@log.info "MagicOnline.read_deckfile start."
-		@log.debug "deckname[" + deckname.to_s + "], filename[" + filename.to_s + "]"
+		@log.debug "deckname[" + deckname.to_s + "], filename[" + filename.to_s + "], filetype[" + filetype.to_s + "]"
+		#TODO if file not exist.
+		deck = Deck.new(deckname, "mo", filename, @log)
+		
+		case filetype
+		when "text" then
+			card_type = "mainboardCards"
+	
+			File.open(filename, 'r').each do |line|
+				if line =~ /^\s*$/ then
+					card_type = "sideboardCards"
+				else
+					line.chomp!
+					cardname = line.split(' ',2)[1]
+					quantity = line.split(' ',2)[0]
+					@log.debug "deck.cards.push[cardname(" + cardname.to_s + "), quantity(" + quantity.to_s + "), card_type(" + card_type.to_s + ")]"
 
-		deck = Deck.new(deckname, "mo", filename)
-		card_type = "mainboardCards"
+					card = Card.new(cardname, @log)
+					card.quantity = quantity.to_i
+					card.card_type = card_type
 
-		File.open(filename, 'r').each do |line|
-			if line =~ /^\s*$/ then
-				card_type = "sideboardCards"
-			else
-				line.chomp!
-				cardname = line.split(' ',2)[1]
-				quantity = line.split(' ',2)[0]
-				@log.debug "deck.cards.push[cardname(" + cardname.to_s + "), quantity(" + quantity.to_s + "), card_type(" + card_type.to_s + ")]"
-
-				card = Card.new(cardname)
-				card.quantity = quantity.to_i
-				card.card_type = card_type
-
-				deck.cards.push(card)
+					deck.cards.push(card)
+				end
 			end
-		end
+			
+		when "csv" then
+	
+			File.open(filename, 'r').each do |line|
+			#Card Name,Quantity,ID #,Rarity,Set,Collector #,Premium,Sideboarded,
+			#"Kalitas, Traitor of Ghet",1,59417,Mythic Rare,OGW,86/184,No,Yes
+				if (line.split("\"").size != 1) && #except head line or blank line
+					(quantity = line.split("\"")[2].split(',').size == 8) then
+					cardname = line.split("\"")[1]
+					quantity = line.split("\"")[2].split(',')[1]
+					id = line.split("\"")[2].split(',')[2]
+					rarerity = line.split("\"")[2].split(',')[3]
+					set = line.split("\"")[2].split(',')[4]
+					collector_number = line.split("\"")[2].split(',')[5]
+					premium = line.split("\"")[2].split(',')[6]
+					sideboarded = line.split("\"")[2].split(',')[7]
+					
+					if sideboarded.match("No") then card_type = "mainboardCards"
+					else card_type = "sideboardCards"
+					end
 
+					card = Card.new(cardname, @log)
+					card.quantity = quantity.to_i
+					card.card_type = card_type
+					deck.cards.push(card)
+				end
+			end		
+		end
 		return deck
 	end
 
 
 
 	def create_card_list(deck, filename)
-	#create filename.csv.
+	#create filename.text
 		@log.info "MagicOnline.create_card_list start."
 		@log.debug "convert " + deck.deckname.to_s + " and save to " + filename.to_s
-		 File.open(filename, "w:sjis") do |file|
+		 File.open(filename, "w+:sjis") do |file|
 		 	previous_card_type = "nil"
 			deck.cards.each do |card|
 				if previous_card_type == "nil" and card.card_type == "sideboardCards" then
@@ -450,5 +495,160 @@ class MagicOnline < Store
 			end
 		end
 	end
+	
+end
+
+
+
+
+
+class WisdomGuild < Store
+	def initialize(logger)
+		super("WisdomGuild", logger)
+		@url = "http://www.wisdom-guild.net/"
+	end
+	
+	def how_match?(card)
+		@log.debug "how match ["+card.name+"] at wisdomGuild"
+		@card_name = card.name
+		@log.debug "url is [" + card.store_url.to_s + "]"
+		if card.store_url.nil? then
+			@log.error "card.store_url is nil at wisdomGuild.how_match?"
+			@log.error "return nil"
+			return nil		
+		elsif !card.store_url.include?("http://whisper.wisdom-guild.net/") then
+			@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
+			@log.error "return nil"
+			return nil
+		end
+		card.price.value = 0
+		#read_cardpage(card.store_url)
+		#price = @card_nokogiri.css('span.sell_price').text
+		#price.gsub!(/\s|\n|￥|,/,"")
+		#card.price.value = price
+		#@log.debug "price is " + price
+		return card.price
+	end
+end
+
+
+
+
+
+
+class Mtgotraders < Store
+	def initialize(logger)
+		super("mtgotraders", logger)
+		@url = "http://www.mtgotraders.com/"
+	end
+	
+	def how_match?(card)
+		@log.info "how match ["+card.name+"] at mtgotraders"
+		@card_name = card.name
+		@log.debug "url is [" + card.store_url.to_s + "]"
+		if card.store_url.nil? then
+			@log.error "card.store_url is nil at mtgotraders.how_match?"
+			@log.error "return nil"
+			return nil		
+		elsif !card.store_url.include?("http://www.mtgotraders.com/") then
+			@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
+			@log.error "return nil"
+			return nil
+		end
+		card.price.value = 0
+		#read_cardpage(card.store_url)
+		#price = @card_nokogiri.css('span.sell_price').text
+		#price.gsub!(/\s|\n|￥|,/,"")
+		#card.price.value = price
+		#@log.debug "price is " + price
+		return card.price
+	end
+	
+	
+	def set_store_page_of(card)
+		@log.info "search_store_page_of[" + card.name.to_s + "] start"
+		agent = Mechanize.new
+		page = agent.get('http://www.mtgotraders.com/store/index.html')
+		query = card.name.to_s
+		page.form.q = query
+		@log.debug "query: " + query
+		#@log.debug "[search_condition]"
+		#@log.debug "#{page.forms}"
+				
+		search_results = page.form.submit
+		#@log.debug "[search_results]"
+		#@log.debug "#{search_results.body}"
+		
+		#TODO README(first hit)
+		card.store_url = search_results.search('td.cardname/a').attribute('href').value
+		@log.debug "card.store_url[" + card.store_url.to_s + "]"
+
+		@log.info "search_store_page_of[" + card.name.to_s + "] finished."
+		@log.info "return[" + card.store_url.to_s + "]"
+		return card.store_url
+	end
+	
+	
+	def get_prices(price_manager,relevant:true,highest:true,lowest:true)
+		##TODO Exception
+		@log.info " get_prices start."
+		if price_manager.card.nil? then
+			@log.error "price_manager.card is nil."
+		end
+		
+		@log.debug "card[" + price_manager.card.name.to_s + "]"
+		@log.debug "relevant[" + relevant.to_s + "], highest[" + highest.to_s + "], lowest[" + lowest.to_s + "]"
+
+		agent = Mechanize.new
+		page = agent.get('http://www.mtgotraders.com/store/index.html')
+		query = price_manager.card.name.to_s
+		page.form.q = query
+		@log.debug "query: " + query
+
+		search_results = page.form.submit
+		
+		optional_urls = {}
+		search_results.search('div.searchopt-sortby/select/option').each do |options|
+			optional_urls[:"#{options.text}"] = options.attribute('value').value
+		end
+		#<div class="searchopt-sortby">
+		#	<label>Sort by:</label>
+		#	<select name="sortby" onchange="document.location.href=this.value">
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=relevancy" selected="selected">Relevancy</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=name">Name: A to Z</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=name_desc">Name: Z to A</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price">Price: Low to High</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc">Price: High to Low</option>
+		#	</select>
+		#</div>
+		
+		if relevant then
+			@log.debug "get relevant price."
+			result = search_results.at('td.price').text #get only one result which hit first
+			price_manager.relevant_price.value = result.gsub!(/\$/,'')
+			@log.debug price_manager.relevant_price.value
+		end
+		
+		if highest then
+			@log.debug "get highest price."
+			optional_url = optional_urls[:"Price: High to Low"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
+			search_results = agent.get(optional_url)
+			result = search_results.at('td.price').text #get only one result which hit first
+			price_manager.highest_price.value = result.gsub!(/\$/,'')
+			@log.debug price_manager.highest_price.value
+		end
+		
+		if lowest then
+			@log.debug "get highest price."
+			optional_url = optional_urls[:"Price: Low to High"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
+			search_results = agent.get(optional_url)
+			result = search_results.at('td.price').text #get only one result which hit first
+			price_manager.lowest_price.value = result.gsub!(/\$/,'')
+			@log.debug price_manager.lowest_price.value
+		end
+		@log.info " get_prices finished."
+
+	end
+	
 	
 end

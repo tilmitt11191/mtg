@@ -1,0 +1,33 @@
+mtgotraders.set_store_page_of.rb start.
+[#<Mechanize::Form
+ {name nil}
+ {method "GET"}
+ {action "http://www.mtgotraders.com/store/search.php"}
+ {fields [text:0xbddbd4 type: text name: q value: Kalitas, Traitor of Ghet]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons [imagebutton:0xbdaf9c type: image name:  value: Go]}>
+, #<Mechanize::Form
+ {name nil}
+ {method "POST"}
+ {action "http://www.mtgotraders.com/cgi-bin/shop-bin/sc/wishlist.cgi"}
+ {fields
+  [hidden:0xb9a578 type: hidden name: storeid value: *1a4c945171a04aae08de729fc95b2a]
+  [hidden:0xb98ae8 type: hidden name: func value: create_wl]
+  [text:0xb9099c type: text name: name value: ]
+  [hidden:0xb8d1e8 type: hidden name: itemnum value: ]
+  [hidden:0xb717e0 type: hidden name: addedfrom value: ]
+  [hidden:0xb700d4 type: hidden name: qnty value: ]
+  [textarea:0xb51a58 type:  name: comments value: ]
+  [selectlist:0xb46c5c type:  name: priv value: pub]}
+ {radiobuttons}
+ {checkboxes}
+ {file_uploads}
+ {buttons
+  [submit:0xb5f8d8 type: submit name: Save value: Apply Changes]
+  [button:0xb5d394 type: button name:  value: Continue Shopping]}>
+]
+/media/sf_f/program/mtg/lib/util/store.rb:548:in `set_store_page_of'
+../../test_cases/card_operation/mtgotraders.set_store_page_of.rb:18:in `<main>'
+undefined local variable or method `search_results' for #<Mtgotraders:0x00000001d65a50>

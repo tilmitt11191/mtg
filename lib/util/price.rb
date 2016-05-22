@@ -6,6 +6,7 @@ require '../../lib/util/card.rb'
 require "../../lib/util/store.rb"
 
 class Price
+	include Comparable
 	@log
 	@value
 	@date
@@ -13,8 +14,8 @@ class Price
 	@card
 	attr_accessor :value, :date
 
-	def initialize(card)
-		@log = Logger.new("../../log")
+	def initialize(card, logger)
+		@log = logger
 		if card.nil? then
 			@log.warn "price.initialize(nil)"
 			@value = 0
@@ -66,6 +67,11 @@ class Price
 	def +(price)
 		@value += price.to_i
 	end
+
+	def <=>(other)
+		@value.to_f - other.to_f
+	end
+	
 
 end
 

@@ -4,7 +4,7 @@ require	"logger"
 require "mechanize"
 require 'rexml/document'
 require "../../lib/util/price.rb"
-require '../../lib/card_operation/mana_analyzer.rb'
+require '../../lib/util/mana_analyzer.rb'
 
 
 class Card
@@ -29,12 +29,13 @@ class Card
 	@cardset
 	attr_accessor :manacost, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
 	
-	def initialize(name)
-		@log = Logger.new("../../log")
+	def initialize(name, logger)
+		@log = logger
 		@log.info "Card.initialize"
 		@name = name
-		@price = Price.new(self)
-		@value = "nil"
+		@price = Price.new(self, @log)
+		@value = nil
+		@store_url = nil
 		@generating_mana_type = ""
 	end
 	
@@ -231,7 +232,7 @@ class Card
 	end
 
 	
-	def write_contents()
+	def write_contents(dir:"../../cards/")
 		@log.info "card(" + @name.to_s + ").write_contents() start."
 
 		@log.info "create dom"
@@ -248,8 +249,8 @@ class Card
 		root.add_element("cardset").add_text @cardset.to_s
 		root.add_element("generating_mana_type").add_text @generating_mana_type.to_s
 		
-		@log.info "write dom"
-		doc.write(File.new("../../cards/" + @name.to_s, "w"))
+		@log.info "write dom to[" + dir.to_s + "]"
+		doc.write(File.new(dir.to_s + @name.to_s, "w+"))
 		@log.info "card(" + @name.to_s + ").write_contents() finished."
 	end
 
@@ -310,6 +311,45 @@ class Card
 		write_contents()
 	end
 
+
+	def search_card_page(card)
+		
+	
+	end
 end
 
 
+class Wish_card < Card
+			#Card Name,Quantity,ID #,Rarity,Set,Collector #,Premium,Sideboarded,
+			#"Kalitas, Traitor of Ghet",1,59417,Mythic Rare,OGW,86/184,No,Yes
+				#if (line.split("\"").size != 1) && #except head line or blank line
+					#(quantity = line.split("\"")[2].split(',').size == 8) then
+	@name
+	@quantity
+	@id
+	@rarerity
+	@set
+	@collector_number
+	@premium
+	attr_accessor :name,:quantity,:id,:rarerity,:set,:collector_number,:premium
+	
+	def initialize(line, logger)
+		@log = logger
+		@log.info "Wish_card.initialize"
+	#"Kalitas, Traitor of Ghet",1,59417,Mythic Rare,OGW,86/184,No,Yes
+		if (line.split("\"").size != 1) && #except head line or blank line
+			(quantity = line.split("\"")[2].split(',').size == 7) then
+			@name = line.split("\"")[1]
+			@quantity = line.split("\"")[2].split(',')[1]
+			@id = line.split("\"")[2].split(',')[2]
+			@rarerity = line.split("\"")[2].split(',')[3]
+			@set = line.split("\"")[2].split(',')[4]
+			@collector_number = line.split("\"")[2].split(',')[5]
+			@premium = line.split("\"")[2].split(',')[6]
+		end
+	end
+	
+	def get_line
+		return "\"" + @name.to_s + "\"," + @quantity.to_s + "," + @id.to_s + "," + @rarerity.to_s + "," + @set.to_s + "," + @collector_number.to_s + "," + @premium.to_s
+	end
+end

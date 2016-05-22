@@ -1,7 +1,7 @@
 
 require	"logger"
 require 'date'
-require '../../lib/util/util.rb'
+require '../../lib/util/utils.rb'
 require '../../lib/util/card.rb'
 require "../../lib/util/store.rb"
 
@@ -45,14 +45,15 @@ class Deck
 	def initialize( \
 		deckname, \
 		list_type, \
-		path)
+		path, \
+		logger)
 		## list_type is storename or file etc...
-		@log = Logger.new("../../log")
+		@log = logger
 		@log.info "Deck initialize"
 		@log.debug "set deck name[" + deckname + "]"
 		@deckname = deckname
 		@cards = []
-		@price = Price.new(nil)
+		@price = Price.new(nil,@log)
 		@sum_of_mainboard_generating_manas = "" #str
 		@sum_of_sideboard_generating_manas = "" #str
 		@log.debug "set list type[" + list_type + "]"
@@ -116,27 +117,36 @@ class Deck
 	
 	def create_deckfile(filename, format, mode)
 	#create filename.csv.
-	#info	BG_ControlkD08241S 36850					
-	#land	Evolving Wilds	3	20	http://www.hareruyamtg.com/jp/g/gBFZ000236JN/	2016-05-16T19:46:02+09:00	nil
-	#land	Forest	5	20	http://www.hareruyamtg.com/jp/g/gSOI000297JN/	2016-05-16T19:46:03+09:00	nil
-	#land	Hissing Quagmire	4	750	http://www.hareruyamtg.com/jp/g/gOGW000171JN/	2016-05-16T19:46:04+09:00	B-G
-	#:
-	#:
-	#sideboardCards	Orbs of Warding	1	60	http://www.hareruyamtg.com/jp/g/gORI000234JN/	2016-05-16T19:47:08+09:00	nil
-	#info	15 SideboardCards 5530					
-	#info	http://www.hareruyamtg.com/jp/k/kD08241S/					
-	
-	#format:
+		#info,BG Con JF 41930 W3U3B21R3G14C2A3
+		#land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,
+		#land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,
+		#land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,
+		#:
+		#spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,
+		#spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,
+		#info,30 Spells 16470
+		#info,60 MainboardCards 35970 111 W0U0B47R0G7C0
+		#sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,
+		#sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,
+		#sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,
+		#:
+		#	sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,
+		#info,15 SideboardCards 5960 33 W0U0B12R0G4C0
+		#info,http://www.hareruyamtg.com/jp/k/kD08246S/
+
+
+	#selective format:
 	#card_type,name,quantity,price,store_url,price.date,generating_mana_type
-	#
-	#for get_generating_mana_of_decks.rb
+	#selective mode:
+	#"with_info", "card_only"
+
+	#the format for get_generating_mana_of_decks.rb
 	#"card_type,name,quantity,generating_mana_type"
-	#
-	#for get_deck_prices.rb
+	#mode:with_info
+
+	#the format for get_deck_prices.rb
 	#"card_type,name,quantity,price,store_url,price.date,generating_mana_type"
-	#
-	#mode:
-	#with_info or card_only
+	#mode:with_info
 		
 		@log.info "create_deckfile(" + filename + ") start."
 		@log.debug "filename: " + filename.to_s
@@ -286,7 +296,7 @@ class Deck
 			
 			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
 				cardname=reconvert_period(cardname)
-				card = Card.new(cardname.to_s)
+				card = Card.new(cardname.to_s, @log)
 				card.quantity = quantity
 				card.store_url = store_url
 				card.card_type = card_type
