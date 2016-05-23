@@ -25,10 +25,10 @@ begin
 
 	wishlist_names=[]
 	#wishlist_names.push("lists/Redemption_KTK_simple.csv")
-	wishlist_names.push("lists/Redemption_KTK.csv")
-	wishlist_names.push("lists/Redemption_FRF.csv")
+#	wishlist_names.push("lists/Redemption_KTK.csv")
+#	wishlist_names.push("lists/Redemption_FRF.csv")
 	wishlist_names.push("lists/Redemption_DTK.csv")
-	wishlist_names.push("lists/Redemption_SOI.csv")
+#	wishlist_names.push("lists/Redemption_SOI.csv")
 
 	store = Mtgotraders.new(log)
 
