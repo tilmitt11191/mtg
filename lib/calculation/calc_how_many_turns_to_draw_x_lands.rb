@@ -5,6 +5,7 @@
 #this program calculates how many additional turns you need to draw Y lands.
 
 ## How to calculate
+=begin
 Algorithm A (simple)
 	Parameters
 		X:number of lands in current hand
@@ -41,13 +42,16 @@ Algorithm B (correct)
 		 The event of drawing a card, however, doesn't seem Similarly certainly because as you drew a card, as the deck changes.
 		 Therefore, using deck(t),
 		 	T = sum^infinity_t=0 p(t,Y)
-		 	  = sum^infinity_t=0 q(x',y',deck(t)) 
+		 	  = sum^N_t=0 q(x'(t),y',deck(t)) * t
 		 	here,
-			x' = t * draw_per_turn
+		 	N = round_down(cards_in_deck / draw_per_turn)
+			x'(t) = t * draw_per_turn
 			y' = Y - X
 			deck(t):
-				cards_in_deck = initial_cards_in_deck - Z
-				land_in_deck = initial_lands_in_deck - X.
+				cards_in_deck = initial_cards_in_deck - Z - t * draw_per_turn
+				land_in_deck = initial_lands_in_deck - X - drawn_land(t-1)
+				drawn_land(t-1) is the number of lands drew until turn t-1
+				 = ((t-1) * draw_per_turn) * (ll_i/lib_i)
 
 Algorithm C (simulation)
 	if X >= Y then
@@ -64,7 +68,7 @@ Algorithm C (simulation)
 			if (X >= Y) then return t end
 		end
 	end
-
+=end
 
 require "logger"
 require '../../lib/util/utils.rb'
@@ -76,28 +80,38 @@ require 'optparse'
 opt = OptionParser.new
 options = {}
 
+
 # option parser
 options[:output]                         = "stdout"
 options[:viewing_parameters]             = ["lands_in_decks", "turns", "expecting_land_nums"]
 
+options[:cards_in_decks]                 = [60]
 options[:lands_in_decks]                 = [17,26]
 options[:turns]                          = [0]
 options[:draw_per_turn]                  = [1]
 options[:initial_hands]                  = [7]
-options[:hands]                          = [7]
-options[:expecting_land_nums]            = [0,2]
+
+options[:cards_in_hands]                 = [7]
+options[:lands_in_hands]                 = [2]
+
+options[:expecting_land_nums]            = [6]
+
+
 opt.banner = " \
-	This program calculates or simulates about land number of Magic the Gathering.\n \
+	This program calculates how many additional turns you need to draw Y lands if you have X lands in hand now. This program is related to land number of Magic the Gathering.\n \
 	Usage: #{File.basename($0)} [options]\
 	"
 
 opt.on('-h','--help','show help') { print opt.help; exit }
-opt.on( '-o output','--output','Default value is stdout.',\
+opt.on( '-o output','--output','The place printing results. stdout or ... Default value is stdout.',\
 			String){|v| options[:output] = v}
-opt.on( '-v viewing_parameters','--viewing_parameters','Default values are [lands_in_decks, turns, expecting_land_nums].',\
+opt.on( '-v viewing_parameters','--viewing_parameters','Viewing parameters with results. Default values are [lands_in_decks, turns, expecting_land_nums].',\
 			Array){|v| options[:viewing_parameters] = v}
-opt.on( '-l land_in_decks','--lands_in_decks','Specify some numbers of lands in decks. Default values are "17 26".
-		The format of land numbers is Array as default',\
+
+
+opt.on( '-c cards_in_decks','--cards_in_decks','Specify some numbers of cards in decks. Default values is "60".The format is Array.',\
+			Array){|v| options[:cards_in_decks] = v}
+opt.on( '-l land_in_decks','--lands_in_decks','Specify some numbers of lands in decks. Default values are "17 26".The format is Array as default',\
 			Array){|v| options[:lands_in_decks] = v}
 opt.on( '-t turn','--turn','Default values is 0.',\
 			Array){
@@ -107,23 +121,28 @@ opt.on( '-t turn','--turn','Default values is 0.',\
 opt.on( '-d draw_per_turn','--draw_per_turn','Default values is 1.',\
 			Array){|v| options[:draw_per_turn] = v}
 opt.on( '-i initial_hands','--initial_hands','Default values is 7.',\
-			Array){|v| options[:draw_per_turn] = v}
-opt.on( '-n numbers of cars in hand','--numbers_of_hand','Default values is "7".',\
+			Array){|v| options[:initial_hands] = v}
+opt.on( '-n numbers of cars in hand','--cards_in_hands','Default values is "7".',\
 			Array){
-				|v| options[:hands] = v
+				|v| options[:cards_in_hands] = v
 				@opt_hand_flag = true
 			}
-opt.on( '-e expecting_land_num','--expecting_land_num','Default values are 0,2.',\
+opt.on( '-L numbers of lands in hand','--lands_in_hands','Default values is "2".',\
+			Array){|v| options[:lands_in_hands] = v}			
+opt.on( '-e expecting_land_num','--expecting_land_num','Default values is "6".',\
 			Array){|v| options[:expecting_land_nums] = v}
 opt.permute!( ARGV )
 
+
+
+
 begin
-	#puts File.basename(__FILE__).to_s + " start."
+	puts File.basename(__FILE__).to_s + " start."
 	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
 	@log.info ""
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
-	
+
 
 	#check legals of ARGVs
 	viewing_parameters = []
@@ -131,9 +150,13 @@ begin
 		viewing_parameters.push(param.to_s)
 	end
 
-	num_of_lands = []
+	nums_of_cards = []
+	options[:cards_in_decks].each do |card|
+		nums_of_cards.push(card.to_i)
+	end
+	nums_of_lands = []
 	options[:lands_in_decks].each do |land|
-		num_of_lands.push(land.to_i)
+		nums_of_lands.push(land.to_i)
 	end
 	turns = []
 	options[:turns].each do |turn|
@@ -147,17 +170,24 @@ begin
 	options[:initial_hands].each do |initial_hand|
 		initial_hands.push(initial_hand.to_i)
 	end
-	hands = []
-	options[:hands].each do |hand|
-		hands.push(hand.to_i)
+	cards_in_hands = []
+	options[:cards_in_hands].each do |hand|
+		cards_in_hands.push(hand.to_i)
 	end
-	initial_hand = 7
+	lands_in_hands = []
+	options[:lands_in_hands].each do |land|
+		lands_in_hands.push(land.to_i)
+	end
+
 	if @opt_turn_flag && !@opt_hand_flag then
+		puts "calc hands by turns and draw_per_turn."
 		@log.debug "calc hands by turns and draw_per_turn."
 		hands = []
-		draw_per_turn.each do |draw|
-			turns.each do |turn|
-				hands.push(initial_hand + turn * draw)
+		initial_hands.each do |initial_hand|
+			draw_per_turn.each do |draw|
+				turns.each do |turn|
+					hands.push(initial_hand + turn * draw)
+				end
 			end
 		end
 	elsif !@opt_turn_flag && @opt_hand_flag then
@@ -174,64 +204,63 @@ begin
 		expecting_land_nums.push(expecting_land_num.to_i)
 	end
 
-	@log.debug "num_of_lands" + num_of_lands.to_s
-	@log.debug "turns" + turns.to_s
-	@log.debug "draw_per_turn" + draw_per_turn.to_s
-	@log.debug "hands" + hands.to_s
-	@log.debug "expecting_land_nums" + expecting_land_nums.to_s
+	@log.debug "Palameters:"
+	@log.debug "\tnums_of_cards" + nums_of_cards.to_s
+	@log.debug "\tnums_of_lands" + nums_of_lands.to_s
+	@log.debug "\texpecting_land_nums" + expecting_land_nums.to_s
+	@log.debug "\tturns" + turns.to_s
+	@log.debug "\tinitial_hands" + initial_hands.to_s
+	@log.debug "\tdraw_per_turn" + draw_per_turn.to_s
+	@log.debug "\tcards_in_hands" + cards_in_hands.to_s
+	@log.debug "\tlands_in_hands" + lands_in_hands.to_s
 
-	####main
+
 	##create decks with different number of lands.
-	@log.info "start creating decks with different number of lands."
+	@log.debug "start creating decks with different number of lands."
 	decks = {} #hash of Deck.The key is number of lands.
-	@library = 60
-	num_of_lands.each do |num_of_land|
-		@log.info "num_of_land = " + num_of_land.to_s
-		deck = Deck.new("#{num_of_land}", "simulation", "", @log)
-		land_card = Card.new("land", @log)
-		land_card.card_type = "land"
-		land_card.quantity = num_of_land
-		deck.cards.push(land_card)
-		other_card = Card.new("MainboardCard", @log)
-		other_card.card_type = "MainboardCard"
-		other_card.quantity = @library - num_of_land
-		deck.cards.push(other_card)
-
-		decks[:"#{num_of_land}"] = deck
+	nums_of_cards.each do |num_of_cards|
+		nums_of_lands.each do |num_of_lands|
+			deck = create_a_deck_with_target_number_of_cards(num_of_cards, num_of_lands, @log)
+			@log.debug "deck[#{num_of_lands}/#{num_of_cards}] was created."
+			decks[:"#{num_of_lands}/#{num_of_cards}"] = deck
+		end
 	end
-	@log.info "creating " + decks.size().to_s + " decks with different number of lands finished."
-	#puts decks[:"25"].calc_num_of_lands_in_deck
-	#puts decks[:"25"].cards[0].card_type
-	
+	@log.debug "creating " + decks.size().to_s + " decks with different number of lands finished."
+
+
 	initial_hands.each do |initial_hand|
 		draw_per_turn.each do |draw|
-			decks.each do |num_of_land ,deck|
+			decks.each do |key ,deck|
+				num_of_lands = key.to_s.split('/')[0].to_i
+				num_of_cards = key.to_s.split('/')[1].to_i
 				turns.each do |turn|
-					hand = initial_hand + turn * draw
-					expecting_land_nums.each do |expecting_land_num|
-						## the probability of two land in hand is set on probabilities_of_lands_in_hand[2]
-						probabilities_of_lands_in_hand = create_probabilities_of_lands_in_hand(deck, hand, @log)
-						more = calc_probability_of_more_than_x_lands_in_hand(probabilities_of_lands_in_hand, expecting_land_num, hand, @log).round(3)
-						#puts "num_of_land[" + num_of_land.to_s + "/" + deck.calc_num_of_mainboard_cards_in_deck.to_s + "], turn[" + turn.to_s + "], expecting_land_num[" + expecting_land_num.to_s + "]=" + more.to_s
-						viewing_parameters.each do |param|
-							print "#{param}["
-							case param
-							when "initial_hands" then print initial_hand# end
-							when "draw_per_turn" then print draw# end
-							when "lands_in_decks" then print num_of_land# end
-							when "turns" then print turn# end
-							when "hands" then print hand# end
-							when "expecting_land_nums" then print expecting_land_num# end
-							end
-							print "]"
+					lands_in_hands.each do |lands_in_hand|
+						hand = initial_hand + turn * draw
+						expecting_land_nums.each do |expecting_land_num|
+						##############################  
+						#### main process start!! ####
+						##############################
+						puts "cards[#{num_of_cards}],lands[#{num_of_lands}],expect[#{expecting_land_num}],initial_hand[#{initial_hand}],turn[#{turn}],draw[#{draw}],current_hand[#{hand}],lands_in_hand[#{lands_in_hand}]"
+						puts "You have #{lands_in_hand} lands in hand now, the additional turn you need to draw #{expecting_land_num} lands is "
+						puts "A"
+						puts algorithm_A_simple(lands_in_hand, expecting_land_num, deck, @log).round(3)
+
+						puts "B"
+						cards_in_deck = num_of_cards - hand
+						puts algorithm_B_correct(lands_in_hand, expecting_land_num, hand, draw, deck, @log).round(3)
+
+						#################################
+						#### main process finished!! ####
+						#################################
 						end
-						if viewing_parameters.size > 0 then print "=" end
-						puts "#{more}"
 					end
 				end
 			end
 		end
 	end
+
+
+
 
 
 rescue => e
@@ -240,5 +269,5 @@ end
 
 
 @log.info File.basename(__FILE__).to_s + " finished."
-#puts File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
 
