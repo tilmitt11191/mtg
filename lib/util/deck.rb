@@ -401,7 +401,7 @@ class Deck
 	end
 	
 	
-	def calc_lands_in_deck
+	def calc_num_of_lands_in_deck
 		#this method returns the number of lands in this deck.
 		@log.info "calc_lands_in_deck(" + @deckname.to_s + ") start."
 		num_of_lands = 0
@@ -413,6 +413,20 @@ class Deck
 		end
 		
 		return num_of_lands
+	end
+
+	def calc_num_of_mainboard_cards_in_deck
+		#this method returns the number of cards in this deck.
+		@log.info "calc_num_of_all_cards_in_deck(" + @deckname.to_s + ") start."
+		num_of_cards = 0
+		
+		@cards.each do |card|
+			if card.card_type != "sideboardCards" then
+				num_of_cards += card.quantity.to_i
+			end
+		end
+		
+		return num_of_cards
 	end
 	
 end
