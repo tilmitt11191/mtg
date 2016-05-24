@@ -222,38 +222,6 @@ class Deck
 			puts "mode error"
 		end
 	end
-
-
-	def create_deckfile_full(filename)
-		#card_type,card_name,quantity,price
-		@log.debug "create_deckfile(" + filename + ") start."
-		File.open(filename, "w:sjis") do |file|
-			@cards.each do |card|
-				#write decks
-				file.print card.card_type.to_s + "," + convert_period(card.name).to_s + "," + card.quantity.to_s + "," + card.price.to_s + "," + card.store_url.to_s + "," + card.price.date.to_s + "\n"
-			end	
-		end
-	end
-
-	def read_deckfile_simple(filename)
-		#cardtype,english name,num
-		@log.info "read_deckfile_simple[" + filename.to_s + "] start"
-		@cards = []
-		File.open(filename, "r:sjis").each do |line|
-			@log.debug "line[" + line.to_s + "]"
-			line.encode!('utf-8')
-			(card_type,cardname,quantity) = line.split(",")
-			
-			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
-				card_name=reconvert_period(cardname)
-				card = Card.new(card_name.to_s)
-				card.quantity = quantity
-				card.card_type = card_type
-				@cards.push(card)
-			end
-			
-		end
-	end
 	
 	
 	def read_deckfile(filename, format, mode)
@@ -398,21 +366,6 @@ class Deck
 	end
 	
 	
-	
-=begin	
-	def calc_price_of_all_deck
-	#calculate total price of this deck.
-		@log.info "calculate_price start"
-		price = 0
-		@cards.each do |card|
-			@log.debug card.name + ", " + card.quantity + ", " + card.price.to_s
-			price += card.quantity.to_i * card.price.to_i
-			@log.debug "price="+price.to_s
-		end
-		return price
-	end
-=end
-	
 	def calc_price_of_whole_deck
 	#calculate price of each_card_type and deck.
 	#such as deck.price, land, creatures, spells, MainboardCards, sideboardCards
@@ -446,5 +399,21 @@ class Deck
 			end
 		end
 	end
+	
+	
+	def calc_lands_in_deck
+		#this method returns the number of lands in this deck.
+		@log.info "calc_lands_in_deck(" + @deckname.to_s + ") start."
+		num_of_lands = 0
+		
+		@cards.each do |card|
+			if card.card_type == "land" then
+				num_of_lands += card.quantity.to_i
+			end
+		end
+		
+		return num_of_lands
+	end
+	
 end
 

@@ -131,6 +131,7 @@ class Hareruya < Store
 		@log.debug "mode: " + mode.to_s
 
 		if !File.exist?(filename) then
+			@log.error "hareruya.read_deckfile(" + filename.to_s + ", "+ format.to_s + ", " + mode.to_s + ")"
 			@log.error "file[" + filename.to_s + "] not exist."
 			return nil
 		end
@@ -138,7 +139,7 @@ class Hareruya < Store
 		#extract deckname from the first line.
 		#info,BG_Con_JF 36850
 		deckname = File.open(filename, "r:sjis").readlines[0].split(',')[1].split(' ')[0]
-		deck = Deck.new(deckname,"hareruya",filename.to_s)
+		deck = Deck.new(deckname,"hareruya",filename.to_s, @log)
 
 		File.open(filename, "r:sjis").each do |line|
 			line.chomp!
@@ -165,7 +166,7 @@ class Hareruya < Store
 			
 			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
 				cardname=reconvert_period(cardname)
-				card = Card.new(cardname.to_s)
+				card = Card.new(cardname.to_s, @log)
 				card.quantity = quantity
 				card.manacost = manacost
 				card.generating_mana_type = generating_mana_type

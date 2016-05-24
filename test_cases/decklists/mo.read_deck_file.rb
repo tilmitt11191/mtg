@@ -33,7 +33,7 @@ begin
 #sideboardCards,Hallowed Moonlight,3,nil,,,
 #sideboardCards,Radiant Flames,1,nil,,,
 
-	decknames = ["WB_Con_tR_v1.4"]
+	decknames = ["WB_Con_tR_v1.4.mo"]
 
 	decknames.each do |deckname|
 		mo = MagicOnline.new(log)
@@ -44,9 +44,9 @@ begin
 			sum += card.quantity
 		end
 		if sum == 75 then
-			puts "[ok]mo.read_deck_file[text].number of deck cards is 75."
+			puts "[ok]mo.read_deck_file[" + deckname.to_s + ".txt].number of deck cards is 75."
 		else
-			puts "[ng]mo.read_deck_file[text].number of deck cards is " + sum.to_s + "."
+			puts "[ng]mo.read_deck_file[" + deckname.to_s + ".txt].number of deck cards is " + sum.to_s + "."
 		end	
 	end
 
@@ -63,7 +63,7 @@ begin
 #Hallowed Moonlight	3	57856	Rare	ORI	16/272	No	Yes
 #Radiant Flames	1	58741	Rare	BFZ	151/274	No	Yes
 
-	decknames = ["WB_Con_tR_v1.4"]
+	decknames = ["WB_Con_tR_v1.4.mo"]
 
 	decknames.each do |deckname|
 		mo = MagicOnline.new(log)
@@ -74,9 +74,9 @@ begin
 			sum += card.quantity
 		end
 		if sum == 75 then
-			puts "[ok]mo.read_deck_file[csv].number of deck cards is 75."
+			puts "[ok]mo.read_deck_file[" + deckname.to_s + ".csv].number of deck cards is 75."
 		else
-			puts "[ng]mo.read_deck_file[csv].number of deck cards is " + sum.to_s + "."
+			puts "[ng]mo.read_deck_file[" + deckname.to_s + ".csv].number of deck cards is " + sum.to_s + "."
 		end
 		#deck.view_deck_list
 		mo.create_card_list(deck, "../../test_cases/decklists/output/test.txt")
