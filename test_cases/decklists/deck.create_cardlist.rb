@@ -1,10 +1,18 @@
 
 #ruby
+require "logger"
 require '../../lib/util/deck.rb'
 
-deckname = "BG_Con_kD08241S"
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
 
-deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD08241S/")
+	deckname = "BG_Con_kD08241S"
+
+	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD08241S/", @log)
 
 
 
@@ -78,3 +86,14 @@ sideboardCards,《悪性の疫病/Virulent Plague》,2,60,http://www.hareruyamtg.com/jp
 sideboardCards,《護法の宝珠/Orbs of Warding》,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-16T21:01:30+09:00
 
 =end
+
+
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
+
+

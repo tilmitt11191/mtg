@@ -1,0 +1,30 @@
+3 Caves of Koilos
+4 Evolving Wilds
+3 Forest
+1 Island
+4 Llanowar Wastes
+1 Plains
+1 Swamp
+3 Westvale Abbey
+4 Yavimaya Coast
+2 Brood Monitor
+4 Catacomb Sifter
+1 Dragonlord Silumgar
+4 Duskwatch Recruiter
+4 Eldrazi Displacer
+4 Elvish Visionary
+4 Loam Dryad
+4 Reflector Mage
+1 Zulaport Cutthroat
+4 Collected Company
+4 Cryptolith Rite
+
+
+1 Dragonlord Silumgar
+1 Enlightened Ascetic
+4 Reality Smasher
+2 Sylvan Advocate
+1 Thought-Knot Seer
+3 Ultimate Price
+1 Warping Wail
+2 Transgress the Mind

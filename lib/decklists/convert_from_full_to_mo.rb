@@ -1,38 +1,57 @@
 
 #ruby
+require "logger"
 require '../../lib/util/deck.rb'
 require '../../lib/util/store.rb'
-require '../../lib/decklists/deck_prices.rb'
+require '../../lib/util/deck_prices.rb'
 
-deckname = "Monitor_Combo_kD03044W"
-get_from = "file" #web or file
+deckname = "Monitor_Combo_kD09885S"
+get_from = "web" #web or file
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
 
-deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD09439S/")
-#deck.read_deckfile("../../decks/" + deckname.to_s + ".csv" , "card_type,name,quantity,price,store_url,price.date,generating_mana_type", "with_info")
-hareruya = Hareruya.new()
+	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD09885S/",@log)
+	hareruya = Hareruya.new(@log)
+	mode_of_create_cardlist = "full"
 
-case get_from
-when "web" then
-	deck.create_cardlist("full")
-	deck.calc_price_of_each_card_type
-	hareruya.convert_all_cardname_from_jp_to_eng(deck)
+	case get_from
+	when "web" then
+		deck.create_cardlist(mode_of_create_cardlist)
+		hareruya.convert_all_cardname_from_jp_to_eng(deck)
 
-	deck.get_contents
-	deck.get_sum_of_generationg_manas
+		deck.get_contents_of_all_cards
+		deck.get_sum_of_generating_manas
 
-	deck.calculate_price
-	deck.create_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
+		if mode_of_create_cardlist == "full" then
+			deck.calc_price_of_whole_deck
+		end
 
-	deck_prices = Deck_prices.new()
-	deck_prices.read("../../decks/decklist.csv")
-	deck_prices.add(deck)
-	deck_prices.write("../../decks/decklist.csv")
-when "file" then
-	deck.read_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,price.date,store_url", "with_info")
-	hareruya.convert_all_cardname_from_jp_to_eng(deck)
+		deck.create_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
+
+		if mode_of_create_cardlist == "full" then
+			deck_prices = Deck_prices.new(@log)
+			deck_prices.read("../../decks/decklist.csv")
+			deck_prices.add(deck)
+			deck_prices.write("../../decks/decklist.csv")
+		end
+	when "file" then
+		deck.read_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,price.date,store_url", "with_info")
+		hareruya.convert_all_cardname_from_jp_to_eng(deck)
+	end
+
+	mo = MagicOnline.new(@log)
+	mo.create_card_list(deck, "../../decks/magiconline/" + deckname + ".txt")
+
+
+rescue => e
+	puts_write(e,@log)
 end
 
 
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
 
-mo = MagicOnline.new
-mo.create_card_list(deck, "../../decks/magiconline/" + deckname + ".txt")

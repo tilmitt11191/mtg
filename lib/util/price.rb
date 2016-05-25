@@ -34,7 +34,7 @@ class Price
 		case storename
 		when "hareruya" then
 			@log.debug "renew at hareruya start"
-			@store = Hareruya.new()
+			@store = Hareruya.new(@log)
 			@value = @store.how_match?(@card)
 			@log.debug "[" + @card.name.to_s + "] is [" + @value.to_s + "]"
 			@date = DateTime.now

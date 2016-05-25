@@ -4,23 +4,25 @@ require "logger"
 
 require '../../lib/util/deck.rb'
 require '../../lib/util/store.rb'
-require '../../lib/card_operation/mana_analyzer.rb'
+require '../../lib/util/mana_analyzer.rb'
 
-puts File.basename(__FILE__).to_s + " start."
-log = Logger.new("../../log", 5, 10 * 1024 * 1024)
-log.info ""
-log.info File.basename(__FILE__).to_s + " start."
-log.info ""
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
+	
 
 
 deckname = "BG_Con_JF"
-hareruya = Hareruya.new
+hareruya = Hareruya.new(@log)
 
 #### read deck
 #from file
 deck = hareruya.read_deckfile("../../decks/" + deckname.to_s + ".csv", "card_type,cardname,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
 
-mana_analyzer = Mana_analyzer.new(deck)
+mana_analyzer = Mana_analyzer.new(deck, @log)
 
 if ["U"] == mana_analyzer.decompose_needed_mana_symbol("U") then
 	puts "[ok]decompose_needed_mana_symbol(U)"
@@ -74,3 +76,11 @@ if sum == "W0U0B12R0G4C0" then
 else
 	puts "[error]sum_of_needed_mana_at_sideboard = " + sum.to_s
 end
+
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."

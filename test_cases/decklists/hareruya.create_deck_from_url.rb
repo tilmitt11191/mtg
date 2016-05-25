@@ -5,14 +5,16 @@ require "logger"
 require '../../lib/util/deck.rb'
 require '../../lib/util/store.rb'
 
-puts File.basename(__FILE__).to_s + " start."
-log = Logger.new("../../log", 5, 10 * 1024 * 1024)
-log.info ""
-log.info File.basename(__FILE__).to_s + " start."
-log.info ""
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
+	
 
 
-hareruya = Hareruya.new()
+hareruya = Hareruya.new(@log)
 url = "http://www.hareruyamtg.com/jp/k/kD08241S/"
 mode = "price:off,file:on"
 deck = hareruya.create_deck_from_url(url,priceflag:false,fileflag:true)
@@ -29,4 +31,11 @@ else
 end
 
 
-log.info File.basename(__FILE__).to_s + " finished."
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
+

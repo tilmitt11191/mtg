@@ -41,10 +41,10 @@ class Mana_analyzer
 :sum_of_manacost_point_at_mainboard, :sum_of_manacost_point_at_sideboard, :sum_of_generating_mana_at_mainboard, :sum_of_generating_mana_at_sideboard
 
 
-	def initialize(deck)
+	def initialize(deck, log)
 	#if no deck, set nil.
 	#at such time using only get_generating_mana_type(card).
-		@log = Logger.new("../../log")
+		@log = log
 		@log.info "Mana_analyzer.initialize"
 		@deck = deck
 		@sum_of_manacost_point_at_mainboard = 0

@@ -266,7 +266,7 @@ class Hareruya < Store
 				card_name = Nokogiri::HTML.parse(line, nil, @charset).text
 				card_name.chomp!
 				url = "http://www.hareruyamtg.com" + line.split("\"")[1]
-				card = Card.new(card_name)
+				card = Card.new(card_name, @log)
 				card.store_url = url
 				card.card_type = card_type
 				if create_mode == "full" then
@@ -297,7 +297,7 @@ end
 
 		#deckname = url.split('/')[6]
 		deckname = get_archetype_from_url(url).to_s + url.split('/')[6].to_s
-		deck = Deck.new(deckname, "hareruya", url)
+		deck = Deck.new(deckname, "hareruya", url, @log)
 		if priceflag == true || priceflag == "on" then
 			create_card_list(deck, "full")
 		else
