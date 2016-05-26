@@ -306,7 +306,7 @@ class Card
 	def set_generating_mana_type
 	#set_generating_mana_type
 		@log.info "card(" + name.to_s + ").set_generating_mana_type start."
-		mana_analyzer = Mana_analyzer.new(nil)
+		mana_analyzer = Mana_analyzer.new(nil, @log)
 		@generating_mana_type = mana_analyzer.get_generating_mana_type(self)
 		write_contents()
 	end

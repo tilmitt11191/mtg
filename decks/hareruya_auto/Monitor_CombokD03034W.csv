@@ -1,29 +1,29 @@
-info,Monitor_CombokD03034W 49320 W12U8B16R7G17C15A7
-land,Caves of Koilos,4,,C-W-B,300,2016-05-20T13:06:12+09:00,http://www.hareruyamtg.com/jp/g/gORI000245JN/,
-land,Evolving Wilds,4,,A,20,2016-05-20T13:06:13+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,
-land,Forest,5,,G,20,2016-05-20T13:06:14+09:00,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,
-land,Llanowar Wastes,4,,C-B-G,450,2016-05-20T13:06:26+09:00,http://www.hareruyamtg.com/jp/g/gORI000248JN/,
-land,Plains,1,,W,20,2016-05-20T13:06:27+09:00,http://www.hareruyamtg.com/jp/g/gSOI000285JN/,
-land,Swamp,1,,B,20,2016-05-20T13:06:28+09:00,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,
-land,Westvale Abbey,3,,C,1500,2016-05-20T13:06:29+09:00,http://www.hareruyamtg.com/jp/g/gSOI000281JN/,
-land,Yavimaya Coast,1,,C-G-U,300,2016-05-20T13:06:31+09:00,http://www.hareruyamtg.com/jp/g/gORI000252JN/,
+info,Monitor_CombokD03034W 49520 W12U8B16R7G17C15A7
+land,Caves of Koilos,4,,C-W-B,300,2016-05-26T06:28:38+09:00,http://www.hareruyamtg.com/jp/g/gORI000245JN/,
+land,Evolving Wilds,4,,A,20,2016-05-26T06:28:40+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,
+land,Forest,5,,G,20,2016-05-26T06:28:41+09:00,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,
+land,Llanowar Wastes,4,,C-B-G,450,2016-05-26T06:28:43+09:00,http://www.hareruyamtg.com/jp/g/gORI000248JN/,
+land,Plains,1,,W,20,2016-05-26T06:28:44+09:00,http://www.hareruyamtg.com/jp/g/gSOI000285JN/,
+land,Swamp,1,,B,20,2016-05-26T06:28:45+09:00,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,
+land,Westvale Abbey,3,,C,1500,2016-05-26T06:28:47+09:00,http://www.hareruyamtg.com/jp/g/gSOI000281JN/,
+land,Yavimaya Coast,1,,C-G-U,300,2016-05-26T06:28:48+09:00,http://www.hareruyamtg.com/jp/g/gORI000252JN/,
 info,23 Lands 8020
-creature,Brood Monitor,3,4GG,nil,50,2016-05-20T13:06:34+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000164JN/,
-creature,Catacomb Sifter,4,1BG,nil,40,2016-05-20T13:06:58+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000201JN/,
-creature,Duskwatch Recruiter,4,1G,nil,250,2016-05-20T13:07:00+09:00,http://www.hareruyamtg.com/jp/g/gSOI000203JN/,
-creature,Eldrazi Displacer,4,2W,nil,850,2016-05-20T13:07:02+09:00,http://www.hareruyamtg.com/jp/g/gOGW000013JN/,
-creature,Elvish Visionary,4,1G,nil,50,2016-05-20T13:07:04+09:00,http://www.hareruyamtg.com/jp/g/gORI000175JN/,
-creature,Nantuko Husk,3,2B,nil,20,2016-05-20T13:07:06+09:00,http://www.hareruyamtg.com/jp/g/gORI000109JN/,
-creature,Zulaport Cutthroat,4,1B,nil,90,2016-05-20T13:07:08+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000126JN/,
-info,26 Creatures 5330
-spell,Collected Company,4,3G,nil,2800,2016-05-20T13:07:10+09:00,http://www.hareruyamtg.com/jp/g/gDTK000026JN/,
-spell,Life from the Loam,4,1G,nil,1800,2016-05-20T13:07:11+09:00,http://www.hareruyamtg.com/jp/g/gRAV000202JN/,
-spell,Cryptolith Rite,3,1G,C-A,750,2016-05-20T13:07:43+09:00,http://www.hareruyamtg.com/jp/g/gSOI000200JN/,
+creature,Brood Monitor,3,4GG,nil,50,2016-05-26T06:28:50+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000164JN/,
+creature,Catacomb Sifter,4,1BG,nil,40,2016-05-26T06:28:52+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000201JN/,
+creature,Duskwatch Recruiter,4,1G,nil,250,2016-05-26T06:28:54+09:00,http://www.hareruyamtg.com/jp/g/gSOI000203JN/,
+creature,Eldrazi Displacer,4,2W,nil,900,2016-05-26T06:28:55+09:00,http://www.hareruyamtg.com/jp/g/gOGW000013JN/,
+creature,Elvish Visionary,4,1G,nil,50,2016-05-26T06:28:57+09:00,http://www.hareruyamtg.com/jp/g/gORI000175JN/,
+creature,Nantuko Husk,3,2B,nil,20,2016-05-26T06:29:22+09:00,http://www.hareruyamtg.com/jp/g/gORI000109JN/,
+creature,Zulaport Cutthroat,4,1B,nil,90,2016-05-26T06:29:24+09:00,http://www.hareruyamtg.com/jp/g/gBFZ000126JN/,
+info,26 Creatures 5530
+spell,Collected Company,4,3G,nil,2800,2016-05-26T06:29:26+09:00,http://www.hareruyamtg.com/jp/g/gDTK000026JN/,
+spell,Life from the Loam,4,1G,nil,1800,2016-05-26T06:29:27+09:00,http://www.hareruyamtg.com/jp/g/gRAV000202JN/,
+spell,Cryptolith Rite,3,1G,C-A,750,2016-05-26T06:29:29+09:00,http://www.hareruyamtg.com/jp/g/gSOI000200JN/,
 info,11 Spells 20650
-info,60 MainboardCards 34000 105 W4U0B11R0G29C0
-sideboardCards,Reality Smasher,4,4C,nil,1100,2016-05-20T13:07:45+09:00,http://www.hareruyamtg.com/jp/g/gOGW000007JN/,
-sideboardCards,Thought-Knot Seer,4,3C,nil,1600,2016-05-20T13:07:46+09:00,http://www.hareruyamtg.com/jp/g/gOGW000009JN/,
-sideboardCards,Tireless Tracker,3,2G,nil,1400,2016-05-20T13:07:48+09:00,http://www.hareruyamtg.com/jp/g/gSOI000233JN/,
-sideboardCards,Ultimate Price,4,1B,nil,80,2016-05-20T13:07:49+09:00,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,
+info,60 MainboardCards 34200 105 W4U0B11R0G29C0
+sideboardCards,Reality Smasher,4,4C,nil,1100,2016-05-26T06:29:31+09:00,http://www.hareruyamtg.com/jp/g/gOGW000007JN/,
+sideboardCards,Thought-Knot Seer,4,3C,nil,1600,2016-05-26T06:29:32+09:00,http://www.hareruyamtg.com/jp/g/gOGW000009JN/,
+sideboardCards,Tireless Tracker,3,2G,nil,1400,2016-05-26T06:29:34+09:00,http://www.hareruyamtg.com/jp/g/gSOI000233JN/,
+sideboardCards,Ultimate Price,4,1B,nil,80,2016-05-26T06:29:37+09:00,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,
 info,15 SideboardCards 15320 53 W0U0B4R0G3C8
 info,http://www.hareruyamtg.com//jp/k/kD03034W/

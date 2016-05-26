@@ -2,13 +2,14 @@
 #ruby
 require "logger"
 require '../../lib/util/deck.rb'
-require '../../lib/card_operation/mana_analyzer.rb'
+require '../../lib/util/mana_analyzer.rb'
 
-puts File.basename(__FILE__).to_s + " start."
-log = Logger.new("../../log", 5, 10 * 1024 * 1024)
-log.info ""
-log.info File.basename(__FILE__).to_s + " start."
-log.info ""
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
 
 
 
@@ -20,12 +21,12 @@ log.info ""
 decknames = ["WB_Con_tR_v1.4"]
 
 decknames.each do |deckname|
-	mo = MagicOnline.new
+	mo = MagicOnline.new(@log)
 	deck = mo.read_deckfile(deckname, "../../decks/magiconline/" + deckname.to_s + ".txt")
 	deck.get_contents_of_all_cards
 	deck.set_information
 
-	mana_analyzer = Mana_analyzer.new(deck)
+	mana_analyzer = Mana_analyzer.new(deck, @log)
 
 	sum = mana_analyzer.calc_sum_of_generating_mana()
 	if sum.size == 2 &&
@@ -37,4 +38,10 @@ decknames.each do |deckname|
 	end
 end
 
-log.info File.basename(__FILE__).to_s + " finished."
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."

@@ -1,0 +1,109 @@
+card.get_contents_of_card.rb start.
+card.get_contents_of_card.rb finished.
+card.read_from_url.rb start.
+card.read_from_url.rb finished.
+hareruya.search_archetype_from_url.rb start.
+[ok]hareruya.search_archetype_from_url got BG_Control.
+hareruya.search_archetype_from_url.rb finished.
+hareruya.how_match.rb start.
+[ok]hareruya.how_match when url is nil
+[ok]hareruya.how_match when url is invalid
+[ok]hareruya.how_match. Kalitas, Traitor of Ghet.price = 4200
+hareruya.how_match.rb finished.
+mtgotraders.how_match.rb start.
+[ok]mtgotraders.how_match when url is nil
+[ok]mtgotraders.how_match when url is invalid
+[ok]mtgotraders.how_match. Kalitas, Traitor of Ghet.price = 0
+mtgotraders.how_match.rb finished.
+mtgotraders.set_store_page_of.rb start.
+[ok]Kalitas, Traitor of Ghet
+[ok]Dispel
+[ok]Forest
+[ok]Wastes
+[ok]Exquisite Firecraft
+[ok]Hedron Crawler
+[ok]Make a Stand
+[ok]Void Shatter
+[ok]Insolent Neonate
+mtgotraders.set_store_page_of.rb finished.
+wisdomGuild.get_prices.rb start.
+[ok]all false check.
+[ok]all true check.
+wisdomGuild.get_prices.rb finished.
+wisdomGuild.how_match.rb start.
+[ok]wisdomGuild.how_match when url is nil
+[ok]wisdomGuild.how_match when url is invalid
+[ok]wisdomGuild.how_match. Kalitas, Traitor of Ghet.price = 0
+wisdomGuild.how_match.rb finished.
+deck.create_deckfile.rb start.
+deck.create_deckfile.rb finished.
+hareruya.search_deckurls_from_webpage.rb start.
+[ok]hareruya.search_deckurls_from_webpage.size() = 60
+hareruya.search_deckurls_from_webpage.rb finished.
+mo.read_deck_file.rb start.
+[ok]mo.read_deck_file[WB_Con_tR_v1.4.mo.txt].number of deck cards is 75.
+[ok]mo.read_deck_file[WB_Con_tR_v1.4.mo.csv].number of deck cards is 75.
+mo.read_deck_file.rb finished.
+deck.create_cardlist.rb start.
+deck.create_cardlist.rb finished.
+hareruya.read_deckfile.rb start.
+[ok]hareruya.read_deck_file[test_BGConJF.csv].number of deck cards is 75.
+[ok]hareruya.read_deck_file[WBConkD09283S.csv].number of deck cards is 75.
+hareruya.read_deckfile.rb finished.
+deck.read_deckfile.rb start.
+[ok]sum = 75
+[ok]deck.price_of_all = 41930
+[ok]deck.quantity_of_lands = 26
+[ok]deck.price_of_lands = 4700
+[ok]deck.quantity_of_creatures = 4
+[ok]deck.price_of_creatures = 14800
+[ok]deck.quantity_of_spells = 30
+[ok]deck.price_of_spells = 16470
+[ok]deck.quantity_of_mainboard_cards = 60
+[ok]deck.price_of_mainboard_cards = 35970
+[ok]deck.quantity_of_sideboard_cards = 15
+[ok]deck.price_of_sideboard_cards = 5960
+[ok]deck.cards[0].name = Evolving Wilds
+[ok]deck.cards[27].name = Orbs of Warding
+deck.read_deckfile.rb finished.
+deck_prices.write.rb start.
+deck_prices.write.rb finished.
+deck.calc_num_of_lands_in_deck.rb start.
+[ok]deck.calc_num_of_lands_in_deck[WBConkD09283S.csv].number of land cards are 25
+[ok]deck.calc_num_of_lands_in_deck[test_BGConJF.csv].number of land cards are 26
+deck.calc_num_of_lands_in_deck.rb finished.
+hareruya.convert_all_cardname_from_jp_to_eng.rb start.
+hareruya.convert_all_cardname_from_jp_to_eng.rb finished.
+mo.create_card_list.rb start.
+mo.create_card_list.rb finished.
+hareruya.create_deck_from_url.rb start.
+[ok]hareruya.create_deck_from_url
+hareruya.create_deck_from_url.rb finished.
+mana_analyze_for_many_cards.rb start.
+[ok]Evolving Wilds
+Drownyard Temple[ok]
+[ok]Plains
+[ok]Island
+[ok]Swamp
+[ok]Mountain
+[ok]Forest
+mana_analyze_for_many_cards.rb finished.
+mana_analyzer.analyze_cardtype.rb start.
+wastes[ok]
+mana_analyzer.analyze_cardtype.rb finished.
+mana_analyzer.calc_sum_of_needed_mana.rb start.
+[ok]decompose_needed_mana_symbol(U)
+[ok]decompose_needed_mana_symbol(WW)
+[ok]decompose_needed_mana_symbol(2BB)
+[ok]decompose_needed_mana_symbol(12GGG)
+[ok]sum_of_manacost_point_at_mainboard
+[ok]sum_of_manacost_point_at_sideboard
+[ok]sum_of_needed_mana_at_mainboard
+[ok]sum_of_needed_mana_at_sideboard
+mana_analyzer.calc_sum_of_needed_mana.rb finished.
+mana_analyzer.convert_sum_of_mana_to_weka_format.rb start.
+[ok]mana_analyzer.convert_sum_of_mana_to_weka_format
+mana_analyzer.convert_sum_of_mana_to_weka_format.rb finished.
+mana_analyzer.calc_sum_of_generating_mana.rb start.
+[ok]mana_analyzer.calc_sum_of_generating_mana
+mana_analyzer.calc_sum_of_generating_mana.rb finished.

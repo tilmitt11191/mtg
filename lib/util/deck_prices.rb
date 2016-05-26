@@ -11,8 +11,8 @@ class Deck_prices
 	@dates #array of str
 	@paths #array of str
 	
-	def initialize()
-		@log = Logger.new("../../log")
+	def initialize(log)
+		@log = log
 		@log.info "Deck_prices initialize"
 		
 		@decknames = []

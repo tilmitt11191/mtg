@@ -41,10 +41,10 @@ class Mana_analyzer
 :sum_of_manacost_point_at_mainboard, :sum_of_manacost_point_at_sideboard, :sum_of_generating_mana_at_mainboard, :sum_of_generating_mana_at_sideboard
 
 
-	def initialize(deck)
+	def initialize(deck, log)
 	#if no deck, set nil.
 	#at such time using only get_generating_mana_type(card).
-		@log = Logger.new("../../log")
+		@log = log
 		@log.info "Mana_analyzer.initialize"
 		@deck = deck
 		@sum_of_manacost_point_at_mainboard = 0
@@ -60,7 +60,9 @@ class Mana_analyzer
 	#RR-GG -> ["RR", "GG"]
 		@log.info "decompose_generationg_mana_symbol(" + str.to_s + ") start."
 		if str.nil?
-			@log.error "str is nil at Mana_analyzer.decompose_generationg_mana_symbol(str)."
+			@log.warn "str is nil at Mana_analyzer.decompose_generationg_mana_symbol(str)."
+			@log.warn "return []"
+			return []
 		elsif str.match("W|U|B|R|G|C|A") then
 			manas = str.split('-')
 			@log.debug "return " + manas.to_s

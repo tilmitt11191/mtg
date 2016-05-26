@@ -1,0 +1,4 @@
+<root><name>Grip of the Roil</name><manacost>2U</manacost><manacost_point>3</manacost_point><type>
+			インスタント		</type><oracle>Surge {1}{U} （You may cast this spell for its surge cost if you or a teammate has cast another spell this turn.）
+Tap target creature. It doesn&apos;t untap during its controller&apos;s next untap step.
+Draw a card.</oracle><powertoughness></powertoughness><illustrator>Volkan Baga</illustrator><rarity>アンコモン</rarity><cardset> ゲートウォッチの誓い (56/184) </cardset><generating_mana_type>nil</generating_mana_type></root>

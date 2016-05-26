@@ -2,20 +2,22 @@
 #ruby
 require "logger"
 require '../../lib/util/card.rb'
-require '../../lib/card_operation/mana_analyzer.rb'
-
-puts File.basename(__FILE__).to_s + " start."
-log = Logger.new("../../log", 5, 10 * 1024 * 1024)
-log.info ""
-log.info File.basename(__FILE__).to_s + " start."
-log.info ""
+require '../../lib/util/mana_analyzer.rb'
 
 
-mana_analyzer = Mana_analyzer.new(nil)
+begin
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
+
+
+mana_analyzer = Mana_analyzer.new(nil, @log)
 
 
 #wastes
-card = Card.new("Wastes")
+card = Card.new("Wastes", @log)
 card.read_contents()
 result = mana_analyzer.analyze_cardtype(card)
 if result == "wastes" then
@@ -125,5 +127,12 @@ end
 =end
 
 
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
 
 

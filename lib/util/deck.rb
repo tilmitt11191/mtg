@@ -61,7 +61,7 @@ class Deck
 		@log.debug "set path[" + path + "]"
 		@path = path
 		@date = DateTime.now
-		@mana_analyzer = Mana_analyzer.new(self)
+		@mana_analyzer = Mana_analyzer.new(self, @log)
 
 		@quantity_of_lands = 0
 		@quantity_of_creatures = 0
@@ -90,8 +90,8 @@ class Deck
 	
 	
 	def create_cardlist(create_mode)
-	#create @cards
-	#the options of "create_mode" are depend on the creator.
+	#create @cards which is array of Card.
+	#The options of "create_mode" are depend on the creator.
 	#For example, when deck.list_type is "hareruya" and created by hareruya,
 	#if create_mode is "full", the contents of each card are
 	#card_type,name,quantity,price,store_url,price.date,
@@ -104,7 +104,7 @@ class Deck
 		when "hareruya" then
 			@log.debug "create cardlist by hareruya."
 			@log.debug "create_mode[" + create_mode.to_s + "], path[" + @path.to_s + "]"
-			@store = Hareruya.new()
+			@store = Hareruya.new(@log)
 			@store.create_card_list(self, create_mode)
 		else
 			@log.error "Deck.create_cardlist(invalid list_type)"
@@ -169,7 +169,7 @@ class Deck
 					forms.each do |form|
 						contents = card.instance_eval("#{form}")
 						if contents.nil? then
-							@log.fatal "contents of[" + card.name + "]." + form + " is nil"
+							@log.warn "contents of[" + card.name + "]." + form + " is nil"
 						end
 						file.print convert_period(contents.to_s).to_s + ","
 					end
@@ -401,7 +401,19 @@ class Deck
 	end
 	
 	
-	def calc_lands_in_deck
+	def calc_num_of_all_cards_in_deck
+		#this method returns the number of all cards in this deck.
+		@log.info "calc_lands_in_deck(" + @deckname.to_s + ") start."
+		num_of_lands = 0
+		
+		@cards.each do |card|
+			num_of_lands += card.quantity.to_i
+		end
+		
+		return num_of_lands
+	end
+
+	def calc_num_of_lands_in_deck
 		#this method returns the number of lands in this deck.
 		@log.info "calc_lands_in_deck(" + @deckname.to_s + ") start."
 		num_of_lands = 0
@@ -413,6 +425,20 @@ class Deck
 		end
 		
 		return num_of_lands
+	end
+
+	def calc_num_of_mainboard_cards_in_deck
+		#this method returns the number of cards in mainboard of this deck.
+		@log.info "calc_num_of_all_cards_in_deck(" + @deckname.to_s + ") start."
+		num_of_cards = 0
+		
+		@cards.each do |card|
+			if card.card_type != "sideboardCards" then
+				num_of_cards += card.quantity.to_i
+			end
+		end
+		
+		return num_of_cards
 	end
 	
 end

@@ -49,23 +49,32 @@ info	http://www.hareruyamtg.com/jp/k/kD09260S/
 #http://www.hareruyamtg.com/jp/
 #http://www.hareruyamtg.com/jp/k/kD*****S/
 
+require "logger"
 require '../../lib/util/deck.rb'
 require '../../lib/util/store.rb'
-require '../../lib/decklists/deck_prices.rb'
+require '../../lib/util/deck_prices.rb'
+
+	puts File.basename(__FILE__).to_s + " start."
+	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
+	@log.info ""
+	@log.info File.basename(__FILE__).to_s + " start."
+	@log.info ""
 
 class DeckID
 	@id
 	@name
 	@hareruya
+	@log
 	
-	def initialize(id,name)
+	def initialize(id,name,log)
 		@id = id
 		@name = name
-		@hareruya = Hareruya.new()
+		@log = log
+		@hareruya = Hareruya.new(@log)
 	end
 	
 	def create_deckfile()
-		deck = Deck.new(@name, "hareruya", "http://www.hareruyamtg.com/jp/k/" + @id + "/")
+		deck = Deck.new(@name, "hareruya", "http://www.hareruyamtg.com/jp/k/" + @id + "/", @log)
 		deck.create_cardlist("full")
 		@hareruya.convert_all_cardname_from_jp_to_eng(deck)
 
@@ -77,52 +86,24 @@ class DeckID
 
 		deck.create_deckfile("../../decks/hareruya/" + @name.to_s + ".csv", "card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", "with_info")
 		
-		deck_prices = Deck_prices.new()
+		deck_prices = Deck_prices.new(@log)
 		deck_prices.read("../../decks/decklist.csv")
 		deck_prices.add(deck)
 		deck_prices.write("../../decks/decklist.csv")
 	end
 end
 
+
+begin
+
 decks = []
 
 ##############################################
 
-id = "kD03070W"
-name = "Mono_White_Aggro_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03069W"
-name = "WUG_Aggro_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03068W"
-name = "WRG_Aggro_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03067W"
-name = "WU_Aggro_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03066W"
-name = "WRG_Aggro_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03042W"
-name = "WB_Control_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03043W"
+id = "kD01468K"
 name = "Monitor_Combo_"+id.to_s
-decks.push DeckID.new(id,name)
+decks.push DeckID.new(id,name,@log)
 
-id = "kD03044W"
-name = "Monitor_Combo_"+id.to_s
-decks.push DeckID.new(id,name)
-
-id = "kD03045W"
-name = "BG_Husk_"+id.to_s
-decks.push DeckID.new(id,name)
 
 
 
@@ -131,8 +112,18 @@ decks.push DeckID.new(id,name)
 
 
 decks.each do |deck| deck.create_deckfile() end
-	
-puts "finished"
+
+
+
+
+rescue => e
+	puts_write(e,@log)
+end
+
+
+@log.info File.basename(__FILE__).to_s + " finished."
+puts File.basename(__FILE__).to_s + " finished."
+
 
 =begin
 Pro Tour Shadows over Innistrad 2016
@@ -155,25 +146,16 @@ http://www.hareruyamtg.com/jp/k/kD08243S/
 http://www.hareruyamtg.com/jp/k/kD08244S/
 アーキタイプ 	白赤コントロール/WR Control
 プレイヤー 	LUIS SALVATTO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 =end
+
+
+
+
+
+
+
+
+
+
+
+
