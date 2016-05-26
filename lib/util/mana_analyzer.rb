@@ -60,7 +60,9 @@ class Mana_analyzer
 	#RR-GG -> ["RR", "GG"]
 		@log.info "decompose_generationg_mana_symbol(" + str.to_s + ") start."
 		if str.nil?
-			@log.error "str is nil at Mana_analyzer.decompose_generationg_mana_symbol(str)."
+			@log.warn "str is nil at Mana_analyzer.decompose_generationg_mana_symbol(str)."
+			@log.warn "return []"
+			return []
 		elsif str.match("W|U|B|R|G|C|A") then
 			manas = str.split('-')
 			@log.debug "return " + manas.to_s

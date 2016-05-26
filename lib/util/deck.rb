@@ -169,7 +169,7 @@ class Deck
 					forms.each do |form|
 						contents = card.instance_eval("#{form}")
 						if contents.nil? then
-							@log.fatal "contents of[" + card.name + "]." + form + " is nil"
+							@log.warn "contents of[" + card.name + "]." + form + " is nil"
 						end
 						file.print convert_period(contents.to_s).to_s + ","
 					end

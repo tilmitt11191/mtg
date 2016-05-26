@@ -15,19 +15,21 @@ begin
 
 #execptions
 cardnames = []
-cardnames.push("Plains")
-cardnames.push("Island")
-cardnames.push("Swamp")
-cardnames.push("Mountain")
-cardnames.push("Forest")
-cardnames.push("Wastes")
+#cardnames.push("Plains")
+#cardnames.push("Island")
+#cardnames.push("Swamp")
+#cardnames.push("Mountain")
+#cardnames.push("Forest")
+#cardnames.push("Wastes")
 
-cardnames.push("Exquisite Firecraft")
-cardnames.push("Hedron Crawler")
-cardnames.push("Make a Stand")
-cardnames.push("Void Shatter")
-cardnames.push("Spawning Bed")
-cardnames.push("Insolent Neonate")
+#cardnames.push("Exquisite Firecraft")
+#cardnames.push("Hedron Crawler")
+#cardnames.push("Make a Stand")
+#cardnames.push("Void Shatter")
+#cardnames.push("Spawning Bed")
+#cardnames.push("Insolent Neonate")
+#cardnames.push("Eldrazi Displacer")
+cardnames.push("Twin Bolt")
 
 cardnames.each do |cardname|
 	card = Card.new(cardname,log)

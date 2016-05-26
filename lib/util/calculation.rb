@@ -108,6 +108,22 @@ require '../../lib/util/deck.rb'
 		end
 	end
 
+	def algorithm_A2_simple(x, y, hand, deck, log)
+#	if X >= Y then
+#		return 0
+#	else (X < Y)
+#		return t = (Y - X) / (ll_c/lib_c)
+#	end
+# For more information, read "../../lib/calculation/calc_how_many_turns_to_draw_x_lands.rb"
+		if x >= y then
+			return 0
+		else
+			lands_in_current_deck = deck.calc_num_of_lands_in_deck - x
+			cards_in_current_deck = deck.calc_num_of_mainboard_cards_in_deck - hand
+
+			return ((y.to_f - x.to_f) / (lands_in_current_deck.to_f / cards_in_current_deck.to_f)).to_f
+		end
+	end
 
 	def algorithm_B_correct(lands_in_current_hand, expecting_land, cards_in_current_hand, draw_per_turn, deck, log)
 #	Parameters
@@ -116,17 +132,17 @@ require '../../lib/util/deck.rb'
 #		Z: number of cards already drawn
 #		T: additional turns you need to draw Y lands if you have X lands in hand now.
 #
-#			T = sum^infinity_t=0 p(t,Y)
-#		 	  = sum^n_t=0 q(x'(t),y',deck(t)) * t
+#		 	T = sum^infinity_k=t{ t * p(k, Y-X)_deck(t)}
+#		 	  = sum^N_t=0 p(x'(t),Y-X,)_deck(t) * t
 #		 	here,
-#		 	n = round_down(cards_in_deck_now / draw_per_turn)
+#		 	N = round_down(cards_in_deck / draw_per_turn)
 #			x'(t) = t * draw_per_turn
-#			y' = Y - X
-#			deck(t):
+#			deck(t) consists of
 #				cards_in_deck = initial_cards_in_deck - Z - t * draw_per_turn
-#				lands_in_deck = initial_lands_in_deck - X - drawn_lands(t-1)
-#				drawn_land(t-1) is the number of lands drew until turn t-1
-#				 = ((t-1) * draw_per_turn) * ((initial_lands_in_deck - X)/(initial_cards_in_deck - Z))
+#				land_in_deck = initial_lands_in_deck - X - drawn_land(t-1)
+#				drawn_land(t-1), which is the number of lands drew until turn t-1, 
+#				 = ((t-1) * draw_per_turn) * (initial_lands_in_deck/initial_cards_in_deck)
+
 # For more information, read "../../lib/calculation/calc_how_many_turns_to_draw_x_lands.rb"
 		if lands_in_current_hand >= expecting_land then
 			return 0
@@ -143,13 +159,13 @@ require '../../lib/util/deck.rb'
 			end
 			n = (cards_in_current_deck.to_f/draw_per_turn).to_i
 			for t in 1..n
-				drawn_lands = ((t - 1) * draw_per_turn ) * (lands_in_current_deck.to_f / cards_in_current_deck.to_f)
-				lands_in_deck = lands_in_initial_deck - lands_in_current_hand - drawn_lands
-				cards_in_deck = cards_in_initial_deck - cards_in_current_hand - (t-1) * draw_per_turn
+				drawn_lands = ((t - 1) * draw_per_turn + cards_in_current_hand ) * (lands_in_initial_deck.to_f / cards_in_initial_deck.to_f)
+				lands_in_deck = lands_in_initial_deck - drawn_lands
+				cards_in_deck = cards_in_initial_deck - (t-1) * draw_per_turn
 				deck = create_a_deck_with_target_number_of_cards(cards_in_deck, lands_in_deck, log)
-				y = expecting_land - lands_in_current_hand
-				x = t * draw_per_turn
-				puts "combination[#{combination(x, y, log).to_f.round(3)}]"
+				y = expecting_land - lands_in_current_hand - drawn_lands
+				x = cards_in_current_hand + t * draw_per_turn
+				puts "combination(#{x},#{y})[#{combination(x, y, log).to_f.round(3)}]"
 				puts "(lands_in_deck.to_f/cards_in_deck.to_f)[#{(lands_in_deck.to_f/cards_in_deck.to_f).round(3)}]"
 				puts "((cards_in_deck - lands_in_deck).to_f/cards_in_deck.to_f)[#{((cards_in_deck - lands_in_deck).to_f/cards_in_deck.to_f).round(3)}]"
 				probability = combination(x, y, log).to_f *

@@ -11,10 +11,11 @@ puts File.basename(__FILE__).to_s + " start."
 @log.info File.basename(__FILE__).to_s + " start."
 @log.info ""
 
+@log.level = Logger::INFO
 
 hareruya = Hareruya.new(@log)
 #deck(198)[WG_HumankD09250S] had been created.
-from = 1
+from = 397
 to = 1000
 deck_urls = hareruya.search_deckurls_from_webpage(to)
 i = 1

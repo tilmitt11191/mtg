@@ -66,6 +66,9 @@ class Hareruya < Store
 	end
 	
 	def how_match?(card)
+		if card.name.nil? then
+			@log.error "card.name is nil at hareruya.how_match?(card)"
+		end
 		@log.debug "how match ["+card.name+"] at hareruya"
 		@card_name = card.name
 		@log.debug "url is [" + card.store_url.to_s + "]"
@@ -82,8 +85,8 @@ class Hareruya < Store
 		price = @card_nokogiri.css('span.sell_price').text
 		price.gsub!(/\s|\n|￥|,/,"")
 		card.price.value = price
-		@log.debug "price is " + price
-		return card.price
+		@log.debug "hareruya.how_match?(#{card.name}) finished. price is " + price
+		#return card.price
 	end
 	
 	def extract_english_card_name(cardname)
@@ -186,7 +189,7 @@ class Hareruya < Store
 		return deck
 	end
 	
-	#fill deck.cards.
+	#create deck.cards which is array of Card in accordance with deck.path.
 	def create_card_list(deck, create_mode)
 	#create_mode:[full, except_price, from_file]
 	#if create_mode is "full", the contents of each card are
@@ -209,12 +212,11 @@ class Hareruya < Store
 		end
 		
 		deck.cards = []
+		if deck.path.nil? then
+			@log.error "open[nil]@hareruya.create_card_list"
+		end
 		@log.debug "open[" + deck.path + "]"
 		@deck_row_data = open(deck.path)
-		
-		#File.open("BGCON.txt", "w") do |file|
-		#	file.write @deck_row_data.read
-		#end
 		
 		quantity_list=[] #Array of card quantity
 		card_type="land"
@@ -270,7 +272,9 @@ class Hareruya < Store
 				card.store_url = url
 				card.card_type = card_type
 				if create_mode == "full" then
-					card.price.renew_at("hareruya")
+					@log.debug "hareruya.create_card_list call #{card.name}.renew_at(card, hareruya)"
+					card.price.renew_at(card, "hareruya")
+					@log.debug "renewed value is #{card.price}"
 				end
 				@log.debug "name[" + card_name.to_s + "], card_type[" + card.card_type.to_s + "], card.price[" + card.price.to_s + "]"
 				deck.cards.push(card)
@@ -313,7 +317,7 @@ end
 			#using card.price, which had been set at create_card_list(deck, "full").
 			deck.calc_price_of_whole_deck
 
-			deck_prices = Deck_prices.new()
+			deck_prices = Deck_prices.new(@log)
 			deck_prices.read("../../decks/hareruya_auto/decklist.csv")
 			deck_prices.add(deck)
 			deck_prices.write("../../decks/hareruya_auto/decklist.csv")

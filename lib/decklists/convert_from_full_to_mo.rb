@@ -5,8 +5,6 @@ require '../../lib/util/deck.rb'
 require '../../lib/util/store.rb'
 require '../../lib/util/deck_prices.rb'
 
-deckname = "Monitor_Combo_kD09885S"
-get_from = "web" #web or file
 begin
 	puts File.basename(__FILE__).to_s + " start."
 	@log = Logger.new("../../log", 5, 10 * 1024 * 1024)
@@ -14,9 +12,13 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 
+
+	deckname = "Monitor_Combo_kD09885S"
+	get_from = "web" #web or file
+	mode_of_create_cardlist = "full"
+
 	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD09885S/",@log)
 	hareruya = Hareruya.new(@log)
-	mode_of_create_cardlist = "full"
 
 	case get_from
 	when "web" then

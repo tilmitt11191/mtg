@@ -31,27 +31,32 @@ Algorithm B (correct)
 		Z: number of cards already drew
 		T: additional turns you need to draw Y lands if you have X lands in hand now.
 
-		Then T = sum^infinity_t=0 p(t,Y),
-		p(t,y): The probability of drawing ""more"" than y lands after t turns.
+		When you have X lands in hand at turn t, the additional turns you need to draw y lands T are
+		T = sum^infinity_k=t{t * p(k, Y-X)},
+		where p(x, y) is the probability of drawing ""more"" than y lands when draw x cards from deck.
+		Let The deck consists of
+			cards_in_deck
+			lands_in_deck
+			other_cards_in_deck, 
+		p(x, y) = x_C_y * {(lands_in_deck/cards_in_deck)** y} * {(other_cards_in_deck/cards_in_deck ** (x - y)}.
 
-		The probability of drawing more than y lands when draw x cards from deck -
-		q(x,y,deck):
-			= x_C_y * {(lands_in_deck/cards_in_deck)** y} * {(other_cards_in_deck/cards_in_deck ** (x - y)}
-
-		 If the event of drawing a card seems Similarly certainly, the objective probability is q(Z+t*draw_per_turn,Y,deck)/q(Z,X,deck).
-		 The event of drawing a card, however, doesn't seem Similarly certainly because as you drew a card, as the deck changes.
+		 If the event of drawing a card seems similarly certainly, x, the number of drawing cards at turn t, can be represent by (Z + t*draw_per_turn), so the probability 
+		 	p(x, Y)|^|p(Z, X) = p(Z+t*draw_per_turn,Y) / p(Z,X).
+		 		*p(x, Y)|^|p(Z, X) means the probability drawing Y lands in x cards after drawing X lands in Z cards,  
+		 The event of drawing a card, however, doesn't seem similarly certainly because as you drew a card, as the deck changes.
 		 Therefore, using deck(t),
-		 	T = sum^infinity_t=0 p(t,Y)
-		 	  = sum^N_t=0 q(x'(t),y',deck(t)) * t
+		 	T = sum^infinity_k=t{ t * p(k, Y-X)_deck(t)}
+		 	  = sum^N_t=0 p(x'(t),Y-X,)_deck(t) * t
 		 	here,
 		 	N = round_down(cards_in_deck / draw_per_turn)
-			x'(t) = t * draw_per_turn
-			y' = Y - X
-			deck(t):
+			x'(t) = Z + t * draw_per_turn
+			deck(t) consists of
 				cards_in_deck = initial_cards_in_deck - Z - t * draw_per_turn
 				land_in_deck = initial_lands_in_deck - X - drawn_land(t-1)
-				drawn_land(t-1) is the number of lands drew until turn t-1
-				 = ((t-1) * draw_per_turn) * (ll_i/lib_i)
+				drawn_land(t-1), which is the number of lands drew until turn t-1, 
+				 = ((t-1) * draw_per_turn) * (initial_lands_in_deck/initial_cards_in_deck)
+
+	y = Y - drawn lands!
 
 Algorithm C (simulation)
 	if X >= Y then
@@ -69,6 +74,9 @@ Algorithm C (simulation)
 		end
 	end
 =end
+
+
+STDOUT.sync = true
 
 require "logger"
 require '../../lib/util/utils.rb'
@@ -241,9 +249,11 @@ begin
 						#### main process start!! ####
 						##############################
 						puts "cards[#{num_of_cards}],lands[#{num_of_lands}],expect[#{expecting_land_num}],initial_hand[#{initial_hand}],turn[#{turn}],draw[#{draw}],current_hand[#{hand}],lands_in_hand[#{lands_in_hand}]"
-						puts "You have #{lands_in_hand} lands in hand now, the additional turn you need to draw #{expecting_land_num} lands is "
+						puts "You have #{lands_in_hand} lands in #{hand} hands now, the additional turn you need to draw #{expecting_land_num} lands is "
 						puts "A"
 						puts algorithm_A_simple(lands_in_hand, expecting_land_num, deck, @log).round(3)
+						puts "A2"
+						puts algorithm_A2_simple(lands_in_hand, expecting_land_num, hand, deck, @log).round(3)
 
 						puts "B"
 						cards_in_deck = num_of_cards - hand
@@ -258,7 +268,6 @@ begin
 			end
 		end
 	end
-
 
 
 

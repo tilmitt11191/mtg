@@ -1,0 +1,3 @@
+<root><name>Welcome to the Fold</name><manacost>2UU2UU</manacost><manacost_point>4</manacost_point><type>
+			ソーサリー		</type><oracle>Madness {X}{U}{U} （If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.）
+Gain control of target creature if its toughness is 2 or less. If Welcome to the Fold&apos;s madness cost was paid, instead gain control of that creature if its toughness is X or less.</oracle><powertoughness></powertoughness><illustrator>David Palumbo</illustrator><rarity>レア</rarity><cardset> イニストラードを覆う影 (96/297) </cardset><generating_mana_type>nil</generating_mana_type></root>
