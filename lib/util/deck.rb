@@ -19,10 +19,11 @@ class Deck
 
 	@list_type #file or hareruya or...
 	@path #dir+name or url+name or...
+	@id #str.identified by other methods.
 	@date
 	@store
 	@mana_analyzer
-	attr_accessor :date, :path, :date, :store
+	attr_accessor :list_type, :path, :id, :date, :store
 
 	#quantity of each card type.
 	@quantity_of_all

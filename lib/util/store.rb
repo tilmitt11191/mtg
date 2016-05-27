@@ -284,7 +284,7 @@ class Hareruya < Store
 		for i in 0..deck.cards.size-1
 			deck.cards[i].quantity = quantity_list[i]
 		end
-end
+	end
 	
 
 
@@ -411,10 +411,29 @@ end
 			index_page += 1
 		end
 	end
+	
+	
+	
+	def select_archetype_of(deck)
+	#by deck.path, deck.id
+		if deck.nil?
+			@log.error "Hareruya.select_archetype_of(nil)."
+			exit 1
+		end
+		@log.info "Hareruya.select_archetype_of[#{deck.deckname}] start."
+		
+		@log.debug "first try by filename[#{deck.path}"
+		#if filename is 
+		
+		
+		
+		@log.debug "second try by id"
+		@log.debug "url[http://www.hareruyamtg.com/jp/k/#{deck.id}]"
+
+		@log.info "Hareruya.select_archetype(#{deck.deckname}) finished. return deck.archetype[#{deck.archetype}]."
+	end
+	
 end
-
-
-
 
 
 

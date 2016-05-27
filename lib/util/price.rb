@@ -17,7 +17,7 @@ class Price
 	def initialize(card, logger)
 		@log = logger
 		if card.nil? then
-			@log.warn "price.initialize(nil)"
+			@log.debug "price.initialize(nil)"
 			@name = nil
 			@value = 0
 			@date = nil
