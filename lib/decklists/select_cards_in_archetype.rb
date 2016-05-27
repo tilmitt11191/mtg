@@ -5,7 +5,7 @@ STDOUT.sync = true
 
 require "logger"
 
-require '../../lib/util/deck.rb'
+require '../../lib/util/archetype_selector.rb'
 require '../../lib/util/store.rb'
 
 puts File.basename(__FILE__).to_s + " start."
@@ -17,8 +17,8 @@ puts File.basename(__FILE__).to_s + " start."
 @log.level = Logger::DEBUG
 
 Dir::glob("../../decks/hareruya_auto/*.csv").each do |filename|
-	puts filename
 end
 
 
+puts File.basename(__FILE__).to_s + " finished."
 @log.info File.basename(__FILE__).to_s + " finished."

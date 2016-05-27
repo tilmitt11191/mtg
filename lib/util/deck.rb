@@ -11,10 +11,11 @@ class Deck
 	@deckname
 	@cards #Array of Card
 	@price #Class Price. deck_price.
+	@archetype #str
 	@sum_of_mainboard_generating_manas #str
 	@sum_of_sideboard_generating_manas #str
 
-	attr_accessor :deckname, :cards, :price, :sum_of_mainboard_generating_manas, :sum_of_sideboard_generating_manas
+	attr_accessor :deckname, :cards, :price, :archetype, :sum_of_mainboard_generating_manas, :sum_of_sideboard_generating_manas
 
 	@list_type #file or hareruya or...
 	@path #dir+name or url+name or...

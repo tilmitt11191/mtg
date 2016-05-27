@@ -11604,3 +11604,1796 @@ I, [2016-05-26T21:12:59.685657 #4459]  INFO -- : Store.initialize(MagicOnline)
 I, [2016-05-26T21:12:59.685942 #4459]  INFO -- : MagicOnline.create_card_list start.
 D, [2016-05-26T21:12:59.686146 #4459] DEBUG -- : convert WB_Control_kD01465K and save to ../../decks/magiconline/WB_Control_kD01465K.txt
 I, [2016-05-26T21:12:59.689748 #4459]  INFO -- : convert_from_full_to_mo.rb finished.
+I, [2016-05-27T10:06:11.948816 #6674]  INFO -- : 
+I, [2016-05-27T10:06:11.949324 #6674]  INFO -- : select_cards_in_archetype.rb start.
+I, [2016-05-27T10:06:11.949502 #6674]  INFO -- : 
+I, [2016-05-27T10:06:11.954003 #6674]  INFO -- : select_cards_in_archetype.rb finished.
+I, [2016-05-27T10:09:10.988425 #6839]  INFO -- : 
+I, [2016-05-27T10:09:10.988582 #6839]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:09:10.988649 #6839]  INFO -- : 
+I, [2016-05-27T10:09:10.989469 #6839]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:12:11.583001 #6997]  INFO -- : 
+I, [2016-05-27T10:12:11.583122 #6997]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:12:11.583178 #6997]  INFO -- : 
+I, [2016-05-27T10:12:11.583240 #6997]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:12:11.583315 #6997]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:14:33.040387 #7106]  INFO -- : 
+I, [2016-05-27T10:14:33.040636 #7106]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:14:33.040700 #7106]  INFO -- : 
+I, [2016-05-27T10:14:33.040763 #7106]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:14:33.040836 #7106]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:15:35.109725 #7157]  INFO -- : 
+I, [2016-05-27T10:15:35.109862 #7157]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:15:35.109930 #7157]  INFO -- : 
+I, [2016-05-27T10:15:35.109991 #7157]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:15:44.593077 #7172]  INFO -- : 
+I, [2016-05-27T10:15:44.593216 #7172]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:15:44.593279 #7172]  INFO -- : 
+I, [2016-05-27T10:15:44.593361 #7172]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:15:54.669713 #7190]  INFO -- : 
+I, [2016-05-27T10:15:54.669857 #7190]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:15:54.669925 #7190]  INFO -- : 
+I, [2016-05-27T10:15:54.670003 #7190]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:16:05.978319 #7211]  INFO -- : 
+I, [2016-05-27T10:16:05.978451 #7211]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:16:05.978518 #7211]  INFO -- : 
+I, [2016-05-27T10:16:05.978589 #7211]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:28:44.691273 #7514]  INFO -- : 
+I, [2016-05-27T10:28:44.691423 #7514]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:28:44.691487 #7514]  INFO -- : 
+I, [2016-05-27T10:28:44.691563 #7514]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:29:28.857591 #7553]  INFO -- : 
+I, [2016-05-27T10:29:28.857745 #7553]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:29:28.857806 #7553]  INFO -- : 
+I, [2016-05-27T10:29:28.857877 #7553]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:29:28.857933 #7553]  INFO -- : Deck initialize
+D, [2016-05-27T10:29:28.857989 #7553] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:29:28.858046 #7553]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:29:28.858103 #7553] DEBUG -- : set list type[file]
+D, [2016-05-27T10:29:28.858158 #7553] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:29:28.858726 #7553]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:29:28.858798 #7553]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:29:28.858852 #7553] DEBUG -- : target contents are
+D, [2016-05-27T10:29:28.858911 #7553] DEBUG -- : 	card_type
+D, [2016-05-27T10:29:28.858965 #7553] DEBUG -- : 	name
+D, [2016-05-27T10:29:28.859006 #7553] DEBUG -- : 	quantity
+D, [2016-05-27T10:29:28.859056 #7553] DEBUG -- : 	price
+D, [2016-05-27T10:29:28.859110 #7553] DEBUG -- : 	store_url
+D, [2016-05-27T10:29:28.859162 #7553] DEBUG -- : 	price.date
+D, [2016-05-27T10:29:28.859216 #7553] DEBUG -- : mode: with_info
+D, [2016-05-27T10:29:28.868621 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.868712 #7553] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:29:28.868772 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.868825 #7553] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:29:28.868929 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.868984 #7553]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:29:28.869057 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.869114 #7553] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:29:28.869181 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.869237 #7553]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:29:28.869294 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.869345 #7553] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:29:28.869413 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.869467 #7553]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:29:28.869523 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.869577 #7553] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:29:28.869650 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.869710 #7553]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:29:28.869768 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.869822 #7553] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:29:28.869879 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.869930 #7553]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:29:28.870000 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.870057 #7553] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:29:28.870138 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.870213 #7553] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:29:28.870288 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.870340 #7553]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:28.870397 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.870455 #7553] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:29:28.870528 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.870595 #7553]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:29:28.870677 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.870744 #7553] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:29:28.870809 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.870863 #7553] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:29:28.870938 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.871019 #7553]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:29:28.871082 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.871140 #7553] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:29:28.871215 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.871268 #7553]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:28.871330 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.871383 #7553] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:29:28.871451 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.871522 #7553]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:29:28.871587 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.871645 #7553] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:29:28.871724 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.871778 #7553]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:28.871854 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.871909 #7553] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:29:28.871980 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.872032 #7553]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:28.872090 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.872141 #7553] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:29:28.872210 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.872281 #7553]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:29:28.872361 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.872434 #7553] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:29:28.872511 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.872569 #7553]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:29:28.872629 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.872684 #7553] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:29:28.872756 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.872812 #7553]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:29:28.872873 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.872942 #7553] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:29:28.873034 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.873105 #7553]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:29:28.873169 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.873222 #7553] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:29:28.873291 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.873349 #7553]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:29:28.873423 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.873478 #7553] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:29:28.873551 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.873608 #7553]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:29:28.873692 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.873748 #7553] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:29:28.873820 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.873874 #7553]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:28.873932 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.873987 #7553] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:29:28.874049 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.874103 #7553] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:29:28.874182 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.874237 #7553] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:29:28.874312 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.874370 #7553]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:28.874428 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.874484 #7553] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:29:28.874557 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.874615 #7553]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:29:28.874673 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.874726 #7553] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:29:28.874797 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.874852 #7553]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:29:28.874911 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.874964 #7553] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:29:28.875034 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.875091 #7553]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:28.875150 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.875206 #7553] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:29:28.875279 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.875335 #7553]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:28.875395 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.875450 #7553] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:29:28.875521 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.875577 #7553]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:28.875634 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.875687 #7553] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:29:28.875758 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.875811 #7553]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:28.875868 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.875919 #7553] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:29:28.875987 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.876043 #7553]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:29:28.876100 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.876150 #7553] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:29:28.876218 #7553]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:28.876274 #7553]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:29:28.876347 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.876401 #7553] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:29:28.876457 #7553] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:28.876509 #7553] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:29:28.876573 #7553]  INFO -- : set_information start.
+D, [2016-05-27T10:29:28.876633 #7553] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:28.876699 #7553] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:28.876759 #7553] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:28.876817 #7553] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:28.876874 #7553] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:28.876934 #7553] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:28.876997 #7553] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:28.877052 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877118 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877175 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877258 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877318 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877391 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877451 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877509 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877567 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877641 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877703 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877779 #7553] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:28.877843 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.877908 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.877966 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878027 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878084 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878142 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878205 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878263 #7553] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:28.878323 #7553] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:29:28.878408 #7553]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:29:40.324569 #7574]  INFO -- : 
+I, [2016-05-27T10:29:40.324704 #7574]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:29:40.324760 #7574]  INFO -- : 
+I, [2016-05-27T10:29:40.324838 #7574]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:29:40.324934 #7574]  INFO -- : Deck initialize
+D, [2016-05-27T10:29:40.324996 #7574] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:29:40.325057 #7574]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:29:40.325116 #7574] DEBUG -- : set list type[file]
+D, [2016-05-27T10:29:40.325174 #7574] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:29:40.325299 #7574]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:29:40.325364 #7574]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:29:40.325419 #7574] DEBUG -- : target contents are
+D, [2016-05-27T10:29:40.325479 #7574] DEBUG -- : 	card_type
+D, [2016-05-27T10:29:40.325530 #7574] DEBUG -- : 	name
+D, [2016-05-27T10:29:40.325583 #7574] DEBUG -- : 	quantity
+D, [2016-05-27T10:29:40.325662 #7574] DEBUG -- : 	price
+D, [2016-05-27T10:29:40.325719 #7574] DEBUG -- : 	store_url
+D, [2016-05-27T10:29:40.325776 #7574] DEBUG -- : 	price.date
+D, [2016-05-27T10:29:40.325842 #7574] DEBUG -- : mode: with_info
+D, [2016-05-27T10:29:40.327421 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.327476 #7574] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:29:40.327540 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.327595 #7574] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:29:40.327698 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.327759 #7574]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:29:40.327833 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.327888 #7574] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:29:40.327959 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.328014 #7574]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:29:40.328073 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.328131 #7574] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:29:40.328203 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.328258 #7574]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:29:40.328314 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.328369 #7574] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:29:40.328442 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.328496 #7574]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:29:40.328571 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.328648 #7574] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:29:40.328740 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.328798 #7574]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:29:40.328863 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.328918 #7574] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:29:40.328986 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.329050 #7574] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:29:40.329150 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.329208 #7574]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:40.329270 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.329323 #7574] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:29:40.329395 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.329464 #7574]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:29:40.329529 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.329583 #7574] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:29:40.329646 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.329698 #7574] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:29:40.329784 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.329868 #7574]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:29:40.329933 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.329989 #7574] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:29:40.330071 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.330126 #7574]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:40.330186 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.330240 #7574] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:29:40.330312 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.330365 #7574]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:29:40.330413 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.330465 #7574] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:29:40.330537 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.330591 #7574]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:40.330652 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.330705 #7574] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:29:40.330776 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.330829 #7574]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:40.330888 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.330939 #7574] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:29:40.331011 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.331062 #7574]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:29:40.331119 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.331175 #7574] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:29:40.331246 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.331320 #7574]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:29:40.331388 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.331442 #7574] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:29:40.331515 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.331569 #7574]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:29:40.331627 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.331680 #7574] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:29:40.331754 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.331810 #7574]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:29:40.331870 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.331924 #7574] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:29:40.332011 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.332077 #7574]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:29:40.332150 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.332210 #7574] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:29:40.332282 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.332336 #7574]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:29:40.332398 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.332455 #7574] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:29:40.332546 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.332603 #7574]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:40.332663 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.332718 #7574] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:29:40.332781 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.332833 #7574] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:29:40.332893 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.332946 #7574] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:29:40.333019 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.333074 #7574]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:40.333124 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.333180 #7574] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:29:40.333252 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.333306 #7574]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:29:40.333366 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.333417 #7574] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:29:40.333490 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.333544 #7574]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:29:40.333619 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.333679 #7574] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:29:40.333754 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.333810 #7574]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:40.333868 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.333922 #7574] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:29:40.334023 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.334078 #7574]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:40.334138 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.334192 #7574] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:29:40.334262 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.334314 #7574]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:40.334374 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.334446 #7574] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:29:40.334531 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.334591 #7574]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:40.334654 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.334708 #7574] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:29:40.334780 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.334836 #7574]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:29:40.334893 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.334949 #7574] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:29:40.335020 #7574]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:40.335078 #7574]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:29:40.335134 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.335188 #7574] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:29:40.335245 #7574] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:40.335299 #7574] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:29:40.335363 #7574]  INFO -- : set_information start.
+D, [2016-05-27T10:29:40.335421 #7574] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:40.335491 #7574] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:40.335546 #7574] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:40.335600 #7574] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:40.335657 #7574] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:40.335714 #7574] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:40.335776 #7574] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:40.335836 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.335899 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.335957 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336015 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336073 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336132 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336190 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336256 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336328 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336405 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336459 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336515 #7574] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:40.336571 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336632 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336690 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336743 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336795 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336929 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.336990 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.337048 #7574] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:40.337103 #7574] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:29:44.353580 #7586]  INFO -- : 
+I, [2016-05-27T10:29:44.353700 #7586]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:29:44.353755 #7586]  INFO -- : 
+I, [2016-05-27T10:29:44.353824 #7586]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:29:44.353881 #7586]  INFO -- : Deck initialize
+D, [2016-05-27T10:29:44.353967 #7586] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:29:44.354047 #7586]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:29:44.354112 #7586] DEBUG -- : set list type[file]
+D, [2016-05-27T10:29:44.354168 #7586] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:29:44.354274 #7586]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:29:44.354343 #7586]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:29:44.354395 #7586] DEBUG -- : target contents are
+D, [2016-05-27T10:29:44.354449 #7586] DEBUG -- : 	card_type
+D, [2016-05-27T10:29:44.354499 #7586] DEBUG -- : 	name
+D, [2016-05-27T10:29:44.354581 #7586] DEBUG -- : 	quantity
+D, [2016-05-27T10:29:44.354636 #7586] DEBUG -- : 	price
+D, [2016-05-27T10:29:44.354690 #7586] DEBUG -- : 	store_url
+D, [2016-05-27T10:29:44.354773 #7586] DEBUG -- : 	price.date
+D, [2016-05-27T10:29:44.354829 #7586] DEBUG -- : mode: with_info
+D, [2016-05-27T10:29:44.355469 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.355524 #7586] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:29:44.355590 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.355647 #7586] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:29:44.355747 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.355823 #7586]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:29:44.355893 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.355962 #7586] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:29:44.356039 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.356095 #7586]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:29:44.356147 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.356201 #7586] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:29:44.356276 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.356331 #7586]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:29:44.356391 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.356442 #7586] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:29:44.356512 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.356584 #7586]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:29:44.356646 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.356700 #7586] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:29:44.356774 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.356827 #7586]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:29:44.356885 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.356936 #7586] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:29:44.356994 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.357045 #7586] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:29:44.357112 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.357164 #7586]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:44.357222 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.357273 #7586] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:29:44.357342 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.357431 #7586]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:29:44.357494 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.357552 #7586] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:29:44.357611 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.357665 #7586] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:29:44.357739 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.357794 #7586]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:29:44.357851 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.357894 #7586] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:29:44.357971 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.358028 #7586]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:44.358087 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.358145 #7586] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:29:44.358214 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.358270 #7586]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:29:44.358329 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.358395 #7586] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:29:44.358464 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.358520 #7586]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:44.358596 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.358653 #7586] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:29:44.358724 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.358781 #7586]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:44.358839 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.358891 #7586] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:29:44.358980 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.359038 #7586]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:29:44.359122 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.359181 #7586] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:29:44.359251 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.359304 #7586]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:29:44.359361 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.359413 #7586] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:29:44.359491 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.359544 #7586]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:29:44.359617 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.359676 #7586] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:29:44.359751 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.359808 #7586]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:29:44.359866 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.359920 #7586] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:29:44.359991 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.360048 #7586]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:29:44.360105 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.360161 #7586] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:29:44.360233 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.360291 #7586]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:29:44.360347 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.360395 #7586] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:29:44.360464 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.360517 #7586]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:44.360575 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.360628 #7586] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:29:44.360689 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.360743 #7586] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:29:44.360819 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.360879 #7586] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:29:44.360957 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.361018 #7586]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:29:44.361074 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.361127 #7586] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:29:44.361194 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.361235 #7586]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:29:44.361295 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.361343 #7586] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:29:44.361408 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.361453 #7586]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:29:44.361504 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.361553 #7586] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:29:44.361629 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.361686 #7586]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:29:44.361742 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.361796 #7586] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:29:44.361870 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.361953 #7586]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:29:44.362019 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.362075 #7586] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:29:44.362149 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.362206 #7586]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:29:44.362265 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.362319 #7586] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:29:44.362392 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.362444 #7586]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:29:44.362496 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.362547 #7586] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:29:44.362618 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.362671 #7586]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:29:44.362728 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.362785 #7586] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:29:44.362856 #7586]  INFO -- : Card.initialize
+I, [2016-05-27T10:29:44.362918 #7586]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:29:44.362993 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.363058 #7586] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:29:44.363120 #7586] DEBUG -- : line.chomp!
+D, [2016-05-27T10:29:44.363173 #7586] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:29:44.363237 #7586]  INFO -- : set_information start.
+D, [2016-05-27T10:29:44.363293 #7586] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:44.363359 #7586] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:44.363412 #7586] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:44.363470 #7586] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:44.363529 #7586] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:29:44.363600 #7586] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:44.363684 #7586] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:29:44.363759 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.363823 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.363882 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.363940 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364015 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364091 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364151 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364208 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364271 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364326 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364383 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364438 #7586] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:29:44.364497 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364560 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364629 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364705 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364769 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364833 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364890 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.364970 #7586] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:29:44.365031 #7586] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:30:07.278198 #7614]  INFO -- : 
+I, [2016-05-27T10:30:07.278348 #7614]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:30:07.278406 #7614]  INFO -- : 
+I, [2016-05-27T10:30:07.278480 #7614]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:30:07.278576 #7614]  INFO -- : Deck initialize
+D, [2016-05-27T10:30:07.278638 #7614] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:30:07.278701 #7614]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:30:07.278758 #7614] DEBUG -- : set list type[file]
+D, [2016-05-27T10:30:07.278814 #7614] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:30:07.278939 #7614]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:30:07.279034 #7614]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:30:07.279089 #7614] DEBUG -- : target contents are
+D, [2016-05-27T10:30:07.279148 #7614] DEBUG -- : 	card_type
+D, [2016-05-27T10:30:07.279215 #7614] DEBUG -- : 	name
+D, [2016-05-27T10:30:07.279276 #7614] DEBUG -- : 	quantity
+D, [2016-05-27T10:30:07.279331 #7614] DEBUG -- : 	price
+D, [2016-05-27T10:30:07.279386 #7614] DEBUG -- : 	store_url
+D, [2016-05-27T10:30:07.279441 #7614] DEBUG -- : 	price.date
+D, [2016-05-27T10:30:07.279497 #7614] DEBUG -- : mode: with_info
+D, [2016-05-27T10:30:07.281166 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.281239 #7614] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:30:07.281279 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.281320 #7614] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:30:07.281417 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.281477 #7614]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:30:07.281546 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.281638 #7614] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:30:07.281711 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.281765 #7614]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:30:07.281831 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.281878 #7614] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:30:07.281947 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.281997 #7614]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:30:07.282056 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.282109 #7614] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:30:07.282178 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.282234 #7614]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:30:07.282283 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.282335 #7614] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:30:07.282404 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.282456 #7614]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:30:07.282495 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.282560 #7614] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:30:07.282631 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.282687 #7614] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:30:07.282764 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.282821 #7614]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:30:07.282899 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.282982 #7614] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:30:07.283059 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.283114 #7614]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:30:07.283174 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.283228 #7614] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:30:07.283302 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.283359 #7614] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:30:07.283480 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.283527 #7614]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:30:07.283615 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.283665 #7614] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:30:07.283749 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.283803 #7614]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:30:07.283862 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.283915 #7614] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:30:07.284006 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.284081 #7614]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:30:07.284144 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.284205 #7614] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:30:07.284278 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.284335 #7614]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:30:07.284397 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.284452 #7614] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:30:07.284528 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.284584 #7614]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:30:07.284643 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.284698 #7614] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:30:07.284773 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.284827 #7614]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:30:07.284892 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.284943 #7614] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:30:07.285009 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.285084 #7614]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:30:07.285148 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.285205 #7614] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:30:07.285277 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.285331 #7614]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:30:07.285390 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.285444 #7614] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:30:07.285517 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.285567 #7614]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:30:07.285653 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.285709 #7614] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:30:07.285791 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.285847 #7614]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:30:07.285905 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.285957 #7614] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:30:07.286030 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.286087 #7614]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:30:07.286166 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.286227 #7614] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:30:07.286299 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.286352 #7614]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:30:07.286413 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.286465 #7614] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:30:07.286541 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.286598 #7614] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:30:07.286703 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.286756 #7614] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:30:07.286863 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.286913 #7614]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:30:07.286971 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.287014 #7614] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:30:07.287085 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.287137 #7614]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:30:07.287207 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.287263 #7614] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:30:07.287352 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.287418 #7614]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:30:07.287480 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.287540 #7614] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:30:07.287613 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.287674 #7614]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:30:07.287734 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.287806 #7614] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:30:07.287884 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.287941 #7614]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:30:07.288003 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.288055 #7614] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:30:07.288127 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.288179 #7614]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:30:07.288239 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.288295 #7614] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:30:07.288365 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.288419 #7614]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:30:07.288476 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.288519 #7614] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:30:07.288591 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.288645 #7614]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:30:07.288721 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.288783 #7614] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:30:07.288861 #7614]  INFO -- : Card.initialize
+I, [2016-05-27T10:30:07.288942 #7614]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:30:07.289005 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.289062 #7614] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:30:07.289123 #7614] DEBUG -- : line.chomp!
+D, [2016-05-27T10:30:07.289175 #7614] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:30:07.289237 #7614]  INFO -- : set_information start.
+D, [2016-05-27T10:30:07.289296 #7614] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:30:07.289364 #7614] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:30:07.289422 #7614] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:30:07.289480 #7614] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:30:07.289538 #7614] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:30:07.289592 #7614] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:30:07.289644 #7614] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:30:07.289702 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.289765 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.289821 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.289879 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.289933 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.289991 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290065 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290118 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290175 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290232 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290290 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290345 #7614] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:30:07.290404 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290466 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290524 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290581 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290641 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290704 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290763 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290820 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290905 #7614] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:30:07.290985 #7614] DEBUG -- : Deck[test_BGConJF.csv] view_deck_list start
+D, [2016-05-27T10:30:07.291513 #7614] DEBUG -- : Deck[test_BGConJF.csv] view_deck_list finished
+I, [2016-05-27T10:30:07.291588 #7614]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:32:14.484556 #7702]  INFO -- : 
+I, [2016-05-27T10:32:14.484709 #7702]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:32:14.484764 #7702]  INFO -- : 
+I, [2016-05-27T10:32:14.484856 #7702]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:32:14.484924 #7702]  INFO -- : Deck initialize
+D, [2016-05-27T10:32:14.484978 #7702] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:32:14.485036 #7702]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:32:14.485088 #7702] DEBUG -- : set list type[file]
+D, [2016-05-27T10:32:14.485197 #7702] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:32:14.485769 #7702]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:32:14.485842 #7702]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:32:14.485896 #7702] DEBUG -- : target contents are
+D, [2016-05-27T10:32:14.485960 #7702] DEBUG -- : 	card_type
+D, [2016-05-27T10:32:14.486017 #7702] DEBUG -- : 	name
+D, [2016-05-27T10:32:14.486084 #7702] DEBUG -- : 	quantity
+D, [2016-05-27T10:32:14.486146 #7702] DEBUG -- : 	price
+D, [2016-05-27T10:32:14.486200 #7702] DEBUG -- : 	store_url
+D, [2016-05-27T10:32:14.486262 #7702] DEBUG -- : 	price.date
+D, [2016-05-27T10:32:14.486308 #7702] DEBUG -- : mode: with_info
+D, [2016-05-27T10:32:14.487916 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.487995 #7702] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:32:14.488061 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.488114 #7702] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:32:14.488219 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.488285 #7702]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:32:14.488357 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.488411 #7702] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:32:14.488488 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.488547 #7702]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:32:14.488606 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.488658 #7702] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:32:14.488728 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.488782 #7702]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:32:14.488875 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.488961 #7702] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:32:14.489045 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.489105 #7702]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:32:14.489182 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.489265 #7702] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:32:14.489339 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.489395 #7702]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:32:14.489475 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.489550 #7702] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:32:14.489617 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.489692 #7702] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:32:14.489797 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.489856 #7702]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:32:14.489917 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.490042 #7702] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:32:14.490132 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.490210 #7702]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:32:14.490265 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.490317 #7702] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:32:14.490367 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.490421 #7702] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:32:14.490493 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.490551 #7702]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:32:14.490602 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.490652 #7702] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:32:14.490725 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.490778 #7702]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:32:14.490856 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.490916 #7702] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:32:14.490992 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.491048 #7702]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:32:14.491109 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.491164 #7702] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:32:14.491237 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.491293 #7702]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:32:14.491353 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.491406 #7702] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:32:14.491479 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.491535 #7702]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:32:14.491597 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.491661 #7702] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:32:14.491747 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.491814 #7702]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:32:14.491879 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.491933 #7702] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:32:14.492075 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.492128 #7702]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:32:14.492207 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.492259 #7702] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:32:14.492378 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.492437 #7702]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:32:14.492505 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.492559 #7702] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:32:14.492666 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.492739 #7702]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:32:14.492923 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.493077 #7702] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:32:14.493157 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.493213 #7702]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:32:14.493272 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.493324 #7702] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:32:14.493394 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.493447 #7702]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:32:14.493497 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.493549 #7702] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:32:14.493611 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.493661 #7702]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:32:14.493737 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.493792 #7702] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:32:14.493857 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.493913 #7702] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:32:14.493969 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.494018 #7702] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:32:14.494089 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.494145 #7702]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:32:14.494211 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.494274 #7702] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:32:14.494352 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.494409 #7702]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:32:14.494496 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.494558 #7702] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:32:14.494638 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.494782 #7702]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:32:14.494847 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.494901 #7702] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:32:14.495038 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.495100 #7702]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:32:14.495157 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.495212 #7702] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:32:14.495289 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.495344 #7702]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:32:14.495405 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.495458 #7702] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:32:14.495526 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.495580 #7702]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:32:14.495644 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.495699 #7702] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:32:14.495773 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.495836 #7702]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:32:14.495909 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.495992 #7702] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:32:14.496067 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.496128 #7702]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:32:14.496190 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.496244 #7702] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:32:14.496315 #7702]  INFO -- : Card.initialize
+I, [2016-05-27T10:32:14.496368 #7702]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:32:14.496426 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.496486 #7702] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:32:14.496544 #7702] DEBUG -- : line.chomp!
+D, [2016-05-27T10:32:14.496595 #7702] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:32:14.496658 #7702]  INFO -- : set_information start.
+D, [2016-05-27T10:32:14.496715 #7702] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:32:14.496781 #7702] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:32:14.496841 #7702] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:32:14.496901 #7702] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:32:14.496977 #7702] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:32:14.497046 #7702] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:32:14.497111 #7702] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:32:14.497171 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497235 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497315 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497375 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497436 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497493 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497552 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497611 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497669 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497729 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497801 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497871 #7702] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:32:14.497939 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498072 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498235 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498301 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498358 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498412 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498469 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498524 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498578 #7702] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:32:14.498639 #7702] DEBUG -- : Deck[test_BGConJF.csv] view_deck_list start
+D, [2016-05-27T10:32:14.499315 #7702] DEBUG -- : Deck[test_BGConJF.csv] view_deck_list finished
+I, [2016-05-27T10:32:14.499417 #7702]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:34:26.738436 #7795]  INFO -- : 
+I, [2016-05-27T10:34:26.738581 #7795]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:34:26.738639 #7795]  INFO -- : 
+I, [2016-05-27T10:34:26.738714 #7795]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:34:26.738775 #7795]  INFO -- : Deck initialize
+D, [2016-05-27T10:34:26.738829 #7795] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:34:26.738886 #7795]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:34:26.738950 #7795] DEBUG -- : set list type[file]
+D, [2016-05-27T10:34:26.739008 #7795] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:34:26.739596 #7795]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:34:26.739667 #7795]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:34:26.739721 #7795] DEBUG -- : target contents are
+D, [2016-05-27T10:34:26.739785 #7795] DEBUG -- : 	card_type
+D, [2016-05-27T10:34:26.739838 #7795] DEBUG -- : 	name
+D, [2016-05-27T10:34:26.739892 #7795] DEBUG -- : 	quantity
+D, [2016-05-27T10:34:26.739942 #7795] DEBUG -- : 	price
+D, [2016-05-27T10:34:26.739988 #7795] DEBUG -- : 	store_url
+D, [2016-05-27T10:34:26.740034 #7795] DEBUG -- : 	price.date
+D, [2016-05-27T10:34:26.740085 #7795] DEBUG -- : mode: with_info
+D, [2016-05-27T10:34:26.741584 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.741644 #7795] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:34:26.741709 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.741762 #7795] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:34:26.741863 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.741924 #7795]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:34:26.741992 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.742046 #7795] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:34:26.742115 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.742169 #7795]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:34:26.742229 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.742282 #7795] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:34:26.742336 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.742386 #7795]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:34:26.742435 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.742486 #7795] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:34:26.742554 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.742613 #7795]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:34:26.742668 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.742716 #7795] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:34:26.742797 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.742853 #7795]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:34:26.742910 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.742961 #7795] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:34:26.743022 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.743073 #7795] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:34:26.743145 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.743220 #7795]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:34:26.743301 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.743359 #7795] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:34:26.743439 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.743496 #7795]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:34:26.743552 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.743606 #7795] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:34:26.743660 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.743729 #7795] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:34:26.743826 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.743900 #7795]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:34:26.743971 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.744044 #7795] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:34:26.744121 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.744188 #7795]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:34:26.744249 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.744317 #7795] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:34:26.744409 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.744467 #7795]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:34:26.744529 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.744583 #7795] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:34:26.744675 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.744736 #7795]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:34:26.744798 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.744852 #7795] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:34:26.744925 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.744979 #7795]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:34:26.745056 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.745109 #7795] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:34:26.745180 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.745234 #7795]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:34:26.745321 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.745378 #7795] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:34:26.745448 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.745503 #7795]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:34:26.745576 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.745655 #7795] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:34:26.745727 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.745781 #7795]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:34:26.745838 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.745917 #7795] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:34:26.745996 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.746057 #7795]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:34:26.746118 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.746185 #7795] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:34:26.746279 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.746350 #7795]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:34:26.746417 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.746471 #7795] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:34:26.746546 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.746600 #7795]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:34:26.746673 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.746729 #7795] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:34:26.746787 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.746836 #7795]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:34:26.746890 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.746941 #7795] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:34:26.747001 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.747054 #7795] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:34:26.747112 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.747163 #7795] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:34:26.747235 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.747295 #7795]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:34:26.747353 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.747395 #7795] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:34:26.747465 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.747520 #7795]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:34:26.747579 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.747632 #7795] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:34:26.747700 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.747749 #7795]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:34:26.747807 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.747862 #7795] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:34:26.747934 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.747989 #7795]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:34:26.748050 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.748103 #7795] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:34:26.748191 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.748253 #7795]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:34:26.748319 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.748375 #7795] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:34:26.748443 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.748497 #7795]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:34:26.748546 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.748601 #7795] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:34:26.748675 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.748732 #7795]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:34:26.748790 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.748868 #7795] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:34:26.748944 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.748997 #7795]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:34:26.749057 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.749113 #7795] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:34:26.749185 #7795]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:26.749241 #7795]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:34:26.749298 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.749350 #7795] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:34:26.749413 #7795] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:26.749464 #7795] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:34:26.749529 #7795]  INFO -- : set_information start.
+D, [2016-05-27T10:34:26.749620 #7795] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:26.749696 #7795] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:26.749756 #7795] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:26.749813 #7795] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:26.749871 #7795] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:26.749932 #7795] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:34:26.749998 #7795] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:34:26.750054 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750141 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750198 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750274 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750353 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750414 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750490 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750553 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750615 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750676 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750733 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750790 #7795] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:26.750849 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.750912 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.750970 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751027 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751088 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751149 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751223 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751284 #7795] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:26.751357 #7795] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:34:26.751435 #7795]  INFO -- : select_archetype(deck)
+I, [2016-05-27T10:34:26.751518 #7795]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:34:39.291623 #7813]  INFO -- : 
+I, [2016-05-27T10:34:39.291746 #7813]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:34:39.291800 #7813]  INFO -- : 
+I, [2016-05-27T10:34:39.291872 #7813]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:34:39.291928 #7813]  INFO -- : Deck initialize
+D, [2016-05-27T10:34:39.291980 #7813] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:34:39.292041 #7813]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:34:39.292115 #7813] DEBUG -- : set list type[file]
+D, [2016-05-27T10:34:39.292183 #7813] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:34:39.292292 #7813]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:34:39.292370 #7813]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:34:39.292425 #7813] DEBUG -- : target contents are
+D, [2016-05-27T10:34:39.292485 #7813] DEBUG -- : 	card_type
+D, [2016-05-27T10:34:39.292539 #7813] DEBUG -- : 	name
+D, [2016-05-27T10:34:39.292594 #7813] DEBUG -- : 	quantity
+D, [2016-05-27T10:34:39.292648 #7813] DEBUG -- : 	price
+D, [2016-05-27T10:34:39.292706 #7813] DEBUG -- : 	store_url
+D, [2016-05-27T10:34:39.292767 #7813] DEBUG -- : 	price.date
+D, [2016-05-27T10:34:39.292824 #7813] DEBUG -- : mode: with_info
+D, [2016-05-27T10:34:39.294430 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.294484 #7813] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:34:39.294548 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.294605 #7813] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:34:39.294700 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.294764 #7813]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:34:39.294833 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.294890 #7813] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:34:39.294968 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.295025 #7813]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:34:39.295086 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.295136 #7813] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:34:39.295206 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.295259 #7813]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:34:39.295319 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.295372 #7813] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:34:39.295437 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.295489 #7813]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:34:39.295551 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.295604 #7813] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:34:39.295706 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.295760 #7813]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:34:39.295819 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.295873 #7813] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:34:39.295932 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.295984 #7813] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:34:39.296058 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.296111 #7813]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:34:39.296159 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.296238 #7813] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:34:39.296311 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.296367 #7813]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:34:39.296426 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.296481 #7813] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:34:39.296538 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.296592 #7813] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:34:39.296664 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.296724 #7813]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:34:39.296813 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.296878 #7813] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:34:39.296957 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.297019 #7813]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:34:39.297093 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.297151 #7813] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:34:39.297262 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.297317 #7813]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:34:39.297377 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.297431 #7813] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:34:39.297505 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.297563 #7813]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:34:39.297625 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.297677 #7813] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:34:39.297747 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.297806 #7813]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:34:39.297866 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.297924 #7813] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:34:39.297999 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.298055 #7813]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:34:39.298114 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.298167 #7813] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:34:39.298246 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.298314 #7813]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:34:39.298384 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.298449 #7813] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:34:39.298530 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.298602 #7813]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:34:39.298672 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.298725 #7813] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:34:39.298797 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.298851 #7813]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:34:39.298923 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.298978 #7813] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:34:39.299065 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.299142 #7813]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:34:39.299206 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.299261 #7813] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:34:39.299331 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.299390 #7813]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:34:39.299450 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.299507 #7813] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:34:39.299577 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.299630 #7813]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:34:39.299696 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.299749 #7813] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:34:39.299806 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.299855 #7813] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:34:39.299911 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.299963 #7813] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:34:39.300042 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.300118 #7813]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:34:39.300182 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.300236 #7813] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:34:39.300307 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.300365 #7813]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:34:39.300428 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.300480 #7813] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:34:39.300552 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.300609 #7813]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:34:39.300665 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.300714 #7813] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:34:39.300787 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.300841 #7813]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:34:39.300895 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.300938 #7813] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:34:39.301011 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.301066 #7813]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:34:39.301123 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.301186 #7813] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:34:39.301270 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.301331 #7813]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:34:39.301395 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.301448 #7813] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:34:39.301520 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.301573 #7813]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:34:39.301633 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.301690 #7813] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:34:39.301758 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.301811 #7813]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:34:39.301868 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.301922 #7813] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:34:39.302000 #7813]  INFO -- : Card.initialize
+I, [2016-05-27T10:34:39.302069 #7813]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:34:39.302136 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.302191 #7813] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:34:39.302247 #7813] DEBUG -- : line.chomp!
+D, [2016-05-27T10:34:39.302308 #7813] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:34:39.302372 #7813]  INFO -- : set_information start.
+D, [2016-05-27T10:34:39.302431 #7813] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:39.302498 #7813] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:39.302556 #7813] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:39.302612 #7813] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:39.302669 #7813] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:34:39.302721 #7813] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:34:39.302792 #7813] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:34:39.302848 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.302914 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.302971 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303029 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303086 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303138 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303178 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303237 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303302 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303364 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303423 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303481 #7813] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:34:39.303539 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303630 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303695 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303755 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303817 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303875 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.303934 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.304012 #7813] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:34:39.304078 #7813] DEBUG -- : card.card_type = sideboardCards
+E, [2016-05-27T10:34:39.304144 #7813] ERROR -- : select_archetype(nil).
+I, [2016-05-27T10:35:03.372045 #7840]  INFO -- : 
+I, [2016-05-27T10:35:03.372188 #7840]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:35:03.372262 #7840]  INFO -- : 
+I, [2016-05-27T10:35:03.372344 #7840]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:35:03.372404 #7840]  INFO -- : Deck initialize
+D, [2016-05-27T10:35:03.372461 #7840] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:35:03.372522 #7840]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:35:03.372588 #7840] DEBUG -- : set list type[file]
+D, [2016-05-27T10:35:03.372643 #7840] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:35:03.372757 #7840]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:35:03.372819 #7840]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:35:03.372874 #7840] DEBUG -- : target contents are
+D, [2016-05-27T10:35:03.372935 #7840] DEBUG -- : 	card_type
+D, [2016-05-27T10:35:03.372987 #7840] DEBUG -- : 	name
+D, [2016-05-27T10:35:03.373036 #7840] DEBUG -- : 	quantity
+D, [2016-05-27T10:35:03.373087 #7840] DEBUG -- : 	price
+D, [2016-05-27T10:35:03.373138 #7840] DEBUG -- : 	store_url
+D, [2016-05-27T10:35:03.373189 #7840] DEBUG -- : 	price.date
+D, [2016-05-27T10:35:03.373240 #7840] DEBUG -- : mode: with_info
+D, [2016-05-27T10:35:03.374867 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.374926 #7840] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:35:03.374993 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.375052 #7840] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:35:03.375188 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.375271 #7840]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:35:03.375348 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.375404 #7840] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:35:03.375478 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.375531 #7840]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:35:03.375609 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.375681 #7840] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:35:03.375774 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.375832 #7840]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:35:03.375910 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.375969 #7840] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:35:03.376055 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.376112 #7840]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:35:03.376169 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.376242 #7840] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:35:03.376318 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.376383 #7840]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:35:03.376448 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.376501 #7840] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:35:03.376562 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.376615 #7840] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:35:03.376683 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.376740 #7840]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:03.376798 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.376851 #7840] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:35:03.376922 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.376976 #7840]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:35:03.377033 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.377084 #7840] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:35:03.377141 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.377191 #7840] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:35:03.377259 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.377313 #7840]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:35:03.377398 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.377458 #7840] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:35:03.377560 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.377618 #7840]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:03.377677 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.377741 #7840] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:35:03.377812 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.377867 #7840]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:35:03.377921 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.377976 #7840] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:35:03.378052 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.378105 #7840]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:03.378163 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.378217 #7840] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:35:03.378288 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.378357 #7840]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:03.378434 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.378503 #7840] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:35:03.378581 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.378650 #7840]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:35:03.378722 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.378774 #7840] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:35:03.378844 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.378901 #7840]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:35:03.378961 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.379016 #7840] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:35:03.379091 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.379158 #7840]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:35:03.379220 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.379272 #7840] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:35:03.379344 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.379414 #7840]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:35:03.379480 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.379535 #7840] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:35:03.379622 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.379681 #7840]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:35:03.379743 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.379798 #7840] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:35:03.379868 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.379919 #7840]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:35:03.379977 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380039 #7840] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:35:03.380111 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.380164 #7840]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:03.380220 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380273 #7840] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:35:03.380331 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380382 #7840] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:35:03.380439 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380488 #7840] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:35:03.380556 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.380623 #7840]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:03.380694 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380748 #7840] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:35:03.380819 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.380871 #7840]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:35:03.380931 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.380984 #7840] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:35:03.381050 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.381083 #7840]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:35:03.381156 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.381209 #7840] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:35:03.381286 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.381342 #7840]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:03.381408 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.381466 #7840] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:35:03.381541 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.381606 #7840]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:03.381669 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.381738 #7840] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:35:03.381827 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.381881 #7840]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:03.381939 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.381990 #7840] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:35:03.382058 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.382111 #7840]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:03.382208 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.382262 #7840] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:35:03.382335 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.382387 #7840]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:35:03.382462 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.382519 #7840] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:35:03.382600 #7840]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:03.382658 #7840]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:35:03.382716 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.382760 #7840] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:35:03.382819 #7840] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:03.382879 #7840] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:35:03.382952 #7840]  INFO -- : set_information start.
+D, [2016-05-27T10:35:03.383025 #7840] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:03.383101 #7840] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:03.383159 #7840] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:03.383217 #7840] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:03.383274 #7840] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:03.383335 #7840] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:03.383399 #7840] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:03.383458 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383520 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383589 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383653 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383725 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383785 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383860 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383921 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.383980 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.384055 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.384114 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.384175 #7840] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:03.384266 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384333 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384394 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384448 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384503 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384591 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384651 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384708 #7840] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:03.384766 #7840] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:35:18.357452 #7861]  INFO -- : 
+I, [2016-05-27T10:35:18.357599 #7861]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:35:18.357668 #7861]  INFO -- : 
+I, [2016-05-27T10:35:18.357747 #7861]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:35:18.357806 #7861]  INFO -- : Deck initialize
+D, [2016-05-27T10:35:18.357865 #7861] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:35:18.357924 #7861]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:35:18.357984 #7861] DEBUG -- : set list type[file]
+D, [2016-05-27T10:35:18.358038 #7861] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:35:18.358150 #7861]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:35:18.358208 #7861]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:35:18.358284 #7861] DEBUG -- : target contents are
+D, [2016-05-27T10:35:18.358357 #7861] DEBUG -- : 	card_type
+D, [2016-05-27T10:35:18.358415 #7861] DEBUG -- : 	name
+D, [2016-05-27T10:35:18.358471 #7861] DEBUG -- : 	quantity
+D, [2016-05-27T10:35:18.358564 #7861] DEBUG -- : 	price
+D, [2016-05-27T10:35:18.358631 #7861] DEBUG -- : 	store_url
+D, [2016-05-27T10:35:18.358690 #7861] DEBUG -- : 	price.date
+D, [2016-05-27T10:35:18.358747 #7861] DEBUG -- : mode: with_info
+D, [2016-05-27T10:35:18.360315 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.360369 #7861] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:35:18.360432 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.360480 #7861] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:35:18.360608 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.360705 #7861]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:35:18.360782 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.360851 #7861] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:35:18.360932 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.360998 #7861]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:35:18.361078 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.361139 #7861] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:35:18.361230 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.361288 #7861]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:35:18.361350 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.361409 #7861] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:35:18.361488 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.361576 #7861]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:35:18.361643 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.361699 #7861] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:35:18.361773 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.361825 #7861]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:35:18.361886 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.361940 #7861] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:35:18.361998 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.362052 #7861] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:35:18.362127 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.362182 #7861]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:18.362242 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.362294 #7861] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:35:18.362362 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.362420 #7861]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:35:18.362478 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.362534 #7861] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:35:18.362594 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.362647 #7861] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:35:18.362722 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.362776 #7861]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:35:18.362830 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.362882 #7861] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:35:18.362952 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.363030 #7861]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:18.363108 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.363188 #7861] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:35:18.363265 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.363318 #7861]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:35:18.363376 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.363426 #7861] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:35:18.363504 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.363559 #7861]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:18.363616 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.363671 #7861] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:35:18.363744 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.363804 #7861]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:18.363862 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.363913 #7861] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:35:18.363983 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.364038 #7861]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:35:18.364095 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.364153 #7861] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:35:18.364222 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.364276 #7861]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:35:18.364336 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.364388 #7861] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:35:18.364463 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.364518 #7861]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:35:18.364592 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.364655 #7861] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:35:18.364731 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.364800 #7861]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:35:18.364861 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.364915 #7861] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:35:18.364995 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.365063 #7861]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:35:18.365128 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.365186 #7861] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:35:18.365255 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.365312 #7861]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:35:18.365371 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.365426 #7861] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:35:18.365487 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.365538 #7861]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:18.365602 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.365660 #7861] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:35:18.365719 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.365771 #7861] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:35:18.365834 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.365891 #7861] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:35:18.365970 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.366052 #7861]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:18.366119 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.366179 #7861] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:35:18.366252 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.366307 #7861]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:35:18.366372 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.366428 #7861] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:35:18.366502 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.366555 #7861]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:35:18.366619 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.366672 #7861] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:35:18.366743 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.366797 #7861]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:18.366878 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.366941 #7861] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:35:18.367017 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.367100 #7861]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:18.367164 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.367219 #7861] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:35:18.367296 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.367352 #7861]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:18.367425 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.367485 #7861] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:35:18.367568 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.367629 #7861]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:18.367688 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.367744 #7861] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:35:18.367810 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.367864 #7861]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:35:18.367927 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.367978 #7861] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:35:18.368047 #7861]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:18.368102 #7861]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:35:18.368163 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.368231 #7861] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:35:18.368297 #7861] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:18.368368 #7861] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:35:18.368450 #7861]  INFO -- : set_information start.
+D, [2016-05-27T10:35:18.368516 #7861] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:18.368589 #7861] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:18.368647 #7861] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:18.368704 #7861] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:18.368753 #7861] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:18.368812 #7861] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:18.368896 #7861] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:18.368960 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369040 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369100 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369158 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369216 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369273 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369331 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369407 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369488 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369549 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369625 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369684 #7861] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:18.369756 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.369834 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.369915 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.369979 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.370038 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.370096 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.370169 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.370232 #7861] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:18.370292 #7861] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:35:18.370354 #7861]  INFO -- : select_archetype(test_BGConJF.csv)
+I, [2016-05-27T10:35:18.370443 #7861]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T10:35:59.254114 #7897]  INFO -- : 
+I, [2016-05-27T10:35:59.254274 #7897]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T10:35:59.254336 #7897]  INFO -- : 
+I, [2016-05-27T10:35:59.254426 #7897]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T10:35:59.254488 #7897]  INFO -- : Deck initialize
+D, [2016-05-27T10:35:59.254545 #7897] DEBUG -- : set deck name[test_BGConJF.csv]
+W, [2016-05-27T10:35:59.254619 #7897]  WARN -- : price.initialize(nil)
+D, [2016-05-27T10:35:59.254685 #7897] DEBUG -- : set list type[file]
+D, [2016-05-27T10:35:59.254741 #7897] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T10:35:59.254840 #7897]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T10:35:59.254899 #7897]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T10:35:59.254949 #7897] DEBUG -- : target contents are
+D, [2016-05-27T10:35:59.255008 #7897] DEBUG -- : 	card_type
+D, [2016-05-27T10:35:59.255057 #7897] DEBUG -- : 	name
+D, [2016-05-27T10:35:59.255110 #7897] DEBUG -- : 	quantity
+D, [2016-05-27T10:35:59.255162 #7897] DEBUG -- : 	price
+D, [2016-05-27T10:35:59.255215 #7897] DEBUG -- : 	store_url
+D, [2016-05-27T10:35:59.255291 #7897] DEBUG -- : 	price.date
+D, [2016-05-27T10:35:59.255349 #7897] DEBUG -- : mode: with_info
+D, [2016-05-27T10:35:59.256905 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.256962 #7897] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T10:35:59.257023 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.257073 #7897] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T10:35:59.257169 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.257232 #7897]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T10:35:59.257303 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.257360 #7897] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T10:35:59.257430 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.257499 #7897]  INFO -- : price of Forest initialize
+D, [2016-05-27T10:35:59.257596 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.257663 #7897] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T10:35:59.257733 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.257792 #7897]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T10:35:59.257857 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.257913 #7897] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T10:35:59.257984 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.258039 #7897]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T10:35:59.258098 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.258149 #7897] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T10:35:59.258236 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.258292 #7897]  INFO -- : price of Swamp initialize
+D, [2016-05-27T10:35:59.258351 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.258404 #7897] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T10:35:59.258479 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.258538 #7897] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T10:35:59.258613 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.258668 #7897]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:59.258753 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.258809 #7897] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T10:35:59.258880 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.258934 #7897]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T10:35:59.258977 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.259027 #7897] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T10:35:59.259102 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.259160 #7897] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T10:35:59.259235 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.259290 #7897]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T10:35:59.259349 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.259399 #7897] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T10:35:59.259469 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.259523 #7897]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:59.259581 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.259634 #7897] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T10:35:59.259710 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.259764 #7897]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T10:35:59.259828 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.259882 #7897] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T10:35:59.259950 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.260004 #7897]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:59.260062 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.260115 #7897] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T10:35:59.260188 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.260241 #7897]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:59.260296 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.260349 #7897] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T10:35:59.260420 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.260473 #7897]  INFO -- : price of Languish initialize
+D, [2016-05-27T10:35:59.260531 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.260584 #7897] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T10:35:59.260650 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.260706 #7897]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T10:35:59.260763 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.260814 #7897] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T10:35:59.260883 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.260939 #7897]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T10:35:59.260997 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.261051 #7897] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T10:35:59.261155 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.261218 #7897]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T10:35:59.261297 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.261354 #7897] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T10:35:59.261454 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.261512 #7897]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T10:35:59.261575 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.261630 #7897] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T10:35:59.261702 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.261759 #7897]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T10:35:59.261832 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.261889 #7897] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T10:35:59.261986 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.262045 #7897]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:59.262115 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.262174 #7897] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T10:35:59.262248 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.262320 #7897] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T10:35:59.262384 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.262450 #7897] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T10:35:59.262531 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.262586 #7897]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T10:35:59.262650 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.262704 #7897] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T10:35:59.262774 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.262828 #7897]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T10:35:59.262886 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.262938 #7897] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T10:35:59.263008 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.263058 #7897]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T10:35:59.263116 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.263169 #7897] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T10:35:59.263244 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.263315 #7897]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T10:35:59.263377 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.263433 #7897] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T10:35:59.263507 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.263560 #7897]  INFO -- : price of Duress initialize
+D, [2016-05-27T10:35:59.263621 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.263675 #7897] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T10:35:59.263767 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.263826 #7897]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T10:35:59.263903 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.263959 #7897] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T10:35:59.264032 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.264089 #7897]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T10:35:59.264146 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.264236 #7897] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T10:35:59.264311 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.264367 #7897]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T10:35:59.264427 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.264477 #7897] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T10:35:59.264550 #7897]  INFO -- : Card.initialize
+I, [2016-05-27T10:35:59.264604 #7897]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T10:35:59.264667 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.264719 #7897] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T10:35:59.264781 #7897] DEBUG -- : line.chomp!
+D, [2016-05-27T10:35:59.264832 #7897] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T10:35:59.264901 #7897]  INFO -- : set_information start.
+D, [2016-05-27T10:35:59.264957 #7897] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:59.265025 #7897] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:59.265086 #7897] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:59.265143 #7897] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:59.265200 #7897] DEBUG -- : card.card_type = land
+D, [2016-05-27T10:35:59.265257 #7897] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:59.265316 #7897] DEBUG -- : card.card_type = creature
+D, [2016-05-27T10:35:59.265371 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265440 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265498 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265555 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265610 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265666 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265726 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265786 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265843 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265925 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.265984 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.266071 #7897] DEBUG -- : card.card_type = spell
+D, [2016-05-27T10:35:59.266138 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266204 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266267 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266337 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266398 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266458 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266515 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266573 #7897] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T10:35:59.266630 #7897] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T10:35:59.266689 #7897]  INFO -- : select_archetype(test_BGConJF.csv) start.
+I, [2016-05-27T10:35:59.266741 #7897]  INFO -- : select_archetype(test_BGConJF.csv) finished. deck.archetype = 
+I, [2016-05-27T10:35:59.266824 #7897]  INFO -- : archetype_selector.select_archetype.rb finished.
