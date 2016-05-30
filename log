@@ -22159,3 +22159,1913 @@ D, [2016-05-27T17:30:38.717793 #5690] DEBUG -- : second try by id[kD08246S
 D, [2016-05-27T17:30:38.717892 #5690] DEBUG -- : url[http://www.hareruyamtg.com/jp/k/kD08246S]
 I, [2016-05-27T17:30:38.717988 #5690]  INFO -- : Hareruya.select_archetype(test_BGConJF.csv) finished. return deck.archetype[].
 I, [2016-05-27T17:30:38.718087 #5690]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T18:41:18.678116 #5776]  INFO -- : 
+I, [2016-05-27T18:41:18.678328 #5776]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T18:41:18.678487 #5776]  INFO -- : 
+I, [2016-05-27T18:41:18.678655 #5776]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T18:41:18.678806 #5776]  INFO -- : Store.initialize(Hareruya)
+I, [2016-05-27T18:41:18.678938 #5776]  INFO -- : Deck initialize
+D, [2016-05-27T18:41:18.679088 #5776] DEBUG -- : set deck name[test_BGConJF.csv]
+D, [2016-05-27T18:41:18.679268 #5776] DEBUG -- : price.initialize(nil)
+D, [2016-05-27T18:41:18.679406 #5776] DEBUG -- : set list type[file]
+D, [2016-05-27T18:41:18.679556 #5776] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T18:41:18.679734 #5776]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T18:41:18.679887 #5776]  INFO -- : Deck initialize
+D, [2016-05-27T18:41:18.680075 #5776] DEBUG -- : set deck name[test_BGConJF.csv]
+D, [2016-05-27T18:41:18.680220 #5776] DEBUG -- : price.initialize(nil)
+D, [2016-05-27T18:41:18.680370 #5776] DEBUG -- : set list type[file]
+D, [2016-05-27T18:41:18.680506 #5776] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T18:41:18.680666 #5776]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T18:41:18.680861 #5776]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T18:41:18.681005 #5776] DEBUG -- : target contents are
+D, [2016-05-27T18:41:18.681173 #5776] DEBUG -- : 	card_type
+D, [2016-05-27T18:41:18.681335 #5776] DEBUG -- : 	name
+D, [2016-05-27T18:41:18.681498 #5776] DEBUG -- : 	quantity
+D, [2016-05-27T18:41:18.681658 #5776] DEBUG -- : 	price
+D, [2016-05-27T18:41:18.681806 #5776] DEBUG -- : 	store_url
+D, [2016-05-27T18:41:18.681959 #5776] DEBUG -- : 	price.date
+D, [2016-05-27T18:41:18.682165 #5776] DEBUG -- : mode: with_info
+D, [2016-05-27T18:41:18.683381 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.683541 #5776] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T18:41:18.683694 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.684010 #5776] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T18:41:18.684217 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.684367 #5776]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T18:41:18.684634 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.684789 #5776] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T18:41:18.684944 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.685110 #5776]  INFO -- : price of Forest initialize
+D, [2016-05-27T18:41:18.685271 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.685402 #5776] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T18:41:18.685645 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.685816 #5776]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T18:41:18.685973 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.686117 #5776] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T18:41:18.686279 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.686414 #5776]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T18:41:18.686543 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.686689 #5776] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T18:41:18.686823 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.686949 #5776]  INFO -- : price of Swamp initialize
+D, [2016-05-27T18:41:18.687082 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.687206 #5776] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T18:41:18.687334 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.687472 #5776] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T18:41:18.687603 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.687729 #5776]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T18:41:18.687868 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.688198 #5776] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T18:41:18.688625 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.688772 #5776]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T18:41:18.688912 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.689125 #5776] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T18:41:18.689336 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.689521 #5776] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T18:41:18.689666 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.689919 #5776]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T18:41:18.690306 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.690933 #5776] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T18:41:18.691133 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.691367 #5776]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T18:41:18.692122 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.693122 #5776] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T18:41:18.693318 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.699551 #5776]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T18:41:18.700619 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.701348 #5776] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T18:41:18.701971 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.702728 #5776]  INFO -- : price of Duress initialize
+D, [2016-05-27T18:41:18.703254 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.704735 #5776] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T18:41:18.705327 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.705568 #5776]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T18:41:18.705756 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.705970 #5776] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T18:41:18.706128 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.706253 #5776]  INFO -- : price of Languish initialize
+D, [2016-05-27T18:41:18.709457 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.711768 #5776] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T18:41:18.716999 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.717205 #5776]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T18:41:18.717337 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.717466 #5776] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T18:41:18.717577 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.717680 #5776]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T18:41:18.717778 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.717872 #5776] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T18:41:18.717974 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.718085 #5776]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T18:41:18.718181 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.718276 #5776] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T18:41:18.718376 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.718471 #5776]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T18:41:18.718568 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.718661 #5776] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T18:41:18.718776 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.718871 #5776]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T18:41:18.718968 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.719069 #5776] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T18:41:18.719170 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.719264 #5776]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T18:41:18.719458 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.719574 #5776] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T18:41:18.719676 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.719771 #5776] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T18:41:18.719868 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.719961 #5776] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T18:41:18.720071 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.720166 #5776]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T18:41:18.720262 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.720357 #5776] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T18:41:18.720459 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.720554 #5776]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T18:41:18.720658 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.720753 #5776] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T18:41:18.720862 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.720957 #5776]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T18:41:18.721054 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.721148 #5776] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T18:41:18.721251 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.721345 #5776]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T18:41:18.721505 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.721622 #5776] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T18:41:18.721769 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.721872 #5776]  INFO -- : price of Duress initialize
+D, [2016-05-27T18:41:18.721976 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.722076 #5776] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T18:41:18.722187 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.722292 #5776]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T18:41:18.722420 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.722552 #5776] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T18:41:18.722674 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.722787 #5776]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T18:41:18.722901 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.723038 #5776] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T18:41:18.723202 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.730254 #5776]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T18:41:18.730587 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.730799 #5776] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T18:41:18.730905 #5776]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:18.731329 #5776]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T18:41:18.731479 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.731606 #5776] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T18:41:18.731870 #5776] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:18.732010 #5776] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T18:41:18.732213 #5776]  INFO -- : set_information start.
+D, [2016-05-27T18:41:18.732537 #5776] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:18.732702 #5776] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:18.732856 #5776] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:18.733410 #5776] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:18.733642 #5776] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:18.733865 #5776] DEBUG -- : card.card_type = creature
+D, [2016-05-27T18:41:18.734109 #5776] DEBUG -- : card.card_type = creature
+D, [2016-05-27T18:41:18.734329 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.734581 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.734761 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.734987 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735179 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735349 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735500 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735641 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735781 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.735922 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.736079 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.736219 #5776] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:18.736359 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.736503 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.736642 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.736781 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.736918 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.737066 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.737209 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.737359 #5776] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:18.737498 #5776] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T18:41:18.737669 #5776]  INFO -- : Archetype_selector.select_archetype_of[(test_BGConJF.csv]by[store]) start.
+D, [2016-05-27T18:41:18.737812 #5776] DEBUG -- : Archetype_selector calls test_BGConJF.csv.Hareruya.select_archetype_of(test_BGConJF.csv).
+I, [2016-05-27T18:41:18.737949 #5776]  INFO -- : Hareruya.select_archetype_of[test_BGConJF.csv] start.
+D, [2016-05-27T18:41:18.738091 #5776] DEBUG -- : first try by filename[../../test_cases/decklists/output/test_BGConJF.csv
+D, [2016-05-27T18:41:18.738226 #5776] DEBUG -- : second try by id
+D, [2016-05-27T18:41:18.738365 #5776] DEBUG -- : url[http://www.hareruyamtg.com/jp/k/kD08246S]
+I, [2016-05-27T18:41:18.738505 #5776]  INFO -- : Hareruya.select_archetype(test_BGConJF.csv) finished. return deck.archetype[].
+I, [2016-05-27T18:41:18.738648 #5776]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T18:41:52.221421 #5786]  INFO -- : 
+I, [2016-05-27T18:41:52.221600 #5786]  INFO -- : archetype_selector.select_archetype.rb start.
+I, [2016-05-27T18:41:52.221724 #5786]  INFO -- : 
+I, [2016-05-27T18:41:52.221856 #5786]  INFO -- : Archetype_selector.initialize
+I, [2016-05-27T18:41:52.221999 #5786]  INFO -- : Store.initialize(Hareruya)
+I, [2016-05-27T18:41:52.222126 #5786]  INFO -- : Deck initialize
+D, [2016-05-27T18:41:52.222258 #5786] DEBUG -- : set deck name[test_BGConJF.csv]
+D, [2016-05-27T18:41:52.222384 #5786] DEBUG -- : price.initialize(nil)
+D, [2016-05-27T18:41:52.222507 #5786] DEBUG -- : set list type[file]
+D, [2016-05-27T18:41:52.222628 #5786] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T18:41:52.222767 #5786]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T18:41:52.222899 #5786]  INFO -- : Deck initialize
+D, [2016-05-27T18:41:52.223020 #5786] DEBUG -- : set deck name[test_BGConJF.csv]
+D, [2016-05-27T18:41:52.223152 #5786] DEBUG -- : price.initialize(nil)
+D, [2016-05-27T18:41:52.223273 #5786] DEBUG -- : set list type[file]
+D, [2016-05-27T18:41:52.223398 #5786] DEBUG -- : set path[../../test_cases/decklists/output/test_BGConJF.csv]
+I, [2016-05-27T18:41:52.223531 #5786]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T18:41:52.223657 #5786]  INFO -- : read_deckfile[../../test_cases/decklists/output/test_BGConJF.csv] start
+D, [2016-05-27T18:41:52.223777 #5786] DEBUG -- : target contents are
+D, [2016-05-27T18:41:52.223908 #5786] DEBUG -- : 	card_type
+D, [2016-05-27T18:41:52.224044 #5786] DEBUG -- : 	name
+D, [2016-05-27T18:41:52.224163 #5786] DEBUG -- : 	quantity
+D, [2016-05-27T18:41:52.224282 #5786] DEBUG -- : 	price
+D, [2016-05-27T18:41:52.224400 #5786] DEBUG -- : 	store_url
+D, [2016-05-27T18:41:52.224520 #5786] DEBUG -- : 	price.date
+D, [2016-05-27T18:41:52.224639 #5786] DEBUG -- : mode: with_info
+D, [2016-05-27T18:41:52.225487 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.225662 #5786] DEBUG -- : line[info,BG Con JF 41930 W3U3B21R3G14C2A3]
+D, [2016-05-27T18:41:52.225806 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.225937 #5786] DEBUG -- : line[land,Evolving Wilds,3,20,http://www.hareruyamtg.com/jp/g/gBFZ000236JN/,2016-05-08T13:07:46+09:00,]
+I, [2016-05-27T18:41:52.226085 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.226214 #5786]  INFO -- : price of Evolving Wilds initialize
+D, [2016-05-27T18:41:52.226355 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.226478 #5786] DEBUG -- : line[land,Forest,5,20,http://www.hareruyamtg.com/jp/g/gSOI000297JN/,2016-05-08T13:07:47+09:00,]
+I, [2016-05-27T18:41:52.226611 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.226734 #5786]  INFO -- : price of Forest initialize
+D, [2016-05-27T18:41:52.226838 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.226973 #5786] DEBUG -- : line[land,Hissing Quagmire,4,850,http://www.hareruyamtg.com/jp/g/gOGW000171JN/,2016-05-08T13:07:59+09:00,]
+I, [2016-05-27T18:41:52.227115 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.227238 #5786]  INFO -- : price of Hissing Quagmire initialize
+D, [2016-05-27T18:41:52.227363 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.227484 #5786] DEBUG -- : line[land,Llanowar Wastes,2,450,http://www.hareruyamtg.com/jp/g/gORI000248JN/,2016-05-08T13:08:14+09:00,]
+I, [2016-05-27T18:41:52.227614 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.227736 #5786]  INFO -- : price of Llanowar Wastes initialize
+D, [2016-05-27T18:41:52.227877 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.228010 #5786] DEBUG -- : line[land,Swamp,12,20,http://www.hareruyamtg.com/jp/g/gSOI000291JN/,2016-05-08T13:08:17+09:00,]
+I, [2016-05-27T18:41:52.228138 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.228260 #5786]  INFO -- : price of Swamp initialize
+D, [2016-05-27T18:41:52.228384 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.228504 #5786] DEBUG -- : line[info,26 Lands 4700]
+D, [2016-05-27T18:41:52.228629 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.228769 #5786] DEBUG -- : line[creature,Kalitas Traitor of Ghet,2,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:08:19+09:00,]
+I, [2016-05-27T18:41:52.228914 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.229037 #5786]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T18:41:52.229160 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.229281 #5786] DEBUG -- : line[creature,Nissa Vastwood Seer,2,2400,http://www.hareruyamtg.com/jp/g/gORI000189JN/,2016-05-08T13:08:21+09:00,]
+I, [2016-05-27T18:41:52.229411 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.229545 #5786]  INFO -- : price of Nissa Vastwood Seer initialize
+D, [2016-05-27T18:41:52.229677 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.229802 #5786] DEBUG -- : line[info,4 Creatures 14800]
+D, [2016-05-27T18:41:52.229926 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.230046 #5786] DEBUG -- : line[spell,Grasp of Darkness,4,150,http://www.hareruyamtg.com/jp/g/gOGW000085JN/,2016-05-08T13:08:23+09:00,]
+I, [2016-05-27T18:41:52.230175 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.230296 #5786]  INFO -- : price of Grasp of Darkness initialize
+D, [2016-05-27T18:41:52.230437 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.230560 #5786] DEBUG -- : line[spell,Ultimate Price,2,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:08:25+09:00,]
+I, [2016-05-27T18:41:52.230692 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.230842 #5786]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T18:41:52.230983 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.231109 #5786] DEBUG -- : line[spell,Dark Petition,4,1200,http://www.hareruyamtg.com/jp/g/gORI000090JN/,2016-05-08T13:08:40+09:00,]
+I, [2016-05-27T18:41:52.231255 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.232430 #5786]  INFO -- : price of Dark Petition initialize
+D, [2016-05-27T18:41:52.232549 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.232653 #5786] DEBUG -- : line[spell,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:08:41+09:00,]
+I, [2016-05-27T18:41:52.232760 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.232856 #5786]  INFO -- : price of Duress initialize
+D, [2016-05-27T18:41:52.232965 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.233059 #5786] DEBUG -- : line[spell,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:08:42+09:00,]
+I, [2016-05-27T18:41:52.233162 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.233256 #5786]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T18:41:52.233352 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.234068 #5786] DEBUG -- : line[spell,Languish,4,1600,http://www.hareruyamtg.com/jp/g/gORI000105JN/,2016-05-08T13:08:54+09:00,]
+I, [2016-05-27T18:41:52.234750 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.234980 #5786]  INFO -- : price of Languish initialize
+D, [2016-05-27T18:41:52.236523 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.236829 #5786] DEBUG -- : line[spell,Nissa's Renewal,1,180,http://www.hareruyamtg.com/jp/g/gBFZ000180JN/,2016-05-08T13:09:20+09:00,]
+I, [2016-05-27T18:41:52.242676 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.242937 #5786]  INFO -- : price of Nissa's Renewal initialize
+D, [2016-05-27T18:41:52.243178 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.243395 #5786] DEBUG -- : line[spell,Read the Bones,4,50,http://www.hareruyamtg.com/jp/g/gORI000114JN/,2016-05-08T13:09:22+09:00,]
+I, [2016-05-27T18:41:52.243641 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.243849 #5786]  INFO -- : price of Read the Bones initialize
+D, [2016-05-27T18:41:52.244033 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.244195 #5786] DEBUG -- : line[spell,Ruinous Path,3,450,http://www.hareruyamtg.com/jp/g/gBFZ000123JN/,2016-05-08T13:09:23+09:00,]
+I, [2016-05-27T18:41:52.244375 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.244554 #5786]  INFO -- : price of Ruinous Path initialize
+D, [2016-05-27T18:41:52.244699 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.244835 #5786] DEBUG -- : line[spell,Seasons Past,2,800,http://www.hareruyamtg.com/jp/g/gSOI000226JN/,2016-05-08T13:09:25+09:00,]
+I, [2016-05-27T18:41:52.244985 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.245117 #5786]  INFO -- : price of Seasons Past initialize
+D, [2016-05-27T18:41:52.245262 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.245424 #5786] DEBUG -- : line[spell,Transgress the Mind,2,300,http://www.hareruyamtg.com/jp/g/gBFZ000101JN/,2016-05-08T13:09:49+09:00,]
+I, [2016-05-27T18:41:52.245570 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.245717 #5786]  INFO -- : price of Transgress the Mind initialize
+D, [2016-05-27T18:41:52.245860 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.246000 #5786] DEBUG -- : line[spell,Dead Weight,1,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:09:51+09:00,]
+I, [2016-05-27T18:41:52.246161 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.246387 #5786]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T18:41:52.247251 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.247537 #5786] DEBUG -- : line[info,30 Spells 16470]
+D, [2016-05-27T18:41:52.247738 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.247895 #5786] DEBUG -- : line[info,60 MainboardCards 35970 111 W0U0B47R0G7C0]
+D, [2016-05-27T18:41:52.248042 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.248178 #5786] DEBUG -- : line[sideboardCards,Kalitas Traitor of Ghet,1,5000,http://www.hareruyamtg.com/jp/g/gOGW000086JN/,2016-05-08T13:09:52+09:00,]
+I, [2016-05-27T18:41:52.248330 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.248467 #5786]  INFO -- : price of Kalitas Traitor of Ghet initialize
+D, [2016-05-27T18:41:52.248685 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.248845 #5786] DEBUG -- : line[sideboardCards,Clip Wings,1,50,http://www.hareruyamtg.com/jp/g/gSOI000197JN/,2016-05-08T13:09:54+09:00,]
+I, [2016-05-27T18:41:52.249010 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.249156 #5786]  INFO -- : price of Clip Wings initialize
+D, [2016-05-27T18:41:52.249317 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.249464 #5786] DEBUG -- : line[sideboardCards,Naturalize,3,10,http://www.hareruyamtg.com/jp/g/gDTK000205JN/,2016-05-08T13:09:56+09:00,]
+I, [2016-05-27T18:41:52.249644 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.249854 #5786]  INFO -- : price of Naturalize initialize
+D, [2016-05-27T18:41:52.250305 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.250774 #5786] DEBUG -- : line[sideboardCards,Ultimate Price,1,80,http://www.hareruyamtg.com/jp/g/gDTK000144JN/,2016-05-08T13:09:57+09:00,]
+I, [2016-05-27T18:41:52.250996 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.252241 #5786]  INFO -- : price of Ultimate Price initialize
+D, [2016-05-27T18:41:52.252855 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.256133 #5786] DEBUG -- : line[sideboardCards,Duress,2,50,http://www.hareruyamtg.com/jp/g/gDTK000173JN/,2016-05-08T13:09:58+09:00,]
+I, [2016-05-27T18:41:52.261897 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.262229 #5786]  INFO -- : price of Duress initialize
+D, [2016-05-27T18:41:52.262483 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.262700 #5786] DEBUG -- : line[sideboardCards,Infinite Obliteration,1,450,http://www.hareruyamtg.com/jp/g/gORI000103JN/,2016-05-08T13:10:00+09:00,]
+I, [2016-05-27T18:41:52.262952 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.263116 #5786]  INFO -- : price of Infinite Obliteration initialize
+D, [2016-05-27T18:41:52.263331 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.263498 #5786] DEBUG -- : line[sideboardCards,Dead Weight,3,30,http://www.hareruyamtg.com/jp/g/gSOI000106JN/,2016-05-08T13:10:02+09:00,]
+I, [2016-05-27T18:41:52.263660 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.263816 #5786]  INFO -- : price of Dead Weight initialize
+D, [2016-05-27T18:41:52.263965 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.264128 #5786] DEBUG -- : line[sideboardCards,Virulent Plague,2,50,http://www.hareruyamtg.com/jp/g/gDTK000145JN/,2016-05-08T13:10:15+09:00,]
+I, [2016-05-27T18:41:52.264290 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.264429 #5786]  INFO -- : price of Virulent Plague initialize
+D, [2016-05-27T18:41:52.264600 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.264737 #5786] DEBUG -- : line[sideboardCards,Orbs of Warding,1,60,http://www.hareruyamtg.com/jp/g/gORI000234JN/,2016-05-08T13:10:19+09:00,]
+I, [2016-05-27T18:41:52.264891 #5786]  INFO -- : Card.initialize
+I, [2016-05-27T18:41:52.265031 #5786]  INFO -- : price of Orbs of Warding initialize
+D, [2016-05-27T18:41:52.265177 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.265313 #5786] DEBUG -- : line[info,15 SideboardCards 5960 33 W0U0B12R0G4C0]
+D, [2016-05-27T18:41:52.265463 #5786] DEBUG -- : line.chomp!
+D, [2016-05-27T18:41:52.265686 #5786] DEBUG -- : line[info,http://www.hareruyamtg.com/jp/k/kD08246S/]
+I, [2016-05-27T18:41:52.265961 #5786]  INFO -- : set_information start.
+D, [2016-05-27T18:41:52.266113 #5786] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:52.266261 #5786] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:52.266496 #5786] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:52.266635 #5786] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:52.266808 #5786] DEBUG -- : card.card_type = land
+D, [2016-05-27T18:41:52.267039 #5786] DEBUG -- : card.card_type = creature
+D, [2016-05-27T18:41:52.267224 #5786] DEBUG -- : card.card_type = creature
+D, [2016-05-27T18:41:52.267395 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.267576 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.267744 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.267917 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268060 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268186 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268309 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268431 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268554 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268676 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268817 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.268984 #5786] DEBUG -- : card.card_type = spell
+D, [2016-05-27T18:41:52.269133 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269266 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269393 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269518 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269644 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269767 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.269917 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.270042 #5786] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T18:41:52.270165 #5786] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T18:41:52.270301 #5786]  INFO -- : Archetype_selector.select_archetype_of[(test_BGConJF.csv]by[store]) start.
+D, [2016-05-27T18:41:52.270429 #5786] DEBUG -- : Archetype_selector calls test_BGConJF.csv.Hareruya.select_archetype_of(test_BGConJF.csv).
+I, [2016-05-27T18:41:52.270552 #5786]  INFO -- : Hareruya.select_archetype_of[test_BGConJF.csv] start.
+D, [2016-05-27T18:41:52.270674 #5786] DEBUG -- : first try by filename[../../test_cases/decklists/output/test_BGConJF.csv
+D, [2016-05-27T18:41:52.270799 #5786] DEBUG -- : second try by id
+D, [2016-05-27T18:41:52.270929 #5786] DEBUG -- : url[http://www.hareruyamtg.com/jp/k/kD08246S]
+I, [2016-05-27T18:41:52.271051 #5786]  INFO -- : Hareruya.select_archetype(test_BGConJF.csv) finished. return deck.archetype[].
+I, [2016-05-27T18:41:52.271190 #5786]  INFO -- : archetype_selector.select_archetype.rb finished.
+I, [2016-05-27T19:05:11.938443 #5810]  INFO -- : 
+I, [2016-05-27T19:05:11.938615 #5810]  INFO -- : convert_from_full_to_mo.rb start.
+I, [2016-05-27T19:05:11.938746 #5810]  INFO -- : 
+I, [2016-05-27T19:05:11.938875 #5810]  INFO -- : Deck initialize
+D, [2016-05-27T19:05:11.939007 #5810] DEBUG -- : set deck name[WB_Control_kD10100S]
+D, [2016-05-27T19:05:11.939132 #5810] DEBUG -- : price.initialize(nil)
+D, [2016-05-27T19:05:11.939299 #5810] DEBUG -- : set list type[hareruya]
+D, [2016-05-27T19:05:11.939425 #5810] DEBUG -- : set path[http://www.hareruyamtg.com/jp/k/kD10100S/]
+I, [2016-05-27T19:05:11.939571 #5810]  INFO -- : Mana_analyzer.initialize
+I, [2016-05-27T19:05:11.939703 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:11.939839 #5810] DEBUG -- : Deck[WB_Control_kD10100S] create_cardlist() start.
+D, [2016-05-27T19:05:11.939960 #5810] DEBUG -- : create cardlist by hareruya.
+D, [2016-05-27T19:05:11.940082 #5810] DEBUG -- : create_mode[full], path[http://www.hareruyamtg.com/jp/k/kD10100S/]
+I, [2016-05-27T19:05:11.940206 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:11.940333 #5810] DEBUG -- : Hareruya.create_card_list(WB_Control_kD10100S, full) start
+D, [2016-05-27T19:05:11.940456 #5810] DEBUG -- : open[http://www.hareruyamtg.com/jp/k/kD10100S/]
+I, [2016-05-27T19:05:12.157898 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:12.158446 #5810]  INFO -- : price of 《荒廃した湿原/Blighted Fen》 initialize
+D, [2016-05-27T19:05:12.158900 #5810] DEBUG -- : hareruya.create_card_list call 《荒廃した湿原/Blighted Fen》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:12.159299 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:12.159670 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:12.160111 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:12.160537 #5810] DEBUG -- : 《荒廃した湿原/Blighted Fen》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:12.160940 #5810] DEBUG -- : how match [《荒廃した湿原/Blighted Fen》] at hareruya
+D, [2016-05-27T19:05:12.161336 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000230JN/]
+D, [2016-05-27T19:05:13.630199 #5810] DEBUG -- : hareruya.how_match?(《荒廃した湿原/Blighted Fen》) finished. price is 30
+D, [2016-05-27T19:05:13.630555 #5810] DEBUG -- : [《荒廃した湿原/Blighted Fen》] is [30]
+D, [2016-05-27T19:05:13.630818 #5810] DEBUG -- : date is 2016-05-27T19:05:13+09:00
+D, [2016-05-27T19:05:13.631001 #5810] DEBUG -- : renewed value is 30
+D, [2016-05-27T19:05:13.631178 #5810] DEBUG -- : name[《荒廃した湿原/Blighted Fen》], card_type[land], card.price[30]
+I, [2016-05-27T19:05:13.631426 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:13.631613 #5810]  INFO -- : price of 《コイロスの洞窟/Caves of Koilos》 initialize
+D, [2016-05-27T19:05:13.631802 #5810] DEBUG -- : hareruya.create_card_list call 《コイロスの洞窟/Caves of Koilos》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:13.631987 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:13.632161 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:13.632312 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:13.632450 #5810] DEBUG -- : 《コイロスの洞窟/Caves of Koilos》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:13.632576 #5810] DEBUG -- : how match [《コイロスの洞窟/Caves of Koilos》] at hareruya
+D, [2016-05-27T19:05:13.632719 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000245JN/]
+D, [2016-05-27T19:05:14.908725 #5810] DEBUG -- : hareruya.how_match?(《コイロスの洞窟/Caves of Koilos》) finished. price is 300
+D, [2016-05-27T19:05:14.909226 #5810] DEBUG -- : [《コイロスの洞窟/Caves of Koilos》] is [300]
+D, [2016-05-27T19:05:14.909649 #5810] DEBUG -- : date is 2016-05-27T19:05:14+09:00
+D, [2016-05-27T19:05:14.910046 #5810] DEBUG -- : renewed value is 300
+D, [2016-05-27T19:05:14.910420 #5810] DEBUG -- : name[《コイロスの洞窟/Caves of Koilos》], card_type[land], card.price[300]
+I, [2016-05-27T19:05:14.910868 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:14.911176 #5810]  INFO -- : price of 《放棄された聖域/Forsaken Sanctuary》 initialize
+D, [2016-05-27T19:05:14.911455 #5810] DEBUG -- : hareruya.create_card_list call 《放棄された聖域/Forsaken Sanctuary》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:14.911643 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:14.911887 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:14.912126 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:14.912359 #5810] DEBUG -- : 《放棄された聖域/Forsaken Sanctuary》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:14.912583 #5810] DEBUG -- : how match [《放棄された聖域/Forsaken Sanctuary》] at hareruya
+D, [2016-05-27T19:05:14.912818 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000273JN/]
+D, [2016-05-27T19:05:16.556157 #5810] DEBUG -- : hareruya.how_match?(《放棄された聖域/Forsaken Sanctuary》) finished. price is 80
+D, [2016-05-27T19:05:16.556493 #5810] DEBUG -- : [《放棄された聖域/Forsaken Sanctuary》] is [80]
+D, [2016-05-27T19:05:16.556814 #5810] DEBUG -- : date is 2016-05-27T19:05:16+09:00
+D, [2016-05-27T19:05:16.557072 #5810] DEBUG -- : renewed value is 80
+D, [2016-05-27T19:05:16.557340 #5810] DEBUG -- : name[《放棄された聖域/Forsaken Sanctuary》], card_type[land], card.price[80]
+I, [2016-05-27T19:05:16.557652 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:16.557743 #5810]  INFO -- : price of 《平地/Plains》 initialize
+D, [2016-05-27T19:05:16.557911 #5810] DEBUG -- : hareruya.create_card_list call 《平地/Plains》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:16.558085 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:16.558235 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:16.558386 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:16.558527 #5810] DEBUG -- : 《平地/Plains》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:16.558666 #5810] DEBUG -- : how match [《平地/Plains》] at hareruya
+D, [2016-05-27T19:05:16.558807 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000285JN/]
+D, [2016-05-27T19:05:17.307147 #5810] DEBUG -- : hareruya.how_match?(《平地/Plains》) finished. price is 20
+D, [2016-05-27T19:05:17.307443 #5810] DEBUG -- : [《平地/Plains》] is [20]
+D, [2016-05-27T19:05:17.307652 #5810] DEBUG -- : date is 2016-05-27T19:05:17+09:00
+D, [2016-05-27T19:05:17.307845 #5810] DEBUG -- : renewed value is 20
+D, [2016-05-27T19:05:17.308041 #5810] DEBUG -- : name[《平地/Plains》], card_type[land], card.price[20]
+I, [2016-05-27T19:05:17.308313 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:17.308515 #5810]  INFO -- : price of 《乱脈な気孔/Shambling Vent》 initialize
+D, [2016-05-27T19:05:17.308722 #5810] DEBUG -- : hareruya.create_card_list call 《乱脈な気孔/Shambling Vent》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:17.308917 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:17.309080 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:17.309265 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:17.309454 #5810] DEBUG -- : 《乱脈な気孔/Shambling Vent》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:17.310135 #5810] DEBUG -- : how match [《乱脈な気孔/Shambling Vent》] at hareruya
+D, [2016-05-27T19:05:17.310347 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000244JN/]
+D, [2016-05-27T19:05:19.155585 #5810] DEBUG -- : hareruya.how_match?(《乱脈な気孔/Shambling Vent》) finished. price is 700
+D, [2016-05-27T19:05:19.155882 #5810] DEBUG -- : [《乱脈な気孔/Shambling Vent》] is [700]
+D, [2016-05-27T19:05:19.156076 #5810] DEBUG -- : date is 2016-05-27T19:05:19+09:00
+D, [2016-05-27T19:05:19.156249 #5810] DEBUG -- : renewed value is 700
+D, [2016-05-27T19:05:19.156439 #5810] DEBUG -- : name[《乱脈な気孔/Shambling Vent》], card_type[land], card.price[700]
+I, [2016-05-27T19:05:19.156740 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:19.156980 #5810]  INFO -- : price of 《沼/Swamp》 initialize
+D, [2016-05-27T19:05:19.157150 #5810] DEBUG -- : hareruya.create_card_list call 《沼/Swamp》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:19.157314 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:19.157440 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:19.157582 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:19.157737 #5810] DEBUG -- : 《沼/Swamp》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:19.157866 #5810] DEBUG -- : how match [《沼/Swamp》] at hareruya
+D, [2016-05-27T19:05:19.157993 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000291JN/]
+D, [2016-05-27T19:05:20.237058 #5810] DEBUG -- : hareruya.how_match?(《沼/Swamp》) finished. price is 20
+D, [2016-05-27T19:05:20.237404 #5810] DEBUG -- : [《沼/Swamp》] is [20]
+D, [2016-05-27T19:05:20.237656 #5810] DEBUG -- : date is 2016-05-27T19:05:20+09:00
+D, [2016-05-27T19:05:20.237863 #5810] DEBUG -- : renewed value is 20
+D, [2016-05-27T19:05:20.238075 #5810] DEBUG -- : name[《沼/Swamp》], card_type[land], card.price[20]
+I, [2016-05-27T19:05:20.238620 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:20.238797 #5810]  INFO -- : price of 《ウェストヴェイルの修道院/Westvale Abbey》 initialize
+D, [2016-05-27T19:05:20.238951 #5810] DEBUG -- : hareruya.create_card_list call 《ウェストヴェイルの修道院/Westvale Abbey》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:20.239092 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:20.239236 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:20.239378 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:20.239522 #5810] DEBUG -- : 《ウェストヴェイルの修道院/Westvale Abbey》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:20.239666 #5810] DEBUG -- : how match [《ウェストヴェイルの修道院/Westvale Abbey》] at hareruya
+D, [2016-05-27T19:05:20.239810 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000281JN/]
+D, [2016-05-27T19:05:22.283882 #5810] DEBUG -- : hareruya.how_match?(《ウェストヴェイルの修道院/Westvale Abbey》) finished. price is 1600
+D, [2016-05-27T19:05:22.284421 #5810] DEBUG -- : [《ウェストヴェイルの修道院/Westvale Abbey》] is [1600]
+D, [2016-05-27T19:05:22.284834 #5810] DEBUG -- : date is 2016-05-27T19:05:22+09:00
+D, [2016-05-27T19:05:22.285275 #5810] DEBUG -- : renewed value is 1600
+D, [2016-05-27T19:05:22.285730 #5810] DEBUG -- : name[《ウェストヴェイルの修道院/Westvale Abbey》], card_type[land], card.price[1600]
+I, [2016-05-27T19:05:22.286295 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:22.286730 #5810]  INFO -- : price of 《苦渋の破棄/Anguished Unmaking》 initialize
+D, [2016-05-27T19:05:22.287096 #5810] DEBUG -- : hareruya.create_card_list call 《苦渋の破棄/Anguished Unmaking》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:22.287369 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:22.287628 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:22.287890 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:22.288208 #5810] DEBUG -- : 《苦渋の破棄/Anguished Unmaking》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:22.288493 #5810] DEBUG -- : how match [《苦渋の破棄/Anguished Unmaking》] at hareruya
+D, [2016-05-27T19:05:22.288715 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000242JN/]
+D, [2016-05-27T19:05:24.279862 #5810] DEBUG -- : hareruya.how_match?(《苦渋の破棄/Anguished Unmaking》) finished. price is 500
+D, [2016-05-27T19:05:24.280171 #5810] DEBUG -- : [《苦渋の破棄/Anguished Unmaking》] is [500]
+D, [2016-05-27T19:05:24.280438 #5810] DEBUG -- : date is 2016-05-27T19:05:24+09:00
+D, [2016-05-27T19:05:24.280655 #5810] DEBUG -- : renewed value is 500
+D, [2016-05-27T19:05:24.280847 #5810] DEBUG -- : name[《苦渋の破棄/Anguished Unmaking》], card_type[creature], card.price[500]
+I, [2016-05-27T19:05:24.281085 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:24.281245 #5810]  INFO -- : price of 《闇の掌握/Grasp of Darkness》 initialize
+D, [2016-05-27T19:05:24.281391 #5810] DEBUG -- : hareruya.create_card_list call 《闇の掌握/Grasp of Darkness》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:24.281514 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:24.281630 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:24.281758 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:24.281879 #5810] DEBUG -- : 《闇の掌握/Grasp of Darkness》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:24.282036 #5810] DEBUG -- : how match [《闇の掌握/Grasp of Darkness》] at hareruya
+D, [2016-05-27T19:05:24.282174 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000085JN/]
+D, [2016-05-27T19:05:26.270683 #5810] DEBUG -- : hareruya.how_match?(《闇の掌握/Grasp of Darkness》) finished. price is 150
+D, [2016-05-27T19:05:26.271036 #5810] DEBUG -- : [《闇の掌握/Grasp of Darkness》] is [150]
+D, [2016-05-27T19:05:26.271362 #5810] DEBUG -- : date is 2016-05-27T19:05:26+09:00
+D, [2016-05-27T19:05:26.271656 #5810] DEBUG -- : renewed value is 150
+D, [2016-05-27T19:05:26.271889 #5810] DEBUG -- : name[《闇の掌握/Grasp of Darkness》], card_type[creature], card.price[150]
+I, [2016-05-27T19:05:26.272183 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:26.272449 #5810]  INFO -- : price of 《神聖なる月光/Hallowed Moonlight》 initialize
+D, [2016-05-27T19:05:26.272690 #5810] DEBUG -- : hareruya.create_card_list call 《神聖なる月光/Hallowed Moonlight》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:26.272885 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:26.273048 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:26.273194 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:26.273336 #5810] DEBUG -- : 《神聖なる月光/Hallowed Moonlight》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:26.273464 #5810] DEBUG -- : how match [《神聖なる月光/Hallowed Moonlight》] at hareruya
+D, [2016-05-27T19:05:26.273586 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000017JN/]
+D, [2016-05-27T19:05:27.748558 #5810] DEBUG -- : hareruya.how_match?(《神聖なる月光/Hallowed Moonlight》) finished. price is 350
+D, [2016-05-27T19:05:27.749013 #5810] DEBUG -- : [《神聖なる月光/Hallowed Moonlight》] is [350]
+D, [2016-05-27T19:05:27.749359 #5810] DEBUG -- : date is 2016-05-27T19:05:27+09:00
+D, [2016-05-27T19:05:27.749743 #5810] DEBUG -- : renewed value is 350
+D, [2016-05-27T19:05:27.750093 #5810] DEBUG -- : name[《神聖なる月光/Hallowed Moonlight》], card_type[creature], card.price[350]
+I, [2016-05-27T19:05:27.750560 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:27.750868 #5810]  INFO -- : price of 《荒野の確保/Secure the Wastes》 initialize
+D, [2016-05-27T19:05:27.751186 #5810] DEBUG -- : hareruya.create_card_list call 《荒野の確保/Secure the Wastes》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:27.751453 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:27.751705 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:27.751944 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:27.752158 #5810] DEBUG -- : 《荒野の確保/Secure the Wastes》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:27.752340 #5810] DEBUG -- : how match [《荒野の確保/Secure the Wastes》] at hareruya
+D, [2016-05-27T19:05:27.752517 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gDTK000058JN/]
+D, [2016-05-27T19:05:29.725019 #5810] DEBUG -- : hareruya.how_match?(《荒野の確保/Secure the Wastes》) finished. price is 950
+D, [2016-05-27T19:05:29.725313 #5810] DEBUG -- : [《荒野の確保/Secure the Wastes》] is [950]
+D, [2016-05-27T19:05:29.725560 #5810] DEBUG -- : date is 2016-05-27T19:05:29+09:00
+D, [2016-05-27T19:05:29.725790 #5810] DEBUG -- : renewed value is 950
+D, [2016-05-27T19:05:29.726004 #5810] DEBUG -- : name[《荒野の確保/Secure the Wastes》], card_type[creature], card.price[950]
+I, [2016-05-27T19:05:29.726285 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:29.726504 #5810]  INFO -- : price of 《究極の価格/Ultimate Price》 initialize
+D, [2016-05-27T19:05:29.726706 #5810] DEBUG -- : hareruya.create_card_list call 《究極の価格/Ultimate Price》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:29.726896 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:29.727093 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:29.727288 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:29.727487 #5810] DEBUG -- : 《究極の価格/Ultimate Price》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:29.727663 #5810] DEBUG -- : how match [《究極の価格/Ultimate Price》] at hareruya
+D, [2016-05-27T19:05:29.727829 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gDTK000144JN/]
+D, [2016-05-27T19:05:31.888564 #5810] DEBUG -- : hareruya.how_match?(《究極の価格/Ultimate Price》) finished. price is 80
+D, [2016-05-27T19:05:31.888875 #5810] DEBUG -- : [《究極の価格/Ultimate Price》] is [80]
+D, [2016-05-27T19:05:31.889094 #5810] DEBUG -- : date is 2016-05-27T19:05:31+09:00
+D, [2016-05-27T19:05:31.889271 #5810] DEBUG -- : renewed value is 80
+D, [2016-05-27T19:05:31.889451 #5810] DEBUG -- : name[《究極の価格/Ultimate Price》], card_type[creature], card.price[80]
+I, [2016-05-27T19:05:31.889793 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:31.890056 #5810]  INFO -- : price of 《闇の誓願/Dark Petition》 initialize
+D, [2016-05-27T19:05:31.890244 #5810] DEBUG -- : hareruya.create_card_list call 《闇の誓願/Dark Petition》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:31.890427 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:31.890651 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:31.890857 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:31.891079 #5810] DEBUG -- : 《闇の誓願/Dark Petition》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:31.891287 #5810] DEBUG -- : how match [《闇の誓願/Dark Petition》] at hareruya
+D, [2016-05-27T19:05:31.891479 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000090JN/]
+D, [2016-05-27T19:05:33.005207 #5810] DEBUG -- : hareruya.how_match?(《闇の誓願/Dark Petition》) finished. price is 900
+D, [2016-05-27T19:05:33.005399 #5810] DEBUG -- : [《闇の誓願/Dark Petition》] is [900]
+D, [2016-05-27T19:05:33.005669 #5810] DEBUG -- : date is 2016-05-27T19:05:33+09:00
+D, [2016-05-27T19:05:33.005816 #5810] DEBUG -- : renewed value is 900
+D, [2016-05-27T19:05:33.005949 #5810] DEBUG -- : name[《闇の誓願/Dark Petition》], card_type[creature], card.price[900]
+I, [2016-05-27T19:05:33.006147 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:33.006333 #5810]  INFO -- : price of 《衰滅/Languish》 initialize
+D, [2016-05-27T19:05:33.006519 #5810] DEBUG -- : hareruya.create_card_list call 《衰滅/Languish》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:33.006730 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:33.006925 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:33.007152 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:33.007382 #5810] DEBUG -- : 《衰滅/Languish》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:33.007546 #5810] DEBUG -- : how match [《衰滅/Languish》] at hareruya
+D, [2016-05-27T19:05:33.007684 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000105JN/]
+D, [2016-05-27T19:05:34.956128 #5810] DEBUG -- : hareruya.how_match?(《衰滅/Languish》) finished. price is 1100
+D, [2016-05-27T19:05:34.956485 #5810] DEBUG -- : [《衰滅/Languish》] is [1100]
+D, [2016-05-27T19:05:34.956755 #5810] DEBUG -- : date is 2016-05-27T19:05:34+09:00
+D, [2016-05-27T19:05:34.957035 #5810] DEBUG -- : renewed value is 1100
+D, [2016-05-27T19:05:34.957256 #5810] DEBUG -- : name[《衰滅/Languish》], card_type[creature], card.price[1100]
+I, [2016-05-27T19:05:34.957588 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:34.957825 #5810]  INFO -- : price of 《次元の激高/Planar Outburst》 initialize
+D, [2016-05-27T19:05:34.958028 #5810] DEBUG -- : hareruya.create_card_list call 《次元の激高/Planar Outburst》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:34.958190 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:34.958331 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:34.958475 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:34.958606 #5810] DEBUG -- : 《次元の激高/Planar Outburst》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:34.958729 #5810] DEBUG -- : how match [《次元の激高/Planar Outburst》] at hareruya
+D, [2016-05-27T19:05:34.958849 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000042JN/]
+D, [2016-05-27T19:05:37.427136 #5810] DEBUG -- : hareruya.how_match?(《次元の激高/Planar Outburst》) finished. price is 150
+D, [2016-05-27T19:05:37.427419 #5810] DEBUG -- : [《次元の激高/Planar Outburst》] is [150]
+D, [2016-05-27T19:05:37.427617 #5810] DEBUG -- : date is 2016-05-27T19:05:37+09:00
+D, [2016-05-27T19:05:37.427804 #5810] DEBUG -- : renewed value is 150
+D, [2016-05-27T19:05:37.428002 #5810] DEBUG -- : name[《次元の激高/Planar Outburst》], card_type[creature], card.price[150]
+I, [2016-05-27T19:05:37.428300 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:37.428472 #5810]  INFO -- : price of 《骨読み/Read the Bones》 initialize
+D, [2016-05-27T19:05:37.428618 #5810] DEBUG -- : hareruya.create_card_list call 《骨読み/Read the Bones》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:37.428811 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:37.428951 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:37.429080 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:37.429240 #5810] DEBUG -- : 《骨読み/Read the Bones》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:37.429438 #5810] DEBUG -- : how match [《骨読み/Read the Bones》] at hareruya
+D, [2016-05-27T19:05:37.429694 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000114JN/]
+D, [2016-05-27T19:05:39.478662 #5810] DEBUG -- : hareruya.how_match?(《骨読み/Read the Bones》) finished. price is 50
+D, [2016-05-27T19:05:39.478936 #5810] DEBUG -- : [《骨読み/Read the Bones》] is [50]
+D, [2016-05-27T19:05:39.479134 #5810] DEBUG -- : date is 2016-05-27T19:05:39+09:00
+D, [2016-05-27T19:05:39.479310 #5810] DEBUG -- : renewed value is 50
+D, [2016-05-27T19:05:39.479488 #5810] DEBUG -- : name[《骨読み/Read the Bones》], card_type[creature], card.price[50]
+I, [2016-05-27T19:05:39.479731 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:39.479886 #5810]  INFO -- : price of 《破滅の道/Ruinous Path》 initialize
+D, [2016-05-27T19:05:39.480039 #5810] DEBUG -- : hareruya.create_card_list call 《破滅の道/Ruinous Path》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:39.480167 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:39.480293 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:39.480422 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:39.480639 #5810] DEBUG -- : 《破滅の道/Ruinous Path》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:39.480825 #5810] DEBUG -- : how match [《破滅の道/Ruinous Path》] at hareruya
+D, [2016-05-27T19:05:39.480985 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000123JN/]
+D, [2016-05-27T19:05:41.876012 #5810] DEBUG -- : hareruya.how_match?(《破滅の道/Ruinous Path》) finished. price is 400
+D, [2016-05-27T19:05:41.876372 #5810] DEBUG -- : [《破滅の道/Ruinous Path》] is [400]
+D, [2016-05-27T19:05:41.876667 #5810] DEBUG -- : date is 2016-05-27T19:05:41+09:00
+D, [2016-05-27T19:05:41.876910 #5810] DEBUG -- : renewed value is 400
+D, [2016-05-27T19:05:41.877134 #5810] DEBUG -- : name[《破滅の道/Ruinous Path》], card_type[creature], card.price[400]
+I, [2016-05-27T19:05:41.877436 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:41.877649 #5810]  INFO -- : price of 《精神背信/Transgress the Mind》 initialize
+D, [2016-05-27T19:05:41.877869 #5810] DEBUG -- : hareruya.create_card_list call 《精神背信/Transgress the Mind》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:41.878068 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:41.878221 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:41.878364 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:41.878515 #5810] DEBUG -- : 《精神背信/Transgress the Mind》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:41.878639 #5810] DEBUG -- : how match [《精神背信/Transgress the Mind》] at hareruya
+D, [2016-05-27T19:05:41.878764 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000101JN/]
+D, [2016-05-27T19:05:43.990857 #5810] DEBUG -- : hareruya.how_match?(《精神背信/Transgress the Mind》) finished. price is 300
+D, [2016-05-27T19:05:43.999330 #5810] DEBUG -- : [《精神背信/Transgress the Mind》] is [300]
+D, [2016-05-27T19:05:43.999800 #5810] DEBUG -- : date is 2016-05-27T19:05:43+09:00
+D, [2016-05-27T19:05:44.000787 #5810] DEBUG -- : renewed value is 300
+D, [2016-05-27T19:05:44.001805 #5810] DEBUG -- : name[《精神背信/Transgress the Mind》], card_type[creature], card.price[300]
+I, [2016-05-27T19:05:44.002890 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:44.003790 #5810]  INFO -- : price of 《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》 initialize
+D, [2016-05-27T19:05:44.004795 #5810] DEBUG -- : hareruya.create_card_list call 《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:44.005461 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:44.005671 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:44.005837 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:44.005952 #5810] DEBUG -- : 《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:44.006130 #5810] DEBUG -- : how match [《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》] at hareruya
+D, [2016-05-27T19:05:44.006296 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000029JN/]
+D, [2016-05-27T19:05:45.961271 #5810] DEBUG -- : hareruya.how_match?(《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》) finished. price is 3300
+D, [2016-05-27T19:05:45.961592 #5810] DEBUG -- : [《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》] is [3300]
+D, [2016-05-27T19:05:45.961782 #5810] DEBUG -- : date is 2016-05-27T19:05:45+09:00
+D, [2016-05-27T19:05:45.961982 #5810] DEBUG -- : renewed value is 3300
+D, [2016-05-27T19:05:45.962182 #5810] DEBUG -- : name[《ゼンディカーの同盟者、ギデオン/Gideon, Ally of Zendikar》], card_type[creature], card.price[3300]
+I, [2016-05-27T19:05:45.962477 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:45.962635 #5810]  INFO -- : price of 《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》 initialize
+D, [2016-05-27T19:05:45.962784 #5810] DEBUG -- : hareruya.create_card_list call 《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:45.962908 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:45.963030 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:45.963152 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:45.963273 #5810] DEBUG -- : 《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:45.963394 #5810] DEBUG -- : how match [《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》] at hareruya
+D, [2016-05-27T19:05:45.963519 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000119JN/]
+D, [2016-05-27T19:05:47.782744 #5810] DEBUG -- : hareruya.how_match?(《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》) finished. price is 850
+D, [2016-05-27T19:05:47.783230 #5810] DEBUG -- : [《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》] is [850]
+D, [2016-05-27T19:05:47.783683 #5810] DEBUG -- : date is 2016-05-27T19:05:47+09:00
+D, [2016-05-27T19:05:47.783984 #5810] DEBUG -- : renewed value is 850
+D, [2016-05-27T19:05:47.784234 #5810] DEBUG -- : name[《灯の再覚醒、オブ・ニクシリス/Ob Nixilis Reignited》], card_type[creature], card.price[850]
+I, [2016-05-27T19:05:47.784619 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:47.784881 #5810]  INFO -- : price of 《死の宿敵、ソリン/Sorin, Grim Nemesis》 initialize
+D, [2016-05-27T19:05:47.785162 #5810] DEBUG -- : hareruya.create_card_list call 《死の宿敵、ソリン/Sorin, Grim Nemesis》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:47.785414 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:47.785682 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:47.786044 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:47.786304 #5810] DEBUG -- : 《死の宿敵、ソリン/Sorin, Grim Nemesis》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:47.786498 #5810] DEBUG -- : how match [《死の宿敵、ソリン/Sorin, Grim Nemesis》] at hareruya
+D, [2016-05-27T19:05:47.786683 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000250JN/]
+D, [2016-05-27T19:05:49.931960 #5810] DEBUG -- : hareruya.how_match?(《死の宿敵、ソリン/Sorin, Grim Nemesis》) finished. price is 1600
+D, [2016-05-27T19:05:49.932554 #5810] DEBUG -- : [《死の宿敵、ソリン/Sorin, Grim Nemesis》] is [1600]
+D, [2016-05-27T19:05:49.933125 #5810] DEBUG -- : date is 2016-05-27T19:05:49+09:00
+D, [2016-05-27T19:05:49.933615 #5810] DEBUG -- : renewed value is 1600
+D, [2016-05-27T19:05:49.935625 #5810] DEBUG -- : name[《死の宿敵、ソリン/Sorin, Grim Nemesis》], card_type[creature], card.price[1600]
+I, [2016-05-27T19:05:49.936505 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:49.937118 #5810]  INFO -- : price of 《変位エルドラージ/Eldrazi Displacer》 initialize
+D, [2016-05-27T19:05:49.937745 #5810] DEBUG -- : hareruya.create_card_list call 《変位エルドラージ/Eldrazi Displacer》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:49.938253 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:49.938762 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:49.939202 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:49.939434 #5810] DEBUG -- : 《変位エルドラージ/Eldrazi Displacer》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:49.939698 #5810] DEBUG -- : how match [《変位エルドラージ/Eldrazi Displacer》] at hareruya
+D, [2016-05-27T19:05:49.939943 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000013JN/]
+D, [2016-05-27T19:05:52.338837 #5810] DEBUG -- : hareruya.how_match?(《変位エルドラージ/Eldrazi Displacer》) finished. price is 900
+D, [2016-05-27T19:05:52.339275 #5810] DEBUG -- : [《変位エルドラージ/Eldrazi Displacer》] is [900]
+D, [2016-05-27T19:05:52.339592 #5810] DEBUG -- : date is 2016-05-27T19:05:52+09:00
+D, [2016-05-27T19:05:52.339814 #5810] DEBUG -- : renewed value is 900
+D, [2016-05-27T19:05:52.340061 #5810] DEBUG -- : name[《変位エルドラージ/Eldrazi Displacer》], card_type[sideboardCards], card.price[900]
+I, [2016-05-27T19:05:52.340495 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:52.340712 #5810]  INFO -- : price of 《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》 initialize
+D, [2016-05-27T19:05:52.340914 #5810] DEBUG -- : hareruya.create_card_list call 《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:52.341101 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:52.341314 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:52.341524 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:52.341736 #5810] DEBUG -- : 《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:52.341945 #5810] DEBUG -- : how match [《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》] at hareruya
+D, [2016-05-27T19:05:52.342143 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000086JN/]
+D, [2016-05-27T19:05:54.261668 #5810] DEBUG -- : hareruya.how_match?(《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》) finished. price is 3800
+D, [2016-05-27T19:05:54.262044 #5810] DEBUG -- : [《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》] is [3800]
+D, [2016-05-27T19:05:54.262424 #5810] DEBUG -- : date is 2016-05-27T19:05:54+09:00
+D, [2016-05-27T19:05:54.262688 #5810] DEBUG -- : renewed value is 3800
+D, [2016-05-27T19:05:54.262994 #5810] DEBUG -- : name[《ゲトの裏切り者、カリタス/Kalitas, Traitor of Ghet》], card_type[sideboardCards], card.price[3800]
+I, [2016-05-27T19:05:54.263459 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:54.263717 #5810]  INFO -- : price of 《保護者、リンヴァーラ/Linvala, the Preserver》 initialize
+D, [2016-05-27T19:05:54.263989 #5810] DEBUG -- : hareruya.create_card_list call 《保護者、リンヴァーラ/Linvala, the Preserver》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:54.264214 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:54.264441 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:54.264677 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:54.264946 #5810] DEBUG -- : 《保護者、リンヴァーラ/Linvala, the Preserver》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:54.265187 #5810] DEBUG -- : how match [《保護者、リンヴァーラ/Linvala, the Preserver》] at hareruya
+D, [2016-05-27T19:05:54.265421 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000025JN/]
+D, [2016-05-27T19:05:56.452256 #5810] DEBUG -- : hareruya.how_match?(《保護者、リンヴァーラ/Linvala, the Preserver》) finished. price is 400
+D, [2016-05-27T19:05:56.452525 #5810] DEBUG -- : [《保護者、リンヴァーラ/Linvala, the Preserver》] is [400]
+D, [2016-05-27T19:05:56.452738 #5810] DEBUG -- : date is 2016-05-27T19:05:56+09:00
+D, [2016-05-27T19:05:56.452912 #5810] DEBUG -- : renewed value is 400
+D, [2016-05-27T19:05:56.453277 #5810] DEBUG -- : name[《保護者、リンヴァーラ/Linvala, the Preserver》], card_type[sideboardCards], card.price[400]
+I, [2016-05-27T19:05:56.453513 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:56.453694 #5810]  INFO -- : price of 《現実を砕くもの/Reality Smasher》 initialize
+D, [2016-05-27T19:05:56.453832 #5810] DEBUG -- : hareruya.create_card_list call 《現実を砕くもの/Reality Smasher》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:56.453949 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:56.454059 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:56.454170 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:56.454282 #5810] DEBUG -- : 《現実を砕くもの/Reality Smasher》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:56.454399 #5810] DEBUG -- : how match [《現実を砕くもの/Reality Smasher》] at hareruya
+D, [2016-05-27T19:05:56.454510 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000007JN/]
+D, [2016-05-27T19:05:57.806120 #5810] DEBUG -- : hareruya.how_match?(《現実を砕くもの/Reality Smasher》) finished. price is 1100
+D, [2016-05-27T19:05:57.806589 #5810] DEBUG -- : [《現実を砕くもの/Reality Smasher》] is [1100]
+D, [2016-05-27T19:05:57.806963 #5810] DEBUG -- : date is 2016-05-27T19:05:57+09:00
+D, [2016-05-27T19:05:57.807310 #5810] DEBUG -- : renewed value is 1100
+D, [2016-05-27T19:05:57.807662 #5810] DEBUG -- : name[《現実を砕くもの/Reality Smasher》], card_type[sideboardCards], card.price[1100]
+I, [2016-05-27T19:05:57.808131 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:57.808480 #5810]  INFO -- : price of 《難題の予見者/Thought-Knot Seer》 initialize
+D, [2016-05-27T19:05:57.808774 #5810] DEBUG -- : hareruya.create_card_list call 《難題の予見者/Thought-Knot Seer》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:57.809048 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:57.809320 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:57.809570 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:57.809822 #5810] DEBUG -- : 《難題の予見者/Thought-Knot Seer》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:57.810018 #5810] DEBUG -- : how match [《難題の予見者/Thought-Knot Seer》] at hareruya
+D, [2016-05-27T19:05:57.810223 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gOGW000009JN/]
+D, [2016-05-27T19:05:59.026662 #5810] DEBUG -- : hareruya.how_match?(《難題の予見者/Thought-Knot Seer》) finished. price is 1400
+D, [2016-05-27T19:05:59.026938 #5810] DEBUG -- : [《難題の予見者/Thought-Knot Seer》] is [1400]
+D, [2016-05-27T19:05:59.027172 #5810] DEBUG -- : date is 2016-05-27T19:05:59+09:00
+D, [2016-05-27T19:05:59.027380 #5810] DEBUG -- : renewed value is 1400
+D, [2016-05-27T19:05:59.027543 #5810] DEBUG -- : name[《難題の予見者/Thought-Knot Seer》], card_type[sideboardCards], card.price[1400]
+I, [2016-05-27T19:05:59.027812 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:05:59.028004 #5810]  INFO -- : price of 《究極の価格/Ultimate Price》 initialize
+D, [2016-05-27T19:05:59.028231 #5810] DEBUG -- : hareruya.create_card_list call 《究極の価格/Ultimate Price》.renew_at(card, hareruya)
+D, [2016-05-27T19:05:59.028444 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:05:59.028655 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:05:59.028855 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:05:59.029059 #5810] DEBUG -- : 《究極の価格/Ultimate Price》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:05:59.029259 #5810] DEBUG -- : how match [《究極の価格/Ultimate Price》] at hareruya
+D, [2016-05-27T19:05:59.029454 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gDTK000144JN/]
+D, [2016-05-27T19:06:01.021730 #5810] DEBUG -- : hareruya.how_match?(《究極の価格/Ultimate Price》) finished. price is 80
+D, [2016-05-27T19:06:01.022033 #5810] DEBUG -- : [《究極の価格/Ultimate Price》] is [80]
+D, [2016-05-27T19:06:01.022377 #5810] DEBUG -- : date is 2016-05-27T19:06:01+09:00
+D, [2016-05-27T19:06:01.022695 #5810] DEBUG -- : renewed value is 80
+D, [2016-05-27T19:06:01.022932 #5810] DEBUG -- : name[《究極の価格/Ultimate Price》], card_type[sideboardCards], card.price[80]
+I, [2016-05-27T19:06:01.023195 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:06:01.023382 #5810]  INFO -- : price of 《強迫/Duress》 initialize
+D, [2016-05-27T19:06:01.023566 #5810] DEBUG -- : hareruya.create_card_list call 《強迫/Duress》.renew_at(card, hareruya)
+D, [2016-05-27T19:06:01.023733 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:06:01.023858 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:06:01.023988 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:06:01.024109 #5810] DEBUG -- : 《強迫/Duress》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:06:01.024230 #5810] DEBUG -- : how match [《強迫/Duress》] at hareruya
+D, [2016-05-27T19:06:01.024350 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gDTK000173JN/]
+D, [2016-05-27T19:06:01.858877 #5810] DEBUG -- : hareruya.how_match?(《強迫/Duress》) finished. price is 50
+D, [2016-05-27T19:06:01.859146 #5810] DEBUG -- : [《強迫/Duress》] is [50]
+D, [2016-05-27T19:06:01.859324 #5810] DEBUG -- : date is 2016-05-27T19:06:01+09:00
+D, [2016-05-27T19:06:01.859483 #5810] DEBUG -- : renewed value is 50
+D, [2016-05-27T19:06:01.859653 #5810] DEBUG -- : name[《強迫/Duress》], card_type[sideboardCards], card.price[50]
+I, [2016-05-27T19:06:01.859881 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:06:01.860029 #5810]  INFO -- : price of 《無限の抹消/Infinite Obliteration》 initialize
+D, [2016-05-27T19:06:01.860165 #5810] DEBUG -- : hareruya.create_card_list call 《無限の抹消/Infinite Obliteration》.renew_at(card, hareruya)
+D, [2016-05-27T19:06:01.860288 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:06:01.860408 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:06:01.860568 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:06:01.860735 #5810] DEBUG -- : 《無限の抹消/Infinite Obliteration》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:06:01.860893 #5810] DEBUG -- : how match [《無限の抹消/Infinite Obliteration》] at hareruya
+D, [2016-05-27T19:06:01.861089 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gORI000103JN/]
+D, [2016-05-27T19:06:03.780436 #5810] DEBUG -- : hareruya.how_match?(《無限の抹消/Infinite Obliteration》) finished. price is 450
+D, [2016-05-27T19:06:03.780829 #5810] DEBUG -- : [《無限の抹消/Infinite Obliteration》] is [450]
+D, [2016-05-27T19:06:03.781105 #5810] DEBUG -- : date is 2016-05-27T19:06:03+09:00
+D, [2016-05-27T19:06:03.781360 #5810] DEBUG -- : renewed value is 450
+D, [2016-05-27T19:06:03.781627 #5810] DEBUG -- : name[《無限の抹消/Infinite Obliteration》], card_type[sideboardCards], card.price[450]
+I, [2016-05-27T19:06:03.781973 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:06:03.782282 #5810]  INFO -- : price of 《精神背信/Transgress the Mind》 initialize
+D, [2016-05-27T19:06:03.782485 #5810] DEBUG -- : hareruya.create_card_list call 《精神背信/Transgress the Mind》.renew_at(card, hareruya)
+D, [2016-05-27T19:06:03.782678 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:06:03.782836 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:06:03.783015 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:06:03.783242 #5810] DEBUG -- : 《精神背信/Transgress the Mind》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:06:03.783431 #5810] DEBUG -- : how match [《精神背信/Transgress the Mind》] at hareruya
+D, [2016-05-27T19:06:03.783609 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gBFZ000101JN/]
+D, [2016-05-27T19:06:05.568337 #5810] DEBUG -- : hareruya.how_match?(《精神背信/Transgress the Mind》) finished. price is 300
+D, [2016-05-27T19:06:05.568753 #5810] DEBUG -- : [《精神背信/Transgress the Mind》] is [300]
+D, [2016-05-27T19:06:05.569064 #5810] DEBUG -- : date is 2016-05-27T19:06:05+09:00
+D, [2016-05-27T19:06:05.569309 #5810] DEBUG -- : renewed value is 300
+D, [2016-05-27T19:06:05.569494 #5810] DEBUG -- : name[《精神背信/Transgress the Mind》], card_type[sideboardCards], card.price[300]
+I, [2016-05-27T19:06:05.569710 #5810]  INFO -- : Card.initialize
+I, [2016-05-27T19:06:05.570445 #5810]  INFO -- : price of 《死の重み/Dead Weight》 initialize
+D, [2016-05-27T19:06:05.570629 #5810] DEBUG -- : hareruya.create_card_list call 《死の重み/Dead Weight》.renew_at(card, hareruya)
+D, [2016-05-27T19:06:05.570783 #5810] DEBUG -- : card.price.renew_at(hareruya)
+D, [2016-05-27T19:06:05.570924 #5810] DEBUG -- : renew at hareruya start
+I, [2016-05-27T19:06:05.571074 #5810]  INFO -- : Store.initialize(Hareruya)
+D, [2016-05-27T19:06:05.571195 #5810] DEBUG -- : 《死の重み/Dead Weight》.price call hareruya.how_match?(card)
+D, [2016-05-27T19:06:05.571898 #5810] DEBUG -- : how match [《死の重み/Dead Weight》] at hareruya
+D, [2016-05-27T19:06:05.572110 #5810] DEBUG -- : url is [http://www.hareruyamtg.com/jp/g/gSOI000106JN/]
+D, [2016-05-27T19:06:07.543738 #5810] DEBUG -- : hareruya.how_match?(《死の重み/Dead Weight》) finished. price is 30
+D, [2016-05-27T19:06:07.544095 #5810] DEBUG -- : [《死の重み/Dead Weight》] is [30]
+D, [2016-05-27T19:06:07.544352 #5810] DEBUG -- : date is 2016-05-27T19:06:07+09:00
+D, [2016-05-27T19:06:07.544577 #5810] DEBUG -- : renewed value is 30
+D, [2016-05-27T19:06:07.544774 #5810] DEBUG -- : name[《死の重み/Dead Weight》], card_type[sideboardCards], card.price[30]
+D, [2016-05-27T19:06:07.545689 #5810] DEBUG -- : Deck[WB_Control_kD10100S] create_cardlist() finished.
+I, [2016-05-27T19:06:07.545846 #5810]  INFO -- : hareruya.convert_all_cardname_from_jp_to_eng(WB_Control_kD10100S) start.
+I, [2016-05-27T19:06:07.546226 #5810]  INFO -- : deck.get_contents start
+I, [2016-05-27T19:06:07.546401 #5810]  INFO -- : Blighted Fen.read_contents() start
+I, [2016-05-27T19:06:07.546768 #5810]  INFO -- : Blighted Fen.read_from_dom() start
+I, [2016-05-27T19:06:07.549276 #5810]  INFO -- : Blighted Fen.read_from_dom() finished
+I, [2016-05-27T19:06:07.549590 #5810]  INFO -- : Caves of Koilos.read_contents() start
+I, [2016-05-27T19:06:07.549919 #5810]  INFO -- : Caves of Koilos.read_from_dom() start
+I, [2016-05-27T19:06:07.551849 #5810]  INFO -- : Caves of Koilos.read_from_dom() finished
+I, [2016-05-27T19:06:07.552152 #5810]  INFO -- : Forsaken Sanctuary.read_contents() start
+I, [2016-05-27T19:06:07.552443 #5810]  INFO -- : Forsaken Sanctuary.read_from_dom() start
+I, [2016-05-27T19:06:07.554342 #5810]  INFO -- : Forsaken Sanctuary.read_from_dom() finished
+I, [2016-05-27T19:06:07.554826 #5810]  INFO -- : Plains.read_contents() start
+I, [2016-05-27T19:06:07.555205 #5810]  INFO -- : Plains.read_from_dom() start
+I, [2016-05-27T19:06:07.557217 #5810]  INFO -- : Plains.read_from_dom() finished
+I, [2016-05-27T19:06:07.557526 #5810]  INFO -- : Shambling Vent.read_contents() start
+I, [2016-05-27T19:06:07.557936 #5810]  INFO -- : Shambling Vent.read_from_dom() start
+I, [2016-05-27T19:06:07.561280 #5810]  INFO -- : Shambling Vent.read_from_dom() finished
+I, [2016-05-27T19:06:07.561821 #5810]  INFO -- : Swamp.read_contents() start
+I, [2016-05-27T19:06:07.562085 #5810]  INFO -- : Swamp.read_from_dom() start
+I, [2016-05-27T19:06:07.564439 #5810]  INFO -- : Swamp.read_from_dom() finished
+I, [2016-05-27T19:06:07.564842 #5810]  INFO -- : Westvale Abbey.read_contents() start
+I, [2016-05-27T19:06:07.565146 #5810]  INFO -- : Westvale Abbey.read_from_dom() start
+I, [2016-05-27T19:06:07.568537 #5810]  INFO -- : Westvale Abbey.read_from_dom() finished
+I, [2016-05-27T19:06:07.569011 #5810]  INFO -- : Anguished Unmaking.read_contents() start
+I, [2016-05-27T19:06:07.569515 #5810]  INFO -- : Anguished Unmaking.read_from_dom() start
+I, [2016-05-27T19:06:07.572805 #5810]  INFO -- : Anguished Unmaking.read_from_dom() finished
+I, [2016-05-27T19:06:07.573176 #5810]  INFO -- : Grasp of Darkness.read_contents() start
+I, [2016-05-27T19:06:07.573471 #5810]  INFO -- : Grasp of Darkness.read_from_dom() start
+I, [2016-05-27T19:06:07.576660 #5810]  INFO -- : Grasp of Darkness.read_from_dom() finished
+I, [2016-05-27T19:06:07.577111 #5810]  INFO -- : Hallowed Moonlight.read_contents() start
+I, [2016-05-27T19:06:07.577479 #5810]  INFO -- : Hallowed Moonlight.read_from_dom() start
+I, [2016-05-27T19:06:07.579931 #5810]  INFO -- : Hallowed Moonlight.read_from_dom() finished
+I, [2016-05-27T19:06:07.580618 #5810]  INFO -- : Secure the Wastes.read_contents() start
+I, [2016-05-27T19:06:07.581067 #5810]  INFO -- : Secure the Wastes.read_from_dom() start
+I, [2016-05-27T19:06:07.583268 #5810]  INFO -- : Secure the Wastes.read_from_dom() finished
+I, [2016-05-27T19:06:07.583619 #5810]  INFO -- : Ultimate Price.read_contents() start
+I, [2016-05-27T19:06:07.583889 #5810]  INFO -- : Ultimate Price.read_from_dom() start
+I, [2016-05-27T19:06:07.587004 #5810]  INFO -- : Ultimate Price.read_from_dom() finished
+I, [2016-05-27T19:06:07.587399 #5810]  INFO -- : Dark Petition.read_contents() start
+I, [2016-05-27T19:06:07.587665 #5810]  INFO -- : Dark Petition.read_from_dom() start
+I, [2016-05-27T19:06:07.590479 #5810]  INFO -- : Dark Petition.read_from_dom() finished
+I, [2016-05-27T19:06:07.590840 #5810]  INFO -- : Languish.read_contents() start
+I, [2016-05-27T19:06:07.591477 #5810]  INFO -- : Languish.read_from_dom() start
+I, [2016-05-27T19:06:07.594176 #5810]  INFO -- : Languish.read_from_dom() finished
+I, [2016-05-27T19:06:07.594627 #5810]  INFO -- : Planar Outburst.read_contents() start
+I, [2016-05-27T19:06:07.594992 #5810]  INFO -- : Planar Outburst.read_from_dom() start
+I, [2016-05-27T19:06:07.612226 #5810]  INFO -- : Planar Outburst.read_from_dom() finished
+I, [2016-05-27T19:06:07.612661 #5810]  INFO -- : Read the Bones.read_contents() start
+I, [2016-05-27T19:06:07.612935 #5810]  INFO -- : Read the Bones.read_from_dom() start
+I, [2016-05-27T19:06:07.615240 #5810]  INFO -- : Read the Bones.read_from_dom() finished
+I, [2016-05-27T19:06:07.615513 #5810]  INFO -- : Ruinous Path.read_contents() start
+I, [2016-05-27T19:06:07.615773 #5810]  INFO -- : Ruinous Path.read_from_dom() start
+I, [2016-05-27T19:06:07.618671 #5810]  INFO -- : Ruinous Path.read_from_dom() finished
+I, [2016-05-27T19:06:07.619086 #5810]  INFO -- : Transgress the Mind.read_contents() start
+I, [2016-05-27T19:06:07.619462 #5810]  INFO -- : Transgress the Mind.read_from_dom() start
+I, [2016-05-27T19:06:07.621673 #5810]  INFO -- : Transgress the Mind.read_from_dom() finished
+I, [2016-05-27T19:06:07.621958 #5810]  INFO -- : Gideon, Ally of Zendikar.read_contents() start
+I, [2016-05-27T19:06:07.622432 #5810]  INFO -- : Gideon, Ally of Zendikar.read_from_dom() start
+I, [2016-05-27T19:06:07.624587 #5810]  INFO -- : Gideon, Ally of Zendikar.read_from_dom() finished
+I, [2016-05-27T19:06:07.624846 #5810]  INFO -- : Ob Nixilis Reignited.read_contents() start
+I, [2016-05-27T19:06:07.625075 #5810]  INFO -- : Ob Nixilis Reignited.read_from_dom() start
+I, [2016-05-27T19:06:07.627948 #5810]  INFO -- : Ob Nixilis Reignited.read_from_dom() finished
+I, [2016-05-27T19:06:07.640006 #5810]  INFO -- : Sorin, Grim Nemesis.read_contents() start
+I, [2016-05-27T19:06:07.640427 #5810]  INFO -- : Sorin, Grim Nemesis.read_from_dom() start
+I, [2016-05-27T19:06:07.642513 #5810]  INFO -- : Sorin, Grim Nemesis.read_from_dom() finished
+I, [2016-05-27T19:06:07.642767 #5810]  INFO -- : Eldrazi Displacer.read_contents() start
+I, [2016-05-27T19:06:07.643075 #5810]  INFO -- : Eldrazi Displacer.read_from_dom() start
+I, [2016-05-27T19:06:07.645373 #5810]  INFO -- : Eldrazi Displacer.read_from_dom() finished
+I, [2016-05-27T19:06:07.645660 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_contents() start
+I, [2016-05-27T19:06:07.645927 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_from_dom() start
+I, [2016-05-27T19:06:07.647978 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_from_dom() finished
+I, [2016-05-27T19:06:07.648280 #5810]  INFO -- : Linvala, the Preserver.read_contents() start
+I, [2016-05-27T19:06:07.648578 #5810]  INFO -- : Linvala, the Preserver.read_from_dom() start
+I, [2016-05-27T19:06:07.650592 #5810]  INFO -- : Linvala, the Preserver.read_from_dom() finished
+I, [2016-05-27T19:06:07.650843 #5810]  INFO -- : Reality Smasher.read_contents() start
+I, [2016-05-27T19:06:07.651080 #5810]  INFO -- : Reality Smasher.read_from_dom() start
+I, [2016-05-27T19:06:07.652998 #5810]  INFO -- : Reality Smasher.read_from_dom() finished
+I, [2016-05-27T19:06:07.653253 #5810]  INFO -- : Thought-Knot Seer.read_contents() start
+I, [2016-05-27T19:06:07.653489 #5810]  INFO -- : Thought-Knot Seer.read_from_dom() start
+I, [2016-05-27T19:06:07.655404 #5810]  INFO -- : Thought-Knot Seer.read_from_dom() finished
+I, [2016-05-27T19:06:07.655654 #5810]  INFO -- : Ultimate Price.read_contents() start
+I, [2016-05-27T19:06:07.655896 #5810]  INFO -- : Ultimate Price.read_from_dom() start
+I, [2016-05-27T19:06:07.657906 #5810]  INFO -- : Ultimate Price.read_from_dom() finished
+I, [2016-05-27T19:06:07.658161 #5810]  INFO -- : Duress.read_contents() start
+I, [2016-05-27T19:06:07.658402 #5810]  INFO -- : Duress.read_from_dom() start
+I, [2016-05-27T19:06:07.660820 #5810]  INFO -- : Duress.read_from_dom() finished
+I, [2016-05-27T19:06:07.661111 #5810]  INFO -- : Infinite Obliteration.read_contents() start
+I, [2016-05-27T19:06:07.661382 #5810]  INFO -- : Infinite Obliteration.read_from_dom() start
+I, [2016-05-27T19:06:07.664099 #5810]  INFO -- : Infinite Obliteration.read_from_dom() finished
+I, [2016-05-27T19:06:07.664557 #5810]  INFO -- : Transgress the Mind.read_contents() start
+I, [2016-05-27T19:06:07.664957 #5810]  INFO -- : Transgress the Mind.read_from_dom() start
+I, [2016-05-27T19:06:07.668568 #5810]  INFO -- : Transgress the Mind.read_from_dom() finished
+I, [2016-05-27T19:06:07.668978 #5810]  INFO -- : Dead Weight.read_contents() start
+I, [2016-05-27T19:06:07.669301 #5810]  INFO -- : Dead Weight.read_from_dom() start
+I, [2016-05-27T19:06:07.671797 #5810]  INFO -- : Dead Weight.read_from_dom() finished
+I, [2016-05-27T19:06:07.672139 #5810]  INFO -- : WB_Control_kD10100S.get_sum_of_generationg_manas() start.
+I, [2016-05-27T19:06:07.672256 #5810]  INFO -- : calc_sum_of_generating_mana(WB_Control_kD10100S) start.
+D, [2016-05-27T19:06:07.672392 #5810] DEBUG -- : card.name[Blighted Fen]
+D, [2016-05-27T19:06:07.672529 #5810] DEBUG -- : card_type[land], card.name[Blighted Fen], card.quantity[1], manacost[]
+I, [2016-05-27T19:06:07.672666 #5810]  INFO -- : decompose_generationg_mana_symbol(C) start.
+D, [2016-05-27T19:06:07.672853 #5810] DEBUG -- : return ["C"]
+D, [2016-05-27T19:06:07.672997 #5810] DEBUG -- : manas[["C"]]
+D, [2016-05-27T19:06:07.673144 #5810] DEBUG -- : card.name[Caves of Koilos]
+D, [2016-05-27T19:06:07.673291 #5810] DEBUG -- : card_type[land], card.name[Caves of Koilos], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.673426 #5810]  INFO -- : decompose_generationg_mana_symbol(C-W-B) start.
+D, [2016-05-27T19:06:07.673585 #5810] DEBUG -- : return ["C", "W", "B"]
+D, [2016-05-27T19:06:07.673745 #5810] DEBUG -- : manas[["C", "W", "B"]]
+D, [2016-05-27T19:06:07.673864 #5810] DEBUG -- : card.name[Forsaken Sanctuary]
+D, [2016-05-27T19:06:07.674005 #5810] DEBUG -- : card_type[land], card.name[Forsaken Sanctuary], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.674133 #5810]  INFO -- : decompose_generationg_mana_symbol(W-B) start.
+D, [2016-05-27T19:06:07.674284 #5810] DEBUG -- : return ["W", "B"]
+D, [2016-05-27T19:06:07.674414 #5810] DEBUG -- : manas[["W", "B"]]
+D, [2016-05-27T19:06:07.674539 #5810] DEBUG -- : card.name[Plains]
+D, [2016-05-27T19:06:07.674665 #5810] DEBUG -- : card_type[land], card.name[Plains], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.674779 #5810]  INFO -- : decompose_generationg_mana_symbol(W) start.
+D, [2016-05-27T19:06:07.674903 #5810] DEBUG -- : return ["W"]
+D, [2016-05-27T19:06:07.675031 #5810] DEBUG -- : manas[["W"]]
+D, [2016-05-27T19:06:07.675130 #5810] DEBUG -- : card.name[Shambling Vent]
+D, [2016-05-27T19:06:07.675227 #5810] DEBUG -- : card_type[land], card.name[Shambling Vent], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.675321 #5810]  INFO -- : decompose_generationg_mana_symbol(W-B) start.
+D, [2016-05-27T19:06:07.675496 #5810] DEBUG -- : return ["W", "B"]
+D, [2016-05-27T19:06:07.675635 #5810] DEBUG -- : manas[["W", "B"]]
+D, [2016-05-27T19:06:07.675781 #5810] DEBUG -- : card.name[Swamp]
+D, [2016-05-27T19:06:07.675930 #5810] DEBUG -- : card_type[land], card.name[Swamp], card.quantity[6], manacost[]
+I, [2016-05-27T19:06:07.676124 #5810]  INFO -- : decompose_generationg_mana_symbol(B) start.
+D, [2016-05-27T19:06:07.676316 #5810] DEBUG -- : return ["B"]
+D, [2016-05-27T19:06:07.676443 #5810] DEBUG -- : manas[["B"]]
+D, [2016-05-27T19:06:07.676595 #5810] DEBUG -- : card.name[Westvale Abbey]
+D, [2016-05-27T19:06:07.676737 #5810] DEBUG -- : card_type[land], card.name[Westvale Abbey], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.676878 #5810]  INFO -- : decompose_generationg_mana_symbol(C) start.
+D, [2016-05-27T19:06:07.677094 #5810] DEBUG -- : return ["C"]
+D, [2016-05-27T19:06:07.677228 #5810] DEBUG -- : manas[["C"]]
+D, [2016-05-27T19:06:07.677360 #5810] DEBUG -- : card.name[Anguished Unmaking]
+D, [2016-05-27T19:06:07.677483 #5810] DEBUG -- : card_type[creature], card.name[Anguished Unmaking], card.quantity[3], manacost[1WB]
+I, [2016-05-27T19:06:07.677650 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.677797 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.677903 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.678002 #5810] DEBUG -- : card.name[Grasp of Darkness]
+D, [2016-05-27T19:06:07.678098 #5810] DEBUG -- : card_type[creature], card.name[Grasp of Darkness], card.quantity[3], manacost[BB]
+I, [2016-05-27T19:06:07.678192 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.678297 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.678390 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.678487 #5810] DEBUG -- : card.name[Hallowed Moonlight]
+D, [2016-05-27T19:06:07.678587 #5810] DEBUG -- : card_type[creature], card.name[Hallowed Moonlight], card.quantity[2], manacost[1W]
+I, [2016-05-27T19:06:07.678734 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.678886 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.679022 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.679167 #5810] DEBUG -- : card.name[Secure the Wastes]
+D, [2016-05-27T19:06:07.679298 #5810] DEBUG -- : card_type[creature], card.name[Secure the Wastes], card.quantity[3], manacost[ＸW]
+I, [2016-05-27T19:06:07.679432 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.679566 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.679705 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.679852 #5810] DEBUG -- : card.name[Ultimate Price]
+D, [2016-05-27T19:06:07.679962 #5810] DEBUG -- : card_type[creature], card.name[Ultimate Price], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.680078 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.680186 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.680281 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.680398 #5810] DEBUG -- : card.name[Dark Petition]
+D, [2016-05-27T19:06:07.680494 #5810] DEBUG -- : card_type[creature], card.name[Dark Petition], card.quantity[1], manacost[3BB]
+I, [2016-05-27T19:06:07.680594 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.680740 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.680858 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.680956 #5810] DEBUG -- : card.name[Languish]
+D, [2016-05-27T19:06:07.681109 #5810] DEBUG -- : card_type[creature], card.name[Languish], card.quantity[4], manacost[2BB]
+I, [2016-05-27T19:06:07.681260 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.681377 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.681480 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.681582 #5810] DEBUG -- : card.name[Planar Outburst]
+D, [2016-05-27T19:06:07.681688 #5810] DEBUG -- : card_type[creature], card.name[Planar Outburst], card.quantity[1], manacost[3WW]
+I, [2016-05-27T19:06:07.681787 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.681911 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.682010 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.682115 #5810] DEBUG -- : card.name[Read the Bones]
+D, [2016-05-27T19:06:07.682228 #5810] DEBUG -- : card_type[creature], card.name[Read the Bones], card.quantity[4], manacost[2B]
+I, [2016-05-27T19:06:07.682326 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.682436 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.682534 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.682662 #5810] DEBUG -- : card.name[Ruinous Path]
+D, [2016-05-27T19:06:07.682762 #5810] DEBUG -- : card_type[creature], card.name[Ruinous Path], card.quantity[2], manacost[1BB]
+I, [2016-05-27T19:06:07.682860 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.682969 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.683068 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.683169 #5810] DEBUG -- : card.name[Transgress the Mind]
+D, [2016-05-27T19:06:07.683268 #5810] DEBUG -- : card_type[creature], card.name[Transgress the Mind], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.683374 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.683500 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.683599 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.683711 #5810] DEBUG -- : card.name[Gideon, Ally of Zendikar]
+D, [2016-05-27T19:06:07.683811 #5810] DEBUG -- : card_type[creature], card.name[Gideon, Ally of Zendikar], card.quantity[4], manacost[2WW]
+I, [2016-05-27T19:06:07.683909 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.684029 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.684130 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.684232 #5810] DEBUG -- : card.name[Ob Nixilis Reignited]
+D, [2016-05-27T19:06:07.684332 #5810] DEBUG -- : card_type[creature], card.name[Ob Nixilis Reignited], card.quantity[2], manacost[3BB]
+I, [2016-05-27T19:06:07.684446 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.684555 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.684661 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.684762 #5810] DEBUG -- : card.name[Sorin, Grim Nemesis]
+D, [2016-05-27T19:06:07.684861 #5810] DEBUG -- : card_type[creature], card.name[Sorin, Grim Nemesis], card.quantity[2], manacost[4WB]
+I, [2016-05-27T19:06:07.684976 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.685087 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.685189 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.685290 #5810] DEBUG -- : card.name[Eldrazi Displacer]
+D, [2016-05-27T19:06:07.685389 #5810] DEBUG -- : card_type[sideboardCards], card.name[Eldrazi Displacer], card.quantity[1], manacost[2W]
+I, [2016-05-27T19:06:07.685506 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.685634 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.685738 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.685839 #5810] DEBUG -- : card.name[Kalitas, Traitor of Ghet]
+D, [2016-05-27T19:06:07.685938 #5810] DEBUG -- : card_type[sideboardCards], card.name[Kalitas, Traitor of Ghet], card.quantity[3], manacost[2BB]
+I, [2016-05-27T19:06:07.686052 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.686169 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.686267 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.686368 #5810] DEBUG -- : card.name[Linvala, the Preserver]
+D, [2016-05-27T19:06:07.686478 #5810] DEBUG -- : card_type[sideboardCards], card.name[Linvala, the Preserver], card.quantity[1], manacost[4WW]
+I, [2016-05-27T19:06:07.686577 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.686690 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.686788 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.686900 #5810] DEBUG -- : card.name[Reality Smasher]
+D, [2016-05-27T19:06:07.687013 #5810] DEBUG -- : card_type[sideboardCards], card.name[Reality Smasher], card.quantity[3], manacost[4C]
+I, [2016-05-27T19:06:07.690132 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.690258 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.691776 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.691893 #5810] DEBUG -- : card.name[Thought-Knot Seer]
+D, [2016-05-27T19:06:07.692004 #5810] DEBUG -- : card_type[sideboardCards], card.name[Thought-Knot Seer], card.quantity[1], manacost[3C]
+I, [2016-05-27T19:06:07.692119 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.692243 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.692354 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.692464 #5810] DEBUG -- : card.name[Ultimate Price]
+D, [2016-05-27T19:06:07.692577 #5810] DEBUG -- : card_type[sideboardCards], card.name[Ultimate Price], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.692684 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.692803 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.692911 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.693020 #5810] DEBUG -- : card.name[Duress]
+D, [2016-05-27T19:06:07.693149 #5810] DEBUG -- : card_type[sideboardCards], card.name[Duress], card.quantity[1], manacost[B]
+I, [2016-05-27T19:06:07.693265 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.693387 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.693503 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.693619 #5810] DEBUG -- : card.name[Infinite Obliteration]
+D, [2016-05-27T19:06:07.693741 #5810] DEBUG -- : card_type[sideboardCards], card.name[Infinite Obliteration], card.quantity[1], manacost[1BB]
+I, [2016-05-27T19:06:07.693856 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.693986 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.694108 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.694255 #5810] DEBUG -- : card.name[Transgress the Mind]
+D, [2016-05-27T19:06:07.694378 #5810] DEBUG -- : card_type[sideboardCards], card.name[Transgress the Mind], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.694514 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.694637 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.694749 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.694861 #5810] DEBUG -- : card.name[Dead Weight]
+D, [2016-05-27T19:06:07.694972 #5810] DEBUG -- : card_type[sideboardCards], card.name[Dead Weight], card.quantity[2], manacost[B]
+I, [2016-05-27T19:06:07.695079 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.695198 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.695305 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.695457 #5810] DEBUG -- : sum of generating mana(WB_Control_kD10100S)
+D, [2016-05-27T19:06:07.695593 #5810] DEBUG -- : main is [W15U0B18R0G0C8A0]
+D, [2016-05-27T19:06:07.695708 #5810] DEBUG -- : side is [W0U0B0R0G0C0A0]
+I, [2016-05-27T19:06:07.695821 #5810]  INFO -- : WB_Control_kD10100S.calc_price_of_whole_deck start
+D, [2016-05-27T19:06:07.695940 #5810] DEBUG -- : @price_of_all = 30
+D, [2016-05-27T19:06:07.696052 #5810] DEBUG -- : @price_of_all = 1230
+D, [2016-05-27T19:06:07.696173 #5810] DEBUG -- : @price_of_all = 1550
+D, [2016-05-27T19:06:07.696283 #5810] DEBUG -- : @price_of_all = 1610
+D, [2016-05-27T19:06:07.696393 #5810] DEBUG -- : @price_of_all = 4410
+D, [2016-05-27T19:06:07.696502 #5810] DEBUG -- : @price_of_all = 4530
+D, [2016-05-27T19:06:07.696612 #5810] DEBUG -- : @price_of_all = 9330
+D, [2016-05-27T19:06:07.696736 #5810] DEBUG -- : @price_of_all = 10830
+D, [2016-05-27T19:06:07.696854 #5810] DEBUG -- : @price_of_all = 11280
+D, [2016-05-27T19:06:07.697014 #5810] DEBUG -- : @price_of_all = 11980
+D, [2016-05-27T19:06:07.697141 #5810] DEBUG -- : @price_of_all = 14830
+D, [2016-05-27T19:06:07.697254 #5810] DEBUG -- : @price_of_all = 14990
+D, [2016-05-27T19:06:07.697365 #5810] DEBUG -- : @price_of_all = 15890
+D, [2016-05-27T19:06:07.697478 #5810] DEBUG -- : @price_of_all = 20290
+D, [2016-05-27T19:06:07.697590 #5810] DEBUG -- : @price_of_all = 20440
+D, [2016-05-27T19:06:07.697707 #5810] DEBUG -- : @price_of_all = 20640
+D, [2016-05-27T19:06:07.697823 #5810] DEBUG -- : @price_of_all = 21440
+D, [2016-05-27T19:06:07.697940 #5810] DEBUG -- : @price_of_all = 22040
+D, [2016-05-27T19:06:07.698052 #5810] DEBUG -- : @price_of_all = 35240
+D, [2016-05-27T19:06:07.698173 #5810] DEBUG -- : @price_of_all = 36940
+D, [2016-05-27T19:06:07.698312 #5810] DEBUG -- : @price_of_all = 40140
+D, [2016-05-27T19:06:07.698435 #5810] DEBUG -- : @price_of_all = 41040
+D, [2016-05-27T19:06:07.698550 #5810] DEBUG -- : @price_of_all = 52440
+D, [2016-05-27T19:06:07.698675 #5810] DEBUG -- : @price_of_all = 52840
+D, [2016-05-27T19:06:07.698788 #5810] DEBUG -- : @price_of_all = 56140
+D, [2016-05-27T19:06:07.698900 #5810] DEBUG -- : @price_of_all = 57540
+D, [2016-05-27T19:06:07.699010 #5810] DEBUG -- : @price_of_all = 57620
+D, [2016-05-27T19:06:07.699122 #5810] DEBUG -- : @price_of_all = 57670
+D, [2016-05-27T19:06:07.699240 #5810] DEBUG -- : @price_of_all = 58120
+D, [2016-05-27T19:06:07.699363 #5810] DEBUG -- : @price_of_all = 58420
+D, [2016-05-27T19:06:07.699473 #5810] DEBUG -- : @price_of_all = 58480
+I, [2016-05-27T19:06:07.699585 #5810]  INFO -- : create_deckfile(../../decks/WB_Control_kD10100S.csv) start.
+D, [2016-05-27T19:06:07.699691 #5810] DEBUG -- : filename: ../../decks/WB_Control_kD10100S.csv
+D, [2016-05-27T19:06:07.699819 #5810] DEBUG -- : target contents are
+D, [2016-05-27T19:06:07.699938 #5810] DEBUG -- : 	card_type
+D, [2016-05-27T19:06:07.700090 #5810] DEBUG -- : 	name
+D, [2016-05-27T19:06:07.700221 #5810] DEBUG -- : 	quantity
+D, [2016-05-27T19:06:07.700332 #5810] DEBUG -- : 	manacost
+D, [2016-05-27T19:06:07.700442 #5810] DEBUG -- : 	generating_mana_type
+D, [2016-05-27T19:06:07.700548 #5810] DEBUG -- : 	price
+D, [2016-05-27T19:06:07.700657 #5810] DEBUG -- : 	store_url
+D, [2016-05-27T19:06:07.700764 #5810] DEBUG -- : 	price.date
+D, [2016-05-27T19:06:07.700872 #5810] DEBUG -- : mode: with_info
+D, [2016-05-27T19:06:07.700979 #5810] DEBUG -- : start writing. mode is with_info.
+I, [2016-05-27T19:06:07.701085 #5810]  INFO -- : deck.get_contents start
+I, [2016-05-27T19:06:07.701201 #5810]  INFO -- : Blighted Fen.read_contents() start
+I, [2016-05-27T19:06:07.701444 #5810]  INFO -- : Blighted Fen.read_from_dom() start
+I, [2016-05-27T19:06:07.703557 #5810]  INFO -- : Blighted Fen.read_from_dom() finished
+I, [2016-05-27T19:06:07.703816 #5810]  INFO -- : Caves of Koilos.read_contents() start
+I, [2016-05-27T19:06:07.704050 #5810]  INFO -- : Caves of Koilos.read_from_dom() start
+I, [2016-05-27T19:06:07.705962 #5810]  INFO -- : Caves of Koilos.read_from_dom() finished
+I, [2016-05-27T19:06:07.706220 #5810]  INFO -- : Forsaken Sanctuary.read_contents() start
+I, [2016-05-27T19:06:07.706459 #5810]  INFO -- : Forsaken Sanctuary.read_from_dom() start
+I, [2016-05-27T19:06:07.708378 #5810]  INFO -- : Forsaken Sanctuary.read_from_dom() finished
+I, [2016-05-27T19:06:07.708683 #5810]  INFO -- : Plains.read_contents() start
+I, [2016-05-27T19:06:07.708941 #5810]  INFO -- : Plains.read_from_dom() start
+I, [2016-05-27T19:06:07.720340 #5810]  INFO -- : Plains.read_from_dom() finished
+I, [2016-05-27T19:06:07.720754 #5810]  INFO -- : Shambling Vent.read_contents() start
+I, [2016-05-27T19:06:07.721088 #5810]  INFO -- : Shambling Vent.read_from_dom() start
+I, [2016-05-27T19:06:07.723521 #5810]  INFO -- : Shambling Vent.read_from_dom() finished
+I, [2016-05-27T19:06:07.723758 #5810]  INFO -- : Swamp.read_contents() start
+I, [2016-05-27T19:06:07.723988 #5810]  INFO -- : Swamp.read_from_dom() start
+I, [2016-05-27T19:06:07.725897 #5810]  INFO -- : Swamp.read_from_dom() finished
+I, [2016-05-27T19:06:07.726125 #5810]  INFO -- : Westvale Abbey.read_contents() start
+I, [2016-05-27T19:06:07.726344 #5810]  INFO -- : Westvale Abbey.read_from_dom() start
+I, [2016-05-27T19:06:07.728462 #5810]  INFO -- : Westvale Abbey.read_from_dom() finished
+I, [2016-05-27T19:06:07.728826 #5810]  INFO -- : Anguished Unmaking.read_contents() start
+I, [2016-05-27T19:06:07.729095 #5810]  INFO -- : Anguished Unmaking.read_from_dom() start
+I, [2016-05-27T19:06:07.737681 #5810]  INFO -- : Anguished Unmaking.read_from_dom() finished
+I, [2016-05-27T19:06:07.738066 #5810]  INFO -- : Grasp of Darkness.read_contents() start
+I, [2016-05-27T19:06:07.738341 #5810]  INFO -- : Grasp of Darkness.read_from_dom() start
+I, [2016-05-27T19:06:07.740395 #5810]  INFO -- : Grasp of Darkness.read_from_dom() finished
+I, [2016-05-27T19:06:07.741056 #5810]  INFO -- : Hallowed Moonlight.read_contents() start
+I, [2016-05-27T19:06:07.741446 #5810]  INFO -- : Hallowed Moonlight.read_from_dom() start
+I, [2016-05-27T19:06:07.743816 #5810]  INFO -- : Hallowed Moonlight.read_from_dom() finished
+I, [2016-05-27T19:06:07.744188 #5810]  INFO -- : Secure the Wastes.read_contents() start
+I, [2016-05-27T19:06:07.744482 #5810]  INFO -- : Secure the Wastes.read_from_dom() start
+I, [2016-05-27T19:06:07.746743 #5810]  INFO -- : Secure the Wastes.read_from_dom() finished
+I, [2016-05-27T19:06:07.746989 #5810]  INFO -- : Ultimate Price.read_contents() start
+I, [2016-05-27T19:06:07.747204 #5810]  INFO -- : Ultimate Price.read_from_dom() start
+I, [2016-05-27T19:06:07.749173 #5810]  INFO -- : Ultimate Price.read_from_dom() finished
+I, [2016-05-27T19:06:07.749416 #5810]  INFO -- : Dark Petition.read_contents() start
+I, [2016-05-27T19:06:07.749685 #5810]  INFO -- : Dark Petition.read_from_dom() start
+I, [2016-05-27T19:06:07.751590 #5810]  INFO -- : Dark Petition.read_from_dom() finished
+I, [2016-05-27T19:06:07.751822 #5810]  INFO -- : Languish.read_contents() start
+I, [2016-05-27T19:06:07.752098 #5810]  INFO -- : Languish.read_from_dom() start
+I, [2016-05-27T19:06:07.754126 #5810]  INFO -- : Languish.read_from_dom() finished
+I, [2016-05-27T19:06:07.754374 #5810]  INFO -- : Planar Outburst.read_contents() start
+I, [2016-05-27T19:06:07.754597 #5810]  INFO -- : Planar Outburst.read_from_dom() start
+I, [2016-05-27T19:06:07.756648 #5810]  INFO -- : Planar Outburst.read_from_dom() finished
+I, [2016-05-27T19:06:07.756884 #5810]  INFO -- : Read the Bones.read_contents() start
+I, [2016-05-27T19:06:07.757128 #5810]  INFO -- : Read the Bones.read_from_dom() start
+I, [2016-05-27T19:06:07.759179 #5810]  INFO -- : Read the Bones.read_from_dom() finished
+I, [2016-05-27T19:06:07.759417 #5810]  INFO -- : Ruinous Path.read_contents() start
+I, [2016-05-27T19:06:07.759768 #5810]  INFO -- : Ruinous Path.read_from_dom() start
+I, [2016-05-27T19:06:07.763488 #5810]  INFO -- : Ruinous Path.read_from_dom() finished
+I, [2016-05-27T19:06:07.763800 #5810]  INFO -- : Transgress the Mind.read_contents() start
+I, [2016-05-27T19:06:07.764026 #5810]  INFO -- : Transgress the Mind.read_from_dom() start
+I, [2016-05-27T19:06:07.766169 #5810]  INFO -- : Transgress the Mind.read_from_dom() finished
+I, [2016-05-27T19:06:07.766427 #5810]  INFO -- : Gideon, Ally of Zendikar.read_contents() start
+I, [2016-05-27T19:06:07.766653 #5810]  INFO -- : Gideon, Ally of Zendikar.read_from_dom() start
+I, [2016-05-27T19:06:07.768816 #5810]  INFO -- : Gideon, Ally of Zendikar.read_from_dom() finished
+I, [2016-05-27T19:06:07.769060 #5810]  INFO -- : Ob Nixilis Reignited.read_contents() start
+I, [2016-05-27T19:06:07.769281 #5810]  INFO -- : Ob Nixilis Reignited.read_from_dom() start
+I, [2016-05-27T19:06:07.771241 #5810]  INFO -- : Ob Nixilis Reignited.read_from_dom() finished
+I, [2016-05-27T19:06:07.771458 #5810]  INFO -- : Sorin, Grim Nemesis.read_contents() start
+I, [2016-05-27T19:06:07.771665 #5810]  INFO -- : Sorin, Grim Nemesis.read_from_dom() start
+I, [2016-05-27T19:06:07.773785 #5810]  INFO -- : Sorin, Grim Nemesis.read_from_dom() finished
+I, [2016-05-27T19:06:07.774216 #5810]  INFO -- : Eldrazi Displacer.read_contents() start
+I, [2016-05-27T19:06:07.774439 #5810]  INFO -- : Eldrazi Displacer.read_from_dom() start
+I, [2016-05-27T19:06:07.776652 #5810]  INFO -- : Eldrazi Displacer.read_from_dom() finished
+I, [2016-05-27T19:06:07.776893 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_contents() start
+I, [2016-05-27T19:06:07.777209 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_from_dom() start
+I, [2016-05-27T19:06:07.779457 #5810]  INFO -- : Kalitas, Traitor of Ghet.read_from_dom() finished
+I, [2016-05-27T19:06:07.779798 #5810]  INFO -- : Linvala, the Preserver.read_contents() start
+I, [2016-05-27T19:06:07.780031 #5810]  INFO -- : Linvala, the Preserver.read_from_dom() start
+I, [2016-05-27T19:06:07.782055 #5810]  INFO -- : Linvala, the Preserver.read_from_dom() finished
+I, [2016-05-27T19:06:07.782290 #5810]  INFO -- : Reality Smasher.read_contents() start
+I, [2016-05-27T19:06:07.782516 #5810]  INFO -- : Reality Smasher.read_from_dom() start
+I, [2016-05-27T19:06:07.784574 #5810]  INFO -- : Reality Smasher.read_from_dom() finished
+I, [2016-05-27T19:06:07.784816 #5810]  INFO -- : Thought-Knot Seer.read_contents() start
+I, [2016-05-27T19:06:07.785111 #5810]  INFO -- : Thought-Knot Seer.read_from_dom() start
+I, [2016-05-27T19:06:07.790574 #5810]  INFO -- : Thought-Knot Seer.read_from_dom() finished
+I, [2016-05-27T19:06:07.790894 #5810]  INFO -- : Ultimate Price.read_contents() start
+I, [2016-05-27T19:06:07.791100 #5810]  INFO -- : Ultimate Price.read_from_dom() start
+I, [2016-05-27T19:06:07.793294 #5810]  INFO -- : Ultimate Price.read_from_dom() finished
+I, [2016-05-27T19:06:07.793590 #5810]  INFO -- : Duress.read_contents() start
+I, [2016-05-27T19:06:07.793922 #5810]  INFO -- : Duress.read_from_dom() start
+I, [2016-05-27T19:06:07.796250 #5810]  INFO -- : Duress.read_from_dom() finished
+I, [2016-05-27T19:06:07.796772 #5810]  INFO -- : Infinite Obliteration.read_contents() start
+I, [2016-05-27T19:06:07.797136 #5810]  INFO -- : Infinite Obliteration.read_from_dom() start
+I, [2016-05-27T19:06:07.799477 #5810]  INFO -- : Infinite Obliteration.read_from_dom() finished
+I, [2016-05-27T19:06:07.799856 #5810]  INFO -- : Transgress the Mind.read_contents() start
+I, [2016-05-27T19:06:07.800204 #5810]  INFO -- : Transgress the Mind.read_from_dom() start
+I, [2016-05-27T19:06:07.802392 #5810]  INFO -- : Transgress the Mind.read_from_dom() finished
+I, [2016-05-27T19:06:07.802643 #5810]  INFO -- : Dead Weight.read_contents() start
+I, [2016-05-27T19:06:07.802880 #5810]  INFO -- : Dead Weight.read_from_dom() start
+I, [2016-05-27T19:06:07.804799 #5810]  INFO -- : Dead Weight.read_from_dom() finished
+I, [2016-05-27T19:06:07.805059 #5810]  INFO -- : WB_Control_kD10100S.get_sum_of_generationg_manas() start.
+I, [2016-05-27T19:06:07.805176 #5810]  INFO -- : calc_sum_of_generating_mana(WB_Control_kD10100S) start.
+D, [2016-05-27T19:06:07.805287 #5810] DEBUG -- : card.name[Blighted Fen]
+D, [2016-05-27T19:06:07.805399 #5810] DEBUG -- : card_type[land], card.name[Blighted Fen], card.quantity[1], manacost[]
+I, [2016-05-27T19:06:07.805565 #5810]  INFO -- : decompose_generationg_mana_symbol(C) start.
+D, [2016-05-27T19:06:07.805711 #5810] DEBUG -- : return ["C"]
+D, [2016-05-27T19:06:07.805820 #5810] DEBUG -- : manas[["C"]]
+D, [2016-05-27T19:06:07.805934 #5810] DEBUG -- : card.name[Caves of Koilos]
+D, [2016-05-27T19:06:07.806042 #5810] DEBUG -- : card_type[land], card.name[Caves of Koilos], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.807594 #5810]  INFO -- : decompose_generationg_mana_symbol(C-W-B) start.
+D, [2016-05-27T19:06:07.809643 #5810] DEBUG -- : return ["C", "W", "B"]
+D, [2016-05-27T19:06:07.809857 #5810] DEBUG -- : manas[["C", "W", "B"]]
+D, [2016-05-27T19:06:07.810059 #5810] DEBUG -- : card.name[Forsaken Sanctuary]
+D, [2016-05-27T19:06:07.810213 #5810] DEBUG -- : card_type[land], card.name[Forsaken Sanctuary], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.810360 #5810]  INFO -- : decompose_generationg_mana_symbol(W-B) start.
+D, [2016-05-27T19:06:07.810495 #5810] DEBUG -- : return ["W", "B"]
+D, [2016-05-27T19:06:07.810611 #5810] DEBUG -- : manas[["W", "B"]]
+D, [2016-05-27T19:06:07.810724 #5810] DEBUG -- : card.name[Plains]
+D, [2016-05-27T19:06:07.810852 #5810] DEBUG -- : card_type[land], card.name[Plains], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.810961 #5810]  INFO -- : decompose_generationg_mana_symbol(W) start.
+D, [2016-05-27T19:06:07.811084 #5810] DEBUG -- : return ["W"]
+D, [2016-05-27T19:06:07.811188 #5810] DEBUG -- : manas[["W"]]
+D, [2016-05-27T19:06:07.811294 #5810] DEBUG -- : card.name[Shambling Vent]
+D, [2016-05-27T19:06:07.811412 #5810] DEBUG -- : card_type[land], card.name[Shambling Vent], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.811515 #5810]  INFO -- : decompose_generationg_mana_symbol(W-B) start.
+D, [2016-05-27T19:06:07.811638 #5810] DEBUG -- : return ["W", "B"]
+D, [2016-05-27T19:06:07.811750 #5810] DEBUG -- : manas[["W", "B"]]
+D, [2016-05-27T19:06:07.813412 #5810] DEBUG -- : card.name[Swamp]
+D, [2016-05-27T19:06:07.813550 #5810] DEBUG -- : card_type[land], card.name[Swamp], card.quantity[6], manacost[]
+I, [2016-05-27T19:06:07.813656 #5810]  INFO -- : decompose_generationg_mana_symbol(B) start.
+D, [2016-05-27T19:06:07.813855 #5810] DEBUG -- : return ["B"]
+D, [2016-05-27T19:06:07.814011 #5810] DEBUG -- : manas[["B"]]
+D, [2016-05-27T19:06:07.814174 #5810] DEBUG -- : card.name[Westvale Abbey]
+D, [2016-05-27T19:06:07.814332 #5810] DEBUG -- : card_type[land], card.name[Westvale Abbey], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.814488 #5810]  INFO -- : decompose_generationg_mana_symbol(C) start.
+D, [2016-05-27T19:06:07.814629 #5810] DEBUG -- : return ["C"]
+D, [2016-05-27T19:06:07.814744 #5810] DEBUG -- : manas[["C"]]
+D, [2016-05-27T19:06:07.814862 #5810] DEBUG -- : card.name[Anguished Unmaking]
+D, [2016-05-27T19:06:07.814984 #5810] DEBUG -- : card_type[creature], card.name[Anguished Unmaking], card.quantity[3], manacost[1WB]
+I, [2016-05-27T19:06:07.815118 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.815238 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.815350 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.815457 #5810] DEBUG -- : card.name[Grasp of Darkness]
+D, [2016-05-27T19:06:07.815568 #5810] DEBUG -- : card_type[creature], card.name[Grasp of Darkness], card.quantity[3], manacost[BB]
+I, [2016-05-27T19:06:07.815685 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.815822 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.815937 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.816050 #5810] DEBUG -- : card.name[Hallowed Moonlight]
+D, [2016-05-27T19:06:07.816160 #5810] DEBUG -- : card_type[creature], card.name[Hallowed Moonlight], card.quantity[2], manacost[1W]
+I, [2016-05-27T19:06:07.816272 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.816419 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.816530 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.816641 #5810] DEBUG -- : card.name[Secure the Wastes]
+D, [2016-05-27T19:06:07.816751 #5810] DEBUG -- : card_type[creature], card.name[Secure the Wastes], card.quantity[3], manacost[ＸW]
+I, [2016-05-27T19:06:07.816875 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.817038 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.817167 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.817277 #5810] DEBUG -- : card.name[Ultimate Price]
+D, [2016-05-27T19:06:07.817397 #5810] DEBUG -- : card_type[creature], card.name[Ultimate Price], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.817529 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.817695 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.817820 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.817947 #5810] DEBUG -- : card.name[Dark Petition]
+D, [2016-05-27T19:06:07.818087 #5810] DEBUG -- : card_type[creature], card.name[Dark Petition], card.quantity[1], manacost[3BB]
+I, [2016-05-27T19:06:07.818207 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.818341 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.819468 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.819573 #5810] DEBUG -- : card.name[Languish]
+D, [2016-05-27T19:06:07.819677 #5810] DEBUG -- : card_type[creature], card.name[Languish], card.quantity[4], manacost[2BB]
+I, [2016-05-27T19:06:07.819778 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.819920 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.820025 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.820130 #5810] DEBUG -- : card.name[Planar Outburst]
+D, [2016-05-27T19:06:07.820246 #5810] DEBUG -- : card_type[creature], card.name[Planar Outburst], card.quantity[1], manacost[3WW]
+I, [2016-05-27T19:06:07.820366 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.820484 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.820586 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.820688 #5810] DEBUG -- : card.name[Read the Bones]
+D, [2016-05-27T19:06:07.820790 #5810] DEBUG -- : card_type[creature], card.name[Read the Bones], card.quantity[4], manacost[2B]
+I, [2016-05-27T19:06:07.820896 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.821007 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.821108 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.821219 #5810] DEBUG -- : card.name[Ruinous Path]
+D, [2016-05-27T19:06:07.821321 #5810] DEBUG -- : card_type[creature], card.name[Ruinous Path], card.quantity[2], manacost[1BB]
+I, [2016-05-27T19:06:07.821398 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.821508 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.821612 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.821716 #5810] DEBUG -- : card.name[Transgress the Mind]
+D, [2016-05-27T19:06:07.821819 #5810] DEBUG -- : card_type[creature], card.name[Transgress the Mind], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.821923 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.822041 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.822142 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.822245 #5810] DEBUG -- : card.name[Gideon, Ally of Zendikar]
+D, [2016-05-27T19:06:07.822354 #5810] DEBUG -- : card_type[creature], card.name[Gideon, Ally of Zendikar], card.quantity[4], manacost[2WW]
+I, [2016-05-27T19:06:07.822455 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.822572 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.822673 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.822776 #5810] DEBUG -- : card.name[Ob Nixilis Reignited]
+D, [2016-05-27T19:06:07.822920 #5810] DEBUG -- : card_type[creature], card.name[Ob Nixilis Reignited], card.quantity[2], manacost[3BB]
+I, [2016-05-27T19:06:07.823036 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.823150 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.823255 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.824893 #5810] DEBUG -- : card.name[Sorin, Grim Nemesis]
+D, [2016-05-27T19:06:07.825072 #5810] DEBUG -- : card_type[creature], card.name[Sorin, Grim Nemesis], card.quantity[2], manacost[4WB]
+I, [2016-05-27T19:06:07.825180 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.825294 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.825428 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.825584 #5810] DEBUG -- : card.name[Eldrazi Displacer]
+D, [2016-05-27T19:06:07.825737 #5810] DEBUG -- : card_type[sideboardCards], card.name[Eldrazi Displacer], card.quantity[1], manacost[2W]
+I, [2016-05-27T19:06:07.825943 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.826155 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.826372 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.826585 #5810] DEBUG -- : card.name[Kalitas, Traitor of Ghet]
+D, [2016-05-27T19:06:07.826758 #5810] DEBUG -- : card_type[sideboardCards], card.name[Kalitas, Traitor of Ghet], card.quantity[3], manacost[2BB]
+I, [2016-05-27T19:06:07.826910 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.827123 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.827281 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.827453 #5810] DEBUG -- : card.name[Linvala, the Preserver]
+D, [2016-05-27T19:06:07.827637 #5810] DEBUG -- : card_type[sideboardCards], card.name[Linvala, the Preserver], card.quantity[1], manacost[4WW]
+I, [2016-05-27T19:06:07.827791 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.827978 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.828135 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.828312 #5810] DEBUG -- : card.name[Reality Smasher]
+D, [2016-05-27T19:06:07.828490 #5810] DEBUG -- : card_type[sideboardCards], card.name[Reality Smasher], card.quantity[3], manacost[4C]
+I, [2016-05-27T19:06:07.828661 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.828875 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.829041 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.829215 #5810] DEBUG -- : card.name[Thought-Knot Seer]
+D, [2016-05-27T19:06:07.829393 #5810] DEBUG -- : card_type[sideboardCards], card.name[Thought-Knot Seer], card.quantity[1], manacost[3C]
+I, [2016-05-27T19:06:07.829558 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.829747 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.829894 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.830057 #5810] DEBUG -- : card.name[Ultimate Price]
+D, [2016-05-27T19:06:07.830203 #5810] DEBUG -- : card_type[sideboardCards], card.name[Ultimate Price], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.830371 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.830544 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.830702 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.830845 #5810] DEBUG -- : card.name[Duress]
+D, [2016-05-27T19:06:07.831028 #5810] DEBUG -- : card_type[sideboardCards], card.name[Duress], card.quantity[1], manacost[B]
+I, [2016-05-27T19:06:07.831171 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.831338 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.831489 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.831655 #5810] DEBUG -- : card.name[Infinite Obliteration]
+D, [2016-05-27T19:06:07.831877 #5810] DEBUG -- : card_type[sideboardCards], card.name[Infinite Obliteration], card.quantity[1], manacost[1BB]
+I, [2016-05-27T19:06:07.832067 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.832240 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.832394 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.832560 #5810] DEBUG -- : card.name[Transgress the Mind]
+D, [2016-05-27T19:06:07.832692 #5810] DEBUG -- : card_type[sideboardCards], card.name[Transgress the Mind], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.832829 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.832992 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.833116 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.833293 #5810] DEBUG -- : card.name[Dead Weight]
+D, [2016-05-27T19:06:07.833480 #5810] DEBUG -- : card_type[sideboardCards], card.name[Dead Weight], card.quantity[2], manacost[B]
+I, [2016-05-27T19:06:07.833677 #5810]  INFO -- : decompose_generationg_mana_symbol(nil) start.
+D, [2016-05-27T19:06:07.833895 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.834078 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.834217 #5810] DEBUG -- : sum of generating mana(WB_Control_kD10100S)
+D, [2016-05-27T19:06:07.834319 #5810] DEBUG -- : main is [W15U0B18R0G0C8A0]
+D, [2016-05-27T19:06:07.834424 #5810] DEBUG -- : side is [W0U0B0R0G0C0A0]
+I, [2016-05-27T19:06:07.834528 #5810]  INFO -- : calc_sum_of_needed_mana(WB_Control_kD10100S) start.
+D, [2016-05-27T19:06:07.834630 #5810] DEBUG -- : card_type[land], card.name[Blighted Fen], card.quantity[1], manacost[]
+I, [2016-05-27T19:06:07.834738 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.834854 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.835013 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.835145 #5810] DEBUG -- : card_type[land], card.name[Caves of Koilos], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.835280 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.835414 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.835533 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.835658 #5810] DEBUG -- : card_type[land], card.name[Forsaken Sanctuary], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.835825 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.835989 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.836132 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.836276 #5810] DEBUG -- : card_type[land], card.name[Plains], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.836417 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.836567 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.836691 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.836794 #5810] DEBUG -- : card_type[land], card.name[Shambling Vent], card.quantity[4], manacost[]
+I, [2016-05-27T19:06:07.836894 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.837017 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.837120 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.837226 #5810] DEBUG -- : card_type[land], card.name[Swamp], card.quantity[6], manacost[]
+I, [2016-05-27T19:06:07.837324 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.837436 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.837542 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.837664 #5810] DEBUG -- : card_type[land], card.name[Westvale Abbey], card.quantity[3], manacost[]
+I, [2016-05-27T19:06:07.837767 #5810]  INFO -- : decompose_needed_mana_symbol() start.
+D, [2016-05-27T19:06:07.837878 #5810] DEBUG -- : return nil
+D, [2016-05-27T19:06:07.837985 #5810] DEBUG -- : manas[nil]
+D, [2016-05-27T19:06:07.838101 #5810] DEBUG -- : card_type[creature], card.name[Anguished Unmaking], card.quantity[3], manacost[1WB]
+I, [2016-05-27T19:06:07.838224 #5810]  INFO -- : decompose_needed_mana_symbol(1WB) start.
+D, [2016-05-27T19:06:07.838409 #5810] DEBUG -- : return ["1", "W", "B"]
+D, [2016-05-27T19:06:07.838524 #5810] DEBUG -- : manas[["1", "W", "B"]]
+D, [2016-05-27T19:06:07.838644 #5810] DEBUG -- : card_type[creature], card.name[Grasp of Darkness], card.quantity[3], manacost[BB]
+I, [2016-05-27T19:06:07.838755 #5810]  INFO -- : decompose_needed_mana_symbol(BB) start.
+D, [2016-05-27T19:06:07.838889 #5810] DEBUG -- : return ["B", "B"]
+D, [2016-05-27T19:06:07.839001 #5810] DEBUG -- : manas[["B", "B"]]
+D, [2016-05-27T19:06:07.839192 #5810] DEBUG -- : card_type[creature], card.name[Hallowed Moonlight], card.quantity[2], manacost[1W]
+I, [2016-05-27T19:06:07.839293 #5810]  INFO -- : decompose_needed_mana_symbol(1W) start.
+D, [2016-05-27T19:06:07.839417 #5810] DEBUG -- : return ["1", "W"]
+D, [2016-05-27T19:06:07.839532 #5810] DEBUG -- : manas[["1", "W"]]
+D, [2016-05-27T19:06:07.839637 #5810] DEBUG -- : card_type[creature], card.name[Secure the Wastes], card.quantity[3], manacost[ＸW]
+I, [2016-05-27T19:06:07.839738 #5810]  INFO -- : decompose_needed_mana_symbol(ＸW) start.
+D, [2016-05-27T19:06:07.839882 #5810] DEBUG -- : return ["Ｘ", "W"]
+D, [2016-05-27T19:06:07.839986 #5810] DEBUG -- : manas[["Ｘ", "W"]]
+D, [2016-05-27T19:06:07.840102 #5810] DEBUG -- : card_type[creature], card.name[Ultimate Price], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.840203 #5810]  INFO -- : decompose_needed_mana_symbol(1B) start.
+D, [2016-05-27T19:06:07.840339 #5810] DEBUG -- : return ["1", "B"]
+D, [2016-05-27T19:06:07.840445 #5810] DEBUG -- : manas[["1", "B"]]
+D, [2016-05-27T19:06:07.840550 #5810] DEBUG -- : card_type[creature], card.name[Dark Petition], card.quantity[1], manacost[3BB]
+I, [2016-05-27T19:06:07.840646 #5810]  INFO -- : decompose_needed_mana_symbol(3BB) start.
+D, [2016-05-27T19:06:07.840770 #5810] DEBUG -- : return ["3", "B", "B"]
+D, [2016-05-27T19:06:07.840886 #5810] DEBUG -- : manas[["3", "B", "B"]]
+D, [2016-05-27T19:06:07.840991 #5810] DEBUG -- : card_type[creature], card.name[Languish], card.quantity[4], manacost[2BB]
+I, [2016-05-27T19:06:07.841089 #5810]  INFO -- : decompose_needed_mana_symbol(2BB) start.
+D, [2016-05-27T19:06:07.841212 #5810] DEBUG -- : return ["2", "B", "B"]
+D, [2016-05-27T19:06:07.841312 #5810] DEBUG -- : manas[["2", "B", "B"]]
+D, [2016-05-27T19:06:07.841423 #5810] DEBUG -- : card_type[creature], card.name[Planar Outburst], card.quantity[1], manacost[3WW]
+I, [2016-05-27T19:06:07.841535 #5810]  INFO -- : decompose_needed_mana_symbol(3WW) start.
+D, [2016-05-27T19:06:07.841668 #5810] DEBUG -- : return ["3", "W", "W"]
+D, [2016-05-27T19:06:07.841786 #5810] DEBUG -- : manas[["3", "W", "W"]]
+D, [2016-05-27T19:06:07.841909 #5810] DEBUG -- : card_type[creature], card.name[Read the Bones], card.quantity[4], manacost[2B]
+I, [2016-05-27T19:06:07.842007 #5810]  INFO -- : decompose_needed_mana_symbol(2B) start.
+D, [2016-05-27T19:06:07.842132 #5810] DEBUG -- : return ["2", "B"]
+D, [2016-05-27T19:06:07.842232 #5810] DEBUG -- : manas[["2", "B"]]
+D, [2016-05-27T19:06:07.842339 #5810] DEBUG -- : card_type[creature], card.name[Ruinous Path], card.quantity[2], manacost[1BB]
+I, [2016-05-27T19:06:07.842459 #5810]  INFO -- : decompose_needed_mana_symbol(1BB) start.
+D, [2016-05-27T19:06:07.842581 #5810] DEBUG -- : return ["1", "B", "B"]
+D, [2016-05-27T19:06:07.842682 #5810] DEBUG -- : manas[["1", "B", "B"]]
+D, [2016-05-27T19:06:07.842787 #5810] DEBUG -- : card_type[creature], card.name[Transgress the Mind], card.quantity[2], manacost[1B]
+I, [2016-05-27T19:06:07.842885 #5810]  INFO -- : decompose_needed_mana_symbol(1B) start.
+D, [2016-05-27T19:06:07.843009 #5810] DEBUG -- : return ["1", "B"]
+D, [2016-05-27T19:06:07.843122 #5810] DEBUG -- : manas[["1", "B"]]
+D, [2016-05-27T19:06:07.843242 #5810] DEBUG -- : card_type[creature], card.name[Gideon, Ally of Zendikar], card.quantity[4], manacost[2WW]
+I, [2016-05-27T19:06:07.843356 #5810]  INFO -- : decompose_needed_mana_symbol(2WW) start.
+D, [2016-05-27T19:06:07.843493 #5810] DEBUG -- : return ["2", "W", "W"]
+D, [2016-05-27T19:06:07.843603 #5810] DEBUG -- : manas[["2", "W", "W"]]
+D, [2016-05-27T19:06:07.843714 #5810] DEBUG -- : card_type[creature], card.name[Ob Nixilis Reignited], card.quantity[2], manacost[3BB]
+I, [2016-05-27T19:06:07.843830 #5810]  INFO -- : decompose_needed_mana_symbol(3BB) start.
+D, [2016-05-27T19:06:07.843966 #5810] DEBUG -- : return ["3", "B", "B"]
+D, [2016-05-27T19:06:07.844085 #5810] DEBUG -- : manas[["3", "B", "B"]]
+D, [2016-05-27T19:06:07.844192 #5810] DEBUG -- : card_type[creature], card.name[Sorin, Grim Nemesis], card.quantity[2], manacost[4WB]
+I, [2016-05-27T19:06:07.844300 #5810]  INFO -- : decompose_needed_mana_symbol(4WB) start.
+D, [2016-05-27T19:06:07.844444 #5810] DEBUG -- : return ["4", "W", "B"]
+D, [2016-05-27T19:06:07.844555 #5810] DEBUG -- : manas[["4", "W", "B"]]
+D, [2016-05-27T19:06:07.844680 #5810] DEBUG -- : card_type[sideboardCards], card.name[Eldrazi Displacer], card.quantity[1], manacost[2W]
+I, [2016-05-27T19:06:07.844782 #5810]  INFO -- : decompose_needed_mana_symbol(2W) start.
+D, [2016-05-27T19:06:07.844911 #5810] DEBUG -- : return ["2", "W"]
+D, [2016-05-27T19:06:07.845012 #5810] DEBUG -- : manas[["2", "W"]]
+D, [2016-05-27T19:06:07.845128 #5810] DEBUG -- : card_type[sideboardCards], card.name[Kalitas, Traitor of Ghet], card.quantity[3], manacost[2BB]
+I, [2016-05-27T19:06:07.845250 #5810]  INFO -- : decompose_needed_mana_symbol(2BB) start.
+D, [2016-05-27T19:06:07.845428 #5810] DEBUG -- : return ["2", "B", "B"]
+D, [2016-05-27T19:06:07.845550 #5810] DEBUG -- : manas[["2", "B", "B"]]
+D, [2016-05-27T19:06:07.845695 #5810] DEBUG -- : card_type[sideboardCards], card.name[Linvala, the Preserver], card.quantity[1], manacost[4WW]
+I, [2016-05-27T19:06:07.845823 #5810]  INFO -- : decompose_needed_mana_symbol(4WW) start.
+D, [2016-05-27T19:06:07.845996 #5810] DEBUG -- : return ["4", "W", "W"]
+D, [2016-05-27T19:06:07.846115 #5810] DEBUG -- : manas[["4", "W", "W"]]
+D, [2016-05-27T19:06:07.846232 #5810] DEBUG -- : card_type[sideboardCards], card.name[Reality Smasher], card.quantity[3], manacost[4C]
+I, [2016-05-27T19:06:07.846355 #5810]  INFO -- : decompose_needed_mana_symbol(4C) start.
+D, [2016-05-27T19:06:07.846517 #5810] DEBUG -- : return ["4", "C"]
+D, [2016-05-27T19:06:07.846647 #5810] DEBUG -- : manas[["4", "C"]]
+D, [2016-05-27T19:06:07.846785 #5810] DEBUG -- : card_type[sideboardCards], card.name[Thought-Knot Seer], card.quantity[1], manacost[3C]
+I, [2016-05-27T19:06:07.846901 #5810]  INFO -- : decompose_needed_mana_symbol(3C) start.
+D, [2016-05-27T19:06:07.847069 #5810] DEBUG -- : return ["3", "C"]
+D, [2016-05-27T19:06:07.847181 #5810] DEBUG -- : manas[["3", "C"]]
+D, [2016-05-27T19:06:07.847290 #5810] DEBUG -- : card_type[sideboardCards], card.name[Ultimate Price], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.847391 #5810]  INFO -- : decompose_needed_mana_symbol(1B) start.
+D, [2016-05-27T19:06:07.847567 #5810] DEBUG -- : return ["1", "B"]
+D, [2016-05-27T19:06:07.847685 #5810] DEBUG -- : manas[["1", "B"]]
+D, [2016-05-27T19:06:07.847804 #5810] DEBUG -- : card_type[sideboardCards], card.name[Duress], card.quantity[1], manacost[B]
+I, [2016-05-27T19:06:07.847911 #5810]  INFO -- : decompose_needed_mana_symbol(B) start.
+D, [2016-05-27T19:06:07.848043 #5810] DEBUG -- : return ["B"]
+D, [2016-05-27T19:06:07.848143 #5810] DEBUG -- : manas[["B"]]
+D, [2016-05-27T19:06:07.848252 #5810] DEBUG -- : card_type[sideboardCards], card.name[Infinite Obliteration], card.quantity[1], manacost[1BB]
+I, [2016-05-27T19:06:07.848352 #5810]  INFO -- : decompose_needed_mana_symbol(1BB) start.
+D, [2016-05-27T19:06:07.848483 #5810] DEBUG -- : return ["1", "B", "B"]
+D, [2016-05-27T19:06:07.848586 #5810] DEBUG -- : manas[["1", "B", "B"]]
+D, [2016-05-27T19:06:07.848702 #5810] DEBUG -- : card_type[sideboardCards], card.name[Transgress the Mind], card.quantity[1], manacost[1B]
+I, [2016-05-27T19:06:07.848806 #5810]  INFO -- : decompose_needed_mana_symbol(1B) start.
+D, [2016-05-27T19:06:07.848933 #5810] DEBUG -- : return ["1", "B"]
+D, [2016-05-27T19:06:07.849036 #5810] DEBUG -- : manas[["1", "B"]]
+D, [2016-05-27T19:06:07.849143 #5810] DEBUG -- : card_type[sideboardCards], card.name[Dead Weight], card.quantity[2], manacost[B]
+I, [2016-05-27T19:06:07.849253 #5810]  INFO -- : decompose_needed_mana_symbol(B) start.
+D, [2016-05-27T19:06:07.849396 #5810] DEBUG -- : return ["B"]
+D, [2016-05-27T19:06:07.849500 #5810] DEBUG -- : manas[["B"]]
+D, [2016-05-27T19:06:07.849609 #5810] DEBUG -- : sum of needed mana(WB_Control_kD10100S)
+D, [2016-05-27T19:06:07.849719 #5810] DEBUG -- : main is [W20U0B37R0G0C0]
+D, [2016-05-27T19:06:07.849829 #5810] DEBUG -- : side is [W3U0B13R0G0C4]
+I, [2016-05-27T19:06:07.857212 #5810]  INFO -- : set_information start.
+D, [2016-05-27T19:06:07.857332 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.857475 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.857613 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.857731 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.857841 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.857949 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.858056 #5810] DEBUG -- : card.card_type = land
+D, [2016-05-27T19:06:07.858164 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858277 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858377 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858489 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858590 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858693 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858793 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.858900 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859003 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859103 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859204 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859303 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859408 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859515 #5810] DEBUG -- : card.card_type = creature
+D, [2016-05-27T19:06:07.859619 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.859722 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.859824 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.859931 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860032 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860132 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860238 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860339 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860441 #5810] DEBUG -- : card.card_type = sideboardCards
+D, [2016-05-27T19:06:07.860547 #5810] DEBUG -- : card.card_type = sideboardCards
+I, [2016-05-27T19:06:07.860912 #5810]  INFO -- : previous_type[info], card_type[land]
+I, [2016-05-27T19:06:07.861067 #5810]  INFO -- : write Blighted Fen.card_type[land]
+I, [2016-05-27T19:06:07.861197 #5810]  INFO -- : write Blighted Fen.name[Blighted Fen]
+I, [2016-05-27T19:06:07.861311 #5810]  INFO -- : write Blighted Fen.quantity[1]
+F, [2016-05-27T19:06:07.861426 #5810] FATAL -- : contents of[Blighted Fen].manacost is nil
+I, [2016-05-27T19:06:07.861569 #5810]  INFO -- : write Blighted Fen.manacost[]
+I, [2016-05-27T19:06:07.861721 #5810]  INFO -- : write Blighted Fen.generating_mana_type[C]
+I, [2016-05-27T19:06:07.861967 #5810]  INFO -- : write Blighted Fen.price[30]
+I, [2016-05-27T19:06:07.862102 #5810]  INFO -- : write Blighted Fen.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000230JN/]
+I, [2016-05-27T19:06:07.862243 #5810]  INFO -- : write Blighted Fen.price.date[2016-05-27T19:05:13+09:00]
+D, [2016-05-27T19:06:07.862376 #5810] DEBUG -- : card[Blighted Fen] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.862537 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.862693 #5810]  INFO -- : write Caves of Koilos.card_type[land]
+I, [2016-05-27T19:06:07.862838 #5810]  INFO -- : write Caves of Koilos.name[Caves of Koilos]
+I, [2016-05-27T19:06:07.863004 #5810]  INFO -- : write Caves of Koilos.quantity[4]
+F, [2016-05-27T19:06:07.863184 #5810] FATAL -- : contents of[Caves of Koilos].manacost is nil
+I, [2016-05-27T19:06:07.863347 #5810]  INFO -- : write Caves of Koilos.manacost[]
+I, [2016-05-27T19:06:07.863477 #5810]  INFO -- : write Caves of Koilos.generating_mana_type[C-W-B]
+I, [2016-05-27T19:06:07.863609 #5810]  INFO -- : write Caves of Koilos.price[300]
+I, [2016-05-27T19:06:07.863825 #5810]  INFO -- : write Caves of Koilos.store_url[http://www.hareruyamtg.com/jp/g/gORI000245JN/]
+I, [2016-05-27T19:06:07.863985 #5810]  INFO -- : write Caves of Koilos.price.date[2016-05-27T19:05:14+09:00]
+D, [2016-05-27T19:06:07.864105 #5810] DEBUG -- : card[Caves of Koilos] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.864212 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.864351 #5810]  INFO -- : write Forsaken Sanctuary.card_type[land]
+I, [2016-05-27T19:06:07.864475 #5810]  INFO -- : write Forsaken Sanctuary.name[Forsaken Sanctuary]
+I, [2016-05-27T19:06:07.864593 #5810]  INFO -- : write Forsaken Sanctuary.quantity[4]
+F, [2016-05-27T19:06:07.864729 #5810] FATAL -- : contents of[Forsaken Sanctuary].manacost is nil
+I, [2016-05-27T19:06:07.864834 #5810]  INFO -- : write Forsaken Sanctuary.manacost[]
+I, [2016-05-27T19:06:07.864958 #5810]  INFO -- : write Forsaken Sanctuary.generating_mana_type[W-B]
+I, [2016-05-27T19:06:07.865085 #5810]  INFO -- : write Forsaken Sanctuary.price[80]
+I, [2016-05-27T19:06:07.865202 #5810]  INFO -- : write Forsaken Sanctuary.store_url[http://www.hareruyamtg.com/jp/g/gSOI000273JN/]
+I, [2016-05-27T19:06:07.865330 #5810]  INFO -- : write Forsaken Sanctuary.price.date[2016-05-27T19:05:16+09:00]
+D, [2016-05-27T19:06:07.865443 #5810] DEBUG -- : card[Forsaken Sanctuary] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.865559 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.865685 #5810]  INFO -- : write Plains.card_type[land]
+I, [2016-05-27T19:06:07.865797 #5810]  INFO -- : write Plains.name[Plains]
+I, [2016-05-27T19:06:07.865910 #5810]  INFO -- : write Plains.quantity[3]
+F, [2016-05-27T19:06:07.866033 #5810] FATAL -- : contents of[Plains].manacost is nil
+I, [2016-05-27T19:06:07.866136 #5810]  INFO -- : write Plains.manacost[]
+I, [2016-05-27T19:06:07.866255 #5810]  INFO -- : write Plains.generating_mana_type[W]
+I, [2016-05-27T19:06:07.866371 #5810]  INFO -- : write Plains.price[20]
+I, [2016-05-27T19:06:07.866496 #5810]  INFO -- : write Plains.store_url[http://www.hareruyamtg.com/jp/g/gSOI000285JN/]
+I, [2016-05-27T19:06:07.866623 #5810]  INFO -- : write Plains.price.date[2016-05-27T19:05:17+09:00]
+D, [2016-05-27T19:06:07.866728 #5810] DEBUG -- : card[Plains] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.866840 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.866962 #5810]  INFO -- : write Shambling Vent.card_type[land]
+I, [2016-05-27T19:06:07.867097 #5810]  INFO -- : write Shambling Vent.name[Shambling Vent]
+I, [2016-05-27T19:06:07.867215 #5810]  INFO -- : write Shambling Vent.quantity[4]
+F, [2016-05-27T19:06:07.867336 #5810] FATAL -- : contents of[Shambling Vent].manacost is nil
+I, [2016-05-27T19:06:07.867475 #5810]  INFO -- : write Shambling Vent.manacost[]
+I, [2016-05-27T19:06:07.867655 #5810]  INFO -- : write Shambling Vent.generating_mana_type[W-B]
+I, [2016-05-27T19:06:07.867823 #5810]  INFO -- : write Shambling Vent.price[700]
+I, [2016-05-27T19:06:07.867977 #5810]  INFO -- : write Shambling Vent.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000244JN/]
+I, [2016-05-27T19:06:07.868152 #5810]  INFO -- : write Shambling Vent.price.date[2016-05-27T19:05:19+09:00]
+D, [2016-05-27T19:06:07.868295 #5810] DEBUG -- : card[Shambling Vent] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.868428 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.868598 #5810]  INFO -- : write Swamp.card_type[land]
+I, [2016-05-27T19:06:07.868774 #5810]  INFO -- : write Swamp.name[Swamp]
+I, [2016-05-27T19:06:07.868946 #5810]  INFO -- : write Swamp.quantity[6]
+F, [2016-05-27T19:06:07.869125 #5810] FATAL -- : contents of[Swamp].manacost is nil
+I, [2016-05-27T19:06:07.869277 #5810]  INFO -- : write Swamp.manacost[]
+I, [2016-05-27T19:06:07.869424 #5810]  INFO -- : write Swamp.generating_mana_type[B]
+I, [2016-05-27T19:06:07.869545 #5810]  INFO -- : write Swamp.price[20]
+I, [2016-05-27T19:06:07.869674 #5810]  INFO -- : write Swamp.store_url[http://www.hareruyamtg.com/jp/g/gSOI000291JN/]
+I, [2016-05-27T19:06:07.869801 #5810]  INFO -- : write Swamp.price.date[2016-05-27T19:05:20+09:00]
+D, [2016-05-27T19:06:07.869916 #5810] DEBUG -- : card[Swamp] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.870021 #5810]  INFO -- : previous_type[land], card_type[land]
+I, [2016-05-27T19:06:07.870148 #5810]  INFO -- : write Westvale Abbey.card_type[land]
+I, [2016-05-27T19:06:07.870269 #5810]  INFO -- : write Westvale Abbey.name[Westvale Abbey]
+I, [2016-05-27T19:06:07.870381 #5810]  INFO -- : write Westvale Abbey.quantity[3]
+F, [2016-05-27T19:06:07.870491 #5810] FATAL -- : contents of[Westvale Abbey].manacost is nil
+I, [2016-05-27T19:06:07.870599 #5810]  INFO -- : write Westvale Abbey.manacost[]
+I, [2016-05-27T19:06:07.870721 #5810]  INFO -- : write Westvale Abbey.generating_mana_type[C]
+I, [2016-05-27T19:06:07.870834 #5810]  INFO -- : write Westvale Abbey.price[1600]
+I, [2016-05-27T19:06:07.870955 #5810]  INFO -- : write Westvale Abbey.store_url[http://www.hareruyamtg.com/jp/g/gSOI000281JN/]
+I, [2016-05-27T19:06:07.871083 #5810]  INFO -- : write Westvale Abbey.price.date[2016-05-27T19:05:22+09:00]
+D, [2016-05-27T19:06:07.871195 #5810] DEBUG -- : card[Westvale Abbey] fineished.set previous_type [land]
+I, [2016-05-27T19:06:07.871295 #5810]  INFO -- : previous_type[land], card_type[creature]
+D, [2016-05-27T19:06:07.871398 #5810] DEBUG -- : write land information
+I, [2016-05-27T19:06:07.871523 #5810]  INFO -- : write Anguished Unmaking.card_type[creature]
+I, [2016-05-27T19:06:07.871660 #5810]  INFO -- : write Anguished Unmaking.name[Anguished Unmaking]
+I, [2016-05-27T19:06:07.871779 #5810]  INFO -- : write Anguished Unmaking.quantity[3]
+I, [2016-05-27T19:06:07.871903 #5810]  INFO -- : write Anguished Unmaking.manacost[1WB]
+I, [2016-05-27T19:06:07.872025 #5810]  INFO -- : write Anguished Unmaking.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.872143 #5810]  INFO -- : write Anguished Unmaking.price[500]
+I, [2016-05-27T19:06:07.872257 #5810]  INFO -- : write Anguished Unmaking.store_url[http://www.hareruyamtg.com/jp/g/gSOI000242JN/]
+I, [2016-05-27T19:06:07.872387 #5810]  INFO -- : write Anguished Unmaking.price.date[2016-05-27T19:05:24+09:00]
+D, [2016-05-27T19:06:07.872493 #5810] DEBUG -- : card[Anguished Unmaking] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.872597 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.872721 #5810]  INFO -- : write Grasp of Darkness.card_type[creature]
+I, [2016-05-27T19:06:07.872834 #5810]  INFO -- : write Grasp of Darkness.name[Grasp of Darkness]
+I, [2016-05-27T19:06:07.872955 #5810]  INFO -- : write Grasp of Darkness.quantity[3]
+I, [2016-05-27T19:06:07.873066 #5810]  INFO -- : write Grasp of Darkness.manacost[BB]
+I, [2016-05-27T19:06:07.873195 #5810]  INFO -- : write Grasp of Darkness.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.873313 #5810]  INFO -- : write Grasp of Darkness.price[150]
+I, [2016-05-27T19:06:07.873424 #5810]  INFO -- : write Grasp of Darkness.store_url[http://www.hareruyamtg.com/jp/g/gOGW000085JN/]
+I, [2016-05-27T19:06:07.874788 #5810]  INFO -- : write Grasp of Darkness.price.date[2016-05-27T19:05:26+09:00]
+D, [2016-05-27T19:06:07.874910 #5810] DEBUG -- : card[Grasp of Darkness] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.875013 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.875135 #5810]  INFO -- : write Hallowed Moonlight.card_type[creature]
+I, [2016-05-27T19:06:07.875261 #5810]  INFO -- : write Hallowed Moonlight.name[Hallowed Moonlight]
+I, [2016-05-27T19:06:07.875374 #5810]  INFO -- : write Hallowed Moonlight.quantity[2]
+I, [2016-05-27T19:06:07.875486 #5810]  INFO -- : write Hallowed Moonlight.manacost[1W]
+I, [2016-05-27T19:06:07.875598 #5810]  INFO -- : write Hallowed Moonlight.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.875725 #5810]  INFO -- : write Hallowed Moonlight.price[350]
+I, [2016-05-27T19:06:07.875839 #5810]  INFO -- : write Hallowed Moonlight.store_url[http://www.hareruyamtg.com/jp/g/gORI000017JN/]
+I, [2016-05-27T19:06:07.875957 #5810]  INFO -- : write Hallowed Moonlight.price.date[2016-05-27T19:05:27+09:00]
+D, [2016-05-27T19:06:07.876077 #5810] DEBUG -- : card[Hallowed Moonlight] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.876180 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.876298 #5810]  INFO -- : write Secure the Wastes.card_type[creature]
+I, [2016-05-27T19:06:07.876415 #5810]  INFO -- : write Secure the Wastes.name[Secure the Wastes]
+I, [2016-05-27T19:06:07.876586 #5810]  INFO -- : write Secure the Wastes.quantity[3]
+I, [2016-05-27T19:06:07.876710 #5810]  INFO -- : write Secure the Wastes.manacost[ＸW]
+I, [2016-05-27T19:06:07.876890 #5810]  INFO -- : write Secure the Wastes.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.877027 #5810]  INFO -- : write Secure the Wastes.price[950]
+I, [2016-05-27T19:06:07.877161 #5810]  INFO -- : write Secure the Wastes.store_url[http://www.hareruyamtg.com/jp/g/gDTK000058JN/]
+I, [2016-05-27T19:06:07.877285 #5810]  INFO -- : write Secure the Wastes.price.date[2016-05-27T19:05:29+09:00]
+D, [2016-05-27T19:06:07.877408 #5810] DEBUG -- : card[Secure the Wastes] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.877517 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.877776 #5810]  INFO -- : write Ultimate Price.card_type[creature]
+I, [2016-05-27T19:06:07.877947 #5810]  INFO -- : write Ultimate Price.name[Ultimate Price]
+I, [2016-05-27T19:06:07.878094 #5810]  INFO -- : write Ultimate Price.quantity[2]
+I, [2016-05-27T19:06:07.878239 #5810]  INFO -- : write Ultimate Price.manacost[1B]
+I, [2016-05-27T19:06:07.878378 #5810]  INFO -- : write Ultimate Price.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.878493 #5810]  INFO -- : write Ultimate Price.price[80]
+I, [2016-05-27T19:06:07.878606 #5810]  INFO -- : write Ultimate Price.store_url[http://www.hareruyamtg.com/jp/g/gDTK000144JN/]
+I, [2016-05-27T19:06:07.878741 #5810]  INFO -- : write Ultimate Price.price.date[2016-05-27T19:05:31+09:00]
+D, [2016-05-27T19:06:07.878855 #5810] DEBUG -- : card[Ultimate Price] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.878962 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.879076 #5810]  INFO -- : write Dark Petition.card_type[creature]
+I, [2016-05-27T19:06:07.879201 #5810]  INFO -- : write Dark Petition.name[Dark Petition]
+I, [2016-05-27T19:06:07.879314 #5810]  INFO -- : write Dark Petition.quantity[1]
+I, [2016-05-27T19:06:07.879437 #5810]  INFO -- : write Dark Petition.manacost[3BB]
+I, [2016-05-27T19:06:07.879548 #5810]  INFO -- : write Dark Petition.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.879672 #5810]  INFO -- : write Dark Petition.price[900]
+I, [2016-05-27T19:06:07.879786 #5810]  INFO -- : write Dark Petition.store_url[http://www.hareruyamtg.com/jp/g/gORI000090JN/]
+I, [2016-05-27T19:06:07.879921 #5810]  INFO -- : write Dark Petition.price.date[2016-05-27T19:05:33+09:00]
+D, [2016-05-27T19:06:07.880035 #5810] DEBUG -- : card[Dark Petition] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.880134 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.880249 #5810]  INFO -- : write Languish.card_type[creature]
+I, [2016-05-27T19:06:07.880365 #5810]  INFO -- : write Languish.name[Languish]
+I, [2016-05-27T19:06:07.880483 #5810]  INFO -- : write Languish.quantity[4]
+I, [2016-05-27T19:06:07.880625 #5810]  INFO -- : write Languish.manacost[2BB]
+I, [2016-05-27T19:06:07.880739 #5810]  INFO -- : write Languish.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.880861 #5810]  INFO -- : write Languish.price[1100]
+I, [2016-05-27T19:06:07.880980 #5810]  INFO -- : write Languish.store_url[http://www.hareruyamtg.com/jp/g/gORI000105JN/]
+I, [2016-05-27T19:06:07.881102 #5810]  INFO -- : write Languish.price.date[2016-05-27T19:05:34+09:00]
+D, [2016-05-27T19:06:07.881221 #5810] DEBUG -- : card[Languish] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.881324 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.881440 #5810]  INFO -- : write Planar Outburst.card_type[creature]
+I, [2016-05-27T19:06:07.881553 #5810]  INFO -- : write Planar Outburst.name[Planar Outburst]
+I, [2016-05-27T19:06:07.881677 #5810]  INFO -- : write Planar Outburst.quantity[1]
+I, [2016-05-27T19:06:07.881806 #5810]  INFO -- : write Planar Outburst.manacost[3WW]
+I, [2016-05-27T19:06:07.881923 #5810]  INFO -- : write Planar Outburst.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.882040 #5810]  INFO -- : write Planar Outburst.price[150]
+I, [2016-05-27T19:06:07.882160 #5810]  INFO -- : write Planar Outburst.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000042JN/]
+I, [2016-05-27T19:06:07.882284 #5810]  INFO -- : write Planar Outburst.price.date[2016-05-27T19:05:37+09:00]
+D, [2016-05-27T19:06:07.882403 #5810] DEBUG -- : card[Planar Outburst] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.882505 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.882622 #5810]  INFO -- : write Read the Bones.card_type[creature]
+I, [2016-05-27T19:06:07.882744 #5810]  INFO -- : write Read the Bones.name[Read the Bones]
+I, [2016-05-27T19:06:07.882866 #5810]  INFO -- : write Read the Bones.quantity[4]
+I, [2016-05-27T19:06:07.882979 #5810]  INFO -- : write Read the Bones.manacost[2B]
+I, [2016-05-27T19:06:07.883099 #5810]  INFO -- : write Read the Bones.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.883213 #5810]  INFO -- : write Read the Bones.price[50]
+I, [2016-05-27T19:06:07.883328 #5810]  INFO -- : write Read the Bones.store_url[http://www.hareruyamtg.com/jp/g/gORI000114JN/]
+I, [2016-05-27T19:06:07.883450 #5810]  INFO -- : write Read the Bones.price.date[2016-05-27T19:05:39+09:00]
+D, [2016-05-27T19:06:07.883564 #5810] DEBUG -- : card[Read the Bones] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.883662 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.883777 #5810]  INFO -- : write Ruinous Path.card_type[creature]
+I, [2016-05-27T19:06:07.883902 #5810]  INFO -- : write Ruinous Path.name[Ruinous Path]
+I, [2016-05-27T19:06:07.884021 #5810]  INFO -- : write Ruinous Path.quantity[2]
+I, [2016-05-27T19:06:07.884132 #5810]  INFO -- : write Ruinous Path.manacost[1BB]
+I, [2016-05-27T19:06:07.884242 #5810]  INFO -- : write Ruinous Path.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.884360 #5810]  INFO -- : write Ruinous Path.price[400]
+I, [2016-05-27T19:06:07.884479 #5810]  INFO -- : write Ruinous Path.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000123JN/]
+I, [2016-05-27T19:06:07.884597 #5810]  INFO -- : write Ruinous Path.price.date[2016-05-27T19:05:41+09:00]
+D, [2016-05-27T19:06:07.884703 #5810] DEBUG -- : card[Ruinous Path] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.884809 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.884925 #5810]  INFO -- : write Transgress the Mind.card_type[creature]
+I, [2016-05-27T19:06:07.885044 #5810]  INFO -- : write Transgress the Mind.name[Transgress the Mind]
+I, [2016-05-27T19:06:07.885155 #5810]  INFO -- : write Transgress the Mind.quantity[2]
+I, [2016-05-27T19:06:07.885265 #5810]  INFO -- : write Transgress the Mind.manacost[1B]
+I, [2016-05-27T19:06:07.885409 #5810]  INFO -- : write Transgress the Mind.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.885528 #5810]  INFO -- : write Transgress the Mind.price[300]
+I, [2016-05-27T19:06:07.885648 #5810]  INFO -- : write Transgress the Mind.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000101JN/]
+I, [2016-05-27T19:06:07.885767 #5810]  INFO -- : write Transgress the Mind.price.date[2016-05-27T19:05:43+09:00]
+D, [2016-05-27T19:06:07.885892 #5810] DEBUG -- : card[Transgress the Mind] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.885993 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.886109 #5810]  INFO -- : write Gideon, Ally of Zendikar.card_type[creature]
+I, [2016-05-27T19:06:07.886225 #5810]  INFO -- : write Gideon, Ally of Zendikar.name[GideonPERIOD Ally of Zendikar]
+I, [2016-05-27T19:06:07.886351 #5810]  INFO -- : write Gideon, Ally of Zendikar.quantity[4]
+I, [2016-05-27T19:06:07.886469 #5810]  INFO -- : write Gideon, Ally of Zendikar.manacost[2WW]
+I, [2016-05-27T19:06:07.886580 #5810]  INFO -- : write Gideon, Ally of Zendikar.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.886691 #5810]  INFO -- : write Gideon, Ally of Zendikar.price[3300]
+I, [2016-05-27T19:06:07.886820 #5810]  INFO -- : write Gideon, Ally of Zendikar.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000029JN/]
+I, [2016-05-27T19:06:07.886943 #5810]  INFO -- : write Gideon, Ally of Zendikar.price.date[2016-05-27T19:05:45+09:00]
+D, [2016-05-27T19:06:07.887085 #5810] DEBUG -- : card[Gideon, Ally of Zendikar] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.887187 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.887317 #5810]  INFO -- : write Ob Nixilis Reignited.card_type[creature]
+I, [2016-05-27T19:06:07.887433 #5810]  INFO -- : write Ob Nixilis Reignited.name[Ob Nixilis Reignited]
+I, [2016-05-27T19:06:07.887547 #5810]  INFO -- : write Ob Nixilis Reignited.quantity[2]
+I, [2016-05-27T19:06:07.887658 #5810]  INFO -- : write Ob Nixilis Reignited.manacost[3BB]
+I, [2016-05-27T19:06:07.887775 #5810]  INFO -- : write Ob Nixilis Reignited.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.887923 #5810]  INFO -- : write Ob Nixilis Reignited.price[850]
+I, [2016-05-27T19:06:07.888042 #5810]  INFO -- : write Ob Nixilis Reignited.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000119JN/]
+I, [2016-05-27T19:06:07.888162 #5810]  INFO -- : write Ob Nixilis Reignited.price.date[2016-05-27T19:05:47+09:00]
+D, [2016-05-27T19:06:07.888275 #5810] DEBUG -- : card[Ob Nixilis Reignited] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.888379 #5810]  INFO -- : previous_type[creature], card_type[creature]
+I, [2016-05-27T19:06:07.888495 #5810]  INFO -- : write Sorin, Grim Nemesis.card_type[creature]
+I, [2016-05-27T19:06:07.888609 #5810]  INFO -- : write Sorin, Grim Nemesis.name[SorinPERIOD Grim Nemesis]
+I, [2016-05-27T19:06:07.888734 #5810]  INFO -- : write Sorin, Grim Nemesis.quantity[2]
+I, [2016-05-27T19:06:07.888851 #5810]  INFO -- : write Sorin, Grim Nemesis.manacost[4WB]
+I, [2016-05-27T19:06:07.888964 #5810]  INFO -- : write Sorin, Grim Nemesis.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.889075 #5810]  INFO -- : write Sorin, Grim Nemesis.price[1600]
+I, [2016-05-27T19:06:07.889267 #5810]  INFO -- : write Sorin, Grim Nemesis.store_url[http://www.hareruyamtg.com/jp/g/gSOI000250JN/]
+I, [2016-05-27T19:06:07.889406 #5810]  INFO -- : write Sorin, Grim Nemesis.price.date[2016-05-27T19:05:49+09:00]
+D, [2016-05-27T19:06:07.889518 #5810] DEBUG -- : card[Sorin, Grim Nemesis] fineished.set previous_type [creature]
+I, [2016-05-27T19:06:07.889619 #5810]  INFO -- : previous_type[creature], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.889732 #5810]  INFO -- : write Eldrazi Displacer.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.889868 #5810]  INFO -- : write Eldrazi Displacer.name[Eldrazi Displacer]
+I, [2016-05-27T19:06:07.889980 #5810]  INFO -- : write Eldrazi Displacer.quantity[1]
+I, [2016-05-27T19:06:07.890090 #5810]  INFO -- : write Eldrazi Displacer.manacost[2W]
+I, [2016-05-27T19:06:07.890213 #5810]  INFO -- : write Eldrazi Displacer.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.890332 #5810]  INFO -- : write Eldrazi Displacer.price[900]
+I, [2016-05-27T19:06:07.890445 #5810]  INFO -- : write Eldrazi Displacer.store_url[http://www.hareruyamtg.com/jp/g/gOGW000013JN/]
+I, [2016-05-27T19:06:07.890564 #5810]  INFO -- : write Eldrazi Displacer.price.date[2016-05-27T19:05:52+09:00]
+D, [2016-05-27T19:06:07.890689 #5810] DEBUG -- : card[Eldrazi Displacer] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.890786 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.890907 #5810]  INFO -- : write Kalitas, Traitor of Ghet.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.891027 #5810]  INFO -- : write Kalitas, Traitor of Ghet.name[KalitasPERIOD Traitor of Ghet]
+I, [2016-05-27T19:06:07.891145 #5810]  INFO -- : write Kalitas, Traitor of Ghet.quantity[3]
+I, [2016-05-27T19:06:07.891274 #5810]  INFO -- : write Kalitas, Traitor of Ghet.manacost[2BB]
+I, [2016-05-27T19:06:07.891391 #5810]  INFO -- : write Kalitas, Traitor of Ghet.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.891502 #5810]  INFO -- : write Kalitas, Traitor of Ghet.price[3800]
+I, [2016-05-27T19:06:07.891621 #5810]  INFO -- : write Kalitas, Traitor of Ghet.store_url[http://www.hareruyamtg.com/jp/g/gOGW000086JN/]
+I, [2016-05-27T19:06:07.891738 #5810]  INFO -- : write Kalitas, Traitor of Ghet.price.date[2016-05-27T19:05:54+09:00]
+D, [2016-05-27T19:06:07.891847 #5810] DEBUG -- : card[Kalitas, Traitor of Ghet] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.891942 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.892054 #5810]  INFO -- : write Linvala, the Preserver.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.892176 #5810]  INFO -- : write Linvala, the Preserver.name[LinvalaPERIOD the Preserver]
+I, [2016-05-27T19:06:07.892292 #5810]  INFO -- : write Linvala, the Preserver.quantity[1]
+I, [2016-05-27T19:06:07.892602 #5810]  INFO -- : write Linvala, the Preserver.manacost[4WW]
+I, [2016-05-27T19:06:07.892738 #5810]  INFO -- : write Linvala, the Preserver.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.892870 #5810]  INFO -- : write Linvala, the Preserver.price[400]
+I, [2016-05-27T19:06:07.892997 #5810]  INFO -- : write Linvala, the Preserver.store_url[http://www.hareruyamtg.com/jp/g/gOGW000025JN/]
+I, [2016-05-27T19:06:07.893142 #5810]  INFO -- : write Linvala, the Preserver.price.date[2016-05-27T19:05:56+09:00]
+D, [2016-05-27T19:06:07.893270 #5810] DEBUG -- : card[Linvala, the Preserver] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.893376 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.893516 #5810]  INFO -- : write Reality Smasher.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.893647 #5810]  INFO -- : write Reality Smasher.name[Reality Smasher]
+I, [2016-05-27T19:06:07.893778 #5810]  INFO -- : write Reality Smasher.quantity[3]
+I, [2016-05-27T19:06:07.893914 #5810]  INFO -- : write Reality Smasher.manacost[4C]
+I, [2016-05-27T19:06:07.894042 #5810]  INFO -- : write Reality Smasher.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.894173 #5810]  INFO -- : write Reality Smasher.price[1100]
+I, [2016-05-27T19:06:07.894319 #5810]  INFO -- : write Reality Smasher.store_url[http://www.hareruyamtg.com/jp/g/gOGW000007JN/]
+I, [2016-05-27T19:06:07.894454 #5810]  INFO -- : write Reality Smasher.price.date[2016-05-27T19:05:57+09:00]
+D, [2016-05-27T19:06:07.894574 #5810] DEBUG -- : card[Reality Smasher] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.894686 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.894820 #5810]  INFO -- : write Thought-Knot Seer.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.894954 #5810]  INFO -- : write Thought-Knot Seer.name[Thought-Knot Seer]
+I, [2016-05-27T19:06:07.895076 #5810]  INFO -- : write Thought-Knot Seer.quantity[1]
+I, [2016-05-27T19:06:07.895207 #5810]  INFO -- : write Thought-Knot Seer.manacost[3C]
+I, [2016-05-27T19:06:07.895355 #5810]  INFO -- : write Thought-Knot Seer.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.895483 #5810]  INFO -- : write Thought-Knot Seer.price[1400]
+I, [2016-05-27T19:06:07.895609 #5810]  INFO -- : write Thought-Knot Seer.store_url[http://www.hareruyamtg.com/jp/g/gOGW000009JN/]
+I, [2016-05-27T19:06:07.895742 #5810]  INFO -- : write Thought-Knot Seer.price.date[2016-05-27T19:05:59+09:00]
+D, [2016-05-27T19:06:07.895870 #5810] DEBUG -- : card[Thought-Knot Seer] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.895983 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.896111 #5810]  INFO -- : write Ultimate Price.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.896230 #5810]  INFO -- : write Ultimate Price.name[Ultimate Price]
+I, [2016-05-27T19:06:07.896349 #5810]  INFO -- : write Ultimate Price.quantity[1]
+I, [2016-05-27T19:06:07.896480 #5810]  INFO -- : write Ultimate Price.manacost[1B]
+I, [2016-05-27T19:06:07.896606 #5810]  INFO -- : write Ultimate Price.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.896727 #5810]  INFO -- : write Ultimate Price.price[80]
+I, [2016-05-27T19:06:07.896856 #5810]  INFO -- : write Ultimate Price.store_url[http://www.hareruyamtg.com/jp/g/gDTK000144JN/]
+I, [2016-05-27T19:06:07.896992 #5810]  INFO -- : write Ultimate Price.price.date[2016-05-27T19:06:01+09:00]
+D, [2016-05-27T19:06:07.897129 #5810] DEBUG -- : card[Ultimate Price] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.897244 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.897378 #5810]  INFO -- : write Duress.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.897510 #5810]  INFO -- : write Duress.name[Duress]
+I, [2016-05-27T19:06:07.897636 #5810]  INFO -- : write Duress.quantity[1]
+I, [2016-05-27T19:06:07.897757 #5810]  INFO -- : write Duress.manacost[B]
+I, [2016-05-27T19:06:07.897892 #5810]  INFO -- : write Duress.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.898025 #5810]  INFO -- : write Duress.price[50]
+I, [2016-05-27T19:06:07.898150 #5810]  INFO -- : write Duress.store_url[http://www.hareruyamtg.com/jp/g/gDTK000173JN/]
+I, [2016-05-27T19:06:07.898282 #5810]  INFO -- : write Duress.price.date[2016-05-27T19:06:01+09:00]
+D, [2016-05-27T19:06:07.898411 #5810] DEBUG -- : card[Duress] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.898522 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.898649 #5810]  INFO -- : write Infinite Obliteration.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.898772 #5810]  INFO -- : write Infinite Obliteration.name[Infinite Obliteration]
+I, [2016-05-27T19:06:07.898896 #5810]  INFO -- : write Infinite Obliteration.quantity[1]
+I, [2016-05-27T19:06:07.899027 #5810]  INFO -- : write Infinite Obliteration.manacost[1BB]
+I, [2016-05-27T19:06:07.899151 #5810]  INFO -- : write Infinite Obliteration.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.899272 #5810]  INFO -- : write Infinite Obliteration.price[450]
+I, [2016-05-27T19:06:07.899407 #5810]  INFO -- : write Infinite Obliteration.store_url[http://www.hareruyamtg.com/jp/g/gORI000103JN/]
+I, [2016-05-27T19:06:07.899542 #5810]  INFO -- : write Infinite Obliteration.price.date[2016-05-27T19:06:03+09:00]
+D, [2016-05-27T19:06:07.899659 #5810] DEBUG -- : card[Infinite Obliteration] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.899772 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.899909 #5810]  INFO -- : write Transgress the Mind.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.900045 #5810]  INFO -- : write Transgress the Mind.name[Transgress the Mind]
+I, [2016-05-27T19:06:07.900164 #5810]  INFO -- : write Transgress the Mind.quantity[1]
+I, [2016-05-27T19:06:07.900287 #5810]  INFO -- : write Transgress the Mind.manacost[1B]
+I, [2016-05-27T19:06:07.900414 #5810]  INFO -- : write Transgress the Mind.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.900543 #5810]  INFO -- : write Transgress the Mind.price[300]
+I, [2016-05-27T19:06:07.900665 #5810]  INFO -- : write Transgress the Mind.store_url[http://www.hareruyamtg.com/jp/g/gBFZ000101JN/]
+I, [2016-05-27T19:06:07.900797 #5810]  INFO -- : write Transgress the Mind.price.date[2016-05-27T19:06:05+09:00]
+D, [2016-05-27T19:06:07.900938 #5810] DEBUG -- : card[Transgress the Mind] fineished.set previous_type [sideboardCards]
+I, [2016-05-27T19:06:07.901065 #5810]  INFO -- : previous_type[sideboardCards], card_type[sideboardCards]
+I, [2016-05-27T19:06:07.901198 #5810]  INFO -- : write Dead Weight.card_type[sideboardCards]
+I, [2016-05-27T19:06:07.901334 #5810]  INFO -- : write Dead Weight.name[Dead Weight]
+I, [2016-05-27T19:06:07.901459 #5810]  INFO -- : write Dead Weight.quantity[2]
+I, [2016-05-27T19:06:07.901590 #5810]  INFO -- : write Dead Weight.manacost[B]
+I, [2016-05-27T19:06:07.901716 #5810]  INFO -- : write Dead Weight.generating_mana_type[nil]
+I, [2016-05-27T19:06:07.901841 #5810]  INFO -- : write Dead Weight.price[30]
+I, [2016-05-27T19:06:07.901966 #5810]  INFO -- : write Dead Weight.store_url[http://www.hareruyamtg.com/jp/g/gSOI000106JN/]
+I, [2016-05-27T19:06:07.902186 #5810]  INFO -- : write Dead Weight.price.date[2016-05-27T19:06:07+09:00]
+D, [2016-05-27T19:06:07.902306 #5810] DEBUG -- : card[Dead Weight] fineished.set previous_type [sideboardCards]
+D, [2016-05-27T19:06:07.902425 #5810] DEBUG -- : write sideboardCards information
+I, [2016-05-27T19:06:07.905221 #5810]  INFO -- : Deck_prices initialize
+D, [2016-05-27T19:06:07.905445 #5810] DEBUG -- : Deck_prices read(../../decks/decklist.csv)
+D, [2016-05-27T19:06:07.906099 #5810] DEBUG -- : read BG Con JF
+D, [2016-05-27T19:06:07.906259 #5810] DEBUG -- : read BG Con tU
+D, [2016-05-27T19:06:07.906382 #5810] DEBUG -- : read BG Con tW
+D, [2016-05-27T19:06:07.906493 #5810] DEBUG -- : read EldraziStompyGPTokyov1.0.csv
+D, [2016-05-27T19:06:07.906605 #5810] DEBUG -- : read EldraziStompyGPTokyoSc3rd.csv
+D, [2016-05-27T19:06:07.906715 #5810] DEBUG -- : read WBAggro
+D, [2016-05-27T19:06:07.906832 #5810] DEBUG -- : read WGConCleatureless
+D, [2016-05-27T19:06:07.906976 #5810] DEBUG -- : read Monitor Combo
+D, [2016-05-27T19:06:07.907164 #5810] DEBUG -- : read Monitor Combo
+D, [2016-05-27T19:06:07.907350 #5810] DEBUG -- : read EldraziStompyBRGPTK
+D, [2016-05-27T19:06:07.907514 #5810] DEBUG -- : read WBConhareruya
+D, [2016-05-27T19:06:07.907656 #5810] DEBUG -- : read WBConkD09283S
+D, [2016-05-27T19:06:07.907791 #5810] DEBUG -- : read EldraziStompykD09256S
+D, [2016-05-27T19:06:07.907919 #5810] DEBUG -- : read RGRampkD09290S
+D, [2016-05-27T19:06:07.908062 #5810] DEBUG -- : read RG_RampkD09260S
+D, [2016-05-27T19:06:07.908222 #5810] DEBUG -- : read RG_RampkD09260S
+D, [2016-05-27T19:06:07.908369 #5810] DEBUG -- : read RG_RampkD09260S
+D, [2016-05-27T19:06:07.908490 #5810] DEBUG -- : read BG_ControlkD08241S
+D, [2016-05-27T19:06:07.908607 #5810] DEBUG -- : read BG_ControlkD08241S
+D, [2016-05-27T19:06:07.908740 #5810] DEBUG -- : read kD08241S
+D, [2016-05-27T19:06:07.908888 #5810] DEBUG -- : read kD08241S
+D, [2016-05-27T19:06:07.909013 #5810] DEBUG -- : read kD08241S
+D, [2016-05-27T19:06:07.909127 #5810] DEBUG -- : read kD08241S
+D, [2016-05-27T19:06:07.909238 #5810] DEBUG -- : read kD08241S
+D, [2016-05-27T19:06:07.909357 #5810] DEBUG -- : read Mono_White_Aggro_kD03070W
+D, [2016-05-27T19:06:07.909470 #5810] DEBUG -- : read WUG_Aggro_kD03069W
+D, [2016-05-27T19:06:07.909577 #5810] DEBUG -- : read WRG_Aggro_kD03068W
+D, [2016-05-27T19:06:07.909708 #5810] DEBUG -- : read WU_Aggro_kD03067W
+D, [2016-05-27T19:06:07.909816 #5810] DEBUG -- : read WRG_Aggro_kD03066W
+D, [2016-05-27T19:06:07.909963 #5810] DEBUG -- : read WB_Control_kD03042W
+D, [2016-05-27T19:06:07.910076 #5810] DEBUG -- : read Monitor_Combo_kD03043W
+D, [2016-05-27T19:06:07.910186 #5810] DEBUG -- : read Monitor_Combo_kD03044W
+D, [2016-05-27T19:06:07.910296 #5810] DEBUG -- : read BG_Husk_kD03045W
+D, [2016-05-27T19:06:07.910410 #5810] DEBUG -- : read WBConkD09283S
+D, [2016-05-27T19:06:07.910532 #5810] DEBUG -- : read WBConkD09283S
+D, [2016-05-27T19:06:07.910642 #5810] DEBUG -- : read Monitor_Combo_kD09885S
+D, [2016-05-27T19:06:07.910754 #5810] DEBUG -- : read Monitor_Combo_kD09885S
+D, [2016-05-27T19:06:07.910864 #5810] DEBUG -- : read Monitor_Combo_kD01468K
+D, [2016-05-27T19:06:07.910976 #5810] DEBUG -- : read Monitor_Combo_kD01468K
+D, [2016-05-27T19:06:07.911085 #5810] DEBUG -- : read WB_Control_kD01465K
+D, [2016-05-27T19:06:07.911242 #5810] DEBUG -- : Deck_prices add(deck WB_Control_kD10100S)
+D, [2016-05-27T19:06:07.911358 #5810] DEBUG -- : Deck_prices write(../../decks/decklist.csv)
+I, [2016-05-27T19:06:07.912870 #5810]  INFO -- : Store.initialize(MagicOnline)
+I, [2016-05-27T19:06:07.913009 #5810]  INFO -- : MagicOnline.create_card_list start.
+D, [2016-05-27T19:06:07.913123 #5810] DEBUG -- : convert WB_Control_kD10100S and save to ../../decks/magiconline/WB_Control_kD10100S.txt
+I, [2016-05-27T19:06:07.916428 #5810]  INFO -- : convert_from_full_to_mo.rb finished.

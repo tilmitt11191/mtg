@@ -15,3 +15,7 @@ Dispel
 Wastes
 Spawning Bed
 Twin Bolt
+Shivan Dragon
+Shivan Dragon
+Endbringer
+Endbringer

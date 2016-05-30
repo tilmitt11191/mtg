@@ -34,6 +34,7 @@ class Archetype_selector
 		
 		@log.info "Archetype_selector.select_archetype(#{deck.deckname}) finished. return deck.archetype[#{deck.archetype}]."
 	end
-	
+
 end
+
 

@@ -25,6 +25,7 @@ begin
 
 	deck1 = Deck.new(deckname, 'file', filename, @log)
 	deck1.id = 'kD08246S' #http://www.hareruyamtg.com/jp/k/kD08246S/
+	deck1.path = "../../test_cases/decklists/output/#{deckname}"
 	deck1.store = store
 	deck2 = Deck.new(deckname, 'file', filename, @log)
 	deck1.read_deckfile(filename,'card_type,name,quantity,price,store_url,price.date', 'with_info')

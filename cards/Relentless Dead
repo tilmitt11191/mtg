@@ -1,0 +1,4 @@
+<root><name>Relentless Dead</name><manacost>BB</manacost><manacost_point>2</manacost_point><type>
+			クリーチャー — ゾンビ(Zombie)		</type><oracle>Menace （This creature can&apos;t be blocked except by two or more creatures.）
+When Relentless Dead dies, you may pay {B}. If you do, return it to its owner&apos;s hand.
+When Relentless Dead dies, you may pay {X}. If you do, return another target Zombie creature card with converted mana cost X from your graveyard to the battlefield.</oracle><powertoughness>2/2</powertoughness><illustrator>Ryan Yee</illustrator><rarity>神話レア</rarity><cardset> イニストラードを覆う影 (131/297) </cardset><generating_mana_type>nil</generating_mana_type></root>

@@ -300,7 +300,7 @@ class Hareruya < Store
 		end
 
 		#deckname = url.split('/')[6]
-		deckname = get_archetype_from_url(url).to_s + url.split('/')[6].to_s
+		deckname = get_archetype_from_url(url).to_s + "_" + url.split('/')[6].to_s
 		deck = Deck.new(deckname, "hareruya", url, @log)
 		if priceflag == true || priceflag == "on" then
 			create_card_list(deck, "full")
@@ -423,8 +423,10 @@ class Hareruya < Store
 		@log.info "Hareruya.select_archetype_of[#{deck.deckname}] start."
 		
 		@log.debug "first try by filename[#{deck.path}"
-		#if filename is 
-		
+		#if filename is archetype_id WB_Control_kD10100S
+		if deck.path.include?(deck.id) then
+			puts "include"
+		end
 		
 		
 		@log.debug "second try by id"

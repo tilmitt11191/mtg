@@ -13,11 +13,11 @@ begin
 	@log.info ""
 
 
-	deckname = "WB_Control_kD01465K"
+	deckname = "WB_Control_kD10100S"
 	get_from = "web" #web or file
 	mode_of_create_cardlist = "full"
 
-	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD01465K/",@log)
+	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD10100S/",@log)
 	hareruya = Hareruya.new(@log)
 
 	case get_from
