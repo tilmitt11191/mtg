@@ -1,0 +1,10 @@
+
+#!/bin/zsh
+find ./  -name "._*" -print0 > /dev/null 2&>1 | xargs -0 git rm 2> /dev/null
+find ./  -name "._*" -print0  > /dev/null 2&>1 | xargs -0 rm 2> /dev/null
+find ./  -name "*.swp" -print0  > /dev/null 2&>1 | xargs -0 git rm  2> /dev/null
+find ./  -name "*.swp" -print0  > /dev/null 2&>1 | xargs -0 rm  2> /dev/null
+git add .
+git commit -m "$HOST `date`"
+git push -u origin master
+exit 0
