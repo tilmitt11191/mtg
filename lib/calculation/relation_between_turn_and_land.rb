@@ -21,7 +21,7 @@ options = {}
 
 # option parser
 options[:output]                         = "stdout"
-options[:viewing_parameters]             = ["lands_in_decks", "turns", "expecting_land_nums"]
+options[:viewing_parameters]             = ["lands_in_decks", "turns", "hands", "expecting_land_nums"]
 
 options[:cards_in_decks]                 = [60]
 options[:lands_in_decks]                 = [17,26]
@@ -40,7 +40,7 @@ opt.banner = " \
 opt.on('-h','--help','show help') { print opt.help; exit }
 opt.on( '-o output','--output','The place printing results. stdout or ... Default value is stdout.',\
 			String){|v| options[:output] = v}
-opt.on( '-v viewing_parameters','--viewing_parameters','Viewing parameters with results. Default values are [lands_in_decks, turns, expecting_land_nums].',\
+opt.on( '-v viewing_parameters','--viewing_parameters','Viewing parameters with results. Default values are [lands_in_decks, turns, hands, expecting_land_nums].',\
 			Array){|v| options[:viewing_parameters] = v}
 
 
