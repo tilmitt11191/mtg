@@ -422,18 +422,35 @@ class Hareruya < Store
 		end
 		@log.info "Hareruya.select_archetype_of[#{deck.deckname}] start."
 		
-		@log.debug "first try by filename[#{deck.path}"
-		#if filename is archetype_id WB_Control_kD10100S
+		@log.debug "first try by path/filename[#{deck.path}"
+		#if filename is archetype_id WB_Control_kD01304K
 		if deck.path.include?(deck.id) then
-			puts "include"
+			#extract filename from ../../test_cases/decklists/output/WB_Control_kD01304K.csv
+			*,filename = deck.path.split('/')
+			@log.debug "filename[#{filename}]"
+			archetype,* = filename.split('_'+deck.id.to_s)
+			@log.debug "archetype[#{archetype}]"
+			deck.archetype = archetype
+			@log.info "Hareruya.select_archetype(#{deck.deckname}) finished. return deck.archetype[#{deck.archetype}]"
+			return deck.archetype
 		end
 		
 		
 		@log.debug "second try by id"
-		@log.debug "url[http://www.hareruyamtg.com/jp/k/#{deck.id}]"
-
-		@log.info "Hareruya.select_archetype(#{deck.deckname}) finished. return deck.archetype[#{deck.archetype}]."
+		url = "http://www.hareruyamtg.com/jp/k/#{deck.id}"
+		if url_exists?(url, @log) then
+			deck.archetype = get_archetype_from_url(url)
+			@log.debug "url[#{url}], archetype[#{deck.archetype}]"
+			@log.info "Hareruya.select_archetype(#{deck.deckname}) finished. return deck.archetype[#{deck.archetype}]."
+			return deck.archetype
+		end
+		
+		
+		deck.archetype = nil
+		@log.info "Hareruya.select_archetype(#{deck.deckname}) finished. cannot identify deck.archetype. return nil"
+		return nil
 	end
+	
 	
 end
 

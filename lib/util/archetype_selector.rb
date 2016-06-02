@@ -16,7 +16,7 @@ class Archetype_selector
 
 	#def select_archetype(&block)
 	def select_archetype_of(deck, by:'default', &block)
-		if deck.nil?
+		if deck.nil? then
 			@log.error "Archetype_selector.select_archetype_of(nil)."
 			exit 1
 		end
@@ -24,7 +24,9 @@ class Archetype_selector
 
 		if by=='store' then
 			@log.debug "Archetype_selector calls #{deck.deckname}.#{deck.store.store_name}.select_archetype_of(#{deck.deckname})."
-			return deck.store.select_archetype_of(deck)
+			archetype = deck.store.select_archetype_of(deck)
+			@log.info "archetype_selector.select_archetype_of[(#{deck.deckname}]by[#{by}]) return #{archetype}"
+			return archetype
 		end
 
 		if by=='method' then

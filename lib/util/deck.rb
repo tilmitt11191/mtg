@@ -9,7 +9,7 @@ class Deck
 	@log
 		
 	@deckname
-	@cards #Array of Card
+	@cards #Array of Cards
 	@price #Class Price. deck_price.
 	@archetype #str
 	@sum_of_mainboard_generating_manas #str
@@ -443,5 +443,27 @@ class Deck
 		return num_of_cards
 	end
 	
+	
+	def merge_duplicated_cards!
+		#merge cards with same name.
+		#sum quantity
+		#trush other elements of later cards.
+		@log.info "merge_duplicated_cards(" + @deckname.to_s + ") start."
+		## how to achieve by using ruby abilities in order under nlogn?
+		
+		@uniq_cards = {} #hash of [cardname, integer]
+		
+		@cards.each do |card|
+			@uniq_cards["#{card.name}"].nil? ?  @uniq_cards["#{card.name}"] = card : 
+					@uniq_cards["#{card.name}"].quantity = @uniq_cards["#{card.name}"].quantity.to_i + card.quantity.to_i
+		end
+		
+		@cards = []
+		@uniq_cards.each do |cardname, card|
+			cards.push card
+		end
+		
+		@log.info "merge_duplicated_cards(" + @deckname.to_s + ") finished."
+	end
 end
 

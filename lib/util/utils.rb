@@ -34,3 +34,30 @@ def puts_create_write(error)
 	logger.fatal( "#{error.backtrace}" )
 	logger.fatal( "#{error.message}" )
 end
+
+
+require 'net/http'
+def url_exists?(url, logger, limit = 10)
+	@log.info "url_exists?(#{url}, limit = #{limit}) start."
+  if limit == 0
+   	logger.debug "url_exists? finished. url[#{url}] does not exist."
+    return false
+  end
+  begin
+    response = Net::HTTP.get_response(URI.parse(url))
+  rescue
+   	logger.debug "url_exists? finished. url[#{url}] does not exist."
+    return false
+  else
+    case response
+    when Net::HTTPSuccess
+    	logger.debug "url_exists? finished. url[#{url}] exists."
+      return true
+    when Net::HTTPRedirection
+      url_request(response['location'], limit - 1)
+    else
+    	logger.debug "url_exists? finished. url[#{url}] does not exist."
+      return false
+    end
+  end
+end

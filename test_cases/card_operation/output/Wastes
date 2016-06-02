@@ -1,2 +1,1 @@
-<root><name>Wastes</name><manacost></manacost><manacost_point>0</manacost_point><type>
-			基本土地		</type><oracle>{T}: Add {C} to your mana pool.</oracle><powertoughness></powertoughness><illustrator>Jason Felix</illustrator><rarity>コモン</rarity><cardset> ゲートウォッチの誓い (183/184) </cardset><generating_mana_type>C</generating_mana_type></root>
+<root><name>Wastes</name><manacost></manacost><manacost_point></manacost_point><type></type><oracle></oracle><powertoughness></powertoughness><illustrator></illustrator><rarity></rarity><cardset></cardset><generating_mana_type></generating_mana_type></root>

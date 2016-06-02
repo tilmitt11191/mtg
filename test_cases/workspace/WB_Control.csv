@@ -1,0 +1,83 @@
+info,WB_Control 49 W13U0B15R0G0C6A0
+land,Blighted Fen,1.11,,C,,C,30,
+land,Caves of Koilos,3.98,,C-W-B,,C-W-B,300,
+land,Forsaken Sanctuary,3.71,,W-B,,W-B,80,
+land,Plains,3.38,,W,,W,20,
+land,Shambling Vent,4.0,,W-B,,W-B,700,
+land,Swamp,5.93,,B,,B,20,
+land,Westvale Abbey,2.73,,C,,C,1600,
+info,21 Lands 0
+creature,Anguished Unmaking,2.87,1WB,nil,1WB,nil,500,
+creature,Grasp of Darkness,2.91,BB,nil,BB,nil,150,
+creature,Hallowed Moonlight,2.2,1W,nil,1W,nil,350,
+creature,Secure the Wastes,2.96,‚wW,nil,‚wW,nil,950,
+creature,Ultimate Price,2.71,1B,nil,1B,nil,80,
+creature,Languish,3.36,2BB,nil,2BB,nil,1100,
+creature,Planar Outburst,0.84,3WW,nil,3WW,nil,150,
+creature,Read the Bones,3.53,2B,nil,2B,nil,50,
+creature,Ruinous Path,1.75,1BB,nil,1BB,nil,400,
+creature,Transgress the Mind,3.49,1B,nil,1B,nil,300,
+creature,GideonPERIOD Ally of Zendikar,3.45,2WW,nil,2WW,nil,3300,
+creature,Ob Nixilis Reignited,2.22,3BB,nil,3BB,nil,850,
+creature,SorinPERIOD Grim Nemesis,1.8,4WB,nil,4WB,nil,1600,
+sideboardCards,Eldrazi Displacer,0.73,2W,nil,2W,nil,900,
+sideboardCards,KalitasPERIOD Traitor of Ghet,2.51,2BB,nil,2BB,nil,3800,
+sideboardCards,Thought-Knot Seer,1.04,3C,nil,3C,nil,1400,
+sideboardCards,Duress,2.53,B,nil,B,nil,50,
+sideboardCards,Dead Weight,0.85,B,nil,B,nil,30,
+sideboardCards,Bearer of Silence,0.31,1B,nil,1B,nil,120,
+sideboardCards,LinvalaPERIOD the Preserver,0.56,4WW,nil,4WW,nil,400,
+sideboardCards,Infinite Obliteration,0.65,1BB,nil,1BB,nil,450,
+creature,Silkwrap,0.16,1W,nil,1W,nil,200,
+creature,Stasis Snare,0.18,1WW,nil,1WW,nil,150,
+creature,Magnifying Glass,0.02,3,C,3,C,10,
+sideboardCards,Hangarback Walker,0.56,‚w‚w,nil,‚w‚w,nil,950,
+sideboardCards,Surge of Righteousness,0.02,1W,nil,1W,nil,100,
+sideboardCards,Dark Petition,0.2,3BB,nil,3BB,nil,900,
+creature,Declaration in Stone,0.8,1W,nil,1W,nil,1100,
+sideboardCards,Flaying Tendrils,0.13,1BB,nil,1BB,nil,50,
+sideboardCards,Orbs of Warding,0.02,5,nil,5,nil,60,
+sideboardCards,Pitiless Horde,0.25,2B,nil,2B,nil,80,
+sideboardCards,Reality Smasher,1.13,4C,nil,4C,nil,1100,
+land,Evolving Wilds,0.04,,A,,A,20,
+info,21 Lands 0
+creature,AyliPERIOD Eternal Pilgrim,0.38,WB,nil,WB,nil,150,
+info,26 Creatures 38
+spell,Descend upon the Sinful,0.09,4WW,nil,4WW,nil,350,
+info,0 Spells 0
+info,47 MainboardCards 38 78 W13U0B27R0G0C0
+sideboardCards,Tragic Arrogance,0.16,3WW,nil,3WW,nil,250,
+sideboardCards,Vampiric Rites,0.02,BB,nil,BB,nil,20,
+land,Battlefield Forge,0.22,,C-R-W,,C-R-W,250,
+info,21 Lands 0
+creature,Matter Reshaper,0.27,2C,nil,2C,nil,650,
+info,26 Creatures 38
+spell,Brain in a Jar,0.05,2,nil,2,nil,100,
+info,0 Spells 0
+info,47 MainboardCards 38 78 W13U0B27R0G0C0
+sideboardCards,To the Slaughter,0.15,2B,nil,2B,nil,180,
+sideboardCards,Warping Wail,0.18,1C,nil,1C,nil,150,
+sideboardCards,Self-Inflicted Wound,0.02,1B1B,nil,1B1B,nil,60,
+sideboardCards,Virulent Plague,0.25,2B,nil,2B,nil,60,
+sideboardCards,Archangel Avacyn,0.6,3WW,nil,3WW,nil,4500,
+sideboardCards,Wasteland Strangler,0.13,2B2B,nil,2B2B,nil,100,
+land,Blighted Cataract,0.04,,C,,C,20,
+spell,Ever After,0.02,4BB4BB,nil,4BB4BB,nil,80,
+spell,Mind Rot,0.04,2B,nil,2B,nil,10,
+land,Crumbling Vestige,0.05,,C,,C,20,
+land,Mage-Ring Network,0.02,,C-R-R-C,,C-R-R-C,50,
+sideboardCards,Mindwrack Demon,0.07,2BB,nil,2BB,nil,750,
+sideboardCards,Tainted Remedy,0.07,2B,nil,2B,nil,100,
+land,Sea Gate Wreckage,0.09,,C,,C,180,
+land,Llanowar Wastes,0.11,,C-B-G,,C-B-G,400,
+spell,Spatial Contortion,0.04,1C,nil,1C,nil,80,
+creature,Knight of the White Orchid,0.05,WW,nil,WW,nil,500,
+info,26 Creatures 38
+spell,Always Watching,0.04,1WW,nil,1WW,nil,400,
+info,0 Spells 0
+info,47 MainboardCards 38 78 W13U0B27R0G0C0
+sideboardCards,nil,0.04,0,nil,0,nil,20,
+sideboardCards,Grip of Desolation,0.02,4BB,nil,4BB,nil,10,
+creature,Hedron Crawler,0.04,2,C,2,C,30,
+info,6 SideboardCards 11 19 W0U0B6R0G0C2
+info,options[:files]

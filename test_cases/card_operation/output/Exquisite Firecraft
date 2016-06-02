@@ -1,3 +1,1 @@
-<root><name>Exquisite Firecraft</name><manacost>1RR</manacost><manacost_point>3</manacost_point><type>
-			ソーサリー		</type><oracle>Exquisite Firecraft deals 4 damage to target creature or player.
-Spell mastery --- If there are two or more instant and/or sorcery cards in your graveyard, Exquisite Firecraft can&apos;t be countered by spells or abilities.</oracle><powertoughness></powertoughness><illustrator>Chase Stone</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (143/272) </cardset><generating_mana_type>nil</generating_mana_type></root>
+<root><name>Exquisite Firecraft</name><manacost></manacost><manacost_point></manacost_point><type></type><oracle></oracle><powertoughness></powertoughness><illustrator></illustrator><rarity></rarity><cardset></cardset><generating_mana_type></generating_mana_type></root>

@@ -13,11 +13,11 @@ begin
 	@log.info ""
 
 
-	deckname = "WB_Control_kD10100S"
+	deckname = "UBG_Control_kD10271S"
 	get_from = "web" #web or file
 	mode_of_create_cardlist = "full"
 
-	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD10100S/",@log)
+	deck = Deck.new(deckname, "hareruya", "http://www.hareruyamtg.com/jp/k/kD10271S/",@log)
 	hareruya = Hareruya.new(@log)
 
 	case get_from
@@ -47,8 +47,9 @@ begin
 
 	mo = MagicOnline.new(@log)
 	mo.create_card_list(deck, "../../decks/magiconline/" + deckname + ".txt")
-
-
+	deck.create_deckfile("../../decks/magiconline/" + deckname + ".csv","card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", 'with_info')
+	
+	
 rescue => e
 	puts_write(e,@log)
 end
