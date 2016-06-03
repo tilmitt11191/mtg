@@ -52,12 +52,12 @@ Dir::glob(options[:files]).each do |filename|
 		@log.debug "selected.cards.size[#{selected.cards.size}]"
 	end
 end
-puts selected.cards.size
+
 selected.merge_duplicated_cards!
+
 selected.cards.each do |card|
 	card.quantity = (card.quantity.to_f / deck_num.to_f).round(2)
 end
-puts selected.cards.size
 selected.create_deckfile("../../test_cases/workspace/#{options[:archetype]}.csv", "card_type,name,quantity,manacost,generating_mana_type,price,store_url,price.date", 'with_info')
 
 puts File.basename(__FILE__).to_s + " finished."

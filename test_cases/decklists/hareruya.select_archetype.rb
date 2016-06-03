@@ -30,23 +30,14 @@ begin
 	deck1.read_deckfile(filename,'card_type,name,quantity,price,store_url,price.date', 'with_info')
 	#deck.archetype = archetype_selector.select_archetype do store.select_archetype(deck) end
 	#deck.archetype = archetype_selector.select_archetype do store.select_archetype(deck) end
-
-	#### no method test
-	deck1.archetype = archetype_selector.select_archetype_of(deck1, by:'method')
-	if deck1.archetype.nil? then
-		puts "[ok]archetype_selector.select_archetype_of deck by method but no method"
-	else
-		puts "[ng]archetype_selector.select_archetype_of deck by method but no method"
-	end
-
-	deck1.archetype = archetype_selector.select_archetype_of(deck1, by:'method'){archetype_selector.predict_archetype_of deck1}
+	deck1.archetype = archetype_selector.select_archetype_of deck1, by:'store'
 	if deck1.archetype == "BG_Control" then
 		puts "[ok]archetype_selector.select_archetype deck1 is #{deck1.archetype}."
 	else
 		puts "[ng]archetype_selector.select_archetype deck1 is #{deck1.archetype}."
 	end
 	
-=begin
+
 	deckname = 'WB_Control_kD01304K.csv'
 	filename = "../../test_cases/decklists/output/#{deckname}"
 
@@ -61,7 +52,7 @@ begin
 	else
 		puts "[ng]archetype_selector.select_archetype deck2 is #{deck2.archetype}."
 	end
-=end
+	
 
 
 
