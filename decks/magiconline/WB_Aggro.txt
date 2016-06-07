@@ -1,0 +1,76 @@
+0 Battlefield Forge ORI
+2 Caves of Koilos ORI
+3 Forsaken Sanctuary SOI
+3 Shambling Vent BFZ
+2 Westvale Abbey SOI
+
+0 Bearer of Silence OGW
+3 Eldrazi Displacer OGW
+2 Kalitas, Traitor of Ghet OGW
+3 Thought-Knot Seer OGW
+3 Mindwrack Demon SOI
+3 Wasteland Strangler BFZ
+
+1 Anguished Unmaking SOI
+1 Dead Weight SOI
+2 Declaration in Stone SOI
+2 Duress DTK
+3 Grasp of Darkness OGW
+1 Hallowed Moonlight ORI
+3 Languish ORI
+0 Planar Outburst BFZ
+3 Read the Bones ORI
+2 Ruinous Path BFZ
+3 Secure the Wastes DTK
+2 Silkwrap DTK
+1 Tragic Arrogance ORI
+3 Transgress the Mind BFZ
+2 Ultimate Price DTK
+
+3 Gideon, Ally of Zendikar BFZ
+1 Ob Nixilis Reignited BFZ
+1 Sorin, Grim Nemesis SOI
+
+
+
+
+----
+
+
+1 Battlefield Forge
+3 Caves of Koilos
+3 Forsaken Sanctuary
+3 Shambling Vent
+2 Westvale Abbey
+
+0 Bearer of Silence
+3 Eldrazi Displacer
+2 Kalitas, Traitor of Ghet
+3 Thought-Knot Seer
+3 Mindwrack Demon
+3 Wasteland Strangler
+
+1 Anguished Unmaking
+1 Dead Weight
+2 Declaration in Stone
+2 Duress
+3 Grasp of Darkness
+1 Hallowed Moonlight
+3 Languish
+0 Planar Outburst
+3 Read the Bones
+2 Ruinous Path
+3 Secure the Wastes
+2 Silkwrap
+1 Tragic Arrogance
+3 Transgress the Mind
+2 Ultimate Price
+2 Ruinous Path
+
+3 Gideon, Ally of Zendikar
+1 Ob Nixilis Reignited
+1 Sorin, Grim Nemesis
+
+
+
+
