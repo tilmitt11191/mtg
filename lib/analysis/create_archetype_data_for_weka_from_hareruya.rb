@@ -24,13 +24,15 @@ begin
 
 	#### create weka attributes
 	filename = "../../data_for_analysis/hareruya1_archetypes.arff"
+
 	str = ""
-	for i in 0..75
-		str = str.to_s + "card" + i.to_s + "\n"
-	end	
-	File.open(filename, "w:sjis") do |file|
-		file.puts "@archetype_prediction
-@archetype
+	for i in 1..75 do
+		str = str.to_s + "@attribute card" + i.to_s + " string\n"
+	end
+		File.open(filename, "w:sjis") do |file|
+		file.puts "@relation archetype_prediction
+@attribute archetype string
+#{str}
 @data
 "
 		file.close
