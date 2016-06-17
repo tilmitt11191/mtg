@@ -61,3 +61,8 @@ def url_exists?(url, logger, limit = 10)
     end
   end
 end
+
+def convert_number_to_triple_digits(num)
+	puts sprintf("%03d",num)
+end
+

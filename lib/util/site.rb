@@ -7,22 +7,23 @@ require '../../lib/util/utils.rb'
 
 class Site
 	@log
-	@store_name
+	@site_name
 	@card_name
 	@url
-	@charset="UTF-8"
+	@charset
 	@card_row_data
 	@card_nokogiri
 	@deck_row_data
 	@deck_nokogiri
 	
 
-	attr_accessor :store_name
+	attr_accessor :site_name
 	
-	def initialize(store_name, logger)
+	def initialize(site_name, logger)
 		@log = logger
-		@log.info "Store.initialize(" + store_name + ")"
-		@store_name = store_name
+		@log.info "Site.initialize(" + site_name + ")"
+		@site_name = site_name
+		@charset="UTF-8"
 	end
 	
 end

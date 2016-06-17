@@ -3,6 +3,7 @@
 require	"logger"
 require 'open-uri'
 require 'nokogiri'
+require 'mechanize'
 require '../../lib/util/card.rb'
 require '../../lib/util/deck.rb'
 require '../../lib/util/utils.rb'
@@ -571,6 +572,62 @@ class WisdomGuild < Store
 		#card.price.value = price
 		#@log.debug "price is " + price
 		return card.price
+	end
+	
+	
+	def get_card_from_url(url)
+		@log.debug "get_cardname_from_url(#{url}) start."
+		card = Card.new("",@log)
+		agent = Mechanize.new
+		card_page = agent.get(url)
+		
+		card_page.search('tr').each do |tr|
+			if(tr.search('th.dc').text == "カード名") then
+				@log.debug "extract card name start."
+				str = tr.search('b').text
+				@log.debug str
+				card.name = str
+			end
+			if(tr.search('th.dc').text == "マナコスト") then
+				@log.debug "extract mana cost start."
+				str = tr.search('td.lc').text
+				@log.debug str
+				card.extract_manacost(str)
+			end
+			if(tr.search('th.dc').text == "タイプ") then
+				@log.debug "extract card type start."
+				str = tr.search('td.mc').text
+				@log.debug str
+				card.extract_type(str)
+			end
+			if(tr.search('th.dc').text == "オラクル") then
+				@log.debug "extract oracle start."
+				str = tr.search('td.lc').text
+				@log.debug str
+				card.extract_oracle(str)
+			end
+			if(tr.search('th.dc').text == "Ｐ／Ｔ") then
+				@log.debug "extract power/toughness start."
+				str = tr.search('td.lc').text
+				@log.debug str
+				card.extract_powertoughness(str)
+			end
+			if(tr.search('th.dc').text == "イラスト") then
+				@log.debug "extract illustrator start."
+				str = tr.search('td.lc').text
+				@log.debug str
+				card.extract_illustrator(str)
+			end
+			if(tr.search('th.dc').text == "セット等") then
+				@log.debug "extract rarity, card set start."
+				str = tr.search('td.mc').text
+				@log.debug str
+				card.extract_rarity_and_cardset(str)
+			end
+		end
+		
+		@log.debug "get_cardname_from_url(#{url}) finished."
+		return card
 	end
 end
 

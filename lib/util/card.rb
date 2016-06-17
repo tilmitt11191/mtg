@@ -27,7 +27,7 @@ class Card
 	@illustrator
 	@rarity
 	@cardset
-	attr_accessor :manacost, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
+	attr_accessor :manacost, :manacost_array, :manacost_point, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
 	
 	def initialize(name, logger)
 		@log = logger
@@ -277,7 +277,7 @@ class Card
 	end
 	
 	def extract_type(str)
-		@type = str
+		@type = str.gsub(/\n|\s/,"")
 	end
 	
 	def extract_oracle(str)
@@ -289,13 +289,13 @@ class Card
 	end
 	
 	def extract_illustrator(str)
-		@illustrator = str
+		@illustrator = str.gsub(/\n|\s/,"")
 	end
 	
 	def extract_rarity_and_cardset(str)
 		if str.include?(',') then
 			@rarity = str.split(',')[0]
-			@cardset = str.split(',')[1]
+			@cardset = str.split(',')[1].gsub(/\n|\s/,"")
 		else
 			@log.error "cardname(" + @cardname.to_s + ") not include rarity or cardset"
 		end
