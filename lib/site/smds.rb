@@ -46,7 +46,7 @@ class SMDS < Site
 					puts card.cardset
 					puts card.generating_mana_type
 
-					file.puts "#{score},\"#{card.name}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},#{card.powertoughness},#{card.illustrator},#{card.cardset},#{card.generating_mana_type},#{oracle}"
+					file.puts "#{score},\"#{card.name}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
 				end
 			end
 		end
