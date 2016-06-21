@@ -6,6 +6,7 @@ require 'nokogiri'
 require '../../lib/util/site.rb'
 require '../../lib/util/store.rb'
 require '../../lib/util/card.rb'
+require '../../lib/util/price_manager.rb'
 
 class SMDS < Site
 	
@@ -24,19 +25,32 @@ class SMDS < Site
 		#end
 		
 		#get cardname by id from wisdomguild.
-		store = WisdomGuild.new(@log)
-		
+		site = WisdomGuild.new(@log)
+		store = Mtgotraders.new(@log)
+
 		html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
 		File.open("pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
 			html_nokogiri.css('td/center').each do |element|
 				if /[0-9]/ =~ element.inner_text
 					score = element.inner_text
 					number = sprintf("%03d", element.css('img').attribute('id').to_s)
-					card = store.get_card_from_url("http://whisper.wisdom-guild.net/card/EMA#{(number)}/")
+					card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/EMA#{(number)}/")
 					oracle = card.oracle.gsub(/\n/,"")
 					
+					cardname_eng = card.name.split('/')[1]
+					cardname_jp = card.name.split('/')[0]
+					card.name = cardname_eng
+					oracle = card.oracle.gsub(/\n/,"")
+					
+					store.set_store_page_of(card)
+					price_manager = Price_manager.new(card, @log)
+					store.get_prices(price_manager)
+
+					
 					puts score
-					puts card.name
+					puts price_manager.relevant_price
+					puts cardname_eng
+					puts cardname_jp	
 					puts card.rarity
 					puts card.manacost
 					puts card.manacost_point
@@ -46,7 +60,8 @@ class SMDS < Site
 					puts card.cardset
 					puts card.generating_mana_type
 
-					file.puts "#{score},\"#{card.name}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
+					file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
+
 				end
 			end
 		end
