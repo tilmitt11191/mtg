@@ -11,9 +11,10 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	packname='ETERNALMASTERS'
+	packname='EldritchMoom'
+	short='EMN'
 	store = SMDS.new(@log)
-	store.create_pointranking_list_of(packname)
+	store.create_pointranking_list_of(packname, short)
 
 	@log.info File.basename(__FILE__).to_s + " finished."
 	puts File.basename(__FILE__).to_s + " finished."
