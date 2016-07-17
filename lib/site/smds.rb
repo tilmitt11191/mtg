@@ -29,7 +29,7 @@ class SMDS < Site
 		store = Mtgotraders.new(@log)
 
 		html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
-		File.open("pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
+		File.open("../../data_for_analysis/pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
 			if html_nokogiri.css('td/center').nil? then
 				puts "nil"
 			else
@@ -37,34 +37,35 @@ class SMDS < Site
 				if /[0-9]/ =~ element.inner_text
 					score = element.inner_text
 					number = sprintf("%03d", element.css('img').attribute('id').to_s)
+					@log.debug "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
 					card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/#{short}#{(number)}/")
-					oracle = card.oracle.gsub(/\n/,"") if !card.oracle.nil?
+					if !card.nil? then
+						cardname_eng = card.name.split('/')[1]
+						cardname_jp = card.name.split('/')[0]
+						
+						card.name = cardname_eng
+						oracle = card.oracle.gsub(/\n/,"") if !card.oracle.nil?
+						
+						store.set_store_page_of(card)
+						price_manager = Price_manager.new(card, @log)
+						store.get_prices(price_manager)
+	
 					
-					cardname_eng = card.name.split('/')[1]
-					cardname_jp = card.name.split('/')[0]
-					card.name = cardname_eng
-					oracle = card.oracle.gsub(/\n/,"")
-					
-					store.set_store_page_of(card)
-					price_manager = Price_manager.new(card, @log)
-					store.get_prices(price_manager)
+						puts score
+						puts price_manager.relevant_price
+						puts cardname_eng
+						puts cardname_jp	
+						puts card.rarity
+						puts card.manacost
+						puts card.manacost_point
+						puts card.type
+						puts card.powertoughness
+						puts card.illustrator
+						puts card.cardset
+						puts card.generating_mana_type
 
-					
-					puts score
-					puts price_manager.relevant_price
-					puts cardname_eng
-					puts cardname_jp	
-					puts card.rarity
-					puts card.manacost
-					puts card.manacost_point
-					puts card.type
-					puts card.powertoughness
-					puts card.illustrator
-					puts card.cardset
-					puts card.generating_mana_type
-
-					file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
-
+						file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
+					end
 				end
 			end
 			end

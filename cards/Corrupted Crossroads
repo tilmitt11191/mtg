@@ -1,3 +1,0 @@
-<root><name>Corrupted Crossroads</name><manacost></manacost><manacost_point>0</manacost_point><type>
-			土地		</type><oracle>{T}: Add {C} to your mana pool. （{C} represents colorless mana.）
-{T}, Pay 1 life: Add one mana of any color to your mana pool. Spend this mana only to cast a spell with devoid.</oracle><powertoughness></powertoughness><illustrator>Ryan Pancoast</illustrator><rarity>レア</rarity><cardset> ゲートウォッチの誓い (169/184) </cardset><generating_mana_type>C</generating_mana_type></root>

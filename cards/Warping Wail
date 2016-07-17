@@ -1,6 +1,0 @@
-<root><name>Warping Wail</name><manacost>1C</manacost><manacost_point>2</manacost_point><type>
-			インスタント		</type><oracle>（{C} represents colorless mana.）
-Choose one ---
-• Exile target creature with power or toughness 1 or less.
-• Counter target sorcery spell.
-• Put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has &quot;Sacrifice this creature: Add {C} to your mana pool.&quot;</oracle><powertoughness></powertoughness><illustrator>Jason Felix</illustrator><rarity>アンコモン</rarity><cardset> ゲートウォッチの誓い (12/184) </cardset><generating_mana_type>nil</generating_mana_type></root>

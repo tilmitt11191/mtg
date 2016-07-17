@@ -12,12 +12,27 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	url = "http://syunakira.com/smd/pointranking/index.php?packname=ETERNALMASTERS&language=Japanese"
-
+	packname='EldritchMoom'
+	short='EMN'
+	url = "http://syunakira.com/smd/pointranking/index.php?packname=#{packname}&language=Japanese"
+	
 	html_row_data = open(url)
-	#File.open("url.html", "w") do |file|
-	#	file.write html_row_data.read
-	#end
+	html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
+	if html_nokogiri.css('td/center').nil? then
+		puts "nil"
+	else
+		html_nokogiri.css('td/center/id').each do |element|
+			puts element.inner_text
+			if /[0-9]/ =~ element.inner_text
+				score = element.inner_text
+				number = sprintf("%03d", element.css('img').attribute('id').to_s)
+				puts "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
+				@log.debug "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
+			end
+		end
+	end
+	
+	
 	
 	#get cardname by id from wisdomguild.
 	site = WisdomGuild.new(@log)
@@ -47,9 +62,16 @@ begin
 	puts card.cardset
 	puts card.generating_mana_type
 
-	File.open("pointranking_list_of_ETERNALMASTERS.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
+	File.open("test_pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
 		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
 	end
+	
+	
+	#####
+		
+	
+	
+	
 rescue => e
 		puts_write(e,@log)
 end

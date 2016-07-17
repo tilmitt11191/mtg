@@ -1,4 +1,0 @@
-<root><name>Mage-Ring Responder</name><manacost>7</manacost><manacost_point>7</manacost_point><type>
-			アーティファクト・クリーチャー — ゴーレム(Golem)		</type><oracle>Mage-Ring Responder doesn&apos;t untap during your untap step.
-{7}: Untap Mage-Ring Responder.
-Whenever Mage-Ring Responder attacks, it deals 7 damage to target creature defending player controls.</oracle><powertoughness>7/7</powertoughness><illustrator>Adam Paquette</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (232/272) </cardset><generating_mana_type>nil</generating_mana_type></root>

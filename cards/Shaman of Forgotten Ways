@@ -1,3 +1,0 @@
-<root><name>Shaman of Forgotten Ways</name><manacost>2G2G</manacost><manacost_point>3</manacost_point><type>
-			クリーチャー — 人間(Human)・シャーマン(Shaman)		</type><oracle>{T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast creature spells.
-Formidable --- {9}{G}{G}, {T}: Each player&apos;s life total becomes the number of creatures he or she controls. Activate this ability only if creatures you control have total power 8 or greater.</oracle><powertoughness>2/3</powertoughness><illustrator>Tyler Jacobson</illustrator><rarity>神話レア</rarity><cardset> タルキール龍紀伝 (204/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

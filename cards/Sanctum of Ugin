@@ -1,3 +1,0 @@
-<root><name>Sanctum of Ugin</name><manacost></manacost><manacost_point>0</manacost_point><type>
-			土地		</type><oracle>{T}: Add {C} to your mana pool.
-Whenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice Sanctum of Ugin. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.</oracle><powertoughness></powertoughness><illustrator>James Paick</illustrator><rarity>レア</rarity><cardset> 戦乱のゼンディカー (242/274) </cardset><generating_mana_type>nil</generating_mana_type></root>

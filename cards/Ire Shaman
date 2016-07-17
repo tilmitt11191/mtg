@@ -1,4 +1,0 @@
-<root><name>Ire Shaman</name><manacost>1R1R</manacost><manacost_point>2</manacost_point><type>
-			クリーチャー — オーク(Orc)・シャーマン(Shaman)		</type><oracle>Menace （This creature can&apos;t be blocked except by two or more creatures.）
-Megamorph {R} （You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its megamorph cost and put a +1/+1 counter on it.）
-When Ire Shaman is turned face up, exile the top card of your library. Until end of turn, you may play that card.</oracle><powertoughness>2/1</powertoughness><illustrator>Jack Wang</illustrator><rarity>レア</rarity><cardset> タルキール龍紀伝 (141/264) </cardset><generating_mana_type>nil</generating_mana_type></root>

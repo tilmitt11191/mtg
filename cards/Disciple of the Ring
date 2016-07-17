@@ -1,6 +1,0 @@
-<root><name>Disciple of the Ring</name><manacost>3UU3UU</manacost><manacost_point>5</manacost_point><type>
-			クリーチャー — 人間(Human)・ウィザード(Wizard)		</type><oracle>{1}, Exile an instant or sorcery card from your graveyard: Choose one ---
-• Counter target noncreature spell unless its controller pays {2}.
-• Disciple of the Ring gets +1/+1 until end of turn.
-• Tap target creature.
-• Untap target creature.</oracle><powertoughness>3/4</powertoughness><illustrator>Clint Cearley</illustrator><rarity>神話レア</rarity><cardset> マジック・オリジン (53/272) </cardset><generating_mana_type>nil</generating_mana_type></root>

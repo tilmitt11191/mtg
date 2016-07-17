@@ -1,3 +1,0 @@
-<root><name>Llanowar Wastes</name><manacost></manacost><manacost_point>0</manacost_point><type>
-			土地		</type><oracle>{T}: Add {C} to your mana pool.
-{T}: Add {B} or {G} to your mana pool. Llanowar Wastes deals 1 damage to you.</oracle><powertoughness></powertoughness><illustrator>Rob Alexander</illustrator><rarity>レア</rarity><cardset> マジック・オリジン (248/272) </cardset><generating_mana_type>C-B-G</generating_mana_type></root>

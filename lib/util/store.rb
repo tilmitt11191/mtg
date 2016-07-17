@@ -581,6 +581,12 @@ class WisdomGuild < Store
 		agent = Mechanize.new
 		card_page = agent.get(url)
 		
+		#check card.exist?
+		if card_page.search('div[@class="error owl-prompt"]').inner_text.include?('ご指定のカードは見つかりませんでした。') then
+			@log.info "get_cardname_from_url(#{url}) finished. card not found. return nil."
+			return nil
+		end
+		
 		card_page.search('tr').each do |tr|
 			if(tr.search('th.dc').text == "カード名") then
 				@log.debug "extract card name start."

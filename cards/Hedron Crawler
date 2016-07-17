@@ -1,2 +1,0 @@
-<root><name>Hedron Crawler</name><manacost>2</manacost><manacost_point>2</manacost_point><type>
-			アーティファクト・クリーチャー — 構築物(Construct)		</type><oracle>{T}: Add {C} to your mana pool. （{C} represents colorless mana.）</oracle><powertoughness>0/1</powertoughness><illustrator>Daniel Ljunggren</illustrator><rarity>コモン</rarity><cardset> ゲートウォッチの誓い (164/184) </cardset><generating_mana_type>C</generating_mana_type></root>
