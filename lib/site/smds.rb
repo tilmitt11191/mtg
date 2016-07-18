@@ -35,7 +35,7 @@ class SMDS < Site
 			else
 			html_nokogiri.css('td/center').each do |element|
 				if /[0-9]/ =~ element.inner_text
-					score = element.inner_text
+					score = element.inner_text.gsub(/\s|\n/,"")
 					number = sprintf("%03d", element.css('img').attribute('id').to_s)
 					@log.debug "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
 					card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/#{short}#{(number)}/")

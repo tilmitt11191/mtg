@@ -21,19 +21,19 @@ begin
 	if html_nokogiri.css('td/center').nil? then
 		puts "nil"
 	else
-		html_nokogiri.css('td/center/id').each do |element|
-			puts element.inner_text
+		html_nokogiri.css('td/center').each do |element|
 			if /[0-9]/ =~ element.inner_text
-				score = element.inner_text
+				score = element.inner_text.gsub(/\s|\n/,"")
 				number = sprintf("%03d", element.css('img').attribute('id').to_s)
-				puts "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
+				puts "#{score}, #{number}"
+				#puts "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
 				@log.debug "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
 			end
 		end
 	end
 	
 	
-	
+=begin
 	#get cardname by id from wisdomguild.
 	site = WisdomGuild.new(@log)
 	store = Mtgotraders.new(@log)
@@ -65,8 +65,8 @@ begin
 	File.open("test_pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
 		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
 	end
-	
-	
+=end	
+
 	#####
 		
 	
