@@ -21,6 +21,11 @@ def diff(file1, file2) #TODO
 end
 
 def puts_write(error, logger)
+	logger.warn "this method(#{__method__}) will be moved to write_error_to_log"
+	write_error_to_log(error, logger)
+end
+
+def write_error_to_log(error, logger)
 	puts error.backtrace
 	puts error.message
 	logger.fatal( "#{error.backtrace}" )
@@ -28,6 +33,7 @@ def puts_write(error, logger)
 end
 
 def puts_create_write(error)
+	logger.warn "this method(#{__method__}) will be removed"
 	puts error.backtrace
 	puts error.message
 	logger = Logger.new("../../log", 5, 10 * 1024 * 1024)
@@ -38,7 +44,7 @@ end
 
 require '../../lib/util/web.rb'
 def url_exists?(url, logger, limit = 10)
-	logger.warn 'this method(utils.url_exists?) will be moved to web.rb'
+	logger.warn "this method(#{__method__}) will be moved to web.rb"
 	web = Web.new
 	web.url_exists?(url, logger, limit = 10)
 end

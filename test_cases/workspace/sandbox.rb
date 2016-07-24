@@ -1,3 +1,12 @@
+
+require 'test/unit'
+
+def test_read_4th_character
+	contents = File.read('data.txt')
+	assert_equal 'd', contents[3,1]
+end
+
+=begin
 	#### create weka attributes
 	filename = "../../data_for_analysis/hareruya1_archetypes.arff"
 
@@ -13,3 +22,4 @@
 "
 		file.close
 	end
+=end
