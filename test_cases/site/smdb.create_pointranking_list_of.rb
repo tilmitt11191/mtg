@@ -1,4 +1,4 @@
-
+# encoding: UTF-8
 
 require "logger"
 require '../../lib/util/site.rb'

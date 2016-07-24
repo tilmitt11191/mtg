@@ -1,9 +1,6 @@
-
+# encoding: UTF-8
 
 require "logger"
-require '../../lib/util/site.rb'
-require '../../lib/util/card.rb'
-require '../../lib/util/price_manager.rb'
 require '../../lib/site/Channelfireball.rb'
 
 begin
@@ -16,19 +13,15 @@ begin
 	
 	packname='EldritchMoom'
 	short='EMN'
+	outputfile = File.open("../../decks/channelfireball_reviews_#{short}.csv", "w:utf_8", :invalid => :replace, :undef => :replace, :replace => '?')
 	
 	urls=[]
 	urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-colorless-lands-and-gold/"
 
-	outputfile = file.open(../../decks/)
-	#html_row_data = open(url)
-	#File.open("url.html", "w") do |file|
-	#	file.write html_row_data.read
-	#end
-	
-	#get cardname by id from wisdomguild.
+
 	site = Channelfireball.new(@log)
-	site.get_limited_set_reviews(urls)
+	site.get_limited_set_reviews(outputfile, urls)
+	outputfile.close
 	
 =begin
 	store = Mtgotraders.new(@log)

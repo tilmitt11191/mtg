@@ -36,30 +36,11 @@ def puts_create_write(error)
 end
 
 
-require 'net/http'
+require '../../lib/util/web.rb'
 def url_exists?(url, logger, limit = 10)
-	@log.info "url_exists?(#{url}, limit = #{limit}) start."
-  if limit == 0
-   	logger.debug "url_exists? finished. url[#{url}] does not exist."
-    return false
-  end
-  begin
-    response = Net::HTTP.get_response(URI.parse(url))
-  rescue
-   	logger.debug "url_exists? finished. url[#{url}] does not exist."
-    return false
-  else
-    case response
-    when Net::HTTPSuccess
-    	logger.debug "url_exists? finished. url[#{url}] exists."
-      return true
-    when Net::HTTPRedirection
-      url_request(response['location'], limit - 1)
-    else
-    	logger.debug "url_exists? finished. url[#{url}] does not exist."
-      return false
-    end
-  end
+	logger.warn 'this method(utils.url_exists?) will be moved to web.rb'
+	web = Web.new
+	web.url_exists?(url, logger, limit = 10)
 end
 
 def convert_number_to_triple_digits(num)
