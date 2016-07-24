@@ -13,9 +13,14 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
+	
+	packname='EldritchMoom'
+	short='EMN'
+	
 	urls=[]
 	urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-colorless-lands-and-gold/"
-	outputfile = file.open(../../)
+
+	outputfile = file.open(../../decks/)
 	#html_row_data = open(url)
 	#File.open("url.html", "w") do |file|
 	#	file.write html_row_data.read
