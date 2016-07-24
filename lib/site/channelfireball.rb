@@ -14,6 +14,11 @@ class Channelfireball < Site
 		@url = "http://www.channelfireball.com/articles/"
 	end
 	
+	def get_limited_set_reviews(outputfile,urls)
+		puts urls
+	end
+	
+	
 	def get_decklist_from_article(url)
 		@log.info "channelfireball.get_decklist_from_article start."
 		@log.info "url[#{url}]"
