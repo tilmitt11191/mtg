@@ -8,16 +8,61 @@ require '../../lib/util/site.rb'
 require '../../lib/util/deck.rb'
 
 class Channelfireball < Site
+
+	#for get_limited_set_reviews
+	@cardnames
+	@scores
+	@comments
+	attr_accessor :cardnames, :scores, :comments
 	
 	def initialize(logger)
 		super("Channelfireball", logger)
 		@url = "http://www.channelfireball.com/articles/"
+
+		@cardnames = []
+		@scores = {}
+		@comments = {}
 	end
 	
 	def get_limited_set_reviews(outputfile,urls)
-		puts urls
+		@log.info "#{__method__} start."
+		urls.each do |url|
+			html = @web.get_dom_of(url, @log)
+			#@web.output_html_src_to('../../test_cases/workspace/output/src.html', @log)
+			extract_cardnames_from html
+			remove_invalid_cards
+			extract_scores_and_comments_from html
+		end
 	end
 	
+	def extract_cardnames_from(html)
+		@log.info "#{__method__} start."
+		html.css('h1').each do |element|
+			@log.debug "cardname[#{element.inner_text}]"
+			@cardnames.push element.inner_text
+		end
+	end
+	
+	def remove_invalid_cards
+		@log.info "#{__method__} start."
+		if @cardnames.nil? then
+			@log.warn '@cardnames is nil'
+			return false
+		end
+
+		@cardnames.reject!{|cardname| /(Limited Set Review|Ratings Scale|Top 5)/=~ cardname}
+	end
+	
+	def extract_scores_and_comments_from(html)
+		@cardnames.each do |cardname|
+			puts cardname
+		end
+		html.xpath('/').each do |line|
+			##
+		end
+	end
+
+
 	
 	def get_decklist_from_article(url)
 		@log.info "channelfireball.get_decklist_from_article start."

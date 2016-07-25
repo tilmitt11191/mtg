@@ -4,9 +4,11 @@ require	"logger"
 require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/utils.rb'
+require '../../lib/util/web.rb'
 
 class Site
 	@log
+	@web
 	@site_name
 	@card_name
 	@url
@@ -22,6 +24,7 @@ class Site
 	def initialize(site_name, logger)
 		@log = logger
 		@log.info "Site.initialize(" + site_name + ")"
+		@web = Web.new
 		@site_name = site_name
 		@charset="UTF-8"
 	end

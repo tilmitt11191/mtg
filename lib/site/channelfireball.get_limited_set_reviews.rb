@@ -13,10 +13,13 @@ begin
 	
 	packname='EldritchMoom'
 	short='EMN'
-	outputfile = File.open("../../decks/channelfireball_reviews_#{short}.csv", "w:utf_8", :invalid => :replace, :undef => :replace, :replace => '?')
+	outputfile = File.open("../../decks/channelfireball_reviews_#{short}.csv", "w:utf-8", :invalid => :replace, :undef => :replace, :replace => '?')
 	
 	urls=[]
-	urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-colorless-lands-and-gold/"
+	#['white', 'blue', 'black', 'red', 'green', 'colorless-lands-and-gold'].each do |color|
+	['white'].each do |color|
+		urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-#{color}/"
+	end
 
 
 	site = Channelfireball.new(@log)
