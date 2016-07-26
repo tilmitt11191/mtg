@@ -9,6 +9,7 @@ require '../../lib/util/web.rb'
 class Site
 	@log
 	@web
+	@html
 	@site_name
 	@card_name
 	@url
@@ -19,7 +20,7 @@ class Site
 	@deck_nokogiri
 	
 
-	attr_accessor :site_name
+	attr_accessor :site_name, :web, :html
 	
 	def initialize(site_name, logger)
 		@log = logger

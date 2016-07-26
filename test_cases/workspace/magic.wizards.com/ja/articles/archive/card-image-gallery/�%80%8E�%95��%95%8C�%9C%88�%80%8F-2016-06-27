@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>『異界月』 | マジック：ザ・ギャザリング</title>
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+	<meta name="google-site-verification" content="WquIfqfWtlm2X62GTeJ-5vDtRrbOVOIT6mFc3vAP5BQ" />
+
+  <link rel="icon" type="image/png" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/sites/all/themes/wiz_mtg/icons/favicon.ico"/>
+  <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/wiz_mtg/icons/touch-icon-57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sites/all/themes/wiz_mtg/icons/touch-icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sites/all/themes/wiz_mtg/touch-icon-114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://magic.wizards.com/sites/all/themes/wiz_mtg/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<meta name="description" content="The Card Image Gallery is updated every day with the latest card previews. Eldritch Moon releases on July 22, 2016." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://magic.wizards.com/ja/articles/archive/card-image-gallery/%E3%80%8E%E7%95%B0%E7%95%8C%E6%9C%88%E3%80%8F-2016-06-27" />
+<link rel="shortlink" href="http://magic.wizards.com/ja/node/1031666" />
+<meta property="og:site_name" content="マジック：ザ・ギャザリング" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://magic.wizards.com/ja/articles/archive/card-image-gallery/%E3%80%8E%E7%95%B0%E7%95%8C%E6%9C%88%E3%80%8F-2016-06-27" />
+<meta property="og:title" content="『異界月』" />
+<meta property="og:description" content="The Card Image Gallery is updated every day with the latest card previews. Eldritch Moon releases on July 22, 2016." />
+<meta property="og:image" content="http://magic.wizards.com/sites/mtg/files/images/hero/v2wgNoeaIF_icon_0.jpg" />
+  <link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_DHcXHPYBSjIVaCQZEG4ZlpLkvslnFlBCnQUCzlbRBio.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_jqLG8JVbJuXMDDISe4UsZMUj_1qh-z0BGGAnA4OQvrA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_IIxgQdBS3hICu6Ps9jWiboRWYhCChZSb8zy58PRgH-8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_sELblXm0HE9iYxNNwDufKAxxNQ7ZkF6_ABbBSpg1HBE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css" media="all" />
+  <script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_melyhmK_eh6sYXp2z9ljBIs419nCvgG6X4XWQKGJjng.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_yRh3TUp_QoC2vC9PitxLvVXRHsQUtJt-ObNFP_v6h-k.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_1swqkjOwmrPjTNzECJhtuekK-QJ_S5vc3xlUxa4gvEI.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_UUFgTCdC57hQr5idPdmIKSjdC4FyPeVecP6l7orYkkg.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-15020098-13", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "pathToTheme": "sites/all/themes/wiz_mtg" });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://accounts.wizards.com/Widget/Widget.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_tuIsI7hTJyYf1XxjjnXVjPFwG177VUndBDGTmD13oH0.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_JIa4YdILIwnQQfsYZSjX1gz9IUt6emOIXEvyA44TWDI.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"ja\/","ajaxPageState":{"theme":"wiz_mtg","theme_token":"49oAoQtBOkeLZO6sFmvN6AAu96YkSTgmwG3TR63k1mc","jquery_version":"1.8","js":{"sites\/all\/themes\/wiz_mtg\/js\/ShareButton.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/masonry.pkgd.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/wiz_autocard.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/jquery.qtip-1.0.0-rc3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/d3.v3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.charts.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/wiz_decklist_filter\/js\/wiz_decklist_filter.js":1,"sites\/all\/modules\/custom\/wiz_show_period\/js\/moment.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper-2.1.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper.scrollbar-2.1.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/custom.js":1,"public:\/\/languages\/ja_fSe4apjU94J85x0d5WIq9y5vHyoUWspNmqJrf_JPTGk.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/contrib\/modal_forms\/js\/modal_forms_popup.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/deletecookies.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"https:\/\/accounts.wizards.com\/Widget\/Widget.js":1,"sites\/all\/modules\/custom\/wiz_npsu\/js\/npsu_widget.js":1,"sites\/all\/themes\/wiz_mtg\/js\/image-comparison-slider.js":1,"sites\/all\/libraries\/foresee\/foresee-trigger.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery-ui.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/content-gallery-grid\/modernizr.custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.fancybox.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.scrollbar.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.mmenu.oncanvas.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.columnlist.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/dropdown.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/owl.carousel.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/stacktable.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/arketype.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-homepage-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-event-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/interstitials.js":1,"sites\/all\/themes\/wiz_mtg\/js\/community.js":1,"sites\/all\/themes\/wiz_mtg\/js\/inline-features.js":1,"sites\/all\/themes\/wiz_mtg\/js\/MainMenu.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ParallaxBackground.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ShowHideListItems.js":1,"sites\/all\/themes\/wiz_mtg\/js\/core.js":1,"sites\/all\/themes\/wiz_mtg\/js\/mx.js":1,"\/\/cdn.datatables.net\/1.10.5\/js\/jquery.dataTables.min.js":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/js\/dataTables.responsive.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.scrollbar.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"\/css\/tabs.css":1,"sites\/all\/modules\/contrib\/chartbeat\/chartbeat.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/contrib\/modal_forms\/css\/modal_forms_popup.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/custom\/wiz_npsu\/css\/npsu.css":1,"sites\/all\/modules\/custom\/wiz_npsu_mtg\/css\/npsu_mtg.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery-ui-mod.css":1,"sites\/all\/themes\/wiz_mtg\/css\/owl.carousel.css":1,"sites\/all\/themes\/wiz_mtg\/css\/scrollbars.css":1,"sites\/all\/themes\/wiz_mtg\/css\/fonts.css":1,"sites\/all\/themes\/wiz_mtg\/css\/core.css":1,"sites\/all\/themes\/wiz_mtg\/css\/header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/footer.css":1,"sites\/all\/themes\/wiz_mtg\/css\/page-header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/medias.css":1,"sites\/all\/themes\/wiz_mtg\/css\/search.css":1,"sites\/all\/themes\/wiz_mtg\/css\/decklist.css":1,"sites\/all\/themes\/wiz_mtg\/css\/articles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/game-info.css":1,"sites\/all\/themes\/wiz_mtg\/css\/events.css":1,"sites\/all\/themes\/wiz_mtg\/css\/community.css":1,"sites\/all\/themes\/wiz_mtg\/css\/mx.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/immersive.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/interstitials.css":1,"sites\/all\/themes\/wiz_mtg\/css\/styles-extended.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacy.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacyStyles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/_theme-override.css":1,"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic":1,"\/\/cdn.datatables.net\/1.10.5\/css\/jquery.dataTables.css":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/css\/dataTables.responsive.css":1}},"chartbeat":{"uid":51341,"domain":"http:\/\/magiccv2stg.prod.acquia-sites.com\/","useCanonical":true,"noCookies":false},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":330,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"wiz_core":{"wiz_core_switch_in_days":14,"wiz_core_switch_in_visits":10,"wiz_core_switch_b_path":"home"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"npsu_widget":{"enabled":true,"logged_in":"false"},"urlIsAjaxTrusted":{"\/ja\/articles\/archive\/card-image-gallery\/%E3%80%8E%E7%95%B0%E7%95%8C%E6%9C%88%E3%80%8F-2016-06-27":true}});
+//--><!]]>
+</script>
+
+  
+        <style>
+      @media all {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png) no-repeat;
+          background-size: 100% 100px;
+
+        }
+        #mobile-menu .header .logo a {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 100%;
+        }
+        #page.snap-menu header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+      @media (max-width: 1200px) {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+    </style>
+  	
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1031666 node-type-article i18n-ja content-non-panels role-anonymous-user with-subnav page-articles-archive-card-image-gallery--2016-06-27 section-articles" >
+  <script>
+  /* Interstitials variables */
+  var Interstitials = {
+    list: [
+                        ]
+  };
+  </script>
+
+  <div id="page" class="section_articles article_detail">
+    
+        <div id="mobile-menu">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="toggle-menu-button"></div>
+  </div>
+  <nav>
+    <div class="menu-wrapper" data-back-label="Back"></div>
+  </nav>
+</div>
+
+<div id="viewport">
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <div id="utils">
+        <a href="http://locator.wizards.com/" class="locator">店舗・イベント検索</a> <a href="http://gatherer.wizards.com" class="gatherer">カードデータベース</a>        <a href="/ja" title="ログイン" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;SignIn&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showLoginModal();" id="SignInButton" class="login">ログイン</a> | <a href="/ja" title="アカウント登録" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Signup&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showJoinModal();" id="RegisterButton" class="register">アカウント登録</a>        <div id="search-form">
+          <form action="/ja/articles/archive/card-image-gallery/%E3%80%8E%E7%95%B0%E7%95%8C%E6%9C%88%E3%80%8F-2016-06-27" method="post" id="wiz-search-bar-form--2" accept-charset="UTF-8"><div><input type="hidden" name="search-site" value="acquia_search" />
+<div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="サイト検索" type="text" id="edit-search-string--3" name="search-string" value="" size="25" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-search-button--3" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-LIORMOnxOJjTckJVV4qhLpChHAOfEp1ZVLnWRyghGEU" />
+<input type="hidden" name="form_id" value="wiz_search_bar_form" />
+</div></form>        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <a class="home" href="/ja"><span>Magic the Gathering</span></a>
+
+        <div class="menu-wrapper">
+          <ul class="menu"><li class="mn_section_マジックを始めよう！ has-children"><a href="/ja/content/new-magic-1"><span>マジックを始めよう！</span></a><ul class="menu"><li class="mn_section_頭脳の戦い、マジック"><a href="/ja/content/new-to-magic/strategy"><span>頭脳の戦い、マジック</span></a></li>
+<li class="mn_section_物語の舞台、マジック"><a href="/ja/content/%E7%89%A9%E8%AA%9E"><span>物語の舞台、マジック</span></a></li>
+<li class="mn_section_コミュニティ"><a href="/ja/content/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"><span>コミュニティ</span></a></li>
+</ul></li>
+<li class="mn_section_ゲーム情報 has-children"><a href="/ja/game-information" title=""><span>ゲーム情報</span></a><ul class="menu"><li class="hub-link ゲーム情報"><a href="/ja/game-information"><span>ゲーム情報</span></a></li>
+<li class="mn_section_ゲームプレイ has-children"><a title="" class="nolink"><span>ゲームプレイ</span></a><ul class="menu"><li class="mn_section_ゲームについて"><a href="/ja/game-info/gameplay/about-the-game" title=""><span>ゲームについて</span></a></li>
+<li class="mn_section_遊び方"><a href="/ja/game-info/gameplay/how-to-play" title=""><span>遊び方</span></a></li>
+<li class="mn_section_デッキの組み方"><a href="/ja/game-info/gameplay/how-to-build-a-deck" title=""><span>デッキの組み方</span></a></li>
+<li class="mn_section_腕を磨く"><a href="/ja/game-info/gameplay/improve-your-game" title=""><span>腕を磨く</span></a></li>
+<li class="mn_section_ルール"><a href="/ja/game-info/gameplay/rules-and-formats" title=""><span>ルール</span></a></li>
+</ul></li>
+<li class="mn_section_製品 has-children"><a title="" class="nolink"><span>製品</span></a><ul class="menu"><li class="mn_section_注目製品"><a href="/ja/game-info/products/featured-releases" title=""><span>注目製品</span></a></li>
+<li class="mn_section_近日登場"><a href="/ja/game-info/products/coming-soon" title=""><span>近日登場</span></a></li>
+<li class="mn_section_マジック・デュエルズ"><a href="/ja/content/magic-duels"><span>マジック・デュエルズ</span></a></li>
+<li class="mn_section_マジックオンライン"><a href="/ja/node/46382"><span>マジックオンライン</span></a></li>
+<li class="mn_section_製品アーカイブ"><a href="/ja/content/%E8%A3%BD%E5%93%81%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96-%E8%A3%BD%E5%93%81-%E3%82%B2%E3%83%BC%E3%83%A0%E6%83%85%E5%A0%B1" title=""><span>製品アーカイブ</span></a></li>
+</ul></li>
+<li class="mn_section_ストーリー has-children"><a title="" class="nolink"><span>ストーリー</span></a><ul class="menu"><li class="mn_section_物語への誘い"><a href="/ja/game-info/story/magic-story" title=""><span>物語への誘い</span></a></li>
+<li class="mn_section_プレインズウォーカー"><a href="/ja/game-info/story/planeswalkers" title=""><span>プレインズウォーカー</span></a></li>
+<li class="mn_section_次元"><a href="/ja/game-info/story/planes" title=""><span>次元</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_イベント has-children"><a href="/ja/events"><span>イベント</span></a><ul class="menu"><li class="mn_section_イベント-ホーム"><a href="/ja/events"><span>イベント ホーム</span></a></li>
+<li class="mn_section_組織化プレイ<br>とは？"><a href="/ja/events/what-is-organized-play"><span>組織化プレイ<br>とは？</span></a></li>
+<li class="mn_section_イベント<br>種別"><a href="/ja/events/event-types"><span>イベント<br>種別</span></a></li>
+<li class="mn_section_-レポート has-children"><a class="nolink"><span> レポート</span></a><ul class="menu"><li class="mn_section_レポート・アーカイブ"><a href="/ja/events/coverage" title=""><span>レポート・アーカイブ</span></a></li>
+<li class="mn_section_トップ・プレーヤー"><a href="/ja/node/46371" title=""><span>トップ・プレーヤー</span></a></li>
+</ul></li>
+<li class="mn_section_スケジュール"><a href="http://mtg/ja/content/premier-events-schedule"><span>スケジュール</span></a></li>
+<li class="mn_section_情報 has-children"><a class="nolink"><span>情報</span></a><ul class="menu"><li class="mn_section_プレインズウォーカー・ポイント"><a href="/ja/events/resources/planeswalker-points" title=""><span>プレインズウォーカー・ポイント</span></a></li>
+<li class="mn_section_ジャッジ"><a href="/ja/events/resources/judges" title=""><span>ジャッジ</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_記事 has-children current"><a href="/ja/articles" title="" class="active-trail"><span>記事</span></a><ul class="menu"><li class="mn_section_記事-ホーム current"><a href="/ja/articles" class="active-trail"><span>記事 ホーム</span></a></li>
+<li class="mn_section_アーカイブ"><a href="/ja/articles/archive"><span>アーカイブ</span></a></li>
+<li class="mn_section_イベント<br>優勝デッキ"><a href="/ja/node/46356"><span>イベント<br>優勝デッキ</span></a></li>
+<li class="mn_section_メディア has-children"><a class="nolink"><span>メディア</span></a><ul class="menu"><li class="mn_section_動画"><a href="/ja/node/46393" title=""><span>動画</span></a></li>
+<li class="mn_section_ポッドキャスト"><a href="/ja/node/46394" title=""><span>ポッドキャスト</span></a></li>
+<li class="mn_section_壁紙"><a href="/ja/node/46395" title=""><span>壁紙</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_コミュニティ has-children"><a href="/ja/community" title=""><span>コミュニティ</span></a><ul class="menu"><li class="mn_section_コミュニティ<br>ホーム"><a href="/ja/community"><span>コミュニティ<br>ホーム</span></a></li>
+<li class="mn_section_ファン・キット"><a href="/ja/community/fan-kits"><span>ファン・キット</span></a></li>
+</ul></li>
+<li class="mn_section_マイアカウント"><a href="/ja/content/my-accounts"><span>マイアカウント</span></a></li>
+</ul>        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div id="content-wrapper">
+      <div class="region region-content">
+    
+<div id="block-system-main" class=" block block-system block-odd first last main clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      <div id="content" class="page-width">
+
+  <div id="main-content">
+    <div id="breadcrumb">
+              <span ><a href="/ja/articles">記事</a></span>
+              <span ><a href="/ja/articles/archive">アーカイブ</a></span>
+              <span class="current"><strong class="breadcrumb-no-link">Card Image Gallery</strong></span>
+          </div>
+    <h1>『異界月』</h1>
+    <p class="posted-in">
+      更新日      <strong class="breadcrumb-no-link">Card Image Gallery</strong>
+      on 2016年 7月 8日    </p>
+
+    <!-- BEGIN :: ARTICLE -->
+    <article>
+      <div class="article-header">
+
+                  <div class="author">
+            <img src="http://magic.wizards.com/sites/mtg/files/styles/auth_small/public/images/person/wizards_authorpic_larger.jpg?itok=KENOTqfD" alt="" />
+            <p>By Wizards of the Coast</p>
+            <p class="links">
+                                            <span><a href="/ja/articles/archive/184956" onClick="_gaq.push(['_trackEvent', 'Article', 'Author', 'Wizards of the Coast-Archive']);">アーカイブ</a></span>
+                                        </p>
+            <div id="author-biography">
+                          </div>
+          </div>
+        
+        <div class="sharing">
+          <div class="social-share">
+            <a class="facebook" href="#" data-share-url="http://magic.wizards.com/articles/archive/card-image-gallery/eldritch-moon"><span class="share-count">0</span><span>&nbsp;Shares</span></a>
+            <a class="twitter" href="#" data-share-url="http://magic.wizards.com/articles/archive/card-image-gallery/eldritch-moon"><span class="share-count">0</span><span>&nbsp;Tweets</span></a>
+            <a class="google" href="#" data-share-url="http://magic.wizards.com/articles/archive/card-image-gallery/eldritch-moon"><span class="share-count">0</span><span>&nbsp;+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div id="content-detail-page-of-an-article">
+        <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><script language="javascript">
+<!--//--><![CDATA[// ><!--
+
+window.addEventListener("resize", resizeCIGWidth);
+jQuery(document).ready(function () { resizeCIGWidth(); });
+
+function resizeCIGWidth() {
+    var contentWidth = document.getElementById("divwhite").parentNode.clientWidth;
+    var numCardsPerLine = contentWidth / 265;
+    var percentage = 100 / Math.floor(numCardsPerLine);
+    var cigDivs = document.getElementsByClassName("resizing-cig");
+    for (var i = 0; i < cigDivs.length; i++) {
+        cigDivs[i].style.width = percentage + "%";
+    }
+}
+
+function hideAllButThis(blockName) {
+    jQuery(".activecardblock").addClass("inactivecardblock");
+    jQuery("#" + blockName).removeClass("inactivecardblock");
+    jQuery(".activecardblock").removeClass("activecardblock");
+    jQuery("#" + blockName).addClass("activecardblock");
+
+    jQuery(".inactivecardblock").fadeOut("slow");
+    jQuery(".activecardblock").delay(600).fadeIn("slow");
+}
+
+function showAllBlocks() {
+    jQuery(".inactivecardblock").addClass("activecardblock");
+    jQuery(".inactivecardblock").removeClass("inactivecardblock");
+
+    jQuery(".activecardblock").fadeIn("slow");
+}
+
+//--><!]]>
+</script></head><body><p style="clear:both;">&nbsp;</p>
+
+<p class="rtecenter"><a href="#" onclick="javascript: hideAllButThis('divwhite'); return false;">&#30333;</a> | <a href="#" onclick="javascript: hideAllButThis('divblue'); return false;">&#38738;</a> | <a href="#" onclick="javascript: hideAllButThis('divblack'); return false;">&#40658;</a> | <a href="#" onclick="javascript: hideAllButThis('divred'); return false;">&#36196;</a> | <a href="#" onclick="javascript: hideAllButThis('divgreen'); return false;">&#32209;</a><br><a href="#" onclick="javascript: hideAllButThis('divmulticolored'); return false;">&#22810;&#33394;</a> | <a href="#" onclick="javascript: hideAllButThis('divcolorless'); return false;">&#28961;&#33394;</a> | <a href="#" onclick="javascript: hideAllButThis('divdoubleface'); return false;">&#20001;&#38754;</a> | <a href="#" onclick="javascript: hideAllButThis('divartifact'); return false;">&#12450;&#12540;&#12486;&#12451;&#12501;&#12449;&#12463;&#12488;</a> | <a href="#" onclick="javascript: hideAllButThis('divland'); return false;">&#22303;&#22320;</a><br><a href="#" onclick="javascript: hideAllButThis('divmeld'); return false;">&#21512;&#20307;</a> | <a href="#" onclick="javascript: showAllBlocks(); return false;">&#20840;&#12459;&#12540;&#12489;</a></p>
+
+<div class="activecardblock" id="divwhite" style="display:block">
+<h2 class="strike-through"><span>&#30333;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31070;&#32854;&#12394;&#21332;&#21147;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_rnpSDViYXG.png" style="width: 265px; height: 370px;"><br>
+&#31070;&#32854;&#12394;&#21332;&#21147;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24681;&#23541;&#20511;&#29992;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_E3J7u4L6kw.png" style="width: 265px; height: 370px;"><br>
+&#24681;&#23541;&#20511;&#29992;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32094;&#39318;&#26463;&#32283;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Naj6vrdh7d.png" style="width: 265px; height: 370px;"><br>
+&#32094;&#39318;&#26463;&#32283;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38598;&#22243;&#30340;&#21162;&#21147;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1Y69nwRuOo.png" style="width: 265px; height: 370px;"><br>
+&#38598;&#22243;&#30340;&#21162;&#21147;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21191;&#25954;&#12394;&#20808;&#23566;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_IZCYXkjbO7.png" style="width: 265px; height: 370px;"><br>
+&#21191;&#25954;&#12394;&#20808;&#23566;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22812;&#26126;&#12369;&#12398;&#12464;&#12522;&#12501;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_nM7sn8bHXz.png" style="width: 265px; height: 370px;"><br>
+&#22812;&#26126;&#12369;&#12398;&#12464;&#12522;&#12501;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12466;&#12540;&#12488;&#12454;&#12457;&#12483;&#12481;&#37197;&#20633;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_juymWEMOZz.png" style="width: 265px; height: 370px;"><br>
+&#12466;&#12540;&#12488;&#12454;&#12457;&#12483;&#12481;&#37197;&#20633;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25448;&#12390;&#36523;&#12398;&#27497;&#21736;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_MQeifgopcQ.png" style="width: 265px; height: 370px;"><br>
+&#25448;&#12390;&#36523;&#12398;&#27497;&#21736;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12489;&#12521;&#12464;&#12473;&#12467;&#12523;&#12398;&#30462;&#20210;&#38291;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_e2MCB9iDdR.png" style="width: 265px; height: 370px;"><br>
+&#12489;&#12521;&#12464;&#12473;&#12467;&#12523;&#12398;&#30462;&#20210;&#38291;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25594;&#12427;&#12366;&#12394;&#12356;&#20449;&#20208;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_iGaFAkypwO.png" style="width: 265px; height: 370px;"><br>
+&#25594;&#12427;&#12366;&#12394;&#12356;&#20449;&#20208;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20449;&#20208;&#25345;&#12385;&#12398;&#32854;&#39438;&#22763;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NSTkoxetcd.png" style="width: 265px; height: 370px;"><br>
+&#20449;&#20208;&#25345;&#12385;&#12398;&#32854;&#39438;&#22763;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24746;&#39740;&#12434;&#32283;&#12427;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_5IUGdsWoS1.png" style="width: 265px; height: 370px;"><br>
+&#24746;&#39740;&#12434;&#32283;&#12427;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#23396;&#29420;&#12394;&#22812;&#30058;&#12398;&#38666;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VuPYl5myam.png" style="width: 265px; height: 370px;"><br>
+&#23396;&#29420;&#12394;&#22812;&#30058;&#12398;&#38666;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#19968;&#25152;&#25080;&#21629;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_r6pSuFr8Ze.png" style="width: 265px; height: 370px;"><br>
+&#19968;&#25152;&#25080;&#21629;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24033;&#31036;&#32773;&#12398;&#23432;&#35703;&#38666;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_A6UPF6wlJw.png" style="width: 265px; height: 370px;"><br>
+&#24033;&#31036;&#32773;&#12398;&#23432;&#35703;&#38666;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37444;&#35206;&#12356;&#12398;&#20966;&#21009;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_uPJT6kgjzO.png" style="width: 265px; height: 370px;"><br>
+&#37444;&#35206;&#12356;&#12398;&#20966;&#21009;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37444;&#22823;&#24037;&#12398;&#27972;&#21270;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_eykKMvugG0.png" style="width: 265px; height: 370px;"><br>
+&#37444;&#22823;&#24037;&#12398;&#27972;&#21270;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#36965;&#12363;&#12394;&#12427;&#26053;&#36335;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_KbyqMl9MVs.png" style="width: 265px; height: 370px;"><br>
+&#36965;&#12363;&#12394;&#12427;&#26053;&#36335;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26376;&#30343;&#12398;&#22806;&#22871;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_qm7aQzTzLX.png" style="width: 265px; height: 370px;"><br>
+&#26376;&#30343;&#12398;&#22806;&#22871;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#23433;&#12425;&#12366;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_xCwp0iLFPB.png" style="width: 265px; height: 370px;"><br>
+&#23433;&#12425;&#12366;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31070;&#12398;&#23566;&#12365;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_iMzncn04LG.png" style="width: 265px; height: 370px;"><br>
+&#31070;&#12398;&#23566;&#12365;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24524;&#12398;&#19968;&#25475;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_F55g7UyaTT.png" style="width: 265px; height: 370px;"><br>
+&#24524;&#12398;&#19968;&#25475;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#39746;&#12398;&#32854;&#21029;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_TELfD1CANZ.png" style="width: 265px; height: 370px;"><br>
+&#39746;&#12398;&#32854;&#21029;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28961;&#31169;&#12398;&#38666;&#39746;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_iAgW7Hfn9L.png" style="width: 265px; height: 370px;"><br>
+&#28961;&#31169;&#12398;&#38666;&#39746;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12471;&#12460;&#12523;&#12480;&#12398;&#21161;&#12369;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1ZXuO97Viq.png" style="width: 265px; height: 370px;"><br>
+&#12471;&#12460;&#12523;&#12480;&#12398;&#21161;&#12369;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12471;&#12460;&#12523;&#12480;&#25945;&#12398;&#20711;&#20406;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Qgcr086lZ7.png" style="width: 265px; height: 370px;"><br>
+&#12471;&#12460;&#12523;&#12480;&#25945;&#12398;&#20711;&#20406;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38666;&#20307;&#12398;&#20104;&#20633;&#20853;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_5rv81kOMc0.png" style="width: 265px; height: 370px;"><br>
+&#38666;&#20307;&#12398;&#20104;&#20633;&#20853;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#19981;&#21205;&#12398;&#32854;&#25126;&#22763;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_BmBvpv7DfC.png" style="width: 265px; height: 370px;"><br>
+&#19981;&#21205;&#12398;&#32854;&#25126;&#22763;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25903;&#37197;&#12398;&#22825;&#20351;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VXLMyHKoL6.png" style="width: 265px; height: 370px;"><br>
+&#25903;&#37197;&#12398;&#22825;&#20351;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30064;&#31471;&#32854;&#25126;&#22763;&#12289;&#12469;&#12522;&#12450;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_HWSn47iZj0.png" style="width: 265px; height: 370px;"><br>
+&#30064;&#31471;&#32854;&#25126;&#22763;&#12289;&#12469;&#12522;&#12450;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12469;&#12522;&#12450;&#12398;&#27085;&#39438;&#20853;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_0gEOYZ10Fy.png" style="width: 265px; height: 370px;"><br>
+&#12469;&#12522;&#12450;&#12398;&#27085;&#39438;&#20853;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12473;&#12524;&#12452;&#12505;&#12531;&#12398;&#36557;&#26071;&#25163;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_OSY9VfmmsJ.png" style="width: 265px; height: 370px;"><br>
+&#12473;&#12524;&#12452;&#12505;&#12531;&#12398;&#36557;&#26071;&#25163;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divblue" style="display:block">
+<h2 class="strike-through"><span>&#38738;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25913;&#33391;&#12373;&#12428;&#12383;&#32299;&#12356;&#32764;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ex1OgxhqTB.png" style="width: 265px; height: 370px;"><br>
+&#25913;&#33391;&#12373;&#12428;&#12383;&#32299;&#12356;&#32764;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20919;&#12383;&#12356;&#12431;&#12375;&#12389;&#12363;&#12415;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_0Ya3y0cbuY.png" style="width: 265px; height: 370px;"><br>
+&#20919;&#12383;&#12356;&#12431;&#12375;&#12389;&#12363;&#12415;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20037;&#36960;&#12398;&#38343;&#12363;&#12425;&#12398;&#35480;&#24341;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_LyEPtjnUiu.png" style="width: 265px; height: 370px;"><br>
+&#20037;&#36960;&#12398;&#38343;&#12363;&#12425;&#12398;&#35480;&#24341;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26377;&#20107;&#23550;&#31574;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_8nn1I1U6HB.png" style="width: 265px; height: 370px;"><br>
+&#26377;&#20107;&#23550;&#31574;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24059;&#12365;&#36796;&#12415;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_7PZmClX9zw.png" style="width: 265px; height: 370px;"><br>
+&#24059;&#12365;&#36796;&#12415;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30456;&#22793;&#20301;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_9H9dk1IwqF.png" style="width: 265px; height: 370px;"><br>
+&#30456;&#22793;&#20301;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24341;&#12365;&#12378;&#12426;&#36796;&#12415;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_JLRSHrxhtW.png" style="width: 265px; height: 370px;"><br>
+&#24341;&#12365;&#12378;&#12426;&#36796;&#12415;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24735;&#12387;&#12383;&#29378;&#20154;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_lC1NoZjX5l.png" style="width: 265px; height: 370px;"><br>
+&#24735;&#12387;&#12383;&#29378;&#20154;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27475;&#21916;&#12377;&#12427;&#20449;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_blDI68LLyW.png" style="width: 265px; height: 370px;"><br>
+&#27475;&#21916;&#12377;&#12427;&#20449;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38695;&#27497;&#12365;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_LekuBkUeEO.png" style="width: 265px; height: 370px;"><br>
+&#38695;&#27497;&#12365;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20559;&#12387;&#12383;&#24184;&#36939;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2rGZDu8fEd.png" style="width: 265px; height: 370px;"><br>
+&#20559;&#12387;&#12383;&#24184;&#36939;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26360;&#24235;&#12398;&#38666;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_r3yJa4WljH.png" style="width: 265px; height: 370px;"><br>
+&#26360;&#24235;&#12398;&#38666;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#36523;&#20998;&#27877;&#26834;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_G1uf6v8Q13.png" style="width: 265px; height: 370px;"><br>
+&#36523;&#20998;&#27877;&#26834;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26376;&#12408;&#12398;&#23553;&#21360;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_QQQRzYsSKX.png" style="width: 265px; height: 370px;"><br>
+&#26376;&#12408;&#12398;&#23553;&#21360;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24039;&#22937;&#12394;&#12473;&#12459;&#12540;&#12502;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ussCfKGxRk.png" style="width: 265px; height: 370px;"><br>
+&#24039;&#22937;&#12394;&#12473;&#12459;&#12540;&#12502;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30740;&#31350;&#23460;&#12398;&#31895;&#26292;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_71bLkHyDj4.png" style="width: 265px; height: 370px;"><br>
+&#30740;&#31350;&#23460;&#12398;&#31895;&#26292;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26376;&#12398;&#21147;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_tKI0pFuWu2.png" style="width: 265px; height: 370px;"><br>
+&#26376;&#12398;&#21147;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38666;&#24287;&#12398;&#25918;&#28010;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_IQFNRtY0hC.png" style="width: 265px; height: 370px;"><br>
+&#38666;&#24287;&#12398;&#25918;&#28010;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24847;&#35672;&#12398;&#25313;&#24373;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_XJbw9FPngI.png" style="width: 265px; height: 370px;"><br>
+&#24847;&#35672;&#12398;&#25313;&#24373;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12493;&#12505;&#12523;&#12460;&#12473;&#12488;&#12398;&#20253;&#20196;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_bIzqSpIszn.png" style="width: 265px; height: 370px;"><br>
+&#12493;&#12505;&#12523;&#12460;&#12473;&#12488;&#12398;&#20253;&#20196;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38684;&#12398;&#12491;&#12502;&#12522;&#12473;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Zkxhbz8UvQ.png" style="width: 265px; height: 370px;"><br>
+&#38684;&#12398;&#12491;&#12502;&#12522;&#12473;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30740;&#31350;&#23460;&#12398;&#25436;&#32034;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_KyStjb3mg9.png" style="width: 265px; height: 370px;"><br>
+&#30740;&#31350;&#23460;&#12398;&#25436;&#32034;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31361;&#30330;&#30340;&#22793;&#21270;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_CCnXrOua4v.png" style="width: 265px; height: 370px;"><br>
+&#31361;&#30330;&#30340;&#22793;&#21270;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21363;&#26178;&#21364;&#19979;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NeXoi3O6nr.png" style="width: 265px; height: 370px;"><br>
+&#21363;&#26178;&#21364;&#19979;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26842;&#21368;&#12375;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_RjPyXzypC1.png" style="width: 265px; height: 370px;"><br>
+&#26842;&#21368;&#12375;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12412;&#12429;&#12412;&#12429;&#12398;&#24977;&#20381;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_rNSnzNrW1b.png" style="width: 265px; height: 370px;"><br>
+&#12412;&#12429;&#12412;&#12429;&#12398;&#24977;&#20381;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21462;&#12426;&#32341;&#12356;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2ThlOdmgEK.png" style="width: 265px; height: 370px;"><br>
+&#21462;&#12426;&#32341;&#12356;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38750;&#23455;&#20307;&#21270;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_jZ4hFdwwu2.png" style="width: 265px; height: 370px;"><br>
+&#38750;&#23455;&#20307;&#21270;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27874;&#27490;&#22580;&#12398;&#28508;&#20837;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ObVU8WAzNj.png" style="width: 265px; height: 370px;"><br>
+&#27874;&#27490;&#22580;&#12398;&#28508;&#20837;&#32773;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divblack" style="display:block">
+<h2 class="strike-through"><span>&#40658;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#21152;&#35703;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_5QNAegkpq2.png" style="width: 265px; height: 370px;"><br>
+&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#21152;&#35703;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37034;&#24746;&#20511;&#29992;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_lnbHyejiDp.png" style="width: 265px; height: 370px;"><br>
+&#37034;&#24746;&#20511;&#29992;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22675;&#22320;&#12363;&#12425;&#12398;&#24500;&#29992;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1jjVa6UnH9.png" style="width: 265px; height: 370px;"><br>
+&#22675;&#22320;&#12363;&#12425;&#12398;&#24500;&#29992;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29983;&#21629;&#12398;&#21361;&#27231;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_D0zwr7t0lc.png" style="width: 265px; height: 370px;"><br>
+&#29983;&#21629;&#12398;&#21361;&#27231;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38598;&#22243;&#30340;&#34542;&#34892;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1yYc9ntsiZ.png" style="width: 265px; height: 370px;"><br>
+&#38598;&#22243;&#30340;&#34542;&#34892;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22675;&#25152;&#30772;&#12426;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VLjYfptqcX.png" style="width: 265px; height: 370px;"><br>
+&#22675;&#25152;&#30772;&#12426;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38343;&#12398;&#25937;&#28168;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_jNaa5QrG7L.png" style="width: 265px; height: 370px;"><br>
+&#38343;&#12398;&#25937;&#28168;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34180;&#26286;&#12398;&#39255;&#23476;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_dZeei1N5fo.png" style="width: 265px; height: 370px;"><br>
+&#34180;&#26286;&#12398;&#39255;&#23476;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12460;&#12532;&#12457;&#12491;&#12540;&#12398;&#19981;&#27972;&#12394;&#12427;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_DdoTqfR8Uk.png" style="width: 265px; height: 370px;"><br>
+&#12460;&#12532;&#12457;&#12491;&#12540;&#12398;&#19981;&#27972;&#12394;&#12427;&#12418;&#12398;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22675;&#12398;&#21454;&#31339;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2EwV7l4QMf.png" style="width: 265px; height: 370px;"><br>
+&#22675;&#12398;&#21454;&#31339;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24977;&#20381;&#12373;&#12428;&#12383;&#27515;&#20307;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_wfXJPr48oa.png" style="width: 265px; height: 370px;"><br>
+&#24977;&#20381;&#12373;&#12428;&#12383;&#27515;&#20307;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26368;&#24460;&#12398;&#26395;&#12415;&#12289;&#12522;&#12522;&#12450;&#12490;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_izZS4IXcjO.png" style="width: 265px; height: 370px;"><br>
+&#26368;&#24460;&#12398;&#26395;&#12415;&#12289;&#12522;&#12522;&#12450;&#12490;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12522;&#12522;&#12450;&#12490;&#12398;&#31934;&#37613;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_euoriZvHhF.png" style="width: 265px; height: 370px;"><br>
+&#12522;&#12522;&#12450;&#12490;&#12398;&#31934;&#37613;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12510;&#12523;&#12467;&#12501;&#12398;&#21313;&#23383;&#36557;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_yScvC1HJ5t.png" style="width: 265px; height: 370px;"><br>
+&#12510;&#12523;&#12467;&#12501;&#12398;&#21313;&#23383;&#36557;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27578;&#23475;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_mAQoDWqOsl.png" style="width: 265px; height: 370px;"><br>
+&#27578;&#23475;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32094;&#22675;&#12398;&#32676;&#34886;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Nj7MdkSCHV.png" style="width: 265px; height: 370px;"><br>
+&#32094;&#22675;&#12398;&#32676;&#34886;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12522;&#12522;&#12450;&#12490;&#12398;&#35475;&#12356;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_4lFORU6f57.png" style="width: 265px; height: 370px;"><br>
+&#12522;&#12522;&#12450;&#12490;&#12398;&#35475;&#12356;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12458;&#12522;&#12532;&#12451;&#12450;&#12398;&#31452;&#39438;&#20853;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_zspdT8TbSV.png" style="width: 265px; height: 370px;"><br>
+&#12458;&#12522;&#12532;&#12451;&#12450;&#12398;&#31452;&#39438;&#20853;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#35438;&#32034;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_WDQrEOiUOv.png" style="width: 265px; height: 370px;"><br>
+&#35438;&#32034;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22675;&#22580;&#12363;&#12425;&#12398;&#24489;&#27963;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ND8GaCyXAr.png" style="width: 265px; height: 370px;"><br>
+&#22675;&#22580;&#12363;&#12425;&#12398;&#24489;&#27963;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28961;&#24773;&#12394;&#20966;&#20998;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_gacxRcAdBo.png" style="width: 265px; height: 370px;"><br>
+&#28961;&#24773;&#12394;&#20966;&#20998;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12473;&#12459;&#12540;&#12473;&#12480;&#12464;&#12398;&#22022;&#39000;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Zx7BrH4k9V.png" style="width: 265px; height: 370px;"><br>
+&#12473;&#12459;&#12540;&#12473;&#12480;&#12464;&#12398;&#22022;&#39000;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22855;&#22937;&#12394;&#22679;&#24375;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_6tQj26MAiq.png" style="width: 265px; height: 370px;"><br>
+&#22855;&#22937;&#12394;&#22679;&#24375;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27969;&#22478;&#12398;&#27515;&#21009;&#22234;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_tgW02hu3Sp.png" style="width: 265px; height: 370px;"><br>
+&#27969;&#22478;&#12398;&#27515;&#21009;&#22234;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#35480;&#24785;&#12395;&#36000;&#12369;&#12390;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VOBNtj3Hwu.png" style="width: 265px; height: 370px;"><br>
+&#35480;&#24785;&#12395;&#36000;&#12369;&#12390;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12473;&#12524;&#12452;&#12505;&#12531;&#12398;&#30064;&#34880;&#31278;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_QRER9l38AM.png" style="width: 265px; height: 370px;"><br>
+&#12473;&#12524;&#12452;&#12505;&#12531;&#12398;&#30064;&#34880;&#31278;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22320;&#29508;&#12398;&#27193;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_SmJC0nloDJ.png" style="width: 265px; height: 370px;"><br>
+&#22320;&#29508;&#12398;&#27193;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21560;&#34880;&#39740;&#12398;&#27578;&#12375;&#23627;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_3Mzh6KreJZ.png" style="width: 265px; height: 370px;"><br>
+&#21560;&#34880;&#39740;&#12398;&#27578;&#12375;&#23627;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22022;&#12365;&#12398;&#12464;&#12540;&#12523;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_h8TT8RQ6zg.png" style="width: 265px; height: 370px;"><br>
+&#22022;&#12365;&#12398;&#12464;&#12540;&#12523;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#19981;&#27671;&#21619;&#12394;&#21560;&#34880;&#39740;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VThePe1FOw.png" style="width: 265px; height: 370px;"><br>
+&#19981;&#27671;&#21619;&#12394;&#21560;&#34880;&#39740;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#22209;&#12365;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1UFcoc4ZXg.png" style="width: 265px; height: 370px;"><br>
+&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#22209;&#12365;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divred" style="display:block">
+<h2 class="strike-through"><span>&#36196;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#33258;&#26292;&#33258;&#26820;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_deHoHOuSjp.png" style="width: 265px; height: 370px;"><br>
+&#33258;&#26292;&#33258;&#26820;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37676;&#37329;&#34899;&#24107;&#12398;&#25384;&#25334;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_UaooArBcdR.png" style="width: 265px; height: 370px;"><br>
+&#37676;&#37329;&#34899;&#24107;&#12398;&#25384;&#25334;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38598;&#21512;&#12375;&#12383;&#38957;&#30446;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_kQaNRGbWHy.png" style="width: 265px; height: 370px;"><br>
+&#38598;&#21512;&#12375;&#12383;&#38957;&#30446;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#39442;&#20081;&#12398;&#27475;&#27005;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sWQVDBtBPS.png" style="width: 265px; height: 370px;"><br>
+&#39442;&#20081;&#12398;&#27475;&#27005;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34880;&#12398;&#38695;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NDgmrJXsDM.png" style="width: 265px; height: 370px;"><br>
+&#34880;&#12398;&#38695;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22823;&#32966;&#12394;&#21050;&#31361;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_e8uGtKgoV7.png" style="width: 265px; height: 370px;"><br>
+&#22823;&#32966;&#12394;&#21050;&#31361;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25973;&#24847;&#20511;&#29992;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_qcoF97FflX.png" style="width: 265px; height: 370px;"><br>
+&#25973;&#24847;&#20511;&#29992;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29467;&#12293;&#12375;&#12356;&#29436;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Ki2q3cjZzr.png" style="width: 265px; height: 370px;"><br>
+&#29467;&#12293;&#12375;&#12356;&#29436;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38598;&#22243;&#30340;&#25269;&#25239;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sx9usMHEbU.png" style="width: 265px; height: 370px;"><br>
+&#38598;&#22243;&#30340;&#25269;&#25239;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29378;&#20081;&#12375;&#12383;&#20180;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sDHgifAert.png" style="width: 265px; height: 370px;"><br>
+&#29378;&#20081;&#12375;&#12383;&#20180;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34880;&#12398;&#19981;&#31311;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_YLlf6L8jCo.png" style="width: 265px; height: 370px;"><br>
+&#34880;&#12398;&#19981;&#31311;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12501;&#12449;&#12523;&#12465;&#12531;&#12521;&#12473;&#12398;&#32905;&#35010;&#12365;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_dWQIjTwaaQ.png" style="width: 265px; height: 370px;"><br>
+&#12501;&#12449;&#12523;&#12465;&#12531;&#12521;&#12473;&#12398;&#32905;&#35010;&#12365;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24594;&#12426;&#20995;&#12398;&#21560;&#34880;&#39740;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_IrHoglZOsw.png" style="width: 265px; height: 370px;"><br>
+&#24594;&#12426;&#20995;&#12398;&#21560;&#34880;&#39740;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27969;&#38651;&#30770;&#25731;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_98spN8FCxs.png" style="width: 265px; height: 370px;"><br>
+&#27969;&#38651;&#30770;&#25731;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28961;&#23475;&#12394;&#30003;&#12375;&#20986;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_yFv5TCuRM0.png" style="width: 265px; height: 370px;"><br>
+&#28961;&#23475;&#12394;&#30003;&#12375;&#20986;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24615;&#24613;&#12394;&#24746;&#39764;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ZdeOXlMwby.png" style="width: 265px; height: 370px;"><br>
+&#24615;&#24613;&#12394;&#24746;&#39764;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28988;&#22839;&#27969;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_dI2mODqHRw.png" style="width: 265px; height: 370px;"><br>
+&#28988;&#22839;&#27969;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24375;&#27442;&#12394;&#36942;&#39135;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1aarVxxeSV.png" style="width: 265px; height: 370px;"><br>
+&#24375;&#27442;&#12394;&#36942;&#39135;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24746;&#25135;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_lbjDu6QZrj.png" style="width: 265px; height: 370px;"><br>
+&#24746;&#25135;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37857;&#32764;&#12398;&#12489;&#12521;&#12468;&#12531;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ht8Lsr1ZtJ.png" style="width: 265px; height: 370px;"><br>
+&#37857;&#32764;&#12398;&#12489;&#12521;&#12468;&#12531;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12490;&#12498;&#12522;&#12398;&#24594;&#12426;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_l786UcV4GY.png" style="width: 265px; height: 370px;"><br>
+&#12490;&#12498;&#12522;&#12398;&#24594;&#12426;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30064;&#19990;&#30028;&#12398;&#30330;&#38706;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_DghUDwp5Un.png" style="width: 265px; height: 370px;"><br>
+&#30064;&#19990;&#30028;&#12398;&#30330;&#38706;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20104;&#35328;&#30340;&#22916;&#35486;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_7xKgUmLhkG.png" style="width: 265px; height: 370px;"><br>
+&#20104;&#35328;&#30340;&#22916;&#35486;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31895;&#26292;&#12394;&#21332;&#21147;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_44kWXCQJ3e.png" style="width: 265px; height: 370px;"><br>
+&#31895;&#26292;&#12394;&#21332;&#21147;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27491;&#27671;&#12398;&#27424;&#29255;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_bCw6vrmI1R.png" style="width: 265px; height: 370px;"><br>
+&#27491;&#27671;&#12398;&#27424;&#29255;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28814;&#12398;&#25955;&#24067;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_HgbKsCGvA8.png" style="width: 265px; height: 370px;"><br>
+&#28814;&#12398;&#25955;&#24067;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12473;&#12486;&#12531;&#12471;&#12450;&#12398;&#26217;&#39184;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_mVbizbHyrJ.png" style="width: 265px; height: 370px;"><br>
+&#12473;&#12486;&#12531;&#12471;&#12450;&#12398;&#26217;&#39184;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12473;&#12486;&#12531;&#12471;&#12450;&#12398;&#20141;&#20027;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_E33ZFxyB00.png" style="width: 265px; height: 370px;"><br>
+&#12473;&#12486;&#12531;&#12471;&#12450;&#12398;&#20141;&#20027;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27969;&#22478;&#12398;&#23494;&#25945;&#20449;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_OJl97YcTKw.png" style="width: 265px; height: 370px;"><br>
+&#27969;&#22478;&#12398;&#23494;&#25945;&#20449;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29105;&#37676;&#37329;&#34899;&#24107;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NUSf3njl3P.png" style="width: 265px; height: 370px;"><br>
+&#29105;&#37676;&#37329;&#34899;&#24107;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31282;&#22971;&#32340;&#12426;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_LHbFmYD5A0.png" style="width: 265px; height: 370px;"><br>
+&#31282;&#22971;&#32340;&#12426;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divgreen" style="display:block">
+<h2 class="strike-through"><span>&#32209;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#36794;&#22659;&#26519;&#12398;&#29983;&#23384;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NuQSDL0BIe.png" style="width: 265px; height: 370px;"><br>
+&#36794;&#22659;&#26519;&#12398;&#29983;&#23384;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34880;&#33576;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2gSpfp40eN.png" style="width: 265px; height: 370px;"><br>
+&#34880;&#33576;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30452;&#25509;&#23556;&#25731;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_zoNvmvRI3V.png" style="width: 265px; height: 370px;"><br>
+&#30452;&#25509;&#23556;&#25731;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21454;&#31339;&#12398;&#21360;&#31456;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_OWsiFMuPXq.png" style="width: 265px; height: 370px;"><br>
+&#21454;&#31339;&#12398;&#21360;&#31456;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#23696;&#36335;&#12398;&#32854;&#21029;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_9Jio9NaoNS.png" style="width: 265px; height: 370px;"><br>
+&#23696;&#36335;&#12398;&#32854;&#21029;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#30064;&#30028;&#12398;&#36914;&#21270;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_bJiYQsyNuW.png" style="width: 265px; height: 370px;"><br>
+&#30064;&#30028;&#12398;&#36914;&#21270;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#31119;&#38899;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_6wAjhh5seG.png" style="width: 265px; height: 370px;"><br>
+&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#31119;&#38899;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#24433;&#38911;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sH2K75O8PS.png" style="width: 265px; height: 370px;"><br>
+&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#24433;&#38911;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#37034;&#24746;&#12398;&#20351;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_JZGFPlmyI8.png" style="width: 265px; height: 370px;"><br>
+&#37034;&#24746;&#12398;&#20351;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#31680;&#12367;&#12428;&#26408;&#12398;&#12489;&#12521;&#12452;&#12450;&#12489;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_PQtY6WenXl.png" style="width: 265px; height: 370px;"><br>
+&#31680;&#12367;&#12428;&#26408;&#12398;&#12489;&#12521;&#12452;&#12450;&#12489;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#36942;&#21435;&#12392;&#12398;&#21462;&#12426;&#32068;&#12415;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_pS4NZMSg9x.png" style="width: 265px; height: 370px;"><br>
+&#36942;&#21435;&#12392;&#12398;&#21462;&#12426;&#32068;&#12415;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#23567;&#26449;&#12398;&#38538;&#38263;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_X7yrs1OnGA.png" style="width: 265px; height: 370px;"><br>
+&#23567;&#26449;&#12398;&#38538;&#38263;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22675;&#24460;&#23478;&#34584;&#34523;&#12289;&#12452;&#12471;&#12517;&#12459;&#12490;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sbzUF2sxWO.png" style="width: 265px; height: 370px;"><br>
+&#22675;&#24460;&#23478;&#34584;&#34523;&#12289;&#12452;&#12471;&#12517;&#12459;&#12490;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#39318;&#32094;&#12417;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_LQ5uoDUjNE.png" style="width: 265px; height: 370px;"><br>
+&#39318;&#32094;&#12417;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34067;&#24310;&#12377;&#12427;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_DhLvkqVgoS.png" style="width: 265px; height: 370px;"><br>
+&#34067;&#24310;&#12377;&#12427;&#12418;&#12398;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25429;&#39135;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_OYmAAaY9Qt.png" style="width: 265px; height: 370px;"><br>
+&#25429;&#39135;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21407;&#21021;&#12398;&#12489;&#12523;&#12452;&#12489;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_7W3r0bWnki.png" style="width: 265px; height: 370px;"><br>
+&#21407;&#21021;&#12398;&#12489;&#12523;&#12452;&#12489;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12477;&#12531;&#12496;&#12540;&#12527;&#12523;&#12489;&#12398;&#38596;&#40575;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2S8MCbkoMw.png" style="width: 265px; height: 370px;"><br>
+&#12477;&#12531;&#12496;&#12540;&#12527;&#12523;&#12489;&#12398;&#38596;&#40575;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29417;&#12426;&#12398;&#31934;&#38666;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_m4mQQzCDiy.png" style="width: 265px; height: 370px;"><br>
+&#29417;&#12426;&#12398;&#31934;&#38666;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#35211;&#20107;&#12394;&#20877;&#29983;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_N1sdJz75Pk.png" style="width: 265px; height: 370px;"><br>
+&#35211;&#20107;&#12394;&#20877;&#29983;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26149;&#12398;&#36066;&#32773;&#12398;&#20736;&#24335;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_tZMuvX9cp8.png" style="width: 265px; height: 370px;"><br>
+&#26149;&#12398;&#36066;&#32773;&#12398;&#20736;&#24335;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#25935;&#25463;&#12394;&#24035;&#32033;&#12366;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_8SixgtEjd8.png" style="width: 265px; height: 370px;"><br>
+&#25935;&#25463;&#12394;&#24035;&#32033;&#12366;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12454;&#12523;&#12532;&#12455;&#12531;&#12527;&#12523;&#12489;&#12398;&#35251;&#23519;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_EOX1Es0l83.png" style="width: 265px; height: 370px;"><br>
+&#12454;&#12523;&#12532;&#12455;&#12531;&#12527;&#12523;&#12489;&#12398;&#35251;&#23519;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28288;&#12385;&#12422;&#12367;&#26376;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_kaQh1ALnmt.png" style="width: 265px; height: 370px;"><br>
+&#28288;&#12385;&#12422;&#12367;&#26376;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29436;&#26063;&#12398;&#32070;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_PMMlV6lWAu.png" style="width: 265px; height: 370px;"><br>
+&#29436;&#26063;&#12398;&#32070;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26408;&#12371;&#12426;&#12398;&#27671;&#27010;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_qINPOR4tL4.png" style="width: 265px; height: 370px;"><br>
+&#26408;&#12371;&#12426;&#12398;&#27671;&#27010;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#26862;&#26519;&#12398;&#24033;&#22238;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_plSKFzkb2g.png" style="width: 265px; height: 370px;"><br>
+&#26862;&#26519;&#12398;&#24033;&#22238;&#32773;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divmulticolored" style="display:block">
+<h2 class="strike-through"><span>&#22810;&#33394;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34880;&#12398;&#38291;&#12398;&#20711;&#20406;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_D0gaFPhvFg.png" style="width: 265px; height: 370px;"><br>
+&#34880;&#12398;&#38291;&#12398;&#20711;&#20406;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24489;&#35728;&#20316;&#25126;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_IJkKa7OdnB.png" style="width: 265px; height: 370px;"><br>
+&#24489;&#35728;&#20316;&#25126;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12462;&#12469;&#12392;&#12466;&#12521;&#12523;&#12501;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_alMF8AICd6.png" style="width: 265px; height: 370px;"><br>
+&#12462;&#12469;&#12392;&#12466;&#12521;&#12523;&#12501;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27531;&#24525;&#12394;&#21093;&#12366;&#21462;&#12426;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_0L0LdtfbtQ.png" style="width: 265px; height: 370px;"><br>
+&#27531;&#24525;&#12394;&#21093;&#12366;&#21462;&#12426;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20778;&#38597;&#12394;&#40442;&#12398;&#21191;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_bY9FNUEGVm.png" style="width: 265px; height: 370px;"><br>
+&#20778;&#38597;&#12394;&#40442;&#12398;&#21191;&#32773;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27671;&#32027;&#12428;&#12394;&#38666;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_nizc3Iu5Pf.png" style="width: 265px; height: 370px;"><br>
+&#27671;&#32027;&#12428;&#12394;&#38666;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#22022;&#12365;&#32048;&#24037;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_vpWPXfL3TQ.png" style="width: 265px; height: 370px;"><br>
+&#22022;&#12365;&#32048;&#24037;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#39438;&#20055;&#36861;&#25731;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_MJhidxuEKA.png" style="width: 265px; height: 370px;"><br>
+&#39438;&#20055;&#36861;&#25731;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21610;&#25991;&#25429;&#12425;&#12360;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VGDLAnfFKx.png" style="width: 265px; height: 370px;"><br>
+&#21610;&#25991;&#25429;&#12425;&#12360;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#23455;&#22320;&#30740;&#31350;&#32773;&#12289;&#12479;&#12511;&#12520;&#12454;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Q09aZeYOnr.png" style="width: 265px; height: 370px;"><br>
+&#23455;&#22320;&#30740;&#31350;&#32773;&#12289;&#12479;&#12511;&#12520;&#12454;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divcolorless" style="display:block">
+<h2 class="strike-through"><span>&#28961;&#33394;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29978;&#12384;&#12375;&#12356;&#22823;&#21475;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_epVeXMVtSE.png" style="width: 265px; height: 370px;"><br>
+&#29978;&#12384;&#12375;&#12356;&#22823;&#21475;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24030;&#27665;&#12434;&#28357;&#12412;&#12377;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_QbZO5TBfMU.png" style="width: 265px; height: 370px;"><br>
+&#24030;&#27665;&#12434;&#28357;&#12412;&#12377;&#12418;&#12398;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#33192;&#12425;&#12435;&#12384;&#24847;&#35672;&#26354;&#12370;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_b9k5qhLMYz.png" style="width: 265px; height: 370px;"><br>
+&#33192;&#12425;&#12435;&#12384;&#24847;&#35672;&#26354;&#12370;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#28346;&#22675;&#12398;&#12499;&#12498;&#12514;&#12473;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1hyB8OwvFA.png" style="width: 265px; height: 370px;"><br>
+&#28346;&#22675;&#12398;&#12499;&#12498;&#12514;&#12473;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32769;&#12356;&#12383;&#12427;&#28145;&#28023;&#39740;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_A83ErwXKIC.png" style="width: 265px; height: 370px;"><br>
+&#32769;&#12356;&#12383;&#12427;&#28145;&#28023;&#39740;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32004;&#26463;&#12373;&#12428;&#12383;&#32066;&#26411;&#12289;&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Z2nLZiWA1l.png" style="width: 265px; height: 370px;"><br>
+&#32004;&#26463;&#12373;&#12428;&#12383;&#32066;&#26411;&#12289;&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#27704;&#36960;&#12398;&#28797;&#12356;&#39764;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_S4QNYVFM40.png" style="width: 265px; height: 370px;"><br>
+&#27704;&#36960;&#12398;&#28797;&#12356;&#39764;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#24524;&#12414;&#12431;&#12375;&#12356;&#32676;&#12428;&#12398;&#23384;&#22312;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_XoOPxlysbv.png" style="width: 265px; height: 370px;"><br>
+&#24524;&#12414;&#12431;&#12375;&#12356;&#32676;&#12428;&#12398;&#23384;&#22312;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32097;&#12415;&#33609;&#12398;&#38343;&#28508;&#12415;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_erfJWgE7B3.png" style="width: 265px; height: 370px;"><br>
+&#32097;&#12415;&#33609;&#12398;&#38343;&#28508;&#12415;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#33258;&#28982;&#12418;&#12393;&#12365;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_UOizvP0VQD.png" style="width: 265px; height: 370px;"><br>
+&#33258;&#28982;&#12418;&#12393;&#12365;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#21380;&#20171;&#12394;&#33337;&#27784;&#12417;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_lHfoT4gtAh.png" style="width: 265px; height: 370px;"><br>
+&#21380;&#20171;&#12394;&#33337;&#27784;&#12417;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#19981;&#25003;&#12394;&#12464;&#12522;&#12501;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_QDAyzUCz4P.png" style="width: 265px; height: 370px;"><br>
+&#19981;&#25003;&#12394;&#12464;&#12522;&#12501;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divdoubleface" style="display:block">
+<h2 class="strike-through"><span>&#20001;&#38754;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#32618;&#12363;&#12425;&#12398;&#35299;&#25918;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_c5YSY8pVY5.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#32905;&#20307;&#12363;&#12425;&#12398;&#35299;&#25918;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_8U43JzWoTx.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#32618;&#12363;&#12425;&#12398;&#35299;&#25918;&#32773;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#21336;&#20307;&#39438;&#25163;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_KYF4VsKVUr.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#21516;&#20307;&#39438;&#25163;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_TNDSoBT6E5.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#21336;&#20307;&#39438;&#25163;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#35438;&#32034;&#22909;&#12365;&#12398;&#12507;&#12512;&#12531;&#12463;&#12523;&#12473;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_dTrzmjCl9M.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#36010;&#27442;&#12394;&#35501;&#26360;&#23478;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1911wQ94xg.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#35438;&#32034;&#22909;&#12365;&#12398;&#12507;&#12512;&#12531;&#12463;&#12523;&#12473;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#23436;&#25104;&#24907;&#12398;&#35611;&#24107;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_RKPAcba9NC.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#32368;&#12426;&#36820;&#12375;&#12388;&#12367;&#12375;&#12383;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Sre03Fo68I.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#23436;&#25104;&#24907;&#12398;&#35611;&#24107;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#30333;&#39658;&#20132;&#12376;&#12426;&#12398;&#37347;&#12426;&#20154;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_L591DuKHSD.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#19981;&#27671;&#21619;&#12394;&#12450;&#12531;&#12467;&#12454;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_8GFZrLgAMY.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#30333;&#39658;&#20132;&#12376;&#12426;&#12398;&#37347;&#12426;&#20154;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12532;&#12457;&#12523;&#12480;&#12540;&#12524;&#12531;&#12398;&#19979;&#23652;&#27665;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_R9ggIQ0tFc.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#34880;&#32113;&#12398;&#25764;&#24259;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_JsT3QOlaAQ.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12532;&#12457;&#12523;&#12480;&#12540;&#12524;&#12531;&#12398;&#19979;&#23652;&#27665;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#23888;&#12398;&#20253;&#23566;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_H7ny8fcnJf.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#20253;&#23566;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_xdT3tDoGwd.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#23888;&#12398;&#20253;&#23566;&#32773;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12367;&#12377;&#12406;&#12427;&#29436;&#30007;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_EMoecwNbpN.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#22132;&#20986;&#12377;&#12427;&#25126;&#24900;&#29436;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VuQ8jYt8xP.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12367;&#12377;&#12406;&#12427;&#29436;&#30007;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12532;&#12451;&#12523;&#12487;&#12451;&#12531;&#32676;&#12428;&#12398;&#38500;&#12369;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_JvlPgU7Z2m.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12489;&#12525;&#12540;&#12531;&#32676;&#12428;&#12398;&#36523;&#20869;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_lumHEeJpeC.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12532;&#12451;&#12523;&#12487;&#12451;&#12531;&#32676;&#12428;&#12398;&#38500;&#12369;&#12418;&#12398;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12465;&#12483;&#12471;&#12464;&#12434;&#12358;&#12429;&#12388;&#12367;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_NnjsUYnaVy.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12375;&#12394;&#12420;&#12363;&#12394;&#25429;&#39135;&#32773;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_fWg8kxUiHI.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12465;&#12483;&#12471;&#12464;&#12434;&#12358;&#12429;&#12388;&#12367;&#12418;&#12398;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12369;&#12383;&#12383;&#12414;&#12375;&#12367;&#21536;&#12360;&#12427;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_tCNNOT8OMj.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#22810;&#37325;&#21536;&#12360;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_F9PYT0Wkyl.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12369;&#12383;&#12383;&#12414;&#12375;&#12367;&#21536;&#12360;&#12427;&#12418;&#12398;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#32097;&#12415;&#29226;&#12398;&#20154;&#29436;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_4cZYfBohIE.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#32330;&#32173;&#36074;&#12398;&#32097;&#12415;&#23627;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_X6qu0NQmVq.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#32097;&#12415;&#29226;&#12398;&#20154;&#29436;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12454;&#12523;&#12532;&#12455;&#12531;&#12527;&#12523;&#12489;&#12395;&#22234;&#12431;&#12428;&#12375;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1hXbph2WO1.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12454;&#12523;&#12532;&#12455;&#12531;&#12527;&#12523;&#12489;&#12398;&#24524;&#12414;&#12431;&#12375;&#12365;&#12418;&#12398;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_1sKieyf6jf.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12454;&#12523;&#12532;&#12455;&#12531;&#12527;&#12523;&#12489;&#12395;&#22234;&#12431;&#12428;&#12375;&#12418;&#12398;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#29226;&#12398;&#32676;&#12428;&#12398;&#12454;&#12523;&#12522;&#12483;&#12481;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_U8SQtHW4XM.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#25594;&#12427;&#12366;&#12394;&#12356;&#38957;&#30446;&#12289;&#12454;&#12523;&#12522;&#12483;&#12481;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_6Hlb9ww6CA.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#29226;&#12398;&#32676;&#12428;&#12398;&#12454;&#12523;&#12522;&#12483;&#12481;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#35598;&#12398;&#30707;&#12398;&#26029;&#29255;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_baZ8vhEsLP.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12456;&#12512;&#12521;&#12463;&#12540;&#12523;&#12398;&#12458;&#12540;&#12525;&#12521;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_PM0AMYnLYl.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#35598;&#12398;&#30707;&#12398;&#26029;&#29255;</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="activecardblock" id="divartifact" style="display:block">
+<h2 class="strike-through"><span>&#12450;&#12540;&#12486;&#12451;&#12501;&#12449;&#12463;&#12488;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32854;&#25126;&#22763;&#12398;&#30462;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_VHFuAJfr5R.png" style="width: 265px; height: 370px;"><br>
+&#32854;&#25126;&#22763;&#12398;&#30462;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20449;&#32773;&#12398;&#26454;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_s3by31WG6P.png" style="width: 265px; height: 370px;"><br>
+&#20449;&#32773;&#12398;&#26454;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32789;&#22320;&#36889;&#12356;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_E7HsgGiVQu.png" style="width: 265px; height: 370px;"><br>
+&#32789;&#22320;&#36889;&#12356;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#38666;&#21205;&#12459;&#12459;&#12471;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_S5AYKSVXjR.png" style="width: 265px; height: 370px;"><br>
+&#38666;&#21205;&#12459;&#12459;&#12471;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#29436;&#12398;&#35430;&#20316;&#27231;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_xRkGFTXrv9.png" style="width: 265px; height: 370px;"><br>
+&#29436;&#12398;&#35430;&#20316;&#27231;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#20966;&#21009;&#32773;&#12398;&#22823;&#21253;&#19969;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_6DRHWqDGxD.png" style="width: 265px; height: 370px;"><br>
+&#20966;&#21009;&#32773;&#12398;&#22823;&#21253;&#19969;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#39746;&#20998;&#38626;&#27231;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_UMp2B5t9le.png" style="width: 265px; height: 370px;"><br>
+&#39746;&#20998;&#38626;&#27231;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#32299;&#12356;&#24107;&#12398;&#31227;&#26893;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_h2Hu65ff7l.png" style="width: 265px; height: 370px;"><br>
+&#32299;&#12356;&#24107;&#12398;&#31227;&#26893;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12486;&#12521;&#12522;&#12458;&#12531;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_2vME0XXEvl.png" style="width: 265px; height: 370px;"><br>
+&#12486;&#12521;&#12522;&#12458;&#12531;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#34880;&#12395;&#39138;&#12360;&#12383;&#26023;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Cy8ZftkPry.png" style="width: 265px; height: 370px;"><br>
+&#34880;&#12395;&#39138;&#12360;&#12383;&#26023;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divland" style="display:block">
+<h2 class="strike-through"><span>&#22303;&#22320;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12460;&#12452;&#12450;&#12540;&#23724;&#12398;&#30274;&#39178;&#25152;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_ayNiEZ76kB.png" style="width: 265px; height: 370px;"><br>
+&#12460;&#12452;&#12450;&#12540;&#23724;&#12398;&#30274;&#39178;&#25152;</p>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<p class="rtecenter"><img alt="&#12493;&#12501;&#12449;&#12522;&#12450;&#12398;&#12450;&#12459;&#12487;&#12511;&#12540;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_hmmJer36kb.png" style="width: 265px; height: 370px;"><br>
+&#12493;&#12501;&#12449;&#12522;&#12450;&#12398;&#12450;&#12459;&#12487;&#12511;&#12540;</p>
+</div>
+</div>
+
+<div class="activecardblock" id="divmeld" style="display:block">
+<h2 class="strike-through"><span>&#21512;&#20307;</span></h2>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#25240;&#12428;&#12383;&#20995;&#12289;&#12462;&#12475;&#12521;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_4usTO0sVHL.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#24746;&#22818;&#12398;&#22768;&#12289;&#12502;&#12522;&#12475;&#12521;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_H1byIc3ub2.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#25240;&#12428;&#12383;&#20995;&#12289;&#12462;&#12475;&#12521;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#28040;&#12360;&#12422;&#12367;&#20809;&#12289;&#12502;&#12523;&#12540;&#12490;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_yMvTrDmsfp.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#24746;&#22818;&#12398;&#22768;&#12289;&#12502;&#12522;&#12475;&#12521;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_dnXfttEU0d.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#28040;&#12360;&#12422;&#12367;&#20809;&#12289;&#12502;&#12523;&#12540;&#12490;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#22675;&#12493;&#12474;&#12511;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_5YiAp2lGbE.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#39442;&#12364;&#12375;&#12356;&#24466;&#20826;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_Luju7lC75h.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#22675;&#12493;&#12474;&#12511;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#22812;&#28145;&#12398;&#27515;&#20307;&#12354;&#12373;&#12426;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_4qJzqwV1IL.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#39442;&#12364;&#12375;&#12356;&#24466;&#20826;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_sTFRBH7e29.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#22812;&#28145;&#12398;&#27515;&#20307;&#12354;&#12373;&#12426;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;&#12398;&#35201;&#22622;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_pURGNFqt1U.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12398;&#12383;&#12358;&#12388;&#23621;&#20303;&#21306;&#12289;&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_B8tnbR9vjI.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;&#12398;&#35201;&#22622;</p>
+</div>
+</div>
+</div>
+
+<div class="resizing-cig" style="min-width:275px; width:25%; float:left;">
+<div class="rtecenter">
+<div class="flipping-image">
+<div class="image">
+<div class="side front"><img alt="&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;&#23432;&#20633;&#38538;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_uJGVW5UTRn.png" style="width:265px;"></div>
+
+<div class="side back"><img alt="&#12398;&#12383;&#12358;&#12388;&#23621;&#20303;&#21306;&#12289;&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;" src="http://media.wizards.com/2016/ouhtebrpjwxcnw5_EMN/jp_xpwY2K3H2g.png" style="width:265px;"></div>
+</div>
+
+<div class="control"><button>Turn Over</button></div>
+
+<p>&#12495;&#12531;&#12454;&#12451;&#12450;&#12540;&#23432;&#20633;&#38538;</p>
+</div>
+</div>
+</div>
+</div>
+
+<p style="clear:both;">&nbsp;</p>
+
+<p class="rtecenter"><a href="#" onclick="javascript: hideAllButThis('divwhite'); return false;">&#30333;</a> | <a href="#" onclick="javascript: hideAllButThis('divblue'); return false;">&#38738;</a> | <a href="#" onclick="javascript: hideAllButThis('divblack'); return false;">&#40658;</a> | <a href="#" onclick="javascript: hideAllButThis('divred'); return false;">&#36196;</a> | <a href="#" onclick="javascript: hideAllButThis('divgreen'); return false;">&#32209;</a><br><a href="#" onclick="javascript: hideAllButThis('divmulticolored'); return false;">&#22810;&#33394;</a> | <a href="#" onclick="javascript: hideAllButThis('divcolorless'); return false;">&#28961;&#33394;</a> | <a href="#" onclick="javascript: hideAllButThis('divdoubleface'); return false;">&#20001;&#38754;</a> | <a href="#" onclick="javascript: hideAllButThis('divartifact'); return false;">&#12450;&#12540;&#12486;&#12451;&#12501;&#12449;&#12463;&#12488;</a> | <a href="#" onclick="javascript: hideAllButThis('divland'); return false;">&#22303;&#22320;</a><br><a href="#" onclick="javascript: hideAllButThis('divmeld'); return false;">&#21512;&#20307;</a> | <a href="#" onclick="javascript: showAllBlocks(); return false;">&#20840;&#12459;&#12540;&#12489;</a></p></body></html>
+      </div>
+
+      <!-- BEGIN :: Article footer -->
+      <div class="article-footer">
+        <p class="posted-in">
+          更新日          <strong class="breadcrumb-no-link">Card Image Gallery</strong>
+          on 2016年 7月 8日        </p>
+      </div>
+      <!-- END :: Article footer -->
+
+    </article>
+  </div>
+
+  <!-- BEGIN :: ASIDE -->
+      <!-- END :: ASIDE -->
+
+  
+  <h2><span>最新Card Image Gallery記事</span></h2>
+  <div class="articles-bloc releated">
+
+              <div class="article">
+          <div class="wrap">
+                          <div class="visual" style="background-image: url(http://magic.wizards.com/sites/mtg/files/images/hero/AyCut61Ue3_icon.jpg);"></div>
+                        <div class="details">
+                              <a href="#" class="cat">CARD IMAGE GALLERY</a>
+                            <p class="date">2016年 5月 30日</p>
+              <a href="#" class="title">『エターナルマスターズ』</a>
+                              <a href="#" class="auth">by, Wizards of the Coast</a>
+                            <div class="infos">
+                                  <p>
+
+ 
+
+白 | 青 | 黒 | 赤 | 緑多色 | アーティファクト | 土地 | 全カード
+
+
+白
+
+
+
+エイヴンの裂け目追い
+
+
+
+
+天秤
+
+
+
+
+バリーノックの群勢
+
+
+
+
+心優しきボディガード
+
+
+
+
+カルシダーム
+
+
+
+
+連合儀仗兵
+
+
+
+
+八ツ尾半
+
+
+
+
+先兵の精鋭
+
+
+
+
+悟りの教示者
+
+
+
+
+信仰の足枷
+
+
+
+
+魂のフィールド
+
+
+
+
+微光角の鹿
+
+
+...</p>
+                                <p><a href="/ja/articles/archive/card-image-gallery/eternal-masters" class="learn-more">記事を読む</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="article">
+          <div class="wrap">
+                          <div class="visual" style="background-image: url(http://magic.wizards.com/sites/mtg/files/images/hero/IBkemx7KHn_CIG_icon.jpg);"></div>
+                        <div class="details">
+                              <a href="#" class="cat">CARD IMAGE GALLERY</a>
+                            <p class="date">2016年 3月 25日</p>
+              <a href="#" class="title">  『イニストラードを覆う影』</a>
+                              <a href="#" class="auth">by, Wizards of the Coast</a>
+                            <div class="infos">
+                                  <p>
+
+ 
+
+白 | 青 | 黒  | 赤 | 緑多色 | アーティファクト | 両面 | 土地 | 全カード
+
+ 
+
+
+両面
+
+
+
+
+
+
+
+
+
+
+Turn Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+Turn Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+Turn Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+Turn Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+Turn Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+...</p>
+                                <p><a href="/ja/articles/archive/card-image-gallery/shadowsoverinnistrad" class="learn-more">記事を読む</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="article static">
+        <div class="wrap">
+          <div class="visual" style="background-image: url(http://magic.wizards.com/sites/all/themes/wiz_mtg/images/global/reconstructedArchive.jpg);"></div>
+          <div class="details">
+            <p class="title"><span>記事</span></p>
+            <div class="details">
+              <p class="title"><span>記事</span></p>
+              <p class="sub-title">Card Image Gallery Archive</p>
+              <div class="infos">
+                <p>過去の記事をお探しの場合 アーカイブのページをご覧ください。人気の著者による、数千にわたるマジックの記事が残されています。</p>
+                <p><a href="/ja/articles/archive" class="learn-more">一覧を見る</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>    </div>
+
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div id="back-to-top">
+      <a href="#viewport">トップに戻る</a>
+    </div>
+    <div id="where-to-buy">
+      <div class="content page-width">
+        <form action="/ja/articles/archive/card-image-gallery/%E3%80%8E%E7%95%B0%E7%95%8C%E6%9C%88%E3%80%8F-2016-06-27" method="post" id="wiz-store-and-event-locator-search-form--2" accept-charset="UTF-8"><div><div class="intro"><div class="wrap"><h5>プレイまたは購入が可能な場所</h5><p>最寄りのマジック：ザ・ギャザリング<br />取り扱い店舗を検索いただけます</p></div></div><div class="form"><div class="wrap"><span class="column zip-code"><div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="所在地または郵便番号を入力" type="text" id="edit-search-string--4" name="search-string" value="" size="25" maxlength="128" class="form-text" />
+</div>
+</span><span class="column actions"><button class="action-button" type="submit">今すぐ検索！</button></span></div></div><input class="hide form-submit" type="submit" id="edit-search-button--4" name="op" value="今すぐ検索！" /><input type="hidden" name="form_build_id" value="form-RvmPppJKlNgj-4EPKakDXqAkJMdS-pozykUde8r1II4" />
+<input type="hidden" name="form_id" value="wiz_store_and_event_locator_search_form" />
+</div></form>      </div>
+    </div>
+
+    <div class="main-footer">
+      <div class="content page-width">
+        <div class="text">
+                      <div id="locale-select">
+              <label for="locale-select-ddl">言語を選択</label>
+
+              <div class="select-wrapper">
+                <select id="locale-select-ddl">
+                  <option value="/zh-hans/node/1031641" >简体中文</option><option value="/zh-hant/node/1031646" >繁體中文</option><option value="/fr/node/1031651" >Français</option><option value="/de/node/1031656" >Deutsch</option><option value="/it/node/1031661" >Italiano</option><option value="/ja/node/1031666" selected>日本語</option><option value="/ko/node/1031671" >한국어</option><option value="/pt-br/node/1031681" >Português (Brasil)</option><option value="/ru/node/1031686" >Русский</option><option value="/es/node/1031691" >Español</option><option value="/en/node/1031631" >English</option>                </select>
+              </div>
+            </div>
+          
+          
+
+      <p class="brand-family-title">Wizards Brand Family</p>
+    <p class="brand-family-menu"><a href="http://magic.wizards.com" target="_blank">magic</a> <em>|</em> <a href="http://www.wizards.com/dnd" target="_blank">d&amp;d</a> <em>|</em> <a href="http://www.wizards.com/wpn" target="_blank">wpn</a> <em>|</em> <a href="http://dm.takaratomy.co.jp" target="_blank">duel masters</a> <em>|</em> <a href="http://www.wizards.com/default.asp?x=ah/welcome" target="_blank">avalon hill</a></p>
+  <p><a href="http://company.wizards.com/tou" target="_blank">利用規約</a> <em>|</em> <a href="http://company.wizards.com/conduct" target="_blank">行動規範</a> <em>|</em> <a href="http://company.wizards.com/policy" target="_blank">プライバシー・ポリシー</a> <em>|</em> <a href="http://www.wizards.com/customerservice" target="_blank">Customer Service</a> <em>|</em> <a href="/ja/cookies">クッキー</a></p>
+  <p class="copyright">© 1995-2016 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+
+        </div>
+        
+
+      <p class="logo wizard">
+      <a href="http://company.wizards.com"
+         target="_blank"
+         title="Wizards of the Coast"
+        ><img src="/sites/all/themes/wiz_mtg/img/interface/wizard-of-the-coast-logo.png" alt="Wizards of the Coast" /></a>
+    </p>
+  
+      <p class="logo hasbro">
+      <a href="http://www.hasbro.com"
+         target="_blank"
+         title="Hasbro"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/hasbro-logo.svg" alt="Hasbro" /></a>
+    </p>
+  
+      <p class="logo privacy">
+      <a href="http://www.esrb.org/confirm/wizards-confirmation.aspx"
+         target="_blank"
+         title="ESRB Privacy Certified"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/esrb-badge.png" alt="ESRB Privacy Certified" /></a>
+    </p>
+  
+      </div>
+    </div>
+  </footer>
+  </div>
+
+<div id="cookies-warning">
+	<div class="wrap page-width">
+		<div class="text">
+			<p>
+        We use cookies on this site to enhance your user experience. By clicking any link on this page or by clicking <strong>Yes</strong>, you are giving your consent for us to set cookies.        <a href="http://company.wizards.com/policies/web/cookie" target="_blank"> (Learn more about cookies)</a>
+      </p>
+		</div>
+		<p class="actions">
+			<button type="button" class="button agree">承諾する</button>
+			<a href="http://company.wizards.com/policies/web/cookie" target="_blank" class="button disagree">No, I want to find out more</a>
+		</p>
+	</div>
+</div>      <div class="region region-page-bottom">
+    <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>  </div>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_oi0ujkYeWtu_4YlJE5uYvltQ88urtOHuaNRm2scTWco.js"></script>
+  </div>
+
+	<!-- Crazy Egg -->
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0009/9185.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d92d812ac7","applicationID":"22111946","transactionName":"YVNXMkcAD0sHAUdcXFgZdAVBCA5WSRJSUlZpW1QIVAYESjkMXFFWaUBcA0I+EVkBBw==","queueTime":0,"applicationTime":346,"atts":"TRRURA8aHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

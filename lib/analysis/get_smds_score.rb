@@ -1,7 +1,7 @@
-
+# encoding: UTF-8
 #ruby
-require "logger"
 
+require "logger"
 require '../../lib/site/smds.rb'
 
 begin
@@ -11,10 +11,21 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	packname='EldritchMoom'
+	packname='Eldritch Moom'
 	short='EMN'
-	store = SMDS.new(@log)
-	store.create_pointranking_list_of(packname, short)
+	#packname='Shadows over Innistrad'
+	#short='SOI'
+	
+	outputfilename = "../../decks/smdb_pointranking_list_of_#{short}.csv"
+	case packname
+	when 'Shadows over Innistrad' then
+		url = 'http://syunakira.com/smd/pointranking/index.php?packname=UnravelTheMadness&language=Japanese'
+	when 'Eldritch Moom' then
+		url = 'http://syunakira.com/smd/pointranking/index.php?packname=EldritchMoom&language=Japanese'
+	end
+
+	site = SMDS.new(@log)
+	site.create_pointranking_list outputfilename, url, short
 
 	@log.info File.basename(__FILE__).to_s + " finished."
 	puts File.basename(__FILE__).to_s + " finished."

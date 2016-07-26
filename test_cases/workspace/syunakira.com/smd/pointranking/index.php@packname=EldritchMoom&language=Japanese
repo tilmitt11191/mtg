@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<link rel="stylesheet" type="text/css" href="../smd.css" />
+<link rel="shortcut icon" href="http://syunakira.com/smd/img/bookmark.png" type="image/png">
+<title>Point Ranking</title>
+</head>
+<body>
+
+<script>
+    function changeIMG(id) {
+        imagePath = document.getElementById(id).src;
+        if (imagePath.indexOf("_2") < 0) {
+            imagePath = imagePath.slice(0, -4) + '_2.jpg';
+        } else {
+            imagePath = imagePath.slice(0, -6) + '.jpg';
+        }
+        document.getElementById(id).src = imagePath;
+    }
+</script>
+
+<center>
+<table width="1200" border="0"><!-- ページテーブル始まり -->
+<tr><td>
+<style type="text/css">
+    table .headerTable {
+        width: 1200px;
+        border: outset 2px #eeeeee;
+        text-align: left;
+    }
+    table .headerTable tr {
+        height: 58px;
+        text-align: left;
+    }
+    table .headerTable td {
+        margin: 10px;
+        width: 140px;
+        height: 38px;
+    }
+</style>
+
+
+<div style="width: 1200px;">
+
+
+<table class="headerTable"><tr>
+    <td>
+        <a href="http://syunakira.com/smd"><div class="draft">Draft</div></a>
+    </td>
+    <td>
+        <a href="http://syunakira.com/smss"><div class="sealed">Sealed</div></a>
+    </td>
+    <td>
+        <a href="chat"><div class="chat">chat room</div></a>
+    </td>
+
+    <td>
+        <div style="margin: 15px;">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syunakira.com/smd/" data-hashtags="smds">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+    </td>
+    <td>
+        <div style="margin: 15px;">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://syunakira.com/smd/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+        </div>
+    </td>
+    <td>
+        <div style="margin: 15px;">
+            <!-- Place this tag where you want the +1 button to render. -->
+            <div class="g-plusone" data-size="medium"></div>
+
+            <!-- Place this tag after the last +1 button tag. -->
+            <script type="text/javascript">
+                (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+            </script>
+        </div>
+    </td>
+    <td></td>
+</tr></table>
+
+<table><tr>
+<td style="width:230px; font-size: 60px; color:#2266ff;">
+    <a href="http://syunakira.com/smd/">
+        <img src="http://syunakira.com/smd/img/logotype/smds.png" border="0" style="vertical-align: bottom;" alt="SMDS" height="90">
+    </a>
+</td>
+<td style="width:970px;">
+    <div>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 970x90 for SMDS ビックバナー（大） -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:970px;height:90px"
+             data-ad-client="ca-pub-2941365993317354"
+             data-ad-slot="5178906868"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+    </div>
+</td></tr></table>
+
+</div></td></tr>
+
+<tr>
+
+<td valign="top">
+
+
+
+<!-- 中央ミニテーブル始まり -->
+<table width="1200" cellpadding="0" cellspacing="0"><tr>
+<center>
+
+<div style="font-size:28px;"><b> ELDRITCH MOON 　POINT RANKING</b></div>
+<a href="../index.php" style="font-size:18px;text-decoration:underline;">Go main page.</a><br>
+
+<div>EldritchMoom <b>49446</b> packs were opened.</div><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+<td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/93.jpg" id="93"></center></td><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/28.jpg" id="28"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(28)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/46.jpg" id="46"></center></td></tr><tr><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/162.jpg" id="162"></center></td><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/2.jpg" id="2"></center></td><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/190.jpg" id="190"></center></td></tr><tr><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/6.jpg" id="6"></center></td><td style="position: relative;"><center>10<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/136.jpg" id="136"></center></td><td style="position: relative;"><center>9.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/72.jpg" id="72"></center></td></tr><tr><td style="position: relative;"><center>9.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/137.jpg" id="137"></center></td><td style="position: relative;"><center>9.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/185.jpg" id="185"></center></td><td style="position: relative;"><center>9.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/191.jpg" id="191"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(191)">
+</div>
+<br><br>
+</center></td></tr><tr><td style="position: relative;"><center>9.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/17.jpg" id="17"></center></td><td style="position: relative;"><center>9.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/5.jpg" id="5"></center></td><td style="position: relative;"><center>9.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/3.jpg" id="3"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>9.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/123.jpg" id="123"></center></td><td style="position: relative;"><center>9.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/39.jpg" id="39"></center></td><td style="position: relative;"><center>9.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/183.jpg" id="183"></center></td></tr><tr><td style="position: relative;"><center>9.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/86.jpg" id="86"></center></td><td style="position: relative;"><center>9.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/40.jpg" id="40"></center></td><td style="position: relative;"><center>9.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/117.jpg" id="117"></center></td></tr><tr><td style="position: relative;"><center>8.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/189.jpg" id="189"></center></td><td style="position: relative;"><center>8.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/47.jpg" id="47"></center></td><td style="position: relative;"><center>8.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/15.jpg" id="15"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(15)">
+</div>
+<br><br>
+</center></td></tr><tr><td style="position: relative;"><center>8.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/87.jpg" id="87"></center></td><td style="position: relative;"><center>8.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/184.jpg" id="184"></center></td><td style="position: relative;"><center>8.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/181.jpg" id="181"></center></td></tr><tr><td style="position: relative;"><center>8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/98.jpg" id="98"></center></td><td style="position: relative;"><center>7.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/146.jpg" id="146"></center></td><td style="position: relative;"><center>7.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/111.jpg" id="111"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(111)">
+</div>
+<br><br>
+</center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>7.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/80.jpg" id="80"></center></td><td style="position: relative;"><center>7.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/130.jpg" id="130"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(130)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>7.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/176.jpg" id="176"></center></td></tr><tr><td style="position: relative;"><center>7.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/56.jpg" id="56"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(56)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>7.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/118.jpg" id="118"></center></td><td style="position: relative;"><center>7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/85.jpg" id="85"></center></td></tr><tr><td style="position: relative;"><center>6.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/156.jpg" id="156"></center></td><td style="position: relative;"><center>6.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/106.jpg" id="106"></center></td><td style="position: relative;"><center>6.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/132.jpg" id="132"></center></td></tr><tr><td style="position: relative;"><center>6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/170.jpg" id="170"></center></td><td style="position: relative;"><center>5.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/65.jpg" id="65"></center></td><td style="position: relative;"><center>5.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/109.jpg" id="109"></center></td></tr><tr><td style="position: relative;"><center>5.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/7.jpg" id="7"></center></td><td style="position: relative;"><center>5.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/155.jpg" id="155"></center></td><td style="position: relative;"><center>5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/97.jpg" id="97"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>4.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/64.jpg" id="64"></center></td><td style="position: relative;"><center>4.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/69.jpg" id="69"></center></td><td style="position: relative;"><center>3.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/45.jpg" id="45"></center></td></tr><tr><td style="position: relative;"><center>3.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/133.jpg" id="133"></center></td><td style="position: relative;"><center>3.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/33.jpg" id="33"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(33)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>3.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/24.jpg" id="24"></center></td></tr><tr><td style="position: relative;"><center>3.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/99.jpg" id="99"></center></td><td style="position: relative;"><center>3.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/169.jpg" id="169"></center></td><td style="position: relative;"><center>2.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/165.jpg" id="165"></center></td></tr><tr><td style="position: relative;"><center>2.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/23.jpg" id="23"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(23)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>2.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/152.jpg" id="152"></center></td><td style="position: relative;"><center>2.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/71.jpg" id="71"></center></td></tr><tr><td style="position: relative;"><center>2.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/49.jpg" id="49"></center></td><td style="position: relative;"><center>2.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/142.jpg" id="142"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(142)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>2.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/13.jpg" id="13"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>2.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/200.jpg" id="200"></center></td><td style="position: relative;"><center>2.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/92.jpg" id="92"></center></td><td style="position: relative;"><center>2.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/140.jpg" id="140"></center></td></tr><tr><td style="position: relative;"><center>2.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/168.jpg" id="168"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(168)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>2.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/103.jpg" id="103"></center></td><td style="position: relative;"><center>2.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/164.jpg" id="164"></center></td></tr><tr><td style="position: relative;"><center>2.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/18.jpg" id="18"></center></td><td style="position: relative;"><center>2.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/161.jpg" id="161"></center></td><td style="position: relative;"><center>2.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/22.jpg" id="22"></center></td></tr><tr><td style="position: relative;"><center>2.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/95.jpg" id="95"></center></td><td style="position: relative;"><center>2.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/158.jpg" id="158"></center></td><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/128.jpg" id="128"></center></td></tr><tr><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/204.jpg" id="204"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(204)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/163.jpg" id="163"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(163)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/129.jpg" id="129"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/159.jpg" id="159"></center></td><td style="position: relative;"><center>2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/124.jpg" id="124"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(124)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>1.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/16.jpg" id="16"></center></td></tr><tr><td style="position: relative;"><center>1.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/1.jpg" id="1"></center></td><td style="position: relative;"><center>1.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/193.jpg" id="193"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(193)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>1.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/174.jpg" id="174"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(174)">
+</div>
+<br><br>
+</center></td></tr><tr><td style="position: relative;"><center>1.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/175.jpg" id="175"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(175)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/4.jpg" id="4"></center></td><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/11.jpg" id="11"></center></td></tr><tr><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/62.jpg" id="62"></center></td><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/42.jpg" id="42"></center></td><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/96.jpg" id="96"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(96)">
+</div>
+<br><br>
+</center></td></tr><tr><td style="position: relative;"><center>1.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/94.jpg" id="94"></center></td><td style="position: relative;"><center>1.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/125.jpg" id="125"></center></td><td style="position: relative;"><center>1.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/63.jpg" id="63"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(63)">
+</div>
+<br><br>
+</center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/81.jpg" id="81"></center></td><td style="position: relative;"><center>1.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/88.jpg" id="88"></center></td><td style="position: relative;"><center>1.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/54.jpg" id="54"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(54)">
+</div>
+<br><br>
+</center></td></tr><tr><td style="position: relative;"><center>1.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/116.jpg" id="116"></center></td><td style="position: relative;"><center>1.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/100.jpg" id="100"></center></td><td style="position: relative;"><center>1.5<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/134.jpg" id="134"></center></td></tr><tr><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/27.jpg" id="27"></center></td><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/143.jpg" id="143"></center></td><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/149.jpg" id="149"></center></td></tr><tr><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/21.jpg" id="21"></center></td><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/50.jpg" id="50"></center></td><td style="position: relative;"><center>1.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/12.jpg" id="12"></center></td></tr><tr><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/122.jpg" id="122"></center></td><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/79.jpg" id="79"></center></td><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/119.jpg" id="119"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/199.jpg" id="199"></center></td><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/91.jpg" id="91"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(91)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/166.jpg" id="166"></center></td></tr><tr><td style="position: relative;"><center>1.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/77.jpg" id="77"></center></td><td style="position: relative;"><center>1.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/115.jpg" id="115"></center></td><td style="position: relative;"><center>1.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/19.jpg" id="19"></center></td></tr><tr><td style="position: relative;"><center>1.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/66.jpg" id="66"></center></td><td style="position: relative;"><center>1.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/148.jpg" id="148"><div style="position: absolute; top: 350px; left: 179px;">
+    <img src="http://syunakira.com/smd/img/material/reverse.png"
+         onmouseover="this.src='http://syunakira.com/smd/img/material/reverse_2.png'"
+         onmouseout="this.src='http://syunakira.com/smd/img/material/reverse.png'"
+         onclick="changeIMG(148)">
+</div>
+<br><br>
+</center></td><td style="position: relative;"><center>1.2<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/10.jpg" id="10"></center></td></tr><tr><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/26.jpg" id="26"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/9.jpg" id="9"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/90.jpg" id="90"></center></td></tr><tr><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/102.jpg" id="102"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/44.jpg" id="44"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/25.jpg" id="25"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/30.jpg" id="30"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/150.jpg" id="150"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/180.jpg" id="180"></center></td></tr><tr><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/108.jpg" id="108"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/31.jpg" id="31"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/147.jpg" id="147"></center></td></tr><tr><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/186.jpg" id="186"></center></td><td style="position: relative;"><center>1.1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/110.jpg" id="110"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/167.jpg" id="167"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/58.jpg" id="58"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/59.jpg" id="59"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/188.jpg" id="188"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/60.jpg" id="60"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/57.jpg" id="57"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/43.jpg" id="43"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/89.jpg" id="89"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/14.jpg" id="14"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/8.jpg" id="8"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/187.jpg" id="187"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/203.jpg" id="203"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/201.jpg" id="201"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/173.jpg" id="173"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/84.jpg" id="84"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/121.jpg" id="121"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/73.jpg" id="73"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/104.jpg" id="104"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/113.jpg" id="113"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/195.jpg" id="195"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/196.jpg" id="196"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/194.jpg" id="194"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/76.jpg" id="76"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/82.jpg" id="82"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/127.jpg" id="127"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/34.jpg" id="34"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/112.jpg" id="112"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/151.jpg" id="151"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/61.jpg" id="61"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/145.jpg" id="145"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/38.jpg" id="38"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/107.jpg" id="107"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/198.jpg" id="198"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/29.jpg" id="29"></center></td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/114.jpg" id="114"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/35.jpg" id="35"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/160.jpg" id="160"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/48.jpg" id="48"></center></td><td style="position: relative;"><center>1<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/192.jpg" id="192"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/197.jpg" id="197"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/179.jpg" id="179"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/153.jpg" id="153"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/70.jpg" id="70"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/202.jpg" id="202"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/178.jpg" id="178"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/182.jpg" id="182"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/154.jpg" id="154"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/67.jpg" id="67"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/53.jpg" id="53"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/74.jpg" id="74"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/75.jpg" id="75"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/120.jpg" id="120"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/141.jpg" id="141"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/68.jpg" id="68"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/37.jpg" id="37"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/138.jpg" id="138"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/126.jpg" id="126"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/135.jpg" id="135"></center></td></tr><tr><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/83.jpg" id="83"></center></td><td style="position: relative;"><center>0.9<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/41.jpg" id="41"></center></td><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/101.jpg" id="101"></center></td></tr><tr><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/55.jpg" id="55"></center></td><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/105.jpg" id="105"></center></td><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/78.jpg" id="78"></center></td></tr><tr><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/172.jpg" id="172"></center></td><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/36.jpg" id="36"></center></td><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/171.jpg" id="171"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>0.8<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/177.jpg" id="177"></center></td><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/51.jpg" id="51"></center></td><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/52.jpg" id="52"></center></td></tr><tr><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/139.jpg" id="139"></center></td><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/144.jpg" id="144"></center></td><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/157.jpg" id="157"></center></td></tr><tr><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/32.jpg" id="32"></center></td><td style="position: relative;"><center>0.7<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/131.jpg" id="131"></center></td><td style="position: relative;"><center>0.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/20.jpg" id="20"></center></td></tr><tr><td style="position: relative;"><center>0.6<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/205.jpg" id="205"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/220.jpg" id="220"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/214.jpg" id="214"></center></td></tr><tr><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/211.jpg" id="211"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/206.jpg" id="206"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/207.jpg" id="207"></center></td></tr><tr><td colspan="3"><center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ラージビックバナー -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-2941365993317354"
+     data-ad-slot="5178906868"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</center>
+</td></tr><tr><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/218.jpg" id="218"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/212.jpg" id="212"></center></td><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/219.jpg" id="219"></center></td></tr><tr><td style="position: relative;"><center>0.4<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/216.jpg" id="216"></center></td><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/215.jpg" id="215"></center></td><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/217.jpg" id="217"></center></td></tr><tr><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/213.jpg" id="213"></center></td><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/209.jpg" id="209"></center></td><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/208.jpg" id="208"></center></td></tr><tr><td style="position: relative;"><center>0.3<br><img src="http://syunakira.com/smd/img/EldritchMoom/Japanese/210.jpg" id="210"></center></td>
+</center>
+</tr></table>
+<!-- 中央ミニテーブル終わり -->
+
+
+</td>
+</tr>
+
+<tr><td>
+<table width="1200">
+<tr><td>
+
+<center>
+
+	<div id="footerSponsoredLink" style="height:90px;>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- 970x90 for SMDS ビックバナー（大） -->
+		<ins class="adsbygoogle"
+			 style="display:inline-block;width:970px;height:90px"
+			 data-ad-client="ca-pub-2941365993317354"
+			 data-ad-slot="5178906868"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<br>
+		<!-- delete button -->
+		<div style="position:relative; top: -28px">
+			<center>
+			<button onClick="hideSponsoredLink('footerSponsoredLink')" style="padding:1px;">x</button><button disabled style="background-color: #FFFFFF; font-size:10px; padding:0px; border:0px;"> delete this add </button>
+			</center>
+		</div>
+		<!-- end of delete button -->
+	</div>
+
+</center>
+
+</td></tr>
+<tr><td>
+<center>
+
+<a href="http://syunakira.com/smd/">
+<img src="http://syunakira.com/smd/img/logotype/DraftSimulator.png"
+	onmouseover="this.src='http://syunakira.com/smd/img/logotype/DraftSimulator2.png'"
+	onmouseout="this.src='http://syunakira.com/smd/img/logotype/DraftSimulator.png'"
+/>
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="http://syunakira.com/smss/"><img src="http://syunakira.com/smd/img/logotype/SealedSimulator.png"
+	onmouseover="this.src='http://syunakira.com/smd/img/logotype/SealedSimulator2.png'"
+	onmouseout="this.src='http://syunakira.com/smd/img/logotype/SealedSimulator.png'"
+/>
+</a>
+
+</center>
+</td></tr></table></td></tr>
+
+</table><!-- ページテーブル終わり -->
+</center>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37984123-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>

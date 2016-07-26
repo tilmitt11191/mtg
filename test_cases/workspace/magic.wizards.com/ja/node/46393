@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>動画 - メディア - 記事 | マジック：ザ・ギャザリング</title>
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+	<meta name="google-site-verification" content="WquIfqfWtlm2X62GTeJ-5vDtRrbOVOIT6mFc3vAP5BQ" />
+
+  <link rel="icon" type="image/png" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/sites/all/themes/wiz_mtg/icons/favicon.ico"/>
+  <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/wiz_mtg/icons/touch-icon-57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sites/all/themes/wiz_mtg/icons/touch-icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sites/all/themes/wiz_mtg/touch-icon-114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://magic.wizards.com/sites/all/themes/wiz_mtg/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://magic.wizards.com/ja/articles/media/videos" />
+<link rel="shortlink" href="http://magic.wizards.com/ja/node/116673" />
+<meta property="og:site_name" content="マジック：ザ・ギャザリング" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://magic.wizards.com/ja/articles/media/videos" />
+<meta property="og:title" content="動画 - メディア - 記事" />
+  <link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_DHcXHPYBSjIVaCQZEG4ZlpLkvslnFlBCnQUCzlbRBio.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_jqLG8JVbJuXMDDISe4UsZMUj_1qh-z0BGGAnA4OQvrA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_2kUT6OhWxxRyu6G3oRYvNkxUpdtGnGOhWFO6ubAnnlM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_sELblXm0HE9iYxNNwDufKAxxNQ7ZkF6_ABbBSpg1HBE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css" media="all" />
+  <script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_melyhmK_eh6sYXp2z9ljBIs419nCvgG6X4XWQKGJjng.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_yRh3TUp_QoC2vC9PitxLvVXRHsQUtJt-ObNFP_v6h-k.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_6wvlZiy1laq6No5vMjs1JyzoJk6pdEuC_hyJhGBLc3M.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_HLx9fwaDf_34WnHzmXdwT03jIYocZkyEWafaKjU6HQo.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-15020098-13", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "pathToTheme": "sites/all/themes/wiz_mtg" });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://accounts.wizards.com/Widget/Widget.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_jwz47zv1UmY0ktN3U9ljsw74r8dLeUuXwA3pHpgxgpc.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_JIa4YdILIwnQQfsYZSjX1gz9IUt6emOIXEvyA44TWDI.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"ja\/","ajaxPageState":{"theme":"wiz_mtg","theme_token":"bMlMfWXrv_Gm0oq4Luy93xrXLCJIijN3EDN5ttnrnHM","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/wiz_autocard.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/jquery.qtip-1.0.0-rc3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/d3.v3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.charts.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/masonry.pkgd.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/wiz_decklist_filter\/js\/wiz_decklist_filter.js":1,"sites\/all\/modules\/custom\/wiz_show_period\/js\/moment.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper-2.1.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper.scrollbar-2.1.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/custom.js":1,"public:\/\/languages\/ja_fSe4apjU94J85x0d5WIq9y5vHyoUWspNmqJrf_JPTGk.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/contrib\/modal_forms\/js\/modal_forms_popup.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/deletecookies.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/jquery.cookie.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"https:\/\/accounts.wizards.com\/Widget\/Widget.js":1,"sites\/all\/modules\/custom\/wiz_npsu\/js\/npsu_widget.js":1,"sites\/all\/libraries\/foresee\/foresee-trigger.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery-ui.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/content-gallery-grid\/modernizr.custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.fancybox.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.scrollbar.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.mmenu.oncanvas.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.columnlist.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/dropdown.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/owl.carousel.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/stacktable.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/arketype.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-homepage-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-event-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/interstitials.js":1,"sites\/all\/themes\/wiz_mtg\/js\/community.js":1,"sites\/all\/themes\/wiz_mtg\/js\/inline-features.js":1,"sites\/all\/themes\/wiz_mtg\/js\/MainMenu.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ParallaxBackground.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ShowHideListItems.js":1,"sites\/all\/themes\/wiz_mtg\/js\/core.js":1,"sites\/all\/themes\/wiz_mtg\/js\/mx.js":1,"\/\/cdn.datatables.net\/1.10.5\/js\/jquery.dataTables.min.js":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/js\/dataTables.responsive.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.scrollbar.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"\/css\/tabs.css":1,"sites\/all\/modules\/contrib\/chartbeat\/chartbeat.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/contrib\/modal_forms\/css\/modal_forms_popup.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/wiz_mtg\/panels\/layouts\/wiz_mtg\/wiz_onecol\/wiz_onecol.css":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/custom\/wiz_npsu\/css\/npsu.css":1,"sites\/all\/modules\/custom\/wiz_npsu_mtg\/css\/npsu_mtg.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery-ui-mod.css":1,"sites\/all\/themes\/wiz_mtg\/css\/owl.carousel.css":1,"sites\/all\/themes\/wiz_mtg\/css\/scrollbars.css":1,"sites\/all\/themes\/wiz_mtg\/css\/fonts.css":1,"sites\/all\/themes\/wiz_mtg\/css\/core.css":1,"sites\/all\/themes\/wiz_mtg\/css\/header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/footer.css":1,"sites\/all\/themes\/wiz_mtg\/css\/page-header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/medias.css":1,"sites\/all\/themes\/wiz_mtg\/css\/search.css":1,"sites\/all\/themes\/wiz_mtg\/css\/decklist.css":1,"sites\/all\/themes\/wiz_mtg\/css\/articles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/game-info.css":1,"sites\/all\/themes\/wiz_mtg\/css\/events.css":1,"sites\/all\/themes\/wiz_mtg\/css\/community.css":1,"sites\/all\/themes\/wiz_mtg\/css\/mx.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/immersive.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/interstitials.css":1,"sites\/all\/themes\/wiz_mtg\/css\/styles-extended.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacy.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacyStyles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/_theme-override.css":1,"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic":1,"\/\/cdn.datatables.net\/1.10.5\/css\/jquery.dataTables.css":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/css\/dataTables.responsive.css":1}},"chartbeat":{"uid":51341,"domain":"http:\/\/magiccv2stg.prod.acquia-sites.com\/","useCanonical":true,"noCookies":false},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":330,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"wiz_core":{"wiz_core_switch_in_days":14,"wiz_core_switch_in_visits":10,"wiz_core_switch_b_path":"home"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"npsu_widget":{"enabled":true,"logged_in":"false"},"urlIsAjaxTrusted":{"\/ja\/articles\/media\/videos":true}});
+//--><!]]>
+</script>
+
+  
+        <style>
+      @media all {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png) no-repeat;
+          background-size: 100% 100px;
+
+        }
+        #mobile-menu .header .logo a {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 100%;
+        }
+        #page.snap-menu header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+      @media (max-width: 1200px) {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+    </style>
+  	
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-116673 node-type-big-page i18n-ja content-panels role-anonymous-user with-subnav page-articles-media-videos section-articles" >
+  <script>
+  /* Interstitials variables */
+  var Interstitials = {
+    list: [
+                        ]
+  };
+  </script>
+
+  <div id="page" class="">
+    
+        <div id="mobile-menu">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="toggle-menu-button"></div>
+  </div>
+  <nav>
+    <div class="menu-wrapper" data-back-label="Back"></div>
+  </nav>
+</div>
+
+<div id="viewport">
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <div id="utils">
+        <a href="http://locator.wizards.com/" class="locator">店舗・イベント検索</a> <a href="http://gatherer.wizards.com" class="gatherer">カードデータベース</a>        <a href="/ja" title="ログイン" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;SignIn&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showLoginModal();" id="SignInButton" class="login">ログイン</a> | <a href="/ja" title="アカウント登録" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Signup&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showJoinModal();" id="RegisterButton" class="register">アカウント登録</a>        <div id="search-form">
+          <form action="/ja/articles/media/videos" method="post" id="wiz-search-bar-form--2" accept-charset="UTF-8"><div><input type="hidden" name="search-site" value="acquia_search" />
+<div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="サイト検索" type="text" id="edit-search-string--3" name="search-string" value="" size="25" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-search-button--3" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-3WrAZHqgqrkJ7zlmhsz6thnkCyT7nhfXkwa7SvL73Co" />
+<input type="hidden" name="form_id" value="wiz_search_bar_form" />
+</div></form>        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <a class="home" href="/ja"><span>Magic the Gathering</span></a>
+
+        <div class="menu-wrapper">
+          <ul class="menu"><li class="mn_section_マジックを始めよう！ has-children"><a href="/ja/content/new-magic-1"><span>マジックを始めよう！</span></a><ul class="menu"><li class="mn_section_頭脳の戦い、マジック"><a href="/ja/content/new-to-magic/strategy"><span>頭脳の戦い、マジック</span></a></li>
+<li class="mn_section_物語の舞台、マジック"><a href="/ja/content/%E7%89%A9%E8%AA%9E"><span>物語の舞台、マジック</span></a></li>
+<li class="mn_section_コミュニティ"><a href="/ja/content/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"><span>コミュニティ</span></a></li>
+</ul></li>
+<li class="mn_section_ゲーム情報 has-children"><a href="/ja/game-information" title=""><span>ゲーム情報</span></a><ul class="menu"><li class="hub-link ゲーム情報"><a href="/ja/game-information"><span>ゲーム情報</span></a></li>
+<li class="mn_section_ゲームプレイ has-children"><a title="" class="nolink"><span>ゲームプレイ</span></a><ul class="menu"><li class="mn_section_ゲームについて"><a href="/ja/game-info/gameplay/about-the-game" title=""><span>ゲームについて</span></a></li>
+<li class="mn_section_遊び方"><a href="/ja/game-info/gameplay/how-to-play" title=""><span>遊び方</span></a></li>
+<li class="mn_section_デッキの組み方"><a href="/ja/game-info/gameplay/how-to-build-a-deck" title=""><span>デッキの組み方</span></a></li>
+<li class="mn_section_腕を磨く"><a href="/ja/game-info/gameplay/improve-your-game" title=""><span>腕を磨く</span></a></li>
+<li class="mn_section_ルール"><a href="/ja/game-info/gameplay/rules-and-formats" title=""><span>ルール</span></a></li>
+</ul></li>
+<li class="mn_section_製品 has-children"><a title="" class="nolink"><span>製品</span></a><ul class="menu"><li class="mn_section_注目製品"><a href="/ja/game-info/products/featured-releases" title=""><span>注目製品</span></a></li>
+<li class="mn_section_近日登場"><a href="/ja/game-info/products/coming-soon" title=""><span>近日登場</span></a></li>
+<li class="mn_section_マジック・デュエルズ"><a href="/ja/content/magic-duels"><span>マジック・デュエルズ</span></a></li>
+<li class="mn_section_マジックオンライン"><a href="/ja/node/46382"><span>マジックオンライン</span></a></li>
+<li class="mn_section_製品アーカイブ"><a href="/ja/content/%E8%A3%BD%E5%93%81%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96-%E8%A3%BD%E5%93%81-%E3%82%B2%E3%83%BC%E3%83%A0%E6%83%85%E5%A0%B1" title=""><span>製品アーカイブ</span></a></li>
+</ul></li>
+<li class="mn_section_ストーリー has-children"><a title="" class="nolink"><span>ストーリー</span></a><ul class="menu"><li class="mn_section_物語への誘い"><a href="/ja/game-info/story/magic-story" title=""><span>物語への誘い</span></a></li>
+<li class="mn_section_プレインズウォーカー"><a href="/ja/game-info/story/planeswalkers" title=""><span>プレインズウォーカー</span></a></li>
+<li class="mn_section_次元"><a href="/ja/game-info/story/planes" title=""><span>次元</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_イベント has-children"><a href="/ja/events"><span>イベント</span></a><ul class="menu"><li class="mn_section_イベント-ホーム"><a href="/ja/events"><span>イベント ホーム</span></a></li>
+<li class="mn_section_組織化プレイ<br>とは？"><a href="/ja/events/what-is-organized-play"><span>組織化プレイ<br>とは？</span></a></li>
+<li class="mn_section_イベント<br>種別"><a href="/ja/events/event-types"><span>イベント<br>種別</span></a></li>
+<li class="mn_section_-レポート has-children"><a class="nolink"><span> レポート</span></a><ul class="menu"><li class="mn_section_レポート・アーカイブ"><a href="/ja/events/coverage" title=""><span>レポート・アーカイブ</span></a></li>
+<li class="mn_section_トップ・プレーヤー"><a href="/ja/node/46371" title=""><span>トップ・プレーヤー</span></a></li>
+</ul></li>
+<li class="mn_section_スケジュール"><a href="http://mtg/ja/content/premier-events-schedule"><span>スケジュール</span></a></li>
+<li class="mn_section_情報 has-children"><a class="nolink"><span>情報</span></a><ul class="menu"><li class="mn_section_プレインズウォーカー・ポイント"><a href="/ja/events/resources/planeswalker-points" title=""><span>プレインズウォーカー・ポイント</span></a></li>
+<li class="mn_section_ジャッジ"><a href="/ja/events/resources/judges" title=""><span>ジャッジ</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_記事 has-children current"><a href="/ja/articles" title="" class="active-trail"><span>記事</span></a><ul class="menu"><li class="mn_section_記事-ホーム current"><a href="/ja/articles" class="active-trail"><span>記事 ホーム</span></a></li>
+<li class="mn_section_アーカイブ"><a href="/ja/content/jparchives"><span>アーカイブ</span></a></li>
+<li class="mn_section_イベント<br>優勝デッキ"><a href="/ja/node/46356"><span>イベント<br>優勝デッキ</span></a></li>
+<li class="mn_section_メディア has-children"><a class="nolink"><span>メディア</span></a><ul class="menu"><li class="mn_section_動画"><a href="/ja/node/46393" title=""><span>動画</span></a></li>
+<li class="mn_section_ポッドキャスト"><a href="/ja/node/46394" title=""><span>ポッドキャスト</span></a></li>
+<li class="mn_section_壁紙"><a href="/ja/node/46395" title=""><span>壁紙</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_コミュニティ has-children"><a href="/ja/community" title=""><span>コミュニティ</span></a><ul class="menu"><li class="mn_section_コミュニティ<br>ホーム"><a href="/ja/community"><span>コミュニティ<br>ホーム</span></a></li>
+<li class="mn_section_ファン・キット"><a href="/ja/community/fan-kits"><span>ファン・キット</span></a></li>
+</ul></li>
+<li class="mn_section_マイアカウント"><a href="/ja/content/my-accounts"><span>マイアカウント</span></a></li>
+</ul>        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div id="content-wrapper">
+      <div class="region region-content">
+    
+<div id="block-system-main" class=" block block-system block-odd first last main clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      
+<div class="panel-display panel-1col clearfix">
+  <div class="panel-panel panel-col">
+        <div id="content" class="page-width">
+
+	<!-- wiz_bean_content_html_block -->
+
+<div class="bean_block bean_block_html bean--wiz-content-html-block ">
+      <div id="ja-videos" class="page-width">
+                        <h2><span>&#21205;&#30011;</span></h2>
+          <p>&#21508;&#27425;&#20803;&#12420;&#12466;&#12540;&#12512;&#33258;&#20307;&#12395;&#28966;&#28857;&#12434;&#24403;&#12390;&#12383;&#21205;&#30011;&#12434;&#36890;&#12376;&#12390;&#12289;&#22885;&#12364;&#28145;&#12356;&#12510;&#12472;&#12483;&#12463;&#65306;&#12470;&#12539;&#12462;&#12515;&#12470;&#12522;&#12531;&#12464;&#12398;&#19990;&#30028;&#12391;&#26032;&#12383;&#12394;&#30330;&#35211;&#12434;&#12375;&#12414;&#12375;&#12423;&#12358;&#12290;&#12371;&#12371;&#12395;&#12289;&#12414;&#12378;&#25276;&#12373;&#12360;&#12390;&#12362;&#12365;&#12383;&#12356;&#21205;&#30011;&#12398;&#12475;&#12524;&#12463;&#12471;&#12519;&#12531;&#12434;&#12372;&#29992;&#24847;&#12356;&#12383;&#12375;&#12414;&#12375;&#12383;&#12290;&#20844;&#24335;<a href="http://www.youtube.com/channel/UC8ZGymAvfP97qJabgqUkz4A">YouTube&#12481;&#12515;&#12531;&#12493;&#12523;</a>&#12434;&#12372;&#35239;&#12395;&#12394;&#12427;&#12363;&#12289;&#20844;&#24335;<a href="http://www.twitch.tv/magic#/magic">Twitch.tv&#12481;&#12515;&#12531;&#12493;&#12523;</a>&#12395;&#30331;&#37682;&#12377;&#12427;&#12371;&#12392;&#12391;&#12289;&#12521;&#12452;&#12502;&#12539;&#12473;&#12488;&#12522;&#12540;&#12511;&#12531;&#12464;&#12539;&#12452;&#12505;&#12531;&#12488;&#12434;&#12372;&#35239;&#12356;&#12383;&#12384;&#12367;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+                  </div>
+  </div>
+
+
+	
+	
+	
+<div class="panel-separator"></div>
+
+	<!-- content video playlist -->
+<div id="ja-videos-0" class="page-width">
+        <!-- BEGIN :: MEDIA GALLERY -->
+    <div class="medias-gallery">
+      <div class="place-holder">
+                                                                <div class="vid" data-pos="0">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Theros Block Reels (Japanese)" class="placeholder"><div class="header">
+                                                              <h4><span>Theros Block Reels (Japanese)</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=MX_PD3jnd6o"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="1">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Dragon's Maze Trailer - Japanese" class="placeholder"><div class="header">
+                                                              <h4><span>Dragon's Maze Trailer - Japanese</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=MUCAP1Kz63w"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="2">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Gatecrash Trailer - Japanese" class="placeholder"><div class="header">
+                                                              <h4><span>Gatecrash Trailer - Japanese</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=iVzYQxPDV1g"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="3">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Return to Ravnica Trailer - Japanese" class="placeholder"><div class="header">
+                                                              <h4><span>Return to Ravnica Trailer - Japanese</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=uWNGEgnCZDs"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="4">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Avacyn Restored Trailer (Japanese)" class="placeholder"><div class="header">
+                                                              <h4><span>Avacyn Restored Trailer (Japanese)</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=Gjd6JR5Ddro"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="5">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Magic: The Gathering Dark Ascension Trailer (Japanese)" class="placeholder"><div class="header">
+                                                              <h4><span>Magic: The Gathering Dark Ascension Trailer (Japanese)</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=PB0z1j391wI"></a>
+                </div>
+                                                                                  <div class="vid" data-pos="6">
+                  <img src="/sites/all/themes/wiz_mtg/img/interface/video-place-holder.png" rel="group1" alt="Magic: The Gathering Innistrad Trailer (Japanese)" class="placeholder"><div class="header">
+                                                              <h4><span>Magic: The Gathering Innistrad Trailer (Japanese)</span>
+                                        </h4>
+                  </div>
+                  <a class="owl-video" href="https://www.youtube.com/watch?v=36KT6K2B5aQ"></a>
+                </div>
+                                            </div>
+      <div class="thumbnails">
+                                          <a href="#" data-pos="0">
+                <img src="" alt="Theros Block Reels (Japanese)"><span>Theros Block Reels (Japanese)</span>
+                                </a>
+                                      <a href="#" data-pos="1">
+                <img src="" alt="Dragon's Maze Trailer - Japanese"><span>Dragon's Maze Trailer - Japanese</span>
+                                </a>
+                                      <a href="#" data-pos="2">
+                <img src="" alt="Gatecrash Trailer - Japanese"><span>Gatecrash Trailer - Japanese</span>
+                                </a>
+                                      <a href="#" data-pos="3">
+                <img src="" alt="Return to Ravnica Trailer - Japanese"><span>Return to Ravnica Trailer - Japanese</span>
+                                </a>
+                                      <a href="#" data-pos="4">
+                <img src="" alt="Avacyn Restored Trailer (Japanese)"><span>Avacyn Restored Trailer (Japanese)</span>
+                                </a>
+                                      <a href="#" data-pos="5">
+                <img src="" alt="Magic: The Gathering Dark Ascension Trailer (Japanese)"><span>Magic: The Gathering Dark Ascension Trailer (Japanese)</span>
+                                </a>
+                                      <a href="#" data-pos="6">
+                <img src="" alt="Magic: The Gathering Innistrad Trailer (Japanese)"><span>Magic: The Gathering Innistrad Trailer (Japanese)</span>
+                                </a>
+                                      </div>
+    </div>
+    <!-- END :: MEDIA GALLERY -->
+</div>
+	
+	
+	
+</div>    
+        </div>
+  </div>
+
+    </div>
+
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div id="back-to-top">
+      <a href="#viewport">トップに戻る</a>
+    </div>
+    <div id="where-to-buy">
+      <div class="content page-width">
+        <form action="/ja/articles/media/videos" method="post" id="wiz-store-and-event-locator-search-form--2" accept-charset="UTF-8"><div><div class="intro"><div class="wrap"><h5>プレイまたは購入が可能な場所</h5><p>最寄りのマジック：ザ・ギャザリング<br />取り扱い店舗を検索いただけます</p></div></div><div class="form"><div class="wrap"><span class="column zip-code"><div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="所在地または郵便番号を入力" type="text" id="edit-search-string--4" name="search-string" value="" size="25" maxlength="128" class="form-text" />
+</div>
+</span><span class="column actions"><button class="action-button" type="submit">今すぐ検索！</button></span></div></div><input class="hide form-submit" type="submit" id="edit-search-button--4" name="op" value="今すぐ検索！" /><input type="hidden" name="form_build_id" value="form-GFc7rR8aIHKyn2lOqGzohvJE0PNSLzVxwP9tSuRdeD8" />
+<input type="hidden" name="form_id" value="wiz_store_and_event_locator_search_form" />
+</div></form>      </div>
+    </div>
+
+    <div class="main-footer">
+      <div class="content page-width">
+        <div class="text">
+                      <div id="locale-select">
+              <label for="locale-select-ddl">言語を選択</label>
+
+              <div class="select-wrapper">
+                <select id="locale-select-ddl">
+                  <option value="/zh-hans/node/118085" >简体中文</option><option value="/zh-hant/node/118148" >繁體中文</option><option value="/fr/node/116449" >Français</option><option value="/de/node/116485" >Deutsch</option><option value="/it/node/118181" >Italiano</option><option value="/ja/node/116673" selected>日本語</option><option value="/ko/node/118232" >한국어</option><option value="/pt-br/node/118267" >Português (Brasil)</option><option value="/ru/node/118306" >Русский</option><option value="/es/node/118339" >Español</option><option value="/en/node/46393" >English</option>                </select>
+              </div>
+            </div>
+          
+          
+
+      <p class="brand-family-title">Wizards Brand Family</p>
+    <p class="brand-family-menu"><a href="http://magic.wizards.com" target="_blank">magic</a> <em>|</em> <a href="http://www.wizards.com/dnd" target="_blank">d&amp;d</a> <em>|</em> <a href="http://www.wizards.com/wpn" target="_blank">wpn</a> <em>|</em> <a href="http://dm.takaratomy.co.jp" target="_blank">duel masters</a> <em>|</em> <a href="http://www.wizards.com/default.asp?x=ah/welcome" target="_blank">avalon hill</a></p>
+  <p><a href="http://company.wizards.com/tou" target="_blank">利用規約</a> <em>|</em> <a href="http://company.wizards.com/conduct" target="_blank">行動規範</a> <em>|</em> <a href="http://company.wizards.com/policy" target="_blank">プライバシー・ポリシー</a> <em>|</em> <a href="http://www.wizards.com/customerservice" target="_blank">Customer Service</a> <em>|</em> <a href="/ja/cookies">クッキー</a></p>
+  <p class="copyright">© 1995-2016 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+
+        </div>
+        
+
+      <p class="logo wizard">
+      <a href="http://company.wizards.com"
+         target="_blank"
+         title="Wizards of the Coast"
+        ><img src="/sites/all/themes/wiz_mtg/img/interface/wizard-of-the-coast-logo.png" alt="Wizards of the Coast" /></a>
+    </p>
+  
+      <p class="logo hasbro">
+      <a href="http://www.hasbro.com"
+         target="_blank"
+         title="Hasbro"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/hasbro-logo.svg" alt="Hasbro" /></a>
+    </p>
+  
+      <p class="logo privacy">
+      <a href="http://www.esrb.org/confirm/wizards-confirmation.aspx"
+         target="_blank"
+         title="ESRB Privacy Certified"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/esrb-badge.png" alt="ESRB Privacy Certified" /></a>
+    </p>
+  
+      </div>
+    </div>
+  </footer>
+  </div>
+
+<div id="cookies-warning">
+	<div class="wrap page-width">
+		<div class="text">
+			<p>
+        We use cookies on this site to enhance your user experience. By clicking any link on this page or by clicking <strong>Yes</strong>, you are giving your consent for us to set cookies.        <a href="http://company.wizards.com/policies/web/cookie" target="_blank"> (Learn more about cookies)</a>
+      </p>
+		</div>
+		<p class="actions">
+			<button type="button" class="button agree">承諾する</button>
+			<a href="http://company.wizards.com/policies/web/cookie" target="_blank" class="button disagree">No, I want to find out more</a>
+		</p>
+	</div>
+</div>      <div class="region region-page-bottom">
+    <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>  </div>
+  </div>
+
+	<!-- Crazy Egg -->
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0009/9185.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d92d812ac7","applicationID":"22111946","transactionName":"YVNXMkcAD0sHAUdcXFgZdAVBCA5WSRJSUlZpW1QIVAYESjkMXFFWaUBcA0I+EVkBBw==","queueTime":0,"applicationTime":992,"atts":"TRRURA8aHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

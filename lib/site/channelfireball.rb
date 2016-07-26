@@ -1,6 +1,7 @@
 
 
-require	"logger"
+require	'logger'
+require 'active_support/core_ext/object' #for blank?
 require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/utils.rb'
@@ -24,45 +25,97 @@ class Channelfireball < Site
 		@comments = {}
 	end
 	
-	def get_limited_set_reviews(outputfile,urls)
+	def get_limited_set_reviews(outputfilename,urls)
 		@log.info "#{__method__} start."
 		urls.each do |url|
 			html = @web.get_dom_of(url, @log)
-			#@web.output_html_src_to('../../test_cases/workspace/output/src.html', @log)
+			if html.nil? then
+				@log.fatal "url[#{url}] is incorrect."
+				return false
+			end
 			extract_cardnames_from html
-			remove_invalid_cards
+			remove_invalid_names
 			extract_scores_and_comments_from html
+			output_limited_set_reviews_to outputfilename
 		end
 	end
 	
 	def extract_cardnames_from(html)
 		@log.info "#{__method__} start."
-		html.css('h1').each do |element|
-			@log.debug "cardname[#{element.inner_text}]"
-			@cardnames.push element.inner_text
+		if html.nil? then
+			@log.fatal "html is nil"
+		else
+			html.css('h1').each do |element|
+				@log.debug "cardname[#{element.inner_text}]"
+				@cardnames.push element.inner_text
+			end
 		end
 	end
-	
-	def remove_invalid_cards
-		@log.info "#{__method__} start."
-		if @cardnames.nil? then
-			@log.warn '@cardnames is nil'
-			return false
-		end
 
-		@cardnames.reject!{|cardname| /(Limited Set Review|Ratings Scale|Top 5)/=~ cardname}
+	def remove_invalid_names
+		@log.info "#{__method__} start."
+		return false if cardnames_is_blank
+		@cardnames.reject!{|cardname| /(Limited Set Review|Previous Set Reviews|Ratings Scale|Top 5|White|Blue|Black|Red|Green|Artifacts|Colorless|Gold|Lands)/=~ cardname}
+		#@cardnames.reject!{|cardname| /(Limited Set Review|Previous Set Reviews|Ratings Scale|Top 5|White|Blue|Brac)/=~ cardname}
+
 	end
 	
 	def extract_scores_and_comments_from(html)
+		@log.info "#{__method__} start."
+		return false if cardnames_is_blank
+		
 		@cardnames.each do |cardname|
-			puts cardname
+			extract_scores_and_comments_of(cardname, html)
 		end
-		html.xpath('/').each do |line|
-			##
+	end
+	
+	def extract_scores_and_comments_of(cardname, html)
+		puts "#{__method__}(#{cardname}) start."
+		@log.info "#{__method__}(#{cardname}) start."
+		cardname_flag = false
+		html.inner_html.split("\n").each do |line|
+			break if cardname_flag && line.include?('<h1>') #break if this card's score, comment finished and next start.
+			cardname_flag = true if line == ("<h1>#{cardname}</h1>")
+			@scores[cardname] = format_score line if cardname_flag && line.include?('<h3>')
+			@scores[cardname] = format_score line if cardname_flag && @scores[cardname].nil? && line.include?('<p><strong>') #for EMN Black-Land
+			@comments[cardname] = @comments[cardname].to_s + (format_comments line) if cardname_flag && line.include?('<p>')
 		end
 	end
 
+	def output_limited_set_reviews_to outputfilename
+		@log.info "#{__method__}(#{outputfilename}) start."
+		outputfile = File.open(outputfilename, "w:Shift_JIS", :invalid => :replace, :undef => :replace, :replace => '?')
+		@cardnames.each do |cardname|
+			outputfile.puts "\"#{cardname}\",#{@scores[cardname]},\"#{@comments[cardname]}\""
+		end
+		
+		outputfile.close
+	end
 
+
+	def	cardnames_is_blank
+		if @cardnames.blank? then
+			@log.warn '@cardnames is nil'
+			return true
+		end
+	end
+	
+	def format_score str
+		str = remove_html_tag str
+		#for Make Mischief http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-red/
+		str.gsub!(/LimitedRatingg:/, '')
+		return str.gsub!(/Limited:|Limited Rating:|\s/, '')
+	end
+	
+	def format_comments str
+		output = str.gsub(/<p><strong>(.+?)<\/strong>(.+?)<\/p>/, '')
+		output = remove_html_tag output
+		output
+	end
+	
+	def remove_html_tag str
+		str.gsub(/<(".*?"|'.*?'|[^'"])*?>/, '')
+	end
 	
 	def get_decklist_from_article(url)
 		@log.info "channelfireball.get_decklist_from_article start."
@@ -78,54 +131,5 @@ class Channelfireball < Site
 		html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
 		puts html_nokogiri.css('div').attribute('crystal-catalog-helper-sublist').to_s
 		
-=begin	
-		html_row_data = open(url)
-		File.open("url.html", "w") do |file|
-			file.write html_row_data.read
-		end
-		#get cardname by id from wisdomguild.
-		site = WisdomGuild.new(@log)
-		store = Mtgotraders.new(@log)
-
-		html_nokogiri = Nokogiri::HTML.parse(html_row_data, nil, @charset)
-		File.open("pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
-			html_nokogiri.css('td/center').each do |element|
-				if /[0-9]/ =~ element.inner_text
-					score = element.inner_text
-					number = sprintf("%03d", element.css('img').attribute('id').to_s)
-					card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/EMA#{(number)}/")
-					oracle = card.oracle.gsub(/\n/,"")
-					
-					cardname_eng = card.name.split('/')[1]
-					cardname_jp = card.name.split('/')[0]
-					card.name = cardname_eng
-					oracle = card.oracle.gsub(/\n/,"")
-					
-					store.set_store_page_of(card)
-					price_manager = Price_manager.new(card, @log)
-					store.get_prices(price_manager)
-
-					
-					puts score
-					puts price_manager.relevant_price
-					puts cardname_eng
-					puts cardname_jp	
-					puts card.rarity
-					puts card.manacost
-					puts card.manacost_point
-					puts card.type
-					puts card.powertoughness
-					puts card.illustrator
-					puts card.cardset
-					puts card.generating_mana_type
-
-					file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
-
-				end
-			end
-		end
-
-		@log.info "SMDS.create_pointranking_list_of(#{packname}) finished."
-=end
 	end
 end

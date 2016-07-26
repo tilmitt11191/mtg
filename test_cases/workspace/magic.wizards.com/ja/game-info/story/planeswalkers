@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>プレインズウォーカー - ストーリー - ゲーム情報 | マジック：ザ・ギャザリング</title>
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+	<meta name="google-site-verification" content="WquIfqfWtlm2X62GTeJ-5vDtRrbOVOIT6mFc3vAP5BQ" />
+
+  <link rel="icon" type="image/png" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/sites/all/themes/wiz_mtg/icons/favicon.ico"/>
+  <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/wiz_mtg/icons/touch-icon-57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sites/all/themes/wiz_mtg/icons/touch-icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sites/all/themes/wiz_mtg/touch-icon-114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://magic.wizards.com/sites/all/themes/wiz_mtg/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://magic.wizards.com/ja/game-info/story/planeswalkers" />
+<link rel="shortlink" href="http://magic.wizards.com/ja/node/115443" />
+<meta property="og:site_name" content="マジック：ザ・ギャザリング" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://magic.wizards.com/ja/game-info/story/planeswalkers" />
+<meta property="og:title" content="プレインズウォーカー - ストーリー - ゲーム情報" />
+  <link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_DHcXHPYBSjIVaCQZEG4ZlpLkvslnFlBCnQUCzlbRBio.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_jqLG8JVbJuXMDDISe4UsZMUj_1qh-z0BGGAnA4OQvrA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_2kUT6OhWxxRyu6G3oRYvNkxUpdtGnGOhWFO6ubAnnlM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_sELblXm0HE9iYxNNwDufKAxxNQ7ZkF6_ABbBSpg1HBE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css" media="all" />
+  <script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_melyhmK_eh6sYXp2z9ljBIs419nCvgG6X4XWQKGJjng.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_yRh3TUp_QoC2vC9PitxLvVXRHsQUtJt-ObNFP_v6h-k.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_6wvlZiy1laq6No5vMjs1JyzoJk6pdEuC_hyJhGBLc3M.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_HLx9fwaDf_34WnHzmXdwT03jIYocZkyEWafaKjU6HQo.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-15020098-13", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "pathToTheme": "sites/all/themes/wiz_mtg" });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://accounts.wizards.com/Widget/Widget.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_jwz47zv1UmY0ktN3U9ljsw74r8dLeUuXwA3pHpgxgpc.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_JIa4YdILIwnQQfsYZSjX1gz9IUt6emOIXEvyA44TWDI.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"ja\/","ajaxPageState":{"theme":"wiz_mtg","theme_token":"rQWyFB8jTT4ZJ0Q_yX8DNJ0ksCQgLuOTJIfeVjkL1sY","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/wiz_autocard.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/jquery.qtip-1.0.0-rc3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/d3.v3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.charts.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/masonry.pkgd.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/wiz_decklist_filter\/js\/wiz_decklist_filter.js":1,"sites\/all\/modules\/custom\/wiz_show_period\/js\/moment.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper-2.1.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper.scrollbar-2.1.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/custom.js":1,"public:\/\/languages\/ja_fSe4apjU94J85x0d5WIq9y5vHyoUWspNmqJrf_JPTGk.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/contrib\/modal_forms\/js\/modal_forms_popup.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/deletecookies.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/jquery.cookie.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"https:\/\/accounts.wizards.com\/Widget\/Widget.js":1,"sites\/all\/modules\/custom\/wiz_npsu\/js\/npsu_widget.js":1,"sites\/all\/libraries\/foresee\/foresee-trigger.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery-ui.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/content-gallery-grid\/modernizr.custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.fancybox.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.scrollbar.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.mmenu.oncanvas.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.columnlist.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/dropdown.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/owl.carousel.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/stacktable.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/arketype.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-homepage-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-event-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/interstitials.js":1,"sites\/all\/themes\/wiz_mtg\/js\/community.js":1,"sites\/all\/themes\/wiz_mtg\/js\/inline-features.js":1,"sites\/all\/themes\/wiz_mtg\/js\/MainMenu.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ParallaxBackground.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ShowHideListItems.js":1,"sites\/all\/themes\/wiz_mtg\/js\/core.js":1,"sites\/all\/themes\/wiz_mtg\/js\/mx.js":1,"\/\/cdn.datatables.net\/1.10.5\/js\/jquery.dataTables.min.js":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/js\/dataTables.responsive.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.scrollbar.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"\/css\/tabs.css":1,"sites\/all\/modules\/contrib\/chartbeat\/chartbeat.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/contrib\/modal_forms\/css\/modal_forms_popup.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/wiz_mtg\/panels\/layouts\/wiz_mtg\/wiz_onecol\/wiz_onecol.css":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/custom\/wiz_npsu\/css\/npsu.css":1,"sites\/all\/modules\/custom\/wiz_npsu_mtg\/css\/npsu_mtg.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery-ui-mod.css":1,"sites\/all\/themes\/wiz_mtg\/css\/owl.carousel.css":1,"sites\/all\/themes\/wiz_mtg\/css\/scrollbars.css":1,"sites\/all\/themes\/wiz_mtg\/css\/fonts.css":1,"sites\/all\/themes\/wiz_mtg\/css\/core.css":1,"sites\/all\/themes\/wiz_mtg\/css\/header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/footer.css":1,"sites\/all\/themes\/wiz_mtg\/css\/page-header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/medias.css":1,"sites\/all\/themes\/wiz_mtg\/css\/search.css":1,"sites\/all\/themes\/wiz_mtg\/css\/decklist.css":1,"sites\/all\/themes\/wiz_mtg\/css\/articles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/game-info.css":1,"sites\/all\/themes\/wiz_mtg\/css\/events.css":1,"sites\/all\/themes\/wiz_mtg\/css\/community.css":1,"sites\/all\/themes\/wiz_mtg\/css\/mx.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/immersive.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/interstitials.css":1,"sites\/all\/themes\/wiz_mtg\/css\/styles-extended.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacy.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacyStyles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/_theme-override.css":1,"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic":1,"\/\/cdn.datatables.net\/1.10.5\/css\/jquery.dataTables.css":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/css\/dataTables.responsive.css":1}},"chartbeat":{"uid":51341,"domain":"http:\/\/magiccv2stg.prod.acquia-sites.com\/","useCanonical":true,"noCookies":false},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":330,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"wiz_core":{"wiz_core_switch_in_days":14,"wiz_core_switch_in_visits":10,"wiz_core_switch_b_path":"home"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"npsu_widget":{"enabled":true,"logged_in":"false"},"urlIsAjaxTrusted":{"\/ja\/game-info\/story\/planeswalkers":true}});
+//--><!]]>
+</script>
+
+  
+        <style>
+      @media all {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png) no-repeat;
+          background-size: 100% 100px;
+
+        }
+        #mobile-menu .header .logo a {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 100%;
+        }
+        #page.snap-menu header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+      @media (max-width: 1200px) {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+    </style>
+  	
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-115443 node-type-big-page i18n-ja content-panels role-anonymous-user with-subnav page-game-info-story-planeswalkers section-game-info" >
+  <script>
+  /* Interstitials variables */
+  var Interstitials = {
+    list: [
+                        ]
+  };
+  </script>
+
+  <div id="page" class="planeswalker-page section_game-info section_game-info_story section_game-info_story_planeswalker">
+    
+        <div id="mobile-menu">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="toggle-menu-button"></div>
+  </div>
+  <nav>
+    <div class="menu-wrapper" data-back-label="Back"></div>
+  </nav>
+</div>
+
+<div id="viewport">
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <div id="utils">
+        <a href="http://locator.wizards.com/" class="locator">店舗・イベント検索</a> <a href="http://gatherer.wizards.com" class="gatherer">カードデータベース</a>        <a href="/ja" title="ログイン" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;SignIn&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showLoginModal();" id="SignInButton" class="login">ログイン</a> | <a href="/ja" title="アカウント登録" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Signup&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showJoinModal();" id="RegisterButton" class="register">アカウント登録</a>        <div id="search-form">
+          <form action="/ja/game-info/story/planeswalkers" method="post" id="wiz-search-bar-form--2" accept-charset="UTF-8"><div><input type="hidden" name="search-site" value="acquia_search" />
+<div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="サイト検索" type="text" id="edit-search-string--3" name="search-string" value="" size="25" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-search-button--3" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-u3iJQONW5KvvMpgWO3lInw3GSooheSD3Im5nXyrdHhk" />
+<input type="hidden" name="form_id" value="wiz_search_bar_form" />
+</div></form>        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <a class="home" href="/ja"><span>Magic the Gathering</span></a>
+
+        <div class="menu-wrapper">
+          <ul class="menu"><li class="mn_section_マジックを始めよう！ has-children"><a href="/ja/content/new-magic-1"><span>マジックを始めよう！</span></a><ul class="menu"><li class="mn_section_頭脳の戦い、マジック"><a href="/ja/content/new-to-magic/strategy"><span>頭脳の戦い、マジック</span></a></li>
+<li class="mn_section_物語の舞台、マジック"><a href="/ja/content/%E7%89%A9%E8%AA%9E"><span>物語の舞台、マジック</span></a></li>
+<li class="mn_section_コミュニティ"><a href="/ja/content/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"><span>コミュニティ</span></a></li>
+</ul></li>
+<li class="mn_section_ゲーム情報 has-children current"><a href="/ja/game-information" title="" class="active-trail"><span>ゲーム情報</span></a><ul class="menu"><li class="hub-link ゲーム情報"><a href="/ja/game-information"><span>ゲーム情報</span></a></li>
+<li class="mn_section_ゲームプレイ has-children"><a title="" class="nolink"><span>ゲームプレイ</span></a><ul class="menu"><li class="mn_section_ゲームについて"><a href="/ja/game-info/gameplay/about-the-game" title=""><span>ゲームについて</span></a></li>
+<li class="mn_section_遊び方"><a href="/ja/game-info/gameplay/how-to-play" title=""><span>遊び方</span></a></li>
+<li class="mn_section_デッキの組み方"><a href="/ja/game-info/gameplay/how-to-build-a-deck" title=""><span>デッキの組み方</span></a></li>
+<li class="mn_section_腕を磨く"><a href="/ja/game-info/gameplay/improve-your-game" title=""><span>腕を磨く</span></a></li>
+<li class="mn_section_ルール"><a href="/ja/game-info/gameplay/rules-and-formats" title=""><span>ルール</span></a></li>
+</ul></li>
+<li class="mn_section_製品 has-children"><a title="" class="nolink"><span>製品</span></a><ul class="menu"><li class="mn_section_注目製品"><a href="/ja/game-info/products/featured-releases" title=""><span>注目製品</span></a></li>
+<li class="mn_section_近日登場"><a href="/ja/game-info/products/coming-soon" title=""><span>近日登場</span></a></li>
+<li class="mn_section_マジック・デュエルズ"><a href="/ja/content/magic-duels"><span>マジック・デュエルズ</span></a></li>
+<li class="mn_section_マジックオンライン"><a href="/ja/node/46382"><span>マジックオンライン</span></a></li>
+<li class="mn_section_製品アーカイブ"><a href="/ja/content/%E8%A3%BD%E5%93%81%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96-%E8%A3%BD%E5%93%81-%E3%82%B2%E3%83%BC%E3%83%A0%E6%83%85%E5%A0%B1" title=""><span>製品アーカイブ</span></a></li>
+</ul></li>
+<li class="mn_section_ストーリー has-children current"><a title="" class="active-trail nolink"><span>ストーリー</span></a><ul class="menu"><li class="mn_section_物語への誘い"><a href="/ja/game-info/story/magic-story" title=""><span>物語への誘い</span></a></li>
+<li class="mn_section_プレインズウォーカー current"><a href="/ja/game-info/story/planeswalkers" title="" class="active-trail active"><span>プレインズウォーカー</span></a></li>
+<li class="mn_section_次元"><a href="/ja/game-info/story/planes" title=""><span>次元</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_イベント has-children"><a href="/ja/events"><span>イベント</span></a><ul class="menu"><li class="mn_section_イベント-ホーム"><a href="/ja/events"><span>イベント ホーム</span></a></li>
+<li class="mn_section_組織化プレイ<br>とは？"><a href="/ja/events/what-is-organized-play"><span>組織化プレイ<br>とは？</span></a></li>
+<li class="mn_section_イベント<br>種別"><a href="/ja/events/event-types"><span>イベント<br>種別</span></a></li>
+<li class="mn_section_-レポート has-children"><a class="nolink"><span> レポート</span></a><ul class="menu"><li class="mn_section_レポート・アーカイブ"><a href="/ja/events/coverage" title=""><span>レポート・アーカイブ</span></a></li>
+<li class="mn_section_トップ・プレーヤー"><a href="/ja/node/46371" title=""><span>トップ・プレーヤー</span></a></li>
+</ul></li>
+<li class="mn_section_スケジュール"><a href="http://mtg/ja/content/premier-events-schedule"><span>スケジュール</span></a></li>
+<li class="mn_section_情報 has-children"><a class="nolink"><span>情報</span></a><ul class="menu"><li class="mn_section_プレインズウォーカー・ポイント"><a href="/ja/events/resources/planeswalker-points" title=""><span>プレインズウォーカー・ポイント</span></a></li>
+<li class="mn_section_ジャッジ"><a href="/ja/events/resources/judges" title=""><span>ジャッジ</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_記事 has-children"><a href="/ja/articles" title=""><span>記事</span></a><ul class="menu"><li class="mn_section_記事-ホーム"><a href="/ja/articles"><span>記事 ホーム</span></a></li>
+<li class="mn_section_アーカイブ"><a href="/ja/content/jparchives"><span>アーカイブ</span></a></li>
+<li class="mn_section_イベント<br>優勝デッキ"><a href="/ja/node/46356"><span>イベント<br>優勝デッキ</span></a></li>
+<li class="mn_section_メディア has-children"><a class="nolink"><span>メディア</span></a><ul class="menu"><li class="mn_section_動画"><a href="/ja/node/46393" title=""><span>動画</span></a></li>
+<li class="mn_section_ポッドキャスト"><a href="/ja/node/46394" title=""><span>ポッドキャスト</span></a></li>
+<li class="mn_section_壁紙"><a href="/ja/node/46395" title=""><span>壁紙</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_コミュニティ has-children"><a href="/ja/community" title=""><span>コミュニティ</span></a><ul class="menu"><li class="mn_section_コミュニティ<br>ホーム"><a href="/ja/community"><span>コミュニティ<br>ホーム</span></a></li>
+<li class="mn_section_ファン・キット"><a href="/ja/community/fan-kits"><span>ファン・キット</span></a></li>
+</ul></li>
+<li class="mn_section_マイアカウント"><a href="/ja/content/my-accounts"><span>マイアカウント</span></a></li>
+</ul>        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div id="content-wrapper">
+      <div class="region region-content">
+    
+<div id="block-system-main" class=" block block-system block-odd first last main clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      
+<div class="panel-display panel-1col clearfix">
+  <div class="panel-panel panel-col"><div id="page-header">
+  <!-- BEGIN :: PAGE HEADER -->
+  <div class="wiz-content-rotator-block lower-tabbed-rotator">
+    <div class="slides">
+          <div class="slide">
+
+        
+        
+        
+        <div class="background-image">
+                    <video autoplay="autoplay" muted="muted" data-video-loop-time="0" data-video-repeat-times="3" poster="http://magic.wizards.com/sites/mtg/files/images/featured/Lore_preloader.jpg"><source type="video/mp4" src="http://magic.wizards.com/sites/mtg/files/images/featured/Lore_5.mp4.mp4"></source><source type="video/webm" src="http://magic.wizards.com/sites/mtg/files/images/featured/Lore_5.webmhd.webm"></source><img src="http://magic.wizards.com/sites/mtg/files/images/featured/Lore_preloader.jpg" alt="&#12466;&#12540;&#12512;&#24773;&#22577;/&#12473;&#12488;&#12540;&#12522;&#12540;"></video></div>
+        <div class="wrap page-width">
+
+
+          			
+          <div class="container">
+            <div class="content">
+
+            
+                              <div class="header">
+                                    <h2><span>&#12466;&#12540;&#12512;&#24773;&#22577;/&#12473;&#12488;&#12540;&#12522;&#12540;</span></h2>
+                                                      <h1 class=""><span>&#20253;&#35500;&#12398;&#23384;&#22312;&#12392;&#12394;&#12428;</span></h1>
+                                                    </div>
+                                                  <div class="description">
+                    <p>&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12392;&#12394;&#12427;&#12383;&#12417;&#12398;&#33021;&#21147;&#12434;&#25345;&#12387;&#12390;&#29983;&#12414;&#12428;&#12427;&#12398;&#12399;&#20309;&#30334;&#19975;&#20154;&#12395;&#65297;&#20154;&#12290;&#12375;&#12363;&#12418;&#12381;&#12398;&#36039;&#36074;&#12395;&#27671;&#20184;&#12367;&#32773;&#12399;&#12381;&#12398;&#20013;&#12398;&#12373;&#12425;&#12395;&#19968;&#25569;&#12426;&#12395;&#36942;&#12366;&#12394;&#12356;&#12290;&#12354;&#12394;&#12383;&#12399;&#24375;&#21147;&#12394;&#23384;&#22312;&#12392;&#12375;&#12390;&#36984;&#12400;&#12428;&#12383;&#32773;&#12398;&#12402;&#12392;&#12426;&#12391;&#12354;&#12426;&#12289;&#25973;&#12418;&#12414;&#12383;&#28982;&#12426;&#12290;</p>
+                  </div>
+                                <p class="actions" data-ga-tag=""></p>
+                          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  
+  
+      <!-- END :: PAGE HEADER -->
+</div>
+        <div id="content" class="page-width">
+
+	
+<!-- wiz-content-rotator-block -- lower-tabbed-rotator -->
+
+	
+	
+	
+<div class="panel-separator"></div>
+
+	
+
+<!-- Type content rotator block carousel_rotator -->
+<div id="jp-mm-planeswalkers-big-feature" class="page-width">
+      <h2><span>&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;</span></h2>
+          <ul class="content-grid planeswalkers page-width content-grid-planeswalkers " data-facebook-share-label="Share"><li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Ajani_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Ajani_PWInline.jpg" alt="&#40644;&#37329;&#12398;&#12383;&#12390;&#12364;&#12415;&#12398; &#12450;&#12472;&#12515;&#12491;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#40644;&#37329;&#12398;&#12383;&#12390;&#12364;&#12415;&#12398; &#12450;&#12472;&#12515;&#12491;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#32676;&#12428;&#12395;&#27770;&#12375;&#12390;&#21463;&#12369;&#20837;&#12428;&#12425;&#12428;&#12394;&#12356;&#30333;&#33394;&#22793;&#31278;&#12398;&#12524;&#12458;&#12491;&#12531;&#12391;&#12354;&#12427;&#12371;&#12392;&#12363;&#12425;&#12289;&#23478;&#26063;&#12363;&#12425;&#35211;&#25448;&#12390;&#12425;&#12428;&#12383;&#12418;&#21516;&#28982;&#12395;&#12490;&#12516;&#12391;&#29983;&#12414;&#12428;&#32946;&#12387;&#12383;&#12290;&#12524;&#12458;&#12491;&#12531;&#12392;&#12375;&#12390;&#12398;&#29552;&#29467;&#12373;&#12392;&#27491;&#32681;&#24863;&#12392;&#12398;&#29421;&#38291;&#12391;&#33510;&#12375;&#12435;&#12391;&#12356;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpajani">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/PWHub_ArlinnKord_Portrait_0.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/PWHub_ArlinnKord_InlineR.jpg" alt="&#12450;&#12540;&#12522;&#12531;&#12539;&#12467;&#12540;&#12489;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12450;&#12540;&#12522;&#12531;&#12539;&#12467;&#12540;&#12489;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12450;&#12532;&#12449;&#12502;&#12523;&#12483;&#12463;&#20986;&#36523;&#12398;&#33510;&#24745;&#12377;&#12427;&#29436;&#30007;&#12289;&#12450;&#12540;&#12522;&#12531;&#12539;&#12467;&#12540;&#12489;&#12399;&#12381;&#12398;&#20210;&#38291;&#12398;&#20869;&#12391;&#12418;&#29305;&#21029;&#12394;&#25165;&#33021;&#12434;&#25345;&#12387;&#12390;&#12356;&#12414;&#12377;&#65306;&#24444;&#22899;&#12399;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12394;&#12398;&#12391;&#12377;&#12290;</p>
+
+<p><a class="cta" href="http://magic.wizards.com/ja/story/planeswalkers/arlinn-kord">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Ashiok_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Ashiok_PWInline.jpg" alt="&#12450;&#12471;&#12519;&#12463;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12450;&#12471;&#12519;&#12463;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#25973;&#12434;&#24656;&#24598;&#12395;&#38501;&#12428;&#12383;&#12356;&#12398;&#12394;&#12425;&#12289;&#24444;&#12425;&#12398;&#22885;&#24213;&#12395;&#12354;&#12427;&#35504;&#12395;&#12418;&#35302;&#12428;&#12425;&#12428;&#12383;&#12367;&#12394;&#12356;&#24746;&#22818;&#12434;&#26292;&#12367;&#12371;&#12392;&#12384;&#12290;&#12393;&#12435;&#12394;&#12395;&#20778;&#12428;&#12383;&#23384;&#22312;&#12418;&#38663;&#12360;&#12427;&#33222;&#30149;&#32773;&#12408;&#12392;&#36022;&#12417;&#12427;&#12381;&#12398;&#34899;&#12434;&#12289;&#12450;&#12471;&#12519;&#12463;&#12399;&#21916;&#12435;&#12391;&#25805;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpashiok">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Chandra_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Chandra_PWInline.jpg" alt="&#12481;&#12515;&#12531;&#12489;&#12521;&#12539;&#12490;&#12521;&#12540;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12481;&#12515;&#12531;&#12489;&#12521;&#12539;&#12490;&#12521;&#12540;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#34909;&#21205;&#30340;&#12391;&#24773;&#29105;&#12395;&#12354;&#12405;&#12428;&#12289;&#27671;&#12398;&#30701;&#12356;&#28814;&#12398;&#39764;&#36947;&#22763;&#12290;&#22679;&#12360;&#32154;&#12369;&#12427;&#24444;&#22899;&#12398;&#32005;&#34030;&#34899;&#12398;&#21610;&#25991;&#12398;&#12372;&#12392;&#12367;&#12289;&#24444;&#22899;&#12398;&#24594;&#12426;&#12418;&#29190;&#30330;&#23544;&#21069;&#12395;&#12414;&#12391;&#29123;&#12360;&#30427;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpchandra">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Dack_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Dack_PWInline.jpg" alt=" &#12480;&#12463;&#12539;&#12501;&#12455;&#12452;&#12487;&#12531;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span> &#12480;&#12463;&#12539;&#12501;&#12455;&#12452;&#12487;&#12531;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12300;&#22810;&#20803;&#23431;&#23449;&#19968;&#12398;&#30423;&#36042;&#12301;&#12434;&#33258;&#31216;&#12377;&#12427;&#12480;&#12463;&#12539;&#12501;&#12455;&#12452;&#12487;&#12531;&#12290;&#12469;&#12452;&#12467;&#12513;&#12488;&#12522;&#12540;&#12392;&#27450;&#12365;&#12398;&#39764;&#27861;&#12434;&#39366;&#20351;&#12377;&#12427;&#12371;&#12392;&#12391;&#12289;&#12480;&#12463;&#12399;&#22810;&#20803;&#23431;&#23449;&#12395;&#23384;&#22312;&#12377;&#12427;&#12354;&#12425;&#12422;&#12427;&#20154;&#29289;&#12414;&#12383;&#12399;&#21697;&#29289;&#12434;&#25506;&#12375;&#20986;&#12377;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;&#12375;&#12363;&#12375;&#12289;&#27425;&#12398;&#26032;&#12383;&#12394;&#22823;&#20181;&#20107;&#12434;&#25506;&#12375;&#20986;&#12377;&#36942;&#31243;&#12398;&#12394;&#12363;&#12391;&#12289;&#24444;&#12392;&#29694;&#22320;&#12398;&#20154;&#38291;&#12420;&#27861;&#12398;&#22519;&#34892;&#32773;&#12383;&#12385;&#12392;&#12398;&#23550;&#31435;&#12364;&#24120;&#12395;&#32118;&#12360;&#12414;&#12379;&#12435;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/155856">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Daretti_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Daretti_PWInline.jpg" alt="&#12480;&#12524;&#12483;&#12486;&#12451;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12480;&#12524;&#12483;&#12486;&#12451;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12468;&#12502;&#12522;&#12531;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12354;&#12427;&#12480;&#12524;&#12483;&#12486;&#12451;&#12399;&#29087;&#32244;&#12398;&#24037;&#21280;&#12391;&#12354;&#12426;&#12289;&#20182;&#12398;&#32773;&#12394;&#12425;&#12460;&#12521;&#12463;&#12479;&#12392;&#12375;&#12363;&#35211;&#12394;&#12373;&#12394;&#12356;&#12418;&#12398;&#12363;&#12425;&#23453;&#29289;&#12434;&#30330;&#35211;&#12377;&#12427;&#12371;&#12392;&#12395;&#38263;&#12369;&#12390;&#12356;&#12414;&#12377;&#12290;&#12480;&#12524;&#12483;&#12486;&#12451;&#12399;&#12501;&#12451;&#12458;&#12540;&#12521;&#20986;&#36523;&#12391;&#12354;&#12426;&#12289;&#12381;&#12398;&#25506;&#31350;&#12392;&#30330;&#35211;&#12398;&#31934;&#31070;&#12399;&#24444;&#12398;&#31185;&#23398;&#30340;&#12394;&#21162;&#21147;&#12395;&#34892;&#12365;&#28193;&#12387;&#12390;&#12356;&#12414;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/story/planeswalkers/daretti">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Domri_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Domri_PWInline.jpg" alt="&#12489;&#12512;&#12522;&#12539;&#12521;&#12540;&#12487;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12489;&#12512;&#12522;&#12539;&#12521;&#12540;&#12487;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#23396;&#20816;&#12392;&#12356;&#12358;&#29983;&#12356;&#31435;&#12385;&#12363;&#12425;&#12289;&#27177;&#23041;&#12424;&#12426;&#12418;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12395;&#20449;&#12434;&#32622;&#12367;&#12290;&#22810;&#12367;&#12398;&#12464;&#12523;&#12540;&#12523;&#12398;&#25126;&#22763;&#12383;&#12385;&#12392;&#12399;&#36949;&#12356;&#12289;&#24444;&#12399;&#29539;&#12434;&#23648;&#12425;&#12378;&#12395;&#21484;&#21914;&#12375;&#12289;&#21046;&#24481;&#12377;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpdomri-rade">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Elspeth_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Elspeth_PWInline.jpg" alt="&#12456;&#12523;&#12474;&#12506;&#12473;&#12539;&#12486;&#12451;&#12524;&#12523;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12456;&#12523;&#12474;&#12506;&#12473;&#12539;&#12486;&#12451;&#12524;&#12523;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#38598;&#22243;&#12392;&#38450;&#34907;&#12398;&#30333;&#39438;&#22763;&#12290;&#25126;&#12391;&#33618;&#12428;&#26524;&#12390;&#12383;&#25925;&#37111;&#12434;&#38626;&#12428;&#12289;&#26032;&#12383;&#12395;&#25925;&#37111;&#12392;&#21628;&#12406;&#12409;&#12365;&#22580;&#25152;&#12434;&#25506;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117441">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Freyalise_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Freyalise_PWInline.jpg" alt="&#12501;&#12524;&#12452;&#12450;&#12522;&#12540;&#12474;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12501;&#12524;&#12452;&#12450;&#12522;&#12540;&#12474;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12501;&#12524;&#12452;&#12450;&#12522;&#12540;&#12474;&#12399;&#12489;&#12511;&#12490;&#12522;&#12450;&#27425;&#20803;&#20986;&#36523;&#12398;&#12495;&#12540;&#12501;&#12456;&#12523;&#12501;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12375;&#12383;&#12290;&#21476;&#12395;&#12375;&#12390;&#24375;&#22823;&#12289;&#12501;&#12524;&#12452;&#12450;&#12522;&#12540;&#12474;&#12399;&#12381;&#12398;&#27425;&#20803;&#12398;&#12456;&#12523;&#12501;&#12398;&#38291;&#12391;&#31070;&#12392;&#12375;&#12390;&#23815;&#12417;&#12425;&#12428;&#12390;&#12356;&#12414;&#12375;&#12383;&#12290;&#24444;&#12425;&#12434;&#23432;&#12427;&#12383;&#12417;&#12395;&#31435;&#12385;&#19978;&#12364;&#12426;&#12289;&#26368;&#24460;&#12395;&#12399;&#27515;&#12434;&#36814;&#12360;&#12383;&#12398;&#12391;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/314477">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Garruk_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Garruk_PWInline.jpg" alt="&#37326;&#29983;&#35486;&#12426;&#12398;&#12460;&#12521;&#12463;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#37326;&#29983;&#35486;&#12426;&#12398;&#12460;&#12521;&#12463;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#29539;&#12398;&#21484;&#21914;&#34899;&#12398;&#20351;&#12356;&#25163;&#12290;&#21516;&#12376;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12354;&#12427;&#12522;&#12522;&#12450;&#12490;&#12539;&#12532;&#12455;&#12473;&#12395;&#21610;&#12356;&#12434;&#12363;&#12369;&#12425;&#12428;&#12289;&#32209;&#12398;&#21610;&#25991;&#12434;&#40658;&#12395;&#26579;&#12417;&#12390;&#12375;&#12414;&#12387;&#12383;&#12290;&#20170;&#12420;&#24444;&#12399;&#24489;&#35728;&#12395;&#39366;&#12425;&#12428;&#12427;&#20982;&#26292;&#12394;&#37326;&#29539;&#12395;&#36942;&#12366;&#12394;&#12356;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117339">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Gideon_PWPortrait_6.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Gideon_PWInline_6.jpg" alt="&#12462;&#12487;&#12458;&#12531;&#12539;&#12472;&#12517;&#12521;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12462;&#12487;&#12458;&#12531;&#12539;&#12472;&#12517;&#12521;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#30333;&#39764;&#34899;&#12398;&#20351;&#12356;&#25163;&#12391;&#12354;&#12427;&#24444;&#12399;&#12289;&#24544;&#35488;&#12289;&#27491;&#32681;&#12289;&#12381;&#12375;&#12390;&#21517;&#35465;&#12434;&#37325;&#12435;&#12376;&#12427;&#12290;&#12363;&#12388;&#12390;&#12399;&#24444;&#12398;&#20219;&#21209;&#19978;&#25429;&#12425;&#12360;&#12427;&#23550;&#35937;&#12395;&#12354;&#12387;&#12383;&#12481;&#12515;&#12531;&#12489;&#12521;&#12539;&#12490;&#12521;&#12540;&#12392;&#12399;&#12289;&#22855;&#12375;&#12367;&#12418;&#21619;&#26041;&#21516;&#22763;&#12392;&#12394;&#12387;&#12383;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpgideon-jura">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Jace_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Jace_PWInline.jpg" alt="&#12472;&#12455;&#12452;&#12473;&#12539;&#12505;&#12524;&#12524;&#12531;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12472;&#12455;&#12452;&#12473;&#12539;&#12505;&#12524;&#12524;&#12531;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&ldquo;&#31070;&#31461;&rdquo;&#12472;&#12455;&#12452;&#12473;&#12398;&#30693;&#35672;&#27442;&#12399;&#21361;&#38522;&#12394;&#12414;&#12391;&#12395;&#38555;&#38480;&#12434;&#30693;&#12425;&#12394;&#12356;&#12290;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12392;&#12375;&#12390;&#31350;&#26997;&#12398;&#33021;&#21147;&#12392;&#12418;&#35328;&#12360;&#12427;&#24187;&#24433;&#12289;&#35501;&#24515;&#12289;&#35352;&#25014;&#25805;&#20316;&#12364;&#21487;&#33021;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpjace-beleren">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Karn_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Karn_PWInline.jpg" alt="&#12459;&#12540;&#12531;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12459;&#12540;&#12531;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12459;&#12540;&#12531;&#33258;&#36523;&#12418;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12289;&#37329;&#23646;&#12398;&#19990;&#30028;&#12392;&#12394;&#12427;&#12450;&#12540;&#12472;&#12455;&#12531;&#12479;&#12512;&#12434;&#21109;&#12426;&#20986;&#12377;&#12290;&#20170;&#12399;&#27738;&#26579;&#12373;&#12428;&#12390;&#12375;&#12414;&#12387;&#12383;&#12371;&#12398;&#19990;&#30028;&#12434;&#12289;&#24444;&#12399;&#25937;&#12360;&#12427;&#12384;&#12429;&#12358;&#12363;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpkarn">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Kiora_PWPortrait_6.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Kiora_PWInline_7.jpg" alt="&#12461;&#12458;&#12540;&#12521;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12461;&#12458;&#12540;&#12521;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12510;&#12540;&#12501;&#12457;&#12540;&#12463;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12354;&#12427;&#12461;&#12458;&#12540;&#12521;&#12399;&#12289;&#24444;&#22899;&#12398;&#25925;&#37111;&#12398;&#27425;&#20803;&#12391;&#12354;&#12427;&#12476;&#12531;&#12487;&#12451;&#12459;&#12540;&#12434;&#25903;&#37197;&#12377;&#12427;&#24040;&#22823;&#12394;&#23384;&#22312;&#12434;&#25171;&#12385;&#30741;&#12367;&#12395;&#12399;&#12289;&#12463;&#12521;&#12540;&#12465;&#12531;&#12420;&#28023;&#34503;&#12392;&#12356;&#12387;&#12383;&#28145;&#28023;&#12398;&#33029;&#23041;&#12434;&#21484;&#21914;&#12377;&#12427;&#24517;&#35201;&#12364;&#12354;&#12427;&#12392;&#32771;&#12360;&#12390;&#12356;&#12414;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/157086">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Koth_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Koth_PWInline.jpg" alt="&#27084;&#12398;&#12467;&#12473;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#27084;&#12398;&#12467;&#12473;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#21191;&#29467;&#12394;&#26063;&#38263;&#12290;&#36196;&#12398;&#12510;&#12490;&#12434;&#20351;&#12387;&#12390;&#22303;&#12420;&#23721;&#12434;&#27494;&#22120;&#12408;&#12392;&#22793;&#12360;&#12427;&#12290;&#26368;&#32066;&#30446;&#30340;&#12399;&#37096;&#26063;&#12398;&#24179;&#21644;&#12289;&#12381;&#12375;&#12390;&#27425;&#20803;&#12434;&#12501;&#12449;&#12452;&#12524;&#12463;&#12471;&#12450;&#20154;&#12363;&#12425;&#22890;&#36996;&#12377;&#12427;&#12371;&#12392;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpkoth">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Liliana_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Liliana_PWInline.jpg" alt="&#12522;&#12522;&#12450;&#12490;&#12539;&#12532;&#12455;&#12473;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12522;&#12522;&#12450;&#12490;&#12539;&#12532;&#12455;&#12473;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#32654;&#12375;&#12367;&#29409;&#29502;&#12391;&#12289;&#37326;&#24515;&#12395;&#28322;&#12428;&#12427;&#12522;&#12522;&#12450;&#12490;&#12539;&#12532;&#12455;&#12473;&#12399;&#12289;&#23455;&#12398;&#12392;&#12371;&#12429;&#22810;&#20803;&#23431;&#23449;&#12391;&#12418;&#25351;&#25240;&#12426;&#12398;&#39764;&#24615;&#12398;&#24746;&#22899;&#12384;&#12290;&#31350;&#26997;&#12398;&#40658;&#39764;&#34899;&#12289;&#23629;&#34899;&#12434;&#25805;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117311">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Nahiri_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Nahiri_PWInline.jpg" alt="&#12490;&#12498;&#12522;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12490;&#12498;&#12522;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12490;&#12498;&#12522;&#12399;&#12476;&#12531;&#12487;&#12451;&#12459;&#12540;&#20986;&#36523;&#12398;&#12467;&#12540;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12377;&#12290;&#12381;&#12398;&#21147;&#12398;&#32118;&#38914;&#26399;&#12395;&#12362;&#12356;&#12390;&#24444;&#22899;&#12399;&#12289;&#29694;&#22312;&#12391;&#12399;&#12476;&#12531;&#12487;&#12451;&#12459;&#12540;&#12434;&#35206;&#12387;&#12390;&#12356;&#12427;&#12289;&#24040;&#22823;&#12394;&#30707;&#12398;&#38754;&#26230;&#20307;&#12434;&#25104;&#24418;&#12375;&#12414;&#12375;&#12383;&#12290;&#30707;&#12434;&#25104;&#24418;&#12289;&#12354;&#12427;&#12356;&#12399;&#21109;&#12426;&#20986;&#12377;&#12381;&#12398;&#33021;&#21147;&#12395;&#12424;&#12387;&#12390;&#12289;&#24444;&#22899;&#12399;&#12300;&#30707;&#34899;&#24107;&#12301;&#12398;&#31216;&#21495;&#12434;&#24471;&#12414;&#12375;&#12383;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/314802">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/images/card/EN_Narset_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Narset_PWInline_0.jpg" alt="&#12490;&#12540;&#12475;&#12483;&#12488;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12490;&#12540;&#12475;&#12483;&#12488;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12490;&#12540;&#12475;&#12483;&#12488;&#12399;&#21338;&#23398;&#12394;&#20711;&#12391;&#12354;&#12426;&#12289;&#24444;&#22899;&#12364;&#20181;&#12360;&#12427;&#40845;&#29579;&#12458;&#12472;&#12517;&#12479;&#12452;&#12398;&#12362;&#27671;&#12395;&#20837;&#12426;&#12398;&#23398;&#24466;&#12398;&#19968;&#20154;&#12391;&#12377;&#12290; &#12490;&#12540;&#12475;&#12483;&#12488;&#12399;&#12381;&#12398;&#20869;&#12394;&#12427;&#24847;&#24535;&#12392;&#20132;&#20449;&#12375;&#12289;&#32905;&#20307;&#12392;&#31934;&#31070;&#12398;&#19990;&#30028;&#12434;&#36234;&#12360;&#12390;&#35598;&#12434;&#24471;&#12390;&#12356;&#12414;&#12377;&#12290; &#24444;&#22899;&#12399;&#12289;&#12479;&#12523;&#12461;&#12540;&#12523;&#12398;&#30495;&#12398;&#27508;&#21490;&#12434;&#30693;&#12427;&#25968;&#23569;&#12394;&#12356;&#32773;&#12398;&#19968;&#20154;&#12391;&#12418;&#12354;&#12426;&#12414;&#12377;&#12290;</p>
+
+<p><a class="cta" href="http://magic.wizards.com/ja/story/planeswalkers/narset">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_NicolBolas_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_NicolBolas_PWInline.jpg" alt="&#12491;&#12467;&#12523;&#12539;&#12508;&#12540;&#12521;&#12473;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12491;&#12467;&#12523;&#12539;&#12508;&#12540;&#12521;&#12473;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12456;&#12523;&#12480;&#12540;&#12539;&#12489;&#12521;&#12468;&#12531;&#12395;&#12375;&#12390;&#19990;&#30028;&#12398;&#26292;&#21531;&#12290;&#22810;&#20803;&#23431;&#23449;&#26368;&#21476;&#12398;&#29983;&#21629;&#20307;&#12392;&#12375;&#12390;&#30693;&#12425;&#12428;&#12427;&#12290;&#24444;&#12398;&#37034;&#24746;&#12373;&#12395;&#23550;&#25239;&#12375;&#24471;&#12427;&#12398;&#12399;&#12289;&#33258;&#36523;&#12398;&#28961;&#38480;&#12398;&#21473;&#26234;&#20197;&#22806;&#12395;&#12399;&#12394;&#12356;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117428">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Nissa_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/PW-Hub_Nissa_InlineR.jpg" alt="&#12491;&#12483;&#12469;&#12539;&#12524;&#12532;&#12455;&#12452;&#12531;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12491;&#12483;&#12469;&#12539;&#12524;&#12532;&#12455;&#12452;&#12531;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#32654;&#12375;&#12367;&#12289;&#35463;&#12426;&#39640;&#12356;&#12289;&#20919;&#37239;&#28961;&#27604;&#12398;&#33258;&#28982;&#39764;&#36947;&#22763;&#12290;&#12456;&#12523;&#12501;&#12371;&#12381;&#12364;&#22810;&#20803;&#23431;&#23449;&#12398;&#12354;&#12425;&#12422;&#12427;&#27425;&#20803;&#12434;&#27835;&#12417;&#12427;&#12409;&#12365;&#31278;&#26063;&#12384;&#12392;&#32771;&#12360;&#12289;&#12381;&#12398;&#23455;&#29694;&#12434;&#30446;&#25351;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpnissa-revane">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_ObNixilis_PWPortrait_6.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_ObNixilis_PWInline_6.jpg" alt="&#12458;&#12502;&#12539;&#12491;&#12463;&#12471;&#12522;&#12473;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12458;&#12502;&#12539;&#12491;&#12463;&#12471;&#12522;&#12473;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#27531;&#24525;&#12391;&#24746;&#39764;&#30340;&#12394;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12354;&#12427;&#12458;&#12502;&#12539;&#12491;&#12463;&#12471;&#12522;&#12473;&#12399;&#12289;&#12476;&#12531;&#12487;&#12451;&#12459;&#12540;&#12398;&#24375;&#22823;&#12394;&#12510;&#12490;&#12434;&#21033;&#29992;&#12375;&#12390;&#12289;&#24444;&#12363;&#12425;&#20154;&#38291;&#24615;&#12434;&#22890;&#12387;&#12383;&#21610;&#12356;&#12434;&#30741;&#12367;&#12371;&#12392;&#12434;&#26395;&#12435;&#12391;&#12356;&#12414;&#12375;&#12383;&#12290;&#12375;&#12363;&#12375;&#24444;&#12364;&#12381;&#12398;&#22320;&#12395;&#30528;&#12356;&#12383;&#12392;&#12365;&#12289;&#12354;&#12427;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12364;&#39764;&#27861;&#30340;&#12395;&#24444;&#12398;&#28783;&#12434;&#28040;&#12375;&#21435;&#12387;&#12390;&#12375;&#12414;&#12387;&#12383;&#12398;&#12391;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/314815">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Ral_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Ral_PWInline.jpg" alt="&#12521;&#12523;&#12539;&#12470;&#12524;&#12483;&#12463;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12521;&#12523;&#12539;&#12470;&#12524;&#12483;&#12463;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#32865;&#26126;&#12363;&#12388;&#22823;&#32966;&#19981;&#25973;&#12394;&#39764;&#36947;&#22763;&#12391;&#12289;&#23888;&#12398;&#21147;&#12434;&#25805;&#12427;&#12290;&#25165;&#33021;&#12395;&#28322;&#12428;&#12289;&#33391;&#12356;&#20685;&#12365;&#12434;&#35211;&#12379;&#12427;&#12521;&#12523;&#12434;&#12289;&#25152;&#23646;&#12377;&#12427;&#12462;&#12523;&#12489;&#12398;&#12452;&#12476;&#12483;&#12488;&#22243;&#12399;&#21033;&#29992;&#12375;&#12383;&#12364;&#12289;&#24444;&#12399;&#27770;&#12375;&#12390;&#25126;&#12431;&#12378;&#12375;&#12390;&#35558;&#12417;&#12427;&#30007;&#12391;&#12399;&#12394;&#12356;&hellip;&hellip;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpral-zarek">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Sarkhan_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Sarkhan_PWInline.jpg" alt="&#12469;&#12523;&#12459;&#12531;&#12539;&#12532;&#12457;&#12523;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12469;&#12523;&#12459;&#12531;&#12539;&#12532;&#12457;&#12523;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#36196;&#12392;&#32209;&#12398;&#12471;&#12515;&#12540;&#12510;&#12531;&#12290;&#12489;&#12521;&#12468;&#12531;&#12364;&#21531;&#20027;&#12395;&#29417;&#12426;&#23613;&#12367;&#12373;&#12428;&#12390;&#12375;&#12414;&#12387;&#12383;&#27425;&#20803;&#12363;&#12425;&#12420;&#12387;&#12390;&#26469;&#12383;&#12290;&#20170;&#12399;&#22810;&#20803;&#23431;&#23449;&#12391;&#12289;&#30031;&#12428;&#12427;&#12489;&#12521;&#12468;&#12531;&#12434;&#36861;&#12356;&#27714;&#12417;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117398">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Sorin_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Sorin_PWInline.jpg" alt="&#12477;&#12522;&#12531;&#12539;&#12510;&#12523;&#12467;&#12501;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12477;&#12522;&#12531;&#12539;&#12510;&#12523;&#12467;&#12501;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#21560;&#34880;&#39740;&#12391;&#12354;&#12427;&#24444;&#12399;&#12289;&#12491;&#12467;&#12523;&#12539;&#12508;&#12540;&#12521;&#12473;&#12434;&#38500;&#12369;&#12400;&#12289;&#12411;&#12363;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12377;&#12409;&#12390;&#12434;&#21512;&#12431;&#12379;&#12383;&#24180;&#40802;&#12424;&#12426;&#38263;&#12367;&#29983;&#12365;&#12390;&#12356;&#12427;&#12290;&#34880;&#12398;&#39764;&#34899;&#24107;&#12391;&#12354;&#12426;&#12394;&#12364;&#12425;&#12289;&#36947;&#24499;&#30340;&#12394;&#19968;&#38754;&#12434;&#25345;&#12388;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117394">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Tamiyo_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Tamiyo_PWInline.jpg" alt="&#12479;&#12511;&#12520;&#12454;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12479;&#12511;&#12520;&#12454;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#31070;&#31192;&#12398;&#12505;&#12540;&#12523;&#12395;&#21253;&#12414;&#12428;&#12383;&#31354;&#27665;&#12391;&#12354;&#12427;&#12479;&#12511;&#12520;&#12454;&#12399;&#12289;&#22810;&#20803;&#23431;&#23449;&#12398;&#12377;&#12409;&#12390;&#12434;&#29702;&#35299;&#12375;&#12383;&#12367;&#12390;&#12383;&#12414;&#12425;&#12394;&#12356;&#12290;&#12377;&#12409;&#12390;&#12398;&#27425;&#20803;&#12399;&#31192;&#12417;&#12425;&#12428;&#12383;&#35598;&#12434;&#25345;&#12388;&#12392;&#32771;&#12360;&#12289;&#12381;&#12428;&#12425;&#12434;&#35299;&#12365;&#26126;&#12363;&#12375;&#12383;&#12356;&#12398;&#12384;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117257">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Teferi_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Teferi_PWInline.jpg" alt="&#12486;&#12501;&#12455;&#12522;&#12540;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12486;&#12501;&#12455;&#12522;&#12540;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#22823;&#20462;&#24489;&#12395;&#12424;&#12387;&#12390;&#31070;&#12398;&#12372;&#12392;&#12365;&#21147;&#12364;&#22833;&#12431;&#12428;&#12427;&#12414;&#12391;&#12399;&#12289;&#12486;&#12501;&#12455;&#12522;&#12540;&#12399;&#26178;&#12434;&#25805;&#12427;&#33021;&#21147;&#12434;&#25345;&#12388;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12375;&#12383;&#12290;&#24444;&#12399;&#12489;&#12511;&#12490;&#12522;&#12450;&#12398;&#27508;&#21490;&#12420;&#12489;&#12511;&#12490;&#12522;&#12450;&#12434;&#24059;&#12365;&#36796;&#12435;&#12384;&#25126;&#12356;&#12395;&#12362;&#12356;&#12390;&#12289;&#37749;&#12392;&#12394;&#12427;&#24441;&#21106;&#12434;&#26524;&#12383;&#12375;&#12390;&#12356;&#12414;&#12375;&#12383;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/314825">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Tezzeret_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Tezzeret_PWInline_0.jpg" alt="&#12486;&#12476;&#12524;&#12483;&#12488;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12486;&#12476;&#12524;&#12483;&#12488;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#24037;&#21280;&#12398;&#12486;&#12476;&#12524;&#12483;&#12488;&#12398;&#36523;&#20307;&#12399;&#12289;&#39764;&#27861;&#12398;&#21512;&#37329;&#12391;&#12354;&#12427;&#12456;&#12540;&#12486;&#12522;&#12454;&#12512;&#12391;&#24375;&#21270;&#12373;&#12428;&#12383;&#12290;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12398;&#12402;&#12392;&#12426;&#12395;&#38583;&#23646;&#12375;&#12289;&#21029;&#12398;&#12402;&#12392;&#12426;&#12395;&#31934;&#31070;&#12434;&#30772;&#22730;&#12373;&#12428;&#12289;&#27714;&#12417;&#12427;&#12398;&#12399;&#23436;&#20840;&#12394;&#12427;&#36523;&#20307;&#12392;&#31934;&#31070;&#12384;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117361">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Tibalt_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Tibalt_PWInline.jpg" alt="&#12486;&#12451;&#12508;&#12523;&#12488;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12486;&#12451;&#12508;&#12523;&#12488;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#23629;&#34899;&#12434;&#23398;&#12406;&#12395;&#12399;&#25165;&#33021;&#12418;&#33258;&#21046;&#24515;&#12418;&#27424;&#12369;&#12390;&#12356;&#12383;&#12486;&#12451;&#12508;&#12523;&#12488;&#12399;&#12289;&#24974;&#24746;&#12392;&#23396;&#29420;&#12289;&#25387;&#25240;&#24863;&#12395;&#33499;&#12414;&#12428;&#12383;&#12290;&#20170;&#12420;&#24444;&#12399;&#21322;&#24746;&#39764;&#12392;&#21270;&#12375;&#12289;&#30171;&#12415;&#12434;&#21407;&#21205;&#21147;&#12392;&#12377;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/117236">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Ugin_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Ugin_PWInline.jpg" alt="&#31934;&#38666;&#40845;&#12289;&#12454;&#12462;&#12531;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#31934;&#38666;&#40845;&#12289;&#12454;&#12462;&#12531;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12454;&#12462;&#12531;&#12399;&#24375;&#22823;&#12394;&#21147;&#12434;&#25345;&#12388;&#21476;&#12398;&#12489;&#12521;&#12468;&#12531;&#12398;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12377;&#12290; &#29289;&#36074;&#12434;&#12456;&#12493;&#12523;&#12462;&#12540;&#12395;&#22793;&#25563;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12454;&#12462;&#12531;&#12399;&#12289;&#20182;&#12398;&#32773;&#12364;&#19981;&#21487;&#33021;&#12392;&#32771;&#12360;&#12383;&#39764;&#27861;&#12434;&#20351;&#12387;&#12390;&#24375;&#22823;&#12394;&#21147;&#12434;&#30330;&#35211;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12375;&#12383;&#12290; &#24444;&#12399;&#22810;&#20803;&#23431;&#23449;&#12434;&#30740;&#31350;&#12375;&#12289;&#12381;&#12375;&#12390;&#12371;&#12428;&#12414;&#12391;&#12395;&#36973;&#36935;&#12375;&#12383;&#20013;&#12391;&#26368;&#22823;&#12398;&#35598;&#12391;&#12354;&#12427;&#12456;&#12523;&#12489;&#12521;&#12540;&#12472;&#12398;&#30740;&#31350;&#12434;&#34892;&#12358;&#35336;&#30011;&#12434;&#31435;&#12390;&#12390;&#12356;&#12414;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/node/328056">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Venser_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Venser_PWInline.jpg" alt="&#12532;&#12455;&#12531;&#12475;&#12540;&#12523;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12532;&#12455;&#12531;&#12475;&#12540;&#12523;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#27231;&#26800;&#23398;&#32773;&#12398;&#12532;&#12455;&#12531;&#12475;&#12540;&#12523;&#12399;&#12450;&#12540;&#12486;&#12451;&#12501;&#12449;&#12463;&#12488;&#12398;&#20316;&#25104;&#12420;&#30636;&#38291;&#31227;&#21205;&#12434;&#38972;&#12426;&#12395;&#26053;&#12434;&#12375;&#12289;&#12381;&#12398;&#26524;&#12390;&#12394;&#12365;&#22909;&#22855;&#24515;&#12434;&#28288;&#12383;&#12377;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpvenser">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Vraska_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Vraska_PWInline.jpg" alt="&#12532;&#12521;&#12473;&#12459;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12532;&#12521;&#12473;&#12459;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12468;&#12523;&#12460;&#12522;&#22243;&#12395;&#25152;&#23646;&#12377;&#12427;&#12468;&#12523;&#12468;&#12531;&#12398;&#26263;&#27578;&#32773;&#12391;&#12289;&#35598;&#12395;&#28288;&#12385;&#12383;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12290;&#26053;&#12398;&#20013;&#12391;&#12289;&#38343;&#12395;&#32027;&#12428;&#12427;&#20849;&#29359;&#32773;&#12383;&#12385;&#12434;&#21628;&#12403;&#20986;&#12375;&#12390;&#12399;&#12289;&#30707;&#21270;&#12375;&#12383;&#12300;&#25126;&#21033;&#21697;&#12301;&#12434;&#21454;&#38598;&#12377;&#12427;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpvraska">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+            <li>
+        <div class="item">
+          <div class="image"><img src="http://magic.wizards.com/sites/mtg/files/EN_Xenagos_PWPortrait.jpg" data-background="http://magic.wizards.com/sites/mtg/files/images/featured/EN_Xenagos_PWInline.jpg" alt="&#12476;&#12490;&#12468;&#12473;" width="600" height="400"></div>
+          <div class="item-content">
+            <h3><span>&#12476;&#12490;&#12468;&#12473;</span></h3>
+            <div class="details">
+              <div class="description">
+                <p>&#12469;&#12486;&#12517;&#12525;&#12473;&#12398;&#12459;&#12522;&#12473;&#12510;&#12392;&#12375;&#12390;&#21531;&#33256;&#12377;&#12427;&#12476;&#12490;&#12468;&#12473;&#12399;&#12289;&#27475;&#27005;&#32773;&#12383;&#12385;&#12434;&#29105;&#29378;&#12373;&#12379;&#12427;&#33021;&#21147;&#12391;&#30693;&#12425;&#12428;&#12427;&#12290;&#24444;&#12364;&#26524;&#12390;&#12394;&#12367;&#36861;&#12356;&#27714;&#12417;&#12427;&#24555;&#27005;&#12398;&#20808;&#12395;&#12399;&#12289;&#20309;&#12364;&#24453;&#12388;&#12392;&#12356;&#12358;&#12398;&#12363;&#12290;</p>
+
+<p><a class="cta" href="/ja/content/planeswalker/jpxenagos">&#12373;&#12425;&#12395;&#35443;&#12375;&#12367;</a></p>
+              </div>
+              <p class="actions"></p>
+            </div>
+          </div>
+        </div>
+      </li>
+                    <li id="end-slide">
+          <div class="wrap">
+                          <h3>
+                MORE TO COME!              </h3>
+              <p></p>
+                                    </div>
+        </li>
+          </ul></div>
+	
+	
+	
+</div>    
+        </div>
+  </div>
+
+    </div>
+
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div id="back-to-top">
+      <a href="#viewport">トップに戻る</a>
+    </div>
+    <div id="where-to-buy">
+      <div class="content page-width">
+        <form action="/ja/game-info/story/planeswalkers" method="post" id="wiz-store-and-event-locator-search-form--2" accept-charset="UTF-8"><div><div class="intro"><div class="wrap"><h5>プレイまたは購入が可能な場所</h5><p>最寄りのマジック：ザ・ギャザリング<br />取り扱い店舗を検索いただけます</p></div></div><div class="form"><div class="wrap"><span class="column zip-code"><div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="所在地または郵便番号を入力" type="text" id="edit-search-string--4" name="search-string" value="" size="25" maxlength="128" class="form-text" />
+</div>
+</span><span class="column actions"><button class="action-button" type="submit">今すぐ検索！</button></span></div></div><input class="hide form-submit" type="submit" id="edit-search-button--4" name="op" value="今すぐ検索！" /><input type="hidden" name="form_build_id" value="form-oc1Zz9Xd51EMrEsJmU_n9e9AokrVPazPAfr9xzWE-y0" />
+<input type="hidden" name="form_id" value="wiz_store_and_event_locator_search_form" />
+</div></form>      </div>
+    </div>
+
+    <div class="main-footer">
+      <div class="content page-width">
+        <div class="text">
+                      <div id="locale-select">
+              <label for="locale-select-ddl">言語を選択</label>
+
+              <div class="select-wrapper">
+                <select id="locale-select-ddl">
+                  <option value="/zh-hans/node/115438" >简体中文</option><option value="/zh-hant/node/115439" >繁體中文</option><option value="/fr/node/115440" >Français</option><option value="/de/node/115441" >Deutsch</option><option value="/it/node/115442" >Italiano</option><option value="/ja/node/115443" selected>日本語</option><option value="/ko/node/115444" >한국어</option><option value="/pt-br/node/115445" >Português (Brasil)</option><option value="/ru/node/115446" >Русский</option><option value="/es/node/115447" >Español</option><option value="/en/node/46386" >English</option>                </select>
+              </div>
+            </div>
+          
+          
+
+      <p class="brand-family-title">Wizards Brand Family</p>
+    <p class="brand-family-menu"><a href="http://magic.wizards.com" target="_blank">magic</a> <em>|</em> <a href="http://www.wizards.com/dnd" target="_blank">d&amp;d</a> <em>|</em> <a href="http://www.wizards.com/wpn" target="_blank">wpn</a> <em>|</em> <a href="http://dm.takaratomy.co.jp" target="_blank">duel masters</a> <em>|</em> <a href="http://www.wizards.com/default.asp?x=ah/welcome" target="_blank">avalon hill</a></p>
+  <p><a href="http://company.wizards.com/tou" target="_blank">利用規約</a> <em>|</em> <a href="http://company.wizards.com/conduct" target="_blank">行動規範</a> <em>|</em> <a href="http://company.wizards.com/policy" target="_blank">プライバシー・ポリシー</a> <em>|</em> <a href="http://www.wizards.com/customerservice" target="_blank">Customer Service</a> <em>|</em> <a href="/ja/cookies">クッキー</a></p>
+  <p class="copyright">© 1995-2016 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+
+        </div>
+        
+
+      <p class="logo wizard">
+      <a href="http://company.wizards.com"
+         target="_blank"
+         title="Wizards of the Coast"
+        ><img src="/sites/all/themes/wiz_mtg/img/interface/wizard-of-the-coast-logo.png" alt="Wizards of the Coast" /></a>
+    </p>
+  
+      <p class="logo hasbro">
+      <a href="http://www.hasbro.com"
+         target="_blank"
+         title="Hasbro"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/hasbro-logo.svg" alt="Hasbro" /></a>
+    </p>
+  
+      <p class="logo privacy">
+      <a href="http://www.esrb.org/confirm/wizards-confirmation.aspx"
+         target="_blank"
+         title="ESRB Privacy Certified"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/esrb-badge.png" alt="ESRB Privacy Certified" /></a>
+    </p>
+  
+      </div>
+    </div>
+  </footer>
+  </div>
+
+<div id="cookies-warning">
+	<div class="wrap page-width">
+		<div class="text">
+			<p>
+        We use cookies on this site to enhance your user experience. By clicking any link on this page or by clicking <strong>Yes</strong>, you are giving your consent for us to set cookies.        <a href="http://company.wizards.com/policies/web/cookie" target="_blank"> (Learn more about cookies)</a>
+      </p>
+		</div>
+		<p class="actions">
+			<button type="button" class="button agree">承諾する</button>
+			<a href="http://company.wizards.com/policies/web/cookie" target="_blank" class="button disagree">No, I want to find out more</a>
+		</p>
+	</div>
+</div>      <div class="region region-page-bottom">
+    <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>  </div>
+  </div>
+
+	<!-- Crazy Egg -->
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0009/9185.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d92d812ac7","applicationID":"22111946","transactionName":"YVNXMkcAD0sHAUdcXFgZdAVBCA5WSRJSUlZpW1QIVAYESjkMXFFWaUBcA0I+EVkBBw==","queueTime":0,"applicationTime":2538,"atts":"TRRURA8aHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -31,89 +31,54 @@ class Test_web < Test::Unit::TestCase
 	end
 	
 	must "correct url exists?" do
-		begin
 			@log.info "#{__method__} start."
 			correct_url='http://www.google.com'
 			correct_result = @web.url_exists?(correct_url,@log)
 			assert_equal true, correct_result
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
 	end
 	
 	must "incorrect url exists?" do
-		begin
 			@log.info "#{__method__} start."
 			incorrect_url='http://www.google__.com'
 			incorrect_result = @web.url_exists?(incorrect_url,@log)
 			assert_equal false, incorrect_result
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
 	end
 	
 	must "get dom of google" do
-		begin
 			@log.info "#{__method__} start."
 			url = 'http://www.google.com'
 			dom = @web.get_dom_of(url, @log)
 			assert_equal 'Google', dom.title
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
 	end
 	
 	must "get dom of incorrect url" do
-		begin
 			@log.info "#{__method__} start."
 			url = 'http://www.google__.com'
 			dom = @web.get_dom_of(url, @log)
-			assert_equal false, dom
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
+			assert_equal nil, dom
+	end
+
+	must "get dom of iso-8859-1 url" do
+			@log.info "#{__method__} start."
+			url = 'http://syunakira.com/smd/pointranking/index.php?packname=UnravelTheMadness&language=Japanese'
+			dom = @web.get_dom_of(url, @log)
+			assert_equal 'Point Ranking', dom.title
 	end
 	
 	must "output google's src to google.html" do
-		begin
 			@log.info "#{__method__} start."
 			url = 'http://www.google.com'
 			@web.get_dom_of(url, @log)
 			@web.output_html_src_to('../../test_cases/workspace/google.html', @log)
 			html = File.open('../../test_cases/workspace/google.html', 'r:utf-8', :invalid => :replace, :undef => :replace, :replace => '?')
 			assert html.readlines[0].match('世界中のあらゆる情報を検索するためのツールを提供しています。さまざまな検索機能を活用して、お探しの情報を見つけてください。')
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
 	end
 	
 	must "output incorrect url src" do
-		begin
 			@log.info "#{__method__} start."
 			url = 'http://www.google__.com'
 			@web.get_dom_of(url, @log)
 			assert_equal false, @web.output_html_src_to('../../test_cases/workspace/google__.html', @log)
-		rescue AssertionFailedError => failure
-			_set_failed_information(failure, expected, actual, message)
-			raise failure # For JRuby. :<
-		rescue => e
-			write_error_to_log(e,@log)
-		end
 	end
 
 

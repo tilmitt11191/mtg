@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-require "logger"
+require 'logger'
 require '../../lib/site/Channelfireball.rb'
 
 begin
@@ -11,52 +11,28 @@ begin
 	@log.info ""
 	
 	
-	packname='EldritchMoom'
+	packname='Eldritch Moom'
 	short='EMN'
-	outputfile = File.open("../../decks/channelfireball_reviews_#{short}.csv", "w:utf-8", :invalid => :replace, :undef => :replace, :replace => '?')
+	#packname='Shadows over Innistrad'
+	#short='SOI'
+	
+	outputfilename = "../../decks/channelfireball_reviews_#{short}.csv"
 	
 	urls=[]
-	#['white', 'blue', 'black', 'red', 'green', 'colorless-lands-and-gold'].each do |color|
-	['white'].each do |color|
-		urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-#{color}/"
+	['white', 'blue', 'black', 'red', 'green', 'colorless-lands-and-gold'].each do |color|
+	#['white'].each do |color|
+		case packname
+		when 'Shadows over Innistrad' then
+			urls.push "http://www.channelfireball.com/articles/shadows-over-innistrad-limited-set-review-#{color}/"
+		when 'Eldritch Moom' then
+			urls.push "http://www.channelfireball.com/articles/eldritch-moon-limited-set-review-#{color}/"
+		end
 	end
 
 
 	site = Channelfireball.new(@log)
-	site.get_limited_set_reviews(outputfile, urls)
-	outputfile.close
+	site.get_limited_set_reviews(outputfilename, urls)
 	
-=begin
-	store = Mtgotraders.new(@log)
-	
-	score = 10.0
-	card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/EMA057/")
-	cardname_eng = card.name.split('/')[1]
-	cardname_jp = card.name.split('/')[0]
-	card.name = cardname_eng
-	oracle = card.oracle.gsub(/\n/,"")
-	
-	store.set_store_page_of(card)
-	price_manager = Price_manager.new(card, @log)
-	store.get_prices(price_manager)
-	puts "price=#{price_manager.relevant_price}"
-	
-	puts score
-	puts cardname_eng
-	puts cardname_jp	
-	puts card.rarity
-	puts card.manacost
-	puts card.manacost_point
-	puts card.type
-	puts card.powertoughness
-	puts card.illustrator
-	puts card.cardset
-	puts card.generating_mana_type
-
-	File.open("pointranking_list_of_ETERNALMASTERS.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
-		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
-	end
-=end
 rescue => e
 		puts_write(e,@log)
 end

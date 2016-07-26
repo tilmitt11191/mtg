@@ -9,7 +9,12 @@ require 'nokogiri'
 
 class Web
 	@html_row_data
+	@cache #Hash key:url value:html_row_data
 	@dom
+	
+	def initialize
+		@cache = {}
+	end
 	
 	def url_exists?(url, log, limit = 3)
 		log.info "#{__method__}(#{url}, limit = #{limit}) start."
@@ -39,19 +44,28 @@ class Web
 	
 	def get_dom_of(url, log)
 		log.info "#{__method__}(#{url}) start."
-		if url_exists?(url, log) then
-			@html_row_data =URI.parse(url).read
-			charset = @html_row_data.charset
-			if charset == "iso-8859-1"
-				charset = page.scan(/charset="?([^\s"]*)/i).first.join
-			end
-			@dom = Nokogiri::HTML.parse(@html_row_data, nil, charset)
-			log.info "return dom. the title of url[#{url}] is [#{@dom.title}]."
+		if !@cache[url].nil? then
+			log.info "url[#{url}] cached. return cached dom. the title of url[#{url}] is [#{@dom.title}]."
+			@dom = @cache[url]
 			return @dom
-		else
-			log.info "url[#{url}] not exist. return false."
-			return false
 		end
+		
+		if !url_exists?(url, log) then
+			log.info "url[#{url}] not exist. return false."
+			return nil
+		end		
+
+		# Request the HTML before parsing
+		@html_row_data = open(url).read
+
+		# Replace original DOCTYPE with a valid DOCTYPE
+		@html_row_data = @html_row_data.sub(/^<!DOCTYPE html(.*)$/, '<!DOCTYPE html>')
+
+		# Parse
+		@dom = Nokogiri::HTML(@html_row_data)
+		@cache[url] = @dom
+		log.info "return dom. the title of url[#{url}] is [#{@dom.title}]."
+		return @dom
 	end
 	
 	def print_html_src(log)

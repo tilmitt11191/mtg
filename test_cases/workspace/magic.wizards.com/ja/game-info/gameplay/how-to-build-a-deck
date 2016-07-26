@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>デッキの組み方 - ゲームプレイ - ゲーム情報 | マジック：ザ・ギャザリング</title>
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+	<meta name="google-site-verification" content="WquIfqfWtlm2X62GTeJ-5vDtRrbOVOIT6mFc3vAP5BQ" />
+
+  <link rel="icon" type="image/png" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/sites/all/themes/wiz_mtg/icons/favicon.ico"/>
+  <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/wiz_mtg/icons/touch-icon-57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sites/all/themes/wiz_mtg/icons/touch-icon-72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sites/all/themes/wiz_mtg/touch-icon-114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sites/all/themes/wiz_mtg/icons/touch-icon-144.png"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://magic.wizards.com/sites/all/themes/wiz_mtg/favicon.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://magic.wizards.com/ja/game-info/gameplay/how-to-build-a-deck" />
+<link rel="shortlink" href="http://magic.wizards.com/ja/node/116662" />
+<meta property="og:site_name" content="マジック：ザ・ギャザリング" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://magic.wizards.com/ja/game-info/gameplay/how-to-build-a-deck" />
+<meta property="og:title" content="デッキの組み方 - ゲームプレイ - ゲーム情報" />
+  <link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_DHcXHPYBSjIVaCQZEG4ZlpLkvslnFlBCnQUCzlbRBio.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_jqLG8JVbJuXMDDISe4UsZMUj_1qh-z0BGGAnA4OQvrA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_2kUT6OhWxxRyu6G3oRYvNkxUpdtGnGOhWFO6ubAnnlM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://magic.wizards.com/sites/mtg/files/css/css_sELblXm0HE9iYxNNwDufKAxxNQ7ZkF6_ABbBSpg1HBE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css" media="all" />
+  <script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_melyhmK_eh6sYXp2z9ljBIs419nCvgG6X4XWQKGJjng.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_yRh3TUp_QoC2vC9PitxLvVXRHsQUtJt-ObNFP_v6h-k.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_6wvlZiy1laq6No5vMjs1JyzoJk6pdEuC_hyJhGBLc3M.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_HLx9fwaDf_34WnHzmXdwT03jIYocZkyEWafaKjU6HQo.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-15020098-13", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "pathToTheme": "sites/all/themes/wiz_mtg" });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://accounts.wizards.com/Widget/Widget.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_jwz47zv1UmY0ktN3U9ljsw74r8dLeUuXwA3pHpgxgpc.js"></script>
+<script type="text/javascript" src="http://magic.wizards.com/sites/mtg/files/js/js_JIa4YdILIwnQQfsYZSjX1gz9IUt6emOIXEvyA44TWDI.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="//cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"ja\/","ajaxPageState":{"theme":"wiz_mtg","theme_token":"2pD0zyFOp58nXiK9nLC_CqyPC0t_maSycBpOuJ5haXk","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/wiz_autocard.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/js\/jquery.qtip-1.0.0-rc3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/d3.v3.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.charts.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/masonry.pkgd.min.js":1,"sites\/all\/modules\/features\/wiz_bean_content_deck_list\/wiz_bean_content_deck_list.js":1,"sites\/all\/modules\/custom\/wiz_autocard\/wiz_decklist_filter\/js\/wiz_decklist_filter.js":1,"sites\/all\/modules\/custom\/wiz_show_period\/js\/moment.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper-2.1.min.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/idangerous.swiper.scrollbar-2.1.js":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/js\/custom.js":1,"public:\/\/languages\/ja_fSe4apjU94J85x0d5WIq9y5vHyoUWspNmqJrf_JPTGk.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/contrib\/modal_forms\/js\/modal_forms_popup.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/deletecookies.js":1,"sites\/all\/modules\/custom\/wiz_deletecookies\/js\/jquery.cookie.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"https:\/\/accounts.wizards.com\/Widget\/Widget.js":1,"sites\/all\/modules\/custom\/wiz_npsu\/js\/npsu_widget.js":1,"sites\/all\/libraries\/foresee\/foresee-trigger.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery-ui.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/content-gallery-grid\/modernizr.custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.fancybox.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.scrollbar.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.mmenu.oncanvas.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/jquery.columnlist.min.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/dropdown.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/owl.carousel.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/stacktable.js":1,"sites\/all\/themes\/wiz_mtg\/js\/lib\/arketype.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-homepage-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/immersive-experience-event-custom.js":1,"sites\/all\/themes\/wiz_mtg\/js\/interstitials.js":1,"sites\/all\/themes\/wiz_mtg\/js\/community.js":1,"sites\/all\/themes\/wiz_mtg\/js\/inline-features.js":1,"sites\/all\/themes\/wiz_mtg\/js\/MainMenu.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ParallaxBackground.js":1,"sites\/all\/themes\/wiz_mtg\/js\/ShowHideListItems.js":1,"sites\/all\/themes\/wiz_mtg\/js\/core.js":1,"sites\/all\/themes\/wiz_mtg\/js\/mx.js":1,"\/\/cdn.datatables.net\/1.10.5\/js\/jquery.dataTables.min.js":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/js\/dataTables.responsive.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.css":1,"sites\/all\/modules\/features\/wiz_views_events_calendar\/css\/idangerous.swiper.scrollbar.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"\/css\/tabs.css":1,"sites\/all\/modules\/contrib\/chartbeat\/chartbeat.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/contrib\/modal_forms\/css\/modal_forms_popup.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/themes\/wiz_mtg\/panels\/layouts\/wiz_mtg\/wiz_onecol\/wiz_onecol.css":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/custom\/wiz_npsu\/css\/npsu.css":1,"sites\/all\/modules\/custom\/wiz_npsu_mtg\/css\/npsu_mtg.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/wiz_mtg\/css\/jquery-ui-mod.css":1,"sites\/all\/themes\/wiz_mtg\/css\/owl.carousel.css":1,"sites\/all\/themes\/wiz_mtg\/css\/scrollbars.css":1,"sites\/all\/themes\/wiz_mtg\/css\/fonts.css":1,"sites\/all\/themes\/wiz_mtg\/css\/core.css":1,"sites\/all\/themes\/wiz_mtg\/css\/header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/footer.css":1,"sites\/all\/themes\/wiz_mtg\/css\/page-header.css":1,"sites\/all\/themes\/wiz_mtg\/css\/medias.css":1,"sites\/all\/themes\/wiz_mtg\/css\/search.css":1,"sites\/all\/themes\/wiz_mtg\/css\/decklist.css":1,"sites\/all\/themes\/wiz_mtg\/css\/articles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/game-info.css":1,"sites\/all\/themes\/wiz_mtg\/css\/events.css":1,"sites\/all\/themes\/wiz_mtg\/css\/community.css":1,"sites\/all\/themes\/wiz_mtg\/css\/mx.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/immersive.css":1,"sites\/all\/themes\/wiz_mtg\/css\/sections\/interstitials.css":1,"sites\/all\/themes\/wiz_mtg\/css\/styles-extended.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacy.css":1,"sites\/all\/themes\/wiz_mtg\/css\/legacyStyles.css":1,"sites\/all\/themes\/wiz_mtg\/css\/_theme-override.css":1,"http:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic":1,"\/\/cdn.datatables.net\/1.10.5\/css\/jquery.dataTables.css":1,"\/\/cdn.datatables.net\/responsive\/1.0.4\/css\/dataTables.responsive.css":1}},"chartbeat":{"uid":51341,"domain":"http:\/\/magiccv2stg.prod.acquia-sites.com\/","useCanonical":true,"noCookies":false},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":330,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.8,"height":0.8},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022http:\/\/magic.wizards.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"wiz_core":{"wiz_core_switch_in_days":14,"wiz_core_switch_in_visits":10,"wiz_core_switch_b_path":"home"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"npsu_widget":{"enabled":true,"logged_in":"false"},"urlIsAjaxTrusted":{"\/ja\/game-info\/gameplay\/how-to-build-a-deck":true}});
+//--><!]]>
+</script>
+
+  
+        <style>
+      @media all {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png) no-repeat;
+          background-size: 100% 100px;
+
+        }
+        #mobile-menu .header .logo a {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 100%;
+        }
+        #page.snap-menu header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+      @media (max-width: 1200px) {
+        header .home span {
+          background: url(http://magic.wizards.com/sites/mtg/files/logo-magic.png);
+          background-size: 100% 50px;
+        }
+      }
+    </style>
+  	
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-116662 node-type-big-page i18n-ja content-panels role-anonymous-user with-subnav page-game-info-gameplay-how-to-build-a-deck section-game-info" >
+  <script>
+  /* Interstitials variables */
+  var Interstitials = {
+    list: [
+                        ]
+  };
+  </script>
+
+  <div id="page" class="">
+    
+        <div id="mobile-menu">
+  <div class="header">
+    <div class="logo"></div>
+    <div class="toggle-menu-button"></div>
+  </div>
+  <nav>
+    <div class="menu-wrapper" data-back-label="Back"></div>
+  </nav>
+</div>
+
+<div id="viewport">
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <div id="utils">
+        <a href="http://locator.wizards.com/" class="locator">店舗・イベント検索</a> <a href="http://gatherer.wizards.com" class="gatherer">カードデータベース</a>        <a href="/ja" title="ログイン" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;SignIn&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showLoginModal();" id="SignInButton" class="login">ログイン</a> | <a href="/ja" title="アカウント登録" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Signup&#039;, &#039;Click&#039;, &#039;Top-Menu&#039;]); return wotcAccountWidget.showJoinModal();" id="RegisterButton" class="register">アカウント登録</a>        <div id="search-form">
+          <form action="/ja/game-info/gameplay/how-to-build-a-deck" method="post" id="wiz-search-bar-form--2" accept-charset="UTF-8"><div><input type="hidden" name="search-site" value="acquia_search" />
+<div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="サイト検索" type="text" id="edit-search-string--3" name="search-string" value="" size="25" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-search-button--3" name="op" value="Search" class="form-submit" /><input type="hidden" name="form_build_id" value="form-ao1CYVwEwaAv8K1DuKlFdvKr0-RFgoVzL97Ynb0WxBc" />
+<input type="hidden" name="form_id" value="wiz_search_bar_form" />
+</div></form>        </div>
+      </div>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <a class="home" href="/ja"><span>Magic the Gathering</span></a>
+
+        <div class="menu-wrapper">
+          <ul class="menu"><li class="mn_section_マジックを始めよう！ has-children"><a href="/ja/content/new-magic-1"><span>マジックを始めよう！</span></a><ul class="menu"><li class="mn_section_頭脳の戦い、マジック"><a href="/ja/content/new-to-magic/strategy"><span>頭脳の戦い、マジック</span></a></li>
+<li class="mn_section_物語の舞台、マジック"><a href="/ja/content/%E7%89%A9%E8%AA%9E"><span>物語の舞台、マジック</span></a></li>
+<li class="mn_section_コミュニティ"><a href="/ja/content/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"><span>コミュニティ</span></a></li>
+</ul></li>
+<li class="mn_section_ゲーム情報 has-children current"><a href="/ja/game-information" title="" class="active-trail"><span>ゲーム情報</span></a><ul class="menu"><li class="hub-link ゲーム情報"><a href="/ja/game-information"><span>ゲーム情報</span></a></li>
+<li class="mn_section_ゲームプレイ has-children current"><a title="" class="active-trail nolink"><span>ゲームプレイ</span></a><ul class="menu"><li class="mn_section_ゲームについて"><a href="/ja/game-info/gameplay/about-the-game" title=""><span>ゲームについて</span></a></li>
+<li class="mn_section_遊び方"><a href="/ja/game-info/gameplay/how-to-play" title=""><span>遊び方</span></a></li>
+<li class="mn_section_デッキの組み方 current"><a href="/ja/game-info/gameplay/how-to-build-a-deck" title="" class="active-trail active"><span>デッキの組み方</span></a></li>
+<li class="mn_section_腕を磨く"><a href="/ja/game-info/gameplay/improve-your-game" title=""><span>腕を磨く</span></a></li>
+<li class="mn_section_ルール"><a href="/ja/game-info/gameplay/rules-and-formats" title=""><span>ルール</span></a></li>
+</ul></li>
+<li class="mn_section_製品 has-children"><a title="" class="nolink"><span>製品</span></a><ul class="menu"><li class="mn_section_注目製品"><a href="/ja/game-info/products/featured-releases" title=""><span>注目製品</span></a></li>
+<li class="mn_section_近日登場"><a href="/ja/game-info/products/coming-soon" title=""><span>近日登場</span></a></li>
+<li class="mn_section_マジック・デュエルズ"><a href="/ja/content/magic-duels"><span>マジック・デュエルズ</span></a></li>
+<li class="mn_section_マジックオンライン"><a href="/ja/node/46382"><span>マジックオンライン</span></a></li>
+<li class="mn_section_製品アーカイブ"><a href="/ja/content/%E8%A3%BD%E5%93%81%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96-%E8%A3%BD%E5%93%81-%E3%82%B2%E3%83%BC%E3%83%A0%E6%83%85%E5%A0%B1" title=""><span>製品アーカイブ</span></a></li>
+</ul></li>
+<li class="mn_section_ストーリー has-children"><a title="" class="nolink"><span>ストーリー</span></a><ul class="menu"><li class="mn_section_物語への誘い"><a href="/ja/game-info/story/magic-story" title=""><span>物語への誘い</span></a></li>
+<li class="mn_section_プレインズウォーカー"><a href="/ja/game-info/story/planeswalkers" title=""><span>プレインズウォーカー</span></a></li>
+<li class="mn_section_次元"><a href="/ja/game-info/story/planes" title=""><span>次元</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_イベント has-children"><a href="/ja/events"><span>イベント</span></a><ul class="menu"><li class="mn_section_イベント-ホーム"><a href="/ja/events"><span>イベント ホーム</span></a></li>
+<li class="mn_section_組織化プレイ<br>とは？"><a href="/ja/events/what-is-organized-play"><span>組織化プレイ<br>とは？</span></a></li>
+<li class="mn_section_イベント<br>種別"><a href="/ja/events/event-types"><span>イベント<br>種別</span></a></li>
+<li class="mn_section_-レポート has-children"><a class="nolink"><span> レポート</span></a><ul class="menu"><li class="mn_section_レポート・アーカイブ"><a href="/ja/events/coverage" title=""><span>レポート・アーカイブ</span></a></li>
+<li class="mn_section_トップ・プレーヤー"><a href="/ja/node/46371" title=""><span>トップ・プレーヤー</span></a></li>
+</ul></li>
+<li class="mn_section_スケジュール"><a href="http://mtg/ja/content/premier-events-schedule"><span>スケジュール</span></a></li>
+<li class="mn_section_情報 has-children"><a class="nolink"><span>情報</span></a><ul class="menu"><li class="mn_section_プレインズウォーカー・ポイント"><a href="/ja/events/resources/planeswalker-points" title=""><span>プレインズウォーカー・ポイント</span></a></li>
+<li class="mn_section_ジャッジ"><a href="/ja/events/resources/judges" title=""><span>ジャッジ</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_記事 has-children"><a href="/ja/articles" title=""><span>記事</span></a><ul class="menu"><li class="mn_section_記事-ホーム"><a href="/ja/articles"><span>記事 ホーム</span></a></li>
+<li class="mn_section_アーカイブ"><a href="/ja/content/jparchives"><span>アーカイブ</span></a></li>
+<li class="mn_section_イベント<br>優勝デッキ"><a href="/ja/node/46356"><span>イベント<br>優勝デッキ</span></a></li>
+<li class="mn_section_メディア has-children"><a class="nolink"><span>メディア</span></a><ul class="menu"><li class="mn_section_動画"><a href="/ja/node/46393" title=""><span>動画</span></a></li>
+<li class="mn_section_ポッドキャスト"><a href="/ja/node/46394" title=""><span>ポッドキャスト</span></a></li>
+<li class="mn_section_壁紙"><a href="/ja/node/46395" title=""><span>壁紙</span></a></li>
+</ul></li>
+</ul></li>
+<li class="mn_section_コミュニティ has-children"><a href="/ja/community" title=""><span>コミュニティ</span></a><ul class="menu"><li class="mn_section_コミュニティ<br>ホーム"><a href="/ja/community"><span>コミュニティ<br>ホーム</span></a></li>
+<li class="mn_section_ファン・キット"><a href="/ja/community/fan-kits"><span>ファン・キット</span></a></li>
+</ul></li>
+<li class="mn_section_マイアカウント"><a href="/ja/content/my-accounts"><span>マイアカウント</span></a></li>
+</ul>        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div id="content-wrapper">
+      <div class="region region-content">
+    
+<div id="block-system-main" class=" block block-system block-odd first last main clearfix">
+  <div class="block-inner">
+                <div class="content" >
+      
+<div class="panel-display panel-1col clearfix">
+  <div class="panel-panel panel-col"><div id="page-header">
+  <!-- BEGIN :: PAGE HEADER -->
+  <div class="slides">
+            <!-- Slide -->
+    <div class="slide">
+      <div class="background-image">
+                  <img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_BuildADeck_Header.jpg.jpg" alt=""></div>
+      <div class="wrap page-width">
+        <div class="container">
+          <div class="content">
+            <div class="header">
+                              <h2><span>&#12466;&#12540;&#12512;&#24773;&#22577;/&#12466;&#12540;&#12512;&#12503;&#12524;&#12452;</span></h2>
+                            <h1 class=""><span>&#12487;&#12483;&#12461;&#12398;&#27083;&#31689; </span></h1>
+            </div>
+
+            
+                        <p class="actions"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+  <!-- END :: PAGE HEADER -->
+</div>
+        <div id="content" class="page-width">
+
+	<!-- wiz_bean_content_landing_page_banner -->
+
+<!-- Page Header -->
+
+	
+	
+	
+<div class="panel-separator"></div>
+
+	<!-- wiz-content-rotator-block -- upper_tabbed_with_arrow -->
+
+
+<div id="jp-gameinfo-howbuilddeck-2" class="page-width">
+
+  <h2><span>&#36938;&#12403;&#26041;&#12399;&#12356;&#12429;&#12356;&#12429;</span></h2>
+
+
+  <div class="slides page-width">
+    <dl class="showHideListItems" data-showhidelistitems-options="{defaultItem:0}"><dt>
+            <span>&#12473;&#12500;&#12540;&#12487;&#12451;&#12540;&#12395;<br>&#25915;&#25731;&#12434;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_SoManyWays_SpeedAggression_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12473;&#12500;&#12540;&#12487;&#12451;&#12540;&#12395;<br>&#25915;&#25731;&#12434;</h3>
+					<p><b>&#12510;&#12472;&#12483;&#12463;</b> &#12434;&#12503;&#12524;&#12452;&#12377;&#12427;&#20013;&#12391;&#26368;&#12418;&#27005;&#12375;&#12367;&#12289;&#12420;&#12426;&#12364;&#12356;&#12364;&#12354;&#12427;&#12398;&#12399;&#12289;&#23455;&#38555;&#12395;&#12486;&#12540;&#12502;&#12523;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#21069;&#12398;&#12487;&#12483;&#12461;&#12398;&#27083;&#31689;&#12391;&#12377;&#12290;&#12393;&#12398;&#12459;&#12540;&#12489;&#12434;&#12487;&#12483;&#12461;&#12395;&#21547;&#12417;&#12427;&#12363;&#33258;&#20998;&#12391;&#36984;&#12409;&#12427;&#12398;&#12391;&#12289;&#12393;&#12398;&#12424;&#12358;&#12394;&#25126;&#30053;&#12420;&#12503;&#12524;&#12452;&#12473;&#12479;&#12452;&#12523;&#12434;&#29992;&#12356;&#12427;&#12398;&#12363;&#12289;&#12377;&#12409;&#12390;&#12399;&#33258;&#20998;&#12398;&#35009;&#37327;&#27425;&#31532;&#12392;&#12394;&#12426;&#12414;&#12377;&#12290;</p>
+
+<p>&#20154;&#27671;&#12398;&#12354;&#12427;&#25126;&#30053;&#12398;&#12402;&#12392;&#12388;&#12392;&#12375;&#12390;&#12289;&#31309;&#26997;&#30340;&#12395;&#25915;&#12417;&#31435;&#12390;&#12427;&#12289;&#12356;&#12431;&#12422;&#12427; <i>&#12450;&#12464;&#12525;</i> &#12392;&#21628;&#12400;&#12428;&#12427;&#25126;&#30053;&#12364;&#12354;&#12426;&#12414;&#12377;&#12290;&#12450;&#12464;&#12525;&#12398;&#25126;&#30053;&#12399;&#12289;&#24207;&#30436;&#12363;&#12425;&#25915;&#25731;&#12289;&#12381;&#12398;&#24460;&#12418;&#25915;&#25731;&#12398;&#19968;&#35328;&#12395;&#23613;&#12365;&#12414;&#12377;&#12290;&#23550;&#25126;&#30456;&#25163;&#12395;&#22311;&#21147;&#12434;&#12363;&#12369;&#12390;&#21155;&#21218;&#12395;&#36861;&#12356;&#36796;&#12415;&#12289;&#20309;&#12418;&#12391;&#12365;&#12394;&#12356;&#12414;&#12414;&#12398;&#30456;&#25163;&#12363;&#12425;20&#28857;&#12398;&#12521;&#12452;&#12501;&#12434;&#12377;&#12409;&#12390;&#22890;&#12356;&#21462;&#12427;&#12392;&#12356;&#12358;&#26997;&#12417;&#12390;&#12471;&#12531;&#12503;&#12523;&#12394;&#25126;&#30053;&#12391;&#12377;&#12290;</p>
+
+<p>&#12450;&#12464;&#12525;&#12434;&#23455;&#34892;&#12377;&#12427;&#12395;&#12399;&#12289;&#12487;&#12483;&#12461;&#12395;&#20302;&#12467;&#12473;&#12488;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#22823;&#37327;&#12395;&#20837;&#12428;&#12427;&#12371;&#12392;&#12391;&#12377;&#12290;&#12371;&#12428;&#12395;&#12424;&#12426;&#21508;&#12479;&#12540;&#12531;&#12395;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21809;&#12360;&#12427;&#30906;&#29575;&#12434;&#39640;&#12417;&#12414;&#12377;&#12290;&#12381;&#12375;&#12390;&#23550;&#25126;&#30456;&#25163;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#38500;&#21435;&#12377;&#12427;&#21610;&#25991;&#12418;&#21152;&#12360;&#12427;&#12371;&#12392;&#12391;&#12289;&#33258;&#20998;&#12398;&#36557;&#21218;&#12398;&#25915;&#25731;&#12364;&#36890;&#12426;&#12420;&#12377;&#12367;&#12394;&#12426;&#12414;&#12377;&#12290;&#36890;&#24120;&#12289;&#12466;&#12540;&#12512;&#12398;&#24207;&#30436;&#12391;&#22952;&#23475;&#12395;&#36973;&#12358;&#12371;&#12392;&#12399;&#12414;&#12378;&#12354;&#12426;&#12414;&#12379;&#12435;&#12290;&#12381;&#12398;&#22909;&#27231;&#12434;&#36867;&#12373;&#12378;&#12289;&#12391;&#12365;&#12427;&#38480;&#12426;&#22810;&#12367;&#25915;&#25731;&#12434;&#32368;&#12426;&#20986;&#12375;&#12414;&#12375;&#12423;&#12358;&#65281;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/JP_SoManyWays_SpeedAggression_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#30456;&#25163;&#12398;&#25126;&#30053;&#12434;&#23553;&#12376;&#12427;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_SoManyWays_ControlYourOpponent_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#30456;&#25163;&#12398;&#25126;&#30053;&#12434;&#23553;&#12376;&#12427;</h3>
+					<p>&#12418;&#12358;&#12402;&#12392;&#12388;&#12398;&#20154;&#27671;&#12364;&#12354;&#12427;&#12487;&#12483;&#12461;&#12473;&#12479;&#12452;&#12523;&#12392;&#12375;&#12390;&#12289; <i>&#12467;&#12531;&#12488;&#12525;&#12540;&#12523;</i> &#12364;&#12354;&#12426;&#12414;&#12377;&#12290;&#12467;&#12531;&#12488;&#12525;&#12540;&#12523;&#12539;&#12487;&#12483;&#12461;&#12398;&#25126;&#30053;&#12399;&#12289;&#29983;&#12365;&#27531;&#12427;&#12371;&#12392;&#12434;&#20778;&#20808;&#12375;&#12289;&#30456;&#25163;&#12398;&#25126;&#30053;&#12434;&#22952;&#23475;&#12375;&#12289;&#12466;&#12540;&#12512;&#12398;&#24460;&#21322;&#12391;&#20778;&#20301;&#12395;&#31435;&#12388;&#12371;&#12392;&#12290;&#21610;&#25991;&#12434;&#20351;&#12356;&#12289;&#23550;&#25126;&#30456;&#25163;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#25490;&#38500;&#12377;&#12427;&#12363;&#12289;&#12414;&#12383;&#12399;&#25126;&#38360;&#12395;&#21442;&#21152;&#12391;&#12365;&#12394;&#12356;&#12424;&#12358;&#12395;&#20808;&#25163;&#12434;&#25171;&#12385;&#12414;&#12377;&#12290;&#23550;&#25126;&#30456;&#25163;&#12398;&#25163;&#26413;&#12398;&#12459;&#12540;&#12489;&#12434;&#25448;&#12390;&#12373;&#12379;&#12383;&#12426;&#12289;&#25126;&#32218;&#12395;&#23637;&#38283;&#12373;&#12428;&#12383;&#36557;&#21218;&#12434;&#36275;&#27490;&#12417;&#12375;&#12383;&#12426;&#12375;&#12390;&#12289;&#30456;&#25163;&#12398;&#25126;&#30053;&#12434;&#23849;&#12375;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#12467;&#12531;&#12488;&#12525;&#12540;&#12523;&#12539;&#12487;&#12483;&#12461;&#12398;&#30495;&#20385;&#12399;&#12466;&#12540;&#12512;&#24460;&#21322;&#12391;&#30330;&#25582;&#12373;&#12428;&#12427;&#12383;&#12417;&#12289;&#12487;&#12483;&#12461;&#12395;&#12399;&#12466;&#12540;&#12512;&#12398;&#24207;&#30436;&#12391;&#38450;&#24481;&#12398;&#24441;&#21106;&#12434;&#26524;&#12383;&#12377;&#12459;&#12540;&#12489;&#12434;&#22810;&#23569;&#20837;&#12428;&#12390;&#12362;&#12365;&#12383;&#12356;&#12392;&#12371;&#12429;&#12391;&#12377;&#12290;&#12354;&#12392;&#12399;&#12289;&#23550;&#25126;&#30456;&#25163;&#12364;&#20181;&#25499;&#12369;&#12390;&#12367;&#12427;&#12373;&#12414;&#12374;&#12414;&#12394;&#33029;&#23041;&#12434;&#24819;&#23450;&#12375;&#12289;&#23550;&#20966;&#12377;&#12427;&#12383;&#12417;&#12398;&#12459;&#12540;&#12489;&#12434;&#12487;&#12483;&#12461;&#12395;&#21547;&#12417;&#12414;&#12375;&#12423;&#12358;&#12290;&#12467;&#12531;&#12488;&#12525;&#12540;&#12523;&#12395;&#25104;&#21151;&#12375;&#12383;&#12466;&#12540;&#12512;&#12398;&#24149;&#24341;&#12365;&#24441;&#12392;&#12394;&#12427;&#22823;&#22411;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#23569;&#12375;&#29992;&#24847;&#12377;&#12427;&#12371;&#12392;&#12418;&#12362;&#24536;&#12428;&#12394;&#12367;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/JP_SoManyWays_ControlYourOpponent_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#21177;&#29575;&#24615;&#12434;&#37325;&#35222;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_SoManyWays_Efficiency_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#21177;&#29575;&#24615;&#12434;&#37325;&#35222;</h3>
+					<p><i>&#12511;&#12483;&#12489;&#12524;&#12531;&#12472;</i> &#12539;&#12487;&#12483;&#12461;&#12399;&#12450;&#12464;&#12525;&#12392;&#12467;&#12531;&#12488;&#12525;&#12540;&#12523;&#12289;&#20001;&#26041;&#12398;&#12487;&#12483;&#12461;&#12398;&#35201;&#32032;&#12434;&#32068;&#12415;&#21512;&#12431;&#12379;&#12383;&#12487;&#12483;&#12461;&#12391;&#12377;&#12290;&#21177;&#29575;&#30340;&#12391;&#27231;&#21205;&#24615;&#12364;&#12354;&#12426;&#12289;&#29366;&#27841;&#12395;&#24540;&#12376;&#12390;&#25915;&#25731;&#12392;&#38450;&#24481;&#12398;&#23039;&#21218;&#12434;&#29366;&#27841;&#12395;&#24540;&#12376;&#12390;&#36984;&#12406;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;&#12511;&#12483;&#12489;&#12524;&#12531;&#12472;&#12539;&#12487;&#12483;&#12461;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12399;&#12289;&#23550;&#25126;&#30456;&#25163;&#12364;&#12381;&#12428;&#12434;&#38500;&#21435;&#12377;&#12427;&#12383;&#12417;&#12395;&#35079;&#25968;&#12398;&#12459;&#12540;&#12489;&#12434;&#35201;&#12377;&#12427;&#12424;&#12358;&#12394;&#12289;&#32784;&#20037;&#24615;&#12395;&#20778;&#12428;&#12427;&#12418;&#12398;&#12364;&#22810;&#12367;&#25505;&#29992;&#12373;&#12428;&#12414;&#12377;&#12290;&#12511;&#12483;&#12489;&#12524;&#12531;&#12472;&#12539;&#12487;&#12483;&#12461;&#12391;&#12399;&#21336;&#19968;&#12398;&#25126;&#30053;&#12395;&#12371;&#12384;&#12431;&#12427;&#12398;&#12391;&#12399;&#12394;&#12367;&#12289;&#25126;&#22580;&#12391;&#12398;&#29366;&#27841;&#12395;&#21512;&#12431;&#12379;&#12390;&#26580;&#36575;&#12395;&#25126;&#30053;&#12434;&#22793;&#26356;&#12377;&#12427;&#12398;&#12364;&#22522;&#26412;&#12391;&#12377;&#12290;&#36074;&#12398;&#39640;&#12356;&#12511;&#12483;&#12489;&#12524;&#12531;&#12472;&#12539;&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12377;&#12427;&#12395;&#12399;&#12289;&#12466;&#12540;&#12512;&#12398;&#24207;&#30436;&#12392;&#24460;&#21322;&#12395;&#30330;&#29983;&#12377;&#12427;&#29366;&#27841;&#20001;&#26041;&#12395;&#23550;&#20966;&#12377;&#12427;&#12383;&#12417;&#12398;&#27494;&#22120;&#12420;&#23550;&#24540;&#31574;&#12434;&#29992;&#24847;&#12377;&#12427;&#24517;&#35201;&#12364;&#12354;&#12426;&#12414;&#12377;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/JP_SoManyWays_Efficiency_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#26368;&#24375;&#12398;&#32068;&#12415;&#21512;&#12431;&#12379;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_SoManyWays_CoolCombinations_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#26368;&#24375;&#12398;&#32068;&#12415;&#21512;&#12431;&#12379;</h3>
+					<p>&#12393;&#12398;&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12377;&#12427;&#22580;&#21512;&#12391;&#12418;&#12289;&#30456;&#24615;&#12398;&#33391;&#12356;&#12459;&#12540;&#12489;&#12398;&#32068;&#12415;&#21512;&#12431;&#12379;&#12434;&#25506;&#12377;&#12371;&#12392;&#12399;&#37325;&#35201;&#12391;&#12377;&#12290;&#12459;&#12540;&#12489;&#12395;&#12399;&#12373;&#12414;&#12374;&#12414;&#12394;&#31278;&#39006;&#12364;&#12354;&#12426;&#12289;&#12381;&#12398;&#22810;&#12367;&#12399;&#32068;&#12415;&#21512;&#12431;&#12379;&#12427;&#12371;&#12392;&#12391;&#12381;&#12398;&#21147;&#12434;&#20309;&#20493;&#12395;&#12418;&#22679;&#24133;&#12373;&#12379;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#12381;&#12428;&#12391;&#12399;&#23455;&#38555;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12459;&#12540;&#12489;&#12434;&#20363;&#12395;&#12289;&#12393;&#12398;&#12424;&#12358;&#12395;&#20316;&#29992;&#12375;&#12390;&#12356;&#12367;&#12363;&#12434;&#35211;&#12390;&#12415;&#12414;&#12375;&#12423;&#12358;&#12290;&#12414;&#12378;&#12399;&#12298;<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93">&#12363;&#12376;&#12426;&#12388;&#12367;&#12478;&#12531;&#12499;</a> &#12299;&#12391;&#12377;&#12290;</p>
+
+<p>&#12298;<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93">&#12363;&#12376;&#12426;&#12388;&#12367;&#12478;&#12531;&#12499;</a>&#12299;&#12399;&#12289;&#12381;&#12428;&#12394;&#12426;&#12395;&#24375;&#21147;&#12394;&#33021;&#21147;&#12434;&#25345;&#12385;&#12289;&#12354;&#12394;&#12383;&#12398;&#12521;&#12452;&#12501;&#12434;&#21313;&#20998;&#12394;&#29366;&#24907;&#12395;&#20445;&#12385;&#12394;&#12364;&#12425;&#12289;&#23550;&#25126;&#30456;&#25163;&#12398;&#12521;&#12452;&#12501;&#12434;&#28187;&#12425;&#12379;&#12414;&#12377;&#12290;&#12414;&#12383;&#12289;&#12393;&#12385;&#12425;&#12395;&#12379;&#12424;&#27515;&#12435;&#12391;&#12375;&#12414;&#12358;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12391;&#12289;&#36890;&#24120;&#12399;&#29983;&#12369;&#36100;&#12392;&#12375;&#12390;&#25447;&#12370;&#12414;&#12377;&#12290;</p>
+
+<p>&#12371;&#12428;&#12434;&#12354;&#12394;&#12383;&#12398;&#12487;&#12483;&#12461;&#12395;&#20837;&#12428;&#12427;&#22580;&#21512;&#12289;&#25448;&#12390;&#30707;&#12395;&#20351;&#12360;&#12427;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21152;&#12360;&#12390;&#12362;&#12356;&#12383;&#12411;&#12358;&#12364;&#33391;&#12356;&#12391;&#12375;&#12423;&#12358;&#12290;&#27515;&#12396;&#12371;&#12392;&#12391;&#35480;&#30330;&#30340;&#12395;&#33021;&#21147;&#12434;&#30330;&#25582;&#12377;&#12427;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12391;&#12354;&#12428;&#12400;&#12289;&#12394;&#12362;&#32080;&#27083;&#12290;&#12375;&#12363;&#12375;&#12289;&#12424;&#12426;&#20351;&#12356;&#21213;&#25163;&#12364;&#33391;&#12356;&#12398;&#12399;&#35079;&#25968;&#22238;&#29983;&#12369;&#36100;&#12395;&#12391;&#12365;&#12427;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12391;&#12377;&#12290;&#12381;&#12371;&#12391;&#30331;&#22580;&#12377;&#12427;&#12398;&#12364;&#12298; <a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E5%9F%B7%E6%8B%97%E3%81%AA%E6%AD%BB%E8%80%85" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E5%9F%B7%E6%8B%97%E3%81%AA%E6%AD%BB%E8%80%85">&#22519;&#25303;&#12394;&#27515;&#32773;</a> &#12299;&#12391;&#12377;&#12290;</p>
+
+<p>&#12371;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12364;&#25345;&#12388;&#12289;&#20309;&#24230;&#27515;&#12435;&#12391;&#12418;&#24489;&#27963;&#12377;&#12427;&#33021;&#21147;&#12399;&#12289;&#12298;<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E3%81%8B%E3%81%98%E3%82%8A%E3%81%A4%E3%81%8F%E3%82%BE%E3%83%B3%E3%83%93">&#12363;&#12376;&#12426;&#12388;&#12367;&#12478;&#12531;&#12499;</a> &#12299;&#12392;&#23436;&#29863;&#12394;&#12467;&#12531;&#12508;&#12434;&#24418;&#25104;&#12375;&#12414;&#12377;&#12290;&#12371;&#12428;&#12434;&#20351;&#12387;&#12390;&#23550;&#25126;&#30456;&#25163;&#12398;&#25915;&#25731;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#12502;&#12525;&#12483;&#12463;&#12375;&#12383;&#12426;&#12289;&#29983;&#12369;&#36100;&#12395;&#12377;&#12427;&#12371;&#12392;&#12391;&#33258;&#20998;&#12398;&#12521;&#12452;&#12501;&#12434;&#12385;&#12423;&#12387;&#12392;&#22238;&#24489;&#12373;&#12379;&#12383;&#12426;&#12391;&#12365;&#12289;&#12381;&#12428;&#12434;&#32368;&#12426;&#36820;&#12379;&#12400;&#12289;&#12354;&#12394;&#12383;&#12398;&#20778;&#20301;&#24615;&#12399;&#12424;&#12426;&#30906;&#23455;&#12394;&#12418;&#12398;&#12395;&#12394;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;&#12371;&#12358;&#12375;&#12383;&#30330;&#35211;&#12392;&#30456;&#20055;&#21177;&#26524;&#12399;&#12289;&#12414;&#12373;&#12395;<b>&#12510;&#12472;&#12483;&#12463;</b> &#12434;&#12503;&#12524;&#12452;&#12377;&#12427;&#37261;&#37264;&#21619;&#12392;&#35328;&#12360;&#12414;&#12377;&#12290;</p>
+
+<p>&#12371;&#12428;&#12399;&#12411;&#12435;&#12398;&#19968;&#20363;&#12391;&#12377;&#12290;&#12371;&#12398;&#12411;&#12363;&#12395;&#12418;&#12289;&#24375;&#21147;&#12391;&#24515;&#36493;&#12427;&#12424;&#12358;&#12394;&#12459;&#12540;&#12489;&#12398;&#32068;&#12415;&#21512;&#12431;&#12379;&#12399;&#12383;&#12367;&#12373;&#12435;&#12354;&#12426;&#12414;&#12377;&#12398;&#12391;&#12289;&#12380;&#12402;&#35211;&#12388;&#12369;&#12390;&#12487;&#12483;&#12461;&#27083;&#31689;&#12395;&#29983;&#12363;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;&#65281;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/JP_SoManyWays_CoolCombinations_TallRotato.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#12377;&#12409;&#12390;&#12399;&#12354;&#12394;&#12383;&#27425;&#31532;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_SoManyWays_YourUniqueCreation_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12377;&#12409;&#12390;&#12399;&#12354;&#12394;&#12383;&#27425;&#31532;</h3>
+					<p><b>&#12510;&#12472;&#12483;&#12463;</b> &#12398;&#39749;&#21147;&#12398;&#26368;&#12383;&#12427;&#12418;&#12398;&#12399;&#12289;&#12381;&#12398;&#33258;&#30001;&#24230;&#12398;&#39640;&#12373;&#12391;&#12377;&#12290;&#12371;&#12398;&#12466;&#12540;&#12512;&#12398;&#37261;&#37264;&#21619;&#12399;&#12289;&#33192;&#22823;&#12394;&#25968;&#12398;&#12459;&#12540;&#12489;&#12392;&#12381;&#12428;&#12425;&#12398;&#32068;&#12415;&#21512;&#12431;&#12379;&#12434;&#30740;&#31350;&#12375;&#12390;&#29420;&#33258;&#12398;&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12375;&#12289;&#12381;&#12428;&#12434;&#20351;&#12387;&#12390;&#23550;&#25126;&#30456;&#25163;&#12434;&#32763;&#24324;&#12377;&#12427;&#12371;&#12392;&#12395;&#12354;&#12427;&#12392;&#35328;&#12360;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;&#35504;&#12418;&#35211;&#12383;&#12371;&#12392;&#12364;&#12394;&#12356;&#12424;&#12358;&#12394;&#12487;&#12483;&#12461;&#12434;&#20351;&#12387;&#12390;&#12503;&#12524;&#12452;&#12377;&#12427;&#12371;&#12392;&#12395;&#12424;&#12387;&#12390;&#24471;&#12425;&#12428;&#12427;&#28288;&#36275;&#24863;&#12399;&#12289;&#20309;&#12418;&#12398;&#12395;&#12418;&#20195;&#12360;&#38627;&#12356;&#12399;&#12378;&#12290;&#12381;&#12428;&#12391;&#21213;&#12388;&#12371;&#12392;&#12364;&#12391;&#12365;&#12428;&#12400;&#12394;&#12362;&#12373;&#12425;&#12391;&#12377;&#65281;</p>
+
+<p>&#12373;&#12414;&#12374;&#12414;&#12394;&#25126;&#30053;&#12420;&#32068;&#12415;&#21512;&#12431;&#12379;&#12434;&#36890;&#12376;&#12390; <b>&#12510;&#12472;&#12483;&#12463;</b> &#12434;&#30740;&#31350;&#12377;&#12427;&#12371;&#12392;&#12399;&#12289; <b>&#12510;&#12472;&#12483;&#12463;</b> &#12434;&#31350;&#12417;&#12427;&#12383;&#12417;&#12395;&#12399;&#27424;&#12363;&#12379;&#12394;&#12356;&#22823;&#20999;&#12394;&#12473;&#12486;&#12483;&#12503;&#12391;&#12377;&#12290;&#38480;&#30028;&#12414;&#12391;&#33258;&#20998;&#12398;&#24819;&#20687;&#21147;&#12434;&#20685;&#12363;&#12379;&#12390;&#12415;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_SoManyWays_YourUniqueCreation_TallRotator.png"></div>
+			</div>
+        </dd>
+          </dl></div>
+
+
+</div>
+	
+	
+	
+<div class="panel-separator"></div>
+
+	<!-- wiz-content-rotator-block -- upper_tabbed_with_arrow -->
+
+
+<div id="jp-gameinfo-howbuilddeck-3" class="page-width">
+
+  <h2><span>&#25126;&#30053;&#12434;&#31350;&#12417;&#12424;&#12358;</span></h2>
+
+
+  <div class="slides page-width">
+    <dl class="showHideListItems" data-showhidelistitems-options="{defaultItem:0}"><dt>
+            <span>&#12393;&#12398;&#33394;&#12434;&#36984;&#12406;&#65311;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_ChooseColorsWisely_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12393;&#12398;&#33394;&#12434;&#36984;&#12406;&#65311;</h3>
+					<p>&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12377;&#12427;&#26178;&#12289;&#26368;&#21021;&#12395;&#12375;&#12394;&#12369;&#12428;&#12400;&#12394;&#12425;&#12394;&#12356;&#12398;&#12364;&#12289;&#33394;&#12398;&#36984;&#25246;&#12391;&#12377;&#12290; <b>&#12510;&#12472;&#12483;&#12463;</b>&#12398;&#12459;&#12540;&#12489;&#12399;&#65301;&#33394;&#12395;&#20998;&#12363;&#12428;&#12390;&#12362;&#12426;&#12289;&#21508;&#33394;&#12399;&#12381;&#12428;&#12382;&#12428;&#12395;&#38263;&#25152;&#12289;&#30701;&#25152;&#12289;&#20491;&#24615;&#12364;&#12354;&#12426;&#12414;&#12377;&#12290;&#36984;&#12435;&#12384;&#25126;&#30053;&#12434;&#23455;&#34892;&#12395;&#31227;&#12379;&#12427;&#12363;&#12393;&#12358;&#12363;&#12399;&#12289;&#33394;&#12398;&#36984;&#25246;&#12395;&#12363;&#12363;&#12387;&#12390;&#12356;&#12427;&#12398;&#12391;&#12377;&#12290;</p>
+
+<p>&#65301;&#33394;&#20840;&#37096;&#12434;&#21547;&#12417;&#12427;&#12371;&#12392;&#12418;&#21487;&#33021;&#12391;&#12377;&#12364;&#12289;&#36890;&#24120;&#12399;&#65297;&#33394;&#12363;&#65298;&#33394;&#12395;&#38480;&#23450;&#12375;&#12383;&#12411;&#12358;&#12364;&#33391;&#12356;&#12391;&#12375;&#12423;&#12358;&#12290;&#33394;&#12398;&#25968;&#12364;&#22810;&#12367;&#12394;&#12428;&#12400;&#12289;&#12381;&#12428;&#12384;&#12369;&#12487;&#12483;&#12461;&#12398;&#19968;&#36011;&#24615;&#12364;&#22833;&#12431;&#12428;&#12414;&#12377;&#12290;&#65298;&#33394;&#12395;&#38480;&#23450;&#12377;&#12427;&#12371;&#12392;&#12391;&#12289;&#12487;&#12483;&#12461;&#12398;&#25126;&#30053;&#12364;&#25104;&#21151;&#12377;&#12427;&#30906;&#29575;&#12399;&#39640;&#12414;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#21508;&#33394;&#12398;&#35443;&#32048;&#12395;&#12388;&#12356;&#12390;&#12399;<a href="Insert%20URL%20to%20Color%20Section">&#12371;&#12385;&#12425;</a>&#12363;&#12425;&#21442;&#29031;&#12391;&#12365;&#12414;&#12377;&#12290;&#21508;&#33394;&#12398;&#29305;&#24500;&#12395;&#12388;&#12356;&#12390;&#29702;&#35299;&#12391;&#12365;&#12383;&#12425;&#12289;&#33258;&#20998;&#12398;&#22909;&#12415;&#12398;&#65298;&#33394;&#12395;&#38598;&#20013;&#12375;&#12390;&#12289;&#26368;&#21021;&#12398;&#12487;&#12483;&#12461;&#12434;&#32068;&#12435;&#12391;&#12415;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_ChooseColorsWisely_TallRotator_0.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#30333;&#65306;&#38450;&#24481;&#12392;&#36557;&#21218;&#12398;&#33394;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_White_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#30333;&#65306;&#38450;&#24481;&#12392;&#36557;&#21218;&#12398;&#33394;</h3>
+					<p>&#30333;&#12399;&#31209;&#24207;&#12289;&#23432;&#35703;&#12289;&#20809;&#12398;&#33394;&#12391;&#12377;&#12290;&#30333;&#12398;&#39764;&#27861;&#12399;&#30290;&#12375;&#12392;&#38450;&#24481;&#12364;&#20013;&#24515;&#12391;&#12377;&#12364;&#12289;&#27972;&#21270;&#12398;&#20809;&#12395;&#12424;&#12387;&#12390;&#25126;&#22580;&#12434;&#19968;&#25475;&#12377;&#12427;&#12371;&#12392;&#12418;&#12391;&#12365;&#12414;&#12377;&#12290;&#22825;&#20351;&#12420;&#39438;&#22763;&#12289;&#21191;&#32773;&#12394;&#12393;&#12398;&#25588;&#36557;&#12434;&#21628;&#12403;&#20986;&#12377;&#12371;&#12392;&#12391;&#12289;&#25126;&#22580;&#12434;&#25903;&#37197;&#12375;&#12420;&#12377;&#12367;&#12394;&#12426;&#12414;&#12377;&#12290;</p>
+
+<p>&#30333;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12289;&#22823;&#36557;&#21218;&#12434;&#21484;&#21914;&#12375;&#12289;&#12414;&#12383;&#24375;&#21147;&#12394;&#21610;&#25991;&#12420;&#33021;&#21147;&#12395;&#12424;&#12387;&#12390;&#12289;&#12381;&#12398;&#36557;&#21218;&#12434;&#21361;&#38522;&#12363;&#12425;&#23432;&#12426;&#12414;&#12377;&#12290;&#33258;&#20998;&#12398;&#12521;&#12452;&#12501;&#12434;&#22238;&#24489;&#12391;&#12365;&#12289;&#23550;&#25126;&#30456;&#25163;&#12434;&#28961;&#21147;&#21270;&#12375;&#12390;&#12289;&#12381;&#12398;&#38291;&#12395;&#12392;&#12393;&#12417;&#12434;&#21050;&#12377;&#12371;&#12392;&#12418;&#21487;&#33021;&#12391;&#12377;&#12290;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12395;&#12424;&#12427;&#37444;&#22721;&#12398;&#38450;&#24481;&#12364;&#12354;&#12427;&#12362;&#12363;&#12370;&#12391;&#12289;&#23550;&#25126;&#30456;&#25163;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12363;&#12425;&#12398;&#25915;&#25731;&#12399;&#12381;&#12428;&#12411;&#12393;&#27671;&#12395;&#12375;&#12394;&#12367;&#12390;&#28168;&#12415;&#12414;&#12377;&#12290;</p>
+
+<p>&#30333;&#12399;&#38450;&#24481;&#12398;&#33394;&#12391;&#12399;&#12354;&#12426;&#12414;&#12377;&#12364;&#12289;&#12356;&#12374;&#12392;&#12356;&#12358;&#26178;&#12399;&#24375;&#21147;&#12394;&#19968;&#25731;&#12434;&#21936;&#12425;&#12431;&#12377;&#12371;&#12392;&#12418;&#12391;&#12365;&#12414;&#12377;&#65281;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_White_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#38738;&#65306;&#35584;&#30053;&#12392;&#25805;&#20316;&#12398;&#33394;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_Blue_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#38738;&#65306;&#35584;&#30053;&#12392;&#25805;&#20316;&#12398;&#33394;</h3>
+					<p>&#38738;&#12399;&#31574;&#30053;&#12289;&#35542;&#29702;&#12289;&#24187;&#24433;&#12398;&#33394;&#12391;&#12377;&#12290;&#38738;&#12398;&#39764;&#27861;&#12399;&#25915;&#25731;&#12363;&#12425;&#12398;&#22238;&#36991;&#12420;&#35584;&#30053;&#12394;&#12393;&#12364;&#20013;&#24515;&#12392;&#12394;&#12426;&#12414;&#12377;&#12364;&#12289;&#28961;&#38480;&#12395;&#12354;&#12405;&#12428;&#20986;&#12427;&#21473;&#26234;&#12398;&#20803;&#12391;&#12399;&#12354;&#12425;&#12422;&#12427;&#12371;&#12392;&#12364;&#21487;&#33021;&#12395;&#12394;&#12426;&#12414;&#12377;&#12290;&#12383;&#12392;&#12360;&#12400;&#12289;&#28145;&#28023;&#12398;&#22885;&#28145;&#12367;&#12363;&#12425;&#24040;&#22823;&#12394;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21628;&#12403;&#23492;&#12379;&#12383;&#12426;&#12289;&#38642;&#12398;&#20013;&#12363;&#12425;&#36557;&#21218;&#12434;&#39131;&#26469;&#12373;&#12379;&#12383;&#12426;&#12377;&#12427;&#12371;&#12392;&#12418;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#38738;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12289;&#33258;&#20998;&#12398;&#12289;&#12354;&#12427;&#12356;&#12399;&#23550;&#25126;&#30456;&#25163;&#12398;&#12487;&#12483;&#12461;&#12434;&#12354;&#12394;&#12383;&#12364;&#26377;&#21033;&#12395;&#12394;&#12427;&#12424;&#12358;&#12395;&#25805;&#20316;&#12391;&#12365;&#12427;&#12424;&#12358;&#12395;&#12394;&#12426;&#12414;&#12377;&#12290;&#12424;&#12426;&#22810;&#12367;&#12398;&#12459;&#12540;&#12489;&#12434;&#24341;&#12369;&#12427;&#12424;&#12358;&#12395;&#12418;&#12394;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;&#12381;&#12375;&#12390;&#23550;&#25126;&#30456;&#25163;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#12289;&#25126;&#22580;&#12395;&#20986;&#12427;&#21069;&#12395;&#25490;&#38500;&#12375;&#12383;&#12426;&#12289;&#21610;&#25991;&#12434;&#31435;&#12385;&#28040;&#12360;&#12395;&#12375;&#12383;&#12426;&#12377;&#12427;&#12371;&#12392;&#12418;&#21487;&#33021;&#12391;&#12377;&#12290;&#12373;&#12414;&#12374;&#12414;&#12394;&#39131;&#34892;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21484;&#21914;&#12375;&#12390;&#22823;&#31354;&#12434;&#25903;&#37197;&#12375;&#12289;&#23550;&#25126;&#30456;&#25163;&#12364;&#12502;&#12525;&#12483;&#12463;&#12377;&#12427;&#12398;&#12395;&#22235;&#33510;&#20843;&#33510;&#12375;&#12390;&#12356;&#12427;&#38291;&#12395;&#12289;&#12381;&#12428;&#12425;&#12399;&#30456;&#25163;&#20596;&#12398;&#38450;&#24481;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12398;&#38957;&#19978;&#12434;&#36234;&#12360;&#12289;&#21213;&#21033;&#12434;&#12418;&#12383;&#12425;&#12375;&#12390;&#12367;&#12428;&#12414;&#12377;&#12290;</p>
+
+<p>&#23550;&#25126;&#30456;&#25163;&#12398;&#25126;&#30053;&#12434;&#12363;&#12367;&#20081;&#12375;&#12289;&#33258;&#12425;&#12398;&#21213;&#21033;&#12408;&#23566;&#12367;&#12398;&#12364;&#38738;&#12398;&#29305;&#24500;&#12392;&#35328;&#12360;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_Blue_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#40658;&#65306;&#27515;&#12392;&#21147;&#12398;&#33394;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_Black_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#40658;&#65306;&#27515;&#12392;&#21147;&#12398;&#33394;</h3>
+					<p>&#40658;&#12399;&#27515;&#12289;&#37326;&#26395;&#12289;&#38343;&#12398;&#33394;&#12391;&#12377;&#12290;&#40658;&#12398;&#39764;&#27861;&#12399;&#27515;&#32773;&#12434;&#34311;&#12425;&#12379;&#12383;&#12426;&#12289;&#29378;&#27671;&#12434;&#24341;&#12365;&#36215;&#12371;&#12375;&#12383;&#12426;&#12289;&#29983;&#32773;&#12363;&#12425;&#29983;&#21629;&#12456;&#12493;&#12523;&#12462;&#12540;&#12434;&#21560;&#12356;&#21462;&#12387;&#12383;&#12426;&#12375;&#12414;&#12377;&#12290;&#12414;&#12383;&#12289;&#21560;&#34880;&#39740;&#12289;&#12478;&#12531;&#12499;&#12289;&#12487;&#12540;&#12514;&#12531;&#12289;&#12381;&#12398;&#20182;&#12398;&#19981;&#27972;&#12394;&#12427;&#38343;&#12398;&#23384;&#22312;&#12434;&#21484;&#21914;&#12375;&#12289;&#24467;&#12431;&#12379;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#40658;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12289;&#20498;&#12375;&#12383;&#23550;&#25126;&#30456;&#25163;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#34311;&#12425;&#12379;&#12289;&#21619;&#26041;&#12392;&#12375;&#12390;&#25126;&#12431;&#12379;&#12427;&#12371;&#12392;&#12418;&#12391;&#12365;&#12414;&#12377;&#12290;&#12381;&#12375;&#12390;&#23550;&#25126;&#30456;&#25163;&#12395;&#25163;&#26413;&#12363;&#12425;&#12459;&#12540;&#12489;&#12434;&#25448;&#12390;&#12373;&#12379;&#12427;&#12371;&#12392;&#12391;&#12289;&#12381;&#12428;&#12425;&#12364;&#33258;&#20998;&#12395;&#23550;&#12375;&#12390;&#20351;&#12431;&#12428;&#12427;&#21069;&#12395;&#12381;&#12398;&#33029;&#23041;&#12434;&#21462;&#12426;&#38500;&#12367;&#12371;&#12392;&#12364;&#21487;&#33021;&#12391;&#12377;&#12290;&#27578;&#12377;&#12371;&#12392;&#12364;&#38627;&#12375;&#12356;&#12450;&#12531;&#12487;&#12483;&#12489;&#12420;&#12289;&#12502;&#12525;&#12483;&#12463;&#12375;&#12395;&#12367;&#12356;&#39764;&#29289;&#12289;&#12381;&#12375;&#12390;&#23550;&#25126;&#30456;&#25163;&#12398;&#22675;&#22320;&#12363;&#12425;&#25496;&#12426;&#36215;&#12371;&#12375;&#12383;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12398;&#28151;&#25104;&#37096;&#38538;&#12391;&#25126;&#12358;&#12371;&#12392;&#12395;&#12394;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#21147;&#12434;&#24471;&#12427;&#12383;&#12417;&#12394;&#12425;&#20195;&#20767;&#12434;&#39015;&#12415;&#12378;&#26041;&#27861;&#12418;&#21839;&#12431;&#12394;&#12356;&#12289;&#12381;&#12428;&#12364;&#40658;&#12398;&#39764;&#27861;&#12391;&#12377;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_Black_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#36196;&#65306;&#28814;&#12392;&#24863;&#24773;&#12398;&#33394;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_Red_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#36196;&#65306;&#28814;&#12392;&#24863;&#24773;&#12398;&#33394;</h3>
+					<p>&#36196;&#12399;&#33258;&#30001;&#12289;&#24863;&#24773;&#12289;&#34909;&#21205;&#12398;&#33394;&#12391;&#12377;&#12290;&#28814;&#12392;&#31282;&#22971;&#12391;&#25973;&#12434;&#27570;&#28357;&#12289;&#22320;&#38663;&#12391;&#22823;&#22320;&#12381;&#12398;&#12418;&#12398;&#12434;&#24341;&#12365;&#35010;&#12365;&#12414;&#12377;&#12290;&#36196;&#12398;&#36557;&#21218;&#12399;&#21927;&#22057;&#12387;&#26089;&#12367;&#12289;&#12420;&#12420;&#28961;&#37444;&#30770;&#12394;&#12392;&#12371;&#12429;&#12364;&#12354;&#12426;&#12414;&#12377;&#12364;&#12289;&#28369;&#31354;&#12375;&#12394;&#12364;&#12425;&#25973;&#12434;&#36010;&#12427;&#24040;&#22823;&#12394;&#12489;&#12521;&#12468;&#12531;&#12434;&#21628;&#12403;&#20986;&#12377;&#12371;&#12392;&#12418;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#36196;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12289;&#25973;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12391;&#12354;&#12428;&#12289;&#12503;&#12524;&#12452;&#12531;&#12474;&#12454;&#12457;&#12540;&#12459;&#12540;&#12391;&#12354;&#12428;&#12289;&#23550;&#25126;&#30456;&#25163;&#26412;&#20154;&#12418;&#21547;&#12417;&#12390;&#12289;&#31435;&#12385;&#12405;&#12373;&#12364;&#12427;&#32773;&#12377;&#12409;&#12390;&#12395;&#12480;&#12513;&#12540;&#12472;&#12434;&#19982;&#12360;&#12427;&#12371;&#12392;&#12395;&#12394;&#12426;&#12414;&#12377;&#12290;&#12414;&#12383;&#12289;&#23550;&#25126;&#30456;&#25163;&#12398;&#12450;&#12540;&#12486;&#12451;&#12501;&#12449;&#12463;&#12488;&#12420;&#22303;&#22320;&#12434;&#31881;&#30741;&#12377;&#12427;&#12371;&#12392;&#12418;&#21487;&#33021;&#12391;&#12377;&#12290;&#21484;&#21914;&#12391;&#12365;&#12427;&#12418;&#12398;&#12392;&#12375;&#12390;&#12399;&#12289;&#31282;&#22971;&#12398;&#12424;&#12358;&#12395;&#20426;&#25935;&#12394;&#12468;&#12502;&#12522;&#12531;&#12398;&#32676;&#12428;&#12420;&#12289;&#31354;&#12434;&#35206;&#12356;&#23613;&#12367;&#12377;&#12411;&#12393;&#24040;&#22823;&#12394;&#12489;&#12521;&#12468;&#12531;&#12364;&#25369;&#12370;&#12425;&#12428;&#12414;&#12377;&#12290;</p>
+
+<p>&#36196;&#12398;&#39764;&#27861;&#12399;&#32330;&#32048;&#12391;&#12418;&#30693;&#30340;&#12391;&#12418;&#12354;&#12426;&#12414;&#12379;&#12435;&#12290;&#12416;&#12365;&#20986;&#12375;&#12398;&#21147;&#12289;&#12381;&#12398;&#12418;&#12398;&#12391;&#12377;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_Red_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#32209;&#65306;&#33258;&#28982;&#12392;&#29983;&#21629;&#12398;&#33394;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_EmpowerStrategy_Green_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#32209;&#65306;&#33258;&#28982;&#12392;&#29983;&#21629;&#12398;&#33394;</h3>
+					<p>&#32209;&#12399;&#25104;&#38263;&#12289;&#26412;&#33021;&#12289;&#33258;&#28982;&#12398;&#33394;&#12391;&#12377;&#12290;&#32209;&#12398;&#21610;&#25991;&#12391;&#12399;&#23567;&#12373;&#12394;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#24040;&#22823;&#21270;&#12373;&#12379;&#12383;&#12426;&#12289;&#25126;&#22580;&#12398;&#12510;&#12490;&#12434;&#28516;&#27810;&#12395;&#12375;&#12383;&#12426;&#12289;&#25973;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#25429;&#39135;&#12375;&#12383;&#12426;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;&#32209;&#12398;&#36557;&#21218;&#12399;&#12289;&#26862;&#12395;&#26866;&#24687;&#12377;&#12427;&#29552;&#29467;&#12394;&#32905;&#39135;&#21205;&#29289;&#12420;&#24040;&#22823;&#12394;&#37326;&#29539;&#12394;&#12393;&#12391;&#22475;&#12417;&#23613;&#12367;&#12373;&#12428;&#12390;&#12356;&#12414;&#12377;&#12290;</p>
+
+<p>&#32209;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12289;&#12510;&#12490;&#12395;&#20107;&#27424;&#12367;&#12371;&#12392;&#12399;&#12394;&#12356;&#12398;&#12391;&#12289;&#24120;&#12395;&#35336;&#30011;&#36890;&#12426;&#20351;&#12360;&#12427;&#12391;&#12375;&#12423;&#12358;&#12290;&#21610;&#25991;&#12399;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#24375;&#21270;&#12377;&#12427;&#12392;&#12392;&#12418;&#12395;&#12289;&#36000;&#12369;&#12383;&#12392;&#24605;&#12431;&#12428;&#12383;&#26178;&#12391;&#12373;&#12360;&#25126;&#22580;&#12395;&#30041;&#12414;&#12425;&#12379;&#12427;&#12371;&#12392;&#12434;&#21487;&#33021;&#12395;&#12375;&#12414;&#12377;&#12290;&#32209;&#12398;&#36557;&#21218;&#12399;&#12289;&#12383;&#12392;&#12360;&#12502;&#12525;&#12483;&#12463;&#12373;&#12428;&#12390;&#12418;&#23550;&#25126;&#30456;&#25163;&#12434;&#25915;&#25731;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12289;&#12381;&#12398;&#12411;&#12392;&#12435;&#12393;&#12399;&#24375;&#38765;&#12394;&#24618;&#29289;&#12398;&#12383;&#12417;&#12289;&#12420;&#12377;&#12420;&#12377;&#12392;&#20498;&#12373;&#12428;&#12427;&#12371;&#12392;&#12418;&#12354;&#12426;&#12414;&#12379;&#12435;&#12290;</p>
+
+<p>&#33258;&#28982;&#12398;&#21147;&#12434;&#25805;&#12387;&#12390;&#23550;&#25126;&#30456;&#25163;&#12395;&#21521;&#12363;&#12431;&#12379;&#12427;&#12289;&#12381;&#12428;&#12364;&#32209;&#12398;&#39764;&#27861;&#12391;&#12377;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_EmpowerStrategy_Green_TallRotator.png"></div>
+			</div>
+        </dd>
+          </dl></div>
+
+
+</div>
+	
+	
+	
+<div class="panel-separator"></div>
+
+	<!-- wiz-content-rotator-block -- upper_tabbed_with_arrow -->
+
+
+<div id="jp-gameinfo-howbuilddeck-4" class="page-width">
+
+  <h2><span>&#12487;&#12483;&#12461;&#12398;&#32068;&#12415;&#26041;</span></h2>
+
+
+  <div class="slides page-width">
+    <dl class="showHideListItems" data-showhidelistitems-options="{defaultItem:0}"><dt>
+            <span>&#12487;&#12483;&#12461;&#12398;&#12497;&#12540;&#12484;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_HowToBuildADeck_PartsOfYourDeck_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12487;&#12483;&#12461;&#12398;&#12497;&#12540;&#12484;</h3>
+					<p>&#27083;&#31689;&#12391;&#12365;&#12427;&#12487;&#12483;&#12461;&#12398;&#31278;&#39006;&#12420;<b>&#12510;&#12472;&#12483;&#12463;</b>&nbsp;&#12395;&#12362;&#12369;&#12427;&#33394;&#12398;&#36949;&#12356;&#12395;&#12388;&#12356;&#12390;&#12452;&#12513;&#12540;&#12472;&#12364;&#12391;&#12365;&#12427;&#12424;&#12358;&#12395;&#12394;&#12387;&#12383;&#12392;&#12371;&#12429;&#12391;&#12289;&#26089;&#36895;&#12487;&#12483;&#12461;&#12434;&#32068;&#12435;&#12391;&#12415;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#12393;&#12398;&#12424;&#12358;&#12394;&#12487;&#12483;&#12461;&#12434;&#20316;&#12426;&#12383;&#12356;&#12398;&#12363;&#12289;&#32771;&#24942;&#12377;&#12409;&#12365;&#12509;&#12452;&#12531;&#12488;&#12364;&#12356;&#12367;&#12388;&#12363;&#12354;&#12426;&#12414;&#12377;&#12290;</p>
+
+<p>&#22522;&#26412;&#30340;&#25126;&#30053;&#12399;&#65311;<br>
+&#12393;&#12398;&#12424;&#12358;&#12395;&#12375;&#12390;&#21213;&#12388;&#12398;&#12363;&#65311;<br>
+&#23550;&#25126;&#30456;&#25163;&#12398;&#33029;&#23041;&#12395;&#23550;&#12375;&#12390;&#12289;&#12393;&#12358;&#23550;&#20966;&#12377;&#12427;&#12398;&#12363;&#65311;<br>
+&#36895;&#25915;&#65288;&#12300;&#12450;&#12464;&#12525;&#12301;&#65289;&#12487;&#12483;&#12461;&#12395;&#23550;&#12375;&#12390;&#12398;&#12503;&#12524;&#12452;&#12398;&#20181;&#26041;&#12399;&#65311;</p>
+
+<p>&#26126;&#30906;&#12394;&#31572;&#12360;&#12399;&#24517;&#35201;&#12354;&#12426;&#12414;&#12379;&#12435;&#12290;&#12487;&#12483;&#12461;&#12395;&#21152;&#12360;&#12427;&#12459;&#12540;&#12489;&#12434;&#38598;&#12417;&#12394;&#12364;&#12425;&#12289;&#12371;&#12358;&#12356;&#12387;&#12383;&#12371;&#12392;&#12434;&#38957;&#12398;&#29255;&#38533;&#12395;&#32622;&#12356;&#12390;&#12362;&#12365;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p><b>&#12510;&#12472;&#12483;&#12463;</b> &#20307;&#39443;&#12398;&#20013;&#12391;&#12418;&#38291;&#36949;&#12356;&#12394;&#12367;&#38754;&#30333;&#12356;&#20316;&#26989;&#12392;&#12394;&#12427;&#12487;&#12483;&#12461;&#27083;&#31689;&#12434;&#22823;&#12356;&#12395;&#27005;&#12375;&#12435;&#12391;&#12367;&#12384;&#12373;&#12356;&#65281;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_HowToBuildADeck_PartsOfYourDeck_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#20998;&#25955; &#12381;&#12398;&#65297;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_HowToBuildADeck_WhatCardsUsePT1_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#20998;&#25955; &#12381;&#12398;&#65297;</h3>
+					<p>&#26032;&#12375;&#12356;&#12487;&#12483;&#12461;&#12398;&#12459;&#12540;&#12489;&#12434;&#36984;&#12406;&#38555;&#12395;&#12399;&#12289;&#24517;&#12378;&#12381;&#12398;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12434;&#35211;&#12427;&#12424;&#12358;&#12395;&#12375;&#12414;&#12375;&#12423;&#12358;&#12290;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12364;&#22823;&#12365;&#12356;&#12411;&#12393;&#12289;&#12459;&#12540;&#12489;&#12399;&#12424;&#12426;&#24375;&#21147;&#12395;&#12394;&#12387;&#12390;&#12356;&#12365;&#12414;&#12377;&#12290;&#19968;&#26041;&#12391;&#12289;&#12381;&#12358;&#12375;&#12383;&#12459;&#12540;&#12489;&#12399;&#12363;&#12394;&#12426;&#24460;&#12395;&#12394;&#12425;&#12394;&#12356;&#12392;&#12466;&#12540;&#12512;&#12391;&#20351;&#12360;&#12394;&#12356;&#12392;&#12356;&#12358;&#20596;&#38754;&#12418;&#12354;&#12426;&#12414;&#12377;&#12290;&#12487;&#12483;&#12461;&#12395;&#12399;&#12373;&#12414;&#12374;&#12414;&#12394;&#12394;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#12459;&#12540;&#12489;&#12434;&#20837;&#12428;&#12383;&#12411;&#12358;&#12364;&#33391;&#12356;&#12391;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12434;&#31777;&#21336;&#12395;&#12452;&#12513;&#12540;&#12472;&#12377;&#12427;&#26041;&#27861;&#12399;&#12289;&#12466;&#12540;&#12512;&#12398;&#12479;&#12540;&#12531;&#25968;&#12391;&#25968;&#12360;&#12427;&#12371;&#12392;&#12391;&#12377;&#12290;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12399;&#12289;&#12381;&#12398;&#12459;&#12540;&#12489;&#12364;&#20351;&#12360;&#12427;&#12424;&#12358;&#12395;&#12394;&#12427;&#12414;&#12391;&#12395;&#24517;&#35201;&#12394;&#12362;&#12362;&#12424;&#12381;&#12398;&#12479;&#12540;&#12531;&#25968;&#12434;&#34920;&#12375;&#12390;&#12356;&#12414;&#12377;&#12290;&#12388;&#12414;&#12426;&#12289;&#65302;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12434;&#24517;&#35201;&#12392;&#12377;&#12427;&#12489;&#12521;&#12468;&#12531;&#12399;&#12289;&#65302;&#12479;&#12540;&#12531;&#30446;&#12414;&#12391;&#12399;&#24441;&#12395;&#31435;&#12385;&#12414;&#12379;&#12435;&#12290;&#36870;&#12395;&#12431;&#12378;&#12363;&#65297;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#12468;&#12502;&#12522;&#12531;&#12399;&#21363;&#24231;&#12395;&#20351;&#12358;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#12424;&#12387;&#12390;&#12289;&#65302;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#12459;&#12540;&#12489;&#12384;&#12369;&#12391;&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12377;&#12427;&#12371;&#12392;&#12399;<i>&#21487;&#33021;</i> &#12391;&#12377;&#12364;&#12289;&#12381;&#12358;&#12375;&#12383;&#22580;&#21512;&#12289;&#12466;&#12540;&#12512;&#38283;&#22987;&#12363;&#12425;&#65301;&#12479;&#12540;&#12531;&#12398;&#38291;&#12399;&#20309;&#12418;&#12391;&#12365;&#12394;&#12367;&#12394;&#12426;&#12414;&#12377;&#12290;&#23550;&#25126;&#30456;&#25163;&#12364;&#12381;&#12398;&#38291;&#12395;&#21610;&#25991;&#12434;&#21809;&#12360;&#12383;&#12426;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21484;&#21914;&#12375;&#12383;&#12426;&#12375;&#12383;&#22580;&#21512;&#12289;&#12383;&#12392;&#12360;&#22823;&#22411;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12434;&#21484;&#21914;&#12391;&#12365;&#12427;&#12424;&#12358;&#12395;&#12394;&#12387;&#12383;&#12392;&#12375;&#12390;&#12418;&#12289;&#12362;&#12381;&#12425;&#12367;&#22823;&#22793;&#12394;&#12500;&#12531;&#12481;&#12395;&#38501;&#12387;&#12390;&#12356;&#12427;&#12371;&#12392;&#12391;&#12375;&#12423;&#12358;&#12290;<br>
+&nbsp;</p>
+
+<p>&#21516;&#27096;&#12395;&#12289;&#65297;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12384;&#12369;&#12391;&#21344;&#12417;&#12425;&#12428;&#12383;&#12487;&#12483;&#12461;&#12399;&#38750;&#24120;&#12395;&#25915;&#25731;&#30340;&#12391;&#12377;&#12364;&#12289;&#12466;&#12540;&#12512;&#12398;&#24460;&#21322;&#12391;&#12399;&#12354;&#12394;&#12383;&#12398;&#24369;&#12356;&#21610;&#25991;&#12399;&#23550;&#25126;&#30456;&#25163;&#12398;&#22823;&#22411;&#12463;&#12522;&#12540;&#12481;&#12515;&#12540;&#12395;&#23550;&#12375;&#12390;&#35211;&#21155;&#12426;&#12377;&#12427;&#12371;&#12392;&#12399;&#24517;&#33267;&#12391;&#12377;&#12290;&#12371;&#12428;&#12425;&#12434;&#20998;&#25955;&#12373;&#12379;&#12390;&#12356;&#12367;&#12371;&#12392;&#12364;&#12289;&#12356;&#12385;&#12400;&#12435;&#36066;&#12356;&#12420;&#12426;&#26041;&#12391;&#12377;&#12290;</p>
+
+<p>&#21177;&#26524;&#30340;&#12394;&#37197;&#20998;&#12364;&#12391;&#12365;&#12390;&#12356;&#12427;&#12363;&#12434;&#30906;&#35469;&#12377;&#12427;&#12383;&#12417;&#12395;&#12289;&#36984;&#12435;&#12384;&#12459;&#12540;&#12489;&#12434;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#21029;&#12395;&#37325;&#12397;&#12390;&#20006;&#12409;&#12390;&#12415;&#12414;&#12375;&#12423;&#12358;&#12290;&#12414;&#12378;&#65297;&#12510;&#12490;&#12398;&#12459;&#12540;&#12489;&#12434;&#37325;&#12397;&#12390;&#32622;&#12365;&#12289;&#12381;&#12398;&#38563;&#12395;&#65298;&#12510;&#12490;&#12398;&#12459;&#12540;&#12489;&#12434;&#37325;&#12397;&#12390;&#32622;&#12367;&#12289;&#12392;&#12356;&#12358;&#24863;&#12376;&#12391;&#12377;&#12290;</p>
+
+<p>&#20006;&#12409;&#32066;&#12431;&#12427;&#12392;&#12289;&#39640;&#12467;&#12473;&#12488;&#12398;&#12459;&#12540;&#12489;&#12364;&#22810;&#36942;&#12366;&#12427;&#22580;&#21512;&#12399;&#12402;&#12392;&#30446;&#12391;&#12381;&#12428;&#12392;&#12431;&#12363;&#12426;&#12414;&#12377;&#12290;&#30446;&#23433;&#12392;&#12375;&#12390;&#12289;&#65297;&#12363;&#12425;&#65300;&#12398;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#12398;&#12459;&#12540;&#12489;&#12399;&#12289;&#65301;&#12510;&#12490;&#12539;&#12467;&#12473;&#12488;&#20197;&#19978;&#12398;&#12459;&#12540;&#12489;&#12424;&#12426;&#26522;&#25968;&#12364;&#22810;&#12367;&#12394;&#12427;&#12424;&#12358;&#12395;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;&#12487;&#12483;&#12461;&#12395;&#12424;&#12387;&#12390;&#12399;&#12371;&#12398;&#12523;&#12540;&#12523;&#12434;&#28961;&#35222;&#12391;&#12365;&#12427;&#12418;&#12398;&#12418;&#12354;&#12426;&#12414;&#12377;&#12364;&#12289;&#12402;&#12392;&#12388;&#12398;&#21442;&#32771;&#12392;&#12394;&#12427;&#12399;&#12378;&#12391;&#12377;&#12290;</p>
+
+<p>&#12487;&#12483;&#12461;&#12364;&#23569;&#12375;&#12300;&#38957;&#12391;&#12387;&#12363;&#12385;&#12301;&#12392;&#24605;&#12431;&#12428;&#12427;&#22580;&#21512;&#12289;&#12381;&#12398;&#20013;&#12391;&#12356;&#12385;&#12400;&#12435;&#12467;&#12473;&#12488;&#12364;&#39640;&#12356;&#12459;&#12540;&#12489;&#12395;&#12388;&#12356;&#12390;&#12289;&#26412;&#24403;&#12395;&#12487;&#12483;&#12461;&#12395;&#20837;&#12428;&#12427;&#12409;&#12365;&#12394;&#12398;&#12363;&#20877;&#32771;&#12375;&#12414;&#12375;&#12423;&#12358;&#12290;&#12459;&#12540;&#12489;&#12434;&#20837;&#12428;&#12394;&#12356;&#27770;&#26029;&#12364;&#26368;&#33391;&#12398;&#32080;&#26524;&#12434;&#25307;&#12367;&#12371;&#12392;&#12418;&#12354;&#12426;&#12414;&#12377;&#12290;</p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_HowToBuildADeck_WhatCardsUsePT1_TallRotator.png"></div>
+			</div>
+        </dd>
+              <dt>
+            <span>&#12393;&#12435;&#12394;&#12459;&#12540;&#12489;&#12364;<br>&#20351;&#12360;&#12427;&#65311; &#12381;&#12398;&#65297;</span>
+                      <img src="http://magic.wizards.com/sites/mtg/files/EN_HowToBuildADeck_MixManaPT1_HeaderBar.png"></dt>
+        <dd>
+			<div class="wrapper">
+				<div class="wrap">
+					<h3>&#12393;&#12435;&#12394;&#12459;&#12540;&#12489;&#12364;<br>&#20351;&#12360;&#12427;&#65311; &#12381;&#12398;&#65297;</h3>
+					<p><b>&#12510;&#12472;&#12483;&#12463;</b> &#12434;&#12503;&#12524;&#12452;&#12377;&#12427;&#20013;&#12391;&#12418;&#26368;&#12418;&#27005;&#12375;&#12356;&#30636;&#38291;&#12398;&#12402;&#12392;&#12388;&#12399;&#12289;&#26032;&#12375;&#12367;&#32068;&#12435;&#12384;&#12487;&#12483;&#12461;&#12434;&#20182;&#12398; <b>&#12510;&#12472;&#12483;&#12463;</b> &#12539;&#12503;&#12524;&#12452;&#12516;&#12540;&#30456;&#25163;&#12395;&#35430;&#12377;&#26178;&#12391;&#12375;&#12423;&#12358;&#12290;&#20840;&#21729;&#12364;&#21516;&#12376;&#26465;&#20214;&#12391;&#23550;&#25126;&#12391;&#12365;&#12427;&#12424;&#12358;&#12289;&#12487;&#12483;&#12461;&#27083;&#31689;&#12398;&#12523;&#12540;&#12523;&#12364;&#27161;&#28310;&#21270;&#12373;&#12428;&#12390;&#12356;&#12414;&#12377;&#12290;&#21336;&#12395;&#27005;&#12375;&#12416;&#12383;&#12417;&#12395;&#12289;&#12414;&#12383;&#31478;&#25216;&#12395;&#12362;&#12356;&#12390;&#12418;&#12289;&#22810;&#12367;&#12398;&#12503;&#12524;&#12452;&#12516;&#12540;&#12399;&#12371;&#12398;&#12523;&#12540;&#12523;&#12395;&#24467;&#12387;&#12390;&#12487;&#12483;&#12461;&#12434;&#27083;&#31689;&#12375;&#12414;&#12377;&#12290;</p>
+
+<p>&#12414;&#12378;&#65297;&#12388;&#30446;&#12398;&#12523;&#12540;&#12523;&#12392;&#12375;&#12390;&#12289;&#12487;&#12483;&#12461;&#12395;&#21547;&#12414;&#12428;&#12427;&#12459;&#12540;&#12489;&#12399;60&#26522;&#20197;&#19978;&#12391;&#12394;&#12369;&#12428;&#12400;&#12394;&#12426;&#12414;&#12379;&#12435;&#12290;&#12487;&#12483;&#12461;&#12395;&#20837;&#12428;&#12425;&#12428;&#12427;&#12459;&#12540;&#12489;&#12398;&#26522;&#25968;&#12395;&#19978;&#38480;&#12399;&#12354;&#12426;&#12414;&#12379;&#12435;&#12364;&#12289;&#26368;&#20302;60&#26522;&#12399;&#24517;&#35201;&#12391;&#12377;&#12290;&#25126;&#30053;&#30340;&#12394;&#35222;&#28857;&#12363;&#12425;&#35328;&#12360;&#12400;&#12289;&#12487;&#12483;&#12461;&#12395;&#20837;&#12427;&#12459;&#12540;&#12489;&#12398;&#26522;&#25968;&#12399;&#26368;&#20302;&#38480;&#12392;&#12394;&#12427;60&#26522;&#12395;&#36817;&#12356;&#26522;&#25968;&#12395;&#25233;&#12360;&#12383;&#12411;&#12358;&#12364;&#33391;&#12356;&#12391;&#12375;&#12423;&#12358;&#12290;&#32080;&#26524;&#30340;&#12395;&#12289;&#12381;&#12428;&#12364;&#12487;&#12483;&#12461;&#12398;&#23433;&#23450;&#24615;&#12434;&#39640;&#12417;&#12427;&#12371;&#12392;&#12395;&#12394;&#12426;&#12414;&#12377;&#12290;<br>
+&nbsp;</p>
+
+<p>&#65298;&#12388;&#30446;&#12398;&#12523;&#12540;&#12523;&#12392;&#12375;&#12390;&#12289;&#21516;&#12376;&#12459;&#12540;&#12489;&#12399;&#12487;&#12483;&#12461;&#12395;&#65300;&#26522;&#12378;&#12388;&#12414;&#12391;&#12375;&#12363;&#20837;&#12428;&#12425;&#12428;&#12414;&#12379;&#12435;&#12290;&#12388;&#12414;&#12426;&#12289;&#12383;&#12392;&#12360;&#12400;&#12354;&#12394;&#12383;&#12398;&#12487;&#12483;&#12461;&#12395;&#12298;<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B5%E3%81%AE%E5%A4%A7%E7%89%99%E7%8D%A3" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B5%E3%81%AE%E5%A4%A7%E7%89%99%E7%8D%A3">&#12463;&#12525;&#12540;&#12469;&#12398;&#22823;&#29273;&#29539;</a> &#12299;&#12364;&#65297;&#26522;&#20837;&#12387;&#12390;&#12356;&#12427;&#22580;&#21512;&#12289;&#12354;&#12392;&#65299;&#26522;&#12414;&#12391;&#12381;&#12398;&#12459;&#12540;&#12489;&#12434;&#12487;&#12483;&#12461;&#12395;&#21152;&#12360;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12364;&#12289;&#12298;<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B5%E3%81%AE%E5%A4%A7%E7%89%99%E7%8D%A3" class="autocard-link" data-image-url="http://gatherer.wizards.com/Handlers/Image.ashx?type=card&amp;name=%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B5%E3%81%AE%E5%A4%A7%E7%89%99%E7%8D%A3">&#12463;&#12525;&#12540;&#12469;&#12398;&#22823;&#29273;&#29539;</a> &#12299;&#12364;&#65300;&#26522;&#20837;&#12387;&#12383;&#26178;&#28857;&#12391;&#12289;&#12381;&#12428;&#20197;&#19978;&#21152;&#12360;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12394;&#12356;&#12371;&#12392;&#12395;&#12394;&#12426;&#12414;&#12377;&#12290;&#12371;&#12398;&#12523;&#12540;&#12523;&#12398;&#20363;&#22806;&#12364;&#22522;&#26412;&#22303;&#22320;&#12391;&#12377;&#12290;&#12298;&#24179;&#22320;&#12299;&#12420;&#12298;&#23798;&#12299;&#12289;&#12298;&#27836;&#12299;&#12289;&#12298;&#23665;&#12299;&#12289;&#12298;&#26862;&#12299;&#12392;&#12356;&#12387;&#12383;&#12459;&#12540;&#12489;&#12398;&#12371;&#12392;&#12391;&#12289;&#22909;&#12365;&#12394;&#12384;&#12369;&#20309;&#26522;&#12391;&#12418;&#12354;&#12394;&#12383;&#12398;&#12487;&#12483;&#12461;&#12395;&#21152;&#12360;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;</p>
+
+<p>&#26368;&#24460;&#12395;&#12289;&#12452;&#12505;&#12531;&#12488;&#12395;&#12424;&#12387;&#12390;&#20351;&#12360;&#12427;&#12459;&#12540;&#12489;&#12399;&nbsp;<b>&#12510;&#12472;&#12483;&#12463;</b>&nbsp;&#12398;20&#24180;&#38291;&#12398;&#27508;&#21490;&#12391;&#30331;&#22580;&#12375;&#12383;&#12459;&#12540;&#12489;&#12377;&#12409;&#12390;&#12392;&#12356;&#12358;&#26178;&#12418;&#12354;&#12428;&#12400;&#12289;&#26368;&#26032;&#12459;&#12540;&#12489;&#12398;&#12415;&#12392;&#12394;&#12427;&#22580;&#21512;&#12418;&#12354;&#12426;&#12414;&#12377;&#12290;&#12393;&#12398;&#12424;&#12358;&#12394;&#22580;&#25152;&#12391;&#12503;&#12524;&#12452;&#12377;&#12427;&#22580;&#21512;&#12391;&#12418;&#12289;&#24517;&#12378;&#12466;&#12540;&#12512;&#38283;&#22987;&#21069;&#12395;&#12289;&#20351;&#29992;&#12375;&#12390;&#12418;&#22823;&#19976;&#22827;&#12394;&#12459;&#12540;&#12489;&#12398;&#12475;&#12483;&#12488;&#12394;&#12398;&#12363;&#12393;&#12358;&#12363;&#12434;&#23550;&#25126;&#30456;&#25163;&#12392;&#30906;&#35469;&#12377;&#12427;&#12424;&#12358;&#12395;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;&#12510;&#12472;&#12483;&#12463;&#12434;&#22987;&#12417;&#12383;&#12400;&#12363;&#12426;&#12398;&#22580;&#21512;&#12399;&#12289;&#12381;&#12428;&#12411;&#12393;&#21839;&#38988;&#12395;&#12399;&#12394;&#12425;&#12394;&#12356;&#12392;&#24605;&#12356;&#12414;&#12377;&#12364;&#12289;&#24565;&#12395;&#12399;&#24565;&#12434;&#20837;&#12428;&#12414;&#12375;&#12423;&#12358;&#12290;</p>
+
+<p>&#12354;&#12392;&#12399;&#12289;&#33258;&#20998;&#12398;&#20316;&#21697;&#12391;&#12354;&#12427;&#12487;&#12483;&#12461;&#12434;&#25126;&#38360;&#12398;&#22580;&#12395;&#20986;&#12377;&#12384;&#12369;&#12391;&#12377;&#65281;</p>
+
+<p><a class="cta" href="/ja/content/jphow-play">&#12466;&#12540;&#12512;&#12398;&#36914;&#12417;&#26041;</a></p>
+				</div>
+				<div class="image-article">
+										<img src="http://magic.wizards.com/sites/mtg/files/images/featured/EN_HowToBuildADeck_MixManaPT1_TallRotator.png"></div>
+			</div>
+        </dd>
+          </dl></div>
+
+
+</div>
+	
+	
+	
+</div>    
+        </div>
+  </div>
+
+    </div>
+
+  </div>
+</div> <!-- /block-inner /block -->  </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div id="back-to-top">
+      <a href="#viewport">トップに戻る</a>
+    </div>
+    <div id="where-to-buy">
+      <div class="content page-width">
+        <form action="/ja/game-info/gameplay/how-to-build-a-deck" method="post" id="wiz-store-and-event-locator-search-form--2" accept-charset="UTF-8"><div><div class="intro"><div class="wrap"><h5>プレイまたは購入が可能な場所</h5><p>最寄りのマジック：ザ・ギャザリング<br />取り扱い店舗を検索いただけます</p></div></div><div class="form"><div class="wrap"><span class="column zip-code"><div class="form-item form-type-textfield form-item-search-string">
+ <input placeholder="所在地または郵便番号を入力" type="text" id="edit-search-string--4" name="search-string" value="" size="25" maxlength="128" class="form-text" />
+</div>
+</span><span class="column actions"><button class="action-button" type="submit">今すぐ検索！</button></span></div></div><input class="hide form-submit" type="submit" id="edit-search-button--4" name="op" value="今すぐ検索！" /><input type="hidden" name="form_build_id" value="form-fHHPuOiU3YouIvgV_pAO7MHP86NyTxrNrz5L8Zs6i7Q" />
+<input type="hidden" name="form_id" value="wiz_store_and_event_locator_search_form" />
+</div></form>      </div>
+    </div>
+
+    <div class="main-footer">
+      <div class="content page-width">
+        <div class="text">
+                      <div id="locale-select">
+              <label for="locale-select-ddl">言語を選択</label>
+
+              <div class="select-wrapper">
+                <select id="locale-select-ddl">
+                  <option value="/zh-hans/node/117649" >简体中文</option><option value="/zh-hant/node/117652" >繁體中文</option><option value="/fr/node/116433" >Français</option><option value="/de/node/116468" >Deutsch</option><option value="/it/node/117638" >Italiano</option><option value="/ja/node/116662" selected>日本語</option><option value="/ko/node/117662" >한국어</option><option value="/pt-br/node/117644" >Português (Brasil)</option><option value="/ru/node/117877" >Русский</option><option value="/es/node/117647" >Español</option><option value="/en/node/46377" >English</option>                </select>
+              </div>
+            </div>
+          
+          
+
+      <p class="brand-family-title">Wizards Brand Family</p>
+    <p class="brand-family-menu"><a href="http://magic.wizards.com" target="_blank">magic</a> <em>|</em> <a href="http://www.wizards.com/dnd" target="_blank">d&amp;d</a> <em>|</em> <a href="http://www.wizards.com/wpn" target="_blank">wpn</a> <em>|</em> <a href="http://dm.takaratomy.co.jp" target="_blank">duel masters</a> <em>|</em> <a href="http://www.wizards.com/default.asp?x=ah/welcome" target="_blank">avalon hill</a></p>
+  <p><a href="http://company.wizards.com/tou" target="_blank">利用規約</a> <em>|</em> <a href="http://company.wizards.com/conduct" target="_blank">行動規範</a> <em>|</em> <a href="http://company.wizards.com/policy" target="_blank">プライバシー・ポリシー</a> <em>|</em> <a href="http://www.wizards.com/customerservice" target="_blank">Customer Service</a> <em>|</em> <a href="/ja/cookies">クッキー</a></p>
+  <p class="copyright">© 1995-2016 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+
+        </div>
+        
+
+      <p class="logo wizard">
+      <a href="http://company.wizards.com"
+         target="_blank"
+         title="Wizards of the Coast"
+        ><img src="/sites/all/themes/wiz_mtg/img/interface/wizard-of-the-coast-logo.png" alt="Wizards of the Coast" /></a>
+    </p>
+  
+      <p class="logo hasbro">
+      <a href="http://www.hasbro.com"
+         target="_blank"
+         title="Hasbro"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/hasbro-logo.svg" alt="Hasbro" /></a>
+    </p>
+  
+      <p class="logo privacy">
+      <a href="http://www.esrb.org/confirm/wizards-confirmation.aspx"
+         target="_blank"
+         title="ESRB Privacy Certified"
+	    ><img src="/sites/all/themes/wiz_mtg/img/interface/esrb-badge.png" alt="ESRB Privacy Certified" /></a>
+    </p>
+  
+      </div>
+    </div>
+  </footer>
+  </div>
+
+<div id="cookies-warning">
+	<div class="wrap page-width">
+		<div class="text">
+			<p>
+        We use cookies on this site to enhance your user experience. By clicking any link on this page or by clicking <strong>Yes</strong>, you are giving your consent for us to set cookies.        <a href="http://company.wizards.com/policies/web/cookie" target="_blank"> (Learn more about cookies)</a>
+      </p>
+		</div>
+		<p class="actions">
+			<button type="button" class="button agree">承諾する</button>
+			<a href="http://company.wizards.com/policies/web/cookie" target="_blank" class="button disagree">No, I want to find out more</a>
+		</p>
+	</div>
+</div>      <div class="region region-page-bottom">
+    <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>  </div>
+  </div>
+
+	<!-- Crazy Egg -->
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0009/9185.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d92d812ac7","applicationID":"22111946","transactionName":"YVNXMkcAD0sHAUdcXFgZdAVBCA5WSRJSUlZpW1QIVAYESjkMXFFWaUBcA0I+EVkBBw==","queueTime":0,"applicationTime":1885,"atts":"TRRURA8aHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

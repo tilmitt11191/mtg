@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+img {
+	border: 0;
+}
+li {
+	list-style: none;
+}
+#start_slideshow_wrap {
+width:960px;
+height:380px;
+margin:0 0 41px 0;
+padding:10px;
+background:#000000;
+}
+#start_slideshow {
+position: relative;
+width:960px;
+height:380px;
+}
+#start_slideshow ul {
+margin:0;
+}
+#start_slideshow ul:after { content: ''; display: block; clear: both; height: 0;}
+#start_slideshow ul li {
+	display:none;
+	position: absolute;
+	list-style: none;
+}
+#start_slideshow ul li a {
+	display:block;
+	position:relative;
+	background:#fff;
+}
+#start_slideshow ul li a span {
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100px;
+	height:100px;
+	background:#fff;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+* html #start_slideshow ul li a span {
+	display:none;
+}
+#start_slideshow ul li img {
+	width: 230px;
+	height: 185px;
+}
+#start_slideshow ul li.item1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#start_slideshow ul li.item1 img {
+	width: 480px;
+	height: 380px;
+}
+#start_slideshow ul li.item2 {top: 0; left: 490px;}
+#start_slideshow ul li.item3 {top: 0; left: 730px;}
+#start_slideshow ul li.item4 {top: 195px; left: 730px;}
+#start_slideshow ul li.item5 {top: 195px; left: 490px;}
+
+
+/*
+ * 2015.04.10
+ * スライダースマホ対応
+ * SAKUSAKU Akira Miura
+ * gurasa.aki@gmail.com
+ */
+@media screen and (max-width: 640px) {
+	#start_slideshow_wrap {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		background: transparent;
+	}
+	#start_slideshow {
+		width: auto;
+		height: auto;
+		margin: 0 20px 40px 20px;
+		background: #000;
+	}
+	#start_slideshow ul li {
+		position: static;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 2px;
+		float: left;
+	}
+	#start_slideshow ul li.item1 { position: static; width: 100%; }
+	#start_slideshow ul li.item2 { position: static; width: 25%; }
+	#start_slideshow ul li.item3 { position: static; width: 25%; }
+	#start_slideshow ul li.item4 { position: static; width: 25%; }
+	#start_slideshow ul li.item5 { position: static; width: 25%; }
+	#start_slideshow ul li img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	#start_slideshow ul li.item1 img {
+		width: 100%;
+		height: auto;
+	}
+}
