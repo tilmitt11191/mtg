@@ -57,12 +57,11 @@ class Web
 
 		# Request the HTML before parsing
 		@html_row_data = open(url).read
-
 		# Replace original DOCTYPE with a valid DOCTYPE
 		@html_row_data = @html_row_data.sub(/^<!DOCTYPE html(.*)$/, '<!DOCTYPE html>')
-
 		# Parse
 		@dom = Nokogiri::HTML(@html_row_data)
+		
 		@cache[url] = @dom
 		log.info "return dom. the title of url[#{url}] is [#{@dom.title}]."
 		return @dom

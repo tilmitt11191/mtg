@@ -4,8 +4,8 @@ require "logger"
 require 'diff/lcs'
 
 def convert_period(str)
-	if str.nil? then return nil end
-	return str.gsub(",", "PERIOD")
+	return nil if str.nil?
+	str.gsub(",", "PERIOD")
 end
 
 def reconvert_period(str)
@@ -13,9 +13,19 @@ def reconvert_period(str)
 	return str.gsub("PERIOD",",").to_s
 end
 
+def escape_by_double_quote str
+	return "\"\"" if str.nil? 
+	return str if str.match(/^".*"$/)
+	"\""+str.gsub("\"", "\\\"\"")+"\""
+end
+
+def unescape_by_double_quote str
+	str.gsub(/^\"|\"$/,'')
+end
+
 def diff(file1, file2) #TODO
-	a = File.open(file1, 'r:sjis').readlines
-	b = File.open(file2, 'r:sjis').readlines
+	a = File.open(file1, 'r:Shift_JIS').readlines
+	b = File.open(file2, 'r:Shift_JIS').readlines
 	diffs = Diff::LCS.diff(a,b)
 	p diffs
 end
@@ -50,6 +60,6 @@ def url_exists?(url, logger, limit = 10)
 end
 
 def convert_number_to_triple_digits(num)
-	puts sprintf("%03d",num)
+	sprintf("%03d",num)
 end
 

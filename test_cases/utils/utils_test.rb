@@ -7,7 +7,6 @@ require '../../lib/util/tests.rb' #for must
 require '../../lib/util/utils.rb'
 
 class Test_utils < Test::Unit::TestCase
-	#@log = Logger.new("../../log")
 	@log
 	class << self
 		def startup
@@ -28,26 +27,28 @@ class Test_utils < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 	end
 	
+	must "escape_by_double_quote str" do
+		assert_equal "\"aaa\"", escape_by_double_quote("aaa")
+	end
+
+	must "unescape_by_double_quote str" do
+		assert_equal "aaa", unescape_by_double_quote("\"aaa\"")
+	end
+
+=begin	
 	#check url_exists?
 	must "correct url" do
-		begin
-			@log.info "#{__method__} start."
-			correct_url='http://www.google.com'
-			correct_result = url_exists?(correct_url,@log)
-			assert_equal true, correct_result
-		rescue => e
-			write_error_to_log(e,@log)
-		end
+		@log.info "#{__method__} start."
+		correct_url='http://www.google.com'
+		correct_result = url_exists?(correct_url,@log)
+		assert_equal true, correct_result
 	end
 	
 	must "incorrect url" do
-		begin
-			incorrect_url='http://www.google__.com'
-			incorrect_result = url_exists?(incorrect_url,@log)
-			assert_equal false, incorrect_result
-		rescue => e
-			write_error_to_log(e,@log)
-		end
+		incorrect_url='http://www.google__.com'
+		incorrect_result = url_exists?(incorrect_url,@log)
+		assert_equal false, incorrect_result
 	end
+=end
 	
 end

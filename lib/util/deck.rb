@@ -173,7 +173,8 @@ class Deck
 						if contents.nil? then
 							@log.warn "contents of[" + card.name + "]." + form + " is nil"
 						end
-						file.print convert_period(contents.to_s).to_s + ","
+						#file.print convert_period(contents.to_s).to_s + ","
+						file.print contents.to_s + ","
 					end
 					file.print "\n"
 				end	
@@ -183,7 +184,7 @@ class Deck
 			get_contents_of_all_cards
 			get_sum_of_generating_manas
 			@mana_analyzer.calc_sum_of_needed_mana
-			File.open(filename, "w:sjis") do |file|
+			File.open(filename, "w:Shift_JIS",:invalid => :replace, :undef => :replace, :replace => '?') do |file|
 				set_information
 				file.puts "info," + @deckname.to_s + " " + @price_of_all.to_s + " " + @sum_of_mainboard_generating_manas.to_s
 				previous_type = "info"
@@ -207,8 +208,9 @@ class Deck
 						if contents.nil? then
 							@log.fatal "contents of[" + card.name + "]." + form + " is nil"
 						end
-						@log.info "write " + card.name + "." + form + "[" + convert_period(contents.to_s).to_s + "]"
-						file.print convert_period(contents.to_s).to_s + ","
+						#@log.info "write " + card.name + "." + form + "[" + convert_period(contents.to_s).to_s + "]"
+						@log.info "write " + card.name + "." + form + "[" + contents.to_s + "]"
+						file.print contents.to_s + ","
 					end
 					file.print "\n"
 					previous_type = card.card_type
@@ -265,7 +267,7 @@ class Deck
 			end
 			
 			if card_type.include?("land") or card_type.include?("creature") or card_type.include?("spell") or card_type.include?("sideboardCards") then
-				cardname=reconvert_period(cardname)
+				#cardname=reconvert_period(cardname)
 				card = Card.new(cardname.to_s, @log)
 				card.quantity = quantity
 				card.store_url = store_url

@@ -3,6 +3,7 @@
 require	"logger"
 require "mechanize"
 require 'rexml/document'
+require 'active_support/core_ext/object' #for blank?
 require "../../lib/util/price.rb"
 require '../../lib/util/mana_analyzer.rb'
 
@@ -19,6 +20,7 @@ class Card
 	attr_accessor :name, :card_type, :quantity, :price, :value, :store_url, :generating_mana_type
 	
 	@manacost #string
+	@color
 	@manacost_array #array[string]
 	@manacost_point #点数で見たマナコスト
 	@type ##TODO: rename to ...
@@ -27,16 +29,27 @@ class Card
 	@illustrator
 	@rarity
 	@cardset
-	attr_accessor :manacost, :manacost_array, :manacost_point, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
+	attr_accessor :manacost, :color, :manacost_array, :manacost_point, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
 	
 	def initialize(name, logger)
 		@log = logger
 		@log.info "Card.initialize"
-		@name = name
+		@name = escape_by_double_quote name
 		@price = Price.new(self, @log)
 		@value = nil
 		@store_url = nil
-		@generating_mana_type = ""
+		@generating_mana_type = nil
+
+		@manacost = ''
+		@color = ''
+		@manacost_array = []
+		@manacost_point = ''
+		@type = ''
+		@oracle = ''
+		@powertoughness = ''
+		@illustrator = ''
+		@rarity = ''
+		@cardset = ''
 	end
 	
 	def set_store_page(url)
@@ -76,17 +89,17 @@ class Card
 			doc = REXML::Document.new(File.open("../../cards/nil"))
 			root = doc.elements["root"]
 		end
-		
-		@name= root.elements["name"].text
-		@manacost= root.elements["manacost"].text
-		@manacost_point= root.elements["manacost_point"].text
-		@type= root.elements["type"].text
-		@oracle= root.elements["oracle"].text
-		@powertoughness= root.elements["powertoughness"].text
-		@illustrator= root.elements["illustrator"].text
-		@rarity= root.elements["rarity"].text
-		@cardset= root.elements["cardset"].text
-		@generating_mana_type= root.elements["generating_mana_type"].text
+		# extract
+		@name = escape_by_double_quote root.elements["name"].text
+		@manacost = root.elements["manacost"].text
+		@manacost_point = root.elements["manacost_point"].text
+		@type = root.elements["type"].text
+		@oracle = escape_by_double_quote root.elements["oracle"].text
+		@powertoughness = root.elements["powertoughness"].text
+		@illustrator = root.elements["illustrator"].text
+		@rarity = root.elements["rarity"].text
+		@cardset = root.elements["cardset"].text
+		@generating_mana_type = root.elements["generating_mana_type"].text
 		
 		@log.info @name.to_s + ".read_from_dom() finished"
 	end
@@ -96,9 +109,9 @@ class Card
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
 		agent = Mechanize.new
 		page = agent.get('http://www.wisdom-guild.net/')
-		query = @name.to_s
+		query = unescape_by_double_quote @name.to_s
 		@log.debug "query: " + query
-		page.form.q = @name.to_s
+		page.form.q = unescape_by_double_quote @name.to_s
 		card_page = page.form.submit
 		
 		if !card_page.search('tr/th.dc').text.include?("カード名") then
@@ -208,7 +221,7 @@ class Card
 			end
 		end
 		
-		set_generating_mana_type()
+		set_generating_mana_type
 		@log.info "read_from_url(" + url + ") finished."
 	end
 
@@ -250,8 +263,8 @@ class Card
 		root.add_element("generating_mana_type").add_text @generating_mana_type.to_s
 		
 		@log.info "write dom to[" + dir.to_s + "]"
-		doc.write(File.new(dir.to_s + @name.to_s, "w+"))
-		@log.info "card(" + @name.to_s + ").write_contents() finished."
+		doc.write(File.new(dir.to_s + unescape_by_double_quote(@name.to_s), "w+"))
+		@log.info "card(" + unescape_by_double_quote(@name.to_s) + ").write_contents() finished."
 	end
 
 	def extract_manacost(str)
@@ -273,7 +286,41 @@ class Card
 			else @manacost_point += 1
 			end
 		end
+		
+		decide_color
+		
 		@log.debug "extracted from(" + str.to_s + ") to (" + @manacost.to_s + ")"
+	end
+	
+	def decide_color
+		if @manacost.blank? then
+			@color = 'land'
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}$/) then
+			@color = 'colorless'
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}$/) then
+			@color = 'colorless'
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}W{0,}$/) then
+			@color = 'white'			
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}U{0,}$/) then
+			@color = 'blue'			
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}B{0,}$/) then
+			@color = 'black'			
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}R{0,}$/) then
+			@color = 'red'			
+			@log.debug "@color[#{@color}]"
+		elsif @manacost.match(/^[0-9]{0,}G{0,}$/) then
+			@color = 'green'			
+			@log.debug "@color[#{@color}]"
+		else
+			@color = 'multi'			
+			@log.debug "@color[#{@color}]"
+		end
 	end
 	
 	def extract_type(str)
@@ -281,7 +328,7 @@ class Card
 	end
 	
 	def extract_oracle(str)
-		@oracle = str
+		@oracle = escape_by_double_quote str
 	end
 	
 	def extract_powertoughness(str)
@@ -339,7 +386,7 @@ class Wish_card < Card
 	#"Kalitas, Traitor of Ghet",1,59417,Mythic Rare,OGW,86/184,No,Yes
 		if (line.split("\"").size != 1) && #except head line or blank line
 			(quantity = line.split("\"")[2].split(',').size == 7) then
-			@name = line.split("\"")[1]
+			@name = escape_by_double_quote line.split("\"")[1]
 			@quantity = line.split("\"")[2].split(',')[1]
 			@id = line.split("\"")[2].split(',')[2]
 			@rarerity = line.split("\"")[2].split(',')[3]

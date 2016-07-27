@@ -117,7 +117,7 @@ class Mana_analyzer
 		when "nil" then 
 			@log.info "set_generating_mana_type(" + card.name.to_s + ") finished.return nil."
 			@log.info "Please set manually. set_generating_mana_type(" + card.name.to_s + ") finished."
-			@generating_mana_type = "nil"
+			@generating_mana_type = nil
 			return @generating_mana_type
 		when "basicLand"
 			@log.debug "basic land"
@@ -147,7 +147,7 @@ class Mana_analyzer
 		else
 			@log.debug "else"
 			@log.info "Please set manually. set_generating_mana_type(" + card.name.to_s + ") finished."
-			@generating_mana_type = "manually"
+			@generating_mana_type = nil
 			return @generating_mana_type
 		end
 		@log.error "must return before"
@@ -161,7 +161,7 @@ class Mana_analyzer
 		
 		if card.oracle.nil? then
 			@log.debug "oracle is nil.return nil."
-			return "nil"
+			return nil
 		end
 
 		# basic land
@@ -259,7 +259,7 @@ class Mana_analyzer
 		end
 
 		@log.debug "cardtype is nil.return."
-		return "nil"
+		return nil
 	end
 	
 

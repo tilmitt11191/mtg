@@ -1,222 +1,195 @@
-smdb.create_pointranking_list_of.rb start.
-10, 093
-10, 028
-10, 046
-10, 162
-10, 002
-10, 190
-10, 006
-10, 136
-9.9, 072
-9.8, 137
-9.8, 185
-9.7, 191
-9.7, 017
-9.7, 005
-9.5, 003
-9.5, 123
-9.4, 039
-9.3, 183
-9.2, 086
-9.1, 040
-9.1, 117
-8.9, 189
-8.8, 047
-8.8, 015
-8.7, 087
-8.6, 184
-8.4, 181
-8, 098
-7.9, 146
-7.8, 111
-7.6, 080
-7.4, 130
-7.3, 176
-7.3, 056
-7.1, 118
-7, 085
-6.8, 156
-6.5, 106
-6.1, 132
-6, 170
-5.5, 065
-5.4, 109
-5.4, 007
-5.2, 155
-5, 097
-4.4, 064
-4.2, 069
-3.8, 045
-3.8, 133
-3.4, 033
-3.4, 024
-3.3, 099
-3.2, 169
-2.9, 165
-2.8, 023
-2.7, 152
-2.7, 071
-2.7, 049
-2.6, 142
-2.5, 013
-2.5, 200
-2.5, 092
-2.4, 140
-2.3, 103
-2.3, 168
-2.3, 164
-2.3, 018
-2.2, 161
-2.2, 022
-2.1, 095
-2.1, 158
-2, 128
-2, 204
-2, 163
-2, 129
-2, 159
-2, 124
-1.9, 016
-1.9, 001
-1.9, 193
-1.8, 174
-1.8, 175
-1.7, 004
-1.7, 011
-1.7, 062
-1.7, 042
-1.7, 096
-1.7, 094
-1.6, 125
-1.6, 063
-1.6, 081
-1.6, 088
-1.5, 054
-1.5, 116
-1.5, 100
-1.5, 134
-1.4, 027
-1.4, 143
-1.4, 149
-1.4, 021
-1.4, 050
-1.4, 012
-1.3, 122
-1.3, 199
-1.3, 079
-1.3, 119
-1.3, 091
-1.3, 166
-1.3, 077
-1.2, 115
-1.2, 019
-1.2, 066
-1.2, 148
-1.2, 010
-1.1, 026
-1.1, 009
-1.1, 102
-1.1, 044
-1.1, 090
-1.1, 025
-1.1, 030
-1.1, 150
-1.1, 180
-1.1, 108
-1.1, 031
-1.1, 147
-1.1, 186
-1.1, 110
-1, 167
-1, 058
-1, 059
-1, 188
-1, 060
-1, 057
-1, 043
-1, 089
-1, 014
-1, 008
-1, 203
-1, 187
-1, 201
-1, 084
-1, 173
-1, 196
-1, 073
-1, 121
-1, 195
-1, 113
-1, 194
-1, 104
-1, 076
-1, 112
-1, 034
-1, 082
-1, 127
-1, 151
-1, 061
-1, 145
-1, 038
-1, 107
-1, 198
-1, 114
-1, 029
-1, 035
-1, 160
-1, 048
-1, 192
-0.9, 197
-0.9, 179
-0.9, 070
-0.9, 153
-0.9, 202
-0.9, 178
-0.9, 182
-0.9, 154
-0.9, 067
-0.9, 074
-0.9, 053
-0.9, 120
-0.9, 075
-0.9, 141
-0.9, 068
-0.9, 037
-0.9, 138
-0.9, 126
-0.9, 135
-0.9, 083
-0.9, 041
-0.8, 101
-0.8, 055
-0.8, 105
-0.8, 078
-0.8, 172
-0.8, 036
-0.8, 177
-0.8, 171
-0.7, 051
-0.7, 052
-0.7, 139
-0.7, 144
-0.7, 157
-0.7, 032
-0.7, 131
-0.6, 020
-0.6, 205
-0.4, 220
-0.4, 214
-0.4, 211
-0.4, 206
-0.4, 207
-0.4, 218
-0.4, 212
-0.4, 219
-0.4, 216
-0.3, 215
-0.3, 213
-0.3, 217
-0.3, 209
-0.3, 208
-0.3, 210
-smdb.create_pointranking_list_of.rb finished.
+Loaded suite ../../test_cases/site/wisdomGuild_test
+Started
+wisdomGuild_test.rb start.
+test_get_contents_of_Blessed_Alliance,_which_encoding_include_U_+_2022 start.
+get_file
+request_with_entity
+parse
+shutdown
+log
+default_encoding
+force_default_encoding
+keep_alive_time
+pluggable_parser
+proxy_addr
+auth
+cert
+add_auth
+ssl_version
+conditional_requests
+conditional_requests=
+ca_file
+cookie_jar
+cookie_jar=
+cookies
+follow_meta_refresh
+follow_meta_refresh=
+key
+follow_meta_refresh_self
+follow_meta_refresh_self=
+gzip_enabled
+gzip_enabled=
+idle_timeout
+idle_timeout=
+ignore_bad_chunking
+ignore_bad_chunking=
+keep_alive
+keep_alive=
+max_file_buffer
+max_file_buffer=
+redirect_ok
+follow_redirect?
+redirect_ok=
+follow_redirect=
+redirection_limit
+redirection_limit=
+request_headers
+request_headers=
+retry_change_requests
+retry_change_requests=
+robots=
+scheme_handlers
+scheme_handlers=
+user_agent_alias=
+watch_for_set
+certificate
+cert_store
+pass=
+verify_callback
+watch_for_set=
+put
+open_timeout=
+ca_file=
+cert=
+cert_store=
+key=
+ssl_version=
+verify_callback=
+verify_mode=
+pass
+agent
+reset
+post
+pretty_print
+history_added=
+default_encoding=
+page
+force_default_encoding=
+submit
+keep_alive_time=
+delete
+head
+get
+basic_auth
+html_parser
+html_parser=
+log=
+verify_mode
+user_agent
+user_agent=
+proxy_port
+max_history
+max_history=
+back
+proxy_user
+history
+proxy_pass
+current_page
+visited?
+visited_page
+content_encoding_hooks
+history_added
+post_connect_hooks
+pre_connect_hooks
+click
+set_proxy
+robots
+resolve
+download
+open_timeout
+transact
+read_timeout
+read_timeout=
+to_yaml
+to_yaml_properties
+psych_to_yaml
+dclone
+to_json
+pretty_print_cycle
+pretty_print_instance_variables
+pretty_print_inspect
+instance_of?
+public_send
+instance_variable_get
+instance_variable_set
+instance_variable_defined?
+remove_instance_variable
+private_methods
+kind_of?
+instance_variables
+tap
+method
+public_method
+singleton_method
+is_a?
+extend
+pretty_inspect
+define_singleton_method
+to_enum
+enum_for
+<=>
+===
+=~
+!~
+eql?
+respond_to?
+freeze
+inspect
+display
+object_id
+send
+to_s
+nil?
+hash
+class
+singleton_class
+clone
+dup
+itself
+taint
+tainted?
+untaint
+untrust
+trust
+untrusted?
+methods
+protected_methods
+frozen?
+public_methods
+singleton_methods
+!
+==
+!=
+__send__
+equal?
+instance_eval
+instance_exec
+__id__
+E
+===============================================================================
+Error: test_get_contents_of_Blessed_Alliance,_which_encoding_include_U_+_2022(Test_wisdomGuild):
+  NoMethodError: undefined method `encode' for #<Mechanize::Page:0x000000032352f0>
+  Did you mean?  encoding
+                 code
+/media/sf_f/program/mtg/lib/site/wisdomGuild.rb:48:in `get_card_from_url'
+../../test_cases/site/wisdomGuild_test.rb:70:in `block in <class:Test_wisdomGuild>'
+===============================================================================
+wisdomGuild_test.rb finished.
+
+
+Finished in 0.223668328 seconds.
+------
+1 tests, 0 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
+0% passed
+------
+4.47 tests/s, 0.00 assertions/s

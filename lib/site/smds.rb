@@ -5,7 +5,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'active_support/core_ext/object' #for blank?
 require '../../lib/util/site.rb'
-require '../../lib/util/store.rb'
+require '../../lib/site/wisdomGuild.rb'
 require '../../lib/util/card.rb'
 require '../../lib/util/price_manager.rb'
 

@@ -30,7 +30,6 @@ class Test_channelfireball < Test::Unit::TestCase
 		@site = Channelfireball.new(@log)
 	end
 
-=begin
 	must "get_limited_set_reviews with emn white " do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -129,7 +128,6 @@ class Test_channelfireball < Test::Unit::TestCase
 		assert_equal score, "2.5"
 		assert_equal comment, "\"test\"\n"
 	end
-=end
 
 	must "extract scores and comments of Boon of Emrakul from emn red html" do
 		puts "#{__method__} start."

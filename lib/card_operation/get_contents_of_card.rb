@@ -49,7 +49,7 @@ log.info "read_from_url exceptions finished."
 
 
 rescue => e
-	puts_write(e,log)
+	write_error_to_log(e,log)
 end
 
 
