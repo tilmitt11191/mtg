@@ -34,7 +34,7 @@ class Card
 	def initialize(name, logger)
 		@log = logger
 		@log.info "Card.initialize"
-		@name = escape_by_double_quote name
+		@name = escape_by_double_quote name,@log
 		@price = Price.new(self, @log)
 		@value = nil
 		@store_url = nil
@@ -69,37 +69,35 @@ class Card
 			read_from_web()
 		end
 	end
-	
+
+	def extract_contents_from_dom(dom_root)
+		# extract
+		@name = escape_by_double_quote dom_root.elements["name"].text, @log
+		@manacost = dom_root.elements["manacost"].text
+		@manacost_point = dom_root.elements["manacost_point"].text
+		@type = dom_root.elements["type"].text
+		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log
+		@powertoughness = dom_root.elements["powertoughness"].text
+		@illustrator = dom_root.elements["illustrator"].text
+		@rarity = dom_root.elements["rarity"].text
+		@cardset = dom_root.elements["cardset"].text
+		@generating_mana_type = dom_root.elements["generating_mana_type"].text
+	end
 	
 	def read_from_dom()
 		@log.info @name.to_s + ".read_from_dom() start"
-		doc = REXML::Document.new(File.open("../../cards/" + @name.to_s))
-		root = doc.elements["root"]
-		if root.nil? then
-			@log.warn @name.to_s + ".read_from_dom"
-			@log.warn "the root of dom is nil."
-			@log.warn "try read from web."
+		if File.exist?("../../cards/" + unescape_double_quote(@name.to_s)) then
+			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} exist.read it."
+			doc = REXML::Document.new(File.open("../../cards/" + unescape_double_quote(@name.to_s)))
+			root = doc.elements["root"]
+			extract_contents_from_dom root
+		else
+			@log.debug @name.to_s + ".read_from_dom"
+			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} not exist.read from web."
+			@log.debug "the root of dom is nil."
+			@log.debug "try to read from web."
 			read_from_web()
 		end
-		
-		if root.nil? then
-			@log.error @name.to_s + ".read_from_dom"
-			@log.error "the root of dom is stil nil."
-			@log.error "read a nil card."
-			doc = REXML::Document.new(File.open("../../cards/nil"))
-			root = doc.elements["root"]
-		end
-		# extract
-		@name = escape_by_double_quote root.elements["name"].text
-		@manacost = root.elements["manacost"].text
-		@manacost_point = root.elements["manacost_point"].text
-		@type = root.elements["type"].text
-		@oracle = escape_by_double_quote root.elements["oracle"].text
-		@powertoughness = root.elements["powertoughness"].text
-		@illustrator = root.elements["illustrator"].text
-		@rarity = root.elements["rarity"].text
-		@cardset = root.elements["cardset"].text
-		@generating_mana_type = root.elements["generating_mana_type"].text
 		
 		@log.info @name.to_s + ".read_from_dom() finished"
 	end
@@ -109,9 +107,9 @@ class Card
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
 		agent = Mechanize.new
 		page = agent.get('http://www.wisdom-guild.net/')
-		query = unescape_by_double_quote @name.to_s
+		query = unescape_double_quote @name.to_s
 		@log.debug "query: " + query
-		page.form.q = unescape_by_double_quote @name.to_s
+		page.form.q = unescape_double_quote @name.to_s
 		card_page = page.form.submit
 		
 		if !card_page.search('tr/th.dc').text.include?("カード名") then
@@ -128,6 +126,7 @@ class Card
 			if(tr.search('th.dc').text == "カード名") then
 				@log.debug "extract card name start."
 				@log.debug tr.search('b').text
+				@name = escape_by_double_quote @name,@log
 			end
 			if(tr.search('th.dc').text == "マナコスト") then
 				@log.debug "extract mana cost start."
@@ -246,7 +245,7 @@ class Card
 
 	
 	def write_contents(dir:"../../cards/")
-		@log.info "card(" + @name.to_s + ").write_contents() start."
+		@log.info "card.write_contents() to #{dir}#{@name.to_s} start."
 
 		@log.info "create dom"
 		doc = REXML::Document.new
@@ -263,15 +262,17 @@ class Card
 		root.add_element("generating_mana_type").add_text @generating_mana_type.to_s
 		
 		@log.info "write dom to[" + dir.to_s + "]"
-		doc.write(File.new(dir.to_s + unescape_by_double_quote(@name.to_s), "w+"))
-		@log.info "card(" + unescape_by_double_quote(@name.to_s) + ").write_contents() finished."
+		doc.write(File.new(dir.to_s + unescape_double_quote(@name.to_s), "w+"))
+		@log.info "card(" + unescape_double_quote(@name.to_s) + ").write_contents() finished."
 	end
 
 	def extract_manacost(str)
+		@manacost = ""
 		@manacost_array = []
 		@manacost_point = 0
 		symbols = str.split(")")
 		symbols.each do |symbol|
+			@log.debug "symbol[#{symbol}]"
 			symbol.slice!("(")
 			symbol.tr!("０-９", "0-9")
 			symbol.tr!("白", "W")
@@ -296,25 +297,22 @@ class Card
 		if @manacost.blank? then
 			@color = 'land'
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}$/) then
 			@color = 'colorless'
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}$/) then
-			@color = 'colorless'
-			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}W{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}W{0,}$/) then
 			@color = 'white'			
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}U{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}U{0,}$/) then
 			@color = 'blue'			
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}B{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}B{0,}$/) then
 			@color = 'black'			
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}R{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}R{0,}$/) then
 			@color = 'red'			
 			@log.debug "@color[#{@color}]"
-		elsif @manacost.match(/^[0-9]{0,}G{0,}$/) then
+		elsif @manacost.match(/^Ｘ{0,}[0-9]{0,}G{0,}$/) then
 			@color = 'green'			
 			@log.debug "@color[#{@color}]"
 		else
@@ -328,7 +326,7 @@ class Card
 	end
 	
 	def extract_oracle(str)
-		@oracle = escape_by_double_quote str
+		@oracle = escape_by_double_quote str, @log
 	end
 	
 	def extract_powertoughness(str)

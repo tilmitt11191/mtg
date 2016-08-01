@@ -40,7 +40,7 @@ class Test_SMDS < Test::Unit::TestCase
 		@site.create_pointranking_list(outputfilename, url, packname_short)
 		#assert line num 205
 	end
-	
+
 	must "create pointranking list of incorrect url" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."

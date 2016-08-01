@@ -74,7 +74,10 @@ class SMDS < Site
 		case packname_short
 		when 'EMN' then
 			url = "http://whisper.wisdom-guild.net/card/EMN#{number}"
+		when 'SOI' then
+			url = "http://whisper.wisdom-guild.net/card/SOI#{number}"
 		end
+		
 		html = @web.get_dom_of(url, @log)
 		if html.nil? then
 			@log.fatal "url[#{url}] is incorrect."
@@ -85,7 +88,8 @@ class SMDS < Site
 			@log.warn "the card of url[#{url}] not exist."
 			return false
 		end
-		card.name = card.name.split('/')[1]
+
+		#card.name = card.name.split('/')[1]
 		card.write_contents
 		card.name
 	end
@@ -136,7 +140,9 @@ class SMDS < Site
 					number = sprintf("%03d", element.css('img').attribute('id').to_s)
 					@log.debug "site.get_card_from_url(http://whisper.wisdom-guild.net/card/#{short}#{(number)}/)"
 					card = site.get_card_from_url("http://whisper.wisdom-guild.net/card/#{short}#{(number)}/")
-					if !card.nil? then
+					if card.nil? then
+						@log.fatal "card is nil from http://whisper.wisdom-guild.net/card/#{short}#{(number)}/"
+					else
 						cardname_eng = card.name.split('/')[1]
 						cardname_jp = card.name.split('/')[0]
 						

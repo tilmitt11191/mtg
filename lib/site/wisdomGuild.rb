@@ -95,7 +95,6 @@ class WisdomGuild < Site
 				card.extract_rarity_and_cardset(str)
 			end
 		end
-		
 		@log.debug "get_cardname_from_url(#{url}) finished."
 		return card
 	end

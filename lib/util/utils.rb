@@ -13,13 +13,14 @@ def reconvert_period(str)
 	return str.gsub("PERIOD",",").to_s
 end
 
-def escape_by_double_quote str
+def escape_by_double_quote str, logger
+	@log.debug "#{__method__} #{str} start."
 	return "\"\"" if str.nil? 
 	return str if str.match(/^".*"$/)
 	"\""+str.gsub("\"", "\\\"\"")+"\""
 end
 
-def unescape_by_double_quote str
+def unescape_double_quote str
 	str.gsub(/^\"|\"$/,'')
 end
 

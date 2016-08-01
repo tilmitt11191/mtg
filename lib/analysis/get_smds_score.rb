@@ -11,10 +11,10 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	packname='Eldritch Moom'
-	short='EMN'
-	#packname='Shadows over Innistrad'
-	#short='SOI'
+	#packname='Eldritch Moom'
+	#short='EMN'
+	packname='Shadows over Innistrad'
+	short='SOI'
 	
 	outputfilename = "../../decks/smdb_pointranking_list_of_#{short}.csv"
 	case packname

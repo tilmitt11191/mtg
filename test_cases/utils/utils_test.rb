@@ -28,11 +28,18 @@ class Test_utils < Test::Unit::TestCase
 	end
 	
 	must "escape_by_double_quote str" do
-		assert_equal "\"aaa\"", escape_by_double_quote("aaa")
+			@log.info "#{__method__} start."
+		assert_equal "\"aaa\"", escape_by_double_quote("aaa", @log)
 	end
 
-	must "unescape_by_double_quote str" do
-		assert_equal "aaa", unescape_by_double_quote("\"aaa\"")
+	must "escape_by_double_quote escaped_str" do
+			@log.info "#{__method__} start."
+		assert_equal "\"aaa\"", escape_by_double_quote("\"aaa\"", @log)
+	end
+
+	must "unescape_double_quote str" do
+			@log.info "#{__method__} start."
+		assert_equal "aaa", unescape_double_quote("\"aaa\"")
 	end
 
 =begin	

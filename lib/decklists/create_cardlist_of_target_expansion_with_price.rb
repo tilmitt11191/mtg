@@ -23,9 +23,10 @@ begin
 	
 	cardlist = Deck.new(packname, 'file', outputfilename, @log)
 	database = WisdomGuild.new(@log)
-	
+	store = Mtgotraders.new(@log)
 	for number in 1..num_of_cards
 		card = database.get_card_from_url "http://whisper.wisdom-guild.net/card/#{short}#{convert_number_to_triple_digits number}/"
+		card.
 		cardlist.cards.push card if !card.nil?
 	end
 	

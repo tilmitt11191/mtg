@@ -4,6 +4,7 @@ require "logger"
 require '../../lib/util/site.rb'
 require '../../lib/util/card.rb'
 require '../../lib/util/price_manager.rb'
+require '../../lib/site/wisdomGuild.rb'
 
 begin
 	puts File.basename(__FILE__).to_s + " start."
@@ -33,7 +34,6 @@ begin
 	end
 	
 	
-=begin
 	#get cardname by id from wisdomguild.
 	site = WisdomGuild.new(@log)
 	store = Mtgotraders.new(@log)
@@ -65,7 +65,6 @@ begin
 	File.open("test_pointranking_list_of_#{packname}.csv", "w:Shift_JIS:UTF-8", undef: :replace, replace: '*') do |file|
 		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
 	end
-=end	
 
 	#####
 		

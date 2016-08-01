@@ -146,7 +146,10 @@ class Test_channelfireball < Test::Unit::TestCase
 		assert_equal @site.comments['Boon of Emrakul'], 'Boon of Emrakul is a solid removal spell. It’s sorcery speed and can’t kill giant monsters, but it will do a nice job taking out most creatures that cost less than 5 mana. This is the type of card you really want a copy or 2 of to keep your opponent from punking you out with an evasion creature, or dominating the board with a Sigardian Priest.Naturally, you’d rather have all Murders and Dead Weights, but the world we live in is one in which we typically have to make due with non-premium removal. As far as non-premium removal goes, Boon of Emrakul is reliable and affordable, and should earn moderately high draft picks.The combo with Ironclad Slayer might prove to be a driving force in BW.
 '
 	end
-
+	#Collective Effort
+	#Repel the Abominable
+	#Thalia's Lancers
+	#’->'
 end
 
 

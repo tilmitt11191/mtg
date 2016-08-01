@@ -11,10 +11,10 @@ begin
 	@log.info ""
 	
 	
-	packname='Eldritch Moom'
-	short='EMN'
-	#packname='Shadows over Innistrad'
-	#short='SOI'
+	#packname='Eldritch Moom'
+	#short='EMN'
+	packname='Shadows over Innistrad'
+	short='SOI'
 	
 	outputfilename = "../../decks/channelfireball_reviews_#{short}.csv"
 	
