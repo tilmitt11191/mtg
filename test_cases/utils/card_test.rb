@@ -77,7 +77,6 @@ class Test_card < Test::Unit::TestCase
 		puts card.oracle
 	end
 
-=begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -203,6 +202,5 @@ Choose one or more ---
 		card.read_from_web
 		assert_equal 'multi', card.color	
 	end
-=end
 
 end
