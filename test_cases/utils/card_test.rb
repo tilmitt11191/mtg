@@ -27,7 +27,7 @@ class Test_card < Test::Unit::TestCase
 	def setup
 		@log = Logger.new("../../log")
 	end
-
+=begin
 	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -54,7 +54,7 @@ class Test_card < Test::Unit::TestCase
 		puts '---------'
 		puts card.oracle
 	end
-
+=end
 	must "read contents of Liliana, the Last Hope from dom, dom file was created by upper test" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -76,7 +76,7 @@ class Test_card < Test::Unit::TestCase
 		puts '---------'
 		puts card.oracle
 	end
-
+=begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -202,5 +202,5 @@ Choose one or more ---
 		card.read_from_web
 		assert_equal 'multi', card.color	
 	end
-
+=end
 end
