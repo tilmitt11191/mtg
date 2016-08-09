@@ -73,15 +73,15 @@ class Card
 	def extract_contents_from_dom(dom_root)
 		# extract
 		@name = escape_by_double_quote dom_root.elements["name"].text, @log
-		@manacost = dom_root.elements["manacost"].text
-		@manacost_point = dom_root.elements["manacost_point"].text
-		@type = dom_root.elements["type"].text
-		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log
-		@powertoughness = dom_root.elements["powertoughness"].text
-		@illustrator = dom_root.elements["illustrator"].text
-		@rarity = dom_root.elements["rarity"].text
-		@cardset = dom_root.elements["cardset"].text
-		@generating_mana_type = dom_root.elements["generating_mana_type"].text
+		@manacost = dom_root.elements["manacost"].text || ''
+		@manacost_point = dom_root.elements["manacost_point"].text || ''
+		@type = dom_root.elements["type"].text || ''
+		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log || ''
+		@powertoughness = dom_root.elements["powertoughness"].text || ''
+		@illustrator = dom_root.elements["illustrator"].text || ''
+		@rarity = dom_root.elements["rarity"].text || ''
+		@cardset = dom_root.elements["cardset"].text || ''
+		@generating_mana_type = dom_root.elements["generating_mana_type"].text || ''
 	end
 	
 	def read_from_dom()
@@ -122,51 +122,9 @@ class Card
 			return 1
 		end
 		
-		card_page.search('tr').each do |tr|
-			if(tr.search('th.dc').text == "カード名") then
-				@log.debug "extract card name start."
-				@log.debug tr.search('b').text
-				@name = escape_by_double_quote @name,@log
-			end
-			if(tr.search('th.dc').text == "マナコスト") then
-				@log.debug "extract mana cost start."
-				str = tr.search('td.lc').text
-				@log.debug str
-				extract_manacost(str)
-			end
-			if(tr.search('th.dc').text == "タイプ") then
-				@log.debug "extract card type start."
-				str = tr.search('td.mc').text
-				@log.debug str
-				extract_type(str)
-			end
-			if(tr.search('th.dc').text == "オラクル") then
-				@log.debug "extract oracle start."
-				str = tr.search('td.lc').text
-				@log.debug str
-				extract_oracle(str)
-			end
-			if(tr.search('th.dc').text == "Ｐ／Ｔ") then
-				@log.debug "extract power/toughness start."
-				str = tr.search('td.lc').text
-				@log.debug str
-				extract_powertoughness(str)
-			end
-			if(tr.search('th.dc').text == "イラスト") then
-				@log.debug "extract illustrator start."
-				str = tr.search('td.lc').text
-				@log.debug str
-				extract_illustrator(str)
-			end
-			if(tr.search('th.dc').text == "セット等") then
-				@log.debug "extract rarity, card set start."
-				str = tr.search('td.mc').text
-				@log.debug str
-				extract_rarity_and_cardset(str)
-			end
-		end
-		
+		parse_card_page card_page
 		set_generating_mana_type()
+
 		@log.info "@name.to_s + read_from_web() finished"
 	end
 
@@ -176,7 +134,15 @@ class Card
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
 		agent = Mechanize.new
 		card_page = agent.get(url)
-						
+		
+		parse_card_page card_page
+		set_generating_mana_type
+
+		@log.info "read_from_url(" + url + ") finished."
+	end
+
+
+	def parse_card_page card_page
 		card_page.search('tr').each do |tr|
 			if(tr.search('th.dc').text == "カード名") then
 				@log.debug "extract card name start."
@@ -219,9 +185,7 @@ class Card
 				extract_rarity_and_cardset(str)
 			end
 		end
-		
-		set_generating_mana_type
-		@log.info "read_from_url(" + url + ") finished."
+	
 	end
 
 
@@ -287,7 +251,7 @@ class Card
 			else @manacost_point += 1
 			end
 		end
-		
+		@manacost_point = @manacost_point.to_s
 		decide_color
 		
 		@log.debug "extracted from(" + str.to_s + ") to (" + @manacost.to_s + ")"
@@ -322,7 +286,7 @@ class Card
 	end
 	
 	def extract_type(str)
-		@type = str.gsub(/\n|\s/,"")
+		@type = str.gsub(/\n|\s/,"") || ''
 	end
 	
 	def extract_oracle(str)
@@ -330,11 +294,11 @@ class Card
 	end
 	
 	def extract_powertoughness(str)
-		@powertoughness = str
+		@powertoughness = str || ''
 	end
 	
 	def extract_illustrator(str)
-		@illustrator = str.gsub(/\n|\s/,"")
+		@illustrator = str.gsub(/\n|\s/,"") || ''
 	end
 	
 	def extract_rarity_and_cardset(str)
@@ -352,7 +316,7 @@ class Card
 	#set_generating_mana_type
 		@log.info "card(" + name.to_s + ").set_generating_mana_type start."
 		mana_analyzer = Mana_analyzer.new(nil, @log)
-		@generating_mana_type = mana_analyzer.get_generating_mana_type(self)
+		@generating_mana_type = mana_analyzer.get_generating_mana_type(self) || ''
 		write_contents()
 	end
 

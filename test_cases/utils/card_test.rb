@@ -27,7 +27,8 @@ class Test_card < Test::Unit::TestCase
 	def setup
 		@log = Logger.new("../../log")
 	end
-=begin
+
+=begin	
 	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -36,25 +37,28 @@ class Test_card < Test::Unit::TestCase
 			@log.info 'delete file'
 			File.unlink "../../cards/#{unescape_double_quote(name)}"
 		end
+
 		card = Card.new(name, @log)
 		assert_equal "\"Liliana, the Last Hope\"", card.name
 		card.read_from_dom
 		assert_equal "\"Liliana, the Last Hope\"", card.name
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
-		assert_equal 3, card.manacost_point
+		assert_equal '3', card.manacost_point
 		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
 		assert_equal '', card.powertoughness
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 		puts "+1: Up to one target creature gets -2/-1 until your next turn.
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
 -7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
 		puts '---------'
 		puts card.oracle
+
 	end
 =end
+#=begin
 	must "read contents of Liliana, the Last Hope from dom, dom file was created by upper test" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -64,18 +68,19 @@ class Test_card < Test::Unit::TestCase
 		assert_equal "\"Liliana, the Last Hope\"", card.name
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
-		assert_equal 3, card.manacost_point
+		assert_equal '3', card.manacost_point
 		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
 		assert_equal '', card.powertoughness
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 		puts "+1: Up to one target creature gets -2/-1 until your next turn.
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
 -7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
 		puts '---------'
 		puts card.oracle
 	end
+#=end
 =begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
@@ -86,19 +91,19 @@ class Test_card < Test::Unit::TestCase
 		assert_equal "\"Liliana, the Last Hope\"", card.name
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
-		assert_equal 3, card.manacost_point
+		assert_equal '3', card.manacost_point
 		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
 		assert_equal '', card.powertoughness
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 		puts "+1: Up to one target creature gets -2/-1 until your next turn.
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
 -7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
 		puts '---------'
 		puts card.oracle
 	end
-
+#=end
 	must "read contents of  Blessed Alliance from web" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -108,12 +113,12 @@ class Test_card < Test::Unit::TestCase
 		assert_equal "\"Blessed Alliance\"", card.name
 		assert_equal 'アンコモン', card.rarity
 		assert_equal '1W', card.manacost
-		assert_equal 2, card.manacost_point
+		assert_equal '2', card.manacost_point
 		assert_equal 'インスタント', card.type
 		assert_equal '', card.powertoughness
 		assert_equal 'JohannBodin', card.illustrator
 		assert_equal '異界月(13/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 		puts "Escalate {2} （Pay this cost for each mode chosen beyond the first.）
 Choose one or more ---
 • Target player gains 4 life.
@@ -123,7 +128,7 @@ Choose one or more ---
 		puts '---------'
 		puts card.oracle
 	end
-	
+#=begin	
 	must "read contents of Falkenrath Reaver, which oracle is nil" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -131,7 +136,7 @@ Choose one or more ---
 		card.set_store_page 'http://whisper.wisdom-guild.net/card/Falkenrath Reaver/'
 		card.read_from_web
 		assert_equal "\"Falkenrath Reaver\"", card.name
-		puts ""
+		puts ''
 		puts '---------'
 		puts card.oracle
 	end
