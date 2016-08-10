@@ -4,6 +4,7 @@
 require '../../lib/util/utils.rb'
 require '../../lib/util/deck.rb'
 require '../../lib/site/wisdomGuild.rb'
+require '../../lib/site/mtgotraders.rb'
 
 begin
 	puts File.basename(__FILE__).to_s + " start."
@@ -19,18 +20,21 @@ begin
 	#short='SOI'
 	#num_of_cards = 270
 	
-	outputfilename = "../../decks/cardlistlist_of_#{short}.csv"
+	outputfilename = "../../decks/cardlistlist_of_#{short}_with_price.csv"
 	
 	cardlist = Deck.new(packname, 'file', outputfilename, @log)
 	database = WisdomGuild.new(@log)
-	store = Mtgotraders.new(@log)
+	store = MTGOtraders.new(@log)
 	for number in 1..num_of_cards
 		card = database.get_card_from_url "http://whisper.wisdom-guild.net/card/#{short}#{convert_number_to_triple_digits number}/"
-		card.
-		cardlist.cards.push card if !card.nil?
+		if !card.nil? then
+			card.price.renew_at store
+			cardlist.cards.push card
+			puts "card.name[#{card.name}] finished.price[#{card.price}]"
+		end
 	end
 	
-	cardlist.create_deckfile(outputfilename, 'name,manacost,color,oracle', 'with_info')
+	cardlist.create_deckfile(outputfilename, 'name,manacost,color,oracle,price,price.date', 'with_info')
 	
 rescue => e
 	write_error_to_log(e,@log)

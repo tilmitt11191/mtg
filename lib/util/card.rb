@@ -36,9 +36,9 @@ class Card
 		@log.info "Card.initialize"
 		@name = escape_by_double_quote name,@log
 		@price = Price.new(self, @log)
-		@value = nil
-		@store_url = nil
-		@generating_mana_type = nil
+		@value = ''
+		@store_url = ''
+		@generating_mana_type = ''
 
 		@manacost = ''
 		@color = ''
@@ -50,6 +50,26 @@ class Card
 		@illustrator = ''
 		@rarity = ''
 		@cardset = ''
+	end
+	
+	def create_nil_card
+		@log.info "#{__method__} start."
+		@price = Price.new(self, @log)
+		@value = ''
+		@store_url = ''
+		@generating_mana_type = ''
+
+		@manacost = ''
+		@color = ''
+		@manacost_array = []
+		@manacost_point = ''
+		@type = ''
+		@oracle = ''
+		@powertoughness = ''
+		@illustrator = ''
+		@rarity = ''
+		@cardset = ''
+		@log.info "#{__method__} finished."	
 	end
 	
 	def set_store_page(url)
@@ -71,7 +91,13 @@ class Card
 	end
 
 	def extract_contents_from_dom(dom_root)
-		# extract
+		@log.info "#{__method__} start."
+		if dom_root.nil? then
+			@log.warn "dom_root.nil"
+			create_nil_card
+			return 1
+		end
+		
 		@name = escape_by_double_quote dom_root.elements["name"].text, @log
 		@manacost = dom_root.elements["manacost"].text || ''
 		@manacost_point = dom_root.elements["manacost_point"].text || ''
@@ -82,6 +108,7 @@ class Card
 		@rarity = dom_root.elements["rarity"].text || ''
 		@cardset = dom_root.elements["cardset"].text || ''
 		@generating_mana_type = dom_root.elements["generating_mana_type"].text || ''
+		@log.info "#{__method__} finished."
 	end
 	
 	def read_from_dom()
@@ -89,8 +116,13 @@ class Card
 		if File.exist?("../../cards/" + unescape_double_quote(@name.to_s)) then
 			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} exist.read it."
 			doc = REXML::Document.new(File.open("../../cards/" + unescape_double_quote(@name.to_s)))
-			root = doc.elements["root"]
-			extract_contents_from_dom root
+			if doc.nil? then
+				@log.warn "file[#{unescape_double_quote(@name.to_s)} exists, but doc is nil.create nil card."
+				create_nil_card
+			else
+				root = doc.elements["root"]
+				extract_contents_from_dom root
+			end
 		else
 			@log.debug @name.to_s + ".read_from_dom"
 			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} not exist.read from web."
@@ -101,6 +133,7 @@ class Card
 		
 		@log.info @name.to_s + ".read_from_dom() finished"
 	end
+
 	
 	def read_from_web()
 		@log.info "@name.to_s + read_from_web() start"
@@ -119,6 +152,7 @@ class Card
 			File.open("../../lib/card_operation/errorlist.txt", "a") do |file|
 				file.puts(@name)
 			end
+			create_nil_card
 			return 1
 		end
 		
@@ -321,10 +355,17 @@ class Card
 	end
 
 
-	def search_card_page(card)
-		
-	
+=begin
+	def get_price_by site
+		puts "#{__method__} start."
+		if site.respond_to?(:how_match) then
+			site.how_match self
+		else
+			@log.fatal "#{site} not have method(:how_match)"
+			puts "#{__method__} finished."
+		end
 	end
+=end
 end
 
 

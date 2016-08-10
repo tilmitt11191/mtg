@@ -1,195 +1,31 @@
-Loaded suite ../../test_cases/site/wisdomGuild_test
-Started
-wisdomGuild_test.rb start.
-test_get_contents_of_Blessed_Alliance,_which_encoding_include_U_+_2022 start.
-get_file
-request_with_entity
-parse
-shutdown
-log
-default_encoding
-force_default_encoding
-keep_alive_time
-pluggable_parser
-proxy_addr
-auth
-cert
-add_auth
-ssl_version
-conditional_requests
-conditional_requests=
-ca_file
-cookie_jar
-cookie_jar=
-cookies
-follow_meta_refresh
-follow_meta_refresh=
-key
-follow_meta_refresh_self
-follow_meta_refresh_self=
-gzip_enabled
-gzip_enabled=
-idle_timeout
-idle_timeout=
-ignore_bad_chunking
-ignore_bad_chunking=
-keep_alive
-keep_alive=
-max_file_buffer
-max_file_buffer=
-redirect_ok
-follow_redirect?
-redirect_ok=
-follow_redirect=
-redirection_limit
-redirection_limit=
-request_headers
-request_headers=
-retry_change_requests
-retry_change_requests=
-robots=
-scheme_handlers
-scheme_handlers=
-user_agent_alias=
-watch_for_set
-certificate
-cert_store
-pass=
-verify_callback
-watch_for_set=
-put
-open_timeout=
-ca_file=
-cert=
-cert_store=
-key=
-ssl_version=
-verify_callback=
-verify_mode=
-pass
-agent
-reset
-post
-pretty_print
-history_added=
-default_encoding=
-page
-force_default_encoding=
-submit
-keep_alive_time=
-delete
-head
-get
-basic_auth
-html_parser
-html_parser=
-log=
-verify_mode
-user_agent
-user_agent=
-proxy_port
-max_history
-max_history=
-back
-proxy_user
-history
-proxy_pass
-current_page
-visited?
-visited_page
-content_encoding_hooks
-history_added
-post_connect_hooks
-pre_connect_hooks
-click
-set_proxy
-robots
-resolve
-download
-open_timeout
-transact
-read_timeout
-read_timeout=
-to_yaml
-to_yaml_properties
-psych_to_yaml
-dclone
-to_json
-pretty_print_cycle
-pretty_print_instance_variables
-pretty_print_inspect
-instance_of?
-public_send
-instance_variable_get
-instance_variable_set
-instance_variable_defined?
-remove_instance_variable
-private_methods
-kind_of?
-instance_variables
-tap
-method
-public_method
-singleton_method
-is_a?
-extend
-pretty_inspect
-define_singleton_method
-to_enum
-enum_for
-<=>
-===
-=~
-!~
-eql?
-respond_to?
-freeze
-inspect
-display
-object_id
-send
-to_s
-nil?
-hash
-class
-singleton_class
-clone
-dup
-itself
-taint
-tainted?
-untaint
-untrust
-trust
-untrusted?
-methods
-protected_methods
-frozen?
-public_methods
-singleton_methods
-!
-==
-!=
-__send__
-equal?
-instance_eval
-instance_exec
-__id__
-E
-===============================================================================
-Error: test_get_contents_of_Blessed_Alliance,_which_encoding_include_U_+_2022(Test_wisdomGuild):
-  NoMethodError: undefined method `encode' for #<Mechanize::Page:0x000000032352f0>
-  Did you mean?  encoding
-                 code
-/media/sf_f/program/mtg/lib/site/wisdomGuild.rb:48:in `get_card_from_url'
-../../test_cases/site/wisdomGuild_test.rb:70:in `block in <class:Test_wisdomGuild>'
-===============================================================================
-wisdomGuild_test.rb finished.
-
-
-Finished in 0.223668328 seconds.
-------
-1 tests, 0 assertions, 0 failures, 1 errors, 0 pendings, 0 omissions, 0 notifications
-0% passed
-------
-4.47 tests/s, 0.00 assertions/s
+../../lib/decklists/create_redemption_list_with_price.rb:#get the relevant and highest prices of each card at wishlist.
+../../lib/decklists/create_redemption_list_with_price.rb:				store.get_prices(price_manager, relevant:true, highest:true, lowest:false)
+../../lib/decklists/create_redemption_list_with_price.rb:			file.puts "Card Name,Quantity,ID #,Rarity,Set,Collector #,Premium,relevant,highest"
+../../lib/decklists/create_redemption_list_with_price.rb:				log.debug contents.to_s + "," + price_managers[:"#{card.name}"].relevant_price.to_s + "," + price_managers[:"#{card.name}"].highest_price.to_s
+../../lib/decklists/create_redemption_list_with_price.rb:				file.puts contents.to_s + "," + price_managers[:"#{card.name}"].relevant_price.to_s + "," + price_managers[:"#{card.name}"].highest_price.to_s
+../../lib/site/mtgotraders.rb:	def get_prices(price_manager,relevant:true,highest:true,lowest:true)
+../../lib/site/mtgotraders.rb:		@log.debug "relevant[" + relevant.to_s + "], highest[" + highest.to_s + "], lowest[" + lowest.to_s + "]"
+../../lib/site/mtgotraders.rb:		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=relevancy" selected="selected">Relevancy</option>
+../../lib/site/mtgotraders.rb:		if relevant then
+../../lib/site/mtgotraders.rb:			@log.debug "get relevant price."
+../../lib/site/mtgotraders.rb:			price_manager.relevant_price.value = result.gsub!(/\$/,'')
+../../lib/site/mtgotraders.rb:			@log.debug price_manager.relevant_price.value
+../../lib/site/smds.rb:	#price_manager.relevant_price
+../../lib/site/smds.rb:						puts price_manager.relevant_price
+../../lib/site/smds.rb:						file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
+../../lib/util/mana_analyzer.rb:				#remove irrelevant strings.
+../../lib/util/mana_analyzer.rb:				#remove all irrelevant strings.
+../../lib/util/price_manager.rb:	@relevant_price #Class Price
+../../lib/util/price_manager.rb:	attr_accessor :card, :relevant_price, :highest_price, :lowest_price
+../../lib/util/price_manager.rb:			@relevant_price = nil
+../../lib/util/price_manager.rb:			@relevant_price = Price.new(card, @log)
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:	store.get_prices(price_manager, relevant:false, highest:false, lowest:false)
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:	if (price_manager.relevant_price == 0) && \
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:		puts "[ng]all false check.relevant[" + price_manager.relevant_price.to_s + \
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:	store.get_prices(price_manager, relevant:true, highest:true, lowest:true)
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:	if (price_manager.relevant_price.to_i > 0) && \
+../../test_cases/card_operation/wisdomGuild.get_prices.rb:		puts "[ng]all false check.relevant[" + price_manager.relevant_price.to_s + \
+../../test_cases/site/channelfireball.get_decklist_from_article.rb:	puts "price=#{price_manager.relevant_price}"
+../../test_cases/site/channelfireball.get_decklist_from_article.rb:		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""
+../../test_cases/site/smdb.create_pointranking_list_of.rb:	puts "price=#{price_manager.relevant_price}"
+../../test_cases/site/smdb.create_pointranking_list_of.rb:		file.puts "#{score},#{price_manager.relevant_price},\"#{cardname_eng}\",\"#{cardname_jp}\",#{card.rarity},#{card.manacost},#{card.manacost_point},#{card.type},=\"#{card.powertoughness}\",#{card.illustrator},#{card.cardset},#{card.generating_mana_type},\"#{oracle}\""

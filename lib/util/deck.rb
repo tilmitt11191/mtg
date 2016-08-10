@@ -173,7 +173,6 @@ class Deck
 						if contents.nil? then
 							@log.warn "contents of[" + card.name + "]." + form + " is nil"
 						end
-						#file.print convert_period(contents.to_s).to_s + ","
 						file.print contents.to_s + ","
 					end
 					file.print "\n"

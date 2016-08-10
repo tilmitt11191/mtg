@@ -28,43 +28,25 @@ class Test_card < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 	end
 
-=begin	
-	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
+=begin
+	must "create nil card" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
-		name = 'Liliana, the Last Hope'
-		if File.exist?("../../cards/#{unescape_double_quote(name)}") then
-			@log.info 'delete file'
-			File.unlink "../../cards/#{unescape_double_quote(name)}"
-		end
-
-		card = Card.new(name, @log)
-		assert_equal "\"Liliana, the Last Hope\"", card.name
+		card = Card.new('no such card', @log)
 		card.read_from_dom
-		assert_equal "\"Liliana, the Last Hope\"", card.name
-		assert_equal '神話レア', card.rarity
-		assert_equal '1BB', card.manacost
-		assert_equal '3', card.manacost_point
-		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
-		assert_equal '', card.powertoughness
-		assert_equal 'AnnaSteinbauer', card.illustrator
-		assert_equal '異界月(93/205)', card.cardset
-		assert_equal '', card.generating_mana_type
-		puts "+1: Up to one target creature gets -2/-1 until your next turn.
--2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
--7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
-		puts '---------'
-		puts card.oracle
-
+		assert_equal 'nil', card.name
 	end
 =end
 #=begin
-	must "read contents of Liliana, the Last Hope from dom, dom file was created by upper test" do
+	must "read contents of Liliana, the Last Hope from dom, dom file was created by previous test" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
+		
 		card = Card.new('Liliana, the Last Hope', @log)
 		assert_equal "\"Liliana, the Last Hope\"", card.name
+		
 		card.read_from_dom
+		
 		assert_equal "\"Liliana, the Last Hope\"", card.name
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
@@ -81,6 +63,37 @@ class Test_card < Test::Unit::TestCase
 		puts card.oracle
 	end
 #=end
+#=begin
+	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		name = 'Liliana, the Last Hope'
+		if File.exist?("../../cards/#{unescape_double_quote(name)}") then
+			@log.info 'delete file'
+			File.unlink "../../cards/#{unescape_double_quote(name)}"
+		end
+
+		card = Card.new(name, @log)
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+
+		card.read_from_dom
+
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+		assert_equal '神話レア', card.rarity
+		assert_equal '1BB', card.manacost
+		assert_equal '3', card.manacost_point
+		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
+		assert_equal '', card.powertoughness
+		assert_equal 'AnnaSteinbauer', card.illustrator
+		assert_equal '異界月(93/205)', card.cardset
+		assert_equal '', card.generating_mana_type
+		puts "+1: Up to one target creature gets -2/-1 until your next turn.
+-2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
+-7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
+		puts '---------'
+		puts card.oracle
+
+	end
 =begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
@@ -206,6 +219,18 @@ Choose one or more ---
 		card = Card.new('Tamiyo, Field Researcher', @log)
 		card.read_from_web
 		assert_equal 'multi', card.color	
+	end
+
+
+	must "get price from mtgotraders" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		require '../../lib/site/mtgotraders.rb'
+		site = MTGOtraders.new(@log)
+		card = Card.new('Liliana, the Last Hope', @log)
+		card.price.renew_at site
+		puts "card.price #{card.price} is near 37.40?"
+		assert card.price > 0
 	end
 =end
 end

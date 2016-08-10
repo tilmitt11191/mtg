@@ -10,7 +10,8 @@ class MTGOtraders < Site
 		super("mtgotraders", logger)
 		@url = "http://www.mtgotraders.com/"
 	end
-	
+
+=begin
 	def how_match?(card)
 		@log.info "how match ["+card.name+"] at mtgotraders"
 		@card_name = card.name
@@ -32,7 +33,68 @@ class MTGOtraders < Site
 		#@log.debug "price is " + price
 		return card.price
 	end
-	
+=end
+
+	def how_match card,relevant:true,highest:false,lowest:false
+		@log.info "how match ["+card.name+"]  at mtgotraders start"
+		#prices = {}
+		#prices[relevant] = 0
+		#prices[highest] = 0
+		#prices[lowest] = 0
+		#return prices
+		agent = Mechanize.new
+		page = agent.get('http://www.mtgotraders.com/store/index.html')
+		query = card.name.to_s
+		page.form.q = query
+		@log.debug "query: " + query
+
+		search_results = page.form.submit
+		
+		optional_urls = {}
+		search_results.search('div.searchopt-sortby/select/option').each do |options|
+			optional_urls[:"#{options.text}"] = options.attribute('value').value
+		end
+		#<div class="searchopt-sortby">
+		#	<label>Sort by:</label>
+		#	<select name="sortby" onchange="document.location.href=this.value">
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=relevancy" selected="selected">Relevancy</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=name">Name: A to Z</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=name_desc">Name: Z to A</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price">Price: Low to High</option>
+		#		<option value="http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc">Price: High to Low</option>
+		#	</select>
+		#</div>
+		
+		if relevant then
+			@log.debug "get relevant price."
+			result = search_results.at('td.price').text #get only one result which hit first
+			value = result.gsub!(/\$/,'')
+			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
+			return value
+		end
+		
+		if highest then
+			@log.debug "get highest price."
+			optional_url = optional_urls[:"Price: High to Low"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
+			search_results = agent.get(optional_url)
+			result = search_results.at('td.price').text #get only one result which hit first
+			value = result.gsub!(/\$/,'')
+			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
+			return value
+		end
+		
+		if lowest then
+			@log.debug "get highest price."
+			optional_url = optional_urls[:"Price: Low to High"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
+			search_results = agent.get(optional_url)
+			result = search_results.at('td.price').text #get only one result which hit first
+			value = result.gsub!(/\$/,'')
+			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
+			return value
+		end
+		return 0
+		@log.info "how match ["+card.name+"]  at mtgotraders finished"
+	end
 	
 	def set_store_page_of(card)
 		@log.info "search_store_page_of[" + card.name.to_s + "] start"
