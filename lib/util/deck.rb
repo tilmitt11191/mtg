@@ -15,7 +15,7 @@ class Deck
 	@sum_of_mainboard_generating_manas #str
 	@sum_of_sideboard_generating_manas #str
 
-	attr_accessor :deckname, :cards, :price, :archetype, :sum_of_mainboard_generating_manas, :sum_of_sideboard_generating_manas
+	attr_accessor :deckname, :cards, :archetype, :sum_of_mainboard_generating_manas, :sum_of_sideboard_generating_manas
 
 	@list_type #file or hareruya or...
 	@path #dir+name or url+name or...
@@ -78,7 +78,13 @@ class Deck
 		@price_of_sideboard_cards = 0
 	end
 	
-	
+	def price
+		if @price.nil? || @price.value.nil? then
+			nil
+		else
+			@price.value.to_s
+		end	
+	end
 	
 	def view_deck_list #TODO: view_deck_list(format)
 		#card_type,card_name,quantity,price
@@ -165,7 +171,7 @@ class Deck
 		case mode
 		when "card_only" then
 			@log.debug "start writing. mode is card_only."
-			File.open(filename, "w:sjis") do |file|
+			File.open(filename, "w:Shift_JIS") do |file|
 				@cards.each do |card|
 					#write decks
 					forms.each do |form|
@@ -173,7 +179,7 @@ class Deck
 						if contents.nil? then
 							@log.warn "contents of[" + card.name + "]." + form + " is nil"
 						end
-						file.print contents.to_s + ","
+						file.print escape_by_double_quote(contents.to_s, @log) + ","
 					end
 					file.print "\n"
 				end	
@@ -189,7 +195,7 @@ class Deck
 				previous_type = "info"
 				@cards.each do |card|
 					#write informations
-					@log.info "previous_type[" + previous_type.to_s + "], card_type[" + card.card_type.to_s + "]"
+					@log.debug "previous_type[" + previous_type.to_s + "], card_type[" + card.card_type.to_s + "]"
 					if(previous_type == "land" && card.card_type == "creature") then
 						@log.debug "write land information"
 						file.puts "info," + @quantity_of_lands.to_s + " Lands " + @price_of_lands.to_s
@@ -209,7 +215,7 @@ class Deck
 						end
 						#@log.info "write " + card.name + "." + form + "[" + convert_period(contents.to_s).to_s + "]"
 						@log.info "write " + card.name + "." + form + "[" + contents.to_s + "]"
-						file.print contents.to_s + ","
+						file.print escape_by_double_quote(contents.to_s, @log) + ","
 					end
 					file.print "\n"
 					previous_type = card.card_type
@@ -247,7 +253,7 @@ class Deck
 		@log.debug "mode: " + mode.to_s
 
 		@cards = []
-		File.open(filename, "r:sjis").each do |line|
+		File.open(filename, "r:Shift_JIS").each do |line|
 			line.chomp!
 			@log.debug "line.chomp!"
 			@log.debug "line[" + line.to_s + "]"
@@ -287,9 +293,9 @@ class Deck
 	#from dom file at ../../cards/ or http://whisper.wisdom-guild.net/
 		@log.info "deck.get_contents start"
 		@cards.each do |card|
-			card.read_contents()
+			card.read_contents
 			if !File.exist?("../../cards/" + card.name.to_s) then
-				card.write_contents()
+				card.write_contents
 			end
 		end
 	end
@@ -329,40 +335,40 @@ class Deck
 			@log.debug "card.card_type = " + card.card_type.to_s
 			
 			if card.card_type.to_s == "land"
-			@quantity_of_lands += card.quantity.to_i
-			@quantity_of_mainboard_cards += card.quantity.to_i
-			@quantity_of_all += card.quantity.to_i
-			@price_of_lands += card.price.to_i * card.quantity.to_i
-			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
-			@price_of_all += card.price.to_i * card.quantity.to_i
+				@quantity_of_lands += card.quantity.to_i
+				@quantity_of_mainboard_cards += card.quantity.to_i
+				@quantity_of_all += card.quantity.to_i
+				@price_of_lands += card.price.to_i * card.quantity.to_i
+				@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
+				@price_of_all += card.price.to_i * card.quantity.to_i
 
 			elsif card.card_type.to_s == "creature"
-			@quantity_of_creatures += card.quantity.to_i
-			@quantity_of_mainboard_cards += card.quantity.to_i
-			@quantity_of_all += card.quantity.to_i
-			@price_of_creatures += card.price.to_i * card.quantity.to_i
-			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
-			@price_of_all += card.price.to_i * card.quantity.to_i
+				@quantity_of_creatures += card.quantity.to_i
+				@quantity_of_mainboard_cards += card.quantity.to_i
+				@quantity_of_all += card.quantity.to_i
+				@price_of_creatures += card.price.to_i * card.quantity.to_i
+				@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
+				@price_of_all += card.price.to_i * card.quantity.to_i
 			
 			elsif card.card_type.to_s == "spell"
-			@quantity_of_spells += card.quantity.to_i
-			@quantity_of_mainboard_cards += card.quantity.to_i
-			@quantity_of_all += card.quantity.to_i
-			@price_of_spells += card.price.to_i * card.quantity.to_i			
-			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
-			@price_of_all += card.price.to_i * card.quantity.to_i
+				@quantity_of_spells += card.quantity.to_i
+				@quantity_of_mainboard_cards += card.quantity.to_i
+				@quantity_of_all += card.quantity.to_i
+				@price_of_spells += card.price.to_i * card.quantity.to_i			
+				@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
+				@price_of_all += card.price.to_i * card.quantity.to_i
 
 			elsif card.card_type.to_s == "mainboardCards"
-			@quantity_of_mainboard_cards += card.quantity.to_i
-			@quantity_of_all += card.quantity.to_i
-			@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
-			@price_of_all += card.price.to_i * card.quantity.to_i
+				@quantity_of_mainboard_cards += card.quantity.to_i
+				@quantity_of_all += card.quantity.to_i
+				@price_of_mainboard_cards += card.price.to_i * card.quantity.to_i			
+				@price_of_all += card.price.to_i * card.quantity.to_i
 
 			elsif card.card_type.to_s == "sideboardCards"
-			@quantity_of_sideboard_cards += card.quantity.to_i
-			@quantity_of_all += card.quantity.to_i
-			@price_of_sideboard_cards += card.price.to_i * card.quantity.to_i			
-			@price_of_all += card.price.to_i * card.quantity.to_i
+				@quantity_of_sideboard_cards += card.quantity.to_i
+				@quantity_of_all += card.quantity.to_i
+				@price_of_sideboard_cards += card.price.to_i * card.quantity.to_i			
+				@price_of_all += card.price.to_i * card.quantity.to_i
 			end
 		end
 		
@@ -466,5 +472,9 @@ class Deck
 		
 		@log.info "merge_duplicated_cards(" + @deckname.to_s + ") finished."
 	end
+	
+	
+
+
 end
 

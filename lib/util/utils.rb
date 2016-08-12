@@ -16,8 +16,9 @@ end
 def escape_by_double_quote str, logger
 	@log.debug "#{__method__} #{str} start."
 	return "\"\"" if str.nil? 
-	return str if str.match(/^".*"$/)
-	"\""+str.gsub("\"", "\\\"\"")+"\""
+	return str if str.match(/^".*"$/m) #already escaped.
+	return 	"\" "+str.gsub("\"", "\"\"")+"\"" if str.match(/^\+/) || str.match(/^\-/) #for oracle of planeswalker
+	"\""+str.gsub("\"", "\"\"")+"\""
 end
 
 def unescape_double_quote str

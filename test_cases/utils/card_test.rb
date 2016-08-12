@@ -56,14 +56,12 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
 		assert_equal '', card.generating_mana_type
-		puts "+1: Up to one target creature gets -2/-1 until your next turn.
+		assert_equal "\" +1: Up to one target creature gets -2/-1 until your next turn.
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
--7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
-		puts '---------'
-		puts card.oracle
+-7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"", card.oracle
 	end
 #=end
-#=begin
+begin
 	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -87,13 +85,11 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
 		assert_equal '', card.generating_mana_type
-		puts "+1: Up to one target creature gets -2/-1 until your next turn.
+		assert_equal "\" +1: Up to one target creature gets -2/-1 until your next turn.
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
--7: You get an emblem with \"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\""
-		puts '---------'
-		puts card.oracle
-
+-7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"", card.oracle
 	end
+end
 =begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."

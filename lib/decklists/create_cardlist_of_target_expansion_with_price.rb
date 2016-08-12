@@ -34,7 +34,7 @@ begin
 		end
 	end
 	
-	cardlist.create_deckfile(outputfilename, 'name,manacost,color,oracle,price,price.date', 'with_info')
+	cardlist.create_deckfile(outputfilename, 'name,color,manacost,powertoughness,oracle,price,price.date', 'card_only')
 	
 rescue => e
 	write_error_to_log(e,@log)

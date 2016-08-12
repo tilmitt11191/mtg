@@ -1,4 +1,5 @@
-
+# encoding: UTF-8
+#ruby
 
 require	"logger"
 require "mechanize"
@@ -111,11 +112,14 @@ class Card
 		@log.info "#{__method__} finished."
 	end
 	
+	
 	def read_from_dom()
 		@log.info @name.to_s + ".read_from_dom() start"
 		if File.exist?("../../cards/" + unescape_double_quote(@name.to_s)) then
 			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} exist.read it."
-			doc = REXML::Document.new(File.open("../../cards/" + unescape_double_quote(@name.to_s)))
+			f = File.open("../../cards/" + unescape_double_quote(@name.to_s),'r+')
+			doc = REXML::Document.new(f)
+
 			if doc.nil? then
 				@log.warn "file[#{unescape_double_quote(@name.to_s)} exists, but doc is nil.create nil card."
 				create_nil_card
@@ -260,7 +264,10 @@ class Card
 		root.add_element("generating_mana_type").add_text @generating_mana_type.to_s
 		
 		@log.info "write dom to[" + dir.to_s + "]"
-		doc.write(File.new(dir.to_s + unescape_double_quote(@name.to_s), "w+"))
+		f = File.new(dir.to_s + unescape_double_quote(@name.to_s), "w+")
+		f.flock(File::LOCK_EX)
+		doc.write(f)
+		f.flock(File::LOCK_UN)
 		@log.info "card(" + unescape_double_quote(@name.to_s) + ").write_contents() finished."
 	end
 

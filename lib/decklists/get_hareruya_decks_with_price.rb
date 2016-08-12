@@ -100,8 +100,8 @@ decks = []
 
 ##############################################
 
-id = "kD01468K"
-name = "Monitor_Combo_"+id.to_s
+id = "kD13230S"
+name = "WB_Control"+id.to_s
 decks.push DeckID.new(id,name,@log)
 
 
@@ -117,7 +117,7 @@ decks.each do |deck| deck.create_deckfile() end
 
 
 rescue => e
-	puts_write(e,@log)
+	write_error_to_log(e,@log)
 end
 
 

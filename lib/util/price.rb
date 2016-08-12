@@ -1,4 +1,5 @@
-
+# encoding: UTF-8
+#ruby
 
 require	"logger"
 require 'date'
@@ -9,7 +10,6 @@ class Price
 	include Comparable
 	@log
 	@card
-	#@name
 	@value
 	@date
 	@store
@@ -20,18 +20,17 @@ class Price
 		if card.nil? then
 			@log.debug "price.initialize(nil)"
 			@card = nil
-			#@name = nil
 			@value = nil
 			@date = nil
 		else
 			@log = logger
 			@log.info "price of " + card.name + " initialize"
 			@card = card
-			#@name = card.name
 			@value = nil
 			@date = nil
 		end
 	end
+	
 
 	def to_s
 		if @value.nil? then
@@ -59,32 +58,12 @@ class Price
 		@value.to_f - other.to_f
 	end
 
-=begin
-	def renew_at(card, storename)
-		@log.debug "card.price.renew_at("+storename+")"
-		case storename
-		when "hareruya" then
-			@log.debug "renew at hareruya start"
-			@store = Hareruya.new(@log)
-			@log.debug "#{@name}.price call hareruya.how_match?(card)"
-			@store.how_match?(card)
-			#@value = @store.how_match?(card)
-			@log.debug "[" + card.name.to_s + "] is [" + @value.to_s + "]"
-			@date = DateTime.now
-			@log.debug "date is " + @date.to_s
-		else
-			@log.error "Price.renew_at(invalid store)"
-			@log.error "store name is " + storename
-			@log.error "card name is " + card.name
-			@value = nil
-		end
-	end
-=end
+
 	def renew_at site
-		@log.info "#{__method__} start.card.name[#{@card.name}], site[#{site.site_name}]"
+		@log.info "#{__method__} start.card.name[#{@card.name}], site[#{site.name}]"
 		if !site.respond_to?(:how_match) then
 			@log.fatal "#{site} not have method(:how_match)"
-			puts "#{__method__} finished."
+			@log.info "#{__method__} finished."
 			return 1
 		end
 		
@@ -93,7 +72,7 @@ class Price
 		
 		@value = site.how_match @card
 
-		@log.info "#{__method__} finished.card.name[#{@card.name}], site[#{site.site_name}], value[#{@value}]"
+		@log.info "#{__method__} finished.card.name[#{@card.name}], site[#{site.name}], value[#{@value}]"
 	end
 	
 	

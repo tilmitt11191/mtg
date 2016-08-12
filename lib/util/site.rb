@@ -10,7 +10,7 @@ class Site
 	@log
 	@web
 	@html
-	@site_name
+	@name
 	@card_name
 	@url
 	@charset
@@ -20,7 +20,7 @@ class Site
 	@deck_nokogiri
 	
 
-	attr_accessor :site_name, :web, :html
+	attr_accessor :name, :web, :html
 	
 	def initialize(site_name, logger)
 		@log = logger

@@ -11,7 +11,7 @@ require '../../lib/util/deck_prices.rb'
 
 class Store
 	@log
-	@store_name
+	@name
 	@card_name
 	@url
 	@charset="UTF-8"
@@ -21,12 +21,12 @@ class Store
 	@deck_nokogiri
 	
 
-	attr_accessor :store_name
+	attr_accessor :name
 	
 	def initialize(store_name, logger)
 		@log = logger
 		@log.info "Store.initialize(" + store_name + ")"
-		@store_name = store_name
+		@name = store_name
 	end
 	
 	def how_match?(card)
@@ -66,7 +66,7 @@ class Hareruya < Store
 		@url = "http://www.hareruyamtg.com/jp/"
 	end
 	
-	def how_match?(card)
+	def how_match(card)
 		if card.name.nil? then
 			@log.error "card.name is nil at hareruya.how_match?(card)"
 		end
@@ -87,23 +87,26 @@ class Hareruya < Store
 		price.gsub!(/\s|\n|￥|,/,"")
 		card.price.value = price
 		@log.debug "hareruya.how_match?(#{card.name}) finished. price is " + price
-		#return card.price
+		return card.price.value
 	end
 	
 	def extract_english_card_name(cardname)
+		@log.debug "extract_english_card_name(#{cardname})start."
 		if cardname.nil? then
 			return nil
 		elsif cardname.match('/') && cardname.match("》")
 			##from 《コイロスの洞窟/Caves of Koilos》
 			##to Caves of Koilos
-			english_card_name = cardname.split('/')[1]
-			english_card_name.delete!("》")
+			english_card_name = unescape_double_quote(cardname).split('/')[1]
+			english_card_name.delete!("》\"")
+			@log.debug "return [#{english_card_name}]"
 			return english_card_name
 		else
 			cardname.gsub!(/[^ -~｡-ﾟ]/,"")
 			#cardname.gsub!(/[ぁ-ん]/u,"")
 			#cardname.gsub!(/[ァ-ヴ]/u,"")
 			#cardname.gsub!(/[一-龠]/u,"")
+			@log.debug "return [#{english_card_name}]"
 			return cardname
 		end
 	end
@@ -274,7 +277,7 @@ class Hareruya < Store
 				card.card_type = card_type
 				if create_mode == "full" then
 					@log.debug "hareruya.create_card_list call #{card.name}.renew_at(card, hareruya)"
-					card.price.renew_at(card, "hareruya")
+					card.price.renew_at(self)
 					@log.debug "renewed value is #{card.price}"
 				end
 				@log.debug "name[" + card_name.to_s + "], card_type[" + card.card_type.to_s + "], card.price[" + card.price.to_s + "]"
