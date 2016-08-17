@@ -17,7 +17,7 @@ hareruya = Hareruya.new(@log)
 #deck(737)[GW_Aggro_kD08824S] had been created.
 
 from = 1
-to = 1000
+to = 10
 deck_urls = hareruya.search_deckurls_from_webpage(to)
 i = 1
 deck_urls.each do |url|
