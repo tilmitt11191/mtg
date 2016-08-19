@@ -20,13 +20,13 @@ class Price
 		if card.nil? then
 			@log.debug "price.initialize(nil)"
 			@card = nil
-			@value = nil
+			@value = 0
 			@date = nil
 		else
 			@log = logger
 			@log.info "price of " + card.name + " initialize"
 			@card = card
-			@value = nil
+			@value = 0
 			@date = nil
 		end
 	end

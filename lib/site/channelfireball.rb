@@ -1,4 +1,5 @@
-
+# encoding: UTF-8
+#ruby
 
 require	'logger'
 require 'active_support/core_ext/object' #for blank?
@@ -17,8 +18,8 @@ class Channelfireball < Site
 	attr_accessor :cardnames, :scores, :comments
 	
 	def initialize(logger)
-		super("Channelfireball", logger)
-		@url = "http://www.channelfireball.com/articles/"
+		super('Channelfireball', logger)
+		@url = 'http://www.channelfireball.com/articles/'
 
 		@cardnames = []
 		@scores = {}

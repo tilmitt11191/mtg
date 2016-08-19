@@ -20,13 +20,13 @@ class Site
 	@deck_nokogiri
 	
 
-	attr_accessor :name, :web, :html
+	attr_accessor :name, :web, :html, :url
 	
 	def initialize(site_name, logger)
 		@log = logger
 		@log.info "Site.initialize(" + site_name + ")"
 		@web = Web.new
-		@site_name = site_name
+		@name = site_name
 		@charset="UTF-8"
 	end
 	

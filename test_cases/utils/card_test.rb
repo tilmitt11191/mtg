@@ -27,6 +27,37 @@ class Test_card < Test::Unit::TestCase
 	def setup
 		@log = Logger.new("../../log")
 	end
+	must "register Liliana to sql" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		require 'active_record'
+		
+		card = Card.new('Liliana, the Last Hope', @log)
+		card.read_from_dom
+		
+		puts card.name
+		
+		
+		# DB接続設定
+		ActiveRecord::Base.establish_connection(
+			adapter:	'mysql2',
+			host:			'localhost',
+			username:	'alladmin',
+			password:	'',
+			database:	'mtg',
+)
+
+# テーブルにアクセスするためのクラスを宣言
+class User < ActiveRecord::Base
+  # テーブル名が命名規則に沿わない場合、
+  self.table_name = 'wp_users'  # set_table_nameは古いから注意
+end
+
+# レコード取得
+p User.all
+	
+	end
+
 
 =begin
 	must "create nil card" do
@@ -37,7 +68,7 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 'nil', card.name
 	end
 =end
-#=begin
+=begin
 	must "read contents of Liliana, the Last Hope from dom, dom file was created by previous test" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -90,7 +121,7 @@ begin
 -7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"", card.oracle
 	end
 end
-=begin
+#=begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."

@@ -27,6 +27,17 @@ class Test_card < Test::Unit::TestCase
 	def setup
 		@log = Logger.new("../../log")
 	end
+	
+	must "calc num of lands in deck" do
+		require '../../lib/site/hareruya.rb'
+		hareruya = Hareruya.new(@log)
+
+		deck = hareruya.read_deckfile('../../test_cases/utils/sample_deck_BGConJF.csv', 'card_type,cardname,quantity,manacost,generating_mana_type,price,store_url,price.date', 'with_info')		
+		assert_equal 26, deck.calc_num_of_lands_in_deck
+		
+		deck = hareruya.read_deckfile('../../test_cases/utils/sample_deck_WBConkD09283S.csv', 'card_type,cardname,quantity,manacost,generating_mana_type,price,store_url,price.date', 'with_info')		
+		assert_equal 25, deck.calc_num_of_lands_in_deck
+	end
 
 #methods
 #initialize
@@ -43,10 +54,10 @@ class Test_card < Test::Unit::TestCase
 #calc_num_of_mainboard_cards_in_deck
 #merge_duplicated_cards!
 
-	must "view_deck_list"
-		deck = Deck.new()
-	end
-
+	#must "view_deck_list" do
+	#	deck = Deck.new()
+	#end
+=begin
 	must "initialize" do
 		deck = Deck.new('initialize', 'test', '', @log)
 		
@@ -72,5 +83,5 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 0 ,deck.price_of_mainboard_cards
 		assert_equal 0 ,deck.price_of_sideboard_cards
 	end
-
+=end
 end

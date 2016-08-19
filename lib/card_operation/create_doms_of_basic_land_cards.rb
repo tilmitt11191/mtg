@@ -2,9 +2,7 @@
 #ruby
 
 require '../../lib/util/utils.rb'
-require '../../lib/util/deck.rb'
-require '../../lib/site/wisdomGuild.rb'
-require '../../lib/site/mtgotraders.rb'
+require '../../lib/util/card.rb'
 
 begin
 	puts File.basename(__FILE__).to_s + " start."
@@ -13,13 +11,19 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	lands = [Plains,Island,Swamp,Mountain,Forest]
+	lands = ['Plains','Island','Swamp','Mountain','Forest']
 	generating_manas = {}
-	generating_manas[Plains] = 'W'
-	generating_manas[] = ''
-	generating_manas[] = ''
-	generating_manas[] = ''
-	generating_manas[] = ''
+	generating_manas['Plains'] = 'W'
+	generating_manas['Island'] = 'U'
+	generating_manas['Swamp'] = 'B'
+	generating_manas['Mountain'] = 'R'
+	generating_manas['Forest'] = 'G'
+	
+	lands.each do |land|
+		card = Card.new(land, @log)
+		card.generating_mana_type = generating_manas[land]
+		card.write_contents
+	end
 	
 	
 rescue => e

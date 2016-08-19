@@ -304,11 +304,11 @@ class Deck
 	def get_sum_of_generating_manas
 	#get sum of all card's generating manas. 
 	#Please execute this method after get_contents()
-		@log.info @deckname.to_s + ".get_sum_of_generationg_manas() start."
-		sum_of_generationg_manas = @mana_analyzer.calc_sum_of_generating_mana()
-		if sum_of_generationg_manas.size == 2 then
-			@sum_of_mainboard_generating_manas = sum_of_generationg_manas[0]
-			@sum_of_sideboard_generating_manas = sum_of_generationg_manas[1]
+		@log.info @deckname.to_s + ".get_sum_of_generating_manas() start."
+		sum_of_generating_manas = @mana_analyzer.calc_sum_of_generating_mana()
+		if sum_of_generating_manas.size == 2 then
+			@sum_of_mainboard_generating_manas = sum_of_generating_manas[0]
+			@sum_of_sideboard_generating_manas = sum_of_generating_manas[1]
 		end
 	end
 	
@@ -388,7 +388,7 @@ class Deck
 		@price_of_sideboard_cards = 0
 
 		@cards.each do |card|
-			@price += card.price.to_i * card.quantity.to_i
+			@price.value += card.price.to_i * card.quantity.to_i
 			@log.debug "@price_of_all = " + @price.to_s
 			case card.card_type
 			when "land"
@@ -471,6 +471,7 @@ class Deck
 		end
 		
 		@log.info "merge_duplicated_cards(" + @deckname.to_s + ") finished."
+		return self
 	end
 	
 	
