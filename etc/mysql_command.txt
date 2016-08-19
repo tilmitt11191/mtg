@@ -1,0 +1,7 @@
+create user alladmin;
+select User,Host from mysql.user;
+grant all on mtg to 'alladmin'@'%';
+create table mtg.cards(name text, price int, date text, store_url text, generating_mana_type text,manacost text,color text,manacost_point int,type text,oracle text,powertoughness text,illustrator text,rarity text,cardset text);
+INSERT INTO db_name.tbl_name (name, manacost_point) VALUES (Liliana, 3);
+alter table テーブル名 modify フィールド名 データ型;
+http://techacademy.jp/magazine/5199

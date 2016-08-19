@@ -27,17 +27,16 @@ class Test_card < Test::Unit::TestCase
 	def setup
 		@log = Logger.new("../../log")
 	end
+	
 	must "register Liliana to sql" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
-		require 'active_record'
 		
 		card = Card.new('Liliana, the Last Hope', @log)
 		card.read_from_dom
-		
 		puts card.name
 		
-		
+		require 'active_record'		
 		# DB接続設定
 		ActiveRecord::Base.establish_connection(
 			adapter:	'mysql2',
@@ -45,17 +44,11 @@ class Test_card < Test::Unit::TestCase
 			username:	'alladmin',
 			password:	'',
 			database:	'mtg',
-)
-
-# テーブルにアクセスするためのクラスを宣言
-class User < ActiveRecord::Base
-  # テーブル名が命名規則に沿わない場合、
-  self.table_name = 'wp_users'  # set_table_nameは古いから注意
-end
-
-# レコード取得
-p User.all
-	
+		)
+		connection = ActiveRecord::Base.connection
+		
+		
+		#puts connection.select_all('SELECT * FROM cards').to_hash[0]['manacost_point']
 	end
 
 
