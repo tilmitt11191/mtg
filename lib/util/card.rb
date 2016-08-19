@@ -5,6 +5,7 @@ require	"logger"
 require "mechanize"
 require 'rexml/document'
 require 'active_support/core_ext/object' #for blank?
+require 'active_record'
 require "../../lib/util/price.rb"
 require '../../lib/util/mana_analyzer.rb'
 
@@ -408,5 +409,30 @@ class Wish_card < Card
 	
 	def get_line
 		return "\"" + @name.to_s + "\"," + @quantity.to_s + "," + @id.to_s + "," + @rarerity.to_s + "," + @set.to_s + "," + @collector_number.to_s + "," + @premium.to_s
+	end
+end
+
+
+class Card_for_sql < ActiveRecord::Base
+	self.table_name = 'cards'
+	validates_presence_of :name
+	validates_presence_of :price
+	validates_presence_of :date
+	validates_presence_of :store_url
+	validates_presence_of :generating_mana_type
+	validates_presence_of :manacost
+	validates_presence_of :color
+	validates_presence_of :manacost_point
+	validates_presence_of :type
+	validates_presence_of :oracle
+	validates_presence_of :powertoughness
+	validates_presence_of :illustrator
+	validates_presence_of :rarity
+	validates_presence_of :cardset
+	
+	def initialize card,log
+		log.info "Card_for_sql.initialize(#{card.name}) start."
+		super()
+		name = card.name
 	end
 end

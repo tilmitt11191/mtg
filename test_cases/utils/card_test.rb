@@ -3,6 +3,7 @@
 
 require 'logger'
 require 'test/unit'
+require 'active_record'
 require '../../lib/util/tests.rb' #for must
 require '../../lib/util/utils.rb'
 require '../../lib/util/card.rb'
@@ -32,23 +33,20 @@ class Test_card < Test::Unit::TestCase
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		
+		
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+		connection = ActiveRecord::Base.connection
+
+		#create sample card
 		card = Card.new('Liliana, the Last Hope', @log)
 		card.read_from_dom
-		puts card.name
-		
-		require 'active_record'		
-		# DB接続設定
-		ActiveRecord::Base.establish_connection(
-			adapter:	'mysql2',
-			host:			'localhost',
-			username:	'alladmin',
-			password:	'',
-			database:	'mtg',
-		)
-		connection = ActiveRecord::Base.connection
-		
-		
+		item = Card_for_sql.new(card, @log)
+		puts item.save
+
 		#puts connection.select_all('SELECT * FROM cards').to_hash[0]['manacost_point']
+		puts connection.select_all('SELECT * FROM cards')
 	end
 
 
