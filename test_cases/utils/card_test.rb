@@ -29,24 +29,26 @@ class Test_card < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 	end
 	
-	must "register Liliana to sql" do
+
+=begin
+	must "save Liliana to sql" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
-		
-		
-		#establish connection to db
-		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
-		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
-		connection = ActiveRecord::Base.connection
 
 		#create sample card
 		card = Card.new('Liliana, the Last Hope', @log)
 		card.read_from_dom
-		item = Card_for_sql.new(card, @log)
-		puts item.save
+		card.save_to_sql @log
 
-		#puts connection.select_all('SELECT * FROM cards').to_hash[0]['manacost_point']
-		puts connection.select_all('SELECT * FROM cards')
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+		connection = ActiveRecord::Base.connection
+		records = Card_for_db.where(name: "#{card.name}")
+		assert_equal 1, records.size
+		assert_equal "{name=>\"Liliana, the Last Hope\", price=>0, date=>, store_url=>, generating_mana_type=>, manacost=>1BB, color=>black, manacost_point=>3, cardtype=>プレインズウォーカー—リリアナ(Liliana), oracle=>\" +1: Up to one target creature gets -2/-1 until your next turn.
+-2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
+-7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\", powertoughness=>, illustrator=>AnnaSteinbauer, rarity=>神話レア, cardset=>異界月(93/205)", records[0].to_s
 	end
 
 
@@ -59,6 +61,12 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 'nil', card.name
 	end
 =end
+	must "read contents of Liliana, the Last Hope from sql" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+	
+	end
+
 =begin
 	must "read contents of Liliana, the Last Hope from dom, dom file was created by previous test" do
 		puts "#{__method__} start."
@@ -82,8 +90,8 @@ class Test_card < Test::Unit::TestCase
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
 -7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"", card.oracle
 	end
-#=end
-begin
+=end
+=begin
 	must "read contents of Liliana, the Last Hope from dom, dom file not exist" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -111,8 +119,8 @@ begin
 -2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.
 -7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"", card.oracle
 	end
-end
-#=begin
+=end
+=begin
 	must "read contents of Liliana, the Last Hope from web" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."

@@ -102,6 +102,7 @@ class Card
 		
 		@name = escape_by_double_quote dom_root.elements["name"].text, @log
 		@manacost = dom_root.elements["manacost"].text || ''
+		@color = dom_root.elements["color"].text || ''
 		@manacost_point = dom_root.elements["manacost_point"].text || ''
 		@type = dom_root.elements["type"].text || ''
 		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log || ''
@@ -114,7 +115,11 @@ class Card
 	end
 	
 	
-	def read_from_dom()
+	def read_from_sql
+	
+	end
+	
+	def read_from_dom
 		@log.info @name.to_s + ".read_from_dom() start"
 		if File.exist?("../../cards/" + unescape_double_quote(@name.to_s)) then
 			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} exist.read it."
@@ -249,12 +254,15 @@ class Card
 	
 	def write_contents(dir:"../../cards/")
 		@log.info "card.write_contents() to #{dir}#{@name.to_s} start."
+		@log.info "save to sql"
+		save_to_sql @log
 
 		@log.info "create dom"
 		doc = REXML::Document.new
 		root = doc.add_element("root")
 		root.add_element("name").add_text @name.to_s
 		root.add_element("manacost").add_text @manacost.to_s
+		root.add_element("color").add_text @color.to_s
 		root.add_element("manacost_point").add_text @manacost_point.to_s
 		root.add_element("type").add_text @type.to_s
 		root.add_element("oracle").add_text @oracle.to_s
@@ -363,8 +371,33 @@ class Card
 	end
 
 
-=begin
-	def get_price_by site
+	def save_to_sql(log)
+		log.info "#{__method__} start.cardname[#{@name}]"
+
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+		connection = ActiveRecord::Base.connection
+		
+		log.debug "create record"
+		record = Card_for_db.new(self, log)
+		
+		#delete duplicated record
+		log.debug "delete duplicated record"
+		sql = "DELETE FROM cards WHERE name ='%s';"
+		ActiveRecord::Base.connection.delete sql % [@name]
+		#Card_for_db.where(name: "#{@name}").each do |record|
+			#record.print
+			#record.destroy
+		#end
+		
+		log.debug "save record[#{record.to_s}]"
+		record.save
+
+		log.info "#{__method__} finished.cardname[#{@name}]"
+	end
+
+	def get_price_from site
 		puts "#{__method__} start."
 		if site.respond_to?(:how_match) then
 			site.how_match self
@@ -373,7 +406,7 @@ class Card
 			puts "#{__method__} finished."
 		end
 	end
-=end
+
 end
 
 
@@ -413,26 +446,29 @@ class Wish_card < Card
 end
 
 
-class Card_for_sql < ActiveRecord::Base
+class Card_for_db < ActiveRecord::Base
 	self.table_name = 'cards'
-	validates_presence_of :name
-	validates_presence_of :price
-	validates_presence_of :date
-	validates_presence_of :store_url
-	validates_presence_of :generating_mana_type
-	validates_presence_of :manacost
-	validates_presence_of :color
-	validates_presence_of :manacost_point
-	validates_presence_of :type
-	validates_presence_of :oracle
-	validates_presence_of :powertoughness
-	validates_presence_of :illustrator
-	validates_presence_of :rarity
-	validates_presence_of :cardset
+	validates_presence_of :name, :manacost, :color, :manacost_point, :cardtype, :oracle, :illustrator, :rarity, :cardset
+	# :price, :date, :store_url, :powertoughness, :generating_mana_type,
 	
 	def initialize card,log
-		log.info "Card_for_sql.initialize(#{card.name}) start."
-		super()
-		name = card.name
+		log.info "Card_for_db.initialize(#{card.name}) start."
+		super(name:card.name,
+			price: card.price,
+			store_url: card.store_url,
+			generating_mana_type: card.generating_mana_type,
+			manacost: card.manacost,
+			color: card.color,
+			manacost_point: card.manacost_point,
+			cardtype: card.type,
+			oracle: card.oracle,
+			powertoughness: card.powertoughness,
+			illustrator: card.illustrator,
+			rarity: card.rarity,
+			cardset: card.cardset)
+	end
+	
+	def to_s
+		"{name=>#{name}, price=>#{price}, date=>#{date}, store_url=>#{store_url}, generating_mana_type=>#{generating_mana_type}, manacost=>#{manacost}, color=>#{color}, manacost_point=>#{manacost_point}, cardtype=>#{cardtype}, oracle=>#{oracle}, powertoughness=>#{powertoughness}, illustrator=>#{illustrator}, rarity=>#{rarity}, cardset=>#{cardset}"
 	end
 end

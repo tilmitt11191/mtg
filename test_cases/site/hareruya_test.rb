@@ -28,6 +28,10 @@ class Test_hareruya < Test::Unit::TestCase
 		@site = Hareruya.new(@log)
 	end
 	
+	must "how_match" do
+		card = Card.new('Liliana, the Last Hope', @log)
+	end
+=begin
 	must "create deck from url" do
 		url = 'http://www.hareruyamtg.com/jp/k/kD13230S/'
 		deck = @site.create_deck_from_url(url, priceflag:'on')
@@ -42,7 +46,7 @@ class Test_hareruya < Test::Unit::TestCase
 		assert_equal 'Hareruya', @site.name
 		assert_equal 'http://www.hareruyamtg.com/jp/', @site.url
 	end
-
+=end
 end
 
 
