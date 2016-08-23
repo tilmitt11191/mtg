@@ -28,11 +28,17 @@ class Test_hareruya < Test::Unit::TestCase
 		@site = Hareruya.new(@log)
 	end
 	
-	must "how_match" do
-		card = Card.new('Liliana, the Last Hope', @log)
+#=begin
+	must "initialize" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		assert_equal 'Hareruya', @site.name
+		assert_equal 'http://www.hareruyamtg.com/jp/', @site.url
 	end
-=begin
+
 	must "create deck from url" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
 		url = 'http://www.hareruyamtg.com/jp/k/kD13230S/'
 		deck = @site.create_deck_from_url(url, priceflag:'on')
 		assert_equal 75, deck.calc_num_of_all_cards_in_deck
@@ -42,11 +48,19 @@ class Test_hareruya < Test::Unit::TestCase
 		deck.create_deckfile('../../test_cases/site/sample_deck_WBConkD13230S.csv', 'card_type,name,quantity,price,store_url,price.date,generating_mana_type', 'with_info')
 	end
 	
-	must "initialize" do
-		assert_equal 'Hareruya', @site.name
-		assert_equal 'http://www.hareruyamtg.com/jp/', @site.url
+#=end
+
+	must "how_match Liliana, the Last Hope" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Liliana, the Last Hope', @log)
+		card.renew_price_at @site
+		puts card.price
+		puts card.value
+		puts card.date
+		puts card.store_url
 	end
-=end
+
 end
 
 

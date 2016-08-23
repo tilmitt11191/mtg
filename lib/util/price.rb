@@ -61,8 +61,10 @@ class Price
 
 	def renew_at site
 		@log.info "#{__method__} start.card.name[#{@card.name}], site[#{site.name}]"
-		if !site.respond_to?(:how_match) then
-			@log.fatal "#{site} not have method(:how_match)"
+		@store = site
+		
+		if !@store.respond_to?(:how_match) then
+			@log.fatal "#{@store} not have method(:how_match)"
 			@log.info "#{__method__} finished."
 			return 1
 		end
@@ -72,7 +74,8 @@ class Price
 		
 		@value = site.how_match @card
 
-		@log.info "#{__method__} finished.card.name[#{@card.name}], site[#{site.name}], value[#{@value}]"
+		@log.info "#{__method__} finished.card.name[#{@card.name}], site[#{@store.name}], value[#{@value}]"
+		self
 	end
 	
 	

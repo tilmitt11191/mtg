@@ -16,22 +16,23 @@ class Hareruya < Site
 		@url = 'http://www.hareruyamtg.com/jp/'
 	end
 	
-	def how_match(card)
+	def how_match card
 		if card.name.nil? then
 			@log.error "card.name is nil at hareruya.how_match?(card)"
 		end
 		@log.debug "how match ["+card.name+"] at hareruya"
 		@card_name = card.name
+		card.store_url = get_url_of card
 		@log.debug "url is [" + card.store_url.to_s + "]"
-		if card.store_url.nil? then
-			@log.error "card.store_url is nil at hareruya.how_match?"
-			@log.error "return nil"
-			return nil		
-		elsif !card.store_url.include?("http://www.hareruyamtg.com/") then
-			@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
-			@log.error "return nil"
-			return nil
-		end
+		#if card.store_url.nil? then
+		#	@log.error "card.store_url is nil at hareruya.how_match?"
+		#	@log.error "return nil"
+		#	return nil		
+		#elsif !card.store_url.include?("http://www.hareruyamtg.com/") then
+		#	@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
+		#	@log.error "return nil"
+		#	return nil
+		#end
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
 		price.gsub!(/\s|\n|￥|,/,"")
@@ -43,6 +44,13 @@ class Hareruya < Site
 	def read_cardpage(url)
 		@card_row_data = open(url)
 		@card_nokogiri = Nokogiri::HTML.parse(@card_row_data, nil, @charset)
+	end
+	
+	def get_url_of card
+		@log.info "#{__method__} start."		
+		url = "http://www.hareruyamtg.com/jp/g/gEMN000028EN/"
+		@log.info "#{__method__} finished. return #{url}"
+		url
 	end
 
 	

@@ -14,6 +14,41 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cards`
+--
+
+DROP TABLE IF EXISTS `cards`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cards` (
+  `name` mediumtext,
+  `price` int(11) DEFAULT NULL,
+  `date` mediumtext,
+  `store_url` mediumtext,
+  `generating_mana_type` mediumtext,
+  `manacost` mediumtext,
+  `color` mediumtext,
+  `manacost_point` int(11) DEFAULT NULL,
+  `cardtype` text,
+  `oracle` mediumtext,
+  `powertoughness` mediumtext,
+  `illustrator` mediumtext,
+  `rarity` mediumtext,
+  `cardset` mediumtext
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cards`
+--
+
+LOCK TABLES `cards` WRITE;
+/*!40000 ALTER TABLE `cards` DISABLE KEYS */;
+INSERT INTO `cards` VALUES ('\"Liliana, the Last Hope\"',0,NULL,'','','1BB','black',3,'プレインズウォーカー—リリアナ(Liliana)','\" +1: Up to one target creature gets -2/-1 until your next turn.\n-2: Put the top two cards of your library into your graveyard, then you may return a creature card from your graveyard to your hand.\n-7: You get an emblem with \"\"At the beginning of your end step, put X 2/2 black Zombie creature tokens onto the battlefield, where X is two plus the number of Zombies you control.\"\"\"','','AnnaSteinbauer','神話レア','異界月(93/205)');
+/*!40000 ALTER TABLE `cards` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -24,4 +59,4 @@
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-19 15:22:39
+-- Dump completed on 2016-08-23  9:08:19

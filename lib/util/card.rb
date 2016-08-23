@@ -5,9 +5,9 @@ require	"logger"
 require "mechanize"
 require 'rexml/document'
 require 'active_support/core_ext/object' #for blank?
-require 'active_record'
 require "../../lib/util/price.rb"
 require '../../lib/util/mana_analyzer.rb'
+require '../../lib/sql/sql_form.rb'
 
 
 class Card
@@ -17,21 +17,22 @@ class Card
 	@quantity #int
 	@price #Price::price
 	@value
+	@date
 	@store_url
 	@generating_mana_type #if name is mountain, set "R"
-	attr_accessor :name, :card_type, :quantity, :price, :value, :store_url, :generating_mana_type
+	attr_accessor :name, :card_type, :quantity, :price, :value, :date, :store_url, :generating_mana_type
 	
 	@manacost #string
 	@color
 	@manacost_array #array[string]
 	@manacost_point #点数で見たマナコスト
-	@type ##TODO: rename to ...
+	@cardtype ##TODO: rename to ...
 	@oracle
 	@powertoughness
 	@illustrator
 	@rarity
 	@cardset
-	attr_accessor :manacost, :color, :manacost_array, :manacost_point, :type, :oracle, :powertoughness, :illustrator, :rarity, :cardset
+	attr_accessor :manacost, :color, :manacost_array, :manacost_point, :cardtype, :oracle, :powertoughness, :illustrator, :rarity, :cardset
 	
 	def initialize(name, logger)
 		@log = logger
@@ -46,7 +47,7 @@ class Card
 		@color = ''
 		@manacost_array = []
 		@manacost_point = ''
-		@type = ''
+		@cardtype = ''
 		@oracle = ''
 		@powertoughness = ''
 		@illustrator = ''
@@ -65,7 +66,7 @@ class Card
 		@color = ''
 		@manacost_array = []
 		@manacost_point = ''
-		@type = ''
+		@cardtype = ''
 		@oracle = ''
 		@powertoughness = ''
 		@illustrator = ''
@@ -80,15 +81,17 @@ class Card
 	end
 	
 	
-	def read_contents()
+	def read_contents
 		#get contents of card. such as manacost, oracle,...
 		@log.info @name.to_s + ".read_contents() start"
-		if File.exist?("../../cards/" + @name.to_s) then
+		if sql_record_exist then
+			read_from_sql
+		elsif File.exist?("../../cards/#{unescape_double_quote @name}") then
 			#read local file
-			read_from_dom()
+			read_from_dom
 		else
 			#get contents of card from "http://whisper.wisdom-guild.net/"
-			read_from_web()
+			read_from_web
 		end
 	end
 
@@ -103,8 +106,8 @@ class Card
 		@name = escape_by_double_quote dom_root.elements["name"].text, @log
 		@manacost = dom_root.elements["manacost"].text || ''
 		@color = dom_root.elements["color"].text || ''
-		@manacost_point = dom_root.elements["manacost_point"].text || ''
-		@type = dom_root.elements["type"].text || ''
+		@manacost_point = dom_root.elements["manacost_point"].text.to_i || ''
+		@cardtype = dom_root.elements["cardtype"].text || ''
 		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log || ''
 		@powertoughness = dom_root.elements["powertoughness"].text || ''
 		@illustrator = dom_root.elements["illustrator"].text || ''
@@ -114,9 +117,50 @@ class Card
 		@log.info "#{__method__} finished."
 	end
 	
+	def sql_record_exist
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+
+		records = Card_for_db.where(name: "#{name}")
+		records.size == 1 ? true : false
+	end
 	
 	def read_from_sql
-	
+		@log.info "#{__method__} start."
+		
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+
+		records = Card_for_db.where(name: "#{name}")
+		if records[0].nil? then puts "nil" end
+		if !sql_record_exist then
+			@log.debug "sql record not exist. try to read from local file or web"
+			read_contents
+			return self
+		elsif records.size>1 then
+			@log.fatal "sql has duplicated records of #{name}."
+			raise "sql has duplicated records of #{name}."
+		end
+		
+		@log.debug "acquired sql record. copy to self."
+		@name = records[0].name
+		@price = records[0].price
+		@date = records[0].date
+		@store_url = records[0].store_url
+		@generating_mana_type = records[0].generating_mana_type
+		@manacost = records[0].manacost
+		@color = records[0].color
+		@manacost_point = records[0].manacost_point
+		@cardtype = records[0].cardtype
+		@oracle = records[0].oracle
+		@powertoughness = records[0].powertoughness
+		@illustrator = records[0].illustrator
+		@rarity = records[0].rarity
+		@cardset = records[0].cardset
+		@log.info "#{__method__} finished."
+		self
 	end
 	
 	def read_from_dom
@@ -138,15 +182,16 @@ class Card
 			@log.debug "../../cards/#{unescape_double_quote(@name.to_s)} not exist.read from web."
 			@log.debug "the root of dom is nil."
 			@log.debug "try to read from web."
-			read_from_web()
+			read_from_web
 		end
-		
+		save_to_sql
 		@log.info @name.to_s + ".read_from_dom() finished"
+		self
 	end
 
 	
-	def read_from_web()
-		@log.info "@name.to_s + read_from_web() start"
+	def read_from_web
+		@log.info "@name.to_s + read_from_web start"
 		@log.info "get contents of card from http://whisper.wisdom-guild.net/"
 		agent = Mechanize.new
 		page = agent.get('http://www.wisdom-guild.net/')
@@ -168,8 +213,11 @@ class Card
 		
 		parse_card_page card_page
 		set_generating_mana_type()
+		
+		save_to_sql
 
 		@log.info "@name.to_s + read_from_web() finished"
+		self
 	end
 
 
@@ -240,7 +288,7 @@ class Card
 		@log.info ""
 		@log.info "manacost:"; @log.info @manacost
 		@log.info "manacost_point:"; @log.info @manacost_point
-		@log.info "type:"; @log.info @type
+		@log.info "type:"; @log.info @cardtype
 		@log.info "oracle:"; @log.info @oracle
 		@log.info "powertoughness:"; @log.info @powertoughness
 		@log.info "illustrator:"; @log.info @illustrator
@@ -255,7 +303,7 @@ class Card
 	def write_contents(dir:"../../cards/")
 		@log.info "card.write_contents() to #{dir}#{@name.to_s} start."
 		@log.info "save to sql"
-		save_to_sql @log
+		save_to_sql
 
 		@log.info "create dom"
 		doc = REXML::Document.new
@@ -264,7 +312,7 @@ class Card
 		root.add_element("manacost").add_text @manacost.to_s
 		root.add_element("color").add_text @color.to_s
 		root.add_element("manacost_point").add_text @manacost_point.to_s
-		root.add_element("type").add_text @type.to_s
+		root.add_element("cardtype").add_text @cardtype.to_s
 		root.add_element("oracle").add_text @oracle.to_s
 		root.add_element("powertoughness").add_text @powertoughness.to_s
 		root.add_element("illustrator").add_text @illustrator.to_s
@@ -301,7 +349,7 @@ class Card
 			else @manacost_point += 1
 			end
 		end
-		@manacost_point = @manacost_point.to_s
+		#@manacost_point = @manacost_point.to_s
 		decide_color
 		
 		@log.debug "extracted from(" + str.to_s + ") to (" + @manacost.to_s + ")"
@@ -336,7 +384,7 @@ class Card
 	end
 	
 	def extract_type(str)
-		@type = str.gsub(/\n|\s/,"") || ''
+		@cardtype = str.gsub(/\n|\s/,"") || ''
 	end
 	
 	def extract_oracle(str)
@@ -371,36 +419,42 @@ class Card
 	end
 
 
-	def save_to_sql(log)
-		log.info "#{__method__} start.cardname[#{@name}]"
+	def save_to_sql
+		@log.info "#{__method__} start.cardname[#{@name}]"
 
 		#establish connection to db
 		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
 		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
-		connection = ActiveRecord::Base.connection
 		
-		log.debug "create record"
-		record = Card_for_db.new(self, log)
+		@log.debug "create record"
+		record = Card_for_db.new(self, @log)
 		
-		#delete duplicated record
-		log.debug "delete duplicated record"
+		#delete duplicated records
+		@log.debug "delete duplicated record"
 		sql = "DELETE FROM cards WHERE name ='%s';"
-		ActiveRecord::Base.connection.delete sql % [@name]
+		ActiveRecord::Base.connection.delete sql % [escape_single_quote(@name,@log)]
 		#Card_for_db.where(name: "#{@name}").each do |record|
 			#record.print
 			#record.destroy
 		#end
 		
-		log.debug "save record[#{record.to_s}]"
-		record.save
+		@log.debug "save record[#{record.to_s}]"
+		if record.save then
+			@log.info "save record succeed."
+		else
+			@log.fatal "save record failed."
+		end
 
-		log.info "#{__method__} finished.cardname[#{@name}]"
+		@log.info "#{__method__} finished.cardname[#{@name}]"
 	end
 
-	def get_price_from site
+	def renew_price_at site
 		puts "#{__method__} start."
 		if site.respond_to?(:how_match) then
-			site.how_match self
+			@price = @price.renew_at site
+			@value = @price.value
+			@date = @price.date
+			@store_url = site.url
 		else
 			@log.fatal "#{site} not have method(:how_match)"
 			puts "#{__method__} finished."
@@ -445,30 +499,3 @@ class Wish_card < Card
 	end
 end
 
-
-class Card_for_db < ActiveRecord::Base
-	self.table_name = 'cards'
-	validates_presence_of :name, :manacost, :color, :manacost_point, :cardtype, :oracle, :illustrator, :rarity, :cardset
-	# :price, :date, :store_url, :powertoughness, :generating_mana_type,
-	
-	def initialize card,log
-		log.info "Card_for_db.initialize(#{card.name}) start."
-		super(name:card.name,
-			price: card.price,
-			store_url: card.store_url,
-			generating_mana_type: card.generating_mana_type,
-			manacost: card.manacost,
-			color: card.color,
-			manacost_point: card.manacost_point,
-			cardtype: card.type,
-			oracle: card.oracle,
-			powertoughness: card.powertoughness,
-			illustrator: card.illustrator,
-			rarity: card.rarity,
-			cardset: card.cardset)
-	end
-	
-	def to_s
-		"{name=>#{name}, price=>#{price}, date=>#{date}, store_url=>#{store_url}, generating_mana_type=>#{generating_mana_type}, manacost=>#{manacost}, color=>#{color}, manacost_point=>#{manacost_point}, cardtype=>#{cardtype}, oracle=>#{oracle}, powertoughness=>#{powertoughness}, illustrator=>#{illustrator}, rarity=>#{rarity}, cardset=>#{cardset}"
-	end
-end

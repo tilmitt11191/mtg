@@ -13,6 +13,11 @@ def reconvert_period(str)
 	return str.gsub("PERIOD",",").to_s
 end
 
+def escape_single_quote str, logger #for sql
+	@log.debug "#{__method__} #{str} start."
+	str.gsub("'", "''")
+end
+
 def escape_by_double_quote str, logger
 	@log.debug "#{__method__} #{str} start."
 	return "\"\"" if str.nil? 
