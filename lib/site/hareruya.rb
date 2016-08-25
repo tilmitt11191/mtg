@@ -21,40 +21,51 @@ class Hareruya < Site
 			@log.error "card.name is nil at hareruya.how_match?(card)"
 		end
 		@log.debug "how match ["+card.name+"] at hareruya"
-		@card_name = card.name
 		card.store_url = get_url_of card
 		@log.debug "url is [" + card.store_url.to_s + "]"
-		#if card.store_url.nil? then
-		#	@log.error "card.store_url is nil at hareruya.how_match?"
-		#	@log.error "return nil"
-		#	return nil		
-		#elsif !card.store_url.include?("http://www.hareruyamtg.com/") then
-		#	@log.error "invalid card.store_url[" + card.store_url.to_s + "]"
-		#	@log.error "return nil"
-		#	return nil
-		#end
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
 		price.gsub!(/\s|\n|￥|,/,"")
-		card.price.value = price
+		card.price = price
 		@log.debug "hareruya.how_match?(#{card.name}) finished. price is " + price
-		return card.price.value
+		price
 	end
 	
-	def read_cardpage(url)
-		@card_row_data = open(url)
+	def read_cardpage url
+		@card_row_data = open url
 		@card_nokogiri = Nokogiri::HTML.parse(@card_row_data, nil, @charset)
 	end
 	
 	def get_url_of card
-		@log.info "#{__method__} start."		
+		@log.info "#{__method__} start."
 		url = "http://www.hareruyamtg.com/jp/g/gEMN000028EN/"
+
+		agent = Mechanize.new
+		url = 'http://www.hareruyamtg.com/jp/goods/search.aspx'
+		if !url_exists? url, @log then
+			@log.error "site url[#{url}] not exist. return nil."
+			return nil
+		end
+		page = agent.get(url)
+		query = card.name.to_s
+		page.form.field_with(:name => 'name').value = query
+		#puts page.form.field_with(:name => 'foil').methods
+		puts "cb : #{page.form.checkboxes.to_s}"
+		@log.debug "query: " + query
+
+		search_results = page.form.submit
+		puts "show search_results"
+		search_results.css('div.autopagerize_page_element/ul.itemListLine').each do |item|
+			#puts item.inner_text
+		end
+		#<ul class="itemListLine">
+
 		@log.info "#{__method__} finished. return #{url}"
 		url
 	end
 
 	
-	def extract_english_card_name(cardname)
+	def extract_english_card_name cardname
 		@log.debug "extract_english_card_name(#{cardname})start."
 		if cardname.nil? then
 			return nil

@@ -57,7 +57,7 @@ class Test_card < Test::Unit::TestCase
 	#must "view_deck_list" do
 	#	deck = Deck.new()
 	#end
-=begin
+#=begin
 	must "initialize" do
 		deck = Deck.new('initialize', 'test', '', @log)
 		
@@ -83,5 +83,5 @@ class Test_card < Test::Unit::TestCase
 		assert_equal 0 ,deck.price_of_mainboard_cards
 		assert_equal 0 ,deck.price_of_sideboard_cards
 	end
-=end
+#=end
 end

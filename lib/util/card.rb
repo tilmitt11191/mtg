@@ -16,11 +16,8 @@ class Card
 	@name
 	@quantity #int
 	@price #Price::price
-	@value
-	@date
-	@store_url
 	@generating_mana_type #if name is mountain, set "R"
-	attr_accessor :name, :card_type, :quantity, :price, :value, :date, :store_url, :generating_mana_type
+	attr_accessor :name, :card_type, :quantity, :price, :generating_mana_type
 	
 	@manacost #string
 	@color
@@ -40,7 +37,6 @@ class Card
 		@name = escape_by_double_quote name,@log
 		@price = Price.new(self, @log)
 		@value = ''
-		@store_url = ''
 		@generating_mana_type = ''
 
 		@manacost = ''
@@ -59,7 +55,6 @@ class Card
 		@log.info "#{__method__} start."
 		@price = Price.new(self, @log)
 		@value = ''
-		@store_url = ''
 		@generating_mana_type = ''
 
 		@manacost = ''
@@ -75,9 +70,21 @@ class Card
 		@log.info "#{__method__} finished."	
 	end
 	
-	def set_store_page(url)
-		@log.debug "Card["+@name+"].set_store_page[" + url +"]"
-		@store_url = url
+	def price=(value)
+		#puts "card.price= #{value}"
+		@price.value = value
+	end
+	def value
+		@price.value
+	end
+	def date
+		@price.date
+	end
+	def store_url
+		@price.store.url
+	end
+	def store_url=(url)
+		price.store.url = url
 	end
 	
 	
@@ -93,37 +100,6 @@ class Card
 			#get contents of card from "http://whisper.wisdom-guild.net/"
 			read_from_web
 		end
-	end
-
-	def extract_contents_from_dom(dom_root)
-		@log.info "#{__method__} start."
-		if dom_root.nil? then
-			@log.warn "dom_root.nil"
-			create_nil_card
-			return 1
-		end
-		
-		@name = escape_by_double_quote dom_root.elements["name"].text, @log
-		@manacost = dom_root.elements["manacost"].text || ''
-		@color = dom_root.elements["color"].text || ''
-		@manacost_point = dom_root.elements["manacost_point"].text.to_i || ''
-		@cardtype = dom_root.elements["cardtype"].text || ''
-		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log || ''
-		@powertoughness = dom_root.elements["powertoughness"].text || ''
-		@illustrator = dom_root.elements["illustrator"].text || ''
-		@rarity = dom_root.elements["rarity"].text || ''
-		@cardset = dom_root.elements["cardset"].text || ''
-		@generating_mana_type = dom_root.elements["generating_mana_type"].text || ''
-		@log.info "#{__method__} finished."
-	end
-	
-	def sql_record_exist
-		#establish connection to db
-		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
-		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
-
-		records = Card_for_db.where(name: "#{name}")
-		records.size == 1 ? true : false
 	end
 	
 	def read_from_sql
@@ -146,9 +122,9 @@ class Card
 		
 		@log.debug "acquired sql record. copy to self."
 		@name = records[0].name
-		@price = records[0].price
-		@date = records[0].date
-		@store_url = records[0].store_url
+		price = records[0].price
+		date = records[0].date
+		store_url = records[0].store_url
 		@generating_mana_type = records[0].generating_mana_type
 		@manacost = records[0].manacost
 		@color = records[0].color
@@ -161,6 +137,15 @@ class Card
 		@cardset = records[0].cardset
 		@log.info "#{__method__} finished."
 		self
+	end
+
+	def sql_record_exist
+		#establish connection to db
+		db_conf = YAML.load_file('../../etc/mysql_conf.yml')
+		ActiveRecord::Base.establish_connection(db_conf['db']['development'])
+
+		records = Card_for_db.where(name: "#{name}")
+		records.size == 1 ? true : false
 	end
 	
 	def read_from_dom
@@ -212,7 +197,7 @@ class Card
 		end
 		
 		parse_card_page card_page
-		set_generating_mana_type()
+		set_generating_mana_type
 		
 		save_to_sql
 
@@ -233,6 +218,27 @@ class Card
 		@log.info "read_from_url(" + url + ") finished."
 	end
 
+	def extract_contents_from_dom(dom_root)
+		@log.info "#{__method__} start."
+		if dom_root.nil? then
+			@log.warn "dom_root.nil"
+			create_nil_card
+			return 1
+		end
+		
+		@name = escape_by_double_quote dom_root.elements["name"].text, @log
+		@manacost = dom_root.elements["manacost"].text || ''
+		@color = dom_root.elements["color"].text || ''
+		@manacost_point = dom_root.elements["manacost_point"].text.to_i || ''
+		@cardtype = dom_root.elements["cardtype"].text || ''
+		@oracle = escape_by_double_quote dom_root.elements["oracle"].text,@log || ''
+		@powertoughness = dom_root.elements["powertoughness"].text || ''
+		@illustrator = dom_root.elements["illustrator"].text || ''
+		@rarity = dom_root.elements["rarity"].text || ''
+		@cardset = dom_root.elements["cardset"].text || ''
+		@generating_mana_type = dom_root.elements["generating_mana_type"].text || ''
+		@log.info "#{__method__} finished."
+	end
 
 	def parse_card_page card_page
 		card_page.search('tr').each do |tr|
@@ -449,15 +455,13 @@ class Card
 	end
 
 	def renew_price_at site
-		puts "#{__method__} start."
+		@log.info "#{__method__} start."
 		if site.respond_to?(:how_match) then
 			@price = @price.renew_at site
-			@value = @price.value
-			@date = @price.date
-			@store_url = site.url
+			@log.info "renew_price_at #{site.name} finished.price[#{@price}], date[#{@date}], store_url[#{@store_url}]"
 		else
 			@log.fatal "#{site} not have method(:how_match)"
-			puts "#{__method__} finished."
+			@log.info "#{__method__} finished."
 		end
 	end
 

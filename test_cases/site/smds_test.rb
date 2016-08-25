@@ -30,7 +30,7 @@ class Test_SMDS < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 		@site = SMDS.new(@log)
 	end
-
+=begin
 	must "create pointranking list of emn" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -61,6 +61,7 @@ class Test_SMDS < Test::Unit::TestCase
 		assert_equal @site.cardnames.size, 205
 		assert_equal @site.scores.size, 205
 	end
+=end
 
 	must "get_cardname_by_number" do
 		puts "#{__method__} start."

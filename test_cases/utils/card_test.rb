@@ -29,7 +29,7 @@ class Test_card < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 	end
 
-=begin
+#=begin
 	must "read contents of Liliana, the Last Hope from sql" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -223,7 +223,7 @@ class Test_card < Test::Unit::TestCase
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		card = Card.new("\"Blessed Alliance\"", @log)
-		card.set_store_page 'http://whisper.wisdom-guild.net/card/Blessed Alliance/'
+		card.store_url = 'http://whisper.wisdom-guild.net/card/Blessed Alliance/'
 		card.read_from_web
 		assert_equal "\"Blessed Alliance\"", card.name
 		assert_equal 'アンコモン', card.rarity
@@ -245,7 +245,7 @@ Choose one or more ---
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		card = Card.new("\"Falkenrath Reaver\"", @log)
-		card.set_store_page 'http://whisper.wisdom-guild.net/card/Falkenrath Reaver/'
+		card.store_url = 'http://whisper.wisdom-guild.net/card/Falkenrath Reaver/'
 		card.read_from_web
 		assert_equal "\"Falkenrath Reaver\"", card.name
 		assert_equal "\"\"", card.oracle
@@ -325,11 +325,11 @@ Choose one or more ---
 		require '../../lib/site/mtgotraders.rb'
 		site = MTGOtraders.new(@log)
 		card = Card.new('Liliana, the Last Hope', @log)
-		card.price.renew_at site
+		card.renew_price_at site
 		puts "card.price #{card.price} is near 37.40?"
 		assert card.price > 0
 	end
-=end
+#=end
 
 	must "save Nahiri's Wrath to sql" do
 		puts "#{__method__} start."

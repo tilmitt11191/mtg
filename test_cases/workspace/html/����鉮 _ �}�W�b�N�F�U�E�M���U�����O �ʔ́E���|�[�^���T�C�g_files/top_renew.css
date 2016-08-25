@@ -1,0 +1,678 @@
+/*------------------------------------------
+jp toppage renew css
+
+1 lotation banner
+2 right block common
+3 unique block css
+4 rightframe middle
+  4.1 nakajima block
+  4.2 twitter
+  4.3 feature
+  4.4 long banner
+------------------------------------------*/
+
+/*------------------------------------------
+1 lotation banner
+------------------------------------------*/
+#rotationBanner .flexslider{
+    margin:0;
+    border:0;
+    margin-bottom:40px;
+}
+#rotationBanner .flexslider:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#rotationBanner .slides{
+    float: left;
+    width: 564px;
+}
+#rotationBanner .flex-control-thumbs{
+    float: right;
+    margin:0;
+    width: 124px;
+}
+#rotationBanner .flex-control-thumbs li{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#rotationBanner .flex-control-thumbs li:nth-last-of-type(1){
+    margin-bottom: 0;
+}
+
+/*------------------------------------------
+2 right block common
+------------------------------------------*/
+#rightBlock{
+    width: 700px;
+    float: right;
+}
+#rightBlock section:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#rightBlock h2{
+    font-size:16px;
+    line-height: 16px;
+    padding:5px 2px;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+/*------------------------------------------
+3 unique block css
+------------------------------------------*/
+#newArr{color: #ea5404}
+#newArr li{border-color: #ea5404}
+#newArr .moreLink{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5a75f+0,ea5404+100 */
+    background: rgb(245,167,95); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,167,95,1) 0%, rgba(234,84,4,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(245,167,95,1) 0%,rgba(234,84,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(245,167,95,1) 0%,rgba(234,84,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5a75f', endColorstr='#ea5404',GradientType=0 ); /* IE6-9 */
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border:1px solid white;
+}
+#newArr .moreLink:hover{
+    background: white;
+    border:1px solid #EA5404;
+    color: #ea5404;
+}
+#newArr .moreLink:hover:before{
+    border-left-color: #EA5404;
+}
+#topSale{color: #BD161D}
+#topSale li{border-color: #BD161D}
+#topSale .moreLink{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#de724e+0,bd161d+100 */
+    background: rgb(222,114,78); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(222,114,78,1) 0%, rgba(189,22,29,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(222,114,78,1) 0%,rgba(189,22,29,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(222,114,78,1) 0%,rgba(189,22,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de724e', endColorstr='#bd161d',GradientType=0 ); /* IE6-9 */
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border:1px solid white;
+}
+#topSale .moreLink:hover{
+    background: white;
+    border:1px solid #BD161D;
+    color: #BD161D;
+}
+#topSale .moreLink:hover:before{
+    border-left-color: #BD161D;
+}
+#forRank{
+    color:#916B24;
+    line-height: 1;
+}
+#rankStd{color: #B9080E}
+#rankStd .itemListHeader{background-color: #FDECE4}
+#rankMdn{color: #13682F}
+#rankMdn .itemListHeader{background-color: #EAF4EB}
+#rankLgc{color: #6D3864}
+#rankLgc .itemListHeader{background-color: #FAE5EE}
+#rankVin{color: #012F6A}
+#rankVin .itemListHeader{background-color: #E0EAF6}
+#rankEdh{color: #603D29}
+#rankEdh .itemListHeader{background-color: #F3E7D1}
+#rankFoi{color: #B87036}
+#rankFoi .itemListHeader{background-color: #FBFBE3}
+#forRank .itemListRow a{width: 100%;}
+#accRank{
+    color: #EA5404;
+    margin-bottom:40px;
+}
+#accRank li{border-color: #EA5404}
+#recStaff,
+#recUser{
+    margin-bottom: 20px;
+}
+#recStaff h2,
+#recUser h2{
+    padding:12px 40px 12px 20px;
+    border-radius: 0 28px 28px 0;
+    border:1px solid;
+    border-left: 0;
+    color: #9D9010;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    background: white;
+    margin-bottom: 20px;
+}
+#recStaff{
+    background: #F7F5E6;
+    padding:20px 0 30px;
+    border-bottom:2px white solid;
+}
+#recUser{
+    background: #F3E7D1;
+    padding:20px 0 30px;
+    margin-bottom: 40px;
+}
+#recUser h2{color:#AE8F73;}
+#forRank .itemListRow li{
+    position: relative;
+}
+#forRank .itemListRow li:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:0;
+    top:0;
+    background: #B06045;
+    color:white;
+    font-size:16px;
+    line-height: 20px;
+    box-sizing:border-box;
+    text-align: center;
+    z-index: 2;
+    opacity: 0.9;
+}
+#forRank .itemListRow a:nth-of-type(1) li:before{
+    content:'1';
+    background:#A68A49;   
+}
+#forRank .itemListRow a:nth-of-type(2) li:before{
+    content:'2';
+    background:#888;   
+}
+#forRank .itemListRow a:nth-of-type(3) li:before{content:'3'}
+#forRank .itemListRow a:nth-of-type(4) li:before{content:'4'}
+#forRank .itemListRow a:nth-of-type(5) li:before{content:'5'}
+ 
+
+/*------------------------------------------
+4 rightframe middle
+------------------------------------------*/
+#rightMiddle{
+    text-align: center;
+    font-size: 0;
+}
+
+/* 4.1 nakajima block */
+#nakajima{
+    width: 346px;
+    height: 316px;
+    background-image: url(/img/top/nakajima_back.png);
+    position: relative;
+    float: left;
+    margin-bottom: 40px;
+}
+#nakajima a  .nakajimaImg{
+    position: absolute;
+    width: 90px;
+    height: 125px;
+}
+#nakajima a:nth-of-type(1) .nakajimaImg{
+    transform: rotate(-10deg);
+    top:25px;
+    left:30px;
+}
+#nakajima a:nth-of-type(2)  .nakajimaImg{
+    transform: rotate(15deg);
+    top:170px;
+    left:230px;
+}
+#nakajima a  .nakajimaImg img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+#nakajima .nakajimaInner{
+    font-size: 11px;
+    position: absolute;
+    background: white;
+    width: 180px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border:1px solid #F6C485;
+    line-height: 150%;
+}
+#nakajima a:nth-of-type(1) .nakajimaInner{
+    bottom: 240px;
+    left: 125px;
+}
+#nakajima a:nth-of-type(2) .nakajimaInner{
+    bottom: 105px;
+    left: 20px;
+}
+#nakajima a:nth-of-type(1) .nakajimaInner:before{
+    content:"";
+    position: absolute;
+    left:5px;
+    bottom:-17px;
+    width: 0;
+    height: 0;
+    border-right:25px solid transparent;
+    border-left: 25px solid #F6C485;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #F6C485;
+}
+#nakajima a:nth-of-type(1) .nakajimaInner:after{
+    content:"";
+    position: absolute;
+    left:5px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-right:25px solid transparent;
+    border-left: 25px solid white;
+    border-bottom:8px solid transparent;
+    border-top:8px solid white;
+}
+#nakajima a:nth-of-type(1) .nakajimaArrow{
+    position: absolute;
+    left:5px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-right:13px solid transparent;
+    border-left: 13px solid #F6C485;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #F6C485;
+    z-index: 2
+}
+#nakajima a:nth-of-type(1) .nakajimaArrow:after{
+    content: "";
+        position: absolute;
+    left:-16px;
+    bottom:-9px;
+    width: 0;
+    height: 0;
+    border-right:13px solid transparent;
+    border-left: 13px solid #FEF0CB;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #FEF0CB;
+    z-index: 2
+}
+#nakajima a:nth-of-type(2) .nakajimaInner:before{
+    content:"";
+    position: absolute;
+    right:5px;
+    bottom:-17px;
+    width: 0;
+    height: 0;
+    border-left:25px solid transparent;
+    border-right: 25px solid #F6C485;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #F6C485;
+}
+#nakajima a:nth-of-type(2) .nakajimaInner:after{
+    content:"";
+    position: absolute;
+    right:5px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-left:25px solid transparent;
+    border-right: 25px solid white;
+    border-bottom:8px solid transparent;
+    border-top:8px solid white;
+}
+#nakajima a:nth-of-type(2) .nakajimaArrow{
+    position: absolute;
+    right:5px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-left:13px solid transparent;
+    border-right: 13px solid #F6C485;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #F6C485;
+    z-index: 2
+}
+#nakajima a:nth-of-type(2) .nakajimaArrow:after{
+    content: "";
+        position: absolute;
+    right:-16px;
+    bottom:-9px;
+    width: 0;
+    height: 0;
+    border-left:13px solid transparent;
+    border-right: 13px solid #FEF0CB;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #FEF0CB;
+    z-index: 2
+}
+#nakajima .nakajimaMessage{
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    top:247px;
+    left: 125px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 150%;
+    text-shadow: 1px 1px white,1px -1px white,
+                -1px 1px white,-1px -1px white;
+}
+#nakajima #nakajimaPopup1,
+#nakajima #nakajimaPopup2{
+    position: absolute;
+    width: 470px;
+    border:4px solid #F8C284;
+    z-index: 50;
+    background: #FEF0CB;
+    border-radius: 20px;
+    display: table;
+    box-shadow: 4px 4px 5px -1px rgba(0,0,0,0.4);
+    display: none;
+}
+#nakajima #nakajimaPopup1{
+    bottom:285px;
+    left:-80px;
+}
+#nakajima #nakajimaPopup1:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 28px solid transparent;
+    border-top:28px solid #F8C284;
+    left:168px;
+    bottom:-60px;
+}
+#nakajima #nakajimaPopup1:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 26px solid transparent;
+    border-top:26px solid #FEF0CB;
+    left:170px;
+    bottom:-52px;
+}
+#nakajima #nakajimaPopup2{
+    top:235px;
+    left:-80px;
+}
+#nakajima #nakajimaPopup2:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 28px solid transparent;
+    border-bottom:28px solid #F8C284;
+    left:278px;
+    top:-60px;
+}
+#nakajima #nakajimaPopup2:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 26px solid transparent;
+    border-bottom:26px solid #FEF0CB;
+    left:280px;
+    top:-52px;
+}
+#nakajima .nPopupImg{
+    width: 200px;
+    padding:10px;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+#nakajima .nPopupImg img{
+    width: 100%;
+}
+#nakajima .nPopupDisc{
+    padding:15px 10px;
+    padding-left: 0;
+    display: table-cell;
+    line-height: 130%;
+}
+#nakajima .nPopupDisc h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#nakajima .nPopupDisc .nPopupMsg{
+    font-size: 12px;
+    background: white;
+    border-radius: 10px;
+    padding:10px;
+    border:1px solid #aaa;
+    padding-bottom:20px;
+    position: relative;
+}
+#nakajima .nPopupDisc img{
+    float: right;
+    margin:-25px 0px -15px 0;
+    z-index: 5;
+    position: relative;
+}
+#nakajima .nPopupDisc .nPopupMsg:before{
+    content:"";
+    position: absolute;
+    right:100px;
+    bottom:-17px;
+    width: 0;
+    height: 0;
+    border-left:25px solid transparent;
+    border-right: 25px solid #aaa;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #aaa;
+}
+#nakajima .nPopupDisc .nPopupMsg:after{
+    content:"";
+    position: absolute;
+    right:100px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-left:25px solid transparent;
+    border-right: 25px solid white;
+    border-bottom:8px solid transparent;
+    border-top:8px solid white;
+}
+#nakajima .nPopupArrow{
+    position: absolute;
+    right:100px;
+    bottom:-16px;
+    width: 0;
+    height: 0;
+    border-left:13px solid transparent;
+    border-right: 13px solid #aaa;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #aaa;
+    z-index: 2
+}
+#nakajima .nPopupArrow:after{
+    content: "";
+        position: absolute;
+    right:-16px;
+    bottom:-9px;
+    width: 0;
+    height: 0;
+    border-left:13px solid transparent;
+    border-right: 13px solid #FEF0CB;
+    border-bottom:8px solid transparent;
+    border-top:8px solid #FEF0CB;
+    z-index: 2
+}
+
+/* 4.2 twitter */
+#topTwitter{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 326px;
+    height: 310px;
+    border:1px solid #aaa;
+    margin-left: 10px;
+    vertical-align: top
+}
+
+/* 4.3 feature */
+#feature{
+    margin-bottom: 20px;
+    clear: both;
+}
+#feature ul{
+    text-align: center;
+    line-height: 0;
+}
+#feature li{
+    display: inline-block;
+    margin:0 8px;
+}
+#feature img{
+    border:1px solid;
+}
+#feature a img{
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#feature a img:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+/* 4.4 long banner */
+#longBanner{
+	margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+
+/* 4.5 rss feed */
+#rss {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    border-style: solid;
+    border-color: #ea5404;
+    border-width: 1px;
+    width: 326px;
+    height: 312px;
+    overflow: hidden;
+    background:white;
+    box-sizing: border-box;
+    text-align: left;
+}
+#rss h2{
+    margin-bottom: 0;
+    border:0;
+    padding: 0;
+    position: relative;
+    color: #ea5404;
+}
+#rss h2:hover{
+    background: #ffc;
+}
+#rss h2:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 12px solid #ea5404;
+    right: 8px;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+}
+#rss h2 a{
+    display: block;
+}
+#rss li a{
+    display: block;
+}
+#rss li a:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.new-article {
+    font-size: 16px;
+    color: #ea5404;
+    padding: 15px;
+}
+
+#feed {
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px dashed #ea5404;
+}
+
+#feed p.title_box {
+    padding-top: 5px;
+    height:51px;
+    font-weight: normal;
+    line-height: 120%;
+}
+
+#feed img.thumbnail {
+    width: 81px;
+    height: 81px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+}
+
+#feed p.authors {
+    padding: 6px 3px 2px 0px;
+    font-size: 13.5px;
+    font-weight: bold;
+    float: left;
+}
+
+#feed img.icons {
+    height: 18px;
+    padding: 3px 3px 3px 0px;
+    float: right;
+}
+
+#feed img.icons_pros {
+    width:100px;
+    height: 18px;
+    padding: 4px 3px 3px 0px;
+    float: right;
+}
+
+#feed none {
+    width: none;
+    height: none;
+}
+#feed li{
+    border-bottom: 1px dashed #ea5404;
+    padding:3px;
+    transition: .3s background;
+}
+#feed li:nth-last-of-type(1){
+    border-bottom:0;
+}
+#feed li:hover{
+    background: #ffc;
+}

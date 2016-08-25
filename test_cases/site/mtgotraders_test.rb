@@ -29,12 +29,82 @@ class TEST_MTGOtraders < Test::Unit::TestCase
 		@site = MTGOtraders.new(@log)
 	end
 
-	must "how match test" do
+=begin
+	must "how match relevant test" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
 		card = Card.new('Liliana, the Last Hope', @log)
 		assert_equal "\"Liliana, the Last Hope\"", card.name
-		card.read_from_web
-		
+		card.read_contents
+		@site.search_option='relevant'
+		card.renew_price_at @site
+		puts "price[#{card.price}] is close to [38]?"
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal 'http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=relevancy', card.store_url
 	end
 
+	must "how match highest test" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Liliana, the Last Hope', @log)
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+		card.read_contents
+		@site.search_option='highest'
+		card.renew_price_at @site
+		puts "price[#{card.price}] is close to [108]?"
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal 'http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=price_desc', card.store_url
+	end
 
+	must "how match lowest test" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Liliana, the Last Hope', @log)
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+		card.read_contents
+		@site.search_option='lowest'
+		card.renew_price_at @site
+		puts "price[#{card.price}] is close to [108]?"
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal 'http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=price', card.store_url
+	end
+#=end
+#=begin
+	must "how_match when url is nil" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Liliana, the Last Hope', @log)
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+		card.store_url = ''
+		@site.search_option='relevant'
+		card.price = @site.how_match card
+		puts "price[#{card.price}] is close to [38]?"
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal 'http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=relevancy', card.store_url
+	end
+	
+	must "how_match when url is invalid" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Liliana, the Last Hope', @log)
+		assert_equal "\"Liliana, the Last Hope\"", card.name
+		card.store_url = 'http://www'
+		@site.search_option='relevant'
+		card.price = @site.how_match card
+		puts "price[#{card.price}] is close to [38]?"
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal 'http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=relevancy', card.store_url	
+	end
+=end
+	must "how_match when cardname is invalid" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('no such card', @log)
+		assert_equal "\"no such card\"", card.name
+		@site.search_option='relevant'
+		card.price = @site.how_match card
+		assert_equal nil, card.price.to_s
+		puts "date[#{card.date}] is close to [#{DateTime.now}]?"
+		assert_equal nil, card.store_url	
+	end
 end

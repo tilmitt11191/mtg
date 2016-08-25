@@ -28,7 +28,7 @@ class Test_wisdomGuild < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 		@site = WisdomGuild.new(@log)
 	end
-=begin
+#=begin
 	must "extract english of Liliana, the Last Hope" do
 		assert_equal 'Liliana, the Last Hope', @site.extract_english_of('最後の望み、リリアナ/Liliana, the Last Hope')
 	end
@@ -37,15 +37,15 @@ class Test_wisdomGuild < Test::Unit::TestCase
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		card = @site.get_card_by_cardname 'Liliana, the Last Hope'
-		assert_equal 'Liliana, the Last Hope', card.name
+		assert_equal '"Liliana, the Last Hope"', card.name
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
 		assert_equal 3, card.manacost_point
-		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
-		assert_equal nil, card.powertoughness
+		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.cardtype
+		assert_equal '', card.powertoughness
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 	end
 	
 	
@@ -57,13 +57,13 @@ class Test_wisdomGuild < Test::Unit::TestCase
 		assert_equal '神話レア', card.rarity
 		assert_equal '1BB', card.manacost
 		assert_equal 3, card.manacost_point
-		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.type
-		assert_equal nil, card.powertoughness
+		assert_equal 'プレインズウォーカー—リリアナ(Liliana)', card.cardtype
+		assert_equal '', card.powertoughness
 		assert_equal 'AnnaSteinbauer', card.illustrator
 		assert_equal '異界月(93/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
+		assert_equal '', card.generating_mana_type
 	end
-=end
+#=end
 	must "get contents of Blessed Alliance, which encoding include U + 2022" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -72,12 +72,12 @@ class Test_wisdomGuild < Test::Unit::TestCase
 		assert_equal 'アンコモン', card.rarity
 		assert_equal '1W', card.manacost
 		assert_equal 2, card.manacost_point
-		assert_equal 'インスタント', card.type
-		assert_equal nil, card.powertoughness
+		assert_equal 'インスタント', card.cardtype
+		assert_equal '', card.powertoughness
 		assert_equal 'JohannBodin', card.illustrator
 		assert_equal '異界月(13/205)', card.cardset
-		assert_equal nil, card.generating_mana_type
-		puts card.oracle.encode('Shift_JIS', :invalid => :replace, :undef => :replace, :replace => '?')
+		assert_equal '', card.generating_mana_type
+		#card.oracle.encode('Shift_JIS', :invalid => :replace, :undef => :replace, :replace => '?')
 	end
 	
 

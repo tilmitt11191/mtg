@@ -9,6 +9,7 @@ class MTGOtraders < Site
 	def initialize(logger)
 		super("mtgotraders", logger)
 		@url = "http://www.mtgotraders.com/"
+		@search_option = 'relevant'
 	end
 
 =begin
@@ -35,15 +36,17 @@ class MTGOtraders < Site
 	end
 =end
 
-	def how_match card,relevant:true,highest:false,lowest:false
-		@log.info "how match ["+card.name+"]  at mtgotraders start"
-		#prices = {}
-		#prices[relevant] = 0
-		#prices[highest] = 0
-		#prices[lowest] = 0
-		#return prices
+	def how_match card
+		@log.info "how match [#{card.name}], option[#{card.price.store.search_option}]  at mtgotraders start"
+		price = Price.new(card, @log)
+
 		agent = Mechanize.new
-		page = agent.get('http://www.mtgotraders.com/store/index.html')
+		url = 'http://www.mtgotraders.com/store/index.html'
+		if url_exists? url, @log then
+			@log.error "site url[#{url}] not exist. return nil."
+			return nil
+		end
+		page = agent.get(url)
 		query = card.name.to_s
 		page.form.q = query
 		@log.debug "query: " + query
@@ -65,37 +68,36 @@ class MTGOtraders < Site
 		#	</select>
 		#</div>
 		
-		if relevant then
+		case card.price.store.option
+		when 'relevant' then
 			@log.debug "get relevant price."
-			result = search_results.at('td.price').text #get only one result which hit first
-			value = result.gsub!(/\$/,'')
-			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
-			return value
-		end
-		
-		if highest then
+			search_url = optional_urls[:Relevancy] #http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=relevancy
+		when 'highest' then
 			@log.debug "get highest price."
-			optional_url = optional_urls[:"Price: High to Low"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
-			search_results = agent.get(optional_url)
-			result = search_results.at('td.price').text #get only one result which hit first
-			value = result.gsub!(/\$/,'')
-			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
-			return value
+			search_url = optional_urls[:"Price: High to Low"] #http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=price_desc
+		when 'lowest' then
+			@log.debug "get lowest price."
+			search_url = optional_urls[:"Price: Low to High"] #http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=price
 		end
-		
-		if lowest then
-			@log.debug "get highest price."
-			optional_url = optional_urls[:"Price: Low to High"] #http://www.mtgotraders.com/store/search.php?q=Jace%2C+Unraveler+of+Secrets&sortby=price_desc
-			search_results = agent.get(optional_url)
-			result = search_results.at('td.price').text #get only one result which hit first
-			value = result.gsub!(/\$/,'')
-			@log.info "how match ["+card.name+"]  at mtgotraders finished. return[#{value}]"
-			return value
+		@log.debug "search_url[#{search_url}]"
+		card.store_url = search_url
+		search_results = agent.get(search_url)
+		card.store_url = search_results.search('td.cardname/a').attribute('href').value
+
+		if !check_validness_of card then
+			@log.warn "cardpage of [#{card.name}] not exist. return nil"
+			return nil
 		end
-		return 0
-		@log.info "how match ["+card.name+"]  at mtgotraders finished"
+
+		result = search_results.at('td.price').text #get only one result which hit first
+		value = result.gsub!(/\$/,'')
+		@log.info "how match [#{card.name}]  at mtgotraders finished. return[#{value}]"
+		return value
 	end
 	
+	
+	
+=begin
 	def set_store_page_of(card)
 		@log.info "search_store_page_of[" + card.name.to_s + "] start"
 		agent = Mechanize.new
@@ -118,7 +120,17 @@ class MTGOtraders < Site
 		@log.info "return[" + card.store_url.to_s + "]"
 		return card.store_url
 	end
+=end
 	
+	def check_validness_of card
+		puts "#{__method__}[#{card.name}] start."
+		@log.info "#{__method__}[#{card.name}] start."
+		puts card.store_url
+		converted_cardname = card.name.gsub(/\s/,'_')
+		puts converted_cardname
+
+		return false
+	end
 	
 	def get_prices(price_manager,relevant:true,highest:true,lowest:true)
 		##TODO Exception

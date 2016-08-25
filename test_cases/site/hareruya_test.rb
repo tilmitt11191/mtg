@@ -28,14 +28,15 @@ class Test_hareruya < Test::Unit::TestCase
 		@site = Hareruya.new(@log)
 	end
 	
-#=begin
+=begin
 	must "initialize" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		assert_equal 'Hareruya', @site.name
 		assert_equal 'http://www.hareruyamtg.com/jp/', @site.url
 	end
-
+#=end
+#=begin
 	must "create deck from url" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -46,19 +47,27 @@ class Test_hareruya < Test::Unit::TestCase
 		assert_equal 60, deck.calc_num_of_mainboard_cards_in_deck
 		
 		deck.create_deckfile('../../test_cases/site/sample_deck_WBConkD13230S.csv', 'card_type,name,quantity,price,store_url,price.date,generating_mana_type', 'with_info')
+		#assert_equal #TDL
 	end
-	
-#=end
-
+=end
+=begin
 	must "how_match Liliana, the Last Hope" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
 		card = Card.new('Liliana, the Last Hope', @log)
 		card.renew_price_at @site
-		puts card.price
-		puts card.value
-		puts card.date
-		puts card.store_url
+		puts "card.price[#{card.price}] is close to 5800?"
+		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000028EN/', card.store_url
+	end
+=end
+
+	must "how_match Emrakul, the Promised End" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Emrakul, the Promised End', @log)
+		card.renew_price_at @site
+		puts "card.price[#{card.price}] is close to 2500?"
+		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000004EN/', card.store_url
 	end
 
 end

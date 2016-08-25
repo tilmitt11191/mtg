@@ -56,6 +56,7 @@ class Deck
 		@deckname = deckname
 		@cards = []
 		@price = Price.new(nil,@log)
+		puts @price.to_s
 		@sum_of_mainboard_generating_manas = "" #str
 		@sum_of_sideboard_generating_manas = "" #str
 		@log.debug "set list type[" + list_type + "]"
@@ -84,6 +85,9 @@ class Deck
 		else
 			@price.value.to_s
 		end	
+	end
+	def price=(value)
+		@price.value = value
 	end
 	
 	def view_deck_list #TODO: view_deck_list(format)
@@ -388,8 +392,11 @@ class Deck
 		@price_of_sideboard_cards = 0
 
 		@cards.each do |card|
-			@price.value += card.price.to_i * card.quantity.to_i
+			puts "price[#{@price}]"
+			puts "card.price.to_i[#{card.price.to_i}]"
+			puts "card.quantity.to_i[#{card.quantity.to_i}]"
 			@log.debug "@price_of_all = " + @price.to_s
+			@price.value += card.price.to_i * card.quantity.to_i
 			case card.card_type
 			when "land"
 				@price_of_lands +=card.price.to_i * card.quantity.to_i

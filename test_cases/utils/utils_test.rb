@@ -42,7 +42,7 @@ class Test_utils < Test::Unit::TestCase
 		assert_equal "aaa", unescape_double_quote("\"aaa\"")
 	end
 
-=begin	
+#=begin	
 	#check url_exists?
 	must "correct url" do
 		@log.info "#{__method__} start."
@@ -56,6 +56,6 @@ class Test_utils < Test::Unit::TestCase
 		incorrect_result = url_exists?(incorrect_url,@log)
 		assert_equal false, incorrect_result
 	end
-=end
+#=end
 	
 end

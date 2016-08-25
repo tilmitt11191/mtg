@@ -1,0 +1,42 @@
+﻿@charset "UTF-8";
+
+.to_top_button{
+	display:none;
+	position: fixed;
+	right: -20px;
+	bottom: 30px;
+	width: 80px;
+	height: 80px;
+	background-color: rgb(140,100,80);
+	z-index: 10;
+	border-radius: 40px;
+}
+
+.to_top_button:hover{
+	background-color: rgb(240,240,240);
+}
+
+.to_top_button p{
+	position:relative;
+}
+
+.to_top_button p:after{
+	content: " ";
+	position: absolute;
+	top: 35px;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	z-index: 11;
+	transition:500ms;
+}
+
+.to_top_button:hover p:after{
+	border-color:rgb(140,100,80);
+}

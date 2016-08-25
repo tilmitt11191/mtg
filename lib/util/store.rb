@@ -13,6 +13,7 @@ class Store
 	@log
 	@name
 	@card_name
+	@search_option
 	@url
 	@charset="UTF-8"
 	@card_row_data
@@ -21,7 +22,7 @@ class Store
 	@deck_nokogiri
 	
 
-	attr_accessor :name
+	attr_accessor :name, :url, :search_option
 	
 	def initialize(store_name, logger)
 		@log = logger

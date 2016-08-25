@@ -13,38 +13,34 @@ class Price
 	@value
 	@date
 	@store
-	attr_accessor :value, :date
+	attr_accessor :value, :date, :store
 
 	def initialize(card, logger)
 		@log = logger
-		if card.nil? then
-			@log.debug "price.initialize(nil)"
-			@card = nil
-			@value = 0
-			@date = nil
-		else
-			@log = logger
-			@log.info "price of " + card.name + " initialize"
-			@card = card
-			@value = 0
-			@date = nil
-		end
+		@card = card || nil
+		@value = 0
+		@date = nil
+		@store = Store.new('', logger)
 	end
 	
-
+	def price=(value)
+		puts "price.price= #{value}"
+		@value = value
+	end
+	
 	def to_s
 		if @value.nil? then
-			@log.warn @name.to_s + ".price.to_i = nil. return nil."
-			"nil"
+			@log.debug @card.name.to_s + ".price.to_i = nil. return nil." if !@card.nil?
+			nil
 		else
 			@value.to_s
 		end
 	end
-
+	
 	def to_i
 		if @value.nil? then
-			@log.error @name.to_s + ".price.to_i = nil. return 0."
-			0
+			@log.debug @card.name.to_s + ".price.to_i = nil. return nil."
+			nil
 		else
 			@value.to_i
 		end
@@ -59,7 +55,7 @@ class Price
 	end
 
 
-	def renew_at site
+	def renew_at site, option=nil
 		@log.info "#{__method__} start.card.name[#{@card.name}], site[#{site.name}]"
 		@store = site
 		

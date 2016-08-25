@@ -10,10 +10,13 @@ class WisdomGuild < Site
 		super("WisdomGuild", logger)
 		@url = "http://www.wisdom-guild.net/"
 	end
+
+	def extract_english_of cardname
+		cardname.split('/')[1]
+	end	
 	
 	def how_match?(card)
 		@log.debug "how match ["+card.name+"] at wisdomGuild"
-		@card_name = card.name
 		@log.debug "url is [" + card.store_url.to_s + "]"
 		if card.store_url.nil? then
 			@log.error "card.store_url is nil at wisdomGuild.how_match?"
@@ -24,7 +27,7 @@ class WisdomGuild < Site
 			@log.error "return nil"
 			return nil
 		end
-		card.price.value = 0
+		card.price = 30
 		#read_cardpage(card.store_url)
 		#price = @card_nokogiri.css('span.sell_price').text
 		#price.gsub!(/\s|\n|￥|,/,"")
@@ -32,13 +35,7 @@ class WisdomGuild < Site
 		#@log.debug "price is " + price
 		return card.price
 	end
-	
-	def extract_english_of cardname
-		cardname.split('/')[1]
-	end
-
-	
-	
+		
 	def get_card_from_url(url)
 		@log.debug "get_cardname_from_url(#{url}) start."
 		card = Card.new("",@log)
