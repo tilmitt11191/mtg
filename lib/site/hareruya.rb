@@ -40,17 +40,31 @@ class Hareruya < Site
 		@log.info "#{__method__} start."
 		url = "http://www.hareruyamtg.com/jp/g/gEMN000028EN/"
 
+
+		@log.info "#{__method__} finished. return #{url}"
+		url
+	end
+	
+	def detailed_search cardname
+		@log.info "#{__method__} start."
+		#other options
+		illustrator = nil
+		foil = false
+
 		agent = Mechanize.new
 		url = 'http://www.hareruyamtg.com/jp/goods/search.aspx'
-		if !url_exists? url, @log then
-			@log.error "site url[#{url}] not exist. return nil."
-			return nil
-		end
+		#if !url_exists? url, @log then
+		#	@log.error "site url[#{url}] not exist. return nil."
+		#	return nil
+		#end
 		page = agent.get(url)
-		query = card.name.to_s
-		page.form.field_with(:name => 'name').value = query
-		#puts page.form.field_with(:name => 'foil').methods
-		puts "cb : #{page.form.checkboxes.to_s}"
+		query = cardname
+		puts page.form.field_with.name
+		puts page.form.checkboxes.size
+		#page.form[0].field_with(:name => 'name').value = query
+		#puts page.form[0].checkbox_with.to_s
+		#(:name => 'foil')
+		puts "cb : #{page.form.to_s}"
 		@log.debug "query: " + query
 
 		search_results = page.form.submit
@@ -59,9 +73,7 @@ class Hareruya < Site
 			#puts item.inner_text
 		end
 		#<ul class="itemListLine">
-
-		@log.info "#{__method__} finished. return #{url}"
-		url
+	
 	end
 
 	

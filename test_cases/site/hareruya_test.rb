@@ -60,7 +60,7 @@ class Test_hareruya < Test::Unit::TestCase
 		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000028EN/', card.store_url
 	end
 =end
-
+=begin
 	must "how_match Emrakul, the Promised End" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -69,7 +69,15 @@ class Test_hareruya < Test::Unit::TestCase
 		puts "card.price[#{card.price}] is close to 2500?"
 		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000004EN/', card.store_url
 	end
+=end
 
+	must "detailed search of Emrakul" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		
+		@site.detailed_search 'Emrakul, the Promised End'
+		
+	end
 end
 
 
