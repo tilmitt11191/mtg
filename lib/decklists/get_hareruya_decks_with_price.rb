@@ -51,7 +51,7 @@ info	http://www.hareruyamtg.com/jp/k/kD09260S/
 
 require "logger"
 require '../../lib/util/deck.rb'
-require '../../lib/util/store.rb'
+require '../../lib/site/hareruya.rb'
 require '../../lib/util/deck_prices.rb'
 
 	puts File.basename(__FILE__).to_s + " start."
@@ -100,8 +100,8 @@ decks = []
 
 ##############################################
 
-id = "kD13230S"
-name = "WB_Control"+id.to_s
+id = "kD14355S"
+name = "WR_Control"+id.to_s
 decks.push DeckID.new(id,name,@log)
 
 

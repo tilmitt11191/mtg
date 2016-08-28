@@ -73,3 +73,6 @@ Swamp
 ""
 ""
 ""
+Mountain
+Plains
+Spawning Bed
