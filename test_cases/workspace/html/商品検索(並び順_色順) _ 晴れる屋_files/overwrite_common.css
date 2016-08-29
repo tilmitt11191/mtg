@@ -1,0 +1,203 @@
+﻿@charset "UTF-8";
+
+body{
+	text-align:left;
+}
+
+input{
+	padding: 0;
+}
+
+label{
+	margin: 0px 20px 0px 5px;
+	line-height: 0px;
+	padding-bottom:0px;
+}
+
+h1.goods_name_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+h1.category_name_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+h1.category_name_img_ { /* タイトルを画像にした場合 */
+	margin-bottom: 10px;
+}
+h1.event_name_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+h1.event_name_img_ { /* タイトルを画像にした場合 */
+	margin-bottom: 10px;
+}
+h1.genre_name_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+h1.genre_name_img_ { /* タイトルを画像にした場合 */
+	margin-bottom: 10px;
+}
+h1.tag_name_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+h1.topic_head_ {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	color: #003780;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 140%;
+	border-left: 5px solid #003780;
+}
+
+.side_tag_cloud_ {
+}
+.side_tag_cloud_ span {
+	line-height: 140%;
+}
+.tag_lowest_ {
+	font-size:80%;
+}
+.tag_low_ {
+	font-size:100%;
+}
+.tag_medium_ {
+	font-size:120%;
+}
+.tag_high_ {
+	font-size:144%;
+	font-weight:bold;
+}
+.tag_highest_ {
+	font-size: 173%;
+	font-weight:bold;
+}
+/* --------------------------------------------------------------------
+	common　タグ詳細
+-------------------------------------------------------------------- */
+.tag_cloud_ {
+}
+.tag_cloud_ span {
+	line-height: 140%;
+}
+.tag_cloud_more_ {
+	margin: 10px 0 0 0;
+	font-weight: bold;
+}
+.tag_add_shaping_ {
+	margin-bottom: 10px;
+	padding: 9px;
+	width: 580px;
+	overflow: hidden;
+	background: #F8F8F8;
+	border: 1px solid #CCC;
+}
+.tag_add_shaping_ h2 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+}
+.tag_add_shaping_ span {
+	margin-right: 10px;
+	padding-left:15px;
+	float: left;
+	white-space: nowrap;
+	background: url(../img/usr/icon_tag.gif) 0 center no-repeat;
+}
+.tag_other_ {
+	margin-bottom: 10px;
+	padding: 9px;
+	width: 580px;
+	overflow: hidden;
+	background: #F8F8F8;
+	border: 1px solid #CCC;
+}
+.tag_other_ h2 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+}
+.tag_other_ span {
+	margin-right: 10px;
+	padding-left:15px;
+	float: left;
+	white-space: nowrap;
+	background: url(../img/usr/icon_tag.gif) 0 center no-repeat;
+}
+.tag_tree_ {
+	margin-bottom: 10px;
+	padding: 9px;
+	width: 580px;
+	overflow: hidden;
+	background: #F8F8F8;
+	border: 1px solid #CCC;
+}
+.tag_tree_ h2 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+}
+.tag_tree_ span {
+	margin-right: 10px;
+	padding-left:15px;
+	float: left;
+	white-space: nowrap;
+	background: url(../img/usr/icon_tag.gif) 0 center no-repeat;
+}
+.tag_info_ {
+	margin-bottom: 10px;
+}
+.tag_info_ p.name_ {
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 15px;
+	background: url(../img/usr/icon_tag.gif) 0 center no-repeat;
+	border-bottom: 1px dotted #CCC;
+}
+
+.formdetail_ tr.formdetail1_ td {
+	padding:8px 8px 0px 8px;
+	font-weight:normal;
+	vertical-align: top;
+	background-color:#FFF;
+	border-top:1px dotted #CCC;
+	border-bottom:none;
+}
+.formdetail_ tr.formdetail2_ td {
+	padding:0px 8px 8px 8px;
+	font-weight:normal;
+	vertical-align: top;
+	background-color:#FFF;
+	border-top:none;
+	border-bottom:1px dotted #CCC;
+}

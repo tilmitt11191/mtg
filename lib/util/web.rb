@@ -11,12 +11,12 @@ class Web
 	@html_row_data
 	@cache #Hash key:url value:html_row_data
 	@dom
-	
+
 	def initialize
 		@cache = {}
 	end
 	
-	def url_exists?(url, log, limit = 3)
+	def self.url_exists?(url, log, limit = 3)
 		log.info "#{__method__}(#{url}, limit = #{limit}) start."
 		if limit == 0
 			log.info "#{__method__} finished. url[#{url}] does not exist."

@@ -56,7 +56,6 @@ class Deck
 		@deckname = deckname
 		@cards = []
 		@price = Price.new(nil,@log)
-		puts @price.to_s
 		@sum_of_mainboard_generating_manas = "" #str
 		@sum_of_sideboard_generating_manas = "" #str
 		@log.debug "set list type[" + list_type + "]"
@@ -169,13 +168,10 @@ class Deck
 		end
 		@log.debug "mode: " + mode.to_s
 
-		#puts cards[0].name
-		#form = "name"
-		#puts cards[0].instance_eval "print #{form}" # == puts cards[0].name
 		case mode
 		when "card_only" then
 			@log.debug "start writing. mode is card_only."
-			File.open(filename, "w:Shift_JIS") do |file|
+			File.open(filename, "w:Shift_JIS",:invalid => :replace, :undef => :replace, :replace => '?') do |file|
 				@cards.each do |card|
 					#write decks
 					forms.each do |form|

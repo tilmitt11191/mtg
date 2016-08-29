@@ -1,0 +1,558 @@
+﻿@charset="UTF-8";
+
+#left_menu{
+	float:left;
+	width:250px;
+	height:1500px;
+}
+
+#narita #left_menu{
+	height:925px;
+}
+#narita_info a{
+	color: #00d;
+}
+
+.store_switch{
+	border-bottom: 10px solid #D55618;
+	width:100%;
+	min-width:960px;
+}
+
+.to_tags{
+	width: 960px;
+	height: 39px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.to_tournament{
+	float:left;
+}
+
+
+.to_narita{
+	float:left;
+}
+
+#narita{
+	display: none;
+}
+
+/*	block_title 各ボックスのタイトル併用　*/
+
+.block_title{
+	float: left;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.block_title:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+
+#narita .block_title{
+	border-color:#217DC2;
+}
+
+.block_title img{
+	float: left;
+}
+
+.block_title p{
+	margin-left: 20px;
+	float: left;
+	padding:1px 5px 5px 0;
+	color: #EA5404;
+	font-size: 18px;
+	letter-spacing:4px;
+}
+
+#tournament_list .block_title p{
+	padding-top:4px;
+}
+
+#tournament_list .block_title p:nth-of-type(2){
+	color: black;
+	letter-spacing: normal;
+	font-size: 14px;
+	font-weight: normal;
+	display: block;
+	margin-left: 270px;
+}
+  
+#narita .block_title p{
+	color: #217DC2;
+}
+
+
+/* block_content 各ブロック本文、併用*/
+
+.block_content{
+	float: left;
+	width: 100%;
+	border:1px solid #EA5404;
+	border-radius:10px;
+	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+
+}
+
+#tournament_list .block_content{
+	width:674px;
+	text-align:center;
+	padding:10px 2px;
+}
+
+#narita #tournament_list .block_content img{
+	width:640px;
+	margin:10px 0;
+}
+
+#tournament_list .block_content .info{
+	display:none;
+}
+
+#tournament_list .block_content img{
+	margin:20px 0;
+}
+
+.main_wrapper_{
+	width: 960px;
+	margin: 20px auto 20px;
+}
+
+.main_wrapper_:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#banner{
+	float:right;
+	position: relative;
+}
+
+#shop_announce{
+	width:100%;
+	margin-top:20px;
+}
+
+.before_onpair{
+	float: right;
+	font-size: 18px;
+	margin-top: 65px;
+	margin-right: 10px;
+}
+
+#online_paring{
+	float:left;
+	position:relative;
+	height:60px;
+	width:250px;
+	border:1px solid gray;
+	border-radius:5px;
+	margin-top:20px;
+	background: #bebebe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bebebe 0%, #464646 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(100%,#464646)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #bebebe 0%,#464646 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #bebebe 0%,#464646 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #bebebe 0%,#464646 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #bebebe 0%,#464646 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#464646',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+
+#online_paring p{
+	position:relative;
+	color:white;
+	font-size:17px;
+	font-weight:bold;
+	padding:20px;
+	padding-left:60px;
+}
+
+#online_paring p:before{
+	content:"";
+	position:absolute;
+	background-color:white;
+	border-radius:18px;
+	top:14px;
+	left:14px;
+	height:32px;
+	width:32px;
+}
+
+#online_paring p:after{
+	content:"";
+	position:absolute;
+	top:22px;
+	left:26px;
+	height:0px;
+	width:0px;
+	border:8px solid transparent;
+	border-left:13px solid gray;
+}
+
+#online_paring a{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+
+#narita #online_paring{
+	height:32px;
+	width:210px;
+	margin-top:8px;
+}
+
+#narita #online_paring p{
+	font-size:16px;
+	padding:8px;
+	padding-left:30px;
+}
+
+#narita #online_paring p:before{
+	top:5px;
+	left:5px;
+	height:22px;
+	width:22px;
+	border-radius:11px;
+}
+
+#narita #online_paring p:after{
+	top:10px;
+	left:12px;
+	border:6px solid transparent;
+	border-left:11px solid gray;
+}
+
+#tournament_list{
+	width: 680px;
+	height: 700px;
+	background-color: white;
+}
+
+#narita #tournament_list{
+	height:596px;
+}
+
+#narita .block_content{
+	border-color:#217DC2;
+}
+
+.day_block{
+	padding:10px;
+}
+
+#tc_contents{
+	float: right;
+	width:680px;
+}
+
+/* トップバナーブロック */
+
+#tc_banner{
+	width:680px;
+	position: relative;
+	float:right;
+}
+#tc_banner .flexslider{
+	margin:0 0 50px;
+}
+#tc_banner .flexslider .slides{
+	height:380px;
+	overflow:hidden;
+}
+#tc_banner li img{
+	width:680px;
+	height:380px;
+}
+#tc_banner .flex-control-nav{
+	bottom:-30px;
+}
+#tc_banner .flex-control-nav li{
+	margin:0px 8px;
+}
+#tc_banner .flex-control-paging li a{
+	width:10px;
+	height:10px;
+}
+#tc_banner .flex-direction-nav a{
+	overflow:visible;
+}
+#narita #tc_banner{
+	border-color: #217DC2;
+}
+
+#tc_banner img{
+	width:680px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+/* スライダーバナーブロック */
+
+#tc_slide_banner{
+	margin-top:20px;
+	width:680px;
+	height:67px;
+	overflow:hidden;
+	position:relative;
+}
+
+#narita #tc_slide_banner{
+	border-color: #217DC2;
+}
+
+#tc_slide_banner img{
+	width:213px;
+	height:67px;
+	position:absolute;
+	top:0px;
+}
+
+#tc_slide_banner .left_arrow{
+	width:31px;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+
+#tc_slide_banner .right_arrow{
+	width:31px;
+	top:0px;
+	left:649px;
+	z-index:1;
+}
+
+#tc_slide_banner .banner_slider{
+	width:1076px; 
+	height:67px;
+	position:relative;
+	z-index:0;
+}
+
+
+/* ニュースブロック */
+
+#recent_news{
+	width:250px;
+	background-color: white;
+	margin-top:0;
+	float:left;
+	padding-bottom:10px;
+}
+
+#recent_news .headline{
+	border-bottom: 1px solid gray;
+	padding:9px;
+}
+
+#recent_news .headline:last-of-type{
+	border-bottom:0;
+}
+
+#recent_news .block_title{
+	margin-bottom:10px;
+}
+
+#narita #recent_news .block_title{
+	margin-bottom:15px;
+}
+
+#recent_news .block_content a p{
+	text-align: right;
+	padding:10px;
+}
+
+#recent_news .block_content p{
+	padding:2px;
+	font-size:15px;
+}
+
+#recent_news .block_content .news_date{
+	float: left;
+	margin-right: 5px;
+}
+#recent_news .rssRow{
+	padding:10px;
+	border-bottom:#444 solid 1px;
+}
+#recent_news .rssRow h4{
+	margin-bottom:10px;
+}
+#recent_news .rssRow:last-child{
+	border:0;
+}
+#recent_news .infoMore{
+	text-align:right;
+	padding: 0 10px 10px !important;
+}
+/* アクセスブロック */
+#tc_info{
+	margin-bottom: 40px;
+}
+#access{
+	width:958px;
+	background-color: white;
+	margin-top:20px;
+}
+#access:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+#access .links{
+	margin-top:26px;
+}
+
+#narita #access{
+	width:680px;
+}
+
+#narita #access .links{
+	margin-top:48px;
+}
+
+#access .links a img{
+	width:80px;
+}
+
+#access .access_map{
+	margin:25px;
+	float: left;
+	width:315px;
+	height:189px;
+}
+
+#narita #access .access_map{
+	border-color: #217DC2;
+	width:210px;
+}
+
+#access .access_map img{
+	width:315px;
+}
+
+#narita #access .access_map img{
+	width:210px;
+	height:190px;
+}
+
+#access .access_address{
+	padding:25px;
+}
+
+#access .access_address p{
+	font-size:14px;
+	line-height:24px;
+}
+
+/*案内、紹介、質問ブロック*/
+
+#tc_introduction{
+	margin: 25px auto 0;
+	float:left;
+}
+
+#tc_introduction img{
+	float:left;
+	margin-left:13px;
+	margin-bottom:20px;
+	width:225px;
+	height:147px;
+}
+
+#tc_introduction :first-child{
+}
+
+
+#narita #tc_introduction{
+	border-color:#217DC2;
+}
+
+#narita #tc_introduction img{
+}
+
+/*下部イベントバナー*/
+#bottom_banners {
+	width:100%;
+/*
+	background: linear-gradient(white,white,rgb(179, 179, 179));
+	-o-background: linear-gradient(white,white,rgb(179, 179, 179));
+	-ms-background: linear-gradient(white,white,rgb(179, 179, 179));
+	-moz-background: linear-gradient(white,white,rgb(179, 179, 179));
+	-webkit-background: linear-gradient(white,white,rgb(179, 179, 179));
+*/
+}
+
+#bottom_banners:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+
+.history{
+	width:960px;
+	margin:0px auto;
+}
+
+.history p:first-child{
+	float: left;
+	color: rgb(234, 84, 4);
+	font-size: 20px;
+	margin: 30px 0 10px;
+	border-left:7px solid rgb(234, 84, 4);
+	padding-left: 15px;
+}
+
+.history p:last-child{
+	float: right;
+	font-size:14px;
+	margin: 30px 0 10px;
+}
+
+.history:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+
+.event_banner{
+	margin:0 auto;
+	width:960px;
+}
+
+.event_banner a{
+	position:relative;
+}
+
+.event_banner > div{
+	float:left;
+	margin-left:53px;
+	margin-top:20px;
+}
+
+.event_banner .grayed{
+	background-color:gray;
+}
+
+.event_banner .grayed img{
+	opacity:0.2;
+}
+
+.event_banner :first-child{
+	margin-left:0px;
+}
+
+#footer_wrap{
+	margin-top:0;
+}

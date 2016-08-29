@@ -51,6 +51,25 @@ class Test_hareruya < Test::Unit::TestCase
 	end
 =end
 =begin
+	must "how_match Cinder Glade" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Cinder Glade', @log)
+		card.renew_price_at @site
+		puts "card.price[#{card.price}] is close to 400?"
+		assert_equal'http://www.hareruyamtg.com/jp/g/gBFZ000235EN/', card.store_url
+	end
+	
+	must "how_match Nahiri, the Harbinger" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Nahiri, the Harbinger', @log)
+		card.renew_price_at @site
+		puts "card.price[#{card.price}] is close to 2800?"
+		assert_equal'http://www.hareruyamtg.com/jp/g/gSOI000246EN/', card.store_url
+	end
+
+#=begin
 	must "how_match Liliana, the Last Hope" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -59,8 +78,8 @@ class Test_hareruya < Test::Unit::TestCase
 		puts "card.price[#{card.price}] is close to 5800?"
 		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000028EN/', card.store_url
 	end
-=end
-=begin
+#=end
+#=begin
 	must "how_match Emrakul, the Promised End" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -69,16 +88,121 @@ class Test_hareruya < Test::Unit::TestCase
 		puts "card.price[#{card.price}] is close to 2500?"
 		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000004EN/', card.store_url
 	end
-=end
-
-	must "detailed search of Emrakul" do
+#=end
+#=begin
+	must "get url of Emrakul" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
-		
-		@site.detailed_search 'Emrakul, the Promised End'
-		
+		card = Card.new('Emrakul, the Promised End', @log)
+		url = @site.get_url_of card
+		assert url_exists? url,@log
+		assert_equal'http://www.hareruyamtg.com/jp/g/gEMN000004EN/',url
+	end
+#=end
+	must "how_match Linvala, the Preserver" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('Linvala, the Preserver', @log)
+		card.renew_price_at @site
+		puts "card.price[#{card.price}] is close to 400?"
+		assert_equal'http://www.hareruyamtg.com/jp/g/gOGW000025EN/', card.store_url
+	end
+=end
+	must "how_match no such card" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		card = Card.new('no such card', @log)
+		card.renew_price_at @site
+		puts "card.price[#{card.price}] is close to 400?"
+		assert_equal'', card.store_url
 	end
 end
 
 
 
+
+def analyse_htmls
+	puts "#{__method__} start."
+	agent = Mechanize.new
+	url = 'http://www.hareruyamtg.com/jp/goods/search.aspx'
+	#if !url_exists? url, @log then
+	#	@log.error "site url[#{url}] not exist. return nil."
+	#	return nil
+	#end
+	page = agent.get(url)
+	puts "--field--"
+	puts page.form.fields.size
+	page.form.fields.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--file_uploads--"
+	puts page.form.file_uploads.size
+	page.form.file_uploads.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--hiddens--"
+	puts page.form.hiddens.size
+	page.form.hiddens.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--radiobuttons--"
+	puts page.form.radiobuttons.size
+	page.form.radiobuttons.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--submits--"
+	puts page.form.submits.size
+	page.form.submits.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--texts--"
+	puts page.form.texts.size
+	page.form.texts.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	#puts "--values--"
+	#puts page.form.values.size
+	#page.form.values.each do |el|
+	#	puts "name:" + el.name
+	#	puts "value:" + el.value
+	#end
+	puts "--resets--"
+	puts page.form.resets.size
+	page.form.resets.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--textareas--"
+	puts page.form.textareas.size
+	page.form.textareas.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "--checkboxes--"
+	puts page.form.checkboxes.size
+	page.form.checkboxes.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	puts "cb : #{page.form.to_s}"
+	puts "--buttons--"
+	puts page.form.buttons.size
+	page.form.buttons.each do |el|
+		puts "name:" + el.name
+		puts "value:" + el.value
+	end
+	
+	#puts "--page--"
+	#page.css('tr/td').each do |line|
+	#	puts line.inner_text
+	#end
+
+end
+
+#analyse_htmls

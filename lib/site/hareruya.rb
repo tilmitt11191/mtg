@@ -6,6 +6,7 @@ require 'active_support/core_ext/object' #for blank?
 require 'open-uri'
 require 'nokogiri'
 require '../../lib/util/utils.rb'
+require '../../lib/util/web.rb'
 require '../../lib/util/site.rb'
 require '../../lib/util/deck.rb'
 
@@ -23,6 +24,10 @@ class Hareruya < Site
 		@log.debug "how match ["+card.name+"] at hareruya"
 		card.store_url = get_url_of card
 		@log.debug "url is [" + card.store_url.to_s + "]"
+		if !Web::url_exists? card.store_url, @log then
+			@log.error "url[#{card.store_url}] not exist. return 100,000,000."
+			return 100000000
+		end
 		read_cardpage(card.store_url)
 		price = @card_nokogiri.css('span.sell_price').text
 		price.gsub!(/\s|\n|￥|,/,"")
@@ -38,11 +43,17 @@ class Hareruya < Site
 	
 	def get_url_of card
 		@log.info "#{__method__} start."
-		url = "http://www.hareruyamtg.com/jp/g/gEMN000028EN/"
-
-
-		@log.info "#{__method__} finished. return #{url}"
-		url
+		search_results = detailed_search card.name
+		search_results.css('div.autopagerize_page_element/ul.itemListLine/a').each do |item|
+			key = item[:href].split('/')[3]
+			if key.match(/^g..*EN$/) && !key.match(/^gPRE/) then
+				url = "http://www.hareruyamtg.com/jp/g/#{key}/" 
+				@log.info "#{__method__} finished. return #{url}"
+				return url
+			end
+		end
+		@log.info "#{__method__} finished. return #{nil}"
+		return nil
 	end
 	
 	def detailed_search cardname
@@ -53,27 +64,17 @@ class Hareruya < Site
 
 		agent = Mechanize.new
 		url = 'http://www.hareruyamtg.com/jp/goods/search.aspx'
-		#if !url_exists? url, @log then
-		#	@log.error "site url[#{url}] not exist. return nil."
-		#	return nil
-		#end
-		page = agent.get(url)
-		query = cardname
-		puts page.form.field_with.name
-		puts page.form.checkboxes.size
-		#page.form[0].field_with(:name => 'name').value = query
-		#puts page.form[0].checkbox_with.to_s
-		#(:name => 'foil')
-		puts "cb : #{page.form.to_s}"
-		@log.debug "query: " + query
-
-		search_results = page.form.submit
-		puts "show search_results"
-		search_results.css('div.autopagerize_page_element/ul.itemListLine').each do |item|
-			#puts item.inner_text
+		if !Web::url_exists? url, @log then
+			@log.error "site url[#{url}] not exist. return nil."
+			return nil
 		end
-		#<ul class="itemListLine">
-	
+		page = agent.get(url)
+		
+		query = cardname
+		@log.debug "query: " + query
+		page.form.field_with(:name => 'name').value = query
+		@log.debug "submit"
+		page.form.submit
 	end
 
 	
@@ -267,7 +268,7 @@ class Hareruya < Site
 					card.price.renew_at(self)
 					@log.debug "renewed value is #{card.price}"
 				end
-				@log.debug "name[" + card_name.to_s + "], card_type[" + card.card_type.to_s + "], card.price[" + card.price.to_s + "]"
+				@log.debug "name[#{card_name}], card_type[#{card.card_type}], card.price[#card.price}]"
 				deck.cards.push(card)
 			end
 		end

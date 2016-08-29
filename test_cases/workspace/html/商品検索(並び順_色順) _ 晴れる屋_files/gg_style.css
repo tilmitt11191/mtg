@@ -1,0 +1,1576 @@
+﻿@charset "UTF-8";
+
+/* --------------------------------------------------------------------
+	全体
+-------------------------------------------------------------------- */
+div.wrapper_{
+font-family: font-family: "メイリオ" , Meiryo ,  "Meiryo UI" ,Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+
+}
+button:focus{
+	outline:none;
+}
+
+
+
+/* --------------------------------------------------------------------
+	ヘッダー部
+-------------------------------------------------------------------- */
+#sec_menus a:link {
+color:#EA5404;
+} 
+
+#sec_menus a:visited{
+color:#EA5404;
+}
+ 
+#sec_menus a:hover {
+color:#EA5404;
+text-decoration:none;
+}  
+
+#sec_menus a:active {
+color:#EA5404;
+}  
+
+
+/* --------------------------------------------------------------------
+	キャンペーン部
+-------------------------------------------------------------------- */
+.visual_ p a:link {
+color:#fff;
+
+}
+
+.visual_ p a:visited {
+color:#fff;
+
+}
+
+.visual_ p a:hover {
+color:#fff;
+
+}
+
+.visual_ p a:active {
+color:#fff;
+
+}
+
+
+/* --------------------------------------------------------------------
+	デッキヒットチャート
+-------------------------------------------------------------------- */
+.tab{
+padding-left: 10px;
+
+}
+
+
+.tab #tab_stan{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color:rgb(185,30,35);
+	color: #ffffff;
+	line-height: 20px;
+	font-family: "メイリオ",Meiryo;
+	font-size: 12px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	text-decoration: none;
+
+}
+
+.tab #tab_modern{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color:rgb(30,110,55);
+	color: #ffffff;
+	line-height: 20px;
+	font-family: "メイリオ",Meiryo;
+	font-size: 12px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	text-decoration: none;
+	filter: alpha(opacity=50);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=50)";  /* ie 8 */
+	-moz-opacity:0.5;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.5;              /* Safari 1.x */
+	opacity:0.5;
+}
+
+.tab #tab_legacy{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color:rgb(125,55,145);
+	color: #ffffff;
+	line-height: 20px;
+	font-family: "メイリオ",Meiryo;
+	font-size: 12px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	text-decoration: none;
+	filter: alpha(opacity=50);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=50)";  /* ie 8 */
+	-moz-opacity:0.5;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.5;              /* Safari 1.x */
+	opacity:0.5;
+}
+
+#standard dd{
+height: 30px;
+line-height: 30px;
+padding-left: 37px;
+margin-bottom:8px;
+}
+
+#twoweektext{
+font-size:11px;
+}
+
+.no1{
+background-image: url(../img/usr/icon/deck_1.png);
+background-repeat: no-repeat;
+background-position: 3px 3px;
+
+}
+
+.no2{
+background-image: url(../img/usr/icon/deck_2.png);
+background-repeat: no-repeat;
+background-position: 3px 3px;
+
+}
+
+.no3{
+background-image: url(../img/usr/icon/deck_3.png);
+background-repeat: no-repeat;
+background-position: 3px 3px;
+
+}
+
+.no4, .no5{
+background-image: url(../img/usr/icon/deck_4.png);
+background-repeat: no-repeat;
+background-position: 10px 8px;
+
+}
+
+.no1,.no2,.no3,.no4{
+border-bottom:2px dotted;
+
+}
+
+.formatcount{
+float: right;
+padding-right: 20px;
+
+}
+
+/* --------------------------------------------------------------------
+	ユーザー定義　ビジュアル
+-------------------------------------------------------------------- */
+
+.visual_ {
+	border: solid 1px #EA5404;
+	border-radius: 10px;
+	background-color: #EA5404;
+	padding: 10px;
+	height: 360px;
+	overflow:hidden;
+}
+
+
+
+/* --------------------------------------------------------------------
+	中央メニュー
+-------------------------------------------------------------------- */
+#middle{
+overflow:hidden;
+margin-bottom:15px;
+
+}
+
+
+#middle #middle_menu li{
+width:159px;
+height:70px;
+background-color:rgb(140,100,80);
+color:white;
+float:left;
+font-size:17px;
+line-height:140%;
+text-align:center;
+border-right: 1px white dotted;
+display:table;
+cursor: pointer;
+}
+
+
+#middle #middle_menu li p{
+display:table-cell;
+vertical-align:middle;
+
+}
+
+/* --------------------------------------------------------------------
+	common　イベント
+-------------------------------------------------------------------- */
+
+#block_of_event{
+border: 1px solid #ea5404;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    margin-bottom: 30px;
+    text-align: left;
+    width: 698px;
+	background: #feebbf;
+
+}
+
+#block_of_event .event_ .event_title_ {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	clear: both!important;
+	padding: 0 0 0 0;
+	border:none;
+	background:transparent;
+}
+
+
+
+/* --------------------------------------------------------------------
+	右コンテンツ
+--------------------------------------------------------------------- */
+div.rightmenuframe{
+float:none !important;
+}
+
+/* --------------------------------------------------------------------
+	ランキング
+-------------------------------------------------------------------- */
+.ranking_item{
+float: left;
+font-size: 12px;
+margin: 0px 0px 20px 35px;
+padding: 10px 5px;
+width: 130px;
+background: none repeat scroll 0 0 #fff;
+
+
+}
+
+.ranking_item .desc_{
+
+padding-top:10px;
+
+}
+
+.ranking_item .desc_ .icon_{
+text-align:left;
+}
+
+.ranking_item .desc_ .name_{
+padding-top:10px;
+text-align:left;
+font-size:12px;
+
+}
+
+
+.ranking_item .desc_ .price_{
+font-size:13px;
+text-align:left;
+padding-top:5px;
+
+}
+
+.ranking_item .desc_ .price_ .small_{
+font-size:12px;
+text-align:left;
+padding-top:5px;
+color:#000;
+
+}
+
+.ranking_item .img_ img{
+width:100px;
+width:110px;
+}
+/* --------------------------------------------------------------------
+	最近チェックした商品
+-------------------------------------------------------------------- */
+
+.recommend_item:nth-of-type(1){
+margin-left:0px;
+}
+
+
+
+/* --------------------------------------------------------------------
+	フッター部
+-------------------------------------------------------------------- */
+#footer_logo{
+display: inline-block;
+margin-top: 170px;
+opacity: 0.6;
+margin-left: 80px;
+
+}
+
+/* --------------------------------------------------------------------
+	カテゴリトップ
+-------------------------------------------------------------------- */
+/* パンくず */
+.navitopicpath_{
+font-size:16px;
+margin-bottom:15px;
+margin-top:15px;
+color:#EA5404;
+line-height: 1;
+}
+
+.navitopicpath_ a:link {
+color:#EA5404;
+
+}
+
+.navitopicpath_ a:visited {
+color:#EA5404;
+
+}
+
+.navitopicpath_p a:hover {
+color:#EA5404;
+
+}
+
+.navitopicpath_ a:active {
+color:#EA5404;
+
+}
+
+#bread-crumb-list{
+line-height:1.2em;
+font-size: 12px;
+}
+
+/* カテゴリー説明 */
+#category_title{
+font-size:14px;
+font-family: "ＭＳ 明朝",serif;
+color:#533c32;
+font-weight: bold;
+margin-bottom:15px;
+}
+
+#category_title img{
+width:678px;
+}
+
+
+/* 商品部 */
+#category_item{
+width: 678px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+border: 1px solid #ea5404;
+padding:0 10px;
+margin-bottom: 3px;
+}
+#category_item .itemListLine{
+	text-align: left;
+}
+
+
+/* 商品絞込み */
+#narrow_menu{
+overflow:hidden;
+font-weight: bold;
+font-size:15px;
+padding:0px 5px 0px 18px;
+line-height: 35px;
+margin: 20px 0px 0 0;
+}
+
+#narrow_menu p{
+float:left;
+}
+
+#narrow_menu .search_item_title{
+margin-right:5px;
+
+}
+
+#narrow_menu .count_number{
+font-size:20px;
+margin-right:5px;
+
+}
+
+#narrow_menu .search_item{
+float:left;
+}
+/* #narrow_menu img, */
+.goods_filter_ img{
+float:left;
+margin-right: 7px;
+opacity:0.3;
+}
+#narrow_menu a:nth-of-type(7) img{
+margin-right: 35px;
+}
+
+#narrow_menu img.img_allcolor, .goods_filter_ .select_all{
+margin-right: 5px;
+opacity:1.0;
+display:none;
+}
+#narrow_menu img.select_none, .goods_filter_ .select_none{
+margin-right: 5px;
+opacity:1.0;
+display:block;
+}
+.goods_filter_{
+	float:right;
+}
+.autopagerize_page_element {
+
+
+margin-top:10px;
+
+}
+
+.mana_symbols{
+overflow:hidden;
+}
+
+#narrow_menu .mana_symbols .selected,.goods_filter_ .on_selected_ {
+opacity: 1.0;
+}
+
+.autopagerize_page_element .goods_{
+
+padding: 10px 7px;
+background-color: #fff;
+padding-bottom: 48px;
+
+}
+
+
+.autopagerize_page_element .goods_ div.StyleP_Item_{
+
+border:none;
+background:#f2f2f2;
+word-break: break-all;
+
+}
+
+.autopagerize_page_element .goods_ div.StyleP_Item_ .desc{
+
+background:#d9d9d9;
+
+}
+
+/* ページング */
+.result_pagenum{
+/*margin-top: 10px;*/
+
+}
+
+.pagenum_now{
+margin-right: 20px;
+}
+
+.goods_ .not_found{
+text-align: center;
+padding: 70px 0px 20px;
+}
+
+/* カテゴリトップイベント */
+.mainframe_ >.event_{
+border: 1px solid #ea5404;
+border-radius: 10px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+font-size: 12px;
+margin-bottom: 30px;
+text-align: left;
+width: 698px;
+background: white;
+
+}
+
+.mainframe_ >.event_ .event_title_{
+margin-bottom: 10px;
+font-size: 14px;
+font-weight: bold;
+clear: both!important;
+padding: 0 0 0 0;
+border: none;
+background: transparent;
+}
+
+
+/* --------------------------------------------------------------------
+	商品詳細
+-------------------------------------------------------------------- */
+
+div.goods_ {
+	padding:10px 19px;
+}	
+
+/* 商品情報 エリア全体 */
+
+#item_info{
+width: 668px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+border: 1px solid #ea5404;
+border-radius: 10px;
+padding:0 15px 10px 15px;
+margin-bottom: 3px;
+font-family:"メイリオ",Meiryo;
+position: relative;
+background-color: white;
+}
+
+/* 商品情報 パンくず */
+
+#item_info .navitopicpath_{
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 20px;
+color: black;
+
+
+}
+
+
+#item_info .navitopicpath_ a{
+margin: 0 0.3em;
+
+}
+
+#item_info .navitopicpath_ a:link {
+color:black;
+
+}
+
+#item_info .navitopicpath_ a:visited {
+color:black;
+
+}
+
+#item_info .navitopicpath_p a:hover {
+color:black;
+
+}
+
+#item_info .navitopicpath_ a:active {
+color:black;
+
+}
+
+.item_info_top{
+overflow:hidden;
+}
+
+/* 商品情報 左情報 */
+#item_info_left{
+overflow:hidden;
+float:left;
+margin-right:25px;
+margin-left: 10px;
+
+}
+
+
+#item_info_left .expandImage{
+
+	display:none;
+	position:absolute;
+	margin:-20px 0px 0px -20px; 
+	z-index:100;
+}
+
+
+
+#item_info_left .expand{
+margin-top:10px;
+font-size:11px;
+overflow:hidden;
+display: block;
+margin-right: auto;
+margin-left: auto;
+width: 75px;
+margin-bottom: 20px;
+
+}
+
+#item_info_left .expand img{
+float:left;
+cursor: pointer;
+}
+
+#item_info_left .expand p{
+float:left;
+margin-left: 5px;
+margin-top: 2px;
+cursor: pointer;
+}
+
+
+/* 商品情報 サブ画像 */
+.sub_image_list{
+overflow:hidden;
+margin-bottom: 130px
+
+
+}
+
+
+.sub_image_list .sub_image{
+float: left;
+border: solid 1px black;
+padding: 8px 10px;
+margin: 0 2px;
+width:22%;
+cursor:pointer;
+}
+
+.search_same_card{
+margin-top:20px;
+
+}
+
+
+
+/* 商品情報 右情報 */
+#item_info_right{
+float:right;
+width: 365px;
+margin-right: 11px;
+}
+#item_info_right:after{
+content:"";
+clear:both;
+display:block;
+}
+/* 商品情報　右上 */
+#item_info_right .sel_info{
+
+
+
+}
+
+#item_info_right .sell_info h2.goods_name_{
+padding: 0px 0px 10px 0px;
+color: #ea5404;
+font-size: 16px;
+font-weight: bold;
+line-height: 140%;
+border-left: none;
+margin: 0 0 20px 0;
+
+}
+
+#item_info_right .sell_info .line{
+line-height: 28px;
+}
+#item_info_right .sell_info .line:after{
+clear:both;
+content:"";
+display:block;
+}
+#item_info_right .sell_info .line .price{
+float: left;
+font-size: 30px;
+color: red;
+font-weight: bold;
+margin-right:5px;
+position:relative;
+}
+
+#item_info_right .sell_info .line .price .sell_price{
+float: left;
+}
+#item_info_right .sell_info .line .price:before{
+	content:"販売価格\A";
+	white-space:pre;
+	color:red;
+	font-size:14px;
+	font-weight:bold;
+	position:absolute;
+	top:-28px;
+}
+
+#item_info_right .sell_info .line .price .tax{
+
+float: left;
+font-size: 14px;
+
+}
+
+#item_info_right .sell_info .line .stock{
+float: left;
+font-size: 16px;
+margin-right:10px;
+
+}
+
+
+#item_info_right .sell_info .line .weight{
+float: left;
+font-size: 12px;
+display:none;
+}
+
+#item_info_right .sell_info .number{
+font-size:13px;
+margin-top:10px;
+
+}
+
+#item_info_right .sell_info .number input{
+width:50px;
+}
+
+#item_info_right .sell_info .number select{
+height: 30px;
+line-height: 30px;
+padding-left: 0.3em;
+font-family: "メイリオ",Meiryo;
+border-radius: 0px;
+
+}
+
+#item_info_right .sell_info .cart_img{
+margin-right: auto;
+margin-left: auto;
+display: block;
+margin-top: 25px;
+color: rgb(71, 17, 17);
+
+}
+
+img.joutai{
+margin-right: auto;
+margin-left: auto;
+display: block;
+margin-top: 20px;
+
+}
+
+
+#item_info_right .sell_info .goodscomment1_{
+
+margin-top: 15px;
+border: solid 1px black;
+padding: 10px;
+margin-bottom:0px;
+}
+
+
+#item_info_right .item_detail {
+
+margin-top: 25px;
+}
+
+
+
+
+
+
+/* 商品情報　テーブル */
+.item_detail{
+margin-top:20px;
+
+}
+.item_detail .detail_title{
+font-size:14px;
+margin-bottom: 5px;
+color:#666;
+
+}
+
+.item_detail table{
+
+	margin-bottom:25px;
+	font-size:14px;
+	border:2px solid #898989;
+
+}
+
+
+.item_detail table tbody tr td{
+padding:5px 7px 5px 13px;
+width:75%;
+border-bottom: dotted 1px #9D9D9D;
+}
+
+
+
+
+.item_detail table tbody tr td.item_name{
+
+width:25%;
+background-color:#9D9D9D;
+color:white;
+border-bottom: dotted 1px white;
+font-weight:bold;
+
+
+}
+.item_detail .link{
+
+font-size: 13px;
+right:15px;
+position: absolute;
+bottom: 10px;
+
+}
+
+.item_detail table tbody tr td.legal{
+border-bottom:dotted 1px #694b3a;
+
+}
+
+/* 商品情報　右下　色選択表示時 */
+
+#item_info_right .colors_ .color_line{
+margin-top:10px;
+width: 100%;
+}
+#item_info_right .colors_ .color_line:after{
+	content:"";
+	clear:both;
+	display:block;
+}	
+#item_info_right .colors_ .color_line div {
+height:30px;
+width:30px;
+border:solid 1px black;
+float:left;
+margin-right:10px;
+}
+.color2_,.size_{
+	position:relative;
+	cursor:pointer;
+}
+.color_DisableStock_,.size_DisableStock_{
+	opacity:0.4;
+}
+.color_DisableStock_:after,.size_DisableStock_:after{
+	content:"";
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-image:url(../img/usr/item_detail/disablestock.png);
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	-ms-background-size:100% 100%;
+	position:absolute;
+}
+/* 商品情報　右下　サイズ選択表示時 */
+.color_Selected_:before,.size_Selected_:before{
+	content:"";
+	width:100%;
+	height:100%;
+	left:-3px;
+	top:-3px;
+	position:absolute;
+	border:3px solid #000;
+	cursor:auto;
+}
+#item_info_right .sizes_{
+margin-top:20px;
+}
+
+#item_info_right .sizes_ .size_line{
+margin-top: 10px;
+}
+#item_info_right .sizes_ .size_line:after{
+content:"";
+clear:both;
+display:block;
+}
+
+#item_info_right .sizes_ .size_line .size_{
+border: solid 1px #ffc0c0;
+background-color: #ffe0e0;
+float: left;
+margin-right: 20px;
+padding: 2px 7px;
+}
+
+
+
+/* 商品詳細レコメンド */
+#item_detail_recommend{
+width: 658px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+border: 1px solid #ea5404;
+padding: 15px 20px;
+margin-top: 30px;
+background-color: white;
+
+}
+
+#item_detail_recommend div .title{
+color:red;
+font-size:16px;
+font-weight:bold;
+
+}
+
+
+.item_detail_recommend_item{
+float: left;
+font-size: 11px;
+margin: 0px 0px 0px 0px;
+padding: 10px 5px;
+width: 113px;
+background: none repeat scroll 0 0 #fff;
+
+
+}
+
+.item_detail_recommend_item .desc_{
+padding:0 5px 10px;
+margin-top:10px;
+
+}
+
+#item_detail_recommend div div img.leftbutton{
+float:left;
+margin: 55px 4px 0px 0px;
+}
+
+#item_detail_recommend div div img.rightbutton{
+float:left;
+margin: 55px 0px 0px 5px;
+}
+
+
+/* 関連デッキ */
+#decks img{
+float:left;
+}
+
+.standard_deck{
+overflow:hidden;
+}
+
+.modern_deck{
+overflow:hidden;
+}
+
+.legacy_deck{
+overflow:hidden;
+}
+
+.edh_deck{
+overflow:hidden;
+}
+
+#decks p.deck_title{
+
+margin-left: 5px;
+border-bottom: solid 1px #694b3a;
+display: inline;
+font-size:13px;
+font-weight: bold;
+
+}
+
+#decks #deck_erea{
+overflow:hidden;
+width: 678px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+border: 1px solid #ea5404;
+padding: 15px 0 15px 20px;
+margin-bottom: 50px;
+margin-top: 15px;
+background-color: white;
+
+
+}
+
+p.format_title_stan{
+font-size:16px;
+color:#D80303;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+p.format_title_modern{
+font-size:16px;
+color:#008a00;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+p.format_title_legacy{
+font-size:16px;
+color:#CD1CD5;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+p.format_title_vintage{
+font-size:16px;
+color:navy;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+p.format_title_edh{
+font-size:16px;
+color:#694b3a;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.deck_line{
+	width: 609px;
+	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	padding: 25px 20px;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 5px;
+	border: solid 1px;
+}
+
+.standard_deck .deck_line{
+	border-color: #D80303;
+}
+
+.modern_deck .deck_line{
+	border-color: #008a00;
+}
+
+.legacy_deck .deck_line{
+	border-color: #CD1CD5;
+}
+
+.edh_deck .deck_line{
+	border-color: #694b3a;
+}
+
+/* 関連デッキ(デッキ表示あり　decksearch.cssのものを商品詳細用に流用) */
+
+div a .deckBox {
+width: 208px;
+height: 380px;
+float: left;
+border: 1px solid;
+margin-right: 15px;
+padding: 20px 10px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-bottom: 5px;
+overflow: hidden;
+text-align: left;
+/*border-color:#D80303; */
+}
+
+.standard_deck .deckBox{
+	border-color: #D80303;
+}
+
+.modern_deck .deckBox{
+	border-color: #008a00;
+}
+
+.legacy_deck .deckBox{
+	border-color: #CD1CD5;
+}
+
+.vintage_deck .deckBox{
+	border-color: navy;
+}
+
+.edh_deck .deckBox{
+	border-color: #694b3a;
+}
+#deck_erea .deckBox{
+	-moz-transition:background,0.3s;
+	-webkit-transition:background,0.3s;
+	-o-transition:background,0.3s;
+	-ms-transition:background,0.3s;
+	transition:background,0.3s;
+	color:#404040;
+}
+#deck_erea .deckBox:hover{
+	background:#ffc;
+}
+div a .deckBox .deckImg{
+width: 180px;
+height: 130px;
+margin: auto;
+background-position: -33px -47px;
+background-size: 140%;
+
+}
+
+
+/* --------------------------------------------------------------------
+	デッキ検索一部
+-------------------------------------------------------------------- */
+input#DeckStart {
+border: 1px solid #999;
+}
+
+input#DeckEnd {
+border: 1px solid #999;
+}
+
+input#PlayerName {
+border: 1px solid #999;
+}
+
+input#CardName {
+border: 1px solid #999;
+}
+
+/* --------------------------------------------------------------------
+	12/24詳細検索修正　梶谷
+-------------------------------------------------------------------- */
+label#or_item , #name_type_1 + label{
+margin:0px 20px 0px 0px
+}
+
+label#and_item , #name_type_2 + label{
+margin:0px 0px 0px 0px
+}
+
+label.color , .search_color input[type="checkbox"] + label{
+margin:0px 0px 0px 0px;
+padding-right:20px;
+}
+
+label#or_color , #color_type_1 + label{
+margin:0px 20px 0px 0px
+}
+
+label#and_color , #color_type_2 + label{
+margin:0px 0px 0px 0px
+}
+.search_detail tr:nth-of-type(5) input[type="checkbox"] + label {
+font-size:14px;
+display:block;
+float:left;
+}
+label.rarity , .search_rarity input[type="radio"] + label{
+font-size: 14px;
+}
+
+label.type{
+font-size:14px;
+}
+
+#card_type_1 + label,
+#card_type_4 + label,
+#card_type_7 + label{
+	width:110px;
+}
+#card_type_2 + label,
+#card_type_5 + label,
+#card_type_8 + label{
+	width:170px;
+}
+#card_type_3 + label,
+#card_type_6 + label{
+	width:120px;
+}
+label#creature , #card_type_1 + label {
+margin:0;
+font-size:14px;
+}
+
+label#enchantment , #card_type_2 + label {
+margin:0;
+font-size:14px;
+}
+
+label#instant , #card_type_3 + label {
+margin:0;
+font-size:14px;
+}
+
+label#planeswalker , #card_type_4 + label {
+margin:0;
+font-size:14px;
+}
+
+label#sorcery , #card_type_5 + label {
+margin:0;
+font-size:14px;
+}
+
+label#artifact , #card_type_6 + label {
+margin:0;
+font-size:14px;
+}
+
+label#lands , #card_type_7 + label {
+margin:0;
+font-size:14px;
+}
+
+label#tribal , #card_type_8 + label {
+margin:0;
+font-size:14px;
+}
+
+label#or_type , #card_type_type_1 + label{
+margin:0px 20px 0px 0px;
+}
+
+label#and_type , #card_type_type_2 + label{
+margin:0px 0px 0px 0px;
+}
+label.format , #legality_unspecified  + label , #legality_Standard  + label , #legality_Modern  + label , #legality_Legacy  + label {
+margin: 0px 29px 0px -3px;
+font-size: 14px;
+}
+
+label.foil{
+margin:0px 16px 0px 0px;
+}
+
+
+#item_info #item_info_left .sub_image_list .sub_image img {
+max-width: 55px;
+}
+
+/* --------------------------------------------------------------------
+	詳細検索結果一部
+-------------------------------------------------------------------- */
+#search_result_box{
+margin-bottom: 20px;
+width: 675px;
+box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.4);
+border: 1px solid #ea5404;
+border-radius: 10px;
+padding: 20px 10px 0px 10px;
+}
+
+
+
+/* --------------------------------------------------------------------
+	商品画像
+-------------------------------------------------------------------- */
+/* トップイベント商品画像 */
+
+.card_data_img img{
+max-width:80px;
+
+}
+
+
+/* ランキング商品画像 */
+
+.ranking_item .img_ a img{
+
+max-width:80px;
+
+}
+
+/* 最近チェックした商品商品画像 */
+
+.recommend_item .img_ a img{
+max-width:120px;
+max-height:120px;
+
+}
+
+/* 商品メイン画像 */
+#item_info #item_info_left img{
+	max-width:224px;
+	max-height:310px;
+}
+.item_info_img{
+	position:relative;
+	width:224px;
+	max-height:310px;
+	text-align:center;
+	cursor:pointer;
+}
+
+
+/* 商品サブ画像 */
+#item_info #item_info_left .sub_image_list .sub_image img{
+
+max-width:55px;
+
+}
+
+/* 商品拡大画像 */
+
+#item_info #item_info_left .expand_image {
+	display: none;
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index:10;
+	cursor: pointer;
+}
+
+#item_info #item_info_left .expand_image .background{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+#item_info #item_info_left .expand_image .image_and_text{
+	top: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	/* margin: -255px 0 0 -162px; */
+}
+
+#item_info #item_info_left .expand_image .image_and_text img{
+	height: 80%;
+	max-width: none;
+	max-height:none;
+}
+
+#item_info #item_info_left .expand_image .image_and_text p{
+color: white;
+font-size: 18px;
+margin-top:20px;
+margin-bottom: 20px;
+}
+/* 商品詳細レコメンド */
+.item_detail_recommend_item img_ a img{
+
+max-width:60px;
+
+}
+
+/* 商品詳細レコメンド */
+#category_title img{
+
+max-width:675px;
+width: 675px;
+
+}
+
+.mainframe_ #decks{
+
+margin-top:50px;
+
+}
+/* 通販サイトカテゴリツリーオンマウス用 */
+.category_tree_ li.category_tree2_ a:hover {
+background: #ffc;
+}
+
+/* 通販サイトカテゴリ選択時用 */
+
+.category_tree_ li.category_tree2_open_ a {
+padding-left: 25px;
+width: 100% box-sizing:border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+background-position: 10px 8px;
+background-repeat: no-repeat;
+padding-left: 25px;
+width: 100% box-sizing:border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+background-position: 10px 8px;
+background-repeat: no-repeat;
+width: auto;
+}
+
+.category_tree_ li.category_tree2_open_ a:hover {
+background: #ffc;
+}
+
+/* ログインフォームの調整 */
+div.login_ div.loginform_ {
+display:inline-block;
+vertical-align:top;
+width:410px;
+margin-bottom:50px;
+border-bottom:none;
+}
+.login_ .login_reminder{
+	margin:-10px 0 10px;
+}
+.login_ .login_reminder p{
+	margin-top:15px;
+	padding:0 30px;
+	position:relative;
+}
+
+.login_ .login_reminder p:first-child{
+	font-weight:bold;
+	font-size:16px;
+	padding-left:20px;
+	margin-bottom:5px;
+}
+
+.login_ .login_reminder p:last-child:before{
+	content:"";
+	position:absolute;
+	top:4px;
+	left:19px;
+	border:5px solid transparent;
+	border-left:7px solid #EA5404;
+}
+
+div.CategoryStyleT_{
+	width:678px;
+	border:1px solid #ea5404;
+	box-shadow:4px 4px 5px -1px rgba(0,0,0,0.4);
+	margin-bottom:20px;
+	padding:50px 10px 10px;
+	position:relative;
+}
+div.CategoryStyleT_:before{
+	content:"カテゴリー選択";
+	position:absolute;
+	left:0;
+	top:0;
+	padding:11px 56px 11px 26px;
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:1px;
+	background: rgb(234,84,4); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(234,84,4,1) 1%, rgba(234,84,4,1) 50%, rgba(246,203,150,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(234,84,4,1)), color-stop(50%,rgba(234,84,4,1)), color-stop(100%,rgba(246,203,150,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5404', endColorstr='#f6cb96',GradientType=1 ); /* IE6-9 */
+}
+.CategoryStyleT_:after{
+	content:"";
+	position:absolute;
+	border:41px solid transparent;
+	border-bottom:41px white solid;
+	width:0;
+	height:0;
+	left:174px;
+	top:-41px;
+}
+div.CategoryStyleT_Item_{
+	padding:0;
+}
+div.CategoryStyleT_Item_ h3.name_{
+	color:rgb(140,100,80);
+	border:solid 2px rgb(140,100,80);
+	background-color:white;
+	font-weight:bold;
+	text-align:center;
+	margin:10px;
+	border-radius:5px;
+	overflow:hidden;
+	padding:0
+}
+div.CategoryStyleT_Item_ h3.name_ a{
+	width:100%;
+	height:100%;
+	padding:10px 5px;
+	box-sizing:border-box;
+	display:block;
+	color:rgb(140,100,80);
+	background:white;
+	transition:background,0.3s;
+	-moz-transition:background,0.3s;
+	-webkit-transition:background,0.3s;
+	-o-transition:background,0.3s;
+	-ms-transition:background,0.3s;
+}
+div.CategoryStyleT_Item_ h3.name_ a:hover{
+	color:rgb(140,100,80);
+	background:#feebbf;
+	text-decoration:none;
+}
+.gradiTitle{
+	float:left;
+	position:relative;
+	padding:11px 56px 11px 26px;
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:1px;
+	background: rgb(234,84,4); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(234,84,4,1) 1%, rgba(234,84,4,1) 50%, rgba(246,203,150,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(234,84,4,1)), color-stop(50%,rgba(234,84,4,1)), color-stop(100%,rgba(246,203,150,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(234,84,4,1) 1%,rgba(234,84,4,1) 50%,rgba(246,203,150,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea5404', endColorstr='#f6cb96',GradientType=1 ); /* IE6-9 */
+}
+.gradiTitle:after{
+	content:"";
+	position:absolute;
+	border:41px solid transparent;
+	border-bottom:41px white solid;
+	width:0;
+	height:0;
+	right:-41px;
+	top:-41px;
+}
+div.container_ div.contents_ div.mainframe_ .event_ .goods_{
+	clear:both;
+}
+.StyleR_Item.item_detail_recommend_item .img_{
+	width:110px;
+	height:110px;
+	margin:auto;
+	text-align:center;
+	margin-top:10px;
+	overflow:hidden;
+}
+.StyleR_Item.item_detail_recommend_item .img_ img{
+	max-height:110px;
+	max-width:110px;
+}
+.content_header{
+	padding:10px;
+	border:2px solid rgb(235,85,5);
+	border-left:0;
+	border-right:0;
+	background-color:white;
+}
+
+.content_header p{
+	width:960px;
+	margin:0 auto;
+	font-size:20px;
+	font-weight:bold;
+	color:rgb(235,85,5);
+}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* サジェスト外枠 */
+.np-keyword-suggest {
+	overflow: hidden;
+	padding: 1px 1px;
+	width: 200px;
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #CCCCFF;
+}
+
+/* サジェスト内枠 */
+.np-keyword-suggest div {
+    width: 198px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	height: auto;
+	text-align: left;
+}
+
+/* サジェストワード */
+.np-keyword-suggest .item {
+	padding-left: 4px;
+	-webkit-tap-highlight-color: #3366ff;
+}
+
+/* サジェストワード選択時 */
+.np-keyword-suggest .item.selected {
+	color: #000000;
+	background-color: #3366FF;
+}
+
+/* サジェストワード */
+.np-keyword-suggest .item .highlight {
+	display: inline;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* サジェスト groupByCategoryがtrue時のカテゴリ表示部 */
+.np-keyword-suggest .category {
+	font-weight: bold;
+	color: #222222;
+	background-color: #eeeeee;
+}
+
+/* サジェスト groupByCategoryがtrue時のカテゴリ表示部選択時 */
+.np-keyword-suggest .category.selected {
+	color: #000000;
+	background-color: #3366FF;
+}
+
+/* サジェスト overlayModeがonの時のキーワード入力部 */
+.np-keyword-suggest_overlay {
+	width: 100%;
+	font-size: 24px;
+}
+
+.np-keyword-suggest_overlay div{
+	width: 100%;
+}
+
+.np-keyword-suggest_overlay .inputArea {
+	opacity: 1.0;
+	margin: 0px;
+	padding: 2px;
+	height: 34px;
+}
+.np-keyword-suggest_overlay input {
+	width: 90%;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 24px;
+}
+.np-keyword-suggest_overlay .cancelButton {
+	width: 30px;
+	height: 30px;
+	font-size: 0px;
+	margin: 2px 10px;
+	background-image: url('../img/cancel.png');
+	background-size: cover;
+	vertical-align: top;
+	float: left;
+}
+.np-keyword-suggest_overlay .submitButton {
+	width: 30px;
+	height: 30px;
+	font-size: 0px;
+	margin: 2px 10px;
+	background-image: url('../img/search.png');
+	background-size: cover;
+	vertical-align: top;
+	float: right;
+}
+.np-keyword-suggest_overlay .plusButton{
+	float: right;
+	margin-right: 60px;
+}
+
+.np-keyword-suggest_overlay .item {
+	padding-left: 50px;
+}
+
+/* 商品詳細外枠 */
+.np-item-suggest {
+	overflow: hidden;
+	padding: 1px 1px;
+	width: 200px;
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 1px solid #CCCCFF;
+}
+
+/* 商品詳細内枠 */
+.np-item-suggest div {
+	color:#000000;
+	width:auto;
+	text-align:left;
+	height:auto;
+}
+
+/* 商品詳細タイトル */
+.np-item-suggest .title {
+	text-align: center;
+	font-size: small;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 商品詳細・商品表示部 */
+.np-item-suggest table {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	height:auto;
+}
+.np-item-suggest table tr {
+	vertical-align: top;
+}
+
+/* 商品画像 */
+.np-item-suggest .image {
+	width: 50px;
+}
+.np-item-suggest .image img {
+	width: 50px;
+	border: 0;
+}
+
+/* 商品名・説明 */
+.np-item-suggest .item {
+	width: 142px;
+}
+.np-item-suggest .item a {
+	width: 142px;
+	display: block;
+	text-decoration: none;
+}
+.np-item-suggest .item .item_title {
+	font-size: small;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+.np-item-suggest .item .item_desc {
+	font-size: xx-small;
+}
+
+/* 商品詳細ヒット件数 */
+.np-item-suggest .hitnum {
+	text-align: right;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.np-item-suggest .hitnum:after {
+	content: "件ヒットしました";
+}
