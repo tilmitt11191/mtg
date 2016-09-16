@@ -62,8 +62,9 @@ end
 require '../../lib/util/web.rb'
 def url_exists?(url, logger, limit = 10)
 	logger.warn "this method(#{__method__}) will be moved to web.rb"
-	web = Web.new
-	web.url_exists?(url, logger, limit = 10)
+	#web = Web.new
+	#web.url_exists?(url, logger, limit = 10)
+	Web::url_exists?(url, logger, limit)
 end
 
 def convert_number_to_triple_digits(num)

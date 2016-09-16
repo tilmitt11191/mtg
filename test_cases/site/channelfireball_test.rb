@@ -29,7 +29,7 @@ class Test_channelfireball < Test::Unit::TestCase
 		@log = Logger.new("../../log")
 		@site = Channelfireball.new(@log)
 	end
-
+=begin
 	must "get_limited_set_reviews with emn white " do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -41,7 +41,7 @@ class Test_channelfireball < Test::Unit::TestCase
 		assert_equal @site.scores['Borrowed Grace'], '2.0'
 		assert_equal @site.comments['Borrowed Grace'], 'I’m not a fan of Trumpet Blast. But Borrowed Grace will be Trumpet Blast when Trumpet Blast is good (a.k.a. lethal). It gives your team the full +2/+2 when the game stalls out, and every now and then it will save a creature for 3 mana. Escalate is a powerful ability, and Borrowed Grace is a very good version of what it does.Not every deck will be interested in Borrowed Grace, and it’s not the type of card you’ll want more than 1 or 2 copies of. But when you have an aggressive, white, creature-swarm deck, Borrowed Grace will be a great addition.'
 	end
-
+=end
 	must "get_limited_set_reviews with incorrect url" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
