@@ -3,6 +3,7 @@
 require '../../lib/util/utils.rb'
 require '../../lib/util/site.rb'
 require '../../lib/util/card.rb'
+require '../../lib/util/web.rb'
 
 
 class MTGOtraders < Site
@@ -42,7 +43,7 @@ class MTGOtraders < Site
 
 		agent = Mechanize.new
 		url = 'http://www.mtgotraders.com/store/index.html'
-		if url_exists? url, @log then
+		if !Web::url_exists? url, @log then
 			@log.error "site url[#{url}] not exist. return nil."
 			return nil
 		end
@@ -68,7 +69,7 @@ class MTGOtraders < Site
 		#	</select>
 		#</div>
 		
-		case card.price.store.option
+		case card.price.store.search_option
 		when 'relevant' then
 			@log.debug "get relevant price."
 			search_url = optional_urls[:Relevancy] #http://www.mtgotraders.com/store/search.php?q=%22Liliana%2C+the+Last+Hope%22&sortby=relevancy
@@ -123,13 +124,14 @@ class MTGOtraders < Site
 =end
 	
 	def check_validness_of card
-		puts "#{__method__}[#{card.name}] start."
+		#puts "#{__method__}[#{card.name}] start."
 		@log.info "#{__method__}[#{card.name}] start."
-		puts card.store_url
+		@log.warn "this method not complete."
+		#puts card.store_url
 		converted_cardname = card.name.gsub(/\s/,'_')
-		puts converted_cardname
+		#puts converted_cardname
 
-		return false
+		return true
 	end
 	
 	def get_prices(price_manager,relevant:true,highest:true,lowest:true)

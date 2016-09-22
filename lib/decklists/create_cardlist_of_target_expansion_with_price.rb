@@ -13,6 +13,9 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
+	#packname='Kaladesh'
+	#short='KLD'
+	#num_of_cards = 249
 	packname='EldritchMoom'
 	short='EMN'
 	num_of_cards = 205
@@ -20,7 +23,7 @@ begin
 	#short='SOI'
 	#num_of_cards = 270
 	
-	outputfilename = "../../decks/cardlistlist_of_#{short}_with_price.csv"
+	outputfilename = "../../data_for_analysis/cardlistlist_of_#{short}_with_price.csv"
 	
 	cardlist = Deck.new(packname, 'file', outputfilename, @log)
 	database = WisdomGuild.new(@log)
@@ -30,11 +33,11 @@ begin
 		if !card.nil? then
 			card.price.renew_at store
 			cardlist.cards.push card
-			puts "card.name[#{card.name}] finished.price[#{card.price}]"
+			puts "card.name[#{card.name}] finished.price[#{card.price.to_s}]"
 		end
 	end
 	
-	cardlist.create_deckfile(outputfilename, 'name,color,manacost,powertoughness,oracle,price,price.date', 'card_only')
+	cardlist.create_deckfile(outputfilename, 'name,color,manacost,cardtype,powertoughness,oracle,price,price.date', 'card_only')
 	
 rescue => e
 	write_error_to_log(e,@log)

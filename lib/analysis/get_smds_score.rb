@@ -10,7 +10,9 @@ begin
 	@log.info ""
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
-	
+
+	packname='Kaladesh'
+	short='KLD'
 	#packname='Eldritch Moom'
 	#short='EMN'
 	packname='Shadows over Innistrad'
@@ -22,8 +24,9 @@ begin
 		url = 'http://syunakira.com/smd/pointranking/index.php?packname=UnravelTheMadness&language=Japanese'
 	when 'Eldritch Moom' then
 		url = 'http://syunakira.com/smd/pointranking/index.php?packname=EldritchMoom&language=Japanese'
+	when 'Kaladesh' then
+		url = 'http://syunakira.com/smd/pointranking/index.php?packname=KALADESH&language=Japanese'
 	end
-
 	site = SMDS.new(@log)
 	site.create_pointranking_list outputfilename, url, short
 

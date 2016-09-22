@@ -10,11 +10,14 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
+	#packname='Kaladesh'
+	#short='KLD'
+	#num_of_cards = 249
 	
-	#packname='Eldritch Moom'
-	#short='EMN'
-	packname='Shadows over Innistrad'
-	short='SOI'
+	packname='Eldritch Moom'
+	short='EMN'
+	#packname='Shadows over Innistrad'
+	#short='SOI'
 	
 	outputfilename = "../../decks/channelfireball_reviews_#{short}.csv"
 	
