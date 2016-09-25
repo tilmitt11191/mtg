@@ -594,6 +594,18 @@ text-indent:-9900px;
 
 
 
+#main h2.reading-kanekotabearuki{
+background:url(/img_new/h2/h2_reading_kanekotabearuki.jpg) no-repeat center top;
+overflow:hidden;
+height:300px;
+text-indent:-9900px;
+}
+
+
+
+
+
+
 #main h2.reading-kochima{
 background:url(/img_new/h2/h2_reading_kochima.jpg) no-repeat center top;
 overflow:hidden;
@@ -678,6 +690,18 @@ text-indent:-9900px;
 
 
 
+#main h2.special-kld{
+background:url(/img_new/h2/h2_special_kld.jpg) no-repeat center top;
+overflow:hidden;
+height:300px;
+text-indent:-9900px;
+}
+
+
+
+
+
+
 #main h2.special-ogw{
 background:url(/img_new/h2/h2_special_ogw.jpg) no-repeat center top;
 overflow:hidden;
@@ -692,6 +716,18 @@ text-indent:-9900px;
 
 #main h2.special-cns{
 background:url(/img_new/h2/h2_special_cns.jpg) no-repeat center top;
+overflow:hidden;
+height:300px;
+text-indent:-9900px;
+}
+
+
+
+
+
+
+#main h2.special-cn2{
+background:url(/img_new/h2/h2_special_cn2.jpg) no-repeat center top;
 overflow:hidden;
 height:300px;
 text-indent:-9900px;
@@ -764,6 +800,18 @@ text-indent:-9900px;
 
 #main h2.special-ddo{
 background:url(/img_new/h2/h2_special_ddo.jpg) no-repeat center top;
+overflow:hidden;
+height:300px;
+text-indent:-9900px;
+}
+
+
+
+
+
+
+#main h2.special-ddr{
+background:url(/img_new/h2/h2_special_ddr.jpg) no-repeat center top;
 overflow:hidden;
 height:300px;
 text-indent:-9900px;
@@ -1575,6 +1623,7 @@ _margin-left: 20px
 
 #main img.listimg {
 margin:8px 0 0 5px;
+float: right;
 }
 
 /* video responsive 20130424 yoshikawa */

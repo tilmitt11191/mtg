@@ -15,10 +15,10 @@ begin
 	short='KLD'
 	#packname='Eldritch Moom'
 	#short='EMN'
-	packname='Shadows over Innistrad'
-	short='SOI'
+	#packname='Shadows over Innistrad'
+	#short='SOI'
 	
-	outputfilename = "../../decks/smdb_pointranking_list_of_#{short}.csv"
+	outputfilename = "../../data_for_analysis/smdb_pointranking_list_of_#{short}.csv"
 	case packname
 	when 'Shadows over Innistrad' then
 		url = 'http://syunakira.com/smd/pointranking/index.php?packname=UnravelTheMadness&language=Japanese'

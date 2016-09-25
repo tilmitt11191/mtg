@@ -42,6 +42,7 @@ class Test_channelfireball < Test::Unit::TestCase
 		assert_equal @site.comments['Borrowed Grace'], 'I’m not a fan of Trumpet Blast. But Borrowed Grace will be Trumpet Blast when Trumpet Blast is good (a.k.a. lethal). It gives your team the full +2/+2 when the game stalls out, and every now and then it will save a creature for 3 mana. Escalate is a powerful ability, and Borrowed Grace is a very good version of what it does.Not every deck will be interested in Borrowed Grace, and it’s not the type of card you’ll want more than 1 or 2 copies of. But when you have an aggressive, white, creature-swarm deck, Borrowed Grace will be a great addition.'
 	end
 =end
+#=begin
 	must "get_limited_set_reviews with incorrect url" do
 		puts "#{__method__} start."
 		@log.info "#{__method__} start."
@@ -149,6 +150,25 @@ class Test_channelfireball < Test::Unit::TestCase
 	#Repel the Abominable
 	#Thalia's Lancers
 	#’->'
+#=end
+=begin
+		must "extract scores and comments of Skysovereign, Consul Flagship from KLD artifacts html" do
+		puts "#{__method__} start."
+		@log.info "#{__method__} start."
+		@web = Web.new
+		html = @web.get_dom_of("http://www.channelfireball.com/articles/ehttp://www.channelfireball.com/articles/kaladesh-limited-set-review-artifacts/", @log)
+		@site.extract_cardnames_from(html)
+		@site.remove_invalid_names
+		@site.extract_scores_and_comments_of('Skysovereign, Consul Flagship', html)
+		puts '---- scores ----'
+		puts @site.scores['Skysovereign, Consul Flagship']
+		puts '---- comments ----'
+		puts @site.comments['Skysovereign, Consul Flagship']
+		
+		assert_equal '5.0', @site.scores['Skysovereign, Consul Flagship']
+		assert_equal 'Welp. There’s a reason this is the flagship Vehicle of the set, as it provides a ton of power at a very reasonable cost. Even if you never crew it, it’s a 5-mana deal 3, which is passable, and if it ever takes flight you get to destroy your opponent. I’d slam Consul Flagship and make sure I had ample crew, then I would collect my profits.', @site.comments['Skysovereign, Consul Flagship']
+	end
+=end
 end
 
 

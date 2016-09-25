@@ -33,14 +33,18 @@
 //20130605　英語カード名の'に対応。
 //20140423　<!-- Cn: --> で、リンクナシで画像表示のみ。
 //20151211　{C}に対応。
+//20160819　UGL/UNHの基本土地黒枠表示に対応。
+//20160919　{E}に対応。
+//20160921　{[A-Z]+}に対応。
+//20160923　domready.js → jQuery.js に変更
 
-Event.domReady.add(function (){
+$(document).ready(function (){
 	var dfc = 0;
 	var CARD, BORDER, LA;
 	reptxt(/C:[^A-Z>]*?([A-Z][\x20-\x2e|\x30-\x3b|=\?|A-Z|a-z]+)[^>\[\(]*[\[\(]([A-Z0-9_]{3})[\]\)].*/g, 1, function (){
 		if ((arguments[2] != '1ED')&&(arguments[2].search(/^.ED/) != -1)) {
 			BORDER = "_w";
-		}else if ((arguments[2] == 'UNH')||(arguments[2] == 'UGL')) {
+		}else if (((arguments[2] == 'UNH')||(arguments[2] == 'UGL'))&&(arguments[1] != 'Plains')&&(arguments[1] != 'Island')&&(arguments[1] != 'Swamp')&&(arguments[1] != 'Mountain')&&(arguments[1] != 'Forest')) {
 			BORDER = "_s";
 		}else{
 			BORDER = "_b";
@@ -77,7 +81,7 @@ Event.domReady.add(function (){
 
 	});
 
-	reptxt(/《([^》\/／\(]+)[^》]*?》(?:\[\w+\])?/ig, 3, function(){
+	reptxt(/《([^》\/／\(]+)[^》]*?》(?:\[\w+\])?/ig, 0, function(){
 		if (arguments[1].search(/[A-Za-z]/) == -1){
 			if (arguments[1].search(/[＋\+]/) == -1){
 				return ('《<a class="cardlink" onmouseover="popUpCard(' + "'" + arguments[1] + "'" + ', arguments[0]);" onMouseOut="popDown()" href="http://mtg-jp.com/js/findcard.cgi?name=' + EscapeUTF8(arguments[1]).replace(/\%20/g, "+") + '" target="_blank">' + arguments[1] + '<\/a>》');
@@ -89,20 +93,25 @@ Event.domReady.add(function (){
 			return ('《<a class="cardlink" onmouseover="popUpCard(' +"'"+ arguments[1].replace(/\'/, "\\\'") +"'"+ ', arguments[0]);" onMouseOut="popDown()" href="http://mtg-jp.com/js/findcard.cgi?name=' + EscapeUTF8(arguments[1]).replace(/\%20/g, "+") + '" target="_blank">' + arguments[1] + '<\/a>》');
 		}
 	});
-	reptxt(/\{o?([WUBRGXYZC])\}/g, 0, '<img src="http://mtg-jp.com/img/mana/$1.png" alt="{$1}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{o?(\d+)\}/g, 0, '<img src="http://mtg-jp.com/img/mana/$1.png" alt="{$1}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/(\{([WUBRG2]).([WUBRGP])\})/g, 0, '<img src="http://mtg-jp.com/img/mana/$2$3.png" alt="$1" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{(S|Snow|oS|Si)\}/g, 0, '<img src="http://mtg-jp.com/img/mana/Snow.png" alt="{S}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{(Tap|T)\}/g, 0, '<img src="http://mtg-jp.com/img/mana/Tap.png"  alt="{T}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{(Untap|Q)\}/g, 0, '<img src="http://mtg-jp.com/img/mana/Untap.png"  alt="{Q}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{PW\}/g, 0, '<img src="http://mtg-jp.com/img/mana/PW.png"  alt="{PW}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/\{CHAOS\}/gi, 0, '<img src="http://mtg-jp.com/img/mana/Chaos.png"  alt="{CHAOS}" style="vertical-align:middle; width:1em; height:1em;">');
-	reptxt(/【観戦記事】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/match.png" class="badge" alt="【観戦記事】">');
-	reptxt(/【お知らせ】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/publicity.png" class="badge" alt="【お知らせ】">');
-	reptxt(/【戦略記事】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/strategy.png" class="badge" alt="【戦略記事】">');
-	reptxt(/【トピック】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/topic.png" class="badge" alt="【トピック】">');
-	reptxt(/【英語記事】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/english.png" class="badge" alt="【英語記事】">');
-	reptxt(/【動画記事】/, 0, '<img src="http://coverage.mtg-jp.com/img/badge/video.png" class="badge" alt="【動画記事】">');
+
+	for (var i = 0; i <= 10; i++){
+		result = reptxt(/\{o?([A-Z]|\d+)o?([A-Z])/g, 1, '{$1}{$2');
+	}
+
+	reptxt(/\{o?([WUBRGXYZCE]|\d+)\}/g, 1, '<img src="http://mtg-jp.com/img/mana/$1.png" alt="{$1}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/(\{([WUBRG2]).([WUBRGP])\})/g, 1, '<img src="http://mtg-jp.com/img/mana/$2$3.png" alt="$1" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/\{(S|Snow|oS|Si)\}/g, 1, '<img src="http://mtg-jp.com/img/mana/Snow.png" alt="{S}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/\{(Tap|T)\}/g, 1, '<img src="http://mtg-jp.com/img/mana/Tap.png"  alt="{T}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/\{(Untap|Q)\}/g, 1, '<img src="http://mtg-jp.com/img/mana/Untap.png"  alt="{Q}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/\{PW\}/g, 1, '<img src="http://mtg-jp.com/img/mana/PW.png"  alt="{PW}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/\{CHAOS\}/gi, 1, '<img src="http://mtg-jp.com/img/mana/Chaos.png"  alt="{CHAOS}" style="vertical-align:middle; width:1em; height:1em;">');
+	reptxt(/【観戦記事】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/match.png" class="badge" alt="【観戦記事】">');
+	reptxt(/【お知らせ】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/publicity.png" class="badge" alt="【お知らせ】">');
+	reptxt(/【戦略記事】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/strategy.png" class="badge" alt="【戦略記事】">');
+	reptxt(/【トピック】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/topic.png" class="badge" alt="【トピック】">');
+	reptxt(/【英語記事】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/english.png" class="badge" alt="【英語記事】">');
+	reptxt(/【動画記事】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/video.png" class="badge" alt="【動画記事】">');
+	reptxt(/【動画】/, 1, '<img src="http://coverage.mtg-jp.com/img/badge/douga.png" class="badge" alt="【動画】">');
 
 
 
@@ -128,32 +137,29 @@ Event.domReady.add(function (){
 // Copyright (C) http://atab0u.blog105.fc2.com/blog-entry-33.html
 
 function reptxt(from_r, type, to_str) {
+	var repcnt = 0;
 	(function r(n) {
 		var node = n.firstChild;
 		while(node){
 			if (node.nodeType == 1) {
 				r(node);
-			}else if (((type == 0)&&(node.nodeType == 3))||((type == 1)&&(node.nodeType == 8))) {
+			}else if (((type == 0)&&(node.nodeType == 3)&&(node.parentNode.getAttribute('href') == null))||(type == 1)) {
 				if (node.nodeValue.match(from_r) != null){
 					var newnode = document.createElement('span');
 					newnode.innerHTML = node.nodeValue.replace(from_r, to_str);
 					n.replaceChild(newnode, node);
 					node = newnode;
+					repcnt ++;
 				}
 			}else if ((type == 2)&&(node.nodeType == 8)){
 				if (node.nodeValue.match(from_r) != null){
 					node.parentNode.href = node.nodeValue;
-				}
-			}else if ((type == 3)&&(node.nodeType == 3)&&(node.parentNode.getAttribute('href') == null)) {
-				if (node.nodeValue.match(from_r) != null){
-					var newnode = document.createElement('span');
-					newnode.innerHTML = node.nodeValue.replace(from_r, to_str);
-					n.replaceChild(newnode, node);
-					node = newnode;
+					repcnt ++;
 				}
 			}
-		node = node.nextSibling;
+			node = node.nextSibling;
 		}
+		return repcnt;
 	}(document.body));
 }
 //以上 http://muumoo.jp/news/2008/07/06/0autolinkjs.html より修整、転用

@@ -12,14 +12,17 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	packname='EldritchMoom'
-	short='EMN'
-	num_of_cards = 205
+	packname='Kaladesh'
+	short='KLD'
+	num_of_cards = 249
+	#packname='EldritchMoom'
+	#short='EMN'
+	#num_of_cards = 205
 	#packname='Shadows over Innistrad'
 	#short='SOI'
 	#num_of_cards = 270
 	
-	outputfilename = "../../decks/cardlistlist_of_#{short}.csv"
+	outputfilename = "../../data_for_analysis/cardlistlist_of_#{short}.csv"
 	
 	cardlist = Deck.new(packname, 'file', outputfilename, @log)
 	database = WisdomGuild.new(@log)
@@ -28,8 +31,7 @@ begin
 		card = database.get_card_from_url "http://whisper.wisdom-guild.net/card/#{short}#{convert_number_to_triple_digits number}/"
 		cardlist.cards.push card if !card.nil?
 	end
-	
-	cardlist.create_deckfile(outputfilename, 'name,manacost,color,oracle', 'with_info')
+		cardlist.create_deckfile(outputfilename, 'name,rarity,color,manacost,cardtype,powertoughness,oracle,price,price.date', 'card_only')
 	
 rescue => e
 	write_error_to_log(e,@log)

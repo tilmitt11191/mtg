@@ -13,12 +13,12 @@ begin
 	@log.info File.basename(__FILE__).to_s + " start."
 	@log.info ""
 	
-	#packname='Kaladesh'
-	#short='KLD'
-	#num_of_cards = 249
-	packname='EldritchMoom'
-	short='EMN'
-	num_of_cards = 205
+	packname='Kaladesh'
+	short='KLD'
+	num_of_cards = 249
+	#packname='EldritchMoom'
+	#short='EMN'
+	#num_of_cards = 205
 	#packname='Shadows over Innistrad'
 	#short='SOI'
 	#num_of_cards = 270
@@ -37,7 +37,7 @@ begin
 		end
 	end
 	
-	cardlist.create_deckfile(outputfilename, 'name,color,manacost,cardtype,powertoughness,oracle,price,price.date', 'card_only')
+	cardlist.create_deckfile(outputfilename, 'name,rarity,color,manacost,cardtype,powertoughness,oracle,price,price.date', 'card_only')
 	
 rescue => e
 	write_error_to_log(e,@log)

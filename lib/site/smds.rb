@@ -76,6 +76,8 @@ class SMDS < Site
 			url = "http://whisper.wisdom-guild.net/card/EMN#{number}"
 		when 'SOI' then
 			url = "http://whisper.wisdom-guild.net/card/SOI#{number}"
+		when 'KLD' then
+			url = "http://whisper.wisdom-guild.net/card/KLD#{number}"
 		end
 		
 		html = @web.get_dom_of(url, @log)

@@ -43,14 +43,14 @@ class Web
 	
 	
 	def get_dom_of(url, log)
-		log.info "#{__method__}(#{url}) start."
+		log.info "web.#{__method__}(#{url}) start."
 		if !@cache[url].nil? then
 			log.info "url[#{url}] cached. return cached dom. the title of url[#{url}] is [#{@dom.title}]."
 			@dom = @cache[url]
 			return @dom
 		end
 		
-		if !url_exists?(url, log) then
+		if !Web::url_exists?(url, log) then
 			log.info "url[#{url}] not exist. return false."
 			return nil
 		end		
