@@ -35,7 +35,6 @@ class Channelfireball < Site
 				return false
 			end
 			extract_cardnames_from html
-			remove_invalid_names
 			extract_scores_and_comments_from html
 			output_limited_set_reviews_to outputfilename
 		end
@@ -50,15 +49,20 @@ class Channelfireball < Site
 				@log.debug "cardname[#{element.inner_text}]"
 				@cardnames.push element.inner_text
 			end
+			remove_invalid_names
 		end
 	end
 
 	def remove_invalid_names
 		@log.info "#{__method__} start."
 		return false if cardnames_is_blank
-		@cardnames.reject!{|cardname| /(Limited Set Review|Previous Set Reviews|Ratings Scale|Top 5|White|Blue|Black|Red|Green|Artifacts|Colorless|Gold|Lands)/=~ cardname}
-		#@cardnames.reject!{|cardname| /(Limited Set Review|Previous Set Reviews|Ratings Scale|Top 5|White|Blue|Brac)/=~ cardname}
-
+		@cardnames.reject! do |cardname| 
+			if /(Limited Set Review|Previous Set Reviews|Ratings Scale|Top 5|White|Blue|Black|Red|Green|Artifacts|Colorless|Gold|Lands)/=~ cardname then
+				@log.debug "remove #{cardname}"
+				true
+			end
+		end
+		@log.info "#{__method__} finished."
 	end
 	
 	def extract_scores_and_comments_from(html)
@@ -76,11 +80,12 @@ class Channelfireball < Site
 		cardname_flag = false
 		html.inner_html.split("\n").each do |line|
 			break if cardname_flag && line.include?('<h1>') #break if this card's score, comment finished and next start.
-			cardname_flag = true if line == ("<h1>#{cardname}</h1>")
-			@scores[cardname] = format_score line if cardname_flag && line.include?('<h3>')
+			cardname_flag = true if (line ==  "<h1>#{cardname}</h1>" || line == "<h1><strong>#{cardname}</strong></h1>")
+			@scores[cardname] = format_score line if cardname_flag && ( line.include?('<h3>') || line.include?('<h3><strong>'))
 			@scores[cardname] = format_score line if cardname_flag && @scores[cardname].nil? && line.include?('<p><strong>') #for EMN Black-Land
 			@comments[cardname] = @comments[cardname].to_s + (format_comments line) if cardname_flag && line.include?('<p>')
 		end
+		@log.info "#{__method__}(#{cardname}) finished.@scores[cardname][#{@scores[cardname]}], @comments[cardname][#{@comments[cardname]}]]."
 	end
 
 	def output_limited_set_reviews_to outputfilename
