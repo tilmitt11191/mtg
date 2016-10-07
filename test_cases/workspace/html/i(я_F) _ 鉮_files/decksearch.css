@@ -1,0 +1,1114 @@
+@charset "UTF-8";
+
+
+	.fr{float:right;}
+	.fl{float:left;}
+
+	.ref { position: relative; }
+	.abs { position: absolute; }
+
+	body{
+		background-repeat: repeat-x,repeat-x;
+		background-position: top,bottom;
+		font-size:14px;
+		text-align:left;
+	}
+	dl{
+		margin:0;
+	}
+	ul{
+		padding:0;
+	}
+	li {
+		list-style:none;
+	}
+	div.wrapper{
+		width:960px;
+		margin:auto;
+	}
+
+	.clearfix:after{
+		content: " ";
+		display: table;
+		clear:both;
+	}
+ 
+	#deckSearchResult,
+	#archetypeList,
+	.deckBox,
+	.deckSearchForm,
+	.deckList,
+	.otherDecks,
+	.news,
+	.deckRecommend,
+	.hitchart
+	{
+		overflow: hidden;
+		/*border-radius: 7px;*/
+	}
+	.deckBox{
+		position:relative;
+	}
+	.deckBox a{
+		width:100%;
+		height:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		display:block;
+	}
+/* --------------------------------------------------------------------
+	ヘッダー(共通)
+--------------------------------------------------------------------- */
+	.pageTitle{
+		width:960px;
+		height: 65px;
+		font-size:0;
+		text-indent: -9999px;
+		overflow:hidden;
+		background:url("../img/usr/deck_title.png") no-repeat;
+		background-size:contain;
+		margin-bottom: 15px;
+	}
+	.navigation{
+		margin-bottom: 10px;
+	}
+
+
+
+	.navigation li{
+		height: 40px;
+		width: 320px;
+		font-size:18px;
+		font-weight: bold;
+		float:left;
+		text-align: center;
+		color:white;
+		background:#595757;
+		display: table;
+		border-right:1px dotted white;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+	.navigation li p{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.topbanner{
+		margin-bottom: 20px;
+	}
+	.topbanner li{
+		float: left;
+		margin-right:15px;
+	}
+	.topbanner li:last-child{
+		margin:0;
+	}
+	/*.topbanner:after{
+		content: " ";
+		display: table;
+		clear:both;
+	}*/
+
+/* --------------------------------------------------------------------
+	ニュース(decksearch.html)
+--------------------------------------------------------------------- */
+
+	div.news{
+			border:1px solid;
+			margin-bottom: 15px;
+			padding: 10px 15px;
+			background:white;
+		}
+	div.news li{
+			padding: 5px 0;
+	}
+		.news .title{
+			margin:0 0 5px 0;
+			font-size:17px;
+			border-bottom:1px solid gray;
+		}
+
+
+/* --------------------------------------------------------------------
+	デッキレコメンド(decksearch.html)
+--------------------------------------------------------------------- */
+		div.deckRecommend{
+			width:958px;
+			border:1px solid;
+			/*box-sizing:border-box;*/
+			margin-bottom: 20px;
+			background:#fff;
+		}
+		div.deckRecommend a:link{
+			color:#444;
+		}
+		div.deckRecommend a:hover{
+			color:#444;
+		}
+		div.deckRecommend a:visited{
+			color:#444;
+		}
+		div.deckRecommend .inner{
+			padding:0 15px;
+			margin-bottom: 15px;
+		}
+
+		.inner:after{
+			content: " ";
+			display: table;
+			clear:both;
+		}
+
+		div.deckRecommend .hitchart,div.deckRecommend .deckBox{
+			width:220px;
+			height: 360px;
+			float:left;
+			border:1px solid;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;			
+		}
+
+		div.deckRecommend .hitchart dd{
+			height:60px;
+			padding-left:37px;
+			display:table;
+			box-sizing:border-box;
+			width:100%;
+		}
+		div.deckRecommend .hitchart dd div{
+			display:table-cell;
+			vertical-align:middle;
+			height:100%
+		}
+		div.deckRecommend .hitchart dd div p{
+			max-height:40px;
+			overflow:hidden;
+			font-size:14px;
+		}
+		div.deckRecommend .hitchart .deck_title{
+			width:130px;
+			height:61px
+		}
+		.deck_title,.formatcount{
+			font-weight: bold;
+		}
+		div.deckRecommend .hitchart .formatcount{
+			float:none;
+			padding:0;
+			text-align:center;
+		}
+		div.deckRecommend .hitchart .no1,
+		div.deckRecommend .hitchart .no2,
+		div.deckRecommend .hitchart .no3{
+			background-position: 5px 18px;
+		}
+		.hitchart dd{
+	-moz-transition:background,0.3s;
+	-webkit-transition:background,0.3s;
+	-o-transition:background,0.3s;
+	-ms-transition:background,0.3s;
+	transition:background,0.3s;
+		}
+		.hitchart .no1,.hitchart  .no2,.hitchart  .no3,.hitchart  .no4{
+			border-bottom:2px dotted #444;
+		}
+		.hitchart dd:hover{
+		background-color:#fff299;
+	}
+		div.deckRecommend .hitchart .no4,
+		div.deckRecommend .hitchart .no5{
+			background-position: 10px 18px;
+		}
+
+		div.deckRecommend .title{
+			font-size:17px;
+			font-weight: bold;
+			color:white;
+		}
+
+		div.deckRecommend .standard>.title{
+			margin:10px 0;
+			background:red;
+			padding: 5px;
+
+		}
+
+		div.deckRecommend .modern>.title{
+			margin:10px 0;
+			background:green;
+			padding: 5px;
+
+		}
+
+		div.deckRecommend .legacy>.title{
+			margin:10px 0;
+			background:purple;
+			padding: 5px;
+
+		}
+
+		div.deckRecommend .vintage>.title{
+			margin:10px 0;
+			background:navy;
+			padding: 5px;
+
+		}
+
+		.hitchart{
+			/*margin-right:20px;*/
+			/*padding: 10px;*/
+		}
+
+		.hitchart .title{
+			margin:0;
+
+		}
+
+		div.deckRecommend .deckBox{
+			margin-right:0;
+			margin-left:15px;
+			padding: 20px 10px;
+			-moz-transition:background,0.3s;
+	-webkit-transition:background,0.3s;
+	-o-transition:background,0.3s;
+	-ms-transition:background,0.3s;
+	transition:background,0.3s;
+		}
+		div.deckRecommend .deckBox:hover{
+			background-color:#fff299;
+		}
+		.deckBox .deckImg{
+			width:180px;
+			height: 130px;
+			margin:auto;
+			background-position: -33px -47px;
+			background-size: 140%;
+		}
+
+		.deckBox h4.deckTitle{
+			font-size: 14px;
+			font-weight: bold;
+			margin: 10px 0;
+			max-height:57px;
+		}
+
+		.deckBox .deckInfo{
+			font-size:13px;
+			padding: 0;
+		}
+
+		.deckInfo .deckTitle{
+			font-weight: bold;
+		}
+
+/* --------------------------------------------------------------------
+	アーキタイプ一覧(result.html)
+--------------------------------------------------------------------- */
+		#archetypeList{
+			width:240px;
+			/*height:100px;*/
+			border:1px solid;
+			margin-right: 20px;
+			padding: 15px;
+			float: left;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		#archetypeList h2{
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+
+		table.archetypetable{
+			width: 100%;
+			font-size:12px;
+			border-collapse: separate;
+			border-spacing: 1px;
+		}
+
+		table.archetypetable tr td{
+			border-bottom: 1px solid #DDDDDD;
+			padding: 4px 2px 4px 10px;
+		}
+
+		table.archetypetable tr:nth-child(2n-1) td{
+			background-color: #F5F5F5;
+		}
+
+/* --------------------------------------------------------------------
+	デッキ検索結果（result.html）
+--------------------------------------------------------------------- */
+		.kuzu{
+			font-size:13px;
+			display:block;
+		}
+
+		#deckSearchResult{
+			width: 700px;
+			border:1px solid;
+			padding: 15px 12px;
+			float: left;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background:#fff;
+		}
+		#deckSearchResult a{
+			color:#000;
+		}
+		#deckSearchResult a:link{
+			color:#000;
+		}
+		#deckSearchResult a:visited{
+			color:#888;
+		}
+		#deckSearchResult a:hover{
+			color:#000;
+		}
+		#deckSearchResult h2{
+			font-size: 16px;
+			font-weight: bold;
+			margin:20px 0 10px 0;
+		}
+
+		#deckSearchResult .deckBox{
+			width:100%;
+			height: auto;
+			border:1px solid;
+			padding:0;
+			margin-bottom: 14px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			-moz-transition:background,0.3s;
+	-webkit-transition:background,0.3s;
+	-o-transition:background,0.3s;
+	-ms-transition:background,0.3s;
+	transition:background,0.3s;
+			position:relative;
+		}
+		#deckSearchResult .deckBox:hover{
+			background-color:#fff299;
+		}
+		#deckSearchResult .deckInfo{
+			padding:10px 0 0 20px;
+		}
+		#deckSearchResult .deckInfo li:nth-child(1){
+			margin-bottom:5px;
+		}
+		#deckSearchResult .deckInfo li:nth-child(3){
+			height:38px;
+			width:490px;
+		}
+		#deckSearchResult .deckInfo li:nth-child(4),
+		#deckSearchResult .deckInfo li:nth-child(5),
+		#deckSearchResult .deckInfo li:nth-child(6){
+			float:left;
+			width:145px;
+			margin-right:10px;
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+		}
+		#deckSearchResult .deckInfo li:nth-child(7){
+			position:absolute;
+			left:0;
+			bottom:-8px;
+		}
+		#deckSearchResult .deckInfo li:nth-child(7) img{
+			width:160px;
+		}
+		#deckSearchResult .deckBox .deckImg{
+			width:160px;
+			height:118px;
+			background-position:-26px -37px;
+			background-size:133%;
+		}
+		#deckSearchResult .deckBox .deckImg{
+			float:left;
+		}
+
+		#deckSearchResult .deckBox .deckInfo{
+			float:left;
+			font-size:14px;
+			position: relative;
+		}
+
+		#deckSearchResult .deckBox .deckInfo .private{
+			position: absolute;
+			right:0;
+			bottom:0;
+		}
+
+/* --------------------------------------------------------------------
+	ページナビ（result.html）
+--------------------------------------------------------------------- */
+		.navipage_ {
+			/zoom: 1;
+			position: relative;
+			overflow: hidden;
+			margin:20px 0 0 0;
+			padding: 0 10px;
+			
+		}
+#deckSearchList  h2{
+	float:left;
+}
+#deckSearchList  .navipage_.top_{
+	float:right;
+}
+#deckSearchList  .navipage_ p{
+	display:inline-block;
+	font-size:16px;
+	font-weight:bold;
+}
+#deckSearchList  .navipage_ .count_number{
+	font-size:20px;
+	margin-right:5px;
+}
+#deckSearchList  .navipage_.bottom_{
+	text-align:center;
+}
+#deckSearchList  .navipage_.bottom_ p{
+	margin-bottom:15px;
+}
+		.navipage_ ul {
+			position: relative;
+		}
+
+		.navipage_ ul li {
+			position: relative;
+			display:inline-block;
+			margin: 0;
+		}
+
+		.navipage_ li span,
+		.navipage_ li a {
+			display: inline-block;
+			margin: 0;
+			padding: 3px 8px;
+			background: #fff;
+			border: 1px solid #aaa;
+			text-decoration: none;
+			vertical-align: middle;
+		}
+		.navipage_ li span{
+			color:red;
+			font-weight:bold;
+		}
+		.navipage_ li a:hover {
+			background: #eeeff7;
+			border-color: #00f;
+		}
+.autopagerize_insert_before{
+	clear:both;
+}
+/* --------------------------------------------------------------------
+	デッキリスト（deckview.html）
+--------------------------------------------------------------------- */
+		.deckList{
+			width: 100%;
+			border:1px solid;
+			padding:10px 20px 20px ;
+			margin-bottom:20px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background:white;
+		}
+		
+		.deckList a{
+			color:#003780;
+		}
+
+		.deckList .outer{
+			font-size:14px;
+		}
+		
+		table.outer{
+			width: 100%;
+			margin:25px 0;
+		}
+
+		table.outer>tbody>tr>td{
+			width:33.3%;
+		}
+
+		table.outer h3{
+			width: 95%;
+			margin: 0 auto 5px auto;
+			font-size: 14px;
+			color: #900;
+			font-weight: bold;
+			clear:both;
+			line-height: 150%;
+		}
+
+		table.outer td{
+			vertical-align: top;
+			background-color: #F5F5F5;
+		}
+
+		table.outer th{
+			border-bottom: 2px solid #333;
+			background-color: #FFF;
+			color: #AA7304;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		table.inner{
+			width: 95%;
+			margin:auto;
+			display: inline-block;
+			float: right;
+			padding-right: 3px;
+		}
+
+
+		table.inner td{
+			padding:3px 0;
+			line-height: 130%;
+		}
+
+		.btn_MO{
+			text-align: right;
+			/*margin-bottom:20px;*/
+			margin-top:10px;
+		}
+
+		.tabletitle {
+			font-size: 14px;
+			font-weight: bold;
+			color: #AA7304;
+			}
+		
+		table.decktable{
+			width: 700px;
+			table-layout: fixed;
+			border-collapse: separate;
+			border-spacing: 1px;
+			font-size:14px;
+		}
+		table.decktable td{
+			vertical-align: top;
+			background-color: #F5F1E6;
+			word-wrap:break-word;
+		}
+		table.decktable th{
+			font-weight: bold;
+			width: 200px;
+			text-align: left;
+			vertical-align: text-top;
+			padding: 4px 0 4px 5px;
+			background-color:#E5E5E5;
+		}
+		table.decktable td{
+			padding: 4px 0 4px 5px;
+		}
+
+
+		.snsBox{
+			right:50px;
+			bottom:20px;
+		}
+
+		.snsBox .snsbtn{
+			height:20px;
+			width:120px;
+			margin-top:10px;
+		}
+
+		iframe.twitter-share-button {
+			width: 120px!important;
+		}
+
+		table.private_outer div{
+			text-align: center;
+			margin:30px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+/* --------------------------------------------------------------------
+	その他のデッキ(deckview.html)
+--------------------------------------------------------------------- */
+		.otherDecks{
+			width: 100%;
+			border:1px solid;
+			/*padding: 15px 12px;*/
+			
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.otherDecks .title{
+			font-size:15px;
+			font-weight: bold;
+			color:white;
+			line-height: 150%;
+		}
+
+		.otherDecks .tournament>.title,
+		.otherDecks .archetype>.title{
+			margin:10px 0;
+			background:black;
+			padding: 5px;
+		}
+
+		.otherDecks .inner{
+			padding: 0 15px;
+			margin-bottom: 15px;
+		}
+
+		div.otherDecks .deckBox{
+			width:100%;
+			height: auto;
+			border:1px solid;
+			padding: 15px 20px;
+			margin-bottom: 15px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			-moz-transition:background,0.3s;
+			-webkit-transition:background,0.3s;
+			-o-transition:background,0.3s;
+			-ms-transition:background,0.3s;
+			transition:background,0.3s;
+			line-height: 110%;
+			float: none;
+		}
+		
+		div.otherDecks .deckBox:hover{
+			background-color:#fff299;
+		}
+		.otherDecks .deckBox .deckImg{
+			float:left;
+			margin-right: 20px;
+		}
+
+		.otherDecks .deckBox .deckInfo{
+			float:left;
+			width:75%;
+			font-size:14px;
+			position: relative;
+		}
+
+		.otherDecks .deckBox .deckInfo .private{
+			position: absolute;
+			right:0;
+			bottom:0;
+		}
+		.deckInfo li{
+			padding:2px 0;
+		}
+		div.otherDecks{
+			margin-bottom:20px;
+			background:white;
+		}
+
+		div.otherDecks{
+			margin-bottom:20px;
+			background:white;
+		}
+		div.otherDecks .moreDecks{
+			text-align:right;
+			margin:30px 0;
+			font-weight: bold;
+		}
+
+/* --------------------------------------------------------------------
+	デッキ検索フォーム(共通)
+--------------------------------------------------------------------- */
+
+		div.deckSearchForm{
+			border:1px solid;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-bottom:30px;
+			background: white;
+			font-size:14px;
+		}
+
+		div.deckSearchForm h2.title{
+			height: 38px;
+			background: url("../img/usr/decksearch_title.png") no-repeat;
+			text-indent: -9999px;
+			margin:0;
+		}
+
+		div.deckSearchForm .inner{
+			padding: 10px;
+			position: relative;
+		}
+
+		div.deckSearchForm .chooseFormat{
+			padding:10px 0 0 10px;
+		}
+		div.deckSearchForm .inner-left,
+		div.deckSearchForm .inner-right{
+			float:left;
+		}
+		div.deckSearchForm .inner-left{
+			margin-top:30px;
+		}
+		div.deckSearchForm .inner-left .yazirusi{
+			margin: 0 0 0 10px;
+			display:none;
+		}
+
+		div.deckSearchForm .formatBtn{
+			width:601px;
+			margin:0 0 0 30px;
+		}
+		
+		input[name="format"]{
+			opacity:0;
+			display: none;
+		}
+
+
+		#btn_Reset{
+			width:145px;
+			height:25px;
+			border:none;
+			text-indent: -9999px;
+			background: url("../img/usr/decksearch_resset.png");
+			position: absolute;
+			right: 10px;
+			top:-25px;
+			display:none;
+			cursor: pointer;
+		}
+
+		#btn_Reset:hover{
+			opacity:0.5;
+		}
+
+		#btn_Submit{
+			width:100px;
+			height:35px;
+			border:none;
+			text-indent: -9999px;
+			background: url("../img/usr/search.png");
+			cursor: pointer;
+		}
+
+		#btn_Submit:hover{
+			opacity:0.5;
+		}
+
+		#FormatName_Standard + label{
+			display: inline-block;
+			width:150px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+		}
+
+		#FormatName_Standard:checked +label{
+			background-position:0px 249px;
+		}
+
+		#FormatName_Modern + label{
+			display: inline-block;
+			width:100px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:395px 0px;
+		}
+
+		#FormatName_Modern:checked + label{
+			background-position:395px 249px;
+		}
+
+		#FormatName_Legacy + label{
+			display: inline-block;
+			width:115px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:295px 0px;
+		}
+
+		#FormatName_Legacy:checked + label{
+			background-position:295px 249px;
+		}
+
+		#FormatName_Vintage + label{
+			display: inline-block;
+			width:150px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:180px 0px;
+		}
+
+		#FormatName_Vintage:checked + label{
+			background-position:180px 249px;
+		}
+		
+		#FormatName_EDH + label{
+			display: inline-block;
+			width:95px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:0px 214px;
+		}
+
+		#FormatName_EDH:checked + label{
+			background-position:0px 179px;
+		}
+
+		#FormatName_Pauper + label{
+			display: inline-block;
+			width:120px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:450px 214px;
+		}
+
+		#FormatName_Pauper:checked + label{
+			background-position:450px 179px;
+		}
+
+		#FormatName_Block + label{
+			display: inline-block;
+			width:150px ;
+			height:35px;
+			margin:0 10px 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:330px 214px;
+		}
+
+		#FormatName_Block:checked + label{
+			background-position:330px 179px;
+		}
+
+		#FormatName_Extended + label{
+			display: inline-block;
+			width:180px ;
+			height:35px;
+			margin:0 0 10px 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:180px 214px;
+		}
+
+		#FormatName_Extended:checked + label{
+			background-position:180px 179px;
+		}
+
+		input[name="archeColor"], input[name="archetype_color"]{
+			opacity:0;
+			display: none;
+		}
+
+		#ArchetypeColorW +label, #archetype_color_1 +label{
+			display: inline-block;
+			width:80px ;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:0px 144px;
+		}
+		#ArchetypeColorW:checked + label, #archetype_color_1:checked + label{
+			background-position:0px 97px;
+		}
+
+		#ArchetypeColorU +label, #archetype_color_2 +label{
+			display: inline-block;
+			width:80px;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:465px 144px;
+		}
+		#ArchetypeColorU:checked + label, #archetype_color_2:checked + label{
+			background-position:465px 97px;
+		}
+
+		#ArchetypeColorB +label, #archetype_color_3 +label{
+			display: inline-block;
+			width:80px ;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:385px 144px;
+		}
+		#ArchetypeColorB:checked + label, #archetype_color_3:checked + label{
+			background-position:385px 97px;
+		}
+
+		#ArchetypeColorR +label, #archetype_color_4 +label{
+			display: inline-block;
+			width:80px ;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:305px 144px;
+		}
+		#ArchetypeColorR:checked + label, #archetype_color_4:checked + label{
+			background-position:305px 97px;
+		}
+
+		#ArchetypeColorG +label, #archetype_color_5 +label{
+			display: inline-block;
+			width:80px ;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:225px 144px;
+		}
+		#ArchetypeColorG:checked + label, #archetype_color_5:checked + label{
+			background-position:225px 97px;
+		}
+
+		#ArchetypeColorC +label, #archetype_color_6 +label{
+			display: inline-block;
+			width:80px ;
+			height:47px;
+			margin:0 5px 0 0;
+			background:url("../img/usr/icon/deck_icons.png");
+			text-indent: -9999px;
+			cursor:pointer;
+			background-position:145px 144px;
+		}
+		
+		#ArchetypeColorC:checked + label, #archetype_color_6:checked + label{
+			background-position:145px 97px;
+		}
+
+		.deckSearchForm table th{
+			width:150px;
+			display: list-item;
+			font-weight: bold;
+			padding: 10px;
+			list-style:disc inside;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		.deckSearchForm tr:nth-child(3){
+			display:none;
+		}
+
+		.deckSearchForm tr:nth-child(3) th{
+			text-indent:-1000px;
+		}
+		
+		.deckSearchForm table td{
+			padding: 10px;
+		}
+		
+		.deckSearchForm input#DeckStart,
+		.deckSearchForm input#DeckEnd{
+			width:130px;
+		}
+		
+		.deckSearchForm button.latest_7,
+		.deckSearchForm button.latest_14,
+		.deckSearchForm button.latest_30{
+			width: 127px;
+			height: 34px;
+			border-radius: 10px;
+			border: 3px solid gray;
+		}
+		
+		.deckSearchForm button.latest_7 p,
+		.deckSearchForm button.latest_14 p,
+		.deckSearchForm button.latest_30 p{
+			font-weight: bold;
+			font-size:16px;
+		}
+		
+		#DeckFormatId, #DeckArchetypeName, #decksearch_dateformat, #decksearch_archetype {
+			margin:0 0 10px;
+		}
+
+		#deckSearchList {
+			margin-bottom: 20px;
+		}
+
+/* --------------------------------------------------------------------
+永松課題54~59(0118吉村
+-------------------------------------------------------------------- */
+#ArchetypeColorW +label,#ArchetypeColorU +label,#ArchetypeColorB +label,#ArchetypeColorR +label,#ArchetypeColorG +label,#ArchetypeColorC +label,#archetype_color_1 +label,#archetype_color_2 +label,#archetype_color_3 +label,#archetype_color_4 +label,#archetype_color_5 +label,#archetype_color_6 +label
+{
+	vertical-align:middle;
+}
+input#DeckEnd{
+	margin-right:20px;
+}
+input#CardName {
+	margin-right:20px;
+}
+#searchDetail label{
+	margin:0 8px 0 0;
+}
+#btn_Submit{
+	float:right;
+}
+.deck_title{
+	display:block;
+	overflow:hidden;
+	height:40px;
+}
+.deck_title_top{
+	width:230px;
+	float:left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+	font-weight:bold;
+}
+
+/*楠追加 0416*/
+#searchDetail input#PlayerName,
+#searchDetail input#CardName{
+	width:170px;
+}
+.otherDecks a{
+	color:#444;
+}
+#deckSearchResult a:visited,.otherDecks a:visited{
+	color:#888;
+}
