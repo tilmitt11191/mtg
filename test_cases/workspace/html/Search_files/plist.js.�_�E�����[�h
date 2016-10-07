@@ -1,0 +1,296 @@
+document.observe("dom:loaded", function() {
+
+	if( $("buyprice") ){
+		$("buyprice").observe("click", function(){
+			showOverlay({showLoading: false, onclose: hideBuyPrice});
+			$("buypricepopup").setStyle({display: "block"});
+		})
+		$$("#buypricepopup span.close")[0].observe("click", hideBuyPrice)
+	}
+	function hideBuyPrice(){
+		hideOverlay();
+		$("buypricepopup").setStyle({display: "none"});
+	}
+	
+
+	$$("#slider > div span.min")[0].observe("mousedown", function(){
+		this.writeAttribute("start", 1);
+		$$("body")[0].addClassName("unselectable")
+	})
+	$$("#slider > div span.max")[0].observe("mousedown", function(){
+		this.writeAttribute("start", 1);
+		$$("body")[0].addClassName("unselectable")
+	})
+	$$("body")[0].observe("mousemove", function(event){
+		if( $$("#slider > div span.min")[0].readAttribute("start") == 1){
+			event.preventDefault();
+			var sliderObj = $("slider");
+
+			var width = sliderObj.getWidth() - 10;								
+
+			var minValue 		= parseFloat( sliderObj.readAttribute("minValue") );
+			var maxValue 		= parseFloat( sliderObj.readAttribute("maxValue") );
+
+			var currentMinValue = parseFloat( sliderObj.readAttribute("currentMinValue") );
+			var currentMaxValue = parseFloat( sliderObj.readAttribute("currentMaxValue") );
+
+			var position = event.pointer(); //cursor position
+			var startPosition = sliderObj.viewportOffset();
+
+			var newX = position.x - startPosition[0];
+			newX = Math.max(0, newX)
+
+			newX = Math.min(newX, (currentMaxValue - minValue )* width / (maxValue - minValue))
+
+			var newMinValue = (minValue + newX * (maxValue - minValue) / width).toFixed(2);
+			sliderObj.writeAttribute("currentMinValue", newMinValue);
+			var newWidth = (currentMaxValue - newMinValue) * width / (maxValue - minValue) + 10;
+
+			$$("#slider > div")[0].setStyle({left: newX + "px", width: newWidth + "px"});
+			$("slidervalues").update("$" + newMinValue + " - $" + currentMaxValue.toFixed(2));
+		}
+		
+		if( $$("#slider > div span.max")[0].readAttribute("start") == 1){
+			event.preventDefault();
+			var sliderObj = $("slider");
+
+			var width = sliderObj.getWidth() - 10;								
+
+			var minValue 		= parseFloat( sliderObj.readAttribute("minValue") );
+			var maxValue 		= parseFloat( sliderObj.readAttribute("maxValue") );
+
+			var currentMinValue = parseFloat( sliderObj.readAttribute("currentMinValue") );
+			var currentMaxValue = parseFloat( sliderObj.readAttribute("currentMaxValue") );
+
+			var position = event.pointer(); //cursor position
+			var startPosition = sliderObj.viewportOffset();
+
+			var newX = position.x - startPosition[0];
+			newX = Math.min(width, newX);//or width + 10
+
+			newX = Math.max(newX, (currentMinValue - minValue )* width / (maxValue - minValue))
+
+			var newMaxValue = (minValue + newX * (maxValue - minValue) / width).toFixed(2);
+			sliderObj.writeAttribute("currentMaxValue", newMaxValue);
+			var newWidth = (newMaxValue - currentMinValue) * width / (maxValue - minValue) + 10;
+
+			$$("#slider > div")[0].setStyle({left1: newX + "px", width: newWidth + "px"});
+
+			$("slidervalues").update("$" + currentMinValue.toFixed(2) + " - $" + newMaxValue);
+		}
+		
+	})	
+	$$("body")[0].observe("mouseup", function(){
+		if( $$("#slider > div span.min")[0].readAttribute("start") == 1){
+			$$("body")[0].removeClassName("unselectable")
+			$$("#slider > div span.min")[0].writeAttribute("start", 0);
+
+			var currentMinValue = $$("#slider")[0].readAttribute("currentMinValue");
+			var currentMaxValue = $$("#slider")[0].readAttribute("currentMaxValue");
+			var minValue 		= $$("#slider")[0].readAttribute("minValue");
+			var maxValue 		= $$("#slider")[0].readAttribute("maxValue");
+
+			document.location.href = $$("#slider")[0].readAttribute("baseurl") + "&minPrice=" + currentMinValue + "&maxPrice=" + currentMaxValue;
+		}
+		if( $$("#slider > div span.max")[0].readAttribute("start") == 1){
+			$$("body")[0].removeClassName("unselectable")
+			$$("#slider > div span.max")[0].writeAttribute("start", 0);
+
+			var currentMinValue = $$("#slider")[0].readAttribute("currentMinValue");
+			var currentMaxValue = $$("#slider")[0].readAttribute("currentMaxValue");
+			var minValue 		= $$("#slider")[0].readAttribute("minValue");
+			var maxValue 		= $$("#slider")[0].readAttribute("maxValue");
+
+			document.location.href = $$("#slider")[0].readAttribute("baseurl") + "&minPrice=" + currentMinValue + "&maxPrice=" + currentMaxValue;
+		}
+		
+	})
+
+	
+	$$(".filters input[type='checkbox']").each(function(element){
+		element.observe("click", function(event){
+			var el = event.element();
+			var link = el.up("li").select("a")[0];
+			document.location.href = link.readAttribute("href");
+		})
+	})
+	
+	$$(".colleft li.more").each(function(element){
+		element.observe("click", function(event){
+			var el = event.element();
+			el.up("ul").addClassName("all");
+		})
+	})
+	$$(".colleft li.less").each(function(element){
+		element.observe("click", function(event){
+			var el = event.element();
+			el.up("ul").removeClassName("all");
+		})
+	})
+	
+	
+	$$(".productlistbox .add-qnty").each(function(element){
+		element.observe("click", function(event){
+			var el = event.element();
+			var input = el.up("td").select("input[type='text']")[0]
+			var max = parseInt(el.up("tr").select("td.qty")[0].innerHTML)
+			input.value = Math.min(max, parseInt(input.value) + 1)
+		})
+	})
+	
+	$$(".productlistbox .minus-qnty").each(function(element){
+		element.observe("click", function(event){
+			var el = event.element();
+			var input = el.up("td").select("input[type='text']")[0]
+			input.value = Math.max(0, parseInt(input.value) - 1)
+		})
+	})
+	
+	
+	$$(".productlistbox td.img a img").each(function(element){
+		element.observe("mouseover", function(event){
+			
+			$$(".main-img").each(function(img){
+				img.hide();
+			})
+			
+			var el = event.element();
+			var src = el.src.replace("tmb_", "")
+			
+			if(el.up("td").select(".main-img").size() == 0){
+				
+				var count = $$(".productlistboxinner td.img").length;
+				if(count > 0){
+					var index = -1;
+					$$(".productlistboxinner td.img").each(function(td, i){
+						if(td == el.up("td")){
+							index = i;
+						}
+					})
+					if(index == (count - 1) && count > 3){
+						el.up("td").insert(
+							(new Element("img", {src: src, style: "display: none;"})).addClassName("main-img").setStyle({marginTop: "-290px"}).show()
+						)
+					}else if(index == (count - 1) && count > 2){
+						el.up("td").insert(
+							(new Element("img", {src: src, style: "display: none;"})).addClassName("main-img").setStyle({marginTop: "-215px"}).show()
+						)
+					}else if(index == (count - 2) && count > 3){
+						el.up("td").insert(
+							(new Element("img", {src: src, style: "display: none;"})).addClassName("main-img").setStyle({marginTop: "-210px"}).show()
+						)
+					}else{
+						el.up("td").insert(
+							(new Element("img", {src: src, style: "display: none;"})).addClassName("main-img").show()
+						)
+					}
+					
+				}else{
+				
+					el.up("td").insert(
+						(new Element("img", {src: src, style: "display: none;"})).addClassName("main-img").show()
+					)
+					
+				}
+			}else{
+				el.up("td").select(".main-img").each(function(e){
+					e.show();
+				})
+			}
+			
+			//<img width="200px" onerror="this.onerror=null;this.className='block-img';" src="//www.mtgotraders.com/store/media/products/m13/Acidic_Slime.jpg" alt="Acidic Slime" class="main-img" style="display: none; top: 272px; left: 55px;">
+		}).observe("mouseout", function(event){
+			if(document.location.href.indexOf("advanced-search.html") == -1){
+				var el = event.element();
+				el.up("td").select(".main-img").each(function(e){
+					e.hide();
+				})
+			}
+		})
+	})
+	
+})
+
+function validate(){
+	var result = false;
+	
+	$$(".productlistbox td.buy input[type='text']").each(function(input){
+		var value = parseInt(input.value)
+		if(value && value > 0){
+			result = true;
+			input.up('td').select("input[type='hidden']")[0].writeAttribute("name", "itemnum")
+		}else{
+			input.up('td').select("input[type='hidden']")[0].writeAttribute("name", "itemnum_")
+		}
+	})
+	if(result == true){
+		return true;
+	}
+	alert("Please add at least one item.")
+	return result;
+}
+function fill_skus(){
+	return true;
+}
+
+function processScroll(){
+	var scroll = $("scroll")
+	if(scroll){
+		var scrollOffset = document.viewport.getScrollOffsets()
+		var dim = getPageSize();
+		if(scrollOffset.top + document.viewport.getHeight() >= dim[1]){
+			scroll.setStyle({display: "none"})
+			return;
+		}
+		var wrapper = $$(".wrapper")[0];
+		var height = document.viewport.getHeight();
+		var newY = scrollOffset.top + height - 40;
+		if(newY > wrapper.getHeight() - 100){
+			newY = wrapper.getHeight() - 100;
+		}
+		scroll.setStyle({display: "block", top: newY + "px"})
+	}
+}
+
+function getPageSize(){
+	var xScroll, yScroll;
+	if (window.innerHeight && window.scrollMaxY) {
+	xScroll = document.body.scrollWidth;
+	yScroll = window.innerHeight + window.scrollMaxY;
+	} else if (document.body.scrollHeight > document.body.offsetHeight){ // all but Explorer Mac
+	xScroll = document.body.scrollWidth;
+	yScroll = document.body.scrollHeight;
+	} else { // Explorer Mac...would also work in Explorer 6 Strict, Mozilla and Safari
+	xScroll = document.body.offsetWidth;
+	yScroll = document.body.offsetHeight;
+	}
+	var windowWidth, windowHeight;
+	if (self.innerHeight) { // all except Explorer
+	windowWidth = self.innerWidth;
+	windowHeight = self.innerHeight;
+	} else if (document.documentElement && document.documentElement.clientHeight) { // Explorer 6 Strict Mode
+	windowWidth = document.documentElement.clientWidth;
+	windowHeight = document.documentElement.clientHeight;
+	} else if (document.body) { // other Explorers
+	windowWidth = document.body.clientWidth;
+	windowHeight = document.body.clientHeight;
+	}
+	// for small pages with total height less then height of the viewport
+	if(yScroll < windowHeight){
+	pageHeight = windowHeight;
+	} else {
+	pageHeight = yScroll;
+	}
+	// for small pages with total width less then width of the viewport
+	if(xScroll < windowWidth){
+	pageWidth = windowWidth;
+	} else {
+	pageWidth = xScroll;
+	}
+	arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight)
+	return arrayPageSize;
+}
+
+window.onresize = processScroll
+window.onload = processScroll
+window.onscroll = processScroll 

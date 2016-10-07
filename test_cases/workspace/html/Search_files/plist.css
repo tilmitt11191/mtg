@@ -1,0 +1,351 @@
+.unselectable {
+     user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+.unselectable::selection { background: transparent;color:inherit; }
+.unselectable::-moz-selection { background: transparent;color:inherit; }
+
+#tree{
+	border: 1px solid #838383;
+	background: #f5f5f5;
+	margin: 0 0 33px 0;
+}
+#tree h4{
+	background: url(../images/treebg.png) repeat-x;
+	height: 35px;
+	line-height: 32px;
+	padding: 0 0 0 10px;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 0 0 0 0;
+	color: #ffffff;
+}
+#tree h3 + .filter{
+	border-top: 1px solid #989898;	
+}
+#tree .filter{
+	margin: 0;
+	padding: 10px 10px 14px 10px;
+}
+
+#tree h3{
+	margin: 0 0 3px 0;
+	position: relative;
+	padding: 0 0 0 20px;
+	font-size: 14px;
+	color: #6f9ed2;
+	text-transform: uppercase;
+	
+	margin: 15px 10px 0;
+	padding: 0 0 14px 20px;
+
+}
+#tree h3 em{
+	font-size: 12px;
+	color: #000000;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	display: block;
+}
+#tree h3 .remove{
+	background: url(../images/remove.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	text-indent: -3000px;
+	overflow: hidden;
+}
+
+
+
+.slider{
+	background: #eeeeee;
+	height: 11px;
+	border: 1px solid #ddd;
+	position: relative;
+	border-radius: 2px;
+	width: 100%;
+	margin: 0 0 18px 0;
+}
+.slider > div{
+	height: 11px;
+	background: #737373;
+	position: absolute;
+}
+
+.slider span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	text-indent: -3000px;
+	overflow: hidden;
+	background: #8dc63f;
+	cursor: pointer;
+	border-radius: 3px;
+	top: -5px;
+}
+.slider span.active{
+	z-index: 2;
+}
+.slider span:first-child{
+	left: -5px;
+}
+.slider span:last-child{
+	right: -5px;
+}
+
+
+#slidervalues{
+	text-align: center; 
+	color: #737373; 
+	font-weight: bold; 
+	margin: 0 0 5px 0;
+}
+
+.filter #filtersets, .filter #clearsets{
+	border: 1px solid #ccc; border-radius: 2px; text-decoration: none; padding: 5px 10px; color: #333;
+	transition: background 0.3s;
+	cursor: pointer;
+	background: #fff;
+}
+.filter #filtersets:hover, .filter #clearsets:hover{
+	background: #ccc;
+}
+#categories{
+	width: 100%;
+	height: 200px; 
+	margin: 0 0 10px 0; 
+	display: block;
+}
+
+.productlistbox {
+	background: url("../images/searchheaderbg.png?1") no-repeat scroll right -2px transparent;
+    margin: 13px 0 0;
+    padding: 0 0 0;
+    border: 1px solid #838383;
+    border-top: 0;
+	 position: relative;
+}
+.productlistbox span#buyprice{
+	display: block;
+	height: 31px;
+	margin: 0 230px 3px 390px;
+	text-indent: -3000px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#buypricepopup{
+	background: #ffffff url(../images/buypricebg.png) no-repeat 50% 50%;
+	max-width: 385px;
+	border: 5px solid #d6d6d6;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	padding: 14px;
+	transform: translate(-200px, 0);
+	display: none;
+	z-index: 101;
+}
+#buypricepopup span.close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: bold;
+	width: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #5d5d5d;
+}
+#buypricepopup ul{
+	list-style: none;
+}
+
+.productlistboxinner{
+	position: relative;
+	border-left: 1px solid #838383;
+	width: 699px;
+	margin: 0 0 0 auto;
+	padding: 39px 0 1px 0;
+	min-height: 305px;
+}
+.productlistbox table{
+    border-collapse: collapse;
+    margin: 0 0 0 auto;
+    width: 680px;
+}
+.productlistboxinner table{
+    margin: 0 0 0 auto;	
+}
+.productlistbox table td{
+    background: #F5F5F5;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0;
+    vertical-align: top;	
+}
+.productlistbox table tr:nth-child(4n+3) td, .productlistbox table tr:nth-child(4n+0) td{
+	background: #E3E3E3;
+}
+.productlistbox table tr:nth-child(2n+0) td, .productlistbox table td.img, .productlistbox table td.mana{
+	border-bottom-width: 4px;	
+}
+
+.productlistbox table tr.odd td{
+	background: #F5F5F5 !important;
+}
+.productlistbox table tr.even td{
+	background: #E3E3E3 !important;
+	box-sizing: content-box;
+}
+.productlistbox table tr.withfoil td{
+	border-bottom-width: 1px;
+}
+.productlistbox table tr.withoutfoil td, .productlistbox table tr.foil td, .productlistbox table tr td.img, .productlistbox table tr td.mana{
+	border-bottom-width: 4px !important;
+}
+
+
+.productlistbox table td.img{
+    width: 51px;
+	vertical-align: middle;	
+}
+.productlistbox table td.img a img{
+	display: block;
+	border: 0 none;
+	margin: 0 auto;
+	max-width: 50px;
+}
+
+.productlistbox table td.img .main-img{
+	position: absolute;
+	left: -233px;
+	margin-top: -145px;
+	z-index: 10;	
+}
+.productlistbox table > tbody > tr:first-child td.img .main-img{
+	margin-top: -70px !important;
+}
+
+.productlistbox table td.mana{
+    border-right: 1px solid #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    width: 69px;	
+}
+.productlistbox table td.mana ul{
+    list-style: none outside none;
+    margin: 0 auto;
+    width: 48px;
+    padding: 0;	
+}
+.productlistbox table td.mana ul li{
+    background: url("http://a.cdn.searchspring.net/sandbox/mtgo/media/images/manabg.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    width: 15px;
+    margin: 0 1px 0 0;
+    padding: 0;	
+}
+.productlistbox table td.mana ul li img{
+    vertical-align: top;
+	width: auto !important;
+	height: auto !important;	
+}
+
+
+
+.productlistbox table td.cardname {
+    padding: 8px 12px 9px;
+    vertical-align: middle;
+    width: 170px;
+	 line-height: 18px;
+	 height: 34px;
+}
+.productlistbox table td.set{
+	width: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.productlistbox table td.cardname a {
+    color: #333333;
+    font-size: 13px;
+    text-decoration: none;
+	border: 0;
+}
+
+
+.productlistbox table td.cardname a:hover {
+    text-decoration: underline;
+}
+
+.productlistbox table td.buyprice{
+	width: 80px;
+	text-align: center;
+	color: #77779a;
+	vertical-align: middle;
+}
+
+.productlistbox table td.price {
+    color: #333333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.productlistbox table td.qty {
+    color: #333333;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.productlistbox table td.buy {
+    padding: 0 5px;
+    text-align: right;
+    vertical-align: middle;
+}
+.productlistbox table td.buy img{
+	vertical-align: middle;
+}
+
+
+.productlistbox table td.buy input[type="text"] {
+    background: url("http://a.cdn.searchspring.net/sandbox/mtgo/media/images/qtybg.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #6F9ED2;
+    font-size: 13px;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    margin: 0 3px 0 0;
+    padding: 2px;
+    text-align: center;
+    width: 31px;
+}
+
+.productlistbox table td.buy .buy-disabled {
+    background: url("http://a.cdn.searchspring.net/sandbox/mtgo/media/images/buy-dis.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 21px;
+    margin: 3px 3px 3px 0;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -3000px;
+    width: 57px;
+	display: none;
+}
